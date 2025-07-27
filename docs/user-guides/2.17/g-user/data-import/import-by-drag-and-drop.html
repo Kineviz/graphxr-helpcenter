@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Import Data by Drag and Drop :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/data-import/import-by-drag-and-drop.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../intro-overview.html"><strong>GraphXR User Guide</strong></a></li>
+    <li><a href="../data-overview.html"><strong>Data Management</strong></a></li>
+    <li><a href="data-import-intro.html">Import Data</a></li>
+    <li><a href="import-by-drag-and-drop.html">Drag and Drop</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Import Data by Drag and Drop</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can import data in <em>.CSV</em>, <em>.JSON</em>, GraphXR&#8217;s <em>.graphxr</em> and <em>.graphxrsnapshots</em>, and many other data formats by drag and drop. Simply locate the file on your system, then drag and drop it anywhere in the project graph space.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In the <strong><em>Project</em></strong> panel and <strong><em>Data</em></strong> tab you can also click <strong><em>Import</em></strong> or <strong><em>Import Views</em></strong> to navigate to a file and import the data.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_01_01_ProjectImport.png" alt="02 01 01 ProjectImport" width="720" height="420">
+</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Be sure to save any current view before you import data. To do this go to the project view menu and either <strong><em>Save</em></strong> your current view, or <strong><em>Save As</em></strong> a new view. If you do unintentionally import data to an existing view, you can immediately use <strong><em>Save As</em></strong> to create a new view.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_importing_flat_files_by_drag_and_drop"><a class="anchor" href="#_importing_flat_files_by_drag_and_drop"></a>Importing flat files by drag and drop</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you import data that has no defined graph schema, such as a flat .CSV file, each row is imported as a node of a single default category.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Keep in mind that data from <em>CSV</em> , <em>Excel</em>, or <em>.JSON</em> files is <strong>added to</strong> any data already in the project space. To create a new empty view, save your current view, and then select <strong><em>New</em></strong> from the project view menu. This clears the existing data and opens a new empty <em>Unsaved View</em>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For example, the following spreadsheet can be dropped onto the project space. It&#8217;s a travel log with three columns headed <em>date</em>, <em>from_country</em>, and <em>to_country</em> .</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A node representing a single travel event is created for each row. All the nodes are assigned a single category labeled with the name of the file (i.e. <em>COVID-19 Travel Log - Sheet1)</em>.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_01_02_ImportCSVCovid.png" alt="02 01 02 ImportCSVCovid" width="720" height="420">
+</div>
+</div>
+</li>
+<li>
+<p>The column headings in the file are assigned as property names: <em>date</em>, <em>from_country</em>, and <em>to_country</em>, and property values are transferred for the respective nodes. In the <strong><em>Table</em></strong> panel, you can inspect the imported nodes and their property values.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_01_03_CSVImportMapping.png" alt="02 01 03 CSVImportMapping" width="720" height="420">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Starting with unconnected nodes, you can create connected graph data using GraphXR&#8217;s navigation, selection, and transformation tools. In particular, the <strong><em>Transform</em></strong> panel provides powerful ways to extract and/or simplify categories, properties, and  relationships.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_importing_graph_data_views_by_drag_and_drop"><a class="anchor" href="#_importing_graph_data_views_by_drag_and_drop"></a>Importing graph data views by drag and drop</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can simply drag and drop graph data held in a JSON file, <em>CSV</em> or <em>Excel</em> archive, <em>graphxr</em> file, or <em>graphxrsnapshots</em> archive. The categories, relationships, and their properties are included. The data in <em>graphxr</em> files or a <em>graphxrsnapshots</em> archive retain the 3D layout and view perspective it had when it was saved.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Keep in mind that data imported from a <em>.graphxr</em> view, <em>.graphxrsnapshots</em> archive, or data <em>View</em>  <strong>replaces</strong> any data already in the project space. Be sure to save (or  export) your current view before you import a view.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the view menu or <strong><em>Views</em></strong> tab to save your view, or</p>
+</li>
+<li>
+<p>Go to the <strong><em>Project</em></strong> panel and <strong><em>Data</em></strong> tab and choose <strong><em>Save GXRF</em></strong>, <strong><em>Save CSV</em></strong>, <strong><em>Save Excel</em></strong> or, if a database is connected to your project, <strong><em>Save Neo4j</em></strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_importing_snapshots"><a class="anchor" href="#_importing_snapshots"></a>Importing Snapshots</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once a snapshot archive has been saved, you can simply restore it to your project by drag and drop.</p>
+</div>
+<div class="paragraph">
+<p><strong>To import a snapshot archive:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open a GraphXR project.</p>
+</li>
+<li>
+<p>Locate the <em>.graphxrsnapshots</em> archive file, and drag and drop it on your project&#8217;s graph space.</p>
+<div class="paragraph">
+<p>The set of snapshots appear in the <strong><em>Snapshots</em></strong> window, and the most recent snapshot is imported to the graph space.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Existing data if any is replaced with the most recent snapshot view.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>You can import any of the snapshots in the archived set as your new starting point. Click the arrow on the left edge of the <strong><em>Snapshots</em></strong> window to expand the archive and locate the snapshot you want.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_01_04_SnapshotStart720.png" alt="02 01 04 SnapshotStart720" width="720" height="420">
+</div>
+</div>
+</li>
+<li>
+<p>Click the snapshot&#8217;s <strong>cloud</strong> icon to import it.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_01_05_SnapshotEnd720.png" alt="02 01 05 SnapshotEnd720" width="720" height="420">
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+When you exit or log out, snapshots are deleted. Before you exit the project space, use <strong><em>Save Snapshots</em></strong> to export a snapshots archive to your local system that you can then import by drag and drop.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

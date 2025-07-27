@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Collecting data with Aggregate :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/transform-data/tr-aggregate.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../intro-overview.html"><strong>GraphXR User Guide</strong></a></li>
+    <li><a href="intro-transforms.html"><strong>Transform Data</strong></a></li>
+    <li><a href="tr-aggregate.html">Aggregate</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Collecting data with Aggregate</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong><em>Aggregate</em></strong> lets you gather properties from a node&#8217;s neighboring nodes or edges, optionally perform a function on those values, and write the result back to the origin node. You can use <strong><em>Aggregate</em></strong> to generate quantitative data relating to how graph data are connected. For example, in a telephone call log, you can aggregate the number of incoming and outgoing calls for a given caller, and write that aggregate value as a property on each caller node.</p>
+</div>
+<div class="paragraph">
+<p>The <strong><em>Aggregate</em></strong> transform starts from a node, collects neighbors connected by a specified relationship, calculates new aggregate property values, and writes them back to the original node as a new property.</p>
+</div>
+<div class="paragraph">
+<p>You can aggregate along either a property of neighbor nodes or a property of connecting edges.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_preset_formulas_for_an_aggregate_property"><a class="anchor" href="#_preset_formulas_for_an_aggregate_property"></a>Preset formulas for an Aggregate property</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Preset formulas are available for often-used calculations, as shown in the following table. You can also enter a <em>custom</em> javascript formula.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Preset</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Function</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Format</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>custom</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Editable format</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>take first</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copies the first value of another property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(neighborPropValues) =&gt; _.size(neighborPropValues) &gt; 0 ? neighborPropValues[0] : null</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>count</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Calculates a value based on number of connections.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(neighborPropValues) =&gt; _.size(neighborPropValues)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>sum</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sums the values of the selected property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(neighborPropValues) =&gt; _.sumBy(neighborPropValues,d =&gt; Number(d) | 0)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>average</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Averages the values of the selected property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(neighborPropValues) =&gt; <em>.sumBy(neighborPropValues,d =&gt; Number(d) | 0)/(</em>.size(neighborPropValues) &gt; 0 ? _.size(neighborPropValues) : 1)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>range</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finds the lowest and highest value of the selected property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(neighborPropValues) =&gt; <code>${_.minBy(neighborPropValues, d =&gt; Number(d) \| 0)} - ${_.maxBy(neighborPropValues, d =&gt; Number(d) \| 0)}</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>max</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finds the maximum value of the selected property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(neighborPropValues) =&gt; _.maxBy(neighborPropValues, d =&gt; Number(d) \| 0)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>min</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finds the minimum value of the selected property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(neighborPropValues) =&gt; _.minBy(neighborPropValues, d =&gt; Number(d) | 0)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Editing a preset moves it to the <em>custom</em> item, where you can test or run the modified formula.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_aggregating_connections_between_nodes"><a class="anchor" href="#_aggregating_connections_between_nodes"></a>Aggregating connections between nodes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We can use <strong><em>Aggregate</em></strong> to find the total number of lines spoken on each Game of Thrones episode.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Examples use the open-source dataset for the HBO Game of Thrones series. For a hands-on exercise see our <a href="../../g-learning/how-to-graphxr/how-to-graphxr.html" class="xref page">How to GraphXR</a> tutorials.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>A <em>Lines.csv</em> file includes data about the dialog in the show, and an <em>Episodes.csv</em> file includes details about each season and episode.</p>
+</div>
+<div class="paragraph">
+<p>We first transform data imported from these files as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the <a href="tr-fx.html" class="xref page"><strong><em>f(x)</em></strong> transform</a> to calculate <em>seasonEpisode</em> property values for the <em>Episodes</em> category. This allows us to match the <em>seasonEpisode</em> property in <em>the Lines</em> category.</p>
+</li>
+<li>
+<p>Use the <a href="tr-link.html" class="xref page"><strong><em>Link</em></strong> transform</a> to link lines to their respective episodes through a new <em>SPOKEN_ON</em> relationship.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>To aggregate connections between nodes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select one or more nodes. For example, click the <em>Episodes</em> category to select its nodes.</p>
+</li>
+<li>
+<p>Open the <strong><em>Transform</em></strong> panel and <strong><em>Aggregate</em></strong> tab, and enter the following:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>In <strong><em>Aggregate To Category</em></strong>, select <em>Episodes</em>.<br></p>
+</li>
+<li>
+<p>In <strong><em>Aggregate Along</em></strong> select the <em>SPOKEN_ON</em> relationship.<br></p>
+</li>
+<li>
+<p>Click <strong><em>Property from neighbor nodes</em></strong> and select the <em>lineCount</em> property.<br></p>
+</li>
+<li>
+<p>In the <strong><em>New Prop</em></strong> textbox, enter <em>totalLines</em>. This is the new aggregate property that will contain the total number of lines of dialog in an episode.<br></p>
+</li>
+<li>
+<p>In the <strong><em>Formula Name</em></strong> menu, select the <em>sum</em> preset. A sample result is displayed below the property name.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_03_01_Aggregate1320.png" alt="06 03 01 Aggregate1320" width="720" height="480">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong><em>Run</em></strong>. Error and completion messages appear below the <strong><em>Run</em></strong> button.</p>
+<div class="paragraph">
+<p>Since we are just adding a new property, the graph does not visually change.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_03_02_RunMessages720.png" alt="06 03 02 RunMessages720" width="720" height="240">
+</div>
+</div>
+</li>
+<li>
+<p>To review the new <em>totalLines</em> property, open the <strong><em>Table</em></strong> panel, click the <strong>Category</strong> tab, and select <em>Episodes</em>. You can also <strong><em>Export</em></strong> the entire table as a CSV, or open an <strong><em>Enhanced Table</em></strong> to edit and export the table.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_03_03_AggregateTable1320.png" alt="06 03 03 AggregateTable1320" width="720" height="480">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

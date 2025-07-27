@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Grove :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/graphxr-extensions/grove.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/Kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/data-add.html">Add Nodes and Edges</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../layouts/working-with-layouts.html"><strong>Working with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="grove.html">Grove</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Grove</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Grove is available in any GraphXR project. It provides developers with a javascript authoring environment that runs in the browser along with GraphXR. With Grove, you can develop Observable-inspired javascript notebooks that deliver reproducible, interactive data visualization, discovery and analysis. These can include customer-facing (read-only) dashboards, as well as collaborative (code-sharing) notebooks for data discovery and analytics.</p>
+</div>
+<div class="paragraph">
+<p>For developers, Grove leverages <a href="https://observablehq.com/@anjana/functional-javascript-first-steps">functional JavaScript</a> and open-source visualization packages such as <a href="https://d3js.org">D3</a>, <a href="https://vega.github.io/vega-lite/">Vega-Lite</a>, <a href="https://plotly.com/">Plotly</a>, and <a href="https://observablehq.com/@observablehq/introducing-observable-plot">Observable Plot</a> to delve deeper into high-dimensional data.</p>
+</div>
+<div class="paragraph">
+<p>The <strong><em>Grove Demo</em></strong> project includes example notebooks that developers can explore and copy to jump-start development of their own notebooks.</p>
+</div>
+<div class="paragraph">
+<p>A <strong><em>Grove API</em></strong> provides access to GraphXR functions needed to load, transform, and display graph data.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_grove_demo_quick_tour"><a class="anchor" href="#_grove_demo_quick_tour"></a>Grove Demo Quick Tour</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Example notebooks in the <strong><em>Grove Demo</em></strong> project use publicly available sample data sets to demonstrate Grove basics such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Connecting graph data + local CSV/JSON files to your Grove notebook.</p>
+</li>
+<li>
+<p>Using the Grove API to filter large datasets</p>
+</li>
+<li>
+<p>Using open-source infographic libraries</p>
+</li>
+<li>
+<p>Building interactive search tables</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_opening_a_grove_notebook"><a class="anchor" href="#_opening_a_grove_notebook"></a>Opening a Grove notebook</h3>
+<div class="paragraph">
+<p><strong>To open a Grove demo notebook:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Log in to GraphXR and open the <strong><em>Grove Demo</em></strong> project.</p>
+</li>
+<li>
+<p>Go to the <strong><em>Project</em></strong> panel and <strong><em>Extensions</em></strong> tab, and select <strong><em>Grove</em></strong> from the dropdown menu.</p>
+</li>
+<li>
+<p>Click the <strong><em>Notebooks</em></strong> icon (<strong><em>ctrl+Alt+P</em></strong>) at the upper right to see demo Notebooks.</p>
+<div class="paragraph">
+<p>Click the <strong><em>Overview</em></strong> or <strong><em>Share</em></strong> tabs to see notebooks available in the demo, either in tile or list view.</p>
+</div>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="/11_01_01_GroveNotebookPanel1320.png" alt="11 01 01 GroveNotebookPanel1320">
+</div>
+</div>
+</li>
+<li>
+<p>Click to select a demo notebook. (e.g. <em>Map</em>, entitled <em>Geospatial Analysis</em>), and dismiss the <strong><em>Notebooks</em></strong> panel. The selected notebook displays in the split screen. To use more of the screen you can click the <strong><em>Full Screen</em></strong> icon at the upper right to use the entire screen, or the <strong><em>Airplane</em></strong> icon to display the notebook in a separate window.</p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="/11_01_02_GroveTourMap1320.png" alt="11 01 02 GroveTourMap1320">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_navigating_the_notebook"><a class="anchor" href="#_navigating_the_notebook"></a>Navigating the notebook</h3>
+<div class="paragraph">
+<p>A Grove notebook consists of cells of Observable-inflected javascript code. The code does not have to execute in the order it appears. Instead, cells that display results or require user interaction can be placed at the top, and other processing code can be organized in cells below, often in an Appendix.</p>
+</div>
+<div class="paragraph">
+<p>The simple <em>Map</em> notebook above loads geospatial data for counties, and displays the data on a map, colored by region. A <strong><em>Load Counties</em></strong> button appears below the map.</p>
+</div>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="/11_01_03_GroveCells1320.png" alt="11 01 03 GroveCells1320">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Roll over the small circles at the far right margin to see names of the cells in the notebook. Clicking a circle takes you to the code cell. In this notebook, a GraphXR API call is used, and Vegalite and D3 javascript packages provide data parsing and geospatial mapping.</p>
+</li>
+<li>
+<p>Title bars located at the top of the window provide information about the project and the open notebook, ways to navigate Grove functions and to edit the code.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The top bar is divided into two, depending on the size of your browser window.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="/11_01_05_MoreMenu720.png" alt="11 01 05 MoreMenu720">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_title_bar_functions"><a class="anchor" href="#_title_bar_functions"></a>Title bar functions</h4>
+<div class="paragraph">
+<p>Depending on the width of your browser you see one or two title bars at the top that display:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The notebook name.</p>
+</li>
+<li>
+<p>Browser <strong><em>history</em></strong> icon. Click to display a list of the notebooks you&#8217;ve opened recently.</p>
+</li>
+<li>
+<p>A <strong><em>close</em></strong> icon to close and exit the notebook.</p>
+</li>
+<li>
+<p>Notebooks <strong><em>Panel</em></strong> icon, to display notebooks available to the project.</p>
+</li>
+<li>
+<p><strong><em>Folder</em></strong> icon, to navigate to the Grove project folder.</p>
+</li>
+<li>
+<p><strong><em>More</em></strong> icon (three dots), for a dropdown menu of additional functions:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Screen Shot</em></strong>, to take a screen shot of onscreen display.</p>
+</li>
+<li>
+<p><strong><em>Print</em></strong>, to print the displayed results.</p>
+</li>
+<li>
+<p><strong><em>Import Files</em></strong>, to browse and select data to be imported.</p>
+</li>
+<li>
+<p><strong><em>Export All</em></strong>, to export the entire notebook and its data in a .zip file.</p>
+</li>
+<li>
+<p><strong><em>Help</em></strong>, for a useful list of keyboard shortcuts for many notebook actions, organized under <strong><em>File Actions</em></strong>, <strong><em>Editing Code</em></strong>, and <strong><em>Cell Shortcuts</em></strong> headings.</p>
+</li>
+<li>
+<p><strong><em>Safe Mode</em></strong> a code-only view that lets you work with issues that could crash or hang the normal editor.</p>
+</li>
+<li>
+<p><strong><em>Full Screen</em></strong>, to toggle between full screen and split screen mode.</p>
+</li>
+<li>
+<p><strong><em>Settings</em></strong>, to set various project-wide settings such as auto-save frequency, default star and access permissions, and the code theme used.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Badges for the contributors to the notebook.</p>
+</li>
+<li>
+<p><strong><em>View Code</em></strong> and <strong><em>Edit Code</em></strong> icons. This displays the javascript code cells and makes them editable.</p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="/11_01_05_ViewEditCode720.png" alt="11 01 05 ViewEditCode720">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>An additional title bar includes information and action icons for the notebook, including:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Version</em></strong> icon. Click to display a <strong><em>Version Control</em></strong> history for this notebook.</p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="/11_01_07_VersionHistory720.png" alt="11 01 07 VersionHistory720">
+</div>
+</div>
+</li>
+<li>
+<p><strong><em>Publish</em></strong> (globe) icon. Click to display a <strong><em>Publish Settings</em></strong> dialog where you can change the permission level for the notebook or unpublish it.</p>
+</li>
+<li>
+<p>The latest published time</p>
+</li>
+<li>
+<p>File <strong><em>attachments</em></strong>, and connected databases(available only in private notebooks).</p>
+</li>
+<li>
+<p>The last publication time, folder location, and size of the notebook.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_accessing_shared_notebooks"><a class="anchor" href="#_accessing_shared_notebooks"></a>Accessing shared notebooks</h3>
+<div class="paragraph">
+<p>Once you share a notebook, it appears under the <strong><em>Share</em></strong> tab in the Notebooks panel.</p>
+</div>
+<div class="paragraph">
+<p>You can also access a shared notebook under the <strong><em>Grove Links</em></strong> tab. This may be a more immediate way to explore a shared notebook.</p>
+</div>
+<div class="paragraph">
+<p><strong>To open a Grove Link notebook:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to the GraphXR <strong><em>Project</em></strong> panel and <strong><em>Grove Links</em></strong> tab.</p>
+</li>
+<li>
+<p>Click the airplane icon next to the Notebook name (e.g. <em>Import NYERSDA csv</em>).</p>
+<div class="paragraph">
+<p>The notebook opens in a separate window.</p>
+</div>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="/11_01_20_GroveLinks720.png" alt="11 01 20 GroveLinks720">
+</div>
+</div>
+</li>
+<li>
+<p>Click the <strong><em>Load Data</em></strong> button in the example notebook, which loads selected csv data to the GraphXR graph space.</p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="/11_01_21_GroveLinks720.png" alt="11 01 21 GroveLinks720">
+</div>
+</div>
+<div class="paragraph">
+<p>If desired, you can review the code or make a copy of the example notebook.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

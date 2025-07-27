@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Using Collection Nodes :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/nav-select/collect-nodes.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/data-add.html">Add Nodes and Edges</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../layouts/working-with-layouts.html"><strong>Working with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../intro-overview.html"><strong>GraphXR User Guide</strong></a></li>
+    <li><a href="explore-select.html"><strong>Navigate and Select</strong></a></li>
+    <li><a href="collect-nodes.html">Use Collection Nodes</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Using Collection Nodes</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>GraphXR&#8217;s <strong><em>Collect Nodes / Explode Collections</em></strong> let you create and work with groups of nodes of a given category which are either unconnected (floating nodes) or connected to another node through a single relationship. Collections help you simplify a graph quickly and work with subsets of similar, related data.</p>
+</div>
+<div class="paragraph">
+<p>Collected nodes are gathered into special <strong><em>collection nodes</em></strong> indicated by four circles displayed inside a node.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_04_07a_CollectionIntro.png" alt="04 04 07a CollectionIntro" width="720" height="480">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A collection node is automatically given a temporary category label of the form <em>Collection Category label</em>. This label immediately appears in the <strong><em>Category</em></strong> legend when you collect nodes. In the legend, the number of collection nodes of each type is listed, along with the number currently selected. The following properties are created:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>collection</em>. A boolean set to <em>true</em>.</p>
+</li>
+<li>
+<p><em>count</em>. The number of nodes currently in the collection.</p>
+</li>
+<li>
+<p><em>label</em>. The label on the collection node, formed by combining the <em>count</em> and  <em>of</em> property values (e.g. <em>Photos(6)</em>).</p>
+</li>
+<li>
+<p><em>of</em>. The category label of the nodes in the collection (e.g. <em>Crimes</em>).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The <strong>edges</strong> of the nodes in the collection (if any) are temporarily collapsed into a single collection edge. The relationship name remains the same, but the direction is reversed. The count of edges in the legend does not distinguish between an edge that connects to a collection and one that connects to a single node. However, in a <strong><em>Table</em></strong> of the edges of that relationship, a collection&#8217;s <strong><em>Source</em></strong> identifier is the <em>label</em> property value for the collection node, rather than an identifier of a single edge.</p>
+</li>
+<li>
+<p>The <strong>information</strong> window for a collection node shows the category and number of nodes in the collection, and displays a list of the collected nodes.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Properties set as captions in the original collected category appear as headings in the information window. You can edit these at any time. In the <strong><em>Projects&gt;Category</em></strong> tab,  click the category, then select the <strong><em>Caption</em></strong> checkbox for each property in the order you want them to appear.</p>
+</li>
+<li>
+<p>To remove a node from the collection, click its minus icon.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_04_07b_CollectionEdgeInfo.png" alt="04 04 07b CollectionEdgeInfo" width="540" height="380">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_collections"><a class="anchor" href="#_creating_collections"></a>Creating collections</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A collection is created from nodes which are all connected by the same relationship.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If a node has connected edges of more than one relationship it can still be included in a collection.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For an example, we&#8217;ll collect <em>Photo</em> nodes connected to <em>Location</em> nodes through <em>TAKEN_AT</em> edges. The graph also includes <em>Author</em> nodes connected to the <em>Photo</em> nodes through different <em>TAKEN_BY</em> edges, as well as a few floating nodes (with no connections).</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_04_07c_PhotosUncollected.png" alt="04 04 07c PhotosUncollected" width="720" height="480">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>To create collections:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select <em>Photo</em> nodes using the <strong><em>Category</em></strong> list in the legend.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_04_07d_CollectionPhotosSelectAll.png" alt="04 04 07d CollectionPhotosSelectAll" width="720" height="480">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You can select specific nodes using any method. For example, to collect only the <em>Photo</em> nodes connected to specific <em>Locations</em>, select the <em>Location</em> nodes, right-click and choose <strong><em>Select &gt; Neighbor Nodes</em></strong>. Also note that if nothing is selected, any valid collections in the entire graph are created automatically.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_04_07e_CollPhotosSelTwo.png" alt="04 04 07e CollPhotosSelTwo" width="420" height="240">
+</div>
+</div>
+</li>
+<li>
+<p>Click <strong><em>Collect Nodes</em></strong> on the toolbar, or right-click and choose <strong><em>Actions &gt; Collect Nodes</em></strong>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nodes of a single category connected by zero or one edge to another node are collected into separate collection nodes and disappear from the graph.</p>
+</li>
+<li>
+<p>The new collection category (<em>Collection Photos</em>) appears in the <strong><em>Category</em></strong> legend.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_04_07f_CollectionPhotosDone.png" alt="04 04 07f CollectionPhotosDone" width="720" height="420">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_editing_collections"><a class="anchor" href="#_editing_collections"></a>Editing collections</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>To inspect and edit a collection:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Double click to select a collection node and open its information window.</p>
+<div class="paragraph">
+<p>A list of the nodes in the collection is displayed.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_04_07g_CollectionInfoPanel.png" alt="04 04 07g CollectionInfoPanel" width="540" height="380">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>You can now:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click the <strong><em>minus</em></strong> (<strong>-</strong> ) icon in the information panel to remove a node from a collection. The removed node and its edge appears outside the collection.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_04_07h_CollRemoveNodes.png" alt="04 04 07h CollRemoveNodes" width="520" height="560">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+You can select removed nodes and click <strong><em>Collect Nodes</em></strong> again to add them back to the collection.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Select additional nodes (for example, after pulling new data into the graph), and click <strong><em>Collect Nodes</em></strong> to add eligible nodes to your collections.</p>
+</li>
+<li>
+<p>Open the <strong><em>Table</em></strong> panel to review a table of collection nodes and their properties, enter a search, or click on a table row to center the graph on the node.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_deleting_exploding_collections"><a class="anchor" href="#_deleting_exploding_collections"></a>Deleting (exploding) collections</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>To explode a collection:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select one or more collection nodes using any method, or deselect all data to explode all collections.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_04_07i_CollectionExplodeOne.png" alt="04 04 07i CollectionExplodeOne" width="540" height="380">
+</div>
+</div>
+</li>
+<li>
+<p>Click <strong><em>Explode Collections</em></strong> on the toolbar, or right-click and choose <strong><em>Actions &gt; Explode Nodes</em></strong>.</p>
+<div class="paragraph">
+<p>All nodes in the selected collections are returned to the graph and those collection nodes are deleted.</p>
+</div>
+<div class="paragraph">
+<p>A collection category is removed when all its collection nodes have been exploded.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_04_07j_CollectionExplodeDone.png" alt="04 04 07j CollectionExplodeDone" width="420" height="240">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

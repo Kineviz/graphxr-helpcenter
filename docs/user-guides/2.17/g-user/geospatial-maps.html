@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Display Data on a World Map :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/geospatial-maps.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../user-guides/2.17/index.html"><img src="../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="intro-overview.html"><strong>GraphXR User Guide</strong></a></li>
+    <li><a href="geospatial-maps.html"><strong>Display Data on a World Map</strong></a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Display Data on a World Map</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong><em>Map</em></strong> panel lets you position nodes on a world map.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The map servers provided by default are Mapbox, Google, and OpenStreetMap.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>When you open the <strong><em>Map</em></strong> panel, a world map is displayed and nodes in the project space that have latitude and longitude property values are automatically dropped onto the map.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/09_01_01_MapView.png" alt="09 01 01 MapView" width="720" height="480">
+</div>
+</div>
+<div class="paragraph">
+<p>Nodes with no latitude and longitude coordinates which are connected to those on the map are also displayed with their connecting edges, positioned above the map. By default, a force-directed layout is used for these nodes, unless a geometric layout has been applied to them.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/09_01_02_PhotoMap.png" alt="09 01 02 PhotoMap" width="720" height="380">
+</div>
+</div>
+<div class="paragraph">
+<p>Nodes with geospatial coordinates are pinned to the map until you hide the map, at which time they are released and displayed in the default force-directed layout.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_format_for_latitude_and_longitude_coordinates"><a class="anchor" href="#_format_for_latitude_and_longitude_coordinates"></a>Format for Latitude and Longitude coordinates</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Geospatial data must be encoded in the data in separate latitude(<em>lat</em>) and longitude(<em>lng</em>) properties as follows:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"><strong>Property Name</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Example Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Latitude</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>lat</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-74.006393</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Longitude</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>lng</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>40.714172</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The <em>lat</em> and <em>lng</em> values must be floating point, not strings. Most lat-long data are encoded that way, but if not, strings can be transformed using <em>toNumber</em> or a custom transform in the <strong><em>f(x)</em></strong> transform panel.</p>
+</div>
+<div class="paragraph">
+<p>The .KML and .KMZ (<a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language">Keyhole Markup Language/Keyhole Markup Zip</a>) files used by mapping applications such as Google Earth contain appropriately encoded coordinates, and you can map these files directly in GraphXR.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/09_01_03_LatLongKMZ.png" alt="09 01 03 LatLongKMZ" width="720" height="380">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_navigating_and_working_with_mapped_data"><a class="anchor" href="#_navigating_and_working_with_mapped_data"></a>Navigating and working with mapped data</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you click <strong><em>Map</em></strong> in the <strong><em>Main Menu</em></strong>, the <strong><em>Map</em></strong> panel opens, automatically displaying nodes pinned to their geospatial locations on a 2D map surface rendered in the 3D graph space.</p>
+</div>
+<div class="paragraph">
+<p>Desktop navigation and data selection is the same as for other layouts. You can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Navigate the mapped nodes using any GraphXR navigation method (for example, pan, zoom, rotate, <strong><em>Center To</em></strong> a single node or selection of nodes, and <strong><em>Fly Out</em></strong> to view all the mapped data)</p>
+</li>
+<li>
+<p>Select nodes using any selection method, and perform any of the data transformations, editing, or tagging available in the graph space.</p>
+</li>
+<li>
+<p>Save data views or snapshots for use in data visualization.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For example, we can tag groups of nodes according to regions on the map. Select the nodes, and click <strong><em>Tag</em></strong> to open the <strong><em>Manager Tags</em></strong> dialog.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/09_01_03a_TaggedMapTagMGR.png" alt="09 01 03a TaggedMapTagMGR" width="540" height="320">
+</div>
+</div>
+<div class="paragraph">
+<p>YOu can also click <strong><em>Save Tags as Property</em></strong> to save the tags as a <strong>_ <em>graphxrtags</em></strong> property, then used the <strong><em>Property</em></strong> list set persistent colors for each value.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If tags aren&#8217;t saved as a property, they appear as white bubbles in the legend&#8217;s <strong><em>Tags</em></strong> list. You can click the list bubble to select these tagged nodes, but since they don&#8217;t appear in the <strong><em>Property</em></strong> list, you cannot assign a color or icon.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In the map below, tags have been created to assign regions to sets of nodes.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/09_01_03b_TaggedMapTagProps.png" alt="09 01 03b TaggedMapTagProps" width="720" height="380">
+</div>
+</div>
+<div class="paragraph">
+<p>You can use a tag to select nodes by region then click the <strong><em>Center To</em></strong> icon to zoom in to the center point of the selection on the map.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_the_map_panel"><a class="anchor" href="#_using_the_map_panel"></a>Using the Map Panel</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Click the <strong><em>Map</em></strong> menu item to display the <strong><em>Map</em></strong> panel, which includes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Show Map</em></strong> to re-set the map (for example, after you have zoomed in to selected data, or flown away to a search location).</p>
+</li>
+<li>
+<p><strong><em>Hide Map</em></strong> to dismiss the map and return the mapped data to the default force layout.</p>
+</li>
+<li>
+<p><strong><em>Search Location</em></strong> bar to enter a place name and fly to that location.</p>
+</li>
+<li>
+<p><strong><em>Map Control</em></strong> to reposition the map and adjust its boundaries.</p>
+</li>
+<li>
+<p><strong><em>Setting</em></strong> to select a map server, install custom map servers, and set <strong><em>Mode</em></strong> and <strong><em>Auto Fitting</em></strong> options.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/09_01_04a_MapPanel720.png" alt="09 01 04a MapPanel720" width="520" height="280">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_using_show_map_and_hide_map"><a class="anchor" href="#_using_show_map_and_hide_map"></a>Using Show Map and Hide Map</h3>
+<div class="paragraph">
+<p>Opening the <strong><em>Map</em></strong> panel automatically displays a map with boundaries set according to the coordinates in your data, and drops your graph data onto it.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click <strong><em>Hide Map</em></strong> to hide the map and return the data to the default force layout.</p>
+</li>
+<li>
+<p>Click <strong><em>Show Map</em></strong> to:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Show the initial map again after using <strong><em>Hide Map</em></strong>.</p>
+</li>
+<li>
+<p>Reset the map to its initial position after using <strong><em>Search Location</em></strong> or <strong><em>Map Control</em></strong>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can click the <strong><em>Map</em></strong> panel icon to dismiss the panel. This only removes the panel, not the map. When you are done working with a map, click <strong><em>Map</em></strong> to open the panel, then click <strong><em>Hide Map</em></strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_flying_to_a_search_location"><a class="anchor" href="#_flying_to_a_search_location"></a>Flying to a Search Location</h3>
+<div class="paragraph">
+<p>You can fly to any named world location or region by entering its name in the <strong><em>Search Location</em></strong> bar. There does not need to be any mapped data for that location.</p>
+</div>
+<div class="paragraph">
+<p><strong>To fly to a named location:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the <strong><em>Map</em></strong> panel.</p>
+</li>
+<li>
+<p>In the <strong><em>Search Location</em></strong> bar, enter the name of a location (e.g. <em>United Kingdom</em>) and click it on the search list.</p>
+<div class="paragraph">
+<p>The map centers on the named location.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/09_01_04b_SearchMap.png" alt="09 01 04b SearchMap" width="720" height="380">
+</div>
+</div>
+</li>
+<li>
+<p>To reset the map, clear the search by clicking the <strong><em>X</em></strong> icon in the search bar, then click <strong><em>Show Map</em></strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_map_control"><a class="anchor" href="#_using_map_control"></a>Using Map Control</h3>
+<div class="paragraph">
+<p>A map boundary is initially set based on the locations in the graph data, but a wider view is often desirable, for example, to display additional areas for which there is no data. <strong><em>Map Control</em></strong> mode lets you adjust the map boundary temporarily.</p>
+</div>
+<div class="paragraph">
+<p>When you click <strong><em>Map Control</em></strong>, 3D navigation is de-activated.</p>
+</div>
+<div class="paragraph">
+<p><strong>To adjust map boundaries:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the <strong><em>Map</em></strong> panel and click <strong><em>Map Control</em></strong>.</p>
+<div class="paragraph">
+<p>The button turns blue, indicating you are in map control mode.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/09_01_06_MapControl1080.png" alt="09 01 06 MapControl1080" width="520" height="280">
+</div>
+</div>
+</li>
+<li>
+<p>Set the map boundaries with the following mouse controls or their equivalent keyboard shortcuts:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pan (<strong><em>left mouse click_drag</em></strong>)<br></p>
+</li>
+<li>
+<p>Zoom (<strong><em>mouse scroll</em></strong> or <strong><em>2</em></strong>+<strong><em>left mouse click</em></strong> <strong>drag</strong>)</p>
+</li>
+<li>
+<p>Click <strong><em>Map Control</em></strong> to exit and resume 3D navigation with the adjusted map.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Whenever you click <strong><em>Show Map</em></strong>, map boundaries are reset to the initial area bounded by the locations in the data. To retain adjusted boundaries you set in <strong>Map Control</strong>, de-select the <strong><em>AutoFitting</em></strong> checkbox in the <strong><em>Setting</em></strong> dialog.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_map_setting_options"><a class="anchor" href="#_using_map_setting_options"></a>Using Map Setting options</h3>
+<div class="paragraph">
+<p>Map <strong><em>Setting</em></strong> options let you:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select an installed map server (e.g. MapBox, Google or OpenStreetMap)</p>
+</li>
+<li>
+<p>Add or delete custom map servers.</p>
+</li>
+<li>
+<p>Set <strong><em>Wall</em></strong> or <strong><em>Floor</em></strong> mode.</p>
+</li>
+<li>
+<p>Select or de-select the <strong><em>Auto Fitting</em></strong> option.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/09_01_05_MapSetting720.png" alt="09 01 05 MapSetting720" width="420" height="340">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

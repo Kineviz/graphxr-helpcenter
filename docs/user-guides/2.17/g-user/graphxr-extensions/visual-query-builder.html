@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Visual Query Builder :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/graphxr-extensions/visual-query-builder.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="visual-query-builder.html">Visual Query Builder</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Visual Query Builder</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Visual Query Builder extension lets you build no-code <strong><em>Cypher</em></strong> queries from within a GraphXR project. You connect visual blocks that represent category, relationship, and property values to form a graph pattern, automatically generate a Cypher query, and run it. Once you&#8217;ve run the query, you can use the <strong><em>In-Memory Search</em></strong> function to find and select patterns in the returned data.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/v2_17/10_01_01_VQBMovie1320.png" alt="10 01 01 VQBMovie1320">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You can enter and run any Cypher query in GraphXR&#8217;s <strong><em>Query</em></strong> panel. But with Visual Query Builder, you can start using Cypher&#8217;s most useful graph pattern-matching functions right away, which lets you explore your graph data much more quickly and easily.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+To quickly connect Neo4j with GraphXR, <a href="https://neo4j.com/download/">download Neo4j Desktop</a> and <a href="https://neo4j.com/blog/graphxr-graph-app-neo4j-desktop/">follow the steps</a> to add GraphXR as a graph app onto Neo4j.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cypher_and_pattern_matching"><a class="anchor" href="#_cypher_and_pattern_matching"></a>Cypher and Pattern Matching</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cypher, developed by Neo4j, is a query language for selecting, presenting, and transforming graph data, and for managing a graph database.</p>
+</div>
+<div class="sect2">
+<h3 id="_patterns_visual_query_builder_can_match"><a class="anchor" href="#_patterns_visual_query_builder_can_match"></a>Patterns Visual Query Builder can match</h3>
+<div class="paragraph">
+<p>Visual Query Builder focuses on Cypher&#8217;s capability to match patterns and return data as nodes and edges. This type of Cypher query is generally structured as follows:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 62.5%;">
+<col style="width: 37.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Cypher</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>MATCH</strong> <strong>(a:Category) - [b: RELATIONSHIP] -&gt; (c:Category) &#8230;&#8203;etc.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Match (i.e., find) specified graph patterns, usually based on category labels and relationship labels and directions. Multiple MATCH statements can be used to query for branched patterns. <strong><em>Note:</em></strong> Although you can specify property values in a MATCH statement, a <strong><em>WHERE</em></strong> clause is usually used.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>WHERE</strong> <strong>a.PropertyName1 = Value AND &#8230;&#8203;etc.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Qualifiers based on property values in the specified nodes and edges. To match values, Visual Query Builder provides <strong><em>Equals</em></strong>, <strong><em>Greater Than</em></strong>, <strong><em>Less Than</em></strong>, <strong><em>Like</em></strong>, or <strong><em>In</em></strong> operators.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>RETURN * LIMIT 25</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Return matching nodes and edges, optionally limiting the number of nodes returned.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+To learn and use additional Cypher capabilities such as specifying ranges of values, returning property data as tables or lists, merging or parsing data, creating new nodes and edges, and managing and tuning query performance, see Neo4j&#8217;s free learning resources, including: <a href="https://neo4j.com/events/world/training/">Cypher Classroom training</a>,  <a href="https://neo4j.com/graphacademy/online-training/introduction-to-neo4j-40/">Cypher Online training</a>, and <a href="https://neo4j.com/sandbox/?ref=developer-cypher">Hands-on in Sandbox guides</a> (use command <code>:play cypher</code>)
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_from_visual_query_to_cypher"><a class="anchor" href="#_from_visual_query_to_cypher"></a>From Visual Query to Cypher</h3>
+<div class="paragraph">
+<p>A basic Cypher query on the Neo4j open source <strong><em>Movie</em></strong> database is shown below. It finds patterns where a <em>Person</em>  node whose <em>name</em> property value includes &#8220;Tom&#8221; has <em>ACTED_IN</em> a <em>Movie</em>, and returns the first 25 found:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>MATCH (a:Person)-[b:ACTED_IN]-(e:Movie) MATCH (a:Person)-[d:DIRECTED]-(e:Movie) WHERE a.name =~ ".Tom." RETURN * LIMIT 25</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To build this query in Visual Query Builder, you use <em>Person</em> and <em>Movie</em> <strong><em>Category</em></strong> blocks and connect them through sockets to an <em>ACTED_IN</em> <strong><em>Relationship</em></strong> block. You then specify the <em>name</em> property by connecting a <strong><em>Property</em></strong> block to the <em>Person</em>  <strong><em>Category</em></strong> block through property sockets, as shown below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/v2_17/10_01_03_VQBMovieCypherProps720.png" alt="10 01 03 VQBMovieCypherProps720">
+</div>
+</div>
+<div class="paragraph">
+<p>Once you&#8217;ve built a query, you can copy it to the clipboard, and paste it into GraphXR&#8217;s <strong><em>Query</em></strong> panel and <strong><em>Cypher</em></strong> tab. This enables you to save, edit, and even extend your query by using additional Cypher functions not available in Visual Query Builder.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Cypher query capabilities such as CREATE or MERGE are only available if the correct user privileges are set in Neo4j.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_building_visual_queries"><a class="anchor" href="#_building_visual_queries"></a>Building Visual Queries</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Visual Query Builder provides the workspace and building blocks to build and run a Cypher query (or In-Memory Search) for graph patterns based on categories, relationships, and their properties. You can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Build and run a Cypher query:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Click a <strong><em>Category</em></strong>, <strong><em>Relationship</em></strong>, or <strong><em>Property</em></strong> building block to add it to the workspace, select its available specifications, and connect the building blocks using the provided sockets.</p>
+<div class="paragraph">
+<p>You can query for patterns in just one category of nodes, or one that links any number of categories and directed relationships.</p>
+</div>
+</li>
+<li>
+<p>Click the <strong><em>Cypher Query</em></strong> block at any time to see the query being built. In its <strong><em>Limit</em></strong> field, you can edit the number of nodes to return. When the query is built, click its run arrow to run the query.</p>
+</li>
+<li>
+<p>Modify an existing query.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Use <strong><em>In Memory Search</em></strong> to find and highlight subgraphs in the returned data.</p>
+</li>
+<li>
+<p>Export and import visual queries as JSON files.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/v2_17/10_01_04_VQBInterface1320.png" alt="10 01 04 VQBInterface1320">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+We&#8217;ll build visual queries on the Neo4j <em>Movies</em> database available through the GraphXR demo project <em>VQB Movies</em>. It includes <em>Person</em>, <em>Movie</em>, and <em>Distributor</em> categories, linked by relationships including <em>ACTED_IN</em>, <em>DIRECTED</em>, and  <em>REVIEWED</em>. To explore the project, log in, go to the <strong><em>Project&gt;Data</em></strong> tab, and load a saved data view.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_build_a_query_on_a_single_category"><a class="anchor" href="#_build_a_query_on_a_single_category"></a>Build a query on a single Category</h3>
+<div class="paragraph">
+<p>A simple pattern is one that looks for specific nodes of only one category. The following example shows a query for <em>Person</em> nodes whose <em>name</em> property includes &#8220;Tom&#8221;.</p>
+</div>
+<div class="paragraph">
+<p><strong>To build a visual query on a single category:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Log in to GraphXR, and click to open the <em>VQB Movies</em> Demo project.</p>
+</li>
+<li>
+<p>In the <strong><em>Projects</em></strong> panel and <strong><em>Extensions</em></strong> tab select <strong><em>Visual Query Builder</em></strong> from the dropdown menu.</p>
+</li>
+<li>
+<p>Click the <strong><em>Cypher Query</em></strong> block to add it to the workspace and view the query as it&#8217;s being built.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You can add the <strong><em>Cypher Query</em></strong> block at any time.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Click a <strong><em>Category</em></strong> block to add it to the workspace, click its settings icon, and select the <em>Person</em> label. We&#8217;ll query for a specific name, so click its <em>name</em> property and click <strong><em>OK</em></strong>.</p>
+</li>
+<li>
+<p>Now click to add a <strong><em>Property</em></strong> block. We use it to specify the <em>name</em> of a person   (e.g. &#8220;Tom&#8221;). Click and drag to connect its socket to the <em>name</em> socket on the <em>Person</em> block.</p>
+</li>
+<li>
+<p>On the <strong><em>Property</em></strong> block, select <strong><em>Like</em></strong> from the dropdown menu, and enter <em>Tom</em>.</p>
+</li>
+<li>
+<p>Click the run arrow on the <strong><em>Cypher Query</em></strong> block.</p>
+<div class="paragraph">
+<p>Four matching <em>Person</em> nodes are returned to the project space.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/v2_17/10_01_05_VQBPersonOnly1320.png" alt="10 01 05 VQBPersonOnly1320">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_build_a_query_on_a_multiple_categories_relationships_and_properties"><a class="anchor" href="#_build_a_query_on_a_multiple_categories_relationships_and_properties"></a>Build a query on a multiple Categories, Relationships, and properties</h3>
+<div class="paragraph">
+<p>A more complicated pattern can specify more than one category and their properties, as well as multiple relationships of interest.</p>
+</div>
+<div class="paragraph">
+<p>The following example shows a query for <em>Person</em> nodes with a <em>name</em> that includes &#8220;Tom&#8221;, who <em>ACTED_IN</em> a <em>Movie</em> that was <em>released</em> after 1990.</p>
+</div>
+<div class="paragraph">
+<p><strong>To build a visual query for multiple category and relationship patterns:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open Visual Query Builder. Click the <strong><em>Cypher Query</em></strong> block to add it to the workspace so that you can view the query as it&#8217;s being built.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You can add the <strong><em>Cypher Query</em></strong> block at any time.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Click two category blocks and a relationship block to add them to the workspace.</p>
+</li>
+<li>
+<p>Click the settings icons on the category blocks and set them as follows:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Person</em>, with the <em>name</em> property selected, then click <strong><em>OK</em></strong>.</p>
+</li>
+<li>
+<p><em>Movie</em> , with the <em>released</em> property selected, then click <strong><em>OK</em></strong>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If you are starting from the previous simple query, just add one more category block.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click the settings icon on the relationship block, and set it to <em>ACTED_IN</em>.</p>
+</li>
+<li>
+<p>Click and drag between the white sockets to connect the category and relationship blocks.</p>
+</li>
+<li>
+<p>Click to add two <strong><em>Property</em></strong> blocks, and click and drag to connect their property sockets as follows:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>To the <em>name</em> socket on the <em>Person</em> category block (if not already connected). Then select <strong><em>Like</em></strong> from the dropdown menu and enter <em>Tom</em>.</p>
+</li>
+<li>
+<p>To the <em>released</em> socket on the <em>Movie</em> category block. Then select <strong><em>Greater than</em></strong> from the dropdown menu, and enter <em>1990</em>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click the run icon on the Cypher query block.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/v2_17/10_01_06_VQBPersonMovie1320.png" alt="10 01 06 VQBPersonMovie1320">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>If the query does not load, or returns unexpected results, see <a href="#troubleshooting-visual-queries">Troubleshooting</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_saving_and_sharing_a_visual_query"><a class="anchor" href="#_saving_and_sharing_a_visual_query"></a>Saving and sharing a Visual Query</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can save and share a visual query by exporting (or importing) it as a .JSON file. When you re-enter a project after exiting, you can then re-load the visual query into Visual Query Builder. This also lets you share a visual query with another user.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/10_01_17_SaveExport960.png" alt="10 01 17 SaveExport960" width="420" height="380">
+</div>
+</div>
+<div class="paragraph">
+<p><strong><em>To save a visual query</em></strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click the <strong><em>Export</em></strong> icon at the top of the building blocks list.</p>
+<div class="paragraph">
+<p>A .JSON file is exported to your system and appears in your browser&#8217;s Downloads tab.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong><em>To import a visual query</em></strong>:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the Visual Query Builder, and in the building blocks panel, click the <strong><em>Import</em></strong> icon at the top of the building blocks list.</p>
+</li>
+<li>
+<p>Navigate to the .JSON file (typically, in your Downloads), select it and click <strong><em>Open</em></strong> to import it to the workspace.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You can click the document icon at the lower right of the <strong><em>Cypher Query</em></strong> block to copy the Cypher query to the clipboard. Unlike .JSON export, this copies the Cypher query but does not preserve the visual building blocks. This can still be useful if you want to edit or extend a query quickly in GraphXR. From the clipboard, you can paste the query (Ctrl+V)into GraphXR&#8217;s <strong><em>Query&gt;Cypher</em></strong> panel. Click the plus <span class="image"><img src="../_images/add.png" alt="(plus)"></span> icon to save the query before you edit it further.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_editing_a_visual_query"><a class="anchor" href="#_editing_a_visual_query"></a>Editing a Visual Query</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once you&#8217;ve built and run a visual query you can continue to add and connect more building blocks, or remove blocks by dragging them to the <strong><em>Trash</em></strong> can icon at the lower right. The query in the <strong><em>Cypher Query</em></strong> block is immediately updated.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/10_01_07_VQBClearQuery960R.png" alt="10 01 07 VQBClearQuery960R" width="420" height="380">
+</div>
+</div>
+<div class="paragraph">
+<p>To delete an entire query and start over with an empty workspace, click the <strong><em>Clear</em></strong> icon located to the right of the <strong><em>Export</em></strong> icon at the top of the building blocks panel.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_in_memory_search"><a class="anchor" href="#_using_in_memory_search"></a>Using In Memory Search</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once graph data have been returned to GraphXR, you can also find and select subgraphs. Simply build (or import) a visual query and use <strong><em>In Memory Search</em></strong>, instead of the <strong><em>Cypher Query</em></strong> block.  Subgraphs can be single nodes, as in this query for any Twitter user with a <em>screen_name</em> like &#8220;Jeff&#8221;&#8230;&#8203;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/v2_17/10_01_08_InMemoryJeffs720R.png" alt="10 01 08 InMemoryJeffs720R">
+</div>
+</div>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>or connected nodes, as in this query for influential users connected through a specific RETWEETED relationship:</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/v2_17/10_01_09_InMemorySelectAll720R.png" alt="10 01 09 InMemorySelectAll720R">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The nodes returned to the search list are labeled with the caption you set in the GraphXR <strong><em>Project&gt;Category</em></strong> panel. This may be (but isn&#8217;t necessarily) the property name you used in the query pattern. You can change the caption at any time.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>To run an In-Memory Search:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In this example a node for each county in the United States has been imported to the GraphXR project space. To query for the counties in a particular state, we first click the <strong><em>In-Memory Search</em></strong> block to add it to the workspace.</p>
+</li>
+<li>
+<p>Increase the value in the <strong><em>Limit</em></strong> field to return more than the default 5 subgraphs.</p>
+</li>
+<li>
+<p>Click the <strong>run</strong> arrow at the top right of the block.</p>
+<div class="paragraph">
+<p>A list of matching nodes is displayed.</p>
+</div>
+</li>
+<li>
+<p>Click an item on the list to select the node or pattern in the graph space. Or, click <strong><em>Select All</em></strong> to select all the patterns on the list.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/v2_17/10_01_10_InMemoryCounties720R.png" alt="10 01 10 InMemoryCounties720R">
+</div>
+</div>
+<div class="paragraph">
+<p>With the data selected, other GraphXR functions can be used. For example, you can <strong><em>Tag</em></strong> a selection, or use <strong><em>Inverse</em></strong> to select and then temporarily <strong><em>Hide</em></strong> or <strong><em>Delete</em></strong> all the other data.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_case_study_visual_queries_for_social_media_research"><a class="anchor" href="#_case_study_visual_queries_for_social_media_research"></a>Case Study: Visual Queries for Social Media Research</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Example visual queries were built on Twitter data collected for Kineviz' <em>Elections 2020</em> project. In addition to Twitter <em>Users</em>, this Neo4j database includes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Tweets</em> and the <em>Media</em> tweeted.</p>
+</li>
+<li>
+<p><em>RETWEETED</em> relationships were created between <em>Users</em> for several months of the 2020 US election cycle.</p>
+</li>
+<li>
+<p>Additional generated properties including <em>User</em> properties such as gender, age, race, language used, and the probability that the user is a bot, as well as <em>Tweet</em> properties such as flags for fake news and hate speech.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_query_on_influential_twitter_users"><a class="anchor" href="#_query_on_influential_twitter_users"></a>Query on Influential Twitter Users</h3>
+<div class="paragraph">
+<p>This query is for influential Twitter users who are probably bots and who have retweeted to other influential users in a particular month.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the Neo4j graph data connection is through relationships of the form <em>RETWEETED_YYYY_MM</em>.</p>
+</li>
+<li>
+<p>Influential bot users are those with a <em>followers_count</em> property value greater than 20,000 and a <em>boto_prob</em> (i.e. calculated probability) of 0.90 or greater.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/v2_17/10_01_11_TwitterChain960R.png" alt="10 01 11 TwitterChain960R">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_query_for_linkage_between_nodes"><a class="anchor" href="#_query_for_linkage_between_nodes"></a>Query for linkage between nodes</h3>
+<div class="paragraph">
+<p>Since graph data is often used to model complex connections (for example between people or ideas, time series, or spatial patterns), it can be interesting focus on chains of connected nodes. We can query for such a pattern by setting a <strong><em>length</em></strong> in the settings of a <strong><em>Relationship</em></strong> block.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/10_01_14_TwitterRelLengthSelector960R.png" alt="10 01 14 TwitterRelLengthSelector960R" width="420" height="380">
+</div>
+</div>
+<div class="paragraph">
+<p>The <strong><em>length</em></strong> setting provides a dropdown menu and text boxes for entering a number:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>equal</em></strong>. Enter a whole number. Returns nodes connected via up to that number of the specified edge. (e.g. enter '3' to return nodes with 1, 2, or 3 of the specified connections).</p>
+</li>
+<li>
+<p><strong><em>greater than</em></strong>. Enter a whole number. Returns nodes with that number or greater of connections via the specified edge. (e.g. enter '3' to return nodes with 3 or more of the specified connections)</p>
+</li>
+<li>
+<p><strong><em>between</em></strong> - Two text boxes appear. Enter the lower and higher number to return nodes with that range of the specified edges. (e.g. enter 2-5 to return nodes with 2, 3, 4, or 5 of the specified edge.)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>On the Twitter data, we could query for <em>Users</em> who retweeted to one another during September 2020 (i.e., with the relationship <em>RETWEETED_2020_09)</em> and are 3 to 5 hops to other <em>Users</em> via that relationship.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/10_01_15_TwitterRelBetween960R.png" alt="10 01 15 TwitterRelBetween960R" width="420" height="380">
+</div>
+</div>
+<div class="paragraph">
+<p>The Cypher query now includes the length in the MATCH statement as a property of the relationship, as follows: MATCH (a:User)-[b:RETWEETED_2020_09*3..5]-&gt;(c:User)</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/10_01_16_TwitterRelQuery1080R.png" alt="10 01 16 TwitterRelQuery1080R" width="720" height="380">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_visual_query_builder_quick_reference"><a class="anchor" href="#_visual_query_builder_quick_reference"></a>Visual Query Builder Quick Reference</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>To&#8230;&#8203;</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Action</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add a block to the workspace.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the block.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move a block.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click and drag.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connect a block.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click a socket and drag the line to another socket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disconnect a block.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the socket a line is connected TO, and drag the line off.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delete a block or query.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click and drag to the Trash can.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clear the workspace of all blocks and queries.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the <strong><em>Clear</em></strong> (brush) icon at the upper left side of the block selector panel.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set a <strong><em>Category</em></strong> or <strong><em>Relationship</em></strong> label.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the settings icon on the <strong><em>Category</em></strong> or <strong><em>Relationship</em></strong> block and select a label.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set a <strong><em>Relationship</em></strong> direction.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the settings icon on a <strong><em>Relationship</em></strong> block, click the <strong><em>Advanced</em></strong> dropdown, then the <strong><em>Select Direction</em></strong> menu and select <strong><em>Right</em></strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specify a <strong><em>Property</em></strong> value.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the dropdown menu on the <strong><em>Property</em></strong> block to select an operator (<strong><em>Equals</em></strong>, <strong><em>Greater Than</em></strong>, <strong><em>Less Than</em></strong>, <strong><em>Like</em></strong>, or <strong><em>In</em></strong>) and enter the value in the text box.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Run a visual Cypher query.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the <strong>run</strong> arrow on the <strong><em>Cypher Query</em></strong> block.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Run an In-Memory Search</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">After running a visual query in the workspace, click the <strong><em>In-Memory Search</em></strong> block and its <strong>run</strong> arrow.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Export a visual query.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the <strong><em>Export</em></strong> icon at the top left of the block selector panel.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Import a visual query.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the <strong><em>Import</em></strong> icon at the top left of the block selector panel, navigate to the .JSON file and click to open.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zoom in or out on the workspace.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use the mouse wheel.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reposition the entire visual query.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click on the workspace and drag.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dismiss the block selector panel.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the X icon at the upper right of the panel.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display Visual Query Builder as a split screen or a full screen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the <strong><em>Split Screen</em></strong> or <strong><em>Full Screen</em></strong> icon at the upper right of the <strong><em>Extensions</em></strong> panel. While building a query, you can click the split screen or full screen icons at any time to expand the workspace.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display Visual Query Builder in a separate window.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click the <strong><em>Airplane</em></strong> icon at the upper right of the <strong><em>Extensions</em></strong> panel. The query you are building will persist, and will also persist if you close the separate window and re-open Visual Query Builder in the <strong><em>Extensions</em></strong> panel.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting_visual_queries"><a class="anchor" href="#_troubleshooting_visual_queries"></a>Troubleshooting Visual Queries</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_common_issues"><a class="anchor" href="#_common_issues"></a>Common Issues</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 40%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Issue</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Possible Resolution</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An error message indicates that a connection to the server was not established.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Most likely, the Cypher query is not well-formed. Check that you&#8217;ve actually connected the blocks, entered valid property values, and that the query has a valid number for the LIMIT.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The query loads but does not return any results.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If a query does not return results, but you know that matching data exist in the database, verify that entries for property values are spelled correctly, and that you have chosen the correct <strong>Property</strong> operator:</p>
+<p class="tableblock">• <strong>Greater Than</strong> and <strong>Less Than</strong> operators accept only numerical values<br>
+• <strong>Like</strong> accepts text strings.<br>
+• <strong>Equals</strong> and <strong>In</strong> accepts either text strings or numerical values. The values will be matched exactly. <strong>Equals</strong> accepts a single value. For <strong>In</strong>, you can enter a list of comma-separated values (no leading space, no quotes). Spaces after a comma are ignored (i.e. <em>right,left,up,down</em> returns the same results as <em>right, left, up, down</em>).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_visual_query_builder_limitations"><a class="anchor" href="#_visual_query_builder_limitations"></a>Visual Query Builder Limitations</h3>
+<div class="paragraph">
+<p>While you can specify many patterns using Visual Query Builder, some Cypher pattern matching functionality is not currently implemented, including:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>OR syntax in MATCH or WHERE statements.</p>
+</li>
+<li>
+<p>The <em>path</em> variable in a MATCH statement. It refers to an entire pattern, which lets you refer to a complex set of connections as a single entity, and then apply property specifications to filter only those paths that qualify.</p>
+</li>
+<li>
+<p>Ranges of values in a WHERE statement (for example: a.property &gt; 100 &lt; 1000). Currently there is one socket for each property value, for which one operator can be selected.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

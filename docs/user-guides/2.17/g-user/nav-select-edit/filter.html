@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Filtering Data :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/nav-select/filter.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/data-add.html">Add Nodes and Edges</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../layouts/working-with-layouts.html"><strong>Working with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../intro-overview.html"><strong>GraphXR User Guide</strong></a></li>
+    <li><a href="explore-select.html"><strong>Navigate and Select</strong></a></li>
+    <li><a href="filter.html">Filter Data</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Filtering Data</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong><em>Filter</em></strong> panel enables you to specify multiple filters that filter data by</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>numerical</em> continuous properties such as numbers, date-time, and lat-long coordinates), and</p>
+</li>
+<li>
+<p><em>categorical</em> properties such as names or other text string labels.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>An individual filter operates on a single property (of either nodes or edges). Creating multiple filters that operate at once lets you select data with a combination of properties (for example, <em>Name of account holder</em>,  <em>transaction amount, date range</em>, etc.).</p>
+</div>
+<div class="paragraph">
+<p>Data that meets filter criteria remains in the graph space where it can be selected using the <strong><em>Select Visible Nodes</em></strong> button in the <strong><em>Filter</em></strong> panel or the <strong><em>Select Visible Nodes</em></strong> toolbar icon. You can then either save or delete the filtered nodes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_filtering_on_numerical_properties"><a class="anchor" href="#_filtering_on_numerical_properties"></a>Filtering on numerical properties</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This example uses a dataset of a TV series viewership per episode displayed in a <a href="../working-with-layouts/using-parametric-layouts">parametric layout</a>. We can create a filter by date, then add a second filter for the number of viewers.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+To be considered continuous values, date-time values must be formatted as <em>YYYY-MM-DD hh:mm:ss</em>. Date-timestamps not in that format can be converted using an <strong><em>f(x)</em></strong> function in the <strong><em>Transform</em></strong> panel. Or, numerical values can be treated as  categorical ones by clicking the <strong><em>Continuous</em></strong> / <strong><em>Categorical</em></strong> toggle on the filter.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_03_01a_FilterNumCat.png" alt="04 03 01a FilterNumCat" width="540" height="280">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>To filter using numerical (continuous) properties:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the <strong><em>Filter</em></strong> panel. First we&#8217;ll filter by date.</p>
+</li>
+<li>
+<p>From the <strong><em>Node Properties</em></strong> menu, choose the <em>episodeAirdate</em> property.</p>
+<div class="paragraph">
+<p>The filter is labeled with the property name and the category or relationship label (e.g. <em>episodeAirdate</em>(<em>Episodes</em>)). A slider shows the range of the property&#8217;s timestamp values.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_03_01_FilterMultiStart.png" alt="04 03 01 FilterMultiStart" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>Set a range of dates using the <strong><em>Min</em></strong> and <strong><em>Max</em></strong> selectors under the slider.</p>
+<div class="paragraph">
+<p>For filtering by date, you can click the value to display a calendar and select dates.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_03_02_FilterMultiselDate.png" alt="04 03 02 FilterMultiselDate" width="260" height="180">
+</div>
+</div>
+<div class="paragraph">
+<p>You can lock down a range of values, then use the slider or animation playhead to filter using that range (for example, by year, month, or week).</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_03_03_FilterLockRange.png" alt="04 03 03 FilterLockRange" width="720" height="380">
+</div>
+</div>
+</li>
+<li>
+<p>Now select another property (e.g. <em>millionViewers</em>) from the <strong><em>Node Properties</em></strong> menu to add a second filter for viewership.</p>
+</li>
+<li>
+<p>Set a range by entering minimum and maximum values in the <strong><em>Min</em></strong> and <strong><em>Max</em></strong> text boxes (e.g. 5 and 10).</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_03_04_FilterMultiSecond.png" alt="04 03 04 FilterMultiSecond" width="720" height="380">
+</div>
+</div>
+<div class="paragraph">
+<p>The project space now includes only the filtered data. List items in the legend are updated to show the filtered numbers for each category, relationship, etc.</p>
+</div>
+<div class="paragraph">
+<p>The animation playhead lets you play through the range of filtered values. You can set start and ending values on the slider, then enter a duration and select options for the direction of play and for continuous looping through the filter values. Each filter has its own independently set playhead.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>You can dismiss the <strong><em>Filter</em></strong> panel and continue working with the filtered data.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The data that&#8217;s filtered out is only hidden, not deleted. To restore the hidden data, delete the operative filter.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_filtering_on_categorical_properties"><a class="anchor" href="#_filtering_on_categorical_properties"></a>Filtering on categorical properties</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This example uses a dataset of crimes and their investigating officers. We can filter the data by <em>type</em> of crime, which is a text string property.</p>
+</div>
+<div class="paragraph">
+<p><strong>To filter using categorical properties:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the <strong><em>Filter</em></strong> panel.</p>
+</li>
+<li>
+<p>From the <strong><em>Node Properties</em></strong> menu, choose the property (e.g. <em>type</em>).</p>
+<div class="paragraph">
+<p>The filter is labeled with the property name and the category or relationship label ( <em>type</em>(<em>Crime</em>)). The property values in the data are displayed in alphanumeric order, with a <strong><em>Show</em></strong> checkbox for each.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_03_05_FilterCatStart.png" alt="04 03 05 FilterCatStart" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>All values are selected by default. Click the <strong><em>Select All</em></strong> checkbox to deselect everything, and then choose the values you want.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_03_06_FilterCatDone.png" alt="04 03 06 FilterCatDone" width="720" height="480">
+</div>
+</div>
+<div class="paragraph">
+<p>In the example, we&#8217;ve chosen various types of theft (e.g. <em>bicycle theft</em>, <em>burglary</em>, <em>shoplifting</em>, etc.)</p>
+</div>
+<div class="paragraph">
+<p>The data in the project space now includes only the filtered data. List items in the legend are updated to show the new numbers for each category, relationship, etc.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_clearing_a_filter"><a class="anchor" href="#_clearing_a_filter"></a>Clearing a filter</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To restore data hidden by a filter, delete that filter. To see all your data again, clear (i.e., delete) all your existing filters.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click the <strong><em>Delete</em></strong> button above the filter&#8217;s slider, or click the property name in the <strong><em>Node Properties</em></strong> menu.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_03_07_FilterDelete.png" alt="04 03 07 FilterDelete" width="420" height="340">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Filters do not persist when you exit the project. However, when you load a saved  <strong><em>View</em></strong> or <strong><em>Snapshot</em></strong> of a filtered graph, the filters are restored and the data that was filtered out is hidden.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_saving_or_deleting_filtered_nodes_with_select_visible_nodes"><a class="anchor" href="#_saving_or_deleting_filtered_nodes_with_select_visible_nodes"></a>Saving or deleting filtered nodes with Select Visible Nodes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Filters do not delete data; if you want to delete filtered data, it must be explicitly selected and deleted. You can delete either the visible data, or the data that has been filtered out.</p>
+</div>
+<div class="paragraph">
+<p><strong>To delete visible data:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <strong><em>Select Visible Nodes</em></strong> and press <strong><em>del</em></strong> or <strong><em>backspace</em></strong>.</p>
+<div class="paragraph">
+<p>The visible nodes and any connected edges are deleted. The graph space appears empty.</p>
+</div>
+</li>
+<li>
+<p>Clear your filters to restore data that was filtered out. Click the <strong><em>Del</em></strong> button to the right of the filter&#8217;s slider (or the <strong><em>x</em></strong> next to the property name in the <strong><em>Node Properties</em></strong> menu).</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>To delete filtered data:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <strong><em>Select Visible Nodes</em></strong> (the nodes you want to keep).</p>
+</li>
+<li>
+<p>Clear your filters to restore data that was filtered out. Click the <strong><em>Del</em></strong> button to the right of the filter&#8217;s slider (or the <strong><em>x</em></strong> next to the property name in the <strong><em>Node Properties</em></strong> menu).</p>
+<div class="paragraph">
+<p>All the data appears, with the nodes and connecting edges you want still selected.</p>
+</div>
+</li>
+<li>
+<p>Click <strong><em>Inverse</em></strong> to invert the selection.</p>
+</li>
+<li>
+<p>Press <strong><em>del</em></strong> or <strong><em>backspace</em></strong> to delete.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You can click <strong><em>Hide Selection</em></strong> in the toolbar or right-click <strong><em>Actions</em></strong> menu to hide data temporarily, rather than delete it.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_isolating_subgraphs_from_filtered_data"><a class="anchor" href="#_isolating_subgraphs_from_filtered_data"></a>Isolating subgraphs from filtered data</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Starting with filtered results, the right-click <strong>select and add</strong> mode that operates on the <strong><em>Select</em></strong> menu lets you build subgraphs quickly. To add to a selection simply hold down <strong><em>Ctrl</em></strong> or <strong><em>Alt</em></strong> before choosing an item on the <strong><em>Select</em></strong> menu. Available options include <strong><em>Floating Nodes</em></strong>, <strong><em>Leaf Nodes</em></strong>, <strong><em>Neighbor Nodes</em></strong>, <strong><em>Child Nodes</em></strong>, <strong><em>Parent Nodes</em></strong>, <strong><em>Neighbor Edges</em></strong>, and <strong><em>Connected Nodes</em></strong>.</p>
+</div>
+<div class="paragraph">
+<p>In the categorical filter example above, <em>Crimes</em> involving theft of various kinds have been retained. We can now isolate the graph of <em>Officers</em> who investigated those filtered <em>Crimes</em>.</p>
+</div>
+<div class="paragraph">
+<p><strong>To isolate a subgraph from filtered data:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>With the filter applied, in the Legend, click to select e.g. the <em>Crime</em> nodes.</p>
+</li>
+<li>
+<p>Right-click, press <strong><em>Ctrl</em></strong> and choose <strong><em>Select &gt; Neighbor Edges</em></strong> to add the edges to the current selection.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_03_08_FilterSelectSubGraph.png" alt="04 03 08 FilterSelectSubGraph" width="720" height="380">
+</div>
+</div>
+</li>
+<li>
+<p>Right-click again, press <strong><em>Ctrl</em></strong> and choose <strong><em>Select &gt; Connected Nodes</em></strong> to add the connected <em>Officer</em> nodes to the current selection.</p>
+<div class="paragraph">
+<p>A subgraph of filtered <em>Crime</em> nodes, the investigating <em>Officer</em> nodes, and the INVESTIGATED_BY edges are selected.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/04_03_09_FilterSubGraphDone.png" alt="04 03 09 FilterSubGraphDone" width="420" height="320">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<strong><em>left click + drag</em></strong> to move the selected subgraph away from the rest of the visible data.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>You can now clear the filter to show all the data, then use <strong><em>Inverse</em></strong> to select data not on the subgraph and <strong><em>Actions &gt; Hide</em></strong> to hide that data (or <strong><em>Delete</em></strong> to delete it).</p>
+</li>
+<li>
+<p>Save the subgraph by taking a snapshot or saving it as a new View.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

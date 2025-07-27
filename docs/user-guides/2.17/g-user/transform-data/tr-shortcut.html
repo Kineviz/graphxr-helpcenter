@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Simplifying paths with Shortcut :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/transform-data/tr-shortcut.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-link.html">Link</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../intro-overview.html"><strong>GraphXR User Guide</strong></a></li>
+    <li><a href="intro-transforms.html"><strong>Transform Data</strong></a></li>
+    <li><a href="tr-shortcut.html">Shortcut</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Simplifying paths with Shortcut</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <em>Shortcut</em> transform connects two nodes that share a common neighbor with a new edge, and in the process creates a new relationship. The source pattern remains, but it can be hidden or deleted. This enables you to simplify a graph without merging nodes.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/v2_17/06_06_00_ShortcutPattern.png" alt="06 06 00 ShortcutPattern" width="720" height="420">
+</div>
+</div>
+<div class="paragraph">
+<p>Generally, for the pattern:</p>
+</div>
+<div class="paragraph">
+<p><strong><em>(Category A)→[Relationship 1]→(Category B)→[Relationship 2]→(Category C)</em></strong></p>
+</div>
+<div class="paragraph">
+<p>a new shortcut pattern is created:</p>
+</div>
+<div class="paragraph">
+<p><strong><em>(Category A)→[New Relationship3]→(Category C)</em></strong>, where:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Categories <strong><em>A</em></strong>, <strong><em>B</em></strong>, and <strong><em>C</em></strong> contain nodes that share a common neighbor,</p>
+</li>
+<li>
+<p><strong><em>[Relationship1]</em></strong> and <strong><em>[Relationship2]</em></strong> contain edges of the two relationships, and</p>
+</li>
+<li>
+<p><strong><em>[Relationship3]</em></strong> contains edges of the new shortcut relationship. If desired, you can select one or more properties from the center category <strong><em>(Category B)</em></strong> to be added to the new <strong><em>[Relationship3]</em></strong>. You can also transform the property values using a preset (or <em>custom</em>) <strong><em>Input Formula</em></strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_preset_formulas_for_properties_of_a_shortcut_relationship"><a class="anchor" href="#_preset_formulas_for_properties_of_a_shortcut_relationship"></a>Preset formulas for properties of a Shortcut relationship</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Preset</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Function</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Format</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>custom</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Editable format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(centerNodePropValues) =&gt; <em>.join(centerNodePropValues,"</em>")</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>take first</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copies the first value of another property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(centerNodePropValues) =&gt; _.size(centerNodePropValues) &gt; 0 ? centerNodePropValues[0] : null</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>count</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Calculates a value based on number of connections.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(centerNodePropValues) =&gt; _.size(centerNodePropValues)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>sum</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sums the values of the selected property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(centerNodePropValues) =&gt; _.sumBy(centerNodePropValues,d =&gt; Number(d) | 0)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>average</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Averages the values of the selected property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(centerNodePropValues) =&gt; <em>.sumBy(centerNodePropValues,d =&gt; Number(d) | 0)/(</em>.size(centerNodePropValues) &gt; 0 ? _.size(neighborPropValues) : 1)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>range</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finds the lowest and highest value of the selected property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(centerNodePropValues) =&gt; <code>${_.maxBy(centerNodePropValues, d =&gt; Number(d) \| 0)} - ${_.minBy(centerNodePropValues, d =&gt; Number(d) \| 0)}</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>max</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finds the maximum value of the selected property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(centerNodePropValues) =&gt; _.maxBy(centerNodePropValues, d =&gt; Number(d) | 0)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>min</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finds the minimum value of the selected property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(centerNodePropValues) =&gt; _.minBy(centerNodePropValues, d =&gt; Number(d) | 0)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Editing a preset moves it to the <em>custom</em> item, where you can test or run the edited formula.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_a_shortcut"><a class="anchor" href="#_creating_a_shortcut"></a>Creating a Shortcut</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Using the graph pattern for photo assets illustrated above as a basic example, we can use a shortcut pattern to connect <em>Authors</em> (i.e. photographers) directly to the <em>Locations</em> where they took an <em>Image</em> through a new WORKED_AT relationship.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_06_01_ShortcutPhotos720.png" alt="06 06 01 ShortcutPhotos720" width="520" height="520">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For a hands-on tutorial using a larger dataset, see our <a href="../../g-learning/how-to-graphxr/how-to-graphxr.html" class="xref page">How to GraphXR</a> tutorials.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>To create a Shortcut:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the <strong><em>Transform</em></strong> panel and <strong><em>Shortcut</em></strong> tab.</p>
+</li>
+<li>
+<p>Now enter the following details in the <strong><em>Shortcut</em></strong> panel:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>R1</em></strong> (Relationship 1): select <em>CREATED</em>.</p>
+</li>
+<li>
+<p><strong><em>(B)</em></strong> (Center Category): select <em>Photos</em>.</p>
+</li>
+<li>
+<p><strong><em>R2</em></strong> (Relationship 2): select <em>TAKEN_AT</em>.</p>
+</li>
+<li>
+<p><strong><em>R3</em></strong> (Relationship 3, i.e. the new shortcut relationship): enter <em>WORKED_AT</em>.</p>
+</li>
+<li>
+<p>If desired, you can copy properties from the central category (<em>Photos</em>) to the new (<em>WORKED_AT)</em> relationship, and transform the property values using an <strong><em>Input Formula</em></strong>.<br>
+We&#8217;ll compute an average rating for the photos taken at each location, and add it as a new <em>averageRating</em> property of the <em>WORKED_AT</em> relationship.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Select the <em>Rating</em> property from the dropdown menu to add it to the <strong><em>Selected Property</em></strong> list.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Enter a <strong><em>New Property Name</em></strong> (<em>averageRating</em>).<br></p>
+</li>
+<li>
+<p>In <strong><em>Input Formula</em></strong>, select <em>average</em>, and edit the input formula to:</p>
+<div class="listingblock">
+<div class="content">
+<pre>(Rating) =&gt; .sumBy(Rating,d =&gt; Number(d) || 0)/(.size(Rating) &gt; 0 ? _.size(Rating) : 1)</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Check the <strong><em>Directional Edge</em></strong> and <strong><em>Count Links</em></strong> checkboxes. <strong><em>Count Links</em></strong> adds an automatic <em>count</em> property to the new relationship which may not always be meaningful. In this example though, it represents the number of photos at a location taken by the connected author.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_06_02_ShortcutEnterDetails1320.png" alt="06 06 02 ShortcutEnterDetails1320" width="520" height="520">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong><em>Run</em></strong>. Error and completion messages appear below the <strong><em>Run</em></strong> button.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_06_03_ShortcutRunMessage720.png" alt="06 06 03 ShortcutRunMessage720" width="720" height="240">
+</div>
+</div>
+<div class="paragraph">
+<p>The new shortcut pattern has now been created and added to the graph. Note that the source pattern with its <em>Photos</em> nodes are still present in the graph space.</p>
+</div>
+</li>
+<li>
+<p>To see the shortcut graph, click the <em>Photos</em> category on the legend to select its nodes.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_06_04_ShortcutNewEdges720.png" alt="06 06 04 ShortcutNewEdges720" width="520" height="520">
+</div>
+</div>
+</li>
+<li>
+<p>Either click the <strong><em>Hide Selected</em></strong> icon to hide all the <em>Photos</em> nodes, or the <strong><em>Delete</em></strong> icon (or <strong><em>del</em></strong> or <strong><em>backspace)</em></strong> to delete them from the graph.</p>
+<div class="paragraph">
+<p>We now see only <em>Author</em> and <em>Location</em> nodes connected by the new <em>WORKED_AT</em> edges.</p>
+</div>
+</li>
+<li>
+<p>To see added properties, you can display an info panel or quick info rollover for one of the new edges, or display a table of the edges for the new relationship (e.g. <em>WORKED_AT</em>).</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_06_05_ShortcutOnly720.png" alt="06 06 05 ShortcutOnly720" width="520" height="520">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

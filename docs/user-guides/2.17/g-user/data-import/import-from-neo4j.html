@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Import from Neo4j :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/data-import/import-from-neo4j.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../intro-overview.html"><strong>GraphXR User Guide</strong></a></li>
+    <li><a href="../data-overview.html"><strong>Data Management</strong></a></li>
+    <li><a href="data-import-intro.html">Import Data</a></li>
+    <li><a href="import-from-neo4j.html">Import from Neo4j</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Import from Neo4j</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can import data from a Neo4j graph database connected to a GraphXR project. The data is modeled according to the current database schema, that is, the categories, relationships, and properties which have been defined so far.</p>
+</div>
+<div class="paragraph">
+<p>There are several ways to import Neo4j data into your project :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pull nodes or edges 25 at a time by selecting a category or relationship in the respective tab in the <strong><em>Project</em></strong> panel and clicking <strong><em>Pull</em></strong>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Pulling data is designed for quick initial exploration. Specific database search or query, combined with the <strong><em>Expand</em></strong> function yields more complete and focused results.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Use the search bar to enter a full text keyword search of indexed node properties and import the results from the database.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_10a_SearchDBGraph.png" alt="01 04 10a SearchDBGraph" width="720" height="380">
+</div>
+</div>
+</li>
+<li>
+<p>Once some data have been imported, you can use <strong><em>Expand</em></strong> to import additional data connected by specified relationships to nodes that are already the graph.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_09_ExpandDialog720.png" alt="Expand" width="340" height="400">
+</div>
+</div>
+</li>
+<li>
+<p>Enter and run a Cypher query in the <strong><em>Cypher</em></strong> tab of the <strong><em>Query</em></strong> panel to import data that match specific graph patterns.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_01_CypherQuery720.png" alt="02 03 01 CypherQuery720" width="720" height="240">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pull_data_by_category_or_relationship"><a class="anchor" href="#_pull_data_by_category_or_relationship"></a>Pull data by Category or Relationship</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can pull 25 nodes at a time from a category or relationship that appears in the <strong><em>Category</em></strong> or <strong><em>Relationship</em></strong> tab of the <strong><em>Project</em></strong> panel.</p>
+</div>
+<div class="paragraph">
+<p><strong>To pull data by Category:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the <strong><em>Project</em></strong> panel icon and <strong><em>Category</em></strong> tab.</p>
+</li>
+<li>
+<p>Click one of the <strong><em>Category</em></strong> items to select it.</p>
+</li>
+<li>
+<p>Click <strong><em>Pull</em></strong> to pull 25 nodes associated with that category, and any edges that connect the nodes.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_06_PullCategoryVC.png" alt="02 03 06 PullCategoryVC" width="720" height="380">
+</div>
+</div>
+</li>
+<li>
+<p>For added samples, click again, as many times as you want.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>To pull data by relationship:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the <strong><em>Project</em></strong> panel icon and <strong><em>Relationship</em></strong> tab.</p>
+</li>
+<li>
+<p>Click one of the <strong><em>Relationship</em></strong> items to select it.</p>
+</li>
+<li>
+<p>Click <strong><em>Pull</em></strong> to pull 25 edges associated with that relationship, the connected nodes, and all the other edges connected to those nodes.</p>
+</li>
+<li>
+<p>For added samples, click again, as many times as you want.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import_data_using_full_text_keyword_search"><a class="anchor" href="#_import_data_using_full_text_keyword_search"></a>Import data using full-text keyword search</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The search field at the top right corner of the graph space provides full-text keyword search of either the data already in the project space or in a connected database. You use the icon at the right of the search field to toggle between <strong><em>Searching from Database</em></strong> or <strong><em>Searching from Graph</em></strong>.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_05_KeywordVCPartners.png" alt="02 03 05 KeywordVCPartners" width="720" height="220">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configure_the_search_index"><a class="anchor" href="#_configure_the_search_index"></a>Configure the search index</h3>
+<div class="paragraph">
+<p>To search a Neo4j database, the search terms must first be indexed in the database. The <strong><em>Config Search Index</em></strong> icon to the right of the database icon opens the configuration dialog.</p>
+</div>
+<div class="paragraph">
+<p><strong>To configure the search index:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the gear icon next to the search bar to display the the <strong><em>Database Text Search Index Configuration</em></strong> dialog.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_05a_SearchConfigIcon.png" alt="02 03 05a SearchConfigIcon" width="720" height="220">
+</div>
+</div>
+<div class="paragraph">
+<p>The dialog lists the categories in the connected database and their properties.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_05b_SearchConfig.png" alt="02 03 05b SearchConfig" width="720" height="420">
+</div>
+</div>
+</li>
+<li>
+<p>Click <strong><em>Refresh Property</em></strong> to make sure all the properties in the database are listed.</p>
+</li>
+<li>
+<p>Select properties you want to index. You can either</p>
+<div class="paragraph">
+<p>Click the <strong><em>All Category Properties</em></strong> checkbox to select all properties.</p>
+</div>
+<div class="paragraph">
+<p>OR</p>
+</div>
+<div class="paragraph">
+<p>Click checkboxes to index selected properties.</p>
+</div>
+</li>
+<li>
+<p>Click <strong><em>Submit Index Task</em></strong> to index the database search terms.</p>
+<div class="paragraph">
+<p>A message displays indicating that the indexing task was successful.</p>
+</div>
+</li>
+<li>
+<p>Click the <strong>X</strong> at the upper right to close the dialog.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_perform_a_keyword_search"><a class="anchor" href="#_perform_a_keyword_search"></a>Perform a keyword search</h3>
+<div class="paragraph">
+<p><strong>To import data using full-text keyword search:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Enter one or more search terms in the search bar at the top left corner of the graph space, and press return. You can search for exact indexed property values or partial text strings.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Use asterisks to define a search for partial property values (e.g. *Jo** for **Jo**hn, **Jo**nathan, **Jo**sephine). Position asterisks to search for values that start with, end with, or contain the specified string (e.g. **Jo*, *Jo**, or **Jo**).</p>
+</li>
+<li>
+<p>Terms separated by a <em>space</em> use OR logic. Nodes with indexed property values matching any one of the terms will be returned. (e.g. <strong>Inspector Sergeant</strong> for nodes that include an exact property value of <strong>Inspector</strong> OR <strong>Sergeant</strong>).</p>
+</li>
+<li>
+<p>Terms separated by the word <em>AND</em> return only nodes with indexed property values that match all terms. (e.g. <strong>Inspector</strong> AND <strong>D</strong>** for nodes with an exact property value of <strong>Inspector</strong>, and a property value that starts with <strong>D</strong> (case-insensitive).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Search results are listed beneath the search bar for each category.</p>
+</div>
+<div class="paragraph">
+<p>Nodes matching the search keyword appear below the search field listed by category, in alphabetical order.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_05c_KeywordSearch.png" alt="02 03 05c KeywordSearch" width="520" height="460">
+</div>
+</div>
+</li>
+<li>
+<p>Click the arrow to the left of a category to view individual nodes. If more than five nodes are returned for a category, use the arrow selector at the right to navigate through the list and locate nodes you want to import.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_05d_ImportSearchedNodes.png" alt="02 03 05d ImportSearchedNodes" width="580" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>Click a list item to add the node to the graph space.</p>
+<div class="paragraph">
+<p>OR</p>
+</div>
+<div class="paragraph">
+<p>Click the <strong>+</strong> icon to the right of the category label to import all the matching nodes of that category.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+When you add data, the nodes remain selected in the graph space until you add more data. If you want to immediately remove the data you just imported, press delete while the nodes are still selected.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Click the <strong>X</strong> in the search bar to clear the search and return to the graph space.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_searching_the_graph_vs_the_database"><a class="anchor" href="#_searching_the_graph_vs_the_database"></a>Searching the graph vs the database</h3>
+<div class="paragraph">
+<p>Once data are imported, you can click the toggle to the right of the search bar to switch to a search of the graph. Searching in the graph can help quickly focus a search, since matching nodes are actively highlighted as you enter search terms.</p>
+</div>
+<div class="paragraph">
+<p>However, a graph search works differently than a database search in that:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Partial text is entered without asterisks</p>
+</li>
+<li>
+<p>AND logic is not recognized. Any space between search terms is still recognized as OR logic.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_05e_SearchGraphNote.png" alt="02 03 05e SearchGraphNote" width="720" height="480">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import_data_using_expand"><a class="anchor" href="#_import_data_using_expand"></a>Import data using Expand</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong><em>Expand</em></strong> icon in the context toolbar menu lets you import additional data from the database which is connected to a selected node or group of nodes already in your project  space.</p>
+</div>
+<div class="paragraph">
+<p><strong>To import data using Expand:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select one or more nodes in the graph space, then click <strong><em>Expand</em></strong> in the toolbar or right-click context menu to display the <strong><em>Expand with relationships</em></strong> dialog.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_08_ExpandSelect1320.png" alt="02 03 08 ExpandSelect1320" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>Click the checkbox next to a relationship name to import nodes connected by that relationship as well as the edges.</p>
+<div class="paragraph">
+<p>OR</p>
+</div>
+<div class="paragraph">
+<p>Click <strong><em>All</em></strong> to pull nodes and edges that have any relationship to the selected nodes. To limit the number of nodes, enter a number in the <strong><em>Limit</em></strong> field.</p>
+</div>
+</li>
+<li>
+<p>Set additional options for expanding the graph:</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_09_ExpandDialog720.png" alt="Expand" width="340" height="400">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click the <strong><em>Only among selected nodes</em></strong> checkbox to expand relationships only for the selected nodes.</p>
+</li>
+<li>
+<p>Specify <strong><em>Directional</em></strong> relationships using the dropdown menu. You can choose All directions, only nodes connected by relationships <strong><em>From</em></strong> the selected nodes, <strong><em>To</em></strong> the selected nodes, or only those with a <strong><em>Bidirectional</em></strong> relationship.</p>
+</li>
+<li>
+<p>Increase <strong><em>Repeat relationship times</em></strong>, which automatically repeats the expand operation, enabling you to pull in the limit of 1000 edges repeatedly.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click the <strong><em>Expand</em></strong> button.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_10_ExpandSpecified720.png" alt="Expand" width="340" height="400">
+</div>
+</div>
+<div class="paragraph">
+<p>An <strong><em>Expand Next Page</em></strong> dialog indicates the number of items successfully expanded. You can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click <strong><em>Expand More</em></strong> to pull the next 1000 connected items. This lets you pull in all the data in the database that have the specified connections without needing to return to the <strong><em>Expand with relationships</em></strong> dialog.<br></p>
+</li>
+<li>
+<p>Click <strong><em>Cancel</em></strong> (or simply click the <strong>X</strong> at the upper right) to close the dialog.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_11_ExpandMore720.png" alt="02 03 11 ExpandMore720" width="360" height="220">
+</div>
+</div>
+<div class="paragraph">
+<p>Additional nodes and their relationships are pulled into the graph. In the example below, <strong><em>All</em></strong> relationships were selected, and additional nodes with edges connected to the selected <strong><em>Character</em></strong> and <strong><em>House</em></strong> nodes were pulled from the Neo4j database. Once no additional connected nodes are found, a message displays that all relationships are expanded.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_12_ExpandResult1320.png" alt="02 03 12 ExpandResult1320" width="720" height="480">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import_using_a_cypher_query"><a class="anchor" href="#_import_using_a_cypher_query"></a>Import using a Cypher query</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cypher is a query language for graph data developed by Neo4j which has become a standard for querying graph databases. Cypher can be used to return graph data that match a specified graph pattern, and also to perform complex data selection, transformation, and analytics, as well as graph database maintenance.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For information about Cypher, refer to Neo4j&#8217;s <a href="https://neo4j.com/developer/cypher/">For Beginners - Cypher Query language</a> and the <a href="https://neo4j.com/docs/cypher-manual/current/introduction/">Neo4j Cypher Manual</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In GraphXR&#8217;s <strong><em>Query</em></strong> panel and <strong><em>Cypher</em></strong> tab you can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Enter a Cypher query and click the <em>play</em> icon on the right to run it.</p>
+</li>
+<li>
+<p>Save and name a query by clicking the <strong>+</strong> (plus) icon. The saved query appears on a dropdown menu.</p>
+</li>
+<li>
+<p>Run a saved query by selecting it on the dropdown and clicking the <em>play</em> icon.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_03_CypherQuery520.png" alt="02 03 03 CypherQuery520">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>All GraphXR projects include a basic query that pulls 100 connected nodes from the database. This query will <strong>MATCH</strong> any pattern of nodes <strong>n</strong> and <strong>m</strong> connected by any relationship <strong>r</strong>, and <strong>RETURN</strong> the first <strong>100</strong> found. The <strong>LIMIT</strong> is set because this query will likely return a large amount of data.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>MATCH (n)-[r]-(m) RETURN * LIMIT 100</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A more specific, but still basic query for categories and relationships of interest is the following query for Game of Thrones data with the pattern <em>(Characters)-[belongs_to]-(House)</em>. This query will <strong>MATCH</strong> any pattern of <em>Characters</em> and <em>House</em> nodes connected by a <em>belongs_to</em> relationship and <strong>RETURN</strong> all the matching graph patterns. The variables <strong>c</strong>, <strong>r</strong>, and <strong>h</strong> are used here to simplify further query specifications.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>MATCH (c:Characters)-[r:belongs_to]-(h:House) RETURN *</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>To import data using a Cypher query:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click to open the <strong><em>Query</em></strong> panel icon. The <strong><em>Cypher</em></strong> tab is displayed.</p>
+</li>
+<li>
+<p>Either enter a Cypher query or select a saved query using the dropdown arrow.</p>
+</li>
+<li>
+<p>Click the <strong><em>Load Inner Relationship</em></strong> checkbox to include the relationships between the nodes pulled by a query.</p>
+</li>
+<li>
+<p>Click the <em>Run Cypher</em> icon to query the connected database.</p>
+<div class="paragraph">
+<p>The data appear in the project space as nodes and their connecting edges.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/02_03_04_CypherQueryRun.png" alt="02 03 04 CypherQueryRun" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>Click the <strong>+</strong> (plus) icon to save your query. In the <strong><em>Alias Name</em></strong> dialog, enter a name for the query, and click <strong><em>Confirm</em></strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

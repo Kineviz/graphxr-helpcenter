@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Add Graph Data :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/nav-select/data-add.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="explore-select.html"><strong>Navigate, Select, and Edit</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="data-add.html">Add or Edit Graph Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="data-delete.html">Delete Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../layouts/working-with-layouts.html"><strong>Working with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../intro-overview.html"><strong>GraphXR User Guide</strong></a></li>
+    <li><a href="explore-select.html"><strong>Navigate, Select, and Edit</strong></a></li>
+    <li><a href="data-add.html">Add or Edit Graph Data</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Add Graph Data</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>At any time you can manually add nodes and edges of new or existing categories and relationships in the project space. To show <strong><em>Add Node</em></strong> or <strong><em>Add Edge</em></strong> dialogs, you can click the respective toolbar icons or use the right-click menu.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_01_AddIcons1344.png" alt="05 01 01 AddIcons1344" width="720" height="220">
+</div>
+</div>
+<div class="paragraph">
+<p>You can also create new properties and add their values to nodes or edges, and edit existing property values.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_02_AddProperties720.png" alt="05 01 02 AddProperties720" width="520" height="480">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Often, you only enter one value for a property. However, GraphXR does allow entry of multiple values for a single property. These multiple property values can be displayed as captions, on separate lines. You can also add a node without including any properties, to match a situation allowed in Neo4j.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adding_a_node"><a class="anchor" href="#_adding_a_node"></a>Adding a node</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong><em>Add Node</em></strong> dialog lets you add new nodes directly in GraphXR, one at a time.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+You can add a node of a Category by click and drag. In the <strong><em>Project&gt;Category</em></strong> tab, click a category pill and drag to the project space to create one node. The <strong><em>Add Node</em></strong> dialog opens, and you can enter property values for the node, then click <strong><em>Create</em></strong> or <strong><em>Cancel</em></strong>.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_03_AddNodeEasy.png" alt="05 01 03 AddNodeEasy" width="720" height="220">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>To add a node:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the context menu, click the <strong><em>Add Node</em></strong> icon to display the <strong><em>Add Node</em></strong> dialog.</p>
+</li>
+<li>
+<p>Use the dropdown menu to select an existing category for the added node, or enter a new category name (e.g. <em>Pets</em>), then press return.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_04_AddCategory720.png" alt="05 01 04 AddCategory720" width="420" height="360">
+</div>
+</div>
+<div class="paragraph">
+<p>For example, we notice that a person owns pet dogs called Harry and Rufus. Our data doesn&#8217;t yet include anything about animal roles. For each pet, we can quickly add a node (and, for the first one, create a new <em>Pets</em> category with initial properties such as the <em>name</em>, <em>owner</em>, <em>age</em>, <em>url image</em>, <em>species</em>, <em>breed</em>, and <em>colors</em> of the pet).</p>
+</div>
+</li>
+<li>
+<p>Enter one or more <strong><em>Property Names</em></strong> for the category (e.g. <em>petName, etc.</em>), and enter its corresponding <strong><em>Property Value</em></strong> (e.g. <em>Harry</em>) or values (e.g. <em>black</em> and <em>gray</em>). To enter multiple values, enter the first value then press return to enter the next one, and so on.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_04_AddNodeDialog720.png" alt="05 01 04 AddNodeDialog720" width="420" height="580">
+</div>
+</div>
+<div class="paragraph">
+<p>OR</p>
+</div>
+<div class="paragraph">
+<p>In the list of properties for an existing category, enter a <em>Property Value</em> if you have one, add any additional property names and their values, and click the minus (<strong>-</strong>) icon for properties for which you have no value.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The other nodes of an existing category will be updated with any new property names you add, but the values will be null. If you want to add values for a property you&#8217;ve added, you can inspect a <strong><em>Table</em></strong> for missing values, and enter a value for another node using its <strong><em>Information</em></strong> window (<strong><em>Ctrl</strong>+<strong>I</em></strong>). To enter values for multiple nodes at once, you can use <strong><em>f(x)</em></strong> or <strong><em>Aggregate</em></strong> transforms.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Click <strong><em>Create</em></strong> to create the node.</p>
+<div class="paragraph">
+<p>The new node appears in the project space. A new category will appear in the <strong><em>Category</em></strong> list in the legend. For an existing category, the total number of nodes is updated.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_06_AddedNode720.png" alt="05 01 06 AddedNode720" width="420" height="340">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adding_edges"><a class="anchor" href="#_adding_edges"></a>Adding edges</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the <strong><em>Add Edge</em></strong> dialog you can create new edges that connect selected nodes to each other via a new or existing directed relationship. You can add properties and single or multiline property values to edges just as you can for nodes.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+An easy edge feature lets you select one or more nodes, then use <strong><em>Ctrl-drag</em></strong> to select a target node When the target is selected, dashed lines appear between the nodes. The <strong><em>Add Edge</em></strong> dialog opens, and you can select an existing relationship or create a new one, then click <strong><em>Create</em></strong> or <strong><em>Cancel</em></strong>.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_07a_EasyEdge.png" alt="05 01 07a EasyEdge" width="520" height="340">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>To add edges to nodes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Using any selection method, select one or more nodes that you want to connect to other nodes via a directed relationship.</p>
+</li>
+<li>
+<p>Click the <strong><em>Add Edge</em></strong> icon, select <strong><em>Add Edge</em></strong> from the right-click menu, or use <strong><em>Ctrl-drag</em></strong> to select a single target node.</p>
+</li>
+<li>
+<p>In the <strong><em>Add Edge</em></strong> dialog, either enter the name of a new relationship to be assigned to the new edges (e.g. <em>OWNED_BY</em>) and press return, or select an existing relationship from the dropdown menu.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_07b_CreateRelationship720.png" alt="05 01 07b CreateRelationship720" width="420" height="360">
+</div>
+</div>
+</li>
+<li>
+<p>Optionally, enter property names and their values for the relationship.</p>
+</li>
+<li>
+<p>Click <strong><em>as Source</em></strong> to list the nodes that will be sources for new edges.</p>
+</li>
+<li>
+<p>Now select one or more target nodes for the edges and click <strong><em>as Target</em></strong>.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_07c_CreateEdges720.png" alt="05 01 07c CreateEdges720" width="420" height="360">
+</div>
+</div>
+<div class="paragraph">
+<p>If you&#8217;ve set the source and target backwards, click the <strong><em>Switch</em></strong> button to reverse the two.</p>
+</div>
+</li>
+<li>
+<p>Click <strong><em>Create</em></strong>.</p>
+<div class="paragraph">
+<p>New edges are created connecting the source nodes to the target nodes, with arrows showing the direction of the relationship. The total number of edges of that relationship is updated in the <strong><em>Relationship</em></strong> list in the legend.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_07d_NewEdges720.png" alt="05 01 07d NewEdges720" width="520" height="380">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adding_new_properties_to_a_single_node_or_edge"><a class="anchor" href="#_adding_new_properties_to_a_single_node_or_edge"></a>Adding new properties to a single node or edge</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can add one or more new properties to a single node or edge using the <strong><em>Add Property</em></strong> button in its <strong><em>Info</em></strong> window.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Adding properties and their values to one node or edge at a time in GraphXR is impractical for large amounts of data. It can be useful for modeling and testing very small amounts of data, or for adding a small number of missing properties and their values.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For example, we can add a property for a <em>mobile</em> number to the following <em>Customer</em> node that includes <em>name</em> and <em>aliases</em> properties. Captions on the customer node are currently set to show the name and the aliases.</p>
+</div>
+<div class="paragraph">
+<p>Once the mobile number property is added, we can go to the <em>Customer</em> category in the <strong><em>Project</em></strong> panel and <strong><em>Category</em></strong> tab and select it as a caption instead (or in addition).</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_10_MultiPropCaptions1080.png" alt="05 01 10 MultiPropCaptions1080" width="720" height="460">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>To add a new property and property value:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select a single node or edge and double click to display its information window.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_11_AddMobileProp1080.png" alt="05 01 11 AddMobileProp1080" width="520" height="520">
+</div>
+</div>
+</li>
+<li>
+<p>Click the <strong><em>Add Property</em></strong> button, and enter a <strong><em>Property Name</em></strong> (<em>mobile</em>) and one or more <strong><em>Property Values</em></strong> (a mobile number) in the provided text fields.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_12_AddMobileValue1080.png" alt="05 01 12 AddMobileValue1080" width="520" height="520">
+</div>
+</div>
+</li>
+<li>
+<p>Click <strong><em>Save</em></strong> to save the new property and property value, or <strong><em>Cancel</em></strong> to exit without saving.</p>
+<div class="paragraph">
+<p>The information window is updated with the new property and values.</p>
+</div>
+<div class="paragraph">
+<p>Once the <em>mobile</em> property is added, we can set it as the caption for <em>Customer</em> nodes.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_13_AddPropDone1080.png" alt="05 01 13 AddPropDone1080" width="520" height="520">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_editing_a_property_value"><a class="anchor" href="#_editing_a_property_value"></a>Editing a property value</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can edit any existing property value of a single node or edge in its <strong><em>Info</em></strong> window. This might be useful to correct an error or add missing values to a small amount of data.</p>
+</div>
+<div class="paragraph">
+<p><strong>To edit a property value:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select a single node or edge, and in the context menu, double click to display its information window.</p>
+</li>
+<li>
+<p>In the list of properties, double click a property <strong><em>Value</em></strong>, and edit the value (or values) in the provided text field.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/05_01_09_EditProperty1080.png" alt="05 01 09 EditProperty1080" width="520" height="460">
+</div>
+</div>
+<div class="paragraph">
+<p>The property value is updated as you enter it.</p>
+</div>
+</li>
+<li>
+<p>Click elsewhere in the list to save the new property value.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

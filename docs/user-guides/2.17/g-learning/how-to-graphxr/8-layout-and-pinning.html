@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>8 Layout and Pinning :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-learning/how-to-graphxr/8-layout-and-pinning.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../g-user/data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-user/layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-user/layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../g-user/geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../g-user/graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="8-layout-and-pinning.html">8 Layout and Pinning</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">8 Layout and Pinning</h1>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">In this Session&#8230;&#8203;</th>
+<th class="tableblock halign-left valign-top">Before you begin&#8230;&#8203;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Using <strong><em>Layouts</em></strong> to organize and visualize data:</p>
+</li>
+<li>
+<p>Pinning and Releasing nodes</p>
+</li>
+<li>
+<p>Using <strong><em>Force</em></strong> directed, <strong><em>Parametric</em></strong>, <strong><em>Geometric</em></strong>,and <strong><em>Tree</em></strong> layouts.</p>
+</li>
+<li>
+<p>Using the <strong><em>Quick Layout</em></strong> toolbar menu for geometric layout.</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To follow along, download:</p>
+</div>
+<div class="paragraph">
+<p><a href="/wiki/spaces/TES/pages/1029013566/8.+Layout+and+Pinning?preview=%2F1029013566%2F1624375375%2FHowTo_08START_2_14.graphxr.zip">HowTo_08START_2_14.graph&#8230;&#8203;</a></p>
+</div>
+<div class="paragraph">
+<p>and the snapshot library:</p>
+</div>
+<div class="paragraph">
+<p><a href="/wiki/spaces/TES/pages/1029013566/8.+Layout+and+Pinning?preview=%2F1029013566%2F1624375381%2FHowTo_08START_2_14.graphxrsnapshots.zip">HowTo_08START_2_14.graph&#8230;&#8203;</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQqP-L5e9Zl7BNTHZOY3DSyAPx72my6TU1ptxkdBJDg0R1TPgVqBKm8_X4M4r9roBKdos_IU6DdYMxO/embed?start=false&loop=false&delayms=60000" frameborder="0" width="768" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.1428%;">
+<col style="width: 92.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Slide</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Text</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">As we&#8217;ve already seen, layouts can help us discover and work with graph patterns in our project. With our data loaded, let&#8217;s first click the <strong><em>Pin/Release</em></strong> toolbar icon to return to the default force-directed layout.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong><em>Layout</em></strong> panel includes tabs to adjust the default layout appearance, to work with <strong><em>Geometric</em></strong> and hierarchical layouts, and to create <strong><em>Parametric</em></strong> 3D scatterplots.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In addition to detailed controls in the <strong><em>Layout</em></strong> panel, the <strong><em>Quick Layout</em></strong> toolbar icon provides a one-click menu of often-used geometric layout options.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">We&#8217;ll delve into the various layout options in detail in a moment. <br>
+First, though, we&#8217;ll look at pinning to understand how it affects working with layouts. <br>
+Open the <strong><em>Project</em></strong> panel and <strong><em>Settings</em></strong> tab, and deselect <strong><em>Hide Pin Icon</em></strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A pin icon appears on the nodes arranged with the geometric grid layout, showing that they are pinned to that xyz location in the project space.  <br>
+In addition, nodes that are moved manually (using <strong><em>left click + drag</em></strong>)are pinned.The number of currently pinned nodes appears on the badge next to the icon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">We use the <strong><em>Pin / Release</em></strong> toolbar icon to pin (or release) selected nodes.  <br>
+Pinned nodes are not included when you apply or adjust a force layout, and that may be what we want. But we can always release pinned nodes if desired.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When you select pinned nodes, the icon changes to <strong><em>Release</em></strong>. Simply click to release those nodes to the default force-directed layout. With no data selected, you can click to release (or pin) all the data.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To release all pinned data and return to a force layout in one click, open the <strong><em>Layouts</em></strong> panel and <strong><em>Geometric</em></strong> layout tab. Click on an empty part of the graph to de-select all data, and click the <strong><em>Release</em></strong> button.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Now let&#8217;s look at force-directed layout. It&#8217;s a dynamic physics simulation that arranges nodes and edges of your graph for reasonably good 3D visibility. Open the <strong><em>Layout</em></strong> panel and <strong><em>Force</em></strong> tab. Here you can adjust some of its key parameters. Adjustments affect all the data except for any pinned nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adjust the <strong><em>Link Strength</em></strong> slider to control how strongly the edges of the graph pull the nodes together. <em>TIP: If the graph moves out of the view, click <strong>Center To</strong> or <strong>Fly Out</strong>  toolbar icons.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edge length can also be controlled by the <strong>Link Distance</strong> slider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>Gravity</strong> slider controls how strongly all nodes are attracted to a central point.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>Charge</strong> slider adjusts how strongly nodes are attracted to each other. Moving the slider tothe left results in greater repulsive force between the nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use the <strong>Collision</strong> slider to separate nodes that overlap in the view. This is particularly useful in a 2D view, to un-stack nodes projected on top of one another.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">17</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move the <strong>Z-Compress</strong> slider to the right to flatten the node layout so that it is more 2-dimensional.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A fully 2D layout can be useful, especially for reports. In the <strong><em>Project</em></strong> panel and <strong><em>Settings</em></strong> tab, click the <strong><em>2D Mode</em></strong> checkbox. You&#8217;ll longer be able to rotate the view of the graph in 3D, and the <strong><em>Z-Compress</em></strong> slider will be hidden.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When you move nodes around the graph space by left click dragging them, the remaining unpinned nodes are rearranged. To prevent this, the <strong><em>Enable/Disable Force Layout</em></strong> toolbar toggle temporarily disables force layout.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To display nodes randomly distributed roughly within a 3D cube you can click the <strong><em>Enable/Disable Force Layout</em></strong> toggle (in the Layout panel or toolbar) then click <strong><em>Randomize Node Positions</em></strong>. Pinned nodes are not included.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>Restore Default Settings</em></strong> resets slider controls to their defaults. The graph data also returns to the default force layout, again, except for any pinned nodes.  <br>
+Now let&#8217;s look at our other layout options.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">22</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong><em>Quick Layout</em></strong> menu available in the toolbar lets you apply many geometric layouts in one click, and to <strong><em>Expand</em></strong> or *<em>*Contrac*</em>*t a layout by a default scale factor.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">23</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For example, nodes can be arranged in hierarchical rings or trees around a central selection of nodes, and we can do this from the <strong><em>Quick Layout</em></strong> menu.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">We&#8217;ll first select the Episodes nodes and <strong><em>Hide</em></strong> them temporarily, because we just want to see Character nodes arranged around their respective House nodes. The depth of hierarchical <strong><em>Ring</em></strong> or <strong><em>Tree</em></strong> layouts can be set in the <strong><em>Geometric</em></strong> layout panel, but not in a <strong><em>Quick Layout</em></strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Next, select the House nodes, and in the <strong><em>Quick Layout</em></strong> menu choose <strong><em>Circle</em></strong>, and then <strong><em>Expand</em></strong>, as many times as you like to expand the circle layout. (While this isn&#8217;t necessary, it will make it easier to see the <strong><em>Ring</em></strong> layout you&#8217;ll apply next.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">26</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">With the House nodes still selected, click <strong><em>Quick Layout</em></strong> and choose <strong><em>Ring</em></strong> from the menu. The Character nodes are now arranged in rings around their respective House nodes. <br>
+NOTE: If you don&#8217;t select central nodes, GraphXR chooses for you.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">With the House nodes still selected, choose <strong><em>Tree</em></strong> in the <strong><em>Quick Layout</em></strong> menu. The Character nodes are arranged in trees to the right of their respective House nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Choose <strong><em>Ring</em></strong> again to return to the ring layout. Now click <strong><em>Show Hidden Nodes</em></strong> in the toolbar to restore our hidden Episode nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">We can experiment with adjusting the layout from here. For example: <br>
+• Select House nodes and move them using <strong><em>left click + drag</em></strong>. <br>
+• Select Episode nodes and apply a <strong><em>Spiral</em></strong> (or other) layout. <br>
+• <strong><em>Expand</em></strong> or <strong><em>Contract</em></strong> any selection of nodes, or all nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Now go to the <strong><em>Layout → Geometric</em></strong> tab and click <strong><em>Release</em></strong> to return to the default force layout.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">31</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong><em>Geometric</em></strong> layout tab provides more layout options, controls to position nodes precisely in the project space, and the ability to order nodes by a property value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">As with <strong><em>Quick Layout</em></strong> we can apply a <strong><em>Line</em></strong>, <strong><em>Grid</em></strong>, <strong><em>Circle</em></strong>, <strong><em>Spiral</em></strong>, <strong><em>Cube</em></strong>, or <strong><em>Spring</em></strong> layout to any selection of nodes. But here we can also order the nodes by a property value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">33</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select our House nodes, click the <strong><em>Order by Property</em></strong> checkbox, select the House Category and <em>houseName</em> property, and click the <strong><em>Ascend</em></strong> (or <strong><em>Descend</em></strong>) checkbox. Now click <strong><em>Line</em></strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">34</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In the Legend, select Episodes. Order by <em>seasonEpisode</em> property and click <strong><em>Grid</em></strong>. For all geometric layouts, unselected and unpinned nodes stay in force layout around the selected nodes (unless you disable force layout using the toolbar icon).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">35</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In the Legend, select Characters nodes, order the nodes by the <em>kills</em> property, and click <strong><em>Circle.</em></strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>Rotate</em></strong>, <strong><em>Scale</em></strong>, and <strong><em>Shift</em></strong> controls let you adjust the orientation, scale, and position of a selection in the 3D space. Select Character nodes and click <strong><em>Rotate Y</em></strong> to rotate the default 90 degrees. Select House nodes and click <strong><em>Expand</em></strong> (or <strong><em>Contract</em></strong>) to expand or contract the line layout by the default 1.5 times.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">37</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select the Episodes category that&#8217;s in a grid layout and click the Shift <strong><em>Y</em></strong> button to shift the nodes up by the default 1.1 times.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">38</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">You can enter positive or negative values for <strong><em>Rotate</em></strong>, <strong><em>Scale</em></strong>, and <strong><em>Shift</em></strong>, to reposition any selection of nodes precisely in the graph space.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">39</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">At any time, you can choose a new layout for a selection of nodes or the entire graph. Select Characters nodes and click <strong><em>Cube</em></strong> to display the nodes in a 3D cube.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If no nodes are selected a geometric layout arranges all the nodes. To see this, deselect all nodes and click <strong><em>Spiral</em></strong>, then click <strong><em>Expand</em></strong> several times.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">41</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A <strong><em>Distribution</em></strong> layout spreads nodes grouped by a property value in the X, Y or Z direction. To illustrate, we&#8217;ll first go to the <strong><em>Project=&gt;Category</em></strong> tab, choose Episodes and set <em>seasonNumber</em> as a caption.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">42</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Back in the <strong><em>Geometric</em></strong> layout tab, select Episodes nodes. Under <strong><em>Distribution</em></strong>, click the <strong><em>Spread Out</em></strong> checkbox and increase the <strong><em>Range</em></strong> to 6. Click <strong><em>Order by Property</em></strong>, choose <em>seasonNumber</em>, and click the <strong><em>Ascend</em></strong> and <strong><em>Number</em></strong> checkboxes.<br>
+<br>
+Finally, click <strong><em>X</em></strong> to distribute the Episodes nodes by <em>seasonNumber</em> along the X-axis.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">43</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Now click <strong><em>Release</em></strong> to return to the force layout.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>Quick Layout</em></strong> uses default settings for <strong><em>Ring</em></strong> or <strong><em>Tree</em></strong> layouts. Scroll down in the <strong><em>Geometric</em></strong> tab to see that we can set the <strong><em>Ego depth</em></strong> (i.e. the number of hops from the central node), scale the edge <strong><em>Length</em></strong>, and order nodes by a property value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">45</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">As we did before, lay out House nodes in a circle, ordered by <em>houseName</em>, then <strong><em>Expand</em></strong> the circle using the <strong><em>Quick Layout</em></strong> menu_._ Again, this simply makes it easier to see the results.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">46</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">With the House nodes still selected, scroll down to the bottom of the panel.  <br>
+For <strong><em>Ego depth</em></strong>, enter 1, and for the edge <strong><em>Length</em></strong>, enter 6. Click <strong><em>Order by Property</em></strong> and select Character and the <em>kills</em> property. Now click <strong><em>Ring</em></strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">47</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notice that with <strong><em>Ego depth</em></strong> set at 1, the Episodes nodes remain in force layout.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">With House nodes still selected, click <strong><em>Tree</em></strong>. Character nodes are arranged in a tree pattern to the right of their respective House nodes. Click <strong><em>Left</em></strong>, <strong><em>Right</em></strong>, <strong><em>Up</em></strong>, or <strong><em>Down</em></strong> checkboxes and <strong><em>Tree</em></strong> again to re-orient the connected nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">49</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click <strong><em>Ring</em></strong> again to display our ring layout. You can also change orientation for rings (but it&#8217;s easier to see the effect in trees).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The rings or trees are laid out on a 2D plane, but other nodes can be positioned anywhere in the 3D project space. For example, select the Episode nodes and apply a <strong><em>Grid</em></strong> or <strong><em>Cube</em></strong> layout with nodes ordered by the <em>seasonEpisode</em> property.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">51</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">At any time you can click <strong><em>Release</em></strong> to return all nodes to the default force layout. Any pinned nodes are automatically released.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">52</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Now open the <strong><em>Tree</em></strong> layout tab. Here you can arrange nodes as a hierarchy starting from any selection of nodes. Select House nodes and click <strong><em>Apply</em></strong>. The House nodes form the base of the tree and unselected nodes follow level by level according to their connection to the base nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">53</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select Episode nodes and click <strong><em>Apply</em></strong>. Now the Episode nodes form the base of the tree. This immediately separates out the many Character nodes that are not yet connected to an Episode.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">54</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use the <strong><em>Axis</em></strong> slider and click <strong><em>Apply</em></strong> to scale the tree layout. To return to a force layout, click <strong><em>Reset</em></strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">55</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Next we&#8217;ll go to the <strong><em>Parametric</em></strong> layout tab to create a 3D scatterplot. Use the X, Y, and Z dropdown menus to select properties, and click <strong><em>Apply</em></strong>. Your choices are saved, letting you apply that layout again.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">56</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use the <strong>Axis</strong> slider to adjust the size of the 3D layout, and the <strong>Show Axes</strong> and <strong>Show Grid</strong> checkboxes  to toggle the labeled axes and grid on and off.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">We&#8217;ve selected properties that exist only on Episodes nodes (<em>seasonNumber</em>, <em>millionViewers</em>, and <em>totalLines</em>). Nodes without the properties (e.g. House or Character), or which have a null value are stacked up at the origin point.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">58</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To see a force layout of the nodes that don&#8217;t have the selected properties, click the <strong><em>Enable Force Layout</em></strong> toggle in the layout panel (not in the toolbar).  <strong><em>Disable Force Layout</em></strong> returns us to our specified parametric layout.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">59</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click <strong><em>Reset</em></strong> to return the entire graph to force layout.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">We&#8217;ve seen how to lay out data in the project space for easier visualization and selection of graph patterns. Next, in <em>Module 9: Time Series</em>, we&#8217;ll look at exploring the graph by filtering on timestamp properties.</p></td>
+</tr>
+</tbody>
+</table>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Working in a Project :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/graphxr-start/project-ui.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../intro-overview.html"><strong>GraphXR User Guide</strong></a></li>
+    <li><a href="graphxr-start-intro.html"><strong>GraphXR Overview</strong></a></li>
+    <li><a href="project-ui.html">Working in a Project</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Working in a Project</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>A GraphXR project represents a 3-dimensional, functionally infinite space that includes the full capability to navigate, edit, analyze, and visualize graph data. When you first open a project, its space is empty. You can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../data-import/import-by-drag-and-drop.html" class="xref page">Import</a> data by drag and drop, data mapping, or query.</p>
+</li>
+<li>
+<p><a href="../nav-select/navigate.html" class="xref page">Navigate, search, select, and filter</a> data in the project space and in <strong><em>Tables</em></strong>.</p>
+</li>
+<li>
+<p>Create or extend graph data models directly in GraphXR using:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../transform-data/intro-transforms.html" class="xref page">Transforms</a>.</p>
+</li>
+<li>
+<p>Add and delete nodes and edges.</p>
+</li>
+<li>
+<p>Create and edit category and relationship labels, and property names and values.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Intuitively visualize data in the 3D space using:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Customized <a href="../layouts/working-with-layouts.html" class="xref page">layouts</a>, including Parametric 2D or 3D scatter plots, Geometric <strong><em>Line</em></strong>, <strong><em>Circle</em></strong>, <strong><em>Grid</em></strong>, <strong><em>Cube</em></strong>, <strong><em>Sphere</em></strong>, and <strong><em>Spiral</em></strong> layouts, <strong><em>Tree</em></strong> layouts, and more.</p>
+</li>
+<li>
+<p>Trace, Find, and spotlight multi-hop paths through the graph.</p>
+</li>
+<li>
+<p><a href="../nav-select/filter.html" class="xref page">Filtering</a> on numerical (e.g. date, time) or categorical (e.g. text strings such as name, city, etc.) properties.</p>
+</li>
+<li>
+<p><a href="../geospatial-maps.html" class="xref page">Geospatial maps</a>, for nodes with latitude and longitude properties.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Run widely used graph <a href="../graph-analytics.html" class="xref page">algorithms</a> such as <strong><em>Path Finding</em></strong> and <strong><em>Centrality</em></strong>.</p>
+</li>
+<li>
+<p><a href="../data-save-views/data-save-views.html" class="xref page">Save and share</a> graph data to data <strong><em>Views</em></strong>, <strong><em>Snapshots</em></strong>, <strong><em>GXRF</em></strong> files, <strong><em>CSV</em></strong> or <strong><em>Excel</em></strong> archives, or to a connected Neo4j database. You can also save and export a data mapping as a JSON file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>On the desktop, menus and controls provide the tools you&#8217;ll need to work with graph data:</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/v2_17/01_04_01_OrientationViewMenu.png" alt="01 04 01 OrientationViewMenu" width="720" height="450">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A <strong><em>Main Menu</em></strong> along the left vertical edge of the project space, to open panels for importing, transforming, and displaying data.</p>
+</li>
+<li>
+<p>A <strong><em>Search</em></strong> bar at the top left, to perform full-text search on either indexed data in a connected Neo4j database, or data displayed in the project.</p>
+</li>
+<li>
+<p>A <strong><em>View Menu</em></strong>, at the center of the top, to save data views or load saved views.</p>
+</li>
+<li>
+<p>A <strong><em>Legend</em></strong>, along the top right side of the space, to display and select nodes by category, tag, or property, and edges by relationship.</p>
+</li>
+<li>
+<p>A context <strong><em>Toolbar</em></strong>, along the bottom of the space, with tools available to use on data currently present or selected.</p>
+</li>
+<li>
+<p>A set of <strong><em>GUI Navigation</em></strong> controls, at the bottom right, for 3D navigation within the project.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+GraphXR can be used with WebX-connected virtual reality (VR); these controls simulate a VR experience on the desktop.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_main_menu"><a class="anchor" href="#_main_menu"></a>Main menu</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong><em>Main</em></strong> menu on the left edge of the graph space provides access to menu panels and  navigation to the home <strong><em>Projects</em></strong> page, logout, or GraphXR information. Mouse over a menu icon to display its label, or click the <strong><em>Main</em></strong> menu icon at the top left to show or hide the menu labels.</p>
+</div>
+<div class="paragraph">
+<p>Most main menu panels are further divided into tabs. Click an icon to display its panel.</p>
+</div>
+<div class="sect2">
+<h3 id="_project_panel"><a class="anchor" href="#_project_panel"></a>Project panel</h3>
+<div class="paragraph">
+<p>The <strong><em>Project</em></strong> panel lets you save, update, and access data views, review graph entities, set overall display preferences, import and export data, and access extensions.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_02_ProjectPanelView.png" alt="01 04 02 ProjectPanelView" width="520" height="450">
+</div>
+</div>
+<div class="paragraph">
+<p>Tabs in the <strong><em>Project</em></strong> panel include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>View</em></strong> tab, to display data views which have been saved to the server, save, update, select, annotate views, and load a data view to the project space.</p>
+</li>
+<li>
+<p><strong><em>Category</em></strong> and <strong><em>Relationship</em></strong> tabs, to review the defined graph entities, pull specific types of nodes or edges from a connected database and set preferences for display of entities and their properties.</p>
+</li>
+<li>
+<p><strong><em>Settings</em></strong> tab, to control the size scale, display mode, and captioning of nodes and edges, to set <strong><em>2D Mode</em></strong>, show or hide the <strong><em>Snapshot</em></strong> dialog, switch to a different <strong><em>Neo4j Database</em></strong>, and modify the project <strong><em>UI Configuration</em></strong>.</p>
+</li>
+<li>
+<p><strong><em>Data</em></strong> tab, to import data in standard formats such as CSV and GXRF, save data as a CSV or Excel archive, GXRF, or Neo4j database, export all current data views, save an SVG as SVG or PDF, take a PNG screenshot, and create a template from the current project that can be applied to other projects.</p>
+</li>
+<li>
+<p><strong><em>Extensions</em></strong> tab, to access standard or custom extensions which may be available.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_query_panel"><a class="anchor" href="#_query_panel"></a>Query panel</h3>
+<div class="paragraph">
+<p>The <strong><em>Query</em></strong> panel lets you enter and save Cypher queries on a Neo4j database, and to query SQL databases (MySQL, MSSQL, or PostgreSQL), CSV or JSON files, or use the Gremlin graph traversal language.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_03_QueryPanel.png" alt="01 04 03 QueryPanel" width="520" height="450">
+</div>
+</div>
+<div class="paragraph">
+<p>The <strong><em>SQL</em></strong> and <strong><em>CSV</em></strong> tabs include the <strong><em>Mapping Editor</em></strong> to map data in a flat CSV file or SQL table to a graph model.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_03b_QueryPanelSQL.png" alt="01 04 03b QueryPanelSQL" width="520" height="620">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_transform_panel"><a class="anchor" href="#_transform_panel"></a>Transform panel</h3>
+<div class="paragraph">
+<p>The <strong><em>Transform</em></strong> panel lets you model and transform graph data directly in GraphXR.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_04_TransformPanel.png" alt="01 04 04 TransformPanel" width="520" height="450">
+</div>
+</div>
+<div class="paragraph">
+<p>This suite of data operators includes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>f(x)</em></strong>, to execute functions similar to formulas in Excel and SQL or functions in MapReduce frameworks. You can run formulas to add information from one column of data to another, or to modify data formats.</p>
+</li>
+<li>
+<p><strong><em>Extract</em></strong>, to extract properties from existing nodes to create new nodes and edges and create a new category and relationship.</p>
+</li>
+<li>
+<p><strong><em>Aggregate</em></strong>, to collect properties from a starting node&#8217;s neighboring edges and nodes, apply a calculation, and write the result back to the starting node as a property.</p>
+</li>
+<li>
+<p><strong><em>Merge</em></strong>, to combine two nodes with matching properties into a single node.</p>
+</li>
+<li>
+<p><strong><em>Link</em></strong>, to connect nodes with the same property values. This can be used to bring two different data sets together and also to draw explicit connections among nodes of the same type.</p>
+</li>
+<li>
+<p><strong><em>Shortcut</em></strong>, to connect two nodes that share a common neighbor with a new link. You can use this to simplify the graph.</p>
+</li>
+<li>
+<p><strong><em>Connector</em></strong>, to provide access to external applications for enhancing or transforming data.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_table_panel"><a class="anchor" href="#_table_panel"></a>Table panel</h3>
+<div class="paragraph">
+<p>The <strong><em>Table</em></strong> panel provides live view of data by <em>Category</em> or <em>Relationship</em> in a searchable tabular format. <strong><em>Enhanced Tables</em></strong> let you rename categories and relationships on the fly, select, sort, edit, reformat, and then export the data in the edited table as a CSV or Excel archive.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_05_TablePanel.png" alt="01 04 05 TablePanel" width="520" height="450">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_layout_panel"><a class="anchor" href="#_layout_panel"></a>Layout panel</h3>
+<div class="paragraph">
+<p>The <strong><em>Layout</em></strong> panel leets you apply <strong><em>Force</em></strong>, <strong><em>Parametric</em></strong>,<strong><em>Geometric</em></strong>, and <strong><em>Tree</em></strong> layouts to all or part of your data.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_06_LayoutPanel.png" alt="01 04 06 LayoutPanel" width="540" height="620">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_filter_panel"><a class="anchor" href="#_filter_panel"></a>Filter panel</h3>
+<div class="paragraph">
+<p>The <strong><em>Filter</em></strong> panel lets you filter data by <em>Node</em> or <em>Edge</em> properties using multiple composable filters. You can filter on numerical property values including date-time and  latitude/longitude, as well as categorical(text string) property values.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_07_FilterPanel.png" alt="01 04 07 FilterPanel" width="520" height="520">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_algorithm_panel"><a class="anchor" href="#_algorithm_panel"></a>Algorithm panel</h3>
+<div class="paragraph">
+<p>The <strong><em>Algorithm</em></strong> panel lets you run <strong><em>Path Finding</em></strong>, <strong><em>Centrality</em></strong>, and <strong><em>Community Detection</em></strong> graph algorithms. Results are added to nodes or edges as a property value.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_08_AlgorithmPanel.png" alt="01 04 08 AlgorithmPanel" width="520" height="450">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_map_panel"><a class="anchor" href="#_map_panel"></a>Map panel</h3>
+<div class="paragraph">
+<p>The <strong><em>Map</em></strong> panel leets you work with geospatial data on a world map. Nodes with latitude and longitude coordinates are automatically dropped onto the map.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_09_MapPanel.png" alt="01 04 09 MapPanel" width="520" height="450">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_site_navigation_and_information"><a class="anchor" href="#_site_navigation_and_information"></a>Site Navigation and Information</h3>
+<div class="paragraph">
+<p>At the bottom left the main menu includes items to:</p>
+</div>
+<div class="imageblock right text-center">
+<div class="content">
+<img src="../_images/v2_17/01_04_10_ShortcutKey240.png" alt="MenuKeys" width="100" height="180">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Logout</em></strong>. Log out of GraphXR.</p>
+</li>
+<li>
+<p><strong><em>Home</em></strong>. Return to the <strong><em>Projects</em></strong> home page.</p>
+</li>
+<li>
+<p><strong><em>Shortcut</em></strong>. Quick reference to keyboard and mouse shortcut keys for navigation and data selection. See also <a href="../nav-select/ref-shortcut-keys.html" class="xref page">Shortcut Keys Reference</a>.</p>
+</li>
+<li>
+<p><strong><em>About</em></strong>. Review the GraphXR version and take a Quick Start Tour.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_search_bar"><a class="anchor" href="#_search_bar"></a>Search Bar</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The search bar at the top left enables full-text search. You can either:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Search the indexed property data in a connected Neo4j database, and import the results to the project, or</p>
+</li>
+<li>
+<p>Search the data already in the graph.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Indexed properties are set using the <strong><em>Search Index Configuration</em></strong> dialog.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Search results are listed by category below the search bar. Click a single node or a group of nodes in the search results to import the data from the database, or to select nodes returned by a search of data already in the project space.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_10a_SearchDBGraph.png" alt="01 04 10a SearchDBGraph" width="520" height="380">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_legend"><a class="anchor" href="#_legend"></a>Legend</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A legend at the top right corner of the project space lets you review and select data by <strong><em>Category</em></strong>, <strong><em>Relationship</em></strong>, <strong><em>Tag</em></strong>, or <strong><em>Property</em></strong>. Select <strong><em>Category</em></strong>, <strong><em>Tag</em></strong>, or <strong><em>Property</em></strong> to display a list of categories, tags, or properties present in the data, and the number of currently selected and total nodes of each. Likewise, select <strong><em>Relationship</em></strong> to display a list of the relationships in the data, and the number of currently selected and total edges for each.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_11_Legend_Category720.png" alt="01 04 11 Legend Category720" width="420" height="380">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+When you display categories and relationships at the same time, the relationships are listed below the categories.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Monitor how many nodes of each category, tag, property (or edges of each relationship) are currently selected. An addition or subtraction from a selection is immediately updated.</p>
+</li>
+<li>
+<p>Click a list item to select all the nodes for a category, tag, or property, or all the edges for a relationship. Use <em>ctrl-left click</em> to select multiple items.</p>
+</li>
+<li>
+<p>Click the colored line or dot next to a list item to set colors, icons, and more:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>For a category, you can set <strong><em>Color</em></strong>, an <strong><em>Icon</em></strong>, and select properties to be used for one or more <strong><em>Captions</em></strong>, an <strong><em>Avatar</em></strong> url, and relative node <strong><em>Size</em></strong>.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_11a_Legend_CategoryStyling720.png" alt="01 04 11a Legend CategoryStyling720" width="380" height="420">
+</div>
+</div>
+</li>
+<li>
+<p>For a relationship, you can set the <strong><em>Color</em></strong>, and select properties for <strong><em>Captions</em></strong> and <strong><em>Bind Width</em></strong> (relative width of the edge).</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_11b_Legend_RelStyling720.png" alt="01 04 11b Legend RelStyling720" width="540" height="380">
+</div>
+</div>
+</li>
+<li>
+<p>For a listed property value or tag, you can set a <strong><em>Color</em></strong> or an <strong><em>Icon</em></strong>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+See <a href="#display-options/using-display-options"><strong>Using Display Options</strong></a>.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_context_toolbar"><a class="anchor" href="#_context_toolbar"></a>Context Toolbar</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The context toolbar at the bottom edge of the project space displays icons for one-click tools used to navigate, select, and lay out data. Some tools are available only when you select more than one node or edge, or only when you select a single node or a node that has an associated url and weblink property.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_12_ContextToolbarLabeled_15.png" alt="01 04 12 ContextToolbarLabeled 15" width="720" height="160">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+So as to remain accessible, tool icons are responsively arranged in 2 (or more) rows as you make the browser window narrower.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_right_click_context_menu"><a class="anchor" href="#_right_click_context_menu"></a>Right-click Context Menu</h3>
+<div class="paragraph">
+<p>A floating context menu of the tools available for your current selection is available by right-clicking anywhere in the project space. It is an easier way to navigate and edit the graph without using the toolbar or opening additional panels. In addition, the menu can be customized as needed.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_18a_RtClickMenuSelect.png" alt="01 04 18a RtClickMenuSelect" width="520" height="420">
+</div>
+</div>
+<div class="paragraph">
+<p>The default right-click menu includes the following often-used tools at the top level: <strong><em>Information</em></strong>, <strong><em>Add Node</em></strong>, <strong><em>Add Edge</em></strong>, <strong><em>Expand</em></strong>,<strong><em>Find Path</em></strong>, <strong><em>Center To</em></strong>, <strong><em>Fly Out</em></strong>, and <strong><em>Delete</em></strong>.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>Select</em></strong>, <strong><em>Actions</em></strong>, and <strong><em>Layout</em></strong> submenus organize tools further as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Select</em></strong> submenu: <strong><em>All Nodes</em></strong>, <strong><em>Add to Selection</em></strong>, <strong><em>Subtract from Selection</em></strong>, <strong><em>Invert</em></strong>, <strong><em>Deselect</em></strong>, <strong><em>Floating Nodes</em></strong>, <strong><em>Leaf Nodes</em></strong>, <strong><em>Neighbor Nodes</em></strong>, <strong><em>Neighbor Edges</em></strong>, <strong><em>Child Nodes</em></strong>, <strong><em>Parent Nodes</em></strong>, and <strong><em>Connected Nodes</em></strong>.</p>
+</li>
+<li>
+<p><strong><em>Actions</em></strong> submenu: <strong><em>Change Category</em></strong>, <strong><em>Collect Nodes</em></strong>, <strong><em>Explode Nodes</em></strong>, <strong><em>Tag</em></strong>, <strong><em>Hide</em></strong>, <strong><em>Show Hidden</em></strong>, <strong><em>Pin</em></strong>, and <strong><em>Release</em></strong>.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_18b_RtClickActions1320.png" alt="01 04 18b RtClickActions1320" width="520" height="420">
+</div>
+</div>
+</li>
+<li>
+<p><strong><em>Layout</em></strong> submenu: <strong><em>Line</em></strong>, <strong><em>Grid</em></strong>, <strong><em>Cube</em></strong>, <strong><em>Circle</em></strong>, <strong><em>Sphere</em></strong>, <strong><em>Spiral</em></strong>, <strong><em>Tree</em></strong>, <strong><em>Ring</em></strong>, <strong><em>Expand</em></strong>, and <strong><em>Contract</em></strong>. Layouts are grayed out if unavailable for the selected data.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_18c_RtClickLayout.png" alt="01 04 18c RtClickLayout" width="520" height="420">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+By default, <strong><em>Quick Information</em></strong>, <strong><em>Disable/Enable Force Layout</em></strong>, <strong><em>Clear All</em></strong>, <strong><em>Screenshot</em></strong>, <strong><em>Link</em></strong>, and <strong><em>Image</em></strong> tools appear only in the toolbar.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Most, but not all, of the functions provided in the right-click menu are available in the toolbar or one of the main menu panels. The following table lists those available  only in the right-click menu.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Right-Click Menu Only</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>Find Path</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Similar to the function in the <strong><em>Algorithm&gt;Path Finding</em></strong> tab. It finds a path between just two selected nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Select</em> &gt; <strong><em>Add to Selection</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mouse over an unselected node, right click and use this menu item to add the node to already selected nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Select</em> &gt; <strong><em>Subtract from Selection</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mouse over a selected node, right click and use this menu item to de-select the node.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Select</em> &gt; <strong><em>Floating Nodes</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nodes with no connecting edges.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Select</em> &gt; <strong><em>Leaf Nodes</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nodes with only one connecting edge.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Select</em> &gt; <strong><em>Neighbor Nodes</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nodes one hop away from selected nodes. Choose again to select nodes another hop away. This is similar to the <strong><em>Trace Neighbor</em></strong> tool, except that one hop at a time is found and the nodes are selected, not just highlighted.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Select</em> &gt; <strong>Child Nodes_</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nodes one forward hop away from selected nodes (as shown by the direction of the connected edge). Choose again to select nodes another hop away.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Select</em> &gt; <strong><em>Parent Nodes</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nodes one reverse hop away from selected nodes (as shown by the direction of the connected edge). Choose again to select nodes another hop away.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Select</em> &gt; <strong><em>Neighbor Edges</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nodes one edge away from selected nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Select</em> &gt; <strong><em>Connected Nodes</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nodes connected to selected edges.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Actions</em> &gt; <strong><em>Change Category</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays a dialog that lets you immediately change the category of any selection of nodes to any other existing category or to a new category. Properties of the changed nodes  not present in the target category are transferred.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<strong><em>Actions&gt;Change Category</em></strong> cannot be undone with Ctrl+Z. Before using it, save a data View, snapshot, or .GXRF file so that you can undo a mistaken change.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_context_menu_tools"><a class="anchor" href="#_context_menu_tools"></a>Context Menu Tools</h3>
+<div class="paragraph">
+<p>The toolbar icons at the bottom edge of the project space appear depending on the data  that&#8217;s currently present and/or selected.</p>
+</div>
+<div class="sect3">
+<h4 id="_no_data"><a class="anchor" href="#_no_data"></a>No Data</h4>
+<div class="paragraph">
+<p>Toolbar icons in a project with no data present are:</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_13_ContextNoData1080.png" alt="01 04 13 ContextNoData1080" width="720" height="120">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Add Node</em></strong>. Displays a dialog to define and add a single node.</p>
+</li>
+<li>
+<p><strong><em>Quick Info</em></strong>. Toggles between turning on and off <strong><em>Quick Info</em></strong> rollovers for nodes and edges.</p>
+</li>
+<li>
+<p><strong><em>Disable/Enable Force Layout.</em></strong> Toggles between turning on and off a force directed physics layout.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_one_or_more_nodes_present"><a class="anchor" href="#_one_or_more_nodes_present"></a>One or more nodes present</h4>
+<div class="paragraph">
+<p>Once you load or create at least one node, more toolbar icons appear.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_14_ContextWithData1440.png" alt="01 04 14 ContextWithData1440" width="720" height="120">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Select Visible Nodes</em></strong>. Selects all nodes currently visible in the graph space (those not hidden using <strong><em>Hide Selection</em></strong> or by de-selecting the <strong><em>Visible</em></strong> checkbox for a category or relationship in the <strong>Project</strong> panel).</p>
+</li>
+<li>
+<p><strong><em>Take Screenshot.</em></strong> Takes a <em>.png</em> screenshot of the graph space including the legend, but excluding an open panel, toolbar and GUI navigation controls.</p>
+</li>
+<li>
+<p><strong><em>Center To</em></strong>. Zooms in on the center of the graph data if no nodes are selected, or the center of a group of selected nodes, or a single selected node.</p>
+</li>
+<li>
+<p><strong><em>Fly Out</em></strong>. Zooms out to display all the graph data centered in the project space.</p>
+</li>
+<li>
+<p><strong><em>Collect Nodes.</em></strong> Collects nodes connected to selected nodes by only one edge, and places them in special <em>collection nodes</em>. The information panel for a collection lists the included nodes, and enables you to remove or add back nodes.</p>
+</li>
+<li>
+<p><strong><em>Explode Collections.</em></strong> Deletes selected collection nodes and restores the collected nodes to the graph space.</p>
+</li>
+<li>
+<p><strong><em>Quick Layout.</em></strong> Displays a menu to lay out selected data in basic <strong><em>Line</em></strong>, <strong><em>Grid</em></strong>, <strong><em>Cube</em></strong>, <strong><em>Circle</em></strong>, <strong><em>Sphere</em></strong>, <strong><em>Spiral</em></strong>, or <strong><em>Spring</em></strong> layouts, to create a hierarchical <strong><em>Tree</em></strong> or <strong><em>Ring</em></strong> layout around selected nodes, and to <strong><em>Expand</em></strong> or <strong><em>Contract</em></strong> the layout of selected nodes.</p>
+</li>
+<li>
+<p><strong><em>Add Node</em></strong>. Displays a dialog to define and add a single node.</p>
+</li>
+<li>
+<p><strong><em>Add Edge</em></strong>. Displays a dialog to add edges between selected nodes, either with an existing relationship or by creating a new one.</p>
+</li>
+<li>
+<p><strong><em>Clear</em></strong>. Removes all data from the graph space.</p>
+</li>
+<li>
+<p><strong><em>Pin</em></strong> or <strong><em>Release</em></strong>. Toggles between pinning nodes to a location in the space, or releasing nodes from being pinned. The badge on the icon shows how many nodes are currently pinned.</p>
+</li>
+<li>
+<p><strong><em>Quick Info</em></strong>. Toggles between turning on or off <strong><em>Quick Info</em></strong> rollovers for nodes and edges.</p>
+</li>
+<li>
+<p><strong><em>Disable/Enable Force Layout</em></strong>. Toggles between turning on and off force directed physics layout.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_more_than_one_node_selected"><a class="anchor" href="#_more_than_one_node_selected"></a>More than one node selected</h4>
+<div class="paragraph">
+<p>When you select any group of nodes, additional tool icons appear that can be used on selected data:</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_15_ContextSelHidden1440.png" alt="01 04 15 ContextSelHidden1440" width="720" height="120">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Information.</em></strong> Opens an information window for the most recently selected single node or edge. It displays information about the node&#8217;s Properties and Neighbors or a relationship&#8217;s Properties.</p>
+</li>
+<li>
+<p>NOTE: An Information window shows information for just one node or edge at a time.</p>
+</li>
+<li>
+<p><strong><em>Tag</em></strong>. Opens the <strong><em>Create Tag</em></strong> dialog to tag any set of selected nodes.</p>
+</li>
+<li>
+<p><strong><em>Delete.</em></strong> Deletes selected nodes and edges.</p>
+</li>
+<li>
+<p><strong><em>Expand</em></strong>. Opens the <strong><em>Expand with relationships</em></strong> dialog to pull additional nodes from the database which are connected to the selected nodes. You can select any or all of the relationships that connect the nodes.</p>
+</li>
+<li>
+<p><strong><em>Trace Neighbor</em></strong>. Displays a slider above the toolbar to display nodes connected through a path with the number of steps you choose.</p>
+</li>
+<li>
+<p><strong><em>Inverse</em></strong>. Selects all nodes not currently selected. The badge at the upper right of the icon shows the number of currently selected nodes.</p>
+</li>
+<li>
+<p><strong><em>Un-Hide Selection.</em></strong> Appears after you select and hide nodes. Click to restore all hidden nodes and edges to the graph space and de-select them.</p>
+</li>
+<li>
+<p><strong><em>Hide Selection</em></strong>. Hides selected nodes and edges temporarily.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_one_node_selected"><a class="anchor" href="#_one_node_selected"></a>One node selected</h4>
+<div class="paragraph">
+<p>When you select a single node, two additional tool icons appear:</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_16_ContextSingle1440.png" alt="01 04 16 ContextSingle1440" width="720" height="120">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Image</em></strong> and <strong><em>WebLink.</em></strong> These two icons appear if an image and/or url is attached to a node. Select a node and click <strong><em>Image</em></strong> to display a small image in the graph space close to its node, and click again to hide the image. Click <strong><em>WebLink</em></strong> to open a browser window to a linked image or webpage.</p>
+</li>
+<li>
+<p><strong><em>Information</em></strong>. Opens a floating information pane for a selected single node or edge. Its <strong><em>Properties</em></strong> tab lists the properties of the node or edge. If desired, you can add properties and edit property values in this window. Its <strong><em>Neighbors</em></strong> tab displays a count of nodes connected to the selected node through one edge, and a live graphic of the nodes and edges.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_17_ContextProps1344.png" alt="01 04 17 ContextProps1344" width="720" height="420">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gui_navigation_controls"><a class="anchor" href="#_gui_navigation_controls"></a>GUI Navigation Controls</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The GUI navigation panel at the bottom right of the graph space provides simulated Virtual Reality (VR) navigation controls for use on the desktop.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/01_04_19_GUINavControlsLabeled720.png" alt="01 04 19 GUINavControlsLabeled720" width="420" height="340">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click and hold the upper arrows to <strong><em>Move Right</em></strong>, <strong><em>Move Left</em></strong>, <strong><em>Move Up</em></strong>, or <strong><em>Move Down</em></strong>. Click the central circle to <strong><em>Reset</em></strong> the view to the center point of the data (similar to the <strong><em>Center To</em></strong> toolbar icon).</p>
+</li>
+<li>
+<p>Click and hold the middle joystick-like controls to <strong><em>Rotate Left</em></strong> or <strong><em>Rotate Right</em></strong>.</p>
+</li>
+<li>
+<p>Click and hold the lower arrow controls to zoom <strong><em>In</em></strong> or <strong><em>Out</em></strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

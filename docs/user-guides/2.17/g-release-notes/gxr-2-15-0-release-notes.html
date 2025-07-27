@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GraphXR 2.15.0 Release Notes :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-release-notes/gxr-2-15-0-release-notes.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../user-guides/2.17/index.html"><img src="../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="gxr-2-15-0-release-notes.html">GraphXR 2.15.0 Release Notes</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">GraphXR 2.15.0 Release Notes</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Release Date:</strong> November 14, 2022</p>
+</div>
+<div class="paragraph">
+<p>The GraphXR 2.15.0 release includes new features and user interface design, and new and updated extensions.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In GraphXR, click <strong><em>About</em></strong> at the bottom left of the project space, then click on the current release tag to display a digest of features introduced in current and past releases.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_new_features_2_15_0"><a class="anchor" href="#_new_features_2_15_0"></a>New Features 2.15.0</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Show the nodes in a collection in a Table</em></strong>. You can now select a collection node and display a table of its contents. Select the collection node, open the <strong><em>Table</em></strong> panel, and click the category of the nodes in the collection. Also, in-graph search and filtering now operates on the nodes in a collection.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_01_CollectionTable.png" alt="V2 15 01 CollectionTable" width="520" height="420">
+</div>
+</div>
+</li>
+<li>
+<p><strong><em>Animated Filters</em></strong>. Filters include an auto-play function, which enables animated display of data by numerical, lat-long, or date-time properties. The animation can be set to loop continuously over a specified time interval. This enables creation of animated views of data, which can be shared through an iframe.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_02_FilterAnimated.png" alt="V2 15 02 FilterAnimated" width="520" height="420">
+</div>
+</div>
+</li>
+<li>
+<p><strong><em>Improved Data Views.</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>A maximum of 100 data views (increased from just 10) can be created.</p>
+</li>
+<li>
+<p>Data views can be shared individually with any user. In the <strong><em>Project&gt;Data</em></strong> tab and views list, click the <strong><em>Share</em></strong> icon to open the shared view. Its url can be copied and shared with any user.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_03_DataViews.png" alt="V2 15 03 DataViews" width="520" height="420">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><em>Project UI Configuration</em></strong>. User interface elements can now be configured from within the project. The configuration UI also enables display of icons to access extensions on the left menu below the panel icons. In the <strong><em>Project&gt;Settings</em></strong> tab, click <strong><em>UI Configuration</em></strong> (located at the bottom of the Settings panel).</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_04_UIConfiguration.png" alt="V2 15 04 UIConfiguration" width="420" height="480">
+</div>
+</div>
+<div class="paragraph">
+<p>The UI Configuration dialog is displayed. Click to set the visibility of UI elements (visible to everyone, only to project users, or hidden from everyone), and click <strong><em>Save</em></strong> to return to the project space.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_05_ProjectUIConfig.png" alt="V2 15 05 ProjectUIConfig" width="520" height="420">
+</div>
+</div>
+</li>
+<li>
+<p>Categories and Relationships can be re-named directly using the <strong><em>Enhanced Table</em></strong>. Open the <strong><em>Table</em></strong> panel, click to select the category and click to open the <strong><em>Enhanced Table</em></strong>. Double-click the category (or relationship) label to edit it, and click return. The label is immediately updated in the graph.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_06_RenameCatRel.png" alt="V2 15 06 RenameCatRel" width="520" height="420">
+</div>
+</div>
+</li>
+<li>
+<p>For Enterprise clients, <strong><em>Project Templates</em></strong> can be configured at the server level, such that Category settings, node sizes, and more are already set. Templates are created and edited by admin users on the server through <em>/admin</em> and are available for selection when a non-admin user creates or edits a project. Multiple templates can be configured.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_07_ProjectTemplates_Add.png" alt="V2 15 07 ProjectTemplates Add" width="520" height="420">
+</div>
+</div>
+<div class="paragraph">
+<p>A template enables the administrator to:
+<strong> Define the initial project settings
+</strong> Define styling for a predefined list of Categories and Relationships.
+** Remove unneeded UI elements and add UI buttons on the left menu to access selected extensions.</p>
+</div>
+<div class="paragraph">
+<p>+
+image::/V2_15_08_ProjectTemplates_Configure.png[,520,420,role=text-left]</p>
+</div>
+</li>
+<li>
+<p>In the <strong><em>Project&gt;Data</em></strong> tab, the <strong><em>Download Category and Relationship Settings</em></strong> button saves settings from an existing project as a .json file which can then be imported into a template.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_09_DownloadCatRelSettings.png" alt="V2 15 09 DownloadCatRelSettings" width="520" height="420">
+</div>
+</div>
+</li>
+<li>
+<p><strong><em>Usability Improvements</em></strong>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Improved keyboard/mouse/trackpad navigation and selection.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>To move any selection of nodes, simply <strong><em>left-click+drag</em></strong>.</p>
+</li>
+<li>
+<p>To center a node in the project space, hold <strong>c</strong> and <strong><em>double-click</em></strong> the node. (Simply double-clicking a node displays its Information window).</p>
+</li>
+<li>
+<p>To zoom in or out quickly, use <em><strong>Alt (</strong>or Option) <strong>+mouse</strong> (or trackpad) <strong>scroll*</em></strong>.*</p>
+</li>
+<li>
+<p>To select the nodes or edges of more than one Category or Relationship, or the nodes or edges with specific property values, <strong><em>Ctrl + left click</em></strong> the items in the Legend. <strong>__</strong></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The contextual toolbar includes the additional <strong><em>Quick Layout</em></strong> icon, which displays a menu to apply one of the basic geometric layouts in one click (<strong><em>Line</em></strong>, <strong><em>Grid,</em></strong> <strong><em>Cube</em></strong>, <strong><em>Circle</em></strong>, <strong><em>Spiral</em></strong>, and <strong><em>Spring</em></strong>), or the <strong><em>Tree</em></strong> or <strong><em>Ring</em></strong> layouts to a selection (or to all the data).</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_10_QuickLayoutToolbar.png" alt="V2 15 10 QuickLayoutToolbar" width="720" height="120">
+</div>
+</div>
+<div class="paragraph">
+<p>The layout can be adjusted using <strong><em>Expand</em></strong> or <strong><em>Contract</em></strong> menu items.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_11_QuickLayoutMenu.png" alt="V2 15 11 QuickLayoutMenu" width="520" height="420">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Quick layouts may be adequate for initial exploration. Full features to display data by property value and to position data in the project space remain available in the <strong>Geometric</strong> layout panel.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>In the <strong><em>Layout &gt; Geometric</em></strong> tab</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The nodes in <strong><em>Ring</em></strong> or <strong><em>Tree</em></strong> layouts can be arranged by a property value.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_12_PropertiesEgoRingTree.png" alt="V2 15 12 PropertiesEgoRingTree" width="520" height="420">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>In the *<em>Project&gt;<strong>_Category</em></strong> tab</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A <strong><em>Clean</em></strong> button lets you remove a category not in the currently connected database, or, for a project not connected to a database, a category not in the data currently in the graph.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_13_CleanCatRel.png" alt="V2 15 13 CleanCatRel" width="520" height="420">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>In the Project&gt;<strong><em>Settings</em></strong> tab</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A <strong><em>2D Mode</em></strong> checkbox reduces rendering to the 2D plane. When 2D mode is enabled, the <strong><em>Z Compress</em></strong> slider in the <strong><em>Layout&gt;Force</em></strong> tab is hidden, since a Z-axis is not rendered.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_14_2DCheckbox.png" alt="V2 15 14 2DCheckbox" width="520" height="420">
+</div>
+</div>
+</li>
+<li>
+<p>The <strong><em>Neo4j Database</em></strong> menu that enables selection of a different database from within a project appears only when the project is connected to a Neo4j database.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_15_NeoDBMenu.png" alt="V2 15 15 NeoDBMenu" width="320" height="200">
+</div>
+</div>
+</li>
+<li>
+<p>The <strong><em>UI Configuration</em></strong> button is added.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_removed_2_15_0"><a class="anchor" href="#_removed_2_15_0"></a>Removed 2.15.0</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>None</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_extensions_2_15_0"><a class="anchor" href="#_extensions_2_15_0"></a>Extensions 2.15.0</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Visual Query Builder</em></strong>. <em>Build Cypher queries using no-code building blocks.</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Category blocks include plus <strong>+</strong> icons to add a relationship and category block to a query in one step. This makes it faster and easier to modify a visual query.</p>
+</li>
+<li>
+<p>A single category block can now include a connection to more than one relationship block.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/v2_17/V2_15_16_VQB.png" alt="V2 15 16 VQB" width="520" height="420">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><em>Grove</em></strong> (beta-release). <em>Observable-inspired in-app javascript notebook.</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Continuing UI and API development</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>For Enterprise subscriptions, limited release extensions are available for connecting to specific external data sources, or importing data from RDBMS, document, or mixed data sources.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_supported_environments_2_15_0"><a class="anchor" href="#_supported_environments_2_15_0"></a>Supported Environments 2.15.0</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>WINDOWS, MAC OSX, AND LINUX</p>
+</li>
+<li>
+<p>CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING</p>
+</li>
+<li>
+<p>OCULUS RIFT, HTC VIVE, AND WINDOWS MIXED REALITY</p>
+</li>
+<li>
+<p>The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.</p>
+</li>
+<li>
+<p>The GraphXR client includes beta support for Virtual Reality (VR) hardware in the Google Chrome browser via WebXR.</p>
+</li>
+<li>
+<p>GraphXR Cloud supports local and cloud storage. In addition, GraphXR Enterprise is available via on-premises or private cloud deployments.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>For more information,</em> please contact <a href="https://www.kineviz.com">Kineviz</a>.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

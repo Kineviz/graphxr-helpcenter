@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reformatting Data with fx :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/transform-data/tr-fx.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../intro-overview.html"><strong>GraphXR User Guide</strong></a></li>
+    <li><a href="intro-transforms.html"><strong>Transform Data</strong></a></li>
+    <li><a href="tr-fx.html">Reformat Data with fx</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Reformatting Data with fx</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>With graph-based <em>f(x)</em> <em>functions</em> you can calculate values based on existing properties and write the results back to the source nodes or edges. This capability is similar to <em>formulas</em> in Excel and SQL, and <em>functions</em> in a MapReduce framework. An <em>f(x)</em> formula lets you run javascript formulas on a single category or relationship. You select existing properties in the data to create new properties according to pre-defined or custom formulas.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fx_preset_formulas"><a class="anchor" href="#_fx_preset_formulas"></a>f(x) Preset formulas</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following table lists the available preset formulas and their general formats.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 42.8571%;">
+<col style="width: 42.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Preset</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Function</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Format</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>toCustom</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Editable format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(propVal,props) =&gt; propVal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>toNumber</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String or Number =&gt; a Number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(propVal,props) =&gt; Number(propVal) | 0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>toString</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String, Number, or Date =&gt; a String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(propVal,props) =&gt; String(propVal)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>toDate</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valid date-time =&gt; <br>
+a <em>YYYY-MM-DD HH:mm:ss</em> timestamp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(propVal,props) =&gt; moment(propVal).format('YYYY-MM-DD HH:mm:ss')</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>toWeek</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valid date-time =&gt; <br>
+a weekday (e.g. <em>Monday</em>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(propVal,props) =&gt; moment(propVal).format('dddd')</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>convertCustomDate</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Custom date format <em>MM,DD,YYYY</em> =&gt; a <em>YYYY-MM-DD HH:mm:ss</em> timestamp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(propVal,props) =&gt; moment(propVal, "MM,DD,YYYY").format('YYYY-MM-DD HH:mm:ss')</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>fullName</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Combine <em>firstName</em> and <em>lastName</em> property values =&gt; <br>
+the new property, as a full name.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(propVal,props) =&gt; !props['firstName'] ? propVal : <code>${props['firstName']}-${props['lastName']}</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Editing a preset moves it to the <strong><em>toCustom</em></strong> item, where you can test or run the edited formula.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_running_a_preset_fx_formula"><a class="anchor" href="#_running_a_preset_fx_formula"></a>Running a preset f(x) formula</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Formulas apply to a single category or relationship at a time. However, you can run more than one formula at a time on a selection of data.</p>
+</div>
+<div class="paragraph">
+<p>In the following example numerical data in the file <em>ImportSample.csv</em> has been entered as a text string. We&#8217;ll use the <strong><em>toNumber</em></strong> preset to transform the data to numerical values.</p>
+</div>
+<div class="paragraph">
+<p><strong>To run preset formulas to create and populate new properties:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Deselect all the data in the graph space to ensure that the transform applies to all nodes or edges of a specified Category or Relationship.</p>
+</li>
+<li>
+<p>Open the <strong><em>Transform</em></strong> panel and <strong><em>f(x)</em></strong> tab.</p>
+</li>
+<li>
+<p>Select a <em>Category</em> or <em>Relationship</em> for the data you want to operate on (e.g. <em>ImportSample</em>).</p>
+</li>
+<li>
+<p>In the <strong><em>Apply Formula to Properties</em></strong> dropdown, select the property value to transform (e.g. <em>Score</em>), or click the <strong><em>+</em></strong> icon in the table of properties below the dropdown to select it.<br>
+The review panel below the properties shows a sample of existing values and their data formats.</p>
+</li>
+<li>
+<p>Choose a preset formula from the dropdown menu, in this case, <em>*toNumber*,</em> to convert the <em>Score</em> text string to a numerical value.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_01_01_FunctionStart1320.png" alt="06 01 01 FunctionStart1320" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>Enter a new property name (e.g. <em>scoreNumerical</em>) to save the result. Or you can use the default, which simply adds <em>_new</em> to the <strong><em>Selected Property</em></strong> name.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+It is usually best to create a new property and give it a descriptive name. Entering the source property name overwrites the existing data, which may be appropriate in some cases.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Check the sample input and output property values for the formula (displayed beneath the <strong><em>Selected Property</em></strong> and <strong><em>New Property Name</em></strong>, respectively) to see that the formula returns values you expect.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If the input property value is invalid for a selected formula the area below the new property name displays a brief description of the problem.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In this example, we&#8217;ll run just one formula. However, at this point, you can:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Add more formulas (for example to transform other property values available in the selected Category or Relationship).<br></p>
+</li>
+<li>
+<p>Delete a formula by clicking its Trash icon.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Once you have added all the formulas you want, you can scroll to the bottom of the panel and either:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Click <strong><em>Test</em></strong> to run a test and review the results.<br>
+OR</p>
+</li>
+<li>
+<p>Click <strong><em>Run</em></strong> to create the new property values for the category or relationship.<br>
+The new property will be added to the selected category or relationship and the calculated value will be added to each node (or edge) that includes valid input.</p>
+<div class="paragraph">
+<p>Messages appear below the <strong><em>Run</em></strong> and <strong><em>Test</em></strong> buttons showing the results, including the number of nodes with the new property.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_01_02_FunctionDone720.png" alt="06 01 02 FunctionDone720" width="720" height="720">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_running_a_custom_fx_formula"><a class="anchor" href="#_running_a_custom_fx_formula"></a>Running a custom f(x) formula</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Custom formulas enable you to use javascript functions to handle complex data conversions, and also to bring multiple properties into a single property. The libraries <a href="https://lodash.com/docs"><em>Lodash.js</em></a> and <a href="https://momentjs.com/docs/"><em>Moment.js</em></a> are supported.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Examples use the open-source dataset for the HBO Game of Thrones series. For a hands-on exercise see our <a href="../../g-learning/how-to-graphxr/how-to-graphxr.html" class="xref page">How to GraphXR</a> tutorials.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>We&#8217;ll use a custom formula to reformat existing properties in our dataset and write them to a new <em>seasonEpisode</em> property. First we import two CSV files by drag and drop:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Lines.csv</em>, with details about dialog spoken in the show. In the imported the <em>Lines</em> category, season and episode number are combined into a single <em>seasonEpisode</em> property as a text string (e.g. 'S1E3').</p>
+</li>
+<li>
+<p><em>Episodes.csv</em>, with details about the show&#8217;s episodes. In the imported <em>Episodes</em> category, <em>seasonNumber</em> and <em>episodeNumber</em> are separate properties with integer values (e.g. '1'). We want these combined into a single string and written to a new <em>seasonEpisode</em> property to match <em>Lines</em>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>To run a custom formula to create a new property:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Deselect all the data in the graph space to ensure that the transform applies to all nodes or edges of a specified Category or Relationship.</p>
+</li>
+<li>
+<p>Open the <strong><em>Transform</em></strong> panel and <strong><em>f(x)</em></strong> tab.</p>
+</li>
+<li>
+<p>Click <strong><em>Category</em></strong> and select the <em>Episodes</em> category from the dropdown menu.</p>
+</li>
+<li>
+<p>Click <em>episodeNumber</em> in the list of properties to add it to the <strong><em>Selected Property</em></strong> list and display your <strong><em>Input Formula</em></strong> options.</p>
+</li>
+<li>
+<p>In the <strong><em>New Property Name</em></strong> textbox, enter <em>seasonEpisode</em>.</p>
+</li>
+<li>
+<p>Select <em>toCustom</em> from the <strong><em>Input Formula</em></strong> menu, and enter the following javascript formula:</p>
+<div class="listingblock">
+<div class="content">
+<pre>(propVal,props) =&gt; 'S'+props.seasonNumber+'E'+props.episodeNumber</pre>
+</div>
+</div>
+</li>
+<li>
+<p>As you enter a formula, a sample result appears beneath the new property name. If there is a problem with the formula or the source data, a brief message appears (for example, "Invalid input").</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_01_03_CustomFcnStart1320.png" alt="06 01 03 CustomFcnStart1320" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>Click <strong><em>Test</em></strong> to test the custom function, or <strong><em>Run</em></strong> to run it.<br>
+In either case a message shows the result of the transformation, including the number of nodes with the new property.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_01_04_CustomFcnDone1320.png" alt="06 01 04 CustomFcnDone1320" width="720" height="520">
+</div>
+</div>
+</li>
+<li>
+<p>To inspect the new <em>seasonEpisode</em> property and its values, open the <strong><em>Table</em></strong> panel and select the <em>Episodes</em> category. You can also see the new property in a node&#8217;s information panel.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/06_01_04_CustomFcnTable1320.png" alt="06 01 04 CustomFcnTable1320" width="720" height="480">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

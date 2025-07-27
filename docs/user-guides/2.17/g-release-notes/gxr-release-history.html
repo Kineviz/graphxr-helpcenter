@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GraphXR Release History :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-release-notes/gxr-release-history.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../user-guides/2.17/index.html"><img src="../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../g-user/data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/layouts/tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="gxr-release-history.html">GraphXR Release History</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">GraphXR Release History</h1>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 8.3333%;">
+<col style="width: 8.3333%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tag</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Date</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Release Highlights</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="gxr-2-17-0-release-notes.html" class="xref page">2.17.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9/6/2024</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p><strong>New UI for data Views</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Views</em></strong> tab in the <strong><em>Project</em></strong> panel, with list or thumbnail previews of saved views to select, create, load, and update views.</p>
+</li>
+<li>
+<p><strong><em>Views</em></strong> menu near the legend. Load, save, and delete views without opening the <strong><em>Views</em></strong> tab.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Easy Node</strong>. Add a node by drag and drop from the <strong><em>Project &gt; Category</em></strong> tab.</p>
+</li>
+<li>
+<p><strong>Easy edge</strong>. Create new edges by <strong>Ctrl-click + drag</strong> to open the <strong><em>Add Edges</em></strong> dialog.</p>
+</li>
+<li>
+<p><strong>Search Categories</strong>. A search bar is added to the <strong><em>Category</em></strong> panel.</p>
+</li>
+<li>
+<p><strong>Sphere</strong> Layout is added to the <strong><em>Geometric</em></strong> layouts.</p>
+</li>
+<li>
+<p><strong>Collection edges</strong>. Edges are added from collected nodes to any collection nodes that their neighbor nodes belong to.</p>
+</li>
+<li>
+<p><strong>Usability Enhancements</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>A Project opens as soon as it is created.</p>
+</li>
+<li>
+<p><strong><em>Expand</em></strong> defaults to expand all relationships.</p>
+</li>
+<li>
+<p>Visibility and readability of search terms, toolbar icons, and tooltips is improved.</p>
+</li>
+<li>
+<p>Toolbar icons rearrange into two or more rows as the browser window is made narrower.</p>
+</li>
+<li>
+<p>Deep linking to improve browser refresh behavior.</p>
+</li>
+<li>
+<p>Admin menu item on the <strong><em>Projects</em></strong> page for registered admin users.</p>
+</li>
+<li>
+<p>Template import / export from the Admin panel.</p>
+</li>
+<li>
+<p><strong><em>UI Configuration</em></strong> includes the right-click menu.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Performance Enhancements</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Faster response of <strong><em>Fly Out</em></strong>, <strong><em>Center To</em></strong> , and <strong><em>Ring</em></strong> and <strong><em>Tree</em></strong> ego layouts.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Improved Security and User Access</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>LDAP (Lightweight Directory Access Protocol) support</strong>.</p>
+</li>
+<li>
+<p>Disable user / password login, for organizations requiring SSO.</p>
+</li>
+<li>
+<p>Encrypt views on disk.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Project Configuration</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://min.io/">MinIO/S3</a> support through Docker, providing object storage for large-scale AI and ML workloads.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="gxr-2-16-0-release-notes.html" class="xref page">2.16.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7/24/2023</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Right-click menu re-designed and enhanced.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Re-organized, <strong>Select</strong> and <strong>Actions</strong> submenus added</p>
+</li>
+<li>
+<p>New <strong>Find Path</strong> and <strong>Change Category</strong> functions</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Legend enhancements</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Click to hide Category, Relationship, and Property lists</p>
+</li>
+<li>
+<p>Ctrl-click to select more than one list item</p>
+</li>
+<li>
+<p>Styling dialog includes <strong>Avatar</strong>, <strong>Size</strong>, <strong>Caption</strong>, and <strong>Bind Width</strong> tabs</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Filter either <strong><em>continuous</em></strong> (numerical, date, lat-long) or <strong><em>categorical</em></strong> (text or string) values</p>
+</li>
+<li>
+<p>Named, parameterized Cypher queries can be stored and shared</p>
+</li>
+<li>
+<p>Property lists for Categories or Relationships can be manually re-ordered</p>
+</li>
+<li>
+<p>Data views can be password protected</p>
+</li>
+<li>
+<p>Usability Improvements</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Double-click a node or edge to display its information panel</p>
+</li>
+<li>
+<p>Easier edge selection</p>
+</li>
+<li>
+<p>Added shortcut keys to orbit around x, y, or z axes and to select orphaned nodes</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Performance Improvements</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Improved CSV parser</p>
+</li>
+<li>
+<p><strong>Extract</strong> works for more than 50,000 nodes</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="gxr-2-15-0-release-notes.html" class="xref page">2.15.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11/11/2022</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Collections can be shown in <strong>Tables</strong></p>
+</li>
+<li>
+<p>Animated filters</p>
+</li>
+<li>
+<p>Data views</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Maximum number of views increased to 100</p>
+</li>
+<li>
+<p>Sharing from within the project to anyone</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Categories and Relationships can be re-named</p>
+</li>
+<li>
+<p>UI configuration from within a project</p>
+</li>
+<li>
+<p>Project <strong>Templates</strong> for Enterprise admin users</p>
+</li>
+<li>
+<p>Download Category and Relationship settings from an existing project</p>
+</li>
+<li>
+<p>Usability Improvements</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Keyboard and mouse controls</p>
+</li>
+<li>
+<p><strong>Quick Layout</strong> menu on the toolbar</p>
+</li>
+<li>
+<p>2D Mode checkbox in Settings.</p>
+</li>
+<li>
+<p><strong>Clean</strong> out Category labels not currently in use</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="gxr-2-14-0-release-notes.html" class="xref page">2.14.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6/6/2022</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Icon system update</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Styling Setting</strong> dialog for Category color and icon selection</p>
+</li>
+<li>
+<p>Icon selection searchable by name or type</p>
+</li>
+<li>
+<p>Set global icon coloring modes in the <strong>Project&gt;Settings</strong> <strong>Icon Mode</strong> menu</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Usability Improvements</p>
+<div class="ulist">
+<ul>
+<li>
+<p>List Relationships along with Categories, Properties, or Tags in the Legend</p>
+</li>
+<li>
+<p><strong>Settings</strong> panel checkboxes re-organized, added <strong>Truncate Caption</strong> and <strong>Dash Line</strong> checkboxes</p>
+</li>
+<li>
+<p>Contextual toolbar rearranged for consistency</p>
+</li>
+<li>
+<p>A <strong>Release</strong> button added to <strong>Geometric</strong> layouts</p>
+</li>
+<li>
+<p><strong>Collision</strong> parameter slider added to the <strong>Force</strong> layout</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="gxr-2-13-0-release-notes.html" class="xref page">2.13.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Feb 7, 2022</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Collection Nodes</p>
+</li>
+<li>
+<p>Full 2D mode</p>
+</li>
+<li>
+<p>Screen capture tool</p>
+</li>
+<li>
+<p>Edge captions</p>
+</li>
+<li>
+<p>Caption orientation and rendering options</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiline property support</p>
+</li>
+<li>
+<p>Language support - Chinese</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Edge Blending</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="gxr-2-12-0-release-notes.html" class="xref page">2.12.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10/24/2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>UI Styling Refresh</p>
+</li>
+<li>
+<p>Document Model improvements - views retain styling</p>
+</li>
+<li>
+<p>AWS Neptune Gremlin support</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="gxr-2-11-0-release-notes.html" class="xref page">2.11.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6/28/2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Multilingual Caption Improvements</p>
+</li>
+<li>
+<p>Extended Healthcare icon sheet</p>
+</li>
+<li>
+<p>Visual Query Builder Improvements</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="gxr-2-10-0-release-notes.html" class="xref page">2.10.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4/15/2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Visual Query Builder</p>
+</li>
+<li>
+<p>Healthcare icon sheet</p>
+</li>
+<li>
+<p>Legend Category color picker</p>
+</li>
+<li>
+<p>Extension state saving</p>
+</li>
+<li>
+<p>LDAP and Audit Logging support</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.9.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2/1/2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Improved Transform &gt; Connector</p>
+</li>
+<li>
+<p>Improved Views &amp; Snapshot</p>
+</li>
+<li>
+<p>Support Gmail &amp; Microsoft Active Directory login</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.8.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10/3/2020</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Notebook Extension</p>
+</li>
+<li>
+<p>Map Server selection</p>
+</li>
+<li>
+<p>Geometric layout improvements</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.7.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8/3/2020</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Project ownership sharing</p>
+</li>
+<li>
+<p>Extension UI integration</p>
+</li>
+<li>
+<p>SQL query retention</p>
+</li>
+<li>
+<p>Projects Page filter</p>
+</li>
+<li>
+<p>Various usability improvements</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.6.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6/12/2020</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Add beta API for internal extension</p>
+</li>
+<li>
+<p>Fixed bugs &amp; improved performance</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5/8/2020</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Improved theme (dark / light mode)</p>
+</li>
+<li>
+<p>Add Extensions support</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4/20/2020</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Add neo4j v4 support</p>
+</li>
+<li>
+<p>Improved neo4j desktop app support</p>
+</li>
+<li>
+<p>Improved mysql support</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.3.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3/17/2020</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Add <strong>New User Guide</strong></p>
+</li>
+<li>
+<p>Support custom <strong>Quick Info Template</strong></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.2.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2/14/2020</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Add mutipler caption support</p>
+</li>
+<li>
+<p>Improved performance</p>
+</li>
+<li>
+<p>Improved mysql support</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.2.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12/19/2019</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Add Edge info panel support</p>
+</li>
+<li>
+<p>Add light theme support</p>
+</li>
+<li>
+<p>Improved Enhanced Table</p>
+</li>
+<li>
+<p>Improved CSV Mapping UI</p>
+</li>
+<li>
+<p>Improved Connector</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.2.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10/18/2019</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Add Node &amp; Add Edge support</p>
+</li>
+<li>
+<p>Add more Algorithm support</p>
+</li>
+<li>
+<p>Improved CSV Mapping</p>
+</li>
+<li>
+<p>Improved Connector</p>
+</li>
+<li>
+<p>Improved UX</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.2.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8/23/2019</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Add snapshots support</p>
+</li>
+<li>
+<p>Add Algorithm support</p>
+</li>
+<li>
+<p>Add full search support in <strong>Enhanced Table</strong></p>
+</li>
+<li>
+<p>Add Share UI config support</p>
+</li>
+<li>
+<p>Improved node &amp; edge selected, pinned, highlight status</p>
+</li>
+<li>
+<p>Improved forceLayout</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.1.9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7/3/2019</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Merge Timeline Filter, Edge Filter and Node Filter to one</p>
+</li>
+<li>
+<p>Add multiple filters support</p>
+</li>
+<li>
+<p>Add Label key config to <strong>Save to Neo4j</strong></p>
+</li>
+<li>
+<p>Improved <strong>Enhanced Table</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>support multiple selection</p>
+</li>
+<li>
+<p>support relationships</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.1.8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6/18/2019</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Add history support in query window</p>
+</li>
+<li>
+<p>Improved edge arrow and line</p>
+</li>
+<li>
+<p>Improved Connector</p>
+</li>
+<li>
+<p>Improved KinevizTable</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.1.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5/30/2019</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Add Filter input</p>
+</li>
+<li>
+<p>Add <strong>Save to Neo4j</strong></p>
+</li>
+<li>
+<p>Support <strong>Neo4j Desktop App</strong></p>
+</li>
+<li>
+<p>full-search-index-config</p>
+</li>
+<li>
+<p>Support mutiple tags contain same nodes</p>
+</li>
+<li>
+<p>Improved KinevizTable: support filter, select, edit.</p>
+</li>
+<li>
+<p>Improved Connector Link and yield</p>
+</li>
+<li>
+<p>Improved UI/UX</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.1.6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5/14/2019</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Add right-click menu support</p>
+</li>
+<li>
+<p>Add arrow for edge support</p>
+</li>
+<li>
+<p>Add <strong>Share project</strong> support</p>
+</li>
+<li>
+<p>Add <strong>Connector</strong> support</p>
+</li>
+<li>
+<p>Change <strong>Left Mouse Button</strong> drag to pan as default</p>
+</li>
+<li>
+<p>Combine highlight state and selection state</p>
+</li>
+<li>
+<p>Combine Info/Preview panel and dock on side of the screen</p>
+</li>
+<li>
+<p>Improve Layout performance</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.1.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/9/2019</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Mouse cursor changes according to the nav mode.</p>
+</li>
+<li>
+<p>Mouse wheel zoom(in/out).</p>
+</li>
+<li>
+<p>Rotate up/down now</p>
+</li>
+<li>
+<p>Center of the nav panel to reset the view</p>
+</li>
+<li>
+<p>Drag and move a group of nodes</p>
+</li>
+<li>
+<p>New user, or visiting from a new browser will take user to a default tour</p>
+</li>
+<li>
+<p>Default edge thicker</p>
+</li>
+<li>
+<p>Mouse over to show info panel</p>
+</li>
+<li>
+<p>Graph App (Neo4j desktop app store support)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.1.4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12/22/2018</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>New user sign up needs to fill out a form (survey)</p>
+</li>
+<li>
+<p>Hit return to login after filling in password on the login page</p>
+</li>
+<li>
+<p>MapControl disabled when map tab closes</p>
+</li>
+<li>
+<p>Rather than drag to resize left tab, toggle to switch between Small&lt;&#8594;⅔ width&lt;&#8594;Full width.</p>
+</li>
+<li>
+<p>An icon showing user is in read only mode when using demo DB, or viewing on a shared doc.</p>
+</li>
+<li>
+<p>Improve Tables</p>
+</li>
+<li>
+<p>Improve the share permission control</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.1.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12/6/2018</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Drag and drop GXRF, CSV(zip), Maltego, Hunchly, Spider Foot</p>
+</li>
+<li>
+<p>Import/ExportGUI improvement, remove menu ring, action buttons to the bottom</p>
+</li>
+<li>
+<p>VR improvement</p>
+</li>
+<li>
+<p>Tour/Tutorials</p>
+</li>
+<li>
+<p>User signup</p>
+</li>
+<li>
+<p>Tag/AnnotateEdge/Node filter by property</p>
+</li>
+<li>
+<p>Public share / Read only access through shared link can still tag and annotate, but data won’t be saved back to DB</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In a GraphXR project, you can click <strong><em>About</em></strong> at the bottom of the browser page, then click on the current release tag to display this digest of features introduced in current and past releases.
+</td>
+</tr>
+</table>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

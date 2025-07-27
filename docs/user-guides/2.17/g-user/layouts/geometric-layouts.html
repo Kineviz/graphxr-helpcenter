@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Using Geometric Layouts :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/2.17/g-user/layouts/geometric-layouts.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+ <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../../user-guides/2.17/index.html"><img src="../../../../_/img/kvlogo-blue.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../../user-guides/2.17/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="../../../../user-guides/2.17/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../../user-guides/2.17/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../../user-guides/2.17/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="2.17">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../intro-overview.html"><strong>GraphXR User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../graphxr-start/graphxr-start-intro.html"><strong>GraphXR Overview</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/graph-data-basics.html">Graph Data Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/open-graphxr.html">GraphXR Login</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/projects-home.html">Create and Manage Projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graphxr-start/project-ui.html">Working in a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-overview.html"><strong>Data Management</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-import/data-import-intro.html">Import Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-neo4j.html">Import from Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-from-sql.html">Import SQL Query Results</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/import-using-a-mapping.html">Data Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-save-views/data-save-intro.html">Save Views or Snapshots</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-views.html">Save Data Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-save-views/data-save-snapshots.html">Save Snapshots</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-sharing/data-share-views.html">Share Data Views</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-inside.html">Share Project Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-sharing/data-share-outside.html">Share Views Externally</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-export/data-export-intro.html">Export Data</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-views.html">Export Views</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-csv-excel.html">Export CSV or Excel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../data-export/data-export-neo4j.html">Export to Neo4j</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav-select/explore-select.html"><strong>Navigate and Select</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/navigate.html">Navigate the Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/select.html">Select Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/tag-nodes.html">Tag Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/table-explore.html">Work with Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/collect-nodes.html">Use Collection Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/hide-show.html">Hide Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/filter.html">Filter Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nav-select/ref-shortcut-keys.html">Shortcut Keys Reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../data-crud/data-crudintro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-add.html">Add or Edit Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-edit.html">Add or Edit Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-fx.html">Reformat Data with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../display-options/using-display-options.html"><strong>Display Options</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/color-icon-and-captions.html">Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/scale-by-property-value.html">Scale by a property value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../display-options/create-template.html">Create Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tree-layout.html">Tree Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../geospatial-maps.html"><strong>Display Data on a World Map</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../graph-analytics.html"><strong>Graph Analytic Algorithms</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install-admin-intro.html"><strong>GraphXR Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/review-user-analytics.html">Track Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">2.17</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">2.17</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../intro-overview.html"><strong>GraphXR User Guide</strong></a></li>
+    <li><a href="working-with-layouts.html"><strong>Work with Layouts</strong></a></li>
+    <li><a href="geometric-layouts.html">Geometric Layouts</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Using Geometric Layouts</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Geometric layouts let you arrange all nodes or selected nodes in a <strong><em>Line</em></strong>, <strong>Grid</strong>, <strong><em>Cube</em></strong>, <strong><em>Circle</em></strong>, <strong><em>Sphere</em></strong>, <strong><em>Spiral</em></strong>, or <strong><em>Spring</em></strong> ordered by one of the property values in the data. The edges between nodes continue to be displayed.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_01_GeomLayout1320.png" alt="08 03 01 GeomLayout1320" width="720" height="540">
+</div>
+</div>
+<div class="paragraph">
+<p>In addition, you can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Distribute</em></strong> selected nodes in an X, Y, or Z direction ordered by a property value. This is useful for grouping data by date and time or other numerical or categorical property values.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_02_GeomDistributeDates.png" alt="08 03 02 GeomDistributeDates" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p><strong><em>Align</em></strong> nodes along the virtual <strong><em>X</em></strong>, <strong><em>Y</em></strong>, and <strong><em>Z</em></strong> axes of the project space.</p>
+</li>
+<li>
+<p><strong><em>Rotate</em></strong>, <strong><em>Scale</em></strong>, and <strong><em>Shift</em></strong> nodes in the project space by specified amounts. This provides fine control of layouts to craft compelling visualizations.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_03_GeomRotateAlign.png" alt="08 03 03 GeomRotateAlign" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>Apply <strong><em>Ring</em></strong> or <strong><em>Tree</em></strong> layouts around selected central nodes, and specify the depth of the hierarchy and the relative length of the edges.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_04_GeomRings.png" alt="08 03 04 GeomRings" width="720" height="520">
+</div>
+</div>
+<div class="paragraph">
+<p>You can combine layouts in a variety of ways. The layout shown above uses a <strong><em>Grid</em></strong> layout for one of the categories of nodes (<em>Location</em>), and then applies a <strong><em>Ring</em></strong> layout to the nodes of a different category (<em>Photos</em>) which are connected by one edge to the nodes in the grid.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Layouts can&#8217;t be reverted easily, so make a habit of saving <strong><em>Snapshots</em></strong>  or data <strong><em>Views</em></strong> as you work.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_05a_GeomSnapshotCrop.png" alt="08 03 05a GeomSnapshotCrop" width="720" height="140">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+To share a static image of a layout, you can click the <strong><em>Take Screenshot</em></strong> icon in the toolbar. It downloads a .png screenshot of the project space that includes just the data and the legend (not the toolbar, panel menu, panel or any other UI elements).
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_05b_GeomScreenshotCrop.png" alt="08 03 05b GeomScreenshotCrop" width="720" height="180">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_applying_a_geometric_layout"><a class="anchor" href="#_applying_a_geometric_layout"></a>Applying a geometric layout</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can apply one of the named geometric layouts, either to all the data or to any selection. In the example layout above, nodes for each category are displayed in a different geometry.</p>
+</div>
+<div class="paragraph">
+<p><strong>To apply a geometric layout:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the <strong><em>Layout</em></strong> panel and <strong><em>Geometric</em></strong> tab.</p>
+</li>
+<li>
+<p>Select nodes to lay out using any method. Often, you&#8217;ll want to use the lists in the legend to select all the nodes of a given category or tag. If no nodes are selected, the layout is applied to all the data.</p>
+</li>
+<li>
+<p>Now click the <strong><em>Line</em></strong>, <strong>Grid</strong>, <strong><em>Cube</em></strong>, <strong><em>Circle</em></strong>, <strong><em>Sphere</em></strong>, <strong><em>Spiral</em></strong>, or <strong><em>Spring</em></strong> button to display the data in that layout.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_06_Layouts.png" alt="08 03 06 Layouts" width="520" height="340">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The nodes are still selected after you apply the layout. You can move them as group and  further adjust the orientation, size, and position using <strong><em>Rotate</em></strong>, <strong><em>Scale</em></strong>, and <strong><em>Shift</em></strong> layout controls.</p>
+</div>
+<div class="paragraph">
+<p>+
+WARNING: Be aware that the <strong><em>Release</em></strong> button on the <strong><em>Layout</em></strong> panel will release any pinned nodes and return the entire graph to a force layout, regardless of whether any nodes are selected. This action cannot be undone. To avoid losing useful layouts by mistake, save data <strong><em>Views</em></strong> or take <strong><em>Snapshots</em></strong> regularly as you work.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ordering_nodes_in_a_geometric_layout_by_a_property_value"><a class="anchor" href="#_ordering_nodes_in_a_geometric_layout_by_a_property_value"></a>Ordering nodes in a geometric layout by a property value</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>One of the property values in the data you select can be used to order the nodes in a geometric layout.</p>
+</div>
+<div class="paragraph">
+<p><strong>To order a geometric layout by a property value:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select nodes to be ordered. For example, use the legend to select all nodes of a given category.</p>
+</li>
+<li>
+<p>In the <strong><em>Layout</em></strong> section, click the <strong><em>Order by property</em></strong> checkbox to display its <strong><em>Category</em></strong> and <strong><em>Property</em></strong> dropdown menus.</p>
+</li>
+<li>
+<p>Select the category and property name you want.</p>
+</li>
+<li>
+<p>Click the <strong><em>Ascend</em></strong> or <strong><em>Descend</em></strong> checkbox to display the nodes in either ascending or descending order.</p>
+</li>
+<li>
+<p>Click a geometric layout button to apply it (i.e. <strong><em>Line</em></strong>, <strong>Grid</strong>, <strong><em>Cube</em></strong>, <strong><em>Circle</em></strong>, <strong><em>Sphere</em></strong>, <strong><em>Spiral</em></strong>, or <strong><em>Spring</em></strong>.)</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_07_OrderBy1320.png" alt="08 03 07 OrderBy1320" width="720" height="480">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_distributing_nodes_by_a_property_value"><a class="anchor" href="#_distributing_nodes_by_a_property_value"></a>Distributing nodes by a property value</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong><em>Distribution</em></strong> uses one of the property values available in a selection of data to group the nodes and distribute the groups in the project space along the <strong><em>X</em></strong>, <strong><em>Y</em></strong>, or <strong><em>Z</em></strong> direction. With <strong><em>Distribution</em></strong>, you can group data quickly by any date, numerical or categorical property available in your data. This helps highlight patterns quickly and makes it easier to select groups of nodes for further inspection, labeling, and analysis.</p>
+</div>
+<div class="paragraph">
+<p><strong>To distribute nodes by a property value:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select nodes to to be grouped and distributed, for example, using the legend to select all nodes of a given category.</p>
+</li>
+<li>
+<p>Click the <strong><em>Spread Out</em></strong> checkbox to enter a scale <strong><em>Range</em></strong> by which the groups of nodes will be distributed in the graph space.</p>
+</li>
+<li>
+<p>Click the <strong><em>Distribution</em></strong> option&#8217;s <strong><em>Order by Property</em></strong> checkbox to display <strong><em>Category</em></strong> and <strong><em>Property</em></strong> dropdown menus.</p>
+</li>
+<li>
+<p>Select the category and property you want.</p>
+</li>
+<li>
+<p>Click the <strong><em>Ascend</em></strong> or <strong><em>Descend</em></strong> checkbox to display the distributed groups in either ascending or descending order.</p>
+</li>
+<li>
+<p>Click either <strong><em>Number</em></strong>, <strong><em>Date</em></strong>, or <strong><em>Categorical</em></strong> checkboxes, depending on the value of the property you selected.</p>
+</li>
+<li>
+<p>Now click the <strong><em>X</em></strong>, <strong><em>Y</em></strong>, or <strong><em>Z</em></strong> button to group and distribute the selected data. In the example, we&#8217;ve chosen to group <em>Photos</em> nodes by their <em>Ratings</em> property values (1 to 5), and to distribute the groups on the <strong>X</strong> axis.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_08_GeomDistRatings.png" alt="08 03 08 GeomDistRatings" width="720" height="480">
+</div>
+</div>
+<div class="paragraph">
+<p>You can further adjust distributed groups using <strong><em>Rotate</em></strong>, <strong><em>Scale</em></strong>, and <strong><em>Shift</em></strong> layout controls.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Nodes that are grouped and distributed are  pinned in the graph space. So if the distribution isn&#8217;t quite what you want, simply press the <strong><em>Release</em></strong> toolbar icon (or  <strong><em>Ctrl+P</em></strong>) to start over.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_aligning_nodes"><a class="anchor" href="#_aligning_nodes"></a>Aligning nodes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong><em>Align</em></strong> option projects the selected (or all) nodes onto the remaining axes.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_09_Align1320.png" alt="08 03 09 Align1320" width="520" height="180">
+</div>
+</div>
+<div class="paragraph">
+<p>For example, click <strong><em>X</em></strong> to project nodes to the <em>Y</em> and <em>Z</em> axes. If you click two of the buttons, for example, <strong>X</strong> and <strong>Z</strong>, the nodes are projected onto the <em>Y</em> axis, in a line.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>Align</em></strong> is useful for organizing and separating data into specific groupings. In the example below,  <em>Location</em> nodes, and distributed <em>Photo</em> nodes grouped by <em>Rating</em> are all projected onto an X axis (and the <em>Location</em> nodes moved up using <em>left-click-drag</em>).</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_10_AlignExample.png" alt="08 03 10 AlignExample" width="720" height="480">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If you click all three buttons, the nodes are stacked on top of one another at the origin viewpoint. While they are still selected, you can click one of the <strong><em>Layout</em></strong> options to unstack them. You can also click the <strong><em>Release</em></strong> button in the <strong><em>Layout</em></strong> section to return them to a force layout.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_the_rotate_scale_and_shift_layout_controls"><a class="anchor" href="#_using_the_rotate_scale_and_shift_layout_controls"></a>Using the Rotate, Scale, and Shift layout controls</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can move the nodes in a layout as a group, and you can further adjust the orientation, size, and position using <strong><em>Rotate</em></strong>, <strong><em>Scale</em></strong>, and <strong><em>Shift</em></strong> layout controls. You can select any group of nodes. If no data are selected, the controls operate on all the data.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_11_ShiftScale.png" alt="08 03 11 ShiftScale" width="520" height="340">
+</div>
+</div>
+<div class="paragraph">
+<p>You can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Rotate</em></strong> separately along the X, Y, or Z axes, for fine-tuned control of 3D orientation. Enter a number of degrees to rotate the layout (either a positive or negative value), then click <strong><em>Rotate X</em></strong>, <strong><em>Rotate Y</em></strong>, or <strong><em>Rotate Z</em></strong> buttons.</p>
+</li>
+<li>
+<p><strong><em>Scale</em></strong> a selection (or the entire layout). You can either expand or contract the scale, and choose to scale along X, Y, and/or Z axes as well. Enter a <strong><em>Scale</em></strong> factor, select axes using the checkboxes, then click <strong><em>Expand</em></strong> or <strong><em>Contract</em></strong>. For example, you can expand the scale for data displayed in a line, and contract the scale for other data displayed in circles or grids.</p>
+</li>
+<li>
+<p><strong><em>Shift</em></strong> data on the X, Y, or Z axis to separate selected data visually in the graph space. Enter a <strong><em>Shift</em></strong> factor (either a positive or negative value) and click <strong><em>X</em></strong>, <strong><em>Y</em></strong>, or <strong><em>Z</em></strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_ring_or_tree_hierarchical_layouts"><a class="anchor" href="#_using_ring_or_tree_hierarchical_layouts"></a>Using Ring or Tree hierarchical layouts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With <strong><em>Ring</em></strong> or <strong><em>Tree</em></strong> hierarchical layouts, you select a node (or nodes) as central points, and neighboring nodes are automatically arranged according to the number of edges away they are from the centers.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_12a_EgoForce.png" alt="08 03 12a EgoForce" width="480" height="480">
+</div>
+</div>
+<div class="paragraph">
+<p>Ring or tree hierarchies can greatly aid visualization when combined with another geometric layout, such as the following <strong><em>Grid</em></strong> layout:</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_12b_EgoGrid.png" alt="08 03 12b EgoGrid" width="480" height="480">
+</div>
+</div>
+<div class="paragraph">
+<p>They are also useful for geospatial display since the rings or trees persist when central data nodes with lat-long coordinates are dropped onto the map.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_12c_EgoMap.png" alt="08 03 12c EgoMap" width="720" height="380">
+</div>
+</div>
+<div class="paragraph">
+<p>You can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Set the <strong><em>Ego Depth</em></strong> of the hierarchy (i.e. the number hops from the selected central nodes to include). The default depth of 100 will typically include all the data since a depth of 100 connections will cover most graphs. For example, with an <strong><em>Ego depth</em></strong> of 3, nodes NOT selected as centers AND three edges away are included. Nodes further away remain in the original force layout.</p>
+</li>
+<li>
+<p>Set the relative <strong><em>Length</em></strong> of the connecting edges. The default length of 0.4 is suitable for many graphs.</p>
+</li>
+<li>
+<p>Order the data in rings or trees by a property value.</p>
+</li>
+<li>
+<p>Orient rings or trees using <strong><em>Left</em></strong>, <strong><em>Right</em></strong>, <strong><em>Up</em></strong> or <strong><em>Down</em></strong> checkboxes.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_12d_EgoStart960.png" alt="08 03 12d EgoStart960" width="520" height="240">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>To display a hierarchical ring layout:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select nodes of primary interest as your center nodes. In this example from a contact tracing dataset, we select all <em>Infected_Person</em> nodes, laid out in a grid ordered by the number of connections for each node.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_12e_EgoSelectCentral1320.png" alt="08 03 12e EgoSelectCentral1320" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>Now scroll down to the <strong><em>Scale</em></strong> option and click the <strong><em>Expand</em></strong> button several times to expand the grid layout. This makes room to arrange first- and second- level contacts in rings around the central nodes.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_11_ShiftScale.png" alt="08 03 11 ShiftScale" width="520" height="240">
+</div>
+</div>
+</li>
+<li>
+<p>With the central <em>Infected_Person</em> nodes still selected, click the <strong><em>Ring</em></strong> button.</p>
+<div class="paragraph">
+<p>With the default <strong><em>Ego depth</em></strong> of 100, nodes NOT selected as centers AND 100 edges away are displayed in concentric rings around the central nodes.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_12f_EgoRings1320.png" alt="08 03 12f EgoRings1320" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>You can adjust the display further using <strong>Left</strong>, <strong>Right</strong>, <strong>Up</strong>, or <strong>Down</strong> checkboxes. Click one of the checkboxes, then click <strong><em>Rings</em></strong> to rotate or reflect the connected rings.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>To display a hierarchical tree layout:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select nodes of primary interest as your central nodes. In this example from a contact tracing dataset, we select all <em>Infected_Person</em> nodes, laid out in a grid ordered by the number of connections for each node.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_12e_EgoSelectCentral1320.png" alt="08 03 12e EgoSelectCentral1320" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>Scroll down to the <strong><em>Scale</em></strong> option and click the <strong><em>Expand</em></strong> button several times to expand the grid. This makes room to arrange first- and second- level contacts in trees connected to the central nodes.</p>
+</li>
+<li>
+<p>With <em>Infected_Person</em> nodes still selected, click <strong><em>Trees</em></strong> to see a tree layout for nodes the default 100 edges away from the selected nodes.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_12g_EgoTrees1320.png" alt="08 03 12g EgoTrees1320" width="720" height="480">
+</div>
+</div>
+</li>
+<li>
+<p>You can adjust the layout further using <strong>Left</strong>, <strong>Right</strong>, <strong>Up</strong>, or <strong>Down</strong> checkboxes.</p>
+<div class="paragraph">
+<p>Click one of the checkboxes (for example, <strong><em>Right</em></strong>), then with your central nodes selected, click <strong><em>Trees</em></strong> to see the layout to the left of the central nodes.</p>
+</div>
+<div class="paragraph">
+<p>Now click the <strong><em>Up</em></strong> checkbox and click <strong><em>Trees</em></strong> again. The tree layouts now appear above the central nodes, rather than to the left of them.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_quick_layouts"><a class="anchor" href="#_using_quick_layouts"></a>Using Quick Layouts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong><em>Quick Layout</em></strong> toolbar icon displays a menu that lets you quickly apply and modify pre-set geometric layouts to all or part of your data. This menu is also provided on the right-click context menu under <strong><em>Layout</em></strong>.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_13_QuickLayoutStart.png" alt="08 03 13 QuickLayoutStart" width="520" height="520">
+</div>
+</div>
+<div class="paragraph">
+<p>You can select items on the menu to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Apply a <strong><em>Line</em></strong>, <strong><em>Grid</em></strong>, <strong><em>Cube</em></strong>, <strong><em>Circle</em></strong>, <strong><em>Spiral</em></strong>, or <strong><em>Spring</em></strong> layout to any selection of nodes.</p>
+</li>
+<li>
+<p>Apply a <strong><em>Ring</em></strong> or <strong><em>Tree</em></strong> hierarchical layout. You can select central nodes first, but it is not required. If you apply the layout to all the data, GraphXR will determine the nodes most likely to be central. For simpler graph patterns, selecting central nodes first may not make a difference.</p>
+</li>
+<li>
+<p><strong><em>Expand</em></strong> or <strong><em>Contract</em></strong> the layout of any selection of nodes.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+With <strong><em>Quick Layout</em></strong> you cannot order nodes by property value, distribute nodes, specify controlled <strong><em>Shift</em></strong> or <strong><em>Rotate</em></strong> actions, or enter specifications for a <strong><em>Ring</em></strong> or <strong><em>Tree</em></strong> layout. You can, however, reposition selected nodes using navigation controls (e.g <strong><em>left-click drag</em></strong> to shift or <strong><em>right-click drag</em></strong> to rotate.)
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>To create a Quick Layout:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select nodes using any selection method and click the <strong><em>Quick Layout</em></strong> toolbar icon to display the quick layout menu.</p>
+</li>
+<li>
+<p>Select one of the quick layout options (for example <strong><em>Line</em></strong>).</p>
+</li>
+<li>
+<p>With the nodes still selected, you can click <strong><em>Expand</em></strong> or <strong><em>Contract</em></strong> on the menu to adjust the size of the layout.</p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_14_QuickLayoutExpand.png" alt="08 03 14 QuickLayoutExpand" width="720" height="480">
+</div>
+</div>
+<div class="paragraph">
+<p>If you need to make room for hierarchical rings or trees in an initial geometric layout, expand the layout first, then apply the additional hierarchical layout.</p>
+</div>
+</li>
+<li>
+<p>With the nodes still selected, choose <strong><em>Ring</em></strong> or <strong><em>Tree.</em></strong></p>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/v2_17/08_03_15a_QuickLayoutRings.png" alt="08 03 15a QuickLayoutRings" width="720" height="480">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Selecting <strong><em>Expand</em></strong> or <strong><em>Contract</em></strong> in the above ring layout expands only the layout of the selected central nodes, not the rings.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2024 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>
