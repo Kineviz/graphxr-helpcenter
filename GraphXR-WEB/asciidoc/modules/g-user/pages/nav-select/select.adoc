@@ -1,0 +1,148 @@
+= Selecting data in the Graph
+
+To select data in the graph you can: 
+
+* Manually select and deselect visible nodes and edges using mouse and keyboard controls, and invert selections using *_Inverse_*. 
+
+* Select data of specific types in one or a few clicks using:
+
+** Legend lists of data by category, property, tag, or relationship. You can select all nodes of one or more categories or tags, edges of one or more relationships, or nodes or edges that include one or more listed values of a property.
+  
+** Right-click *_Select_* menu items to select and deselect all nodes, select nodes or edges connected in a variety of specific ways, and to add or subtract a node or edge from a current selection.
+
+** Right-click *_Find Path_* menu item to find and select the connected nodes and edges between any two selected nodes. 
+
+** Toolbar *_Trace Neighbor_* and *_Select Visible_* icons.  
+
+** Searchable xref:./table-explore.adoc[*_Tables_*] of data by category and relationship in the *_Table_* panel that let you select nodes or edges (and navigate to them).
+
+** xref:./filter.adoc[*_Filter_*] options to filter and select data by numerical, date, or categorical property value. 
+
+
+== Select data with mouse and keyboard controls
+
+Standard mouse and/or keyboard xref:./ref-shortcut-keys.adoc[_Selection Shortcuts_] enable  manual selection of visible data in the graph. You can select one or more nodes and/or edges and add to or subtract from your selection.
+
+TIP: Use *_left mouse click_* *drag* to manually move a selection to another part of the space. You can also use the xref:layouts/working-with-layouts.adoc[*Pin/Release*] (*_Ctrl_*+*_P_*) toolbar icon  or right-click menu item to pin (or release) selected nodes to a specific location in the project space. 
+
+==  Inverting a selection
+
+Once you have a selection, click *_Inverse_* on the toolbar or the right-click *_Select_* menu to deselect currently selected nodes and edges, and select all the other visible data. The badge on the toolbar icon shows the number of currently selected nodes.
+
+NOTE: *_Inverse_* is often used along with xref:./hide-show[*_Hide /Unhide Selection_*] to simplify a graph by temporarily removing and then restoring some of its data.
+
+== Select using the Legend lists
+
+The Legend displays lists of data currently visible in the graph by category, relationship, property value, or tag. List items appear in bubbles that include the label, the total number of nodes or edges of that type, and the number currently selected. The list is displayed in descending order of the amount of data: items with the most nodes (or edges) appear at the top of a list.
+
+Click a list item to select: 
+
+* all the nodes of a category or tag
++
+image::/v2_17/04_02_04a_LegendSelectCat520.png[,520,320,role=text-left]
++
+* all the edges of a relationship
++
+image::/v2_17/04_02_04b_LegendSelectRels.png[,380,320,role=text-left]
++
+* all the nodes (or edges) with a specific property value
++
+image::/v2_17/04_02_04c_LegendSelectProps.png[,380,320,role=text-left]
++
+  
+TIP: Use *_Ctrl+ left click_* to select more than one list item. 
+
+
+== Select using the right-click *_Select_* menu
+
+The right-click *_Select_* menu lets you select or deselect all the visible data, unconnected data, and data that's connected in particular ways. These features make it easy to select and isolate subgraphs quickly. You can:
+
+* *Select* any of the following in one click:
+
+** *_All Nodes_* or *_Deselect_* all nodes.
+** *_Floating Nodes_*. All nodes with no connected edges.
+** *_Leaf Nodes_*. All nodes connected through only one edge.
+** *_Neighbor Nodes_*. Nodes connected one edge away from *selected* nodes. Choose again to select the nodes another hop away from the selected node.
+** *_Parent Nodes_*. Source nodes connected through a directed edge to selected nodes.
+** *_Child Nodes_*. Target nodes connected through a directed edge to selected nodes.
+** *_Neighbor Edges_*. The edges connected to selected nodes.
+** *_Connected Nodes_*. The nodes connected to selected edges.
++
+image::/v2_17/04_02_05a_RCSelectNeighbor.png[,520,380,role=text-left]
++
+
+* *Select and Add* to a current selection by holding down the *_Ctrl_* or *_Alt_* key before choosing a *_Select_* menu item. This lets you create a selection that combines data connected in a variety of ways.
++
+image::/v2_17/04_02_05b_RCSelectNeighborAdd.png[,520,380,role=text-left]
++
+
+* Add or subtract a *single node*.
+** Right-click on a single unselected node and choose *_Select > Add to Selection_*. 
+** Right-click on a single selected node and choose *_Select > Subtract from Selection_*.
++
+image::/v2_17/04_02_05c_RCAddtoSelection.png[,520,380,role=text-left]
+
+
+== Find a path between two nodes
+
+*_Find Path_* on the right-click menu selects the nodes and edges on a path between two nodes that you select. You can then use *_Tag_* to save the path. 
+
+NOTE: To find paths between more than one start and end node you can use *_Path Finding_* in the xref:../graph-analytics.adoc[*_Algorithm_*] panel. 
+
+*To find a path between two nodes:*
+
+. Click to select a node, then *_Ctrl-click_* to select the second node.   
+. Right-click and choose *_Find Path_* from the menu.
++ 
+The nodes and edges on the path are selected. In the example, a path consisting of 11 nodes connected through ten edges has been found and selected. 
++ 
+A message displays if no path is found.
++
+. To save the path, *_Tag_* the selection. Click *_Tag_* on the toolbar, or select *_Actions > Tag_* from the right-click menu. 
+. In the *_Manager Tags_* dialog, enter a descriptive name(e.g. _Path1_) and click *_Add Tag_*.
++
+image::/v2_17/04_02_30_FindPathDone.png[,720,480,role=text-left]
++
+. To isolate a tagged path, click *_Tag_* in the legend, click the tag item to select it, use *_Inverse_*, and hide (or delete) the data not on the path. Optionally, save a view or snapshot of the isolated path. 
++
+image::/v2_17/04_02_31_FindPathIsolated.png[,720,480,role=text-left]
+
+
+== Select a subgraph with Trace Neighbor and Select Visible Nodes
+
+The *_Trace Neighbor_* tool enables you to highlight subgraphs in the data. You start from selected source nodes and highlight additional connected nodes a specific number of hops (i.e. edges) away. You can select one or more source nodes in the graph space, or use the lists in the legend to select nodes of one or more categories, or nodes with particular property values.
+
+With the *_Select Visible Nodes_* tool you can select a highlighted subgraph for further investigation and use the *_Inverse_* and *_Hide Selection_* or *_Delete_* tools to temporarily hide or delete data not in the subgraph.
+
+NOTE: When *_Trace Neighbor_* is not invoked, *_Select Visible Nodes_* selects all nodes in the graph, similar to the shortcut *_Ctrl_*+*_A_* or the right-click *_Select > All Nodes_* menu item.
+
+*To isolate a subgraph using Trace Neighbor:*
+
+. Select one or more nodes in the graph. In this example, in the *_Property_* list in the *_Legend_* we select nodes with specific surname property values attached to _Person_ nodes.
++
+image::/v2_17/04_02_06_Trace1.png[,320,320,role=text-left]
+
+. Click the *_Trace Neighbor_* tool. A slider displays showing the number of connections or hops from the selected nodes that exist in the graph. All the rest of the data is now dimmed (that is, not visible).
++
+image::/v2_17/04_02_06_Trace2.png[,320,320,role=text-left]
+
+. Use the slider to highlight the nodes and edges that number of hops away from the source nodes.
++
+image::/v2_17/04_02_06_Trace3.png[,320,320,role=text-left]
+
+. Click the *_Select Visible Nodes_* toolbar icon to select the highlighted nodes.
++
+image::/v2_17/04_02_06_Trace4.png[,320,320,role=text-left]
+
+. Now save a *_Snapshot_* so you can revert if needed.
+. Isolate the selected subgraph for further exploration. Click *_Inverse_* to select all the nodes that aren't in the subgraph.
++
+image::/v2_17/04_02_06_Trace5.png[,320,320,role=text-left]
+
+. Click the *_Hide_*, or *_Delete_* tools to remove those nodes.
++
+image::/v2_17/04_02_06_Trace6.png[,320,320,role=text-left]
+
+. To save the subgraph, you can *_Tag_* your selection, save a view, or take another snapshot (and export your snapshot archive before you exit the project).
+
+

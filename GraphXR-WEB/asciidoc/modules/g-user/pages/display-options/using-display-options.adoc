@@ -1,0 +1,12 @@
+= Using Display Options
+
+GraphXR provides considerable flexibility in how nodes, edges, and the project space itself is displayed. You can:
+
+* Set the project space to light or dark mode
+* Scale the size of nodes, width of edges, and of captions on nodes and edges.
+* Select an icon mode to be used for all categories.
+* Set a color and icon by category, and a color by relationship, tag, and property value.
+* Apply images, videos or GIFs to nodes, if urls are available as a property value of the category.
+* Save current display settings in a template available to all projects. 
+
+image::/v2_17/03_00_01_DisplayLtMode.png[,720,520,role=text-center]

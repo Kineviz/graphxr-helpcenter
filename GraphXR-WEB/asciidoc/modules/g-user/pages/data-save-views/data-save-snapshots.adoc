@@ -1,0 +1,103 @@
+= Saving Snapshots
+
+*_Snapshots_* provide a way save up to ten (10) graph states in memory, and re-load any of them during a working session. This is useful for pursuing different lines of investigation from a given starting point, or for saving a variety of layouts. 
+
+Unlike saved data views, snapshots cannot be directly shared. 
+
+The *_Snapshots_* pane floats conveniently in the graph space. You can move it anywhere in the space, and take a snapshot at any time without opening a special panel. Icons on the *_Snapshots_* title bar let you create and save your snapshots in a single click.
+
+image::/v2_17/02_05_02_SnapshotTitleOnly.png[,240,80,role=text-left]
+
+The expanded *_Snapshots_* window displays thumbnail previews of each snapshot. Each snapshot includes a number, thumbnail, timestamp, and a *_Note_* field where you can add descriptive text. 
+
+image::/v2_17/02_05_01_SnapshotFloatingFull.png[,480,340,role=text-left]
+
+You can:
+
+* Click *_Create Snapshot_* to add to your set.
+* Click *_Save Snapshots_* to download the entire set as a snapshot archive.
+* Click a snapshot *_Trash can_* icon to delete the snapshot.
+* Click a snapshot *_Cloud_* icon to load the snapshot.
+* Edit a snapshot description in its *_Note_* field.
+
+WARNING: When you exit the project or log out, snapshots are deleted. Before exiting the project space, use *_Save Snapshots_* or the icon on the snapshot bar to export a snapshot archive to your local system. 
+
+== Creating a Snapshot
+
+*To create a snapshot:*
+
+. Go to the *_Settings_* tab in the *_Project_* panel, and click the *_Show Snapshot_* checkbox.
++
+The title bar for the *_Snapshots_* window appears at the top right, near the Legend.
++
+image::/v2_17/02_05_03_SnapShotCheckbox.png[,720,480,role=text-left]
+
+. Click the *_+_* (plus) icon in the title bar to take a snapshot.
++
+A message indicates that an nth snapshot has been successfully taken. The new snapshot is added to the top of the snapshot list.
+
+. Click the arrows next to the *_Snapshots_* title to expand the window and display your snapshots. 
++
+image::/v2_17/02_05_04_SnapShotViews.png[,540,480,role=text-left]
+
+== Saving a Snapshot Archive 
+
+You can save your collection of snapshots at any time. Doing so exports a compressed archive (.ZIP) file to your local system that contains each snapshot currently in the set. You can then re-load the entire archived set by drag and drop.
+
+A *snapshot archive* is named _Kineviz-graphxr-snapshots_ , with a _YYYY-MM-DD HH-MM-SS_ timestamp and a  _.graphxrsnapshots_ extension, for example:
++
+_Kineviz-graphxr-snapshots 2024-07-17 10-27-46.graphxrsnapshots_
+ 
+WARNING: Be sure to save current snapshots before you import a different archive, because the imported archive replaces the current set.
+
+*To save a snapshot archive:*
+
+* Click *_Save Snapshots_*, or its icon on the snapshot bar.
++
+image::/v2_17/02_08_05_SnapshotWorking.png[,480,340,role=text-left]
++
+
++
+image::/v2_17/02_05_05_SnapshotsDownload.png[,240,80,role=text-left]
++
+
+GraphXR saves the set of snapshots to a file labeled as _Kineviz-graphxr-snapshots YYYY-MM-DD HH-MM-SS.graphxrsnapshots_.
+
+
+== Loading a Snapshot
+
+Loading a snapshot restores that state of the graph-- both the graph data and its layout. 
+
+You can load any snapshot from the current *_Snapshots_* window. 
+
+The snapshot replaces the current data, and importing an archive by drag and drop replaces the current set of Snapshots. Be sure to:
+
+* Save a snapshot or view of current data if you want to preserve it.
+* Save (download) the current set of snapshots before importing a downloaded archive.  
+
+*To load a snapshot:*
+
+. Save a view of current data that you want to preserve. 
+
+.. Either save a snapshot, or if a named view is open, use *_Save_* or *_Save As_* on the *_View_* tab or view menu to save it. 
+.. In the view menu choose *_New_* to clear the current data and create a new _Unsaved View_. 
+ 
+. Now open the *_Snapshots_* pane and locate the snapshot you want to load.
+
+. Click the snapshot's *Cloud* icon to load it.
+
++
+The snapshot is loaded to the project space.
++
+image::/v2_17/02_05_06_SnapShotWindow.png[,540,480,role=text-left]
++
+
+. If desired, go to the view menu or *_Views_* tab and choose *_Save As_* to save the data as a view.
+. Enter a name for the view, and click *_Submit_*.
+
++
+NOTE: The creation date for an unsaved view (including those imported from a snapshot or GXRF file) is the current date-time. Optionally, you can click the new view's *_Remark_* icon to include more details about the history of the imported file. 
+
++
+image::/v2_17/02_05_07_SnapshotsViewRemarks.png[,520,480,role=text-left]
+

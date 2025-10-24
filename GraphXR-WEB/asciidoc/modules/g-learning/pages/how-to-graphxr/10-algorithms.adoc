@@ -1,0 +1,68 @@
+= 10 Algorithms
+
+[cols="1,1"]
+|===
+| In this Session... | Before you begin...
+
+a| * Using *_Algorithms_* to understand paths and clusters in the graph.
+* Using *_Trace Neighbor_*.
+| To follow along, download: +
+ +
+link:/HowTo_10START.graphxr[HowTo_10START.graphxr]
+|===
+
+[cols="1"]
+|===
+|+++<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ7BbSPzN8uzYh0ijRMw0VdGkgJ0tnK1H8KK1eBaZWMGpnnUrHI6ZvqFMOyemYoiA4egvLLLa_gloGc/embed?start=false&loop=false&delayms=60000" frameborder="0" width="768" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">++++++</iframe>+++
+|===
+
+[cols="1,13"]
+|===
+| *Slide* | *Text*
+
+| 3
+| Open the *_Algorithm_* panel to run a variety of commonly used graph algorithms against your data.  Algorithms are organized in *_Path Finding_*, *_Centrality_*, and *_Community Detection_* tabs.
+
+| 4
+| The *_Path Finding_* tab provides an algorithm to highlight the shortest path between the two sets of nodes.
+
+| 5
+| Select starting nodes and click *_Add to Start_*, then select ending nodes and click *_Add to End_*. Now click *_Trace Path_*.
+
+| 6
+| With a complicated graph it can be hard to see the path. You can click the *_Spotlight Path_* toggle to see only the nodes and edges involved in the path.
+
+| 7
+| Click *_Un-spotlight Path_* to see the entire graph again.
++
+*TIP:* You can *_Tag_* the spotlit path nodes or take a *_Snapshot_*.
+
+| 8
+| A brief aside: the *_Trace Neighbor_* toolbar icon provides another way to explore the paths from selected nodes (but not to a specified set of ending nodes).
+
+| 9
+| Select one or more nodes and click the *_Trace Neighbor_* toolbar icon. A slider control shows the number of path steps in the graph, and lets you choose the number to highlight.
+
+| 10
+| You can click *_Select Visible_* to select the highlighted path, then click *_Inverse_* and *_Hide Selected_* to hide the data not on the highlighted path. Now back to algorithms...
+
+| 11
+| *_Centrality_* algorithms include *_Degree_*, *_PageRank_*, *_Betweenness_*, and *_Closeness_*. Simply click to run, and a property and value for that algorithm will be added to all the nodes in the graph.
+
+| 12
+| You can open a *_Table_* to see the new properties, or an *Enhanced Table* to edit and export results.
+
+| 13
+| We've already used the *Degree* algorithm and its _gxr_degree_ property to filter out nodes with no connections from the graph. You can also use the property to focus on the most heavily connected nodes in the graph.
+
+| 14
+| *_Community Detection_* includes *_Connected Component_*, *_Strong Connected Component_*, *_Louvain_* and *_Label Propagation_* algorithms.
+
+| 15
+| Again, click to run and a property and its value for that algorithm is added to all the nodes in the graph.
+
+| 16
+| A thorough overview of graph algorithms and their uses is available in: https://neo4j.com/lp/book-graph-algorithms-ms/ . +
+ +
+Next, in _Module 11. Editing_, we'll dive into details of how to add and edit graph data.
+|===

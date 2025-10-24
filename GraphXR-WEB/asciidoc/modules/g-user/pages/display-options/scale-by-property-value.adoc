@@ -1,0 +1,34 @@
+= Scaling nodes or edges by a property value
+
+The *_Node Size Scale_* and *_Edge Width Scale_* sliders in the project's *_Settings_* tab determines the basic size of all nodes and edges, respectively. 
+
+From there, we can use the *_Style Settings_* dialog to scale node size or edge width to the values of a selected property. For example, in the following simulated healthcare data we've scaled the size of _Patient_ nodes by their _numConditions_ property, that is, the number of separate conditions each patient has complained of.
+
+image::/v2_17/03_02_10_NodeSizeConditions.png[,480,320,role=text-left]
+
+*To scale nodes or edges by a property value:*
+
+. Go to the *_Legend_* and click the colored dot or line for a category or relationship (e.g., the _Location_ category).
+. In the styling setting dialog:
++
+* For a category, open the *_Size_* tab and select a property to be used to scale node size (e.g. _annualCrimes_).
++
+image::/v2_17/03_02_11_NodeSize.png[,480,380,role=text-left]
++
+* For a relationship, click the *_Bind Width_* checkbox for the relationship property (e.g. for  _OCCURED_AT_, choose the  _severity_ property). This scales the width of _OCCURED_AT_ edges by a measure of the severity of the crimes occuring at the connected location.
++
+image::/v2_17/03_02_12_EdgeBindWidth.png[,480,380,role=text-left]
++
+
+NOTE: Although *_Node Size_* or *_Bind Width_* checkboxes are available for any property, a property with numerical values (rather than text) produces more meaningful visual results.
+
+You can also scale node size or edge width in the *_Project_* panel's *_Category_* or *_Relationship_* tabs. 
+
+* For a category, click the *_Node Size_* checkbox for the property to be used to scale node size.
++
+image::/v2_17/03_02_13_ProjectCatNodeSize.png[,720,380,role=text-center]
++
+
+* For a relationship, click the *_Bind Width_* checkbox for the desired property.
++
+image::/v2_17/03_02_14_ProjRelBindWidth.png[,720,320,role=text-center]

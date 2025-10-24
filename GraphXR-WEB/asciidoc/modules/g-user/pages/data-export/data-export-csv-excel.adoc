@@ -1,0 +1,71 @@
+= Export Data as a CSV or Excel workbook
+
+You can export:
+
+* All the graph data in the project space as a CSV archive of flat files or Excel workbook. 
+
+* All or some of the data in a table as a CSV or Excel file.
+
+
+== Export all data as CSV or Excel
+
+Exporting a CSV or Excel archive results in a collection of flat files, one for each category and relationship. A category file includes node IDs, properties and their values. A relationship file includes the node source and target IDs, and any edge properties and their values. 
+
+The exported archive or workbook receives a default name of _ProjectName_, _ViewName_ (if any) plus an appropriate extension:
+
+* A *CSV* archive has a _.zip_ extension: _ProjectName_ViewName.zip_
+* An *Excel* workbook has an _.xlsx_ extension: _ProjectName_ViewName.xlsx_
+
+*To save a CSV archive or Excel workbook:*
+
+. Click the *_Project_* panel and the *_Data_* tab.
+. Click either *_Save CSV_* or *_Save Excel_*.
++
+image::/v2_17/02_07_02a_Save_CSV_Excel.png[,520,280,role=text-left]
+
++
+The file name appears in the Downloads tab of your Chrome browser window.
+
+== Export data from a table
+
+For any single category or relationship, you can export some or all of data that's visible in the project space as a table of nodes or edges and their property values. You can:
+ 
+* Select data in the project space and export the results from a basic table.
+* From a basic table, open an *_Enhanced Table_* to further select or edit the data before you export it. 
+
+The exported file receives a default name based on the category or relationship label: _Label(YYYY-MM-DD).xlsx_ or _.csv_ 
+
+For example, _Location(2023-05-02).CSV_ contains a table of _Location_ nodes exported on 2023-05-02.
+
+* To export data from a basic or enhanced table*
+
+. Select data in the project space using any method.
+. Open the *_Table_* panel.
++
+The *_Category_* tab opens by default, and shows all the categories present in the currently selection (or all visible data if no selection has been made).
++
+image::/v2_17/02_07_02b_ExportCSVTable.png[,720,380,role=text-left]
++
+. Select a table to export. You can: 
++
+* Click a category bubble to display its table.
+* Open the *_Relationship_* tab and click a relationship bubble. 
++
+. Scroll to the bottom of the panel and click *_Export CSV_* or *_Export Excel_* to export the table of visible and selected data. 
++
+image::/v2_17/02_07_02c_ExportCSVExcelTable.png[,520,280,role=text-left]
++
+. To edit and select from the table before export, click *_Enhanced Table_*.
++
+image::/v2_17/02_07_02d_ExportEnhancedTable.png[,520,80,role=text-left]
++
+In the enhanced table, you can rearrange or hide columns, search for specific values, rename categories or relationships, and more.
++ 
+. Click the checkbox at the far left to select the table rows you want to export.
++
+image::/v2_17/02_07_02e_ExportSelectedCSVExcel.png[,720,380,role=text-left]
++
+. Then from  *_More Actions_*,  select either *_Export Selected as CSV_* or *_Export Selected as Excel_*.
+
+
+

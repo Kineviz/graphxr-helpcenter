@@ -1,0 +1,59 @@
+= Using Extract
+
+The *_Extract_* transform lets you generate nodes and edges belonging to new or existing categories and relationships, based on one or more source properties.
+
+To illustrate, we'll extract new categories from a CSV file that's imported by drag and drop. The _Characters.csv_ file shown below tabulates information about each character in HBO's Game of Thrones series.
+
+image::/v2_17/06_02_01_ExtractCSV720.png[,720,380,role=text-center]
+
+All the data is imported as a single default _Characters_ category. Now we want to extract a separate _House_ category for the family each character belongs to. We can extract a _houseName_ property from _Character_ nodes, and use it to create both a _House_ category and a new _BELONGS_TO_ relationship that connects _House_ nodes to the original _Characters_ nodes.
+
+NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. For a hands-on exercise see our xref:g-learning:how-to-graphxr/how-to-graphxr.adoc[How to GraphXR] tutorials.
+
+*To extract a new category and connecting relationships:*
+
+. In the project space, de-select the data to extract from the entire data set.
++
+
+NOTE: If you select nodes, *_Extract_* operates on only those elements. With nothing selected, transformations affect the whole graph.
+
++
+. Open the *_Transform_* panel and *_Extract_* tab, and enter the following details:
++
+* In the *_Extract From Category_* menu, select _Characters_, which will appear as the *_Source Category_*. If there is only one category in the graph, it is already entered as the *_Source Category_*, and the menu does not appear.
+* In the *_New Relationship_* textbox, enter _BELONGS_TO_.
+* In the *_New Category_* textbox, enter _House_.
+* In the *_Create Category From Property_* area, select the _houseName_ property from the menu (or click the *_+_* (plus) icon next to its name in the table below) to add it to the *_Selected Property_* list.
++
+
+NOTE: Properties in the source data are listed alphabetically in the scrollable list of properties. A sample of data displays below the property names, showing property values and data formats.
+
++
+The selected property name appears in the *_New Property Name_* text box. You can enter a different property name, but we'll leave it unchanged for this example.
+
++
+image::/v2_17/06_02_02_Extract1320.png[,720,520,role=text-left]
++
+
+. Click the *_Key_* checkbox to set _houseName_ as a key, so that a single node will be created for each unique value of _houseName_, rather than a separate one for every source node.
++
+
+NOTE: If the property value is a list and not a single value, you can click the *_Split_* checkbox to create a separate node for each value in the list. Otherwise, a single node will be created with only the first value in the list.
+
+. Optionally, you can specify additional extraction behavior:
+
+* Click *_SkipEmpty_* to extract the specified pattern only when the source property is present and its value is non-null. For example, the (_Character_)-[_BELONGS_TO_]-(_House_) pattern would be created only for _Character_ nodes that include a _houseName_ property and value.
+* Click *_Inherit Links_* to copy any edges connected to the original category to the new extracted category. Our graph does not yet include any edges so we'll leave it unchecked.
++
+
+. Scroll down to the bottom of the panel and click *_Run_*. Errors and a completion messages appear below the *_Run_* button. 
+* The legend now displays the new _House_ category and the new _BELONGS_TO_ relationship.
+* Extracted _House_ nodes appear in the graph space, connected to their respective _Character_ nodes by new _BELONGS_TO_ edges.
+* Since *_Skip Empty_* was left unchecked, source nodes with no _houseName_ value are assigned to an unlabeled _House_ node, connected to their respective _Character_ nodes through _BELONGS_TO_ edges.
++
+image::/v2_17/06_02_03_ExtractComplete1320.png[,720,520,role=text-left]
++
+
+In the Property list, the _houseName_ property of the unlabeled _House_ node appears as "`_not available`"_.
++
+image::/v2_17/06_02_04_ExtractNull720.png[,520,460,role=text-left]

@@ -1,0 +1,148 @@
+= Creating and Managing Project Templates
+
+A template saves the current settings in a project, including node and edge sizes,  captions, colors, and icons, as well as *_UI configuration_* options that control which interface elements are shown or hidden in the project. It enables a user to apply all the current settings to any new or existing project in one step.
+
+A template can be created by either:
+
+* a general user within a project using the *_Create Template_* button in the *_Project > Data_* tab.
+* an admin user in the *_Templates_* panel. 
+
+As soon as it is created, the template appears on the template menu available when creating or updating a GraphXR project.
+
+image::/v2_17/08_02_ProjectTemplates_Set.png[,420,420,role=text-left]
+
+The *_Templates_* panel enables an admin user to configure and manage the entire set of  templates at the server level. 
+ 
+image::/v2_17/08_01_ProjectTemplates_Start.png[,720,480,role=text-left]
+
+== Adding or Deleting a template
+
+You can add a new template at any time. You can either create a template with a  a default configuration which you can then edit, or upload a template .JSON file.
+
+*To add a template:*
+
+. Click *_Add Template_*, and provide a name and description.
++
+image::/v2_17/08_03_ProjectTemplates_Add.png[,720,340,role=text-left]
++
+. Either:
++
+* Click *_Upload_* to navigate to a template file saved on your local system, or 
+* Click *_Submit_* to create a template with the default configuration.
++
+The new template appears on the template list.
+
+*To delete a template:*
+
+. Click a template’s *_Delete_* button.
+. Click *_OK_* to confirm deleting the template.
++
+image::/v2_17/08_04_ProjectTemplates_Delete.png[,720,340,role=text-left]
++
+The template is deleted from the list and the template menu.
++
+NOTE: If it could be useful later, you can *_Download_* a template to your local system before deleting it. 
+
+
+== Editing a template
+
+For any existing template, you can:
+
+* Edit the name and upload a template file.
+* Edit its UI configuration, category and relationship settings, and overall project settings.
+* Set a *_Priority_* that controls the order in which it appears on the template menu.
+* Download the JSON template file to your local system
+
+=== Edit a template
+
+*To edit or upload a template*:
+
+* Click a template’s *_Edit_* icon. You can:
++ 
+** Change the template name if desired.
+** Click *_Upload_* to upload a template file from your local system.
++
+image::/v2_17/08_05_ProjectTemplates_Edit.png[]
+
+=== Configure a template
+
+Template configuration is organized in separate tabs:
+
+image::/v2_17/08_06_ProjectTemplates_Configure.png[,720,340,role=text-left]
+
+* *_UI Config_* configuration, to grant or deny access to specific UI elements.
+* *_Category Relationship Config_*, to edit predefined colors, icons, and captions. 
+* *_Project Setting_*, to set project-wide settings such as node and edge scale, icon style, caption position, and more.
+
+*To edit UI Configuration*:
+
+. Click a template's *_Config_* button to open the configuration panel.
++
+The *_UI Config_* panel is opened by default.
++
+. Click an item on the list to grant or deny access to specific UI elements. Click any element or group of elements to toggle between:
++
+* *_Enabled on the project and for shared views_*
+* *_Enabled on the Project_*, or
+* *_Disabled_*.
++
+. Click *_Save_* to save the configuration.
+
++
+TIP: By default, extensions are found in the *_Extensions_* panel and menu, but you can click any extension to make it visible as a UI button on the left menu.
++
++
+image::/v2_17/08_07_ProjectTemplates_HideAddExtension.png[,720,420,role=text-left]
++
+For example, with the configuration shown above, the Algorithm panel is hidden, and Visual Query Builder and Grove extensions are placed as icons on the left menu bar.
++
++
+image::/v2_17/08_08_ProjectTemplates_NewMenu.png[,720,720,role=text-left]
+
+*To edit a template's Category and Relationship settings*:
+
+. Click a template's *_Config_* button
+. Open the *_Category Relationship Config_* tab.
++
+image::/v2_17/08_09_ProjectTemplates_CatRel.png[,720,480,role=text-left] 
++
+* Optionally, click *_Upload_* to navigate to a template file and upload it.
+* Edit the existing styling in the code panel.
++
+. Click *_Save_* to save your changes.
+
+*To edit a template's Project settings*:
+
+. Click a template's *_Config_* button
+. Open the *_Project Setting_* tab.
++ 
+* Choose the initial project *_Settings_* just as you would when opening a project. For example,adjust node and edge scale, and display of captions, avatars, arrow and line style, or pin icons, and more.
++
+image::/v2_17/08_10_ProjectTemplates_Settings.png[,720,480,role=text-left]
++
+. Click the arrow to return to the *_Templates_* panel. Project settings are automatically saved.
+
+=== Set a template's Priority
+
+The template *_Priority_* buttons group templates in order of priority on the template menu. Templates within the same priority level are listed in alphabetical order.
+
+*To set a Priority*:
+
+* Click a template's *_Priority_* button.
++
+The button toggles between setting a priority of 0, 1, or 2.
++
+image::/v2_17/08_11_TemplatePriority.png[,720,480,role=text-left]
+
+=== Download a template file
+
+*To download a template*:
+
+* Click a template's *_Download_* button.
++
+A JSON template file is downloaded to your local system.
++
+image::/v2_17/08_12_TemplateDownload.png[,720,280,role=text-left]
+
+
+

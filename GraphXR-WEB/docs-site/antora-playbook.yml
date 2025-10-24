@@ -1,0 +1,14 @@
+site: 
+  title: Documentation
+  url: http://petrel.local
+content:
+  sources: 
+  - url: ~/bitbucket/kineviz-2024/graphxr-docs/
+    start_path: GraphXR-WEB/asciidoc
+ui:
+  bundle:
+    url: ./ui-bundleOct23.zip
+    snapshot: true
+antora:
+  extensions:
+  - require: '@antora/lunr-extension'

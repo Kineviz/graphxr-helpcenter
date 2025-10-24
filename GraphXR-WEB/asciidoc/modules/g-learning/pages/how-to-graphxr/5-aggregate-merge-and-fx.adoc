@@ -1,0 +1,96 @@
+= 5 Aggregate, Merge, and f(x)
+
+[cols="1,1"]
+|===
+| In this Session... | Before you begin...
+
+a| * Using Transforms:
+*  *_f(x)_* and *_Link_* to reformat and reorganize data. 
+*  *_Aggregate_* to enumerate and/or evaluate nodes or edges.
+*  *_Merge_* to merge nodes or edges.
+| To follow along, download the files: +
+ +
+link:/HowTo_05_START.graphxr[HowTo_05_START.graphxr] +
+ +
+and https://kineviz.com/s/GXR_QSG.zip
+|===
+
+[cols="1"]
+|===
+|+++<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQU2DP3zXM_vjn_1RhX2ASYA3M_Sq92zGxGZk2RiTP4_mWghE94uv_FSLIixNuglMwE7LOv7xmSi_rR/embed?start=false&loop=false&delayms=60000" frameborder="0" width="768" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">++++++</iframe>+++
+|===
+
+[cols="1,13"]
+|===
+| *Slide* | *Text*
+
+| 3
+| So far, we've extracted a House category from the _Characters.csv_ data, created a BELONGS_TO relationship with Character nodes, and a SPOKE relationship between Characters and the Lines they spoke.
+
+| 4
+| Now we want to link lines of dialog with the broadcast Episodes they were spoken on.  +
+We can do this using *_Merge_* and *_Aggregate_* transforms. Drag and drop _Episodes.csv_ onto the graph space, creating the new Episodes category and properties.
+
+| 5
+| The _Episodes.csv_ file contains the titles, descriptions, air dates, episode numbers, seasonnumbers, and viewership for each broadcast episode. We can now connect lines of dialog to corresponding episodes.
+
+| 6
+| We have a little problem, though. In Lines, season and episode number are combined into the single string _seasonEpisode_. In Episodes, they occupy separate properties.
+
+| 7
+| To fix this, we'll use the *_Transform_* panel and *_f(x)_* tab. It lets us run javascript formulas on properties of a category or relationship. Presets are included, but for this we'll need to entera custom formula. Select Episodes and _episodeNumber_.
+
+| 8
+| Enter _seasonEpisode_ as the new property name, and enter the custom formula : +
+ +
+(propVal,props) \=> 'S'+props.seasonNumber+'E'+props.episodeNumber +
+ +
+An example result is automatically displayed under the *_New Property Name_*.
+
+| 9
+| Click *Run*. You can scroll to the bottom of the panel to view the results.
+
+| 10
+| Now that the property values match, we can go to the *_Link_* transform. In both Episodes and Lines, select the _seasonEpisode_ property, and click *_Run_* to link nodes with matching properties via edges of a new SPOKEN_ON relationship.
+
+| 11
+| As we explore patterns in more detail, we can use *_Aggregate_* to add new properties to the graph and *_Merge_* to simplify and clarify the graph.
+
+| 12
+| We want to add a _totalLines_ property-the total number of lines spoken-to each Episode node. Lines nodes do have a _lineCount_ property for each speaker and episode. We can use the *_Aggregate_* transform to sum those values and write the total to connected Episode nodes.
+
+| 13
+| Go to the *_Transform_* panel and *_Aggregate_* tab (take a Snapshot first!).  +
+Under *_Aggregate to Category_*, select Episodes.  +
+Under *_Aggregate Along_* select SPOKEN_ON.  +
+Click *_Property from Neighbor Nodes_* and select _lineCount_.   +
+For the _New Property_ enter _totalLines_, select the sum preset, and click *_Run_*.
+
+| 14
+| We can also use *_Aggregate_* to return the number of unique characters per Episode.  +
+Select the Episodes category and SPOKEN_ON relationship.  +
+Click *_Property from Neighbor Nodes_*, and select the _speaker_ property.  +
+Under *_New Property_* enter _totalCharacters,_ under *_Formula Name_* select _count_, and click *_Run_*.
+
+| 15
+| Now display a table to see the new _totalLines_ and _totalCharacters_ properties.  +
+And before we move on, create another Snapshot.  +
+Note that at any time, you can download your snapshots as a single .ZIP archive.
+
+| 16
+| Now let's simplify the graph using *_Merge_*. It combines nodes of a single category or the edges of a single relationship based on a property value.  +
+Go to the *_Transform_* panel and *_Merge_* tab.
+
+| 17
+| With *_Merge_* we can use the _seasonEpisode_ property to merge Lines nodes for an episode into a single node.  +
+Click *_Category_* and select Lines, and select _seasonEpisode_ as the property.  +
+Click *_Clear Unselected Properties_* since only the _seasonEpisode_ property is meaningful.
+
+| 18
+| To simplify the graph we'll use *Merge* to combine the lines nodes for an episode into a single node, using the _seasonEpisode_ property.  +
+Click *Category* and select Lines, and select _seasonEpisode_ as the key property. Click *Clear Unselected Properties* since only the _seasonEpisode_ property will be meaningful.
+
+| 19
+| Now click *Run*. With only one Lines node per Episode, we can now visualize the content of Episodes more clearly.   +
+But we can simplify the graph even further. In _Module 6. Shortcut_, we'll return to the Snapshot we created before merging to see how.
+|===

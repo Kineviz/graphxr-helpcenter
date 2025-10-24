@@ -1,0 +1,110 @@
+= GraphXR 3.0.0 Release Notes
+
+*Release Date:* October 1, 2025
+
+The GraphXR 3.0.0 release includes new features, usability enhancements and new extensions for file management and data modeling.
+
+NOTE: In GraphXR, click *_About_* at the bottom left of the project space, then click on the current release tag to display a digest of features introduced in current and past releases.
+
+== New Features 3.0.0
+
+* *New UI for data Views*
+** *_Views_* tab. In the Project panel, saved data views appear in the new *_Views_* tab.
++
+image::/v2_17/V2_17_01_ViewTab.png[,340,520,role=text-left]
++
+Use it to:
++
+*** Load a view by clicking on a thumbnail preview or list item.
+*** Display views as a list or thumbnails. Views created in previous versions of GraphXR are still available, but do not include a preview.
+*** Sort views by *_Name_*, *_Date Modified_*, or *_Date Created_*, in either ascending or descending order.
+*** *_Filter_* views by entering all or part of a view name in the view search bar.
++
+image::/v2_17/V2_17_02_ViewFilter.png[,340,520,role=text-left]
++
+*** Display an information window with the number of nodes and edges, the date created and date last modified, and a *_Remarks_* field to annotate the view.
++
+image::/v2_17/V2_17_03_ViewInfo.png[,340,520,role=text-left]
++
+*** *_Save_* the current view or *Save As_* a new view.
+*** Use icons on the preview tile or list to share, delete, or rename a view.
++
+image::/v2_17/V2_17_04_ViewPreviewRollover.png[,340,520,role=text-left]
++
+
++
+NOTE: To *_Import_*, or to download views (with *_Save GXRF_* or *_Export All Views_*) you now use the *_Project>Data_* tab. 
++
+** *_Views_* menu. Select and load, save, save as a new view, or delete a view without opening the *_Views_* tab. The menu is at the top of the project space to the left of the legend. 
++
+image::/v2_17/V2_17_05_ViewsMenu.png[,340,520,role=text-left]
++
+*** The current project and view name displays. If the view was modified since it was loaded, an asterisk appears next to the name.
+*** In the dropdown menu, you can save the current view, share it, save it as a new view, or load a different view. The menu displays the 5 most recently saved views. Choose *_select all views..._* at the bottom of the menu to display all the views saved in the project. 
+
+* *Easy Node*. Add a node by drag and drop from its label pill in the *_Project > Category_* tab.
++
+image::/v2_17/V2_17_06_AddNode.png[,340,520,role=text-left]
++
+* *Easy edge*. Create new edges by *Ctrl-click + drag* from a selection of nodes to another node, to open the *_Add Edges_* dialog.
++
+image::/v2_17/V2_17_07_EasyEdge.png[,340,520,role=text-left]
++
+* *Search Categories*. A search bar is added to the *_Category_* panel.
+* *Sphere* Layout is added to the *_Geometric_* layouts, and available in *_Quick Layout_* and right-click *_Layout_* menus.
+* *Collection edges*. When collections are created, edges are also added from collected nodes to any collection nodes that their neighbor nodes belong to. These edges are not saved to an external database such as Neo4j.
+
+* *Usability Enhancements*
+
+** A Project opens as soon as it is created.
+** *_Expand_* defaults to expand all relationships.
+** Visibility and readability of search terms, toolbar icons, and tooltips have been improved.
+** Toolbar icons are rearranged into two or more rows when you reduce the width of the browser window, keeping them more accessible. 
+** Deep linking occurs such that:
+*** The last panel opened will be open after refreshing the page.
+*** You can open a view with a Grove book opened or hidden in the background.
+** A menu item for registered admin users opens the Admin panel from the *_Projects_* page.
+** Templates can be imported and exported from the Admin panel. A priority (0, 1, or 2) can be set that controls the order templates appear in the Project page menu.
+** The right-click menu and its items are added to *_UI Configuration_*. An API has been created for additional menu customization.
+
+* *Performance Enhancements* 
+
+** Faster response of *_Fly Out_* and *_Center To_* in large graphs.
+** Faster response for *_Ring_* and *_Tree_* ego layouts (30 sec. for 30k nodes).
+ 
+* *Improved Security and User Access* 
+** *LDAP (Lightweight Directory Access Protocol) support*. GraphXR can now be configured to work with your LDAP infrastructure, allowing both normal and admin GraphXR users to login using their LDAP credentials. LDAP is an open, vendor-neutral application protocol for accessing and maintaining static data within directories (e.g. usernames, passwords, email addresses, printer connections, and more). LDAP can also handle authentication, so users can sign on just once and access many different files on the server.
+** Option to disable user / password login, for organizations requiring SSO.
+** Option to encrypt views on disk. 
+
+* *Project Configuration*
+
+** https://min.io/[MinIO/S3] support added to GraphXR through Docker builds. MinIO is an open source object storage system designed for large-scale AI and ML workloads.
+
+== Removed 2.17.0
+
+* None
+
+== Extensions 2.17.0
+
+For Enterprise subscriptions, additional analytic capability can be provided, including:
+
+* AI-enabled entity extraction and knowledge mapping of unstructured data
+* One-stop connection to external OSINT sources
+* Connection to databases in SQL, document, or mixed formats
+* No-code visual Cypher queries   
+* Observable-based javascript notebooks
+
+NOTE: For information about extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 2.17.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING
+* OCULUS RIFT, HTC VIVE, AND WINDOWS MIXED REALITY
+
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
+* The GraphXR client includes beta support for Virtual Reality (VR) hardware in the Google Chrome browser via WebXR.
+* GraphXR Cloud supports local and cloud storage. In addition, GraphXR Enterprise is available via on-premises or private cloud deployments.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

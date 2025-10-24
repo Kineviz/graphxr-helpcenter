@@ -1,0 +1,15 @@
+= Export Data
+
+Exporting data from a project may be needed, for example, to provide data to another application or user, or to preserve an external archive of key findings. 
+
+You can export:
+
+* A graph state in GraphXR's GXRF format, essentially saving it as an external data view.
+
+* A xref:./data-save-snapshots[Snapshot] archive. 
+ 
+* A CSV archive or Excel workbook that preserves the nodes, connected edges, and property values visible in the project space (but not the layout).
+
+* A CSV or Excel file of the data available in a category or relationship table.  
+  
+* The nodes, connected edges, and property values in the data (but not the layout) to the connected Neo4j database.

@@ -1,0 +1,14 @@
+= GraphXR Extensions
+
+Kineviz has developed extensions that enhance or customize GraphXR for the needs of specific user communities.
+
+The xref:./visual-query-builder.adoc[*Visual Query Builder*] extension is available to all users. Use it to Build and run basic no-code *_Cypher_* queries from within a GraphXR project.  
+
+For Enterprise subscriptions, additional analytic capability can be provided, including:
+
+* AI-enabled entity extraction and knowledge mapping of unstructured data
+* One-stop connection to external OSINT sources
+* Connection to databases in SQL, document, or mixed formats
+* Observable-based javascript notebooks
+
+NOTE: For information about extensions, please contact https://www.kineviz.com[Kineviz].

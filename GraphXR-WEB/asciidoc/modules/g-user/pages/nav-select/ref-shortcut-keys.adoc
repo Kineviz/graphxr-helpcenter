@@ -1,0 +1,152 @@
+= Shortcut Keys for Navigation and Selection
+
+Desktop keyboard and mouse shortcuts are provided for navigation controls, most items in the context menu, and a few other controls.
+
+[cols="3,4,6,2"]
+|===
+| *Action* | *Shortcut Keys* | *Description* | *Function*
+
+| Pan
+| *_Left mouse click_* *drag* or  +
+*_1_*+*_Left mouse click_* *drag*
+| Pan right, left, up or down.
+| Navigation
+
+| Zoom
+| *_mouse scroll_* or  +
+*_2_*+*_left mouse click_* *drag*
+| Drag up to zoom in, down to zoom out
+| Navigation
+
+| Fast zoom
+| *_Ctrl+mouse scroll_*
+| Scroll up for fast zoom in and down for zoom out.
+| Navigation
+
+| Rotate (Manual)
+| *_Right mouse click_* *drag* or  +
+*_3_*+*_Left mouse click_* *drag*
+| Rotate right, left, up or down, centered on a selection, or the center of all nodes.
+| Navigation
+
+| Rotate (Automatic)
+| *_Ctrl_*+*_O_*
+| Toggle to rotate all data continuously around a selected center, or stop rotating.
+| Navigation
+
+| Orbit (Automatic) around x- y- or z- axis
+| x: Ctrl+alt+shift+o +
+y: Ctrl+o +
+z: Ctrl+shift+o 
+| Toggle to rotate all data continuously around the x - y- or z- axis, or stop rotating.
+| Navigation
+
+| Stepwise Move
+| *_Arrow key click_* (_right_, _left, up_, or _down_)
+| Move all the data a step right, left, up, or down.
+| Navigation
+
+| Reset view
+| *_Alt+Shift+R_*
+| Reset entire view to the center of the graph. _*NOTE:* Click the *Fly Out* icon to center all the graph data on the screen, and the *Center To* icon to center the view on selected nodes._
+| Navigation
+
+| Show info
+| *_Ctrl+I_* or +
+_left mouse double click_
+| Displays the information window for a selected node.
+| Information
+
+| Hide menu
+| *_Esc_*
+| Hides a panel (i.e. Project, Table, etc.) or information window.
+| Information
+
+| Full Screen
+| *_Ctrl_*+*_F_*
+| Enter full screen mode. Press *_Esc_* to exit full screen.
+| Navigation
+
+| Select all nodes
+| *_Ctrl_*+*_A_*
+| Select all visible nodes.
+| Selection
+
+| Deselect all nodes
+| *_Alt+A_* (*_Option+A_*) or  +
+ _Double click_ empty space
+| Deselect all visible nodes.
+| Selection
+
+| Select a node or nodes
+| *_Left mouse click_* or  +
+*_Shift_*+*_Left mouse click_* *drag*
+| Select one or more nodes.
+| Selection
+
+| Center on a node
+| *_c+Left mouse double click_*
+| Selects and centers the view on a single node.
+| Selection & Navigation
+
+| Add a node or nodes to a selection
+| *_Ctrl+Left mouse click_* or  +
+*_Ctrl+Left mouse click drag_*
+| Add one or more nodes to a selection.
+| Selection
+
+| Subtract a node or nodes
+| *_Alt+Left mouse click_* or +
+*_Alt+Left mouse click drag_*
+| Remove one or more nodes from a selection.
+| Selection
+
+| Select all orphaned (floating) nodes
+| *_Shift+D_*
+| Select all nodes with no connection.
+| Selection
+
+| Drag selection
+| *_Left mouse click_* *drag*
+| Drag (and pin) selected nodes and edges to a different position in the graph space.
+| Selection
+
+| Invert selection
+| *_I_* or *_Shift+I_*
+| Toggle to select nodes not currently selected.
+| Selection
+
+| Expand
+| *_Ctrl_**+**_X_*
+| Display a dialog to pull nodes connected to the selected nodes based on relationships from the project's Neo4j database.
+| Selection & Import
+
+| Leaf Trimming
+| *_Ctrl_**+**_L_*
+| Collapse nodes with only one connection to a single node. Enter the shortcut key again to restore trimmed nodes.
+| Selection & Editing
+
+| Pin or Release
+| *_Ctrl_**+**_P_*
+| Toggle to pin, or release pinning of selected nodes.
+| Selection
+
+| Delete selection
+| *_del_* or *_backspace_*
+| Deletes selected nodes and edges.
+| Selection & Editing
+
+| Clear graph
+| *_Ctrl+Shift+C_*
+| Remove all data from the graph space.
+| Selection & Editing
+
+| Undo
+| *_Ctrl+Z_*
+| Immediately undo a *_Delete_* or *_Clear_* action.
+| Editing
+|===
+
+NOTE: To access a reference panel of shortcuts in your GraphXR project space, click the *_Shortcut_* icon located at the lower left of the browser window.
+
+image::/v2_17/04_08_01_ShortcutKey.png[Shortcut,100,160]

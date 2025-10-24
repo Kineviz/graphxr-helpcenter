@@ -1,0 +1,7 @@
+= Installing GraphXR
+
+Installing GraphXR is only necessary for Enterprise accounts that require a secure on-premises application. The application package is accessed through Docker, and then installed. 
+
+Individual users can simply go to the GraphXR browser, create an account and log in.
+
+Using GraphXR in a virtual reality space through WebX requires additional software and hardware installation.  

@@ -1,0 +1,55 @@
+= Using Parametric Layouts
+
+A *_Parametric_* layout enables you to create scatter plots by displaying any numerical property value encoded in your data on X-, Y-, or Z- axes.
+
+image::/v2_17/08_02_01_ParametricLayout1320.png[,720,340,role=text-left]
+
+You can:
+
+* Select a numerical property to be displayed on the X-, Y-, and Z- axes.
+* Set an *_Advanced Range_* (minimum and maximum) of values to be displayed.
+* Adjust the scale of the axes using the *_Axis_* slider.
+* Choose to show or hide the *_Axes_* and/or the *_Grid._*
+* Click the *_Enable Force Layout_* icon to additionally display in a force-directed layout the connected nodes that don't have the selected properties. The default is to collapse these nodes at the origin, because displaying them usually obscures the parametric scatter plot.
++
+image::/v2_17/08_02_04_EnableDisableForce720.png[,720,340,role=text-left]
+
+* *_Apply_* the layout, or *_Reset_* the graph to restore the layout you started with.
++
+image::/v2_17/08_02_04_AxesGrid720.png[,520,480,role=text-left]
+
+
+== Creating a parametric layout
+
+*To create a parametric layout:*
+
+. Click to open the *_Layout_* panel and choose the *_Parametric_* tab.
+. Choose a property for the X-, Y-, and Z-axes from the drop down menus.
++
+
+NOTE: You can flatten the layout to a 2D projection by choosing _none_ as the Z-axis.
+
+. Optionally, click the *_Advanced Range_* checkbox to set a range of property values to display.
++
+image::/v2_17/08_02_02a_ParametricAdvRange720.png[,520,480,role=text-left]
+
+. Use the *_Axis_* slider to adjust the size of the scatterplot space.
+. Click the *_Show Axes_* checkbox to show labeled X-, Y-, and Z- axes. Click the *_Show Grid_* checkbox to add gridlines.
+. Click *_Apply_* to apply the parametric layout.
++
+image::/v2_17/08_02_04_AxesGrid720.png[,520,480,role=text-left]
++
+
+TIP: Once you are done designing your parametric scatter plot, you can save a *_Snapshot_* or data *_View_*, and then *_Reset_* the data to the layout you started with. For example, if you start with geospatial data pinned to a map, then craft another view of it in a parametric layout, clicking *_Reset_* returns you to the map layout.
+
+== Saving Parametric Layouts
+
+Your parametric layouts are temporarily saved in the lower part of the panel, and you can:
+
+* Click *_Apply_* to re-apply a saved parametric layout.
+* Click *_Delete_* to delete a saved parametric layout.
++
+image::/v2_17/08_02_05_ApplySaved.png[,520,480,role=text-left]
++
+
+IMPORTANT: Parametric layouts are deleted when you exit a project, but do persist in a *_Snapshot_* or data *_View_*.

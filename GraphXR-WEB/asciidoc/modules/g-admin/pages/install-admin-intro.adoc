@@ -1,0 +1,23 @@
+= GraphXR Admin Guide
+
+This guide includes 
+
+* Installing and Updating GraphXR
+** Install using Docker
+** Install with a Docker Zip
+** Update or re-install
+** Install with persistent storage
+
+* Administering GraphXR Users, Project Details, and Databases
+** Manage user profiles in the *_Users_* tab.
+** Review GraphXR usage in the *_App Analytics_* tab.
+** Manage Neo4j datasets in the *_Neo4j Setting_* tab.
+** Review and respond to users email feedback in the *_Feedbacks_* tab.
+** Review and manage available *_Extensions._*
+** Manage custom *_Icon_* sets.
+** Create and manage project *_Templates_* that users can apply when creating or editing a project.
+** Create and manage *_Short URL_* lists for shared views or iFrames.
+
+NOTE: You must have your admin account properly configured, which is typically done during installation. 
+
+

@@ -1,0 +1,75 @@
+= Installing WebXR Virtual Reality for GraphXR
+
+GraphXR supports use in a Virtual Reality (VR) or Augmented Reality (AR) environment through WebXR and an Oculus headset.
+
+This guide outlines setting up an environment for using GraphXR with WebXR, in this case, using the Oculus Rift, Oculus Rift-S, and Oculus Quest 2 (via Oculus Link) headsets with Chrome WebXR. The steps are:
+
+. Prepare the VR Device, Hardware, and Software
+. Configure the _Chrome_ browser.
+. Run _GraphXR_.
+
+== Prepare the VR Device, Hardware, and Software
+
+=== Oculus Device
+
+For setup refer to:
+
+Oculus Rift: https://www.oculus.com/rift/setup/
+
+Oculus Rift-S: https://www.oculus.com/setup/#rift-s-setup
+
+Oculus Quest 2 (Physical Link): https://support.oculus.com/394778968099974/
+
+Oculus Quest 2 (Air Link): https://support.oculus.com/airlink/
+
+=== Hardware Requirements
+
+* _2D use_
+** Minimum RAM: 8GB
+** Processor: Intel Gen 6 i5
+** GPU: Nvidia GTX-1050 or equivalent
+* _VR/XR use_
+** Minimum RAM: 16GB
+** Processor: Intel Gen 6 i7
+** GPU: Nvidia GTX-1070 or better
+
+=== Software Requirements
+
+* Windows 10
+* https://www.google.com/chrome/%5BChrome version ( http://v.70.xxx[v.79.xxx] or greater)]
+* https://www.oculus.com/setup/
+
+== Configure Chrome
+
+. .Configure NVIDIA GPU. +
+Open _NVIDIA Control Panel_ => _Manager 3D settings_ => _Program Settings_ => Select _Google Chrome_ => Select _NVIDIA Processor_
+. Enable Chrome Hardware acceleration +
+Open _Chrome =>_ Go to __chrome://settings =>__Scroll to _System_ => Enable _Use hardware acceleration when available_.
+. Configure Gamepad flags in Chrome +
+Open _Chrome_ => Go to _chrome://flags_ => Search with _gamepad_ => Enable _Enable Windows.Gaming.Input Extensions_
+. Relaunch _Chrome_.
+
+== Run GraphXR
+
+. Open the _Oculus client_.
++
+
+IMPORTANT: *_You must keep the Oculus client running continuously._*
+
+. Open _Oculus client_ => Click _Devices_ menu => Please make sure of the devices status. +
+If you can't start the Oculus client, please go to:
+ +
+_C:\Program Files\Oculus\Support\oculus-runtime_, start _OVRServer_x64.exe_.
+ +
+Once this is running continuously (this is the terminal GUI, and you will be able to see the logs), _OVRServer_ will automatically open the _Oculus_ client again.
+. Open _GraphXR_:
++ Open _Chrome_ => Go to *https://graphxr.kineviz.com* => Create _VC Demo_ => _Start_.
+
+. Load Data in to _GraphXR_, for example using a Cypher query as follows:
+.. Click the _Query_ icon.
+.. Enter `+*MATCH (n)-[r]-(m) RETURN * LIMIT 100*+`
+. Click the _play_ icon.
+. Click the _Enter VR_ icon to enter the VR space.
++
+
+NOTE: When VR has been set up, the _Enter VR_ icon appears at the left side of the graph space.

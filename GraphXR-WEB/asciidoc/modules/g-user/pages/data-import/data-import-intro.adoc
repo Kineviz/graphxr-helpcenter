@@ -1,0 +1,24 @@
+= Importing Data
+
+GraphXR enables you to import data from many different sources. You can:
+
+* xref:./import-by-drag-and-drop.adoc[Import by drag and drop]. Files you can drag and drop include CSV or Excel files or archives, JSON files, data views exported as GraphXR's GXRF files, or Snapshot archives.
++
+
+NOTE: You can also use *_Import_* or *_Import Views_* buttons on the *_Data_* tab in the *_Projects_* panel to locate and import files. *_Import Views_* highlights files on your system that have the _graphxr_ extension.
+
++
+
+* xref:./import-from-neo4j.adoc[Import from Neo4j]. You can pull by category or relationship, import the results of database search, use the *_Expand_* tool, or use a Cypher query. The  *_Visual Query Builder_* extension lets you create and run basic no-code visual Cypher queries. 
++ 
+* Query a CSV file and import it as graph data. 
+
+* Query a connected SQL database and return a table of results that can be imported as graph data.
++
+NOTE: Data in a single table can be extracted as categories, relationships, properties, and key values using the xref:./import-using-a-mapping.adoc[*_Mapping Editor_*]. 
++
+* Query a JSON file or perform a Gremlin query on a suitable connected database.
+
+* xref:./load-a-saved-view.adoc[Load a project's data *_View_*] or access xref:data-sharing/data-share-views.adoc[shared views]. 
+
+* For Enterprise users, advanced GraphXR extensions can be provided to import data from other graph or composite databases, and to craft reproducible workflows for data import.

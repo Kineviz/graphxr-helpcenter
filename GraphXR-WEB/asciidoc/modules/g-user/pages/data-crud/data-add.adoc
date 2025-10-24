@@ -1,0 +1,130 @@
+= Add and Edit Graph Data
+
+At any time you can manually add nodes and edges of new or existing categories and relationships in the project space. To show *_Add Node_* or *_Add Edge_* dialogs, you can click the respective toolbar icons or use the right-click menu. 
+
+image::/v2_17/05_01_01_AddIcons1344.png[,720,220,role=text-left]
+
+You can also create new properties and add their values to nodes or edges, and edit existing property values.
+
+image::/v2_17/05_01_02_AddProperties720.png[,420,380,role=text-left]
+
+NOTE: Often, you only enter one value for a property. However, GraphXR does allow entry of multiple values for a single property. These multiple property values can be displayed as captions, on separate lines. You can also add a node without including any properties, to match a situation allowed in Neo4j.
+
+== Adding a node
+
+The *_Add Node_* dialog lets you add new nodes directly in GraphXR, one at a time.  
+
+TIP: You can add a node of a Category by click and drag. In the *_Project>Category_* tab, click a category pill and drag to the project space to create one node. The *_Add Node_* dialog opens, and you can enter property values for the node, then click *_Create_* or *_Cancel_*.
+
+image::/v2_17/05_01_03_AddNodeEasy.png[,720,220,role=text-left]
+  
+*To add a node:*
+
+. In the context menu, click the *_Add Node_* icon to display the *_Add Node_* dialog.
+
+. Use the dropdown menu to select an existing category for the added node, or enter a new category name (e.g. _Pets_), then press return.
++
+image::/v2_17/05_01_04_AddCategory720.png[,420,360,role=text-left]
++
+For example, we notice that a person owns pet dogs called Harry and Rufus. Our data doesn't yet include anything about animal roles. For each pet, we can quickly add a node (and, for the first one, create a new _Pets_ category with initial properties such as the _name_, _owner_, _age_, _url image_, _species_, _breed_, and _colors_ of the pet).
++
+
+. Enter one or more *_Property Names_* for the category (e.g. _petName, etc._), and enter its corresponding *_Property Value_* (e.g. _Harry_) or values (e.g. _black_ and _gray_). To enter multiple values, enter the first value then press return to enter the next one, and so on.
++
+image::/v2_17/05_01_04_AddNodeDialog720.png[,380,420,role=text-left]
++
+
+OR
+ 
++
+
+In the list of properties for an existing category, enter a _Property Value_ if you have one, add any additional property names and their values, and click the minus (*-*) icon for properties for which you have no value.
++
+
+NOTE: The other nodes of an existing category will be updated with any new property names you add, but the values will be null. If you want to add values for a property you've added, you can inspect a *_Table_* for missing values, and enter a value for another node using its *_Information_* window (*_Ctrl*+*I_*). To enter values for multiple nodes at once, you can use *_f(x)_* or *_Aggregate_* transforms.
+
+. Click *_Create_* to create the node.
++
+
+The new node appears in the project space. A new category will appear in the *_Category_* list in the legend. For an existing category, the total number of nodes is updated.
+
++
+image::/v2_17/05_01_06_AddedNode720.png[,420,340,role=text-left]
+
+== Adding edges
+
+In the *_Add Edge_* dialog you can create new edges that connect selected nodes to each other via a new or existing directed relationship. You can add properties and single or multiline property values to edges just as you can for nodes.
+
+TIP: An easy edge feature lets you select one or more nodes, then use *_Ctrl-drag_* to select a target node When the target is selected, dashed lines appear between the nodes. The *_Add Edge_* dialog opens, and you can select an existing relationship or create a new one, then click *_Create_* or *_Cancel_*. 
+
+image::/v2_17/05_01_07a_EasyEdge.png[,520,340,role=text-left]
+
+*To add edges to nodes:*
+
+. Using any selection method, select one or more nodes that you want to connect to other nodes via a directed relationship.
+
+. Click the *_Add Edge_* icon, select *_Add Edge_* from the right-click menu, or use *_Ctrl-drag_* to select a single target node. 
+
+. In the *_Add Edge_* dialog, either enter the name of a new relationship to be assigned to the new edges (e.g. _OWNED_BY_) and press return, or select an existing relationship from the dropdown menu.
++
+image::/v2_17/05_01_07b_CreateRelationship720.png[,420,360,role=text-left]
+
+. Optionally, enter property names and their values for the relationship.
+. Click *_as Source_* to list the nodes that will be sources for new edges.
+. Now select one or more target nodes for the edges and click *_as Target_*.
++
+image::/v2_17/05_01_07c_CreateEdges720.png[,420,360,role=text-left]
++
+If you've set the source and target backwards, click the *_Switch_* button to reverse the two.
+
+. Click *_Create_*.
++
+New edges are created connecting the source nodes to the target nodes, with arrows showing the direction of the relationship. The total number of edges of that relationship is updated in the *_Relationship_* list in the legend.
++
+image::/v2_17/05_01_07d_NewEdges720.png[,520,380,role=text-left]
+
+== Adding new properties to a single node or edge
+
+You can add one or more new properties to a single node or edge using the *_Add Property_* button in its *_Info_* window. 
+
+NOTE: Adding properties and their values to one node or edge at a time in GraphXR is impractical for large amounts of data. It can be useful for modeling and testing very small amounts of data, or for adding a small number of missing properties and their values.
+
+For example, we can add a property for a _mobile_ number to the following _Customer_ node that includes _name_ and _aliases_ properties. Captions on the customer node are currently set to show the name and the aliases.
+
+Once the mobile number property is added, we can go to the _Customer_ category in the *_Project_* panel and *_Category_* tab and select it as a caption instead (or in addition).
+
+image::/v2_17/05_01_10_MultiPropCaptions1080.png[,720,460,role=text-left]
+
+*To add a new property and property value:*
+
+. Select a single node or edge and double click to display its information window.
++
+image::/v2_17/05_01_11_AddMobileProp1080.png[,520,520,role=text-left]
+
+. Click the *_Add Property_* button, and enter a *_Property Name_* (_mobile_) and one or more *_Property Values_* (a mobile number) in the provided text fields.
++
+image::/v2_17/05_01_12_AddMobileValue1080.png[,520,520,role=text-left]
+
+. Click *_Save_* to save the new property and property value, or *_Cancel_* to exit without saving.
++
+The information window is updated with the new property and values.
++
+Once the _mobile_ property is added, we can set it as the caption for _Customer_ nodes.
++
+image::/v2_17/05_01_13_AddPropDone1080.png[,520,520,role=text-left]
+
+== Editing a property value
+
+You can edit any existing property value of a single node or edge in its *_Info_* window. This might be useful to correct an error or add missing values to a small amount of data.
+
+*To edit a property value:*
+
+. Select a single node or edge, and in the context menu, double click to display its information window.
+. In the list of properties, double click a property *_Value_*, and edit the value (or values) in the provided text field.
++
+image::/v2_17/05_01_09_EditProperty1080.png[,520,460,role=text-left]
++
+The property value is updated as you enter it.
+
+. Click elsewhere in the list to save the new property value.
+

@@ -1,0 +1,76 @@
+= GraphXR 2.14.0 Release Notes
+
+*Release Date:* June 6, 2022
+
+The GraphXR 2.14.0 release includes new features and user interface design, and new and updated extensions.
+
+NOTE: In GraphXR, click *_About_* at the bottom left of the project space, then click on the current release tag to display a digest of features introduced in current and past releases.
+
+== New Features 2.14.0
+
+* *_Icon system upgrade_*. In the *_Legend_*, clicking the colored dot next to any *_Category_* list item displays the *_Styling Setting_* dialog, with *_Color_* and *_Icon_* tabs to select a node color and icon.
++
+image::/v2_17/V2_14_01_SelectColor720.png[,520,360,role=text-left]
+** The *_Icon_* tab provides a wide choice of modern icons, a search bar, and a dropdown menu to display sets of icons of general types.
++
+image::/v2_17/V2_14_02_SelectIcon720.png[,520,420,role=text-left]
+** Three icon display modes are available in the *_Project>Settings_* tab and *_Icon Mode_* menu.
++
+image::/v2_17/V2_14_03_SettingsIconModeMenu.png[,520,420,role=text-left]
++
+Options are:
++
+*_Background Transparent_*
++
+image::/v2_17/V2_14_04b_DisplayIconBkTransparent.png[,720,72,role=text-left]
++
+*_Icon Transparent_*
++
+image::/v2_17/V2_14_04a_DisplayIconTransparent.png[,720,72,role=text-left]
++
+*_Mix Color_*
++
+image::/v2_17/V2_14_04c_DisplayIconMixColor.png[,720,72,role=text-left]
+
+* *_Usability Improvements_*.
+** In the Legend, the list of *_Relationships_* can now be displayed beneath the list of *_Categories_*, *_Properties_*, or *_Tags_*.
++
+image::/v2_17/V2_14_05_LegendMultiChoice.png[,520,420,role=text-left]
+** The contextual toolbar has been re-arranged for consistent tool positioning.
++
+image::/v2_17/V2_14_06_ContextToolbarLabeled_14.png[,720,160,role=text-left]
+
+** The Information panel can now be re-positioned.
+** You can use *_spacebar+drag_* to move any selection of nodes.
+** In the *_Settings_* tab
+*** Auto Image checkbox is renamed *_Show Avatars_*.
+*** A *_Truncate Caption_* checkbox is added.
+*** A *_Dash Line_* checkbox is added to display all edges as a dashed line.
+* *_Geometric_* layout options re-organized, and a *_Release_* button added to release geometric layouts and apply a force-directed layout to the entire graph.
+* *_Collision_* *parameter added to* *_Force_* *layout adjustments*. A slider to adjust a *_Collision_* parameter helps avoid overlapping nodes in force-directed layouts. This is especially useful for display of 2D projections.
++
+image::/v2_17/V2_14_07_ForceCollision1320.png[,520,420,role=text-left]
+
+== Removed 2.14.0
+
+* None
+
+== Extensions 2.14.0
+
+* *_Visual Query Builder_*. _Build Cypher queries using no-code building blocks._
+** Bug fixes.
+* *_Grove_* (beta-release). _Observable-inspired in-app javascript notebook._
+** Continuing UI and API development
+* For Enterprise subscriptions, limited release extensions may be available for connecting to specific external data sources, or importing data from RDBMS, document, or mixed data sources.
+
+== Supported Environments 2.14.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING
+* OCULUS RIFT, HTC VIVE, AND WINDOWS MIXED REALITY
+
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
+* The GraphXR client includes beta support for Virtual Reality (VR) hardware in the Google Chrome browser via WebXR.
+* GraphXR Cloud supports local and cloud storage. In addition, GraphXR Enterprise is available via on-premises or private cloud deployments.
+
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

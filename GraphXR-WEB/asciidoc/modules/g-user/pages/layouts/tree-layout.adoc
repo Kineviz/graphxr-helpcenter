@@ -1,0 +1,22 @@
+= Using Tree Layouts
+
+A tree layout displays nodes and edges as a hierarchy branching from one or more nodes you select. Nodes can be selected using any method: in the Legend by category, property value, or tag, or directly in the graph.
+
+image::/v2_17/08_04_01_TreeLayout1320.png[,720,380,role=text-left]
+
+The tree is dynamic in that at any time you can change the source nodes and apply the new layout. In addition, you can:
+
+* Use the *_Axis_* slider to increase or decrease the size of the tree view.
+* Click *_Reset_* to return to the view you started with.
+
+*To create a dynamic tree layout:*
+
+. Open the *_Layout_* panel, and select the *_Tree_* tab.
+. Select one or more nodes to be the first level of the branching hierarchy (e.g. all _Author_ nodes).
+. Click *_Apply_* to show the tree hierarchy.
++
+image::/v2_17/08_04_02_TreeAuthor.png[,720,380,role=text-left]
+
+. Now select a different set of nodes as the first level (e.g. all _Location_ nodes) and click *_Apply_*.
++
+image::/v2_17/08_04_03_TreeLocation.png[,720,380,role=text-left]

@@ -1,0 +1,32 @@
+= Combining data with Link
+
+The *_Link_* transform connects nodes with equivalent property values through edges of a new or existing relationship. Properties can be linked even if the property names differ, which is especially useful for combining data from different sources. *_Link_* can also be used to explicitly draw a connection among nodes within a data set.
+
+NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. For a hands-on exercise see our xref:g-learning:how-to-graphxr/how-to-graphxr.adoc[How to GraphXR] tutorials. 
+
+The Game of Thrones _Characters.csv_ file includes the _characterName_ property, while the _Lines.csv_ file includes the _speaker_ property. Although named differently, the two properties have matching values: the name of the character in the show. We can use those properties to create a relationship between lines of dialog and the character that spoke it.
+
+If a property is missing, or the values do not match, a link will not be created. This can result in nodes remaining unconnected. To correct this, you can select and inspect the unconnected nodes and if appropriate, edit the property values.
+
+*To Link nodes by property value:*
+
+. To operate on the entire data set, deselect all the data.
+. In the *_Transform_* panel, open the *_Link_* tab.
+. In this example, we'll link characters to the lines they spoke. Select or enter the following details:
+* *_Source Category_*: select _Characters_ +
+* *_Create Relationship_*: enter _SPOKE_ +
+* *_Target Category_*: select _Lines_ +
+* *_Source Property_*: select _characterName_ +
+* *_Target Property_*: select _speaker_
+
++
+image::/v2_17/06_05_01_Link1320.png[,720,420,role=text-left]
+
+. Click *_Run_*. Error and completion messages appear below the *_Run_* button.
++
+The new SPOKE relationship appears in the legend, and _Character_ nodes now have new directional SPOKE edges connected to the respective _Lines_ nodes.
++
+image::/v2_17/06_05_02_LinkLines1320.png[,720,420,role=text-left]
++
+
+NOTE: For easier visualization, the data for each category are arranged using link:../working-with-layouts/using-geomtric-layouts[Geometric] layouts.

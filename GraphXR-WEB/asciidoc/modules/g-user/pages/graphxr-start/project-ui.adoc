@@ -1,0 +1,305 @@
+= Working in a Project
+
+A GraphXR project represents a 3-dimensional, functionally infinite space that includes the full capability to navigate, edit, analyze, and visualize graph data. When you first open a project, its space is empty. You can:
+
+* xref:data-import/import-by-drag-and-drop.adoc[Import] data by drag and drop, data mapping, or query.
+* xref:nav-select/navigate.adoc[Navigate, search, select, and filter] data in the project space and in *_Tables_*.
+* Create or extend graph data models directly in GraphXR using:
+** xref:transform-data/intro-transforms.adoc[Transforms].
+** Add and delete nodes and edges.
+** Create and edit category and relationship labels, and property names and values. 
+* Intuitively visualize data in the 3D space using:
+ ** Customized xref:layouts/working-with-layouts.adoc[layouts], including Parametric 2D or 3D scatter plots, Geometric *_Line_*, *_Circle_*, *_Grid_*, *_Cube_*, *_Sphere_*, and *_Spiral_* layouts, *_Tree_* layouts, and more.
+ ** Trace, Find, and spotlight multi-hop paths through the graph.
+ ** xref:nav-select/filter.adoc[Filtering] on numerical (e.g. date, time) or categorical (e.g. text strings such as name, city, etc.) properties.
+ ** xref:geospatial-maps.adoc[Geospatial maps], for nodes with latitude and longitude properties.
+* Run widely used graph xref:graph-analytics.adoc[algorithms] such as *_Path Finding_* and *_Centrality_*.
+* xref:data-save-views/data-save-views.adoc[Save and share] graph data to data *_Views_*, *_Snapshots_*, *_GXRF_* files, *_CSV_* or *_Excel_* archives, or to a connected Neo4j database. You can also save and export a data mapping as a JSON file.
+
+On the desktop, menus and controls provide the tools you'll need to work with graph data:
+
+image::/v2_17/01_04_01_OrientationViewMenu.png[,720,450,role=text-center]
+
+* A *_Main Menu_* along the left vertical edge of the project space, to open panels for importing, transforming, and displaying data.
+* A *_Search_* bar at the top left, to perform full-text search on either indexed data in a connected Neo4j database, or data displayed in the project.
+* A *_View Menu_*, at the center of the top, to save data views or load saved views.
+* A *_Legend_*, along the top right side of the space, to display and select nodes by category, tag, or property, and edges by relationship.
+* A context *_Toolbar_*, along the bottom of the space, with tools available to use on data currently present or selected.
+* A set of *_GUI Navigation_* controls, at the bottom right, for 3D navigation within the project.
++
+NOTE: GraphXR can be used with WebX-connected virtual reality (VR); these controls simulate a VR experience on the desktop.
+
+== Main menu
+
+The *_Main_* menu on the left edge of the graph space provides access to menu panels and  navigation to the home *_Projects_* page, logout, or GraphXR information. Mouse over a menu icon to display its label, or click the *_Main_* menu icon at the top left to show or hide the menu labels.
+
+Most main menu panels are further divided into tabs. Click an icon to display its panel. 
+
+=== Project panel
+
+The *_Project_* panel lets you save, update, and access data views, review graph entities, set overall display preferences, import and export data, and access extensions.
+
+image::/v2_17/01_04_02_ProjectPanelView.png[,520,450,role=text-left]
+
+Tabs in the *_Project_* panel include:
+
+* *_View_* tab, to display data views which have been saved to the server, save, update, select, annotate views, and load a data view to the project space. 
+* *_Category_* and *_Relationship_* tabs, to review the defined graph entities, pull specific types of nodes or edges from a connected database and set preferences for display of entities and their properties.
+* *_Settings_* tab, to control the size scale, display mode, and captioning of nodes and edges, to set *_2D Mode_*, show or hide the *_Snapshot_* dialog, switch to a different *_Neo4j Database_*, and modify the project *_UI Configuration_*.
+* *_Data_* tab, to import data in standard formats such as CSV and GXRF, save data as a CSV or Excel archive, GXRF, or Neo4j database, export all current data views, save an SVG as SVG or PDF, take a PNG screenshot, and create a template from the current project that can be applied to other projects.
+* *_Extensions_* tab, to access standard or custom extensions which may be available.
+
+ 
+=== Query panel
+
+The *_Query_* panel lets you enter and save Cypher queries on a Neo4j database, and to query SQL databases (MySQL, MSSQL, or PostgreSQL), CSV or JSON files, or use the Gremlin graph traversal language.
+
+image::/v2_17/01_04_03_QueryPanel.png[,520,450,role=text-left]
+
+The *_SQL_* and *_CSV_* tabs include the *_Mapping Editor_* to map data in a flat CSV file or SQL table to a graph model.
+
+image::/v2_17/01_04_03b_QueryPanelSQL.png[,520,620,role=text-left]
+
+=== Transform panel
+
+The *_Transform_* panel lets you model and transform graph data directly in GraphXR.
+
+image::/v2_17/01_04_04_TransformPanel.png[,520,450,role=text-left]
+
+This suite of data operators includes:
+
+* *_f(x)_*, to execute functions similar to formulas in Excel and SQL or functions in MapReduce frameworks. You can run formulas to add information from one column of data to another, or to modify data formats.
+* *_Extract_*, to extract properties from existing nodes to create new nodes and edges and create a new category and relationship.
+* *_Aggregate_*, to collect properties from a starting node's neighboring edges and nodes, apply a calculation, and write the result back to the starting node as a property.
+* *_Merge_*, to combine two nodes with matching properties into a single node.
+* *_Link_*, to connect nodes with the same property values. This can be used to bring two different data sets together and also to draw explicit connections among nodes of the same type.
+* *_Shortcut_*, to connect two nodes that share a common neighbor with a new link. You can use this to simplify the graph.
+* *_Connector_*, to provide access to external applications for enhancing or transforming data.
+
+=== Table panel
+
+The *_Table_* panel provides live view of data by _Category_ or _Relationship_ in a searchable tabular format. *_Enhanced Tables_* let you rename categories and relationships on the fly, select, sort, edit, reformat, and then export the data in the edited table as a CSV or Excel archive.
+
+image::/v2_17/01_04_05_TablePanel.png[,520,450,role=text-left]
+
+=== Layout panel
+ 
+The *_Layout_* panel leets you apply *_Force_*, *_Parametric_*,*_Geometric_*, and *_Tree_* layouts to all or part of your data.
+
+image::/v2_17/01_04_06_LayoutPanel.png[,540,620,role=text-left]
+
+=== Filter panel
+
+The *_Filter_* panel lets you filter data by _Node_ or _Edge_ properties using multiple composable filters. You can filter on numerical property values including date-time and  latitude/longitude, as well as categorical(text string) property values.
+
+image::/v2_17/01_04_07_FilterPanel.png[,520,520,role=text-left]
+
+=== Algorithm panel
+
+The *_Algorithm_* panel lets you run *_Path Finding_*, *_Centrality_*, and *_Community Detection_* graph algorithms. Results are added to nodes or edges as a property value.
+
+image::/v2_17/01_04_08_AlgorithmPanel.png[,520,450,role=text-left]
+
+=== Map panel
+
+The *_Map_* panel leets you work with geospatial data on a world map. Nodes with latitude and longitude coordinates are automatically dropped onto the map.
+
+image::/v2_17/01_04_09_MapPanel.png[,520,450,role=text-left]
+
+=== Site Navigation and Information
+
+At the bottom left the main menu includes items to:
+
+image::/v2_17/01_04_10_ShortcutKey240.png[MenuKeys,100,180,float="right", align="center"]
+
+* *_Logout_*. Log out of GraphXR.
+* *_Home_*. Return to the *_Projects_* home page.
+* *_Shortcut_*. Quick reference to keyboard and mouse shortcut keys for navigation and data selection. See also xref:nav-select/ref-shortcut-keys.adoc[Shortcut Keys Reference].
+* *_About_*. Review the GraphXR version and take a Quick Start Tour. 
+
+== Search Bar
+
+The search bar at the top left enables full-text search. You can either: 
+
+* Search the indexed property data in a connected Neo4j database, and import the results to the project, or
+* Search the data already in the graph. 
+
+NOTE: Indexed properties are set using the *_Search Index Configuration_* dialog.
+
+Search results are listed by category below the search bar. Click a single node or a group of nodes in the search results to import the data from the database, or to select nodes returned by a search of data already in the project space.
+
+image::/v2_17/01_04_10a_SearchDBGraph.png[,520,380,role=text-left]
+
+== Legend
+
+A legend at the top right corner of the project space lets you review and select data by *_Category_*, *_Relationship_*, *_Tag_*, or *_Property_*. Select *_Category_*, *_Tag_*, or *_Property_* to display a list of categories, tags, or properties present in the data, and the number of currently selected and total nodes of each. Likewise, select *_Relationship_* to display a list of the relationships in the data, and the number of currently selected and total edges for each.  
+
+image::/v2_17/01_04_11_Legend_Category720.png[,420,380,role=text-left]
+
+NOTE: When you display categories and relationships at the same time, the relationships are listed below the categories. 
+
+You can:
+
+* Monitor how many nodes of each category, tag, property (or edges of each relationship) are currently selected. An addition or subtraction from a selection is immediately updated.
+* Click a list item to select all the nodes for a category, tag, or property, or all the edges for a relationship. Use _ctrl-left click_ to select multiple items.
+* Click the colored line or dot next to a list item to set colors, icons, and more:
+** For a category, you can set *_Color_*, an *_Icon_*, and select properties to be used for one or more *_Captions_*, an *_Avatar_* url, and relative node *_Size_*.
++
+image::/v2_17/01_04_11a_Legend_CategoryStyling720.png[,380,420,role=text-left]
++
+** For a relationship, you can set the *_Color_*, and select properties for *_Captions_* and *_Bind Width_* (relative width of the edge).
++
+image::/v2_17/01_04_11b_Legend_RelStyling720.png[,540,380,role=text-left]
++
+** For a listed property value or tag, you can set a *_Color_* or an *_Icon_*.
++
+
+NOTE: See xref:display-options/using-display-options[*Using Display Options*].
+
+== Context Toolbar
+
+The context toolbar at the bottom edge of the project space displays icons for one-click tools used to navigate, select, and lay out data. Some tools are available only when you select more than one node or edge, or only when you select a single node or a node that has an associated url and weblink property.  
+
+image::/v2_17/01_04_12_ContextToolbarLabeled_15.png[,720,160,role=text-left]
+
+NOTE: So as to remain accessible, tool icons are responsively arranged in 2 (or more) rows as you make the browser window narrower.
+
+=== Right-click Context Menu
+
+A floating context menu of the tools available for your current selection is available by right-clicking anywhere in the project space. It is an easier way to navigate and edit the graph without using the toolbar or opening additional panels. In addition, the menu can be customized as needed.
+
+image::/v2_17/01_04_18a_RtClickMenuSelect.png[,520,420,role=text-left]
+
+The default right-click menu includes the following often-used tools at the top level: *_Information_*, *_Add Node_*, *_Add Edge_*, *_Expand_*,*_Find Path_*, *_Center To_*, *_Fly Out_*, and *_Delete_*. 
+
+*_Select_*, *_Actions_*, and *_Layout_* submenus organize tools further as follows:
+
+* *_Select_* submenu: *_All Nodes_*, *_Add to Selection_*, *_Subtract from Selection_*, *_Invert_*, *_Deselect_*, *_Floating Nodes_*, *_Leaf Nodes_*, *_Neighbor Nodes_*, *_Neighbor Edges_*, *_Child Nodes_*, *_Parent Nodes_*, and *_Connected Nodes_*.
+
+* *_Actions_* submenu: *_Change Category_*, *_Collect Nodes_*, *_Explode Nodes_*, *_Tag_*, *_Hide_*, *_Show Hidden_*, *_Pin_*, and *_Release_*.
+
++
+image::/v2_17/01_04_18b_RtClickActions1320.png[,520,420,role=text-left]
++
+
+* *_Layout_* submenu: *_Line_*, *_Grid_*, *_Cube_*, *_Circle_*, *_Sphere_*, *_Spiral_*, *_Tree_*, *_Ring_*, *_Expand_*, and *_Contract_*. Layouts are grayed out if unavailable for the selected data.
+
++
+image::/v2_17/01_04_18c_RtClickLayout.png[,520,420,role=text-left]
++
+
+NOTE: By default, *_Quick Information_*, *_Disable/Enable Force Layout_*, *_Clear All_*, *_Screenshot_*, *_Link_*, and *image_* tools appear only in the toolbar.
+
+Most, but not all, of the functions provided in the right-click menu are available in the toolbar or one of the main menu panels. The following table lists those available  only in the right-click menu.
+
+[cols="3,6"]
+|===
+| *Right-Click Menu Only* |*Function*
+
+| *_Find Path_*
+| Similar to the function in the *_Algorithm>Path Finding_* tab. It finds a path between just two selected nodes.
+
+| _Select_ > *_Add to Selection_*
+|  Mouse over an unselected node, right click and use this menu item to add the node to already selected nodes.
+
+| _Select_ > *_Subtract from Selection_*
+| Mouse over a selected node, right click and use this menu item to de-select the node.
+
+| _Select_ > *_Floating Nodes_*
+| Nodes with no connecting edges.
+
+| _Select_ > *_Leaf Nodes_*
+| Nodes with only one connecting edge.
+
+| _Select_ > *_Neighbor Nodes_*
+| Nodes one hop away from selected nodes. Choose again to select nodes another hop away. This is similar to the *_Trace Neighbor_* tool, except that one hop at a time is found and the nodes are selected, not just highlighted.
+
+| _Select_ > *Child Nodes_*
+| Nodes one forward hop away from selected nodes (as shown by the direction of the connected edge). Choose again to select nodes another hop away.  
+
+| _Select_ > *_Parent Nodes_*
+| Nodes one reverse hop away from selected nodes (as shown by the direction of the connected edge). Choose again to select nodes another hop away. 
+
+| _Select_ > *_Neighbor Edges_*
+| Nodes one edge away from selected nodes.
+
+| _Select_ > *_Connected Nodes_*
+| Nodes connected to selected edges.
+
+| _Actions_ > *_Change Category_*
+| Displays a dialog that lets you immediately change the category of any selection of nodes to any other existing category or to a new category. Properties of the changed nodes  not present in the target category are transferred.
+
+|===
+
+WARNING: *_Actions>Change Category_* cannot be undone with Ctrl+Z. Before using it, save a data View, snapshot, or .GXRF file so that you can undo a mistaken change.
+
+=== Context Menu Tools
+
+The toolbar icons at the bottom edge of the project space appear depending on the data  that's currently present and/or selected. 
+
+==== No Data
+
+Toolbar icons in a project with no data present are:
+
+image::/v2_17/01_04_13_ContextNoData1080.png[,720,120,role=text-left]
+
+ * *_Add Node_*. Displays a dialog to define and add a single node.
+ * *_Quick Info_*. Toggles between turning on and off *_Quick Info_* rollovers for nodes and edges.
+ * *_Disable/Enable Force Layout._* Toggles between turning on and off a force directed physics layout.
+
+==== One or more nodes present
+
+Once you load or create at least one node, more toolbar icons appear.
+
+image::/v2_17/01_04_14_ContextWithData1440.png[,720,120,role=text-left]
+
+ * *_Select Visible Nodes_*. Selects all nodes currently visible in the graph space (those not hidden using *_Hide Selection_* or by de-selecting the *_Visible_* checkbox for a category or relationship in the *Project* panel).
+ * *_Take Screenshot._* Takes a _.png_ screenshot of the graph space including the legend, but excluding an open panel, toolbar and GUI navigation controls.
+ * *_Center To_*. Zooms in on the center of the graph data if no nodes are selected, or the center of a group of selected nodes, or a single selected node.
+ * *_Fly Out_*. Zooms out to display all the graph data centered in the project space.
+ * *_Collect Nodes._* Collects nodes connected to selected nodes by only one edge, and places them in special _collection nodes_. The information panel for a collection lists the included nodes, and enables you to remove or add back nodes.
+ * *_Explode Collections._* Deletes selected collection nodes and restores the collected nodes to the graph space.
+ * *_Quick Layout._* Displays a menu to lay out selected data in basic *_Line_*, *_Grid_*, *_Cube_*, *_Circle_*, *_Sphere_*, *_Spiral_*, or *_Spring_* layouts, to create a hierarchical *_Tree_* or *_Ring_* layout around selected nodes, and to *_Expand_* or *_Contract_* the layout of selected nodes.
+ * *_Add Node_*. Displays a dialog to define and add a single node.
+ * *_Add Edge_*. Displays a dialog to add edges between selected nodes, either with an existing relationship or by creating a new one.
+ * *_Clear_*. Removes all data from the graph space.
+ * *_Pin_* or *_Release_*. Toggles between pinning nodes to a location in the space, or releasing nodes from being pinned. The badge on the icon shows how many nodes are currently pinned.
+ * *_Quick Info_*. Toggles between turning on or off *_Quick Info_* rollovers for nodes and edges.
+ * *_Disable/Enable Force Layout_*. Toggles between turning on and off force directed physics layout.
+
+==== More than one node selected
+
+When you select any group of nodes, additional tool icons appear that can be used on selected data:
+
+image::/v2_17/01_04_15_ContextSelHidden1440.png[,720,120,role=text-left]
+
+* *_Information._* Opens an information window for the most recently selected single node or edge. It displays information about the node's Properties and Neighbors or a relationship's Properties.
+* NOTE: An Information window shows information for just one node or edge at a time.
+* *_Tag_*. Opens the *_Create Tag_* dialog to tag any set of selected nodes.
+* *_Delete._* Deletes selected nodes and edges.
+* *_Expand_*. Opens the *_Expand with relationships_* dialog to pull additional nodes from the database which are connected to the selected nodes. You can select any or all of the relationships that connect the nodes.
+* *_Trace Neighbor_*. Displays a slider above the toolbar to display nodes connected through a path with the number of steps you choose.
+* *_Inverse_*. Selects all nodes not currently selected. The badge at the upper right of the icon shows the number of currently selected nodes.
+* *_Un-Hide Selection._* Appears after you select and hide nodes. Click to restore all hidden nodes and edges to the graph space and de-select them.
+* *_Hide Selection_*. Hides selected nodes and edges temporarily.
+
+==== One node selected
+
+When you select a single node, two additional tool icons appear:
+
+image::/v2_17/01_04_16_ContextSingle1440.png[,720,120,role=text-left]
+
+* *image_* and *_WebLink._* These two icons appear if an image and/or url is attached to a node. Select a node and click *image_* to display a small image in the graph space close to its node, and click again to hide the image. Click *_WebLink_* to open a browser window to a linked image or webpage.
+* *_Information_*. Opens a floating information pane for a selected single node or edge. Its *_Properties_* tab lists the properties of the node or edge. If desired, you can add properties and edit property values in this window. Its *_Neighbors_* tab displays a count of nodes connected to the selected node through one edge, and a live graphic of the nodes and edges.
++
+image::/v2_17/01_04_17_ContextProps1344.png[,720,420,role=text-left]
+
+== GUI Navigation Controls
+
+The GUI navigation panel at the bottom right of the graph space provides simulated Virtual Reality (VR) navigation controls for use on the desktop.
+
+image::/v2_17/01_04_19_GUINavControlsLabeled720.png[,420,340,role=text-left]
+
+* Click and hold the upper arrows to *_Move Right_*, *_Move Left_*, *_Move Up_*, or *_Move Down_*. Click the central circle to *_Reset_* the view to the center point of the data (similar to the *_Center To_* toolbar icon).
+* Click and hold the middle joystick-like controls to *_Rotate Left_* or *_Rotate Right_*.
+* Click and hold the lower arrow controls to zoom *_In_* or *_Out_*.

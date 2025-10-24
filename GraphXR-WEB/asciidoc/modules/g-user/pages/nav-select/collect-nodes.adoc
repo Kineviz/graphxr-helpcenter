@@ -1,0 +1,88 @@
+= Using Collection Nodes
+
+GraphXR's *_Collect Nodes / Explode Collections_* let you create and work with groups of nodes of a given category which are either unconnected (floating nodes) or connected to another node through a single relationship. Collections help you simplify a graph quickly and work with subsets of similar, related data.
+
+Collected nodes are gathered into special *_collection nodes_* indicated by four circles displayed inside a node. 
+
+image::/v2_17/04_04_07a_CollectionIntro.png[,720,480,role=text-left]
+
+* A collection node is automatically given a temporary category label of the form _Collection Category label_. This label immediately appears in the *_Category_* legend when you collect nodes. In the legend, the number of collection nodes of each type is listed, along with the number currently selected. The following properties are created:
+** _collection_. A boolean set to _true_. 
+** _count_. The number of nodes currently in the collection.
+** _label_. The label on the collection node, formed by combining the _count_ and  _of_ property values (e.g. _Photos(6)_).
+** _of_. The category label of the nodes in the collection (e.g. _Crimes_).
+
+* The *edges* of the nodes in the collection (if any) are temporarily collapsed into a single collection edge. The relationship name remains the same, but the direction is reversed. The count of edges in the legend does not distinguish between an edge that connects to a collection and one that connects to a single node. However, in a *_Table_* of the edges of that relationship, a collection's *_Source_* identifier is the _label_ property value for the collection node, rather than an identifier of a single edge. 
+
+* The *information* window for a collection node shows the category and number of nodes in the collection, and displays a list of the collected nodes.
+** Properties set as captions in the original collected category appear as headings in the information window. You can edit these at any time. In the *_Projects>Category_* tab,  click the category, then select the *_Caption_* checkbox for each property in the order you want them to appear.
+** To remove a node from the collection, click its minus icon.
++
+image::/v2_17/04_04_07b_CollectionEdgeInfo.png[,540,380,role=text-left]
+
+== Creating collections
+
+A collection is created from nodes which are all connected by the same relationship.
+ 
+NOTE: If a node has connected edges of more than one relationship it can still be included in a collection. 
+
+For an example, we'll collect _Photo_ nodes connected to _Location_ nodes through _TAKEN_AT_ edges. The graph also includes _Author_ nodes connected to the _Photo_ nodes through different _TAKEN_BY_ edges, as well as a few floating nodes (with no connections).
+
+image::/v2_17/04_04_07c_PhotosUncollected.png[,720,480,role=text-left]
+
+*To create collections:*
+
+. Select _Photo_ nodes using the *_Category_* list in the legend. 
++
+image::/v2_17/04_04_07d_CollectionPhotosSelectAll.png[,720,480,role=text-left]  
++
+NOTE: You can select specific nodes using any method. For example, to collect only the _Photo_ nodes connected to specific _Locations_, select the _Location_ nodes, right-click and choose *_Select > Neighbor Nodes_*. Also note that if nothing is selected, any valid collections in the entire graph are created automatically.
++
+image::/v2_17/04_04_07e_CollPhotosSelTwo.png[,420,240,role=text-left]  
++
+. Click *_Collect Nodes_* on the toolbar, or right-click and choose *_Actions > Collect Nodes_*.
++
+* Nodes of a single category connected by zero or one edge to another node are collected into separate collection nodes and disappear from the graph.
+* The new collection category (_Collection Photos_) appears in the *_Category_* legend.
++
+image::/v2_17/04_04_07f_CollectionPhotosDone.png[,720,420,role=text-left]
+
+== Editing collections
+
+*To inspect and edit a collection:*
+
+. Double click to select a collection node and open its information window.
++
+A list of the nodes in the collection is displayed.
++
+image::/v2_17/04_04_07g_CollectionInfoPanel.png[,540,380,role=text-left]
+
+You can now:
+
+* Click the *_minus_* (*-* ) icon in the information panel to remove a node from a collection. The removed node and its edge appears outside the collection. 
++
+image::/v2_17/04_04_07h_CollRemoveNodes.png[,520,560,role=text-left]
+
++
+TIP: You can select removed nodes and click *_Collect Nodes_* again to add them back to the collection.
++
+
+* Select additional nodes (for example, after pulling new data into the graph), and click *_Collect Nodes_* to add eligible nodes to your collections.
+* Open the *_Table_* panel to review a table of collection nodes and their properties, enter a search, or click on a table row to center the graph on the node.
+
+== Deleting (exploding) collections
+
+*To explode a collection:*
+
+. Select one or more collection nodes using any method, or deselect all data to explode all collections.
++
+image::/v2_17/04_04_07i_CollectionExplodeOne.png[,540,380,role=text-left]
+
+. Click *_Explode Collections_* on the toolbar, or right-click and choose *_Actions > Explode Nodes_*.
++
+All nodes in the selected collections are returned to the graph and those collection nodes are deleted.
++
+A collection category is removed when all its collection nodes have been exploded.
++
+image::/v2_17/04_04_07j_CollectionExplodeDone.png[,420,240,role=text-left]
+

@@ -1,0 +1,27 @@
+= Using the Connector
+
+The *_Connector_* provides access through APIs to selected third-party applications and services. These can be useful for injecting data from external sources, or modifying existing data in your graph.
+
+image::/v2_17/06_07_01_ConnectorAddress1320.png[,720,480,role=text-left]
+
+NOTE: The *_Connector_* is available only in Enterprise subscriptions of GraphXR.
+
+The following connectors are available by default:
+
+* *_Address \=> Geo_*, to transform a physical address to geospatial (latitude and longitude) coordinates.
+* *_IP \=> Geo_* to transform an IP address to geospatial coordinates either through http://ipgeolocation.io[_ipgeolocation.io_], or http://iplocation.com[_iplocation.com_]_._
+* *_ShortURL to FullURL_*, to complete a short URL address.
+
+Additional connectors may also be installed to address specialized needs.
+
+*To run an application in the Connector:*
+
+. Deselect all data, to operate on all your data, or make a selection, for example, by clicking a category name on the Legend.
+. Open the *_Transform_* panel and *_Connector_* tab and select one of the applications from the drop down menu.
+. Select a *_Proxy Setting_*. This will be either *_No Proxy_*, or *_HTTP Proxy_*, where you enter details for the *_Host_*, *_Port_*, *_Username_*, and *_Password_*.
+. Open the *_API Setting_* window to enter an API token or key.
+. Select a *_Category_* and the property (_prop_) that will supply the input.
+. For a geospatial transform, enter the name of the new longitude and latitude properties that will be created. The default names are _lng_ and _lat_, respectively.
+. Click the *_Create New Node_* checkbox if you want a new node category to be created. In that case, you must also enter a *_New Node Prefix_* and a *_New Rel Prefix_* (for the new relationship that will be created). You can use the default entries, or enter your own prefixes.
+. Click the *_Skip Finished Data_* checkbox to update only recently added data, not replace already processed data.
+. Click *_Run_*, or click *_Stop_* to stop an already running process.

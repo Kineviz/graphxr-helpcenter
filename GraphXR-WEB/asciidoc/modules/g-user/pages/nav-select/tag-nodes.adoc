@@ -1,0 +1,113 @@
+= Tagging Selected Nodes
+
+Use *_Tag_* to create a label for any selection of nodes. This lets you group any set of nodes you consider related in some way. More than one tag can be added to a node.
+
+To create a tag, you must first select nodes, then use the *_Tag_* icon in the context menu to show the *_ManagerTags_* dialog. You can then:
+
+* Create a tag (i.e. tag the selected nodes). 
+* Add (or remove) selected nodes to an existing tag.
+* Use *_Save Tags As Property_* to add the temporary property __graphxrtags_ to all currently tagged nodes. When a tag is deleted, the property is removed from its tagged nodes.
+* Use *_Clean Nodes Tags_* to delete all the tags on selected nodes.
+
+Tags appear in the legend under *_Tag_*, labeled with a color, name, number of nodes with that tag, and number that are currently selected. GraphXR automatically assigns a color for each tag. In the graph, a tagged node receives a small label listing its tag names.
+
+image::/v2_17/04_05_01_TagOverview.png[,720,480,role=text-left]
+
+
+== Creating a new tag
+
+*To create a tag:*
+
+. Select one or more nodes using any selection method.
+. Click the *_Tag_* toolbar icon or select *_Actions>Tag_* in the right-click menu to display the *_Manager Tags_* dialog.
++
+ Existing tag names are displayed along with the number of tagged nodes for each.
++
+image::/v2_17/04_05_02_TagManager.png[,420,340,role=text-left]
+
+. Enter a unique name for the tag in the textbook and click *_Add Tag_*.
++
+The new tag name is displayed above the textbox. In the graph, the tag label appears on the selected nodes.
++
+image::/v2_17/04_05_03_TagManagerDone.png[,420,340,role=text-left]
+
+. Click the *X* at the top right to dismiss the *_Manager Tags_* dialog.
++
+In the graph, the tagged nodes are still selected.
+. Click *_Tag_* in the legend to see the new tag on the list.
++
+image::/v2_17/04_05_04_TagNodeLegend.png[,420,420,role=text-left]
++
+* The tag name is displayed, along with its number of nodes. You can use this to check that you've tagged the expected number of nodes.
+* Tags are listed in order of the number of nodes in the tag.
+
+== Saving tags as a temporary property
+
+Optionally, you can click *_Save Tags As Property_* to add the temporary __graphxrtags_ property to all currently tagged nodes. You can then select the _graphxrtags_ property value in the *_Property_* legend list and apply a persistent color and/or icon to the tags. These choices then also appear in the *_Tag_* list. 
+
+NOTE: If a node has more than one tag, a separate color can be applied in the *_Property_* list for every combination of multiple tags (including the different orders in which tags were added). When you display tagged nodes using the *_Tag_* legend, nodes are displayed with the color and icon of the first tag that was applied (e.g. a node tagged with _Tag2_,  then _Tag 1_ is displayed as _Tag 2_). 
+
+
+*To save tag names as a temporary property:*
+
+. Select one or more nodes.
+. Click the *_Tag_* icon or select *_Actions>Tag_* in the right-click menu to display the *_Manager Tags_* dialog.
+. Click *_Save Tags As Property_*.
++
+image::/v2_17/04_05_05_TagManagerSaveTags.png[,420,340,role=text-left]
++
+A message displays indicating success, and the __graphxrtags_ property is added to the selected tagged nodes, with the tag name as its property value. 
++
+In the  *_Property_* legend, you can view the list __graphxrtags_ property values. For nodes with more than one tag, the value is the different tag names separated by colons.
++
+
+. Click the *X* at the upper right to dismiss the *_Manager Tags_* dialog.
+. To inspect the __graphxrtags_ property and its values, either:
++
+* Display a single node's information window (*_Ctrl_*+*_I_*) or quick info rollover.
+* Open a *_Table_* for a group of selected nodes.
++
+image::/v2_17/04_05_06_TagPropertyInfoTable.png[,520,380,role=text-left]
+
+
+== Adding or removing a tag
+
+*To add or remove a tag:*
+
+. Select a group of nodes using any selection method.
+. Click the *_Tag_* icon or select *_Actions>Tag_* in the right-click menu to display the *_Manager Tags_* dialog.
+. Locate a tag name and either:
+
++
+Click the *_+_* icon on the tag label to *add* the tag to the selected nodes.
++
+OR
++
+Click the *_-_* icon on the tag label to *remove* the tag from the selected nodes.
++
+image::/v2_17/04_05_03_TagManagerDone.png[,420,340,role=text-left]
++
+The number of tagged nodes for that tag is immediately updated. If the tag has been removed from all nodes, the tag name disappears from the dialog.
+
+. Click the *X* at the top right to dismiss the *_Manager Tags_* dialog.
+
+== Cleaning all tags from selected nodes
+
+You can remove all the tags from any selection of nodes in one step, rather than selecting nodes with specific tags and then deleting that tag individually.
+
+*To clean tags from selected nodes:*
+
+. Select a group of nodes using any selection method.
+. Click the *_Tag_* icon or *_Actions>Tag_* in the right-click menu to display the *_Manager Tags_* dialog.
+. Click *_Clean Nodes Tags_*.
++
+image::/v2_17/04_05_03_TagManagerDone.png[,420,340,role=text-left]
++
+All of the tags applied to those nodes are removed.
++
+
+* In the *_Manager Tags_* dialog and in the *_Tag_* legend, the total number of nodes for each tag is updated. If no nodes remain, the tag is deleted.
+* In the graph, the tag label is removed from the selected nodes, and when viewed using the *_Tag_* legend, the tag color and icon (if any) is removed.
+
+
+

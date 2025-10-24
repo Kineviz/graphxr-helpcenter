@@ -1,0 +1,83 @@
+= 9 Time Series
+
+[cols="1,1"]
+|===
+| In this Session... | Before you begin...
+
+a| * Using *Filters* to display and animate time series.
+* Using the *_f(x)_* Transform to reformat data.
+* Using *_Parametric_* and *_Geometric_* layouts and the *_Quick Layout_* menu with Filters.
+a| To follow along, you can download: 
+
+link:/HowTo_09START_2_14.graphxr.zip[HowTo_09START_2_14.graph...]
+
+and the snapshots library:
+
+link:/HowTo_09START_2_14.graphxrsnapshots.zip[HowTo_09START_2_14.graph...]
+|===
+
+[cols="1"]
+|===
+|+++<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQPxcTKC8jGf7URs7CcT47S4CNW_AvwkJa06mqh21UM7oFKHRcAK8_fiWJikoo2RsyfQZ2sW5g1lZi4/embed?start=false&loop=false&delayms=60000" frameborder="0" width="768" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">++++++</iframe>+++
+|===
+
+[cols="1,13"]
+|===
+| *Slide* | *Text*
+
+| 3
+| Open a *_Table_* to see that our Episodes nodes include an _episodeAirDate_ property. To visualize time series in the graph we can use parametric or geometric layouts to order nodes by date-time property values. We can also filter nodes by a date or date range.
+
+| 4
+| First, we'll go to *_Project\=>Category_* and click _Episodes_. We'll set _episodeAirDate_ values as captions and scale the nodes by the _millionViewers_ property value.
+
+| 5
+| Open a Table to review _episodeAirDate_ property values.  +
+GraphXR's preferred format for a date and time stamp is  YYYY-MM-DD HH:mm:ss.  +
+We can edit incorrect data formats either manually or using a preset *Transform*.
+
+| 6
+| If just one or a few dates are in the wrong format, you can simply edit the property value, either in the node's Information window, or an *Enhanced Table*.
+
+| 7
+| If most or all dates need reformatting, you can use a preset formula in *Transform\=>f(x)*.  +
+In the *Transform* panel \=> *f(x)* tab select the category (Episodes) and property (e.g. _episodeAirDate)_ that has the date-time data you need to transform.
+
+| 8
+| Select the *_toDate_* or *_convertCustomDate_* *_Input Formula_*. Enter a *_New Property Name_* for the converted data.  A sample result appears below.  Then click *_Test_* to test the transformation or *_Run_* to perform it.
+
+| 9
+| Now open the *Layout\=> Parametric* tab. Select _episodeAirDate_ and _millionViewers_ for X and Y axes and _totalCharacters_ for the Z axis, then click *_Apply_*.  +
+Next we can apply a filter to isolate nodes with specific date property values.
+
+| 10
+| Open the *_Filter_* panel. To filter Episode nodes by air dates (or range of air dates), select _episodeAirDate_ in the *_Node Property_* menu.
+
+| 11
+| You can manually scrub through the values using the handles, or use the playback controller to play through values (or a locked range). This lets us animate filtered data and share the animation with other users as a view.
+
+| 12
+| Filters also provide effective visualization when used with the geometric or geospatial layouts that we can apply to different categories of nodes.
+
+| 13
+| In the *_Geometric_* tab click *_Order by Property_*, select Episodes and the _episodeAirDate_ property, click *_Ascend_*, and click *_Grid_*.   +
+You can then use *_Expand_* on the *_Quick Layout_* toolbar menu to expand the grid.
+
+| 14
+| Now repeat the process to lay out Character nodes in a spiral, and House nodes in a line. Then, in the Legend, select both categories using *_ctrl+left click_*, and move those nodes off the grid using *_left click+ drag_*.
+
+| 15
+| Now open the *_Filter_* panel and again select _episodeAirDate_ in the *_Node Property_* menu to filter Episode nodes by date. Notice that we can apply multiple filters for any numerical or date property (e.g. the _kills_ property of Character nodes).
+
+| 16
+| Let's filter on a range of a 2-month period. Use the handles to set a range, or click the the *_Min_* or *_Max_* fields to select a precise date and time. Select *_Lock Range_* to filter data in 2-month intervals.
+
+| 17
+| Again, scrub through the values using the handles, or use the playback controller to play through values (or a locked range).
+
+| 18
+| Click the trash can icon on the filters to clear them and display all the data again.
+
+| 19
+| Next, in _Module 10. Algorithms_, we'll look at how to measure graph patterns in terms of connectedness, paths, and grouping of nodes.
+|===

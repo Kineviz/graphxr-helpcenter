@@ -1,0 +1,21 @@
+= Managing User Feedback
+
+The *_Feedback Manager_* panel lets you review and respond to email received through users' email *_Feedback_* provided on the GraphXR *_Projects_* page.
+
+image::/v2_17/05_01_Feedback_ProjectPage.png[,720,480,role=text-left] 
+
+The automated form includes user details and the text of the message, as well as the version of GraphXR that was in use.
+
+The email messages are logged in the admin *_Feedbacks_* panel.
+
+image::/v2_17/05_02_Feedback_AdminPage.png[,720,480,role=text-left] 
+
+You can:
+
+* Log your response to a user’s email.
++
+image::/v2_17/05_03_Feedback_Marks.png[,720,480,role=text-left] 
++
+* Sort messages on any of the fields.
+* Search for specific text (i.e. email, subject or content) and selected time period.
+* Export *_Selected_* (or *_All_*) user messages as a .CSV file.

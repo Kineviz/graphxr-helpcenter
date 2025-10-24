@@ -1,0 +1,53 @@
+= Logging In and Out of GraphXR
+
+To use GraphXR, you'll need to create a user account, and then log in.
+
+== Create a GraphXR User Account
+
+* For GraphXR _Cloud_, go to https://graphxr.kineviz.com/login[GraphXR Login] to create an account.
+* For GraphXR _Enterprise_, contact your system administrator for login credentials.
+
+*To create a user account:*
+
+. In your _Chrome_ browser, visit the https://graphxr.kineviz.com/login[GraphXR Login] page and click *_SIGN UP_*.
++
+image::/v2_17/01_02_01_LoginWBrowser420.png[role=text-left]
++
+
+. In the sign-up form, enter the information required to create your user account.
++
+image::/v2_17/01_02_02_SignUp320.png[signin,240,420,role=text-left]
++
+• Your *_Email_*. You'll use this to log in. +
+• A *_Password_*. +
+• The password again, in *_Confirm Password_*. +
+• Your *_First Name_* and *_Last Name_*. +
+• Your *_City_*. +
+• Click the *_Terms of Use_* checkbox.
+
+. Click *_Sign Up_*.
++
+A message indicates that your account was successfully created (or flags errors you must fix).
+
+== Log In to GraphXR
+
+Once you have registered as a user, you can log in.
+
+*To log in to GraphXR:*
+
+. In your _Chrome_ browser, visit the https://graphxr.kineviz.com/login[GraphXR Login] page.
+. Enter your user name (i.e. the *_Email_* used to create the account) and your *_Password_* and click *_LOGIN_*.
++
+image::/v2_17/01_02_03_Login320.png[signin,240,320,role=text-left]
++
+Upon successful login, the GraphXR *_Projects_* page displays.
++
+image::/v2_17/01_02_04_ProjectsPage.png[,720,640,role=text-left]
+
+== Log Out of GraphXR
+
+*To log out of GraphXR:*
+
+* In the *_Projects_* page, select *_Log Out_* from the user menu on the top right.
+
+NOTE: You can also log out from a project graph space using the *_Logout_* icon on the lower left.

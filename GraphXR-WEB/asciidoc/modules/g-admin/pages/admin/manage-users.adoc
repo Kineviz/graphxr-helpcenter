@@ -1,0 +1,115 @@
+= Managing Users
+
+The *_Users_* panel displays the list of current users and lets you review and manage their access to GraphXR and to the connected databases.
+
+image::/v2_17/01_01_AdminOpen.png[,720,480,role=text-left] 
+
+You can:
+
+* *_Add_* a user.
+* *_Remove All Inactive Users_*
+* Edit a user profile to update user email, name, access, status, and type.
+* Search for one or more users:
+** Enter all or part of a user email.
+** Select a time period during which the users were active.
+** Select *_User Status_* or *_User Type_* from the dropdown menus.
+* Export information for one or more users as a .CSV file.
+* Modify the DB authorization for selected users.
+
+== Add a User
+
+When an email server has been configured, each user of GraphXR must have a user account. A user who does not already have an account is prompted for a user name and password when logging in to GraphXR.
+
+If no email server is configured, users only need a url to access GraphXR. This can provide shared use or a read-only account.
+
+*To add a user:*
+
+. Log in to your Admin account, and go to *https://localhost:8080/admin*
++
+The Users tab opens with a list of all users currently registered in the system.
++
+image::/v2_17/02_02_AddUserButton.png[,720,420,role=text-left] 
+
+. Click the *_+Add User_* button at the top right, and enter the following information:
++
+image::/v2_17/02_03_AddUserDialog.png[,420,420,role=text-left] 
++
+
+* *_Email_*: The email used to sign in to the account.
+* *_First Name_* and *_Last Name_*: The user's first and last name.
+* *_Password_*: A password you or the user selects. Upon signing in to GraphXR, a user can reset the password.
+* *_Plan Days_*: Indicates the number of days remaining on the user's subscription plan.
+* Set *_Access_* to _Active_, _Inactive_, _Reset_, or _Freeze_.
+* Set the *_UserType_* to _Normal_ or _Admin_.
++
+
+NOTE: When an account is set as _Admin_, *_Set as Manager_* appears for that user in the *_Users_* list. Clicking this label displays the *_Cancel Manager_* tab and changes the user back to _Normal_. More than one user can be given _Admin_ privileges.
+
++
+* Set the *_Connector API Auth_* to _Disable_ or _Enable_. This lets you specifically grant access to the third party *_Connector_* applications in a GraphXR Enterprise installation.
+. Click *_Submit_* to create the user profile, or *_Cancel_*.
++
+
+NOTE: Clicking the *_X_* to close the window also cancels any changes.
+
++
+A message at the top of the dialog indicates that the user was successfully added. You can keep adding more users until you *_Cancel_* or close the dialog manually.
+
+== Update a User
+
+*To update a user:*
+
+. In the *_Users_* list, click the *_Edit_* Button for the user.
++
+The *_Edit User_* pop-up shows the full user profile.
+. Enter new information for the user, and change the *_Access_*, or the *_User Type_*.
+. Click *_Submit_* to create the user profile, or Click *_Cancel_*. Clicking the *_X_* to close the window also cancels any changes.
+
+== Search for Users
+
+In the search fields at the top of the page, you can search for registered users by *_Email_*, or by using the date selectors to set a *_Start Time_* and *_End Time_*.
+
+*To search for a user:*
+
+. Enter your search criteria. Enter or select
+
+* the user's *_Email_*.
+* a *_Start Time_* and *_End Time_*.
+* the *_User Status_* or *_User Type_* from the dropdown menus.
+
++
+. Click the *_Search_* button.
++
+The bottom of the list shows a summary of your search results (or all users, if you did not enter a search). If the list of registered users has multiple pages, use the *_Next_* and *_Prev_* controls to navigate through them.
+
+== Export user profiles
+
+You can *_Export_* the user profiles for all users, or selected users as a .CSV file.
+
+*To export user profiles:*
+
+. In the *_Users_* list, select users.
++
+Or, to select all users, scroll to the bottom of the list and click the checkbox at the left.
+
+. Scroll to the bottom of the list and click *_Selected_* to export selected user profiles, or *_All_* to export all visible user profiles.
++
+image::/v2_17/02_04_ExportProfiles.png[,720,480,role=text-left] 
++
+A .CSV file is written. You can select and open it from the browser window.
+
+== Modify database authorization
+
+*To modify user DB authorization:*
+
+. In the *_Users_* list, select users.
++
+Or, to select all visible users, scroll to the bottom of the list and click the checkbox at the far left.
++
+. Click the *_DB Auth_* button at the bottom of the list to display its dialog.
++
+image::/v2_17/02_05_DBAuth.png[,720,480,role=text-left]
++ 
+. Enter the *_DB Host_* or *_Name_* to assign to the selected users, or use *_Search_* to locate the database name.
+. Click the *_Add_* label to authorize.
+. Click *_X_* to dismiss the dialog.

@@ -1,0 +1,68 @@
+= Change Category, Relationship, and Property labels
+
+At any time you can 
+
+* Relabel (i.e. rename) a Category, Relationship, or Property.
+* Change the category of selected nodes to a new or existing category. 
+
+== Rename a category, relationship, or property
+
+In the *_Enhanced Table_*, you can edit most of the elements of your graph data, including the labels for categories, relationships, and properties. You may want to do this, for example, if existing labels are too similar or not descriptive enough. 
+
+WARNING: Renaming takes immediate effect. Before editing, save a *_View_* or take a *_Snapshot_* so that you can revert the changes if necessary.   
+
+*To rename a category or relationship:*
+
+. Double click in an empty are of the graph to deselect all the data. 
+. Open the *_Table_* panel, and click any category bubble to open its table.
+. Scroll to the bottom of the table and click *_Enhanced Table_*.
++
+The enhanced table displays with its *_Category_* tab open.
++
+. Either:
++
+* Double-click a category label (e.g. _Location_).
+* Click the *_Relationship_* tab and double-click a relationship label.
++
+. Enter a new category (or relationship) name and hit return. 
++
+image::/v2_17/04_06_03h_EnTableRenameCat.png[,720,340,role=text-left]
+
+*To rename a property:*
+
+. Open the *_Enhanced Table_*
+. Click the category or relationship bubble to display its table.
+. Click the settings icon next to a property's column heading (its current name) and select *_Rename_*.
+. Enter a new name and click *_Save_*.
++
+image::/v2_17/04_06_03i_EnTablePropRename.png[,420,280,role=text-left]
+
+== Change the category of selected nodes
+
+The right-click *_Actions > Change Category_* option lets you immediately change the category of any selection of nodes. You can select an existing category, or create a new one. This is useful when combining equivalent data imported from a variety of different sources, or when data needs to be categorized in greater detail.
+
+WARNING: *_Actions>Change Category_* cannot be reverted. Before using it, save a data View, snapshot, or .GXRF file so that you can undo a mistaken change if necessary.
+
+*To change the category of selected nodes:*
+
+. Select nodes using any method. 
+. Right-click and choose *_Actions_*> *_Change Category_*.
++
+image::/v2_17/05_02_01_ChangeCatStart.png[,520,240,role=text-left]
++
+. In the *_Change Category_* dialog, use the dropdown menu to select the new label, or enter a name for a new category.
++
+image::/v2_17/05_02_02_ChangeCatVideo.png[,520,240,role=text-left]
++
+. Click *_Change_* to apply the change. Click *_Cancel_* or the *_x_* to exit the dialog without changing the label.
++
+image::/v2_17/05_02_03_ChangeCatChange.png[,520,240,role=text-left]
++
+The category is changed. Any properties of the changed nodes not present in the target category are transferred.
++
+image::/v2_17/05_02_04_ChangeCatDone.png[,320,280,role=text-left]
+
+
+
+
+

@@ -1,0 +1,89 @@
+= 7 Preferences
+
+[cols="1,1"]
+|===
+| In this Session... | Before you begin...
+
+a| *  Adjusting the display of nodes and edges: size, weight, color, captions, and images.
+* Setting the Dark / Light theme.
+* Show or Hide Snapshots or Info panels.
+a| To follow along, download:
+link:/wiki/spaces/TES/pages/985333945/7.+Preferences?preview=%2F985333945%2F1624440847%2FHowTo_07_START_2_14.graphxr.zip[HowTo_07_START_2_14.grap...]
+
+and the Snapshots library:
+
+link:/wiki/spaces/TES/pages/985333945/7.+Preferences?preview=%2F985333945%2F1624440855%2FHowTo_07_START_2_14_New.graphxrsnapshots.zip[HowTo_07_START_2_14_New....]
+|===
+
+[cols="1"]
+|===
+|+++<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmxCyaBG_RaQPOfux66xhWL6ZgVe-QtwJbPA5z78k4WIH06CnJ4hEqMYsYrIF-S7v1My88qm0-okZT/embed?start=false&loop=false&delayms=60000" frameborder="0" width="768" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">++++++</iframe>+++
+|===
+
+[cols="1,13"]
+|===
+| *Slide* | *Text*
+
+| 3
+| With our .GXRF loaded, let's explore how to set preferences controlling the display of nodes, edges and property data in our graph. You'll find these functions in the Project panel's *_Category*_ or *_Relationship_* tabs or _*Settings_* tab.
+
+| 4
+| To make the changes easier to see, we've hidden some of the Character nodes and arranged data by category in different grid and circle layouts. Open the snapshots library and load this data view now. _TIP: left click+drag to move any selection of data._
+
+| 5
+| Open the *Project*  panel and *Category* tab to configure node display.  The labeled bubbles at the top list the categories available in the project.  +
+Click the *Characters* bubble. You'll see a list of the properties defined so far for that category.
+
+| 6
+| The *_Avatar URL_* property checkbox lets us display an avatar image on the nodes. We'll select the _characterImage_ property, since we know it has URL values.  +
+NOTE: *_Show Avatar*_ in the _*Settings_* tab must also be checked.
+
+| 7
+| Click the *_Caption_* property checkboxes for _characterName_ and _kills_ properties. Captions can be either text or numerical values. By default, captions appear to the right of the node in the order you select them. NOTE: In the *_Settings_* tab, the *_Node Caption Position_* menu lets you reposition captions.
+
+| 8
+| Click the *_Node Size_* checkbox for the _kills_ property to display Character nodes sized according to the number of kills. (Node Size works only for a property with numerical values.)  +
+Click *Exclude* to hide any property so that it isn't shown in tables or information panels.
+
+| 9
+| In either the *_Category*_ tab or the Legend, click the colored dot for a category to display the _*Styling Setting_* dialog where you can change the color and add an icon.
+
+| 10
+| Let's leave the color as it is but apply an icon to our House nodes.  +
+Click the *_Icon_* tab and use the menu or the search bar to find an icon.  +
+Click on the icon to apply it. The dialog closes automatically.
+
+| 11
+| The icon now appears in the Legend next to the category label. You can click the dot or icon next to any element in the Legend to display the *_Styling Setting_* dialog and choose a new color or icon for a category, or color for a property or relationship.
+
+| 12
+| You can also configure color and visibility of a category or relationship using the *_Project_* panel. Click the *_Relationship_* tab and the APPEARED_ON bubble. Click the color swatch to display a color picker and choose a different color. Click *_Visibility_* to show or hide edges of this relationship.
+
+| 13
+| Unique property values for categories and relationships are automatically assigned separate colors, and you can change these as well. In the Legend, click the *_Property_* tab, select a property name, and click the colored dot next to a property value to select a new color.
+
+| 14
+| Scaled color is useful for coloring property values, especially numbers or dates.  +
+In the *Property* legend, select the _episodeAirDate_ property and click the *_Use Scale Color_* checkbox, and select a color set from the dropdown menu.
+
+| 15
+| The *_Settings_* tab includes controls to configure display of all nodes and edges.  Let's go over those now.
+
+| 16
+| For nodes you can control the base node size scale and icon mode, show or hide pin icons, show or hide Avatar urls, control caption size scale and caption position, and use the more compact *_Truncate Caption_* option.
+
+| 17
+| For edges you can control the edge width scale, use curved lines, dashed lines or blended lines, show or hide directional arrows, and show or hide relationship names as a caption on all edges.
+
+| 18
+| For general 3-dimensional display, the **Fog Densit**y slider makes nodes and edges that are further away appear less visible.
+
+| 19
+| Click the *_Theme_* toggle to switch between a dark or light background for the project graph space.
+
+| 20
+| Now click the *_Show Hidden Nodes_* toolbar icon to restore the Character nodes and their connected edges that we hid for this module.
+
+| 21
+| We've already seen some of the layout options in action. Next, in _Module 8. Layout and Pinning_, we'll delve into how to use layouts to explore and visualize the graph.
+|===

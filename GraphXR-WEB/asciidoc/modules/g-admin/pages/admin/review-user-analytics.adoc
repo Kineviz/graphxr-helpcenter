@@ -1,0 +1,9 @@
+= Reviewing User Analytics
+
+In the *_App Analytics_* panel you can review and track GraphXR usage in many ways, including:
+
+* Filter analytics by time period.
+* Display usage on line or bar graphs or in lists.
+* Export analytic details in formats such as .CSV files or .PNG graphics.
++
+image::/v2_17/03_01_Analytics.png[,720,340,role=text-left]

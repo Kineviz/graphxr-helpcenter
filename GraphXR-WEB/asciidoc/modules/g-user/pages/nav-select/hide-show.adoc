@@ -1,0 +1,84 @@
+= Hiding Data 
+
+Hiding nodes temporarily can be useful for focusing on subsets of graph data that you may want to work with further, or clear from the graph. You can:
+
+* Use *_Hide Selection_* to hide selected nodes temporarily, and *_Show hidden nodes_* to restore hidden nodes.
+* Deselect the *_Visible_* checkbox for a category or relationship to temporarily hide nodes of a category or edges of a relationship.
+* Select the *_Exclude_* checkbox for any property of a category or relationship to temporarily exclude it from the data.
+
+== Using Hide Selection and Show Hidden Nodes
+
+The *_Hide selection_* and *_Show hidden nodes_* icons appear next to each other in the context menu. *_Hide Selection_* appears only when nodes are selected Once you hide nodes, the *_Show hidden nodes_* icon appears. Click it to restore all the hidden nodes and edges to the graph, update the total counts in the legend lists, and de-select the data.
+
+*To hide nodes:*
+
+. Select nodes using any selection method.
++
+image::/v2_17/04_04_01_HideSelected.png[,520,420,role=text-left]
+
+. Click *_Hide Selection_* icon in the toolbar or right-click menu. +
+The selected nodes (and any connected edges) are hidden. Hidden nodes, edges, etc. are subtracted from the lists in the legend.
++
+image::/v2_17/04_04_02_ShowHidden.png[,520,420,role=text-left]
+
+. You can keep selecting and hiding nodes, which will be added to what's already hidden. The *_Hide Selection_* icon appears only when one or more nodes are selected.
++
+image::/v2_17/04_04_03_HideUnHide.png[,520,420,role=text-left]
+
+*To restore hidden nodes:*
+
+* Click the *_Show hidden nodes_* icon in the context toolbar. +
+All hidden nodes are restored, and the number of restored nodes and associated edges, as well as their properties and tags are added back to the lists in the legend.
+
+== Using Leaf Trimming
+
+Leaf trimming (*_Ctrl + L_*) is a keyboard command which temporarily hides (or restores) nodes in a selection which are either unconnected or connected by only one edge. *_Ctrl*+*L_* is a toggle control.
+
+*To use leaf trimming:*
+
+. Select nodes using any method. If no selection is made leaf trimming operates on all the data.
+. Press *_Ctrl + L_* once to hide the trimmed nodes.
+ +
+The *_Show hidden nodes_* icon appears, if no other nodes had already been hidden.
+. Press *_Ctrl +L_* again to restore the trimmed nodes.
++
+
+NOTE: xref:./collect-nodes.adoc[Collections] now provides enhanced ways to group and work with nodes connected by a single relationship.
+
+== Hiding data by Category or Relationship
+
+By default, nodes and edges in the graph are visible. You can hide all data for a category or relationship temporarily by clicking the *_Visible_* checkbox for an entity in the *_Category_* or *_Relationship_* tab of the *_Project_* panel.
+
+* For a _category_, all its nodes as well as the connected edges disappear from the view, and both the category name and the name of its relationships disappear from the list in the legend.
+* For a _relationship_, all its edges disappear from the graph space, and the relationship name disappears from the list in the legend. Nodes connected to the edges remain in the graph space.
+
+*To hide data by Category or Relationship:*
+
+. Open the *_Project_* panel and *_Category_* (or *_Relationship_*) tab.
+. Click a category or relationship label to select it.
+. Un-check the *_Visible_* checkbox.
++
+image::/v2_17/04_04_04_HideCat1.png[,720,420,role=text-left]
++
+The nodes (or edges) for the selected category or relationship disappear from the graph space. To display data for the entity again, simply click its *_Visible_* checkbox.
++
+image::/v2_17/04_04_05_HideCat2.png[,720,420,role=text-left]
+
+== Hiding or Excluding property data
+
+You can:
+
+* Hide any property for a category or relationship temporarily by clicking its *_Hidden_* checkbox in the *_Category_* or *_Relationship_* tab of the *_Project_* panel. Hidden properties no longer appear in information panels or tables, but they are exported in CSV or Excel tables.
+
+* Exclude any property temporarily by clicking its *_Exclude_* checkbox in the *_Category_* or *_Relationship_* tab of the *_Project_* panel. Excluded properties no longer appear in information panels or tables, AND they are not exported in CSV or Excel tables.
+
+*To hide and/or exclude property of a category or relationship:*
+
+. Open the *_Project_* panel and *_Category_* (or *_Relationship_*) tab.
+. Click a category or relationship label to select it.
+. Locate one or more properties, and
++
+* Click the *_Hidden_* checkbox to hide a property in information panels and tables.
+* Click the *_Exclude_* checkbox to hide a property in information panels and tables, and to exclude it from CSV or Excel export.
++
+image::/v2_17/04_04_06_HideExcludeProp.png[,720,420,role=text-left]
