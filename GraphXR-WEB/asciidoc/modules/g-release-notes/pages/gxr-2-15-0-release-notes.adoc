@@ -4,8 +4,6 @@
 
 The GraphXR 2.15.0 release includes new features and user interface design, and new and updated extensions.
 
-NOTE: In GraphXR, click *_About_* at the bottom left of the project space, then click on the current release tag to display a digest of features introduced in current and past releases.
-
 == New Features 2.15.0
 
 * *_Show the nodes in a collection in a Table_*. You can now select a collection node and display a table of its contents. Select the collection node, open the *_Table_* panel, and click the category of the nodes in the collection. Also, in-graph search and filtering now operates on the nodes in a collection.

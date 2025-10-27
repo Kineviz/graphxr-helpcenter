@@ -1,6 +1,6 @@
 #! /bin/zsh
 
-KINEVIZ_UI_BASE=~/bitbucket/kineviz-2024/graphxr-docs/GraphXR-WEB
+KINEVIZ_UI_BASE=$HOME/github/kineviz-docs/GraphXR-WEB
 KINEVIZ_UI_BUILD=$KINEVIZ_UI_BASE/build
 cd $KINEVIZ_UI_BASE
 

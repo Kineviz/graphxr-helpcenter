@@ -43,7 +43,7 @@ We'll also map dynamic relationships as:
 * _RATED_AT_\{Rating}_ to connect image_ and _Rating_ nodes with edges labeled by _Rating_.
 * _TAKEN_BY_\{Provider}_ to connect image_ and _Author_ nodes with edges labeled by _Provider_.
 +
-image::/v2_17/02_02_04imageRatingAuthor1320.png[,720,480,role=text-left]
+image::/v2_17/02_02_04_ImageRatingAuthor1320.png[,720,480,role=text-left]
 
 NOTE: Mapping data from a table in a SQL relational database uses the same mapping editor interface.
 
@@ -74,7 +74,7 @@ image::/v2_17/02_02_07_MappingEditor720.png[,720,480,role=text-left]
 
 . On the right, in *_CategoryName_*, change the label to image_. 
 +
-image::/v2_17/02_02_08_Cat1image.png[,720,480,role=text-left]
+image::/v2_17/02_02_08_Cat1_Image.png[,720,480,role=text-left]
 +
 
 TIP: A standard naming convention for categories and relationships will make mappings and your graph data more readable. For example, capitalize category names (*Image*), and use upper case with words separated by underscore characters for relationship names (*TAKEN_AT*).
@@ -91,7 +91,7 @@ TIP: Notice that you can set *AsKey* for more than one property, which provides 
 +
 . We'll add a second _Rating_ category connected to the image_ category. Roll over the image_ icon, click in the purple highlighted area, and drag to add a new category and  relationship.
 +
-image::/v2_17/02_02_08_Cat2imageNewCat.png[,720,480,role=text-left]
+image::/v2_17/02_02_08_Cat2_ImageNewCat.png[,720,480,role=text-left]
 +
 
 . Select the new category icon, and change its *_Category Name_* to _Rating_.

@@ -3,16 +3,100 @@
 [cols="1,1,10"]
 |===
 |*Tag* |*Date* |*Release Highlights*
-|xref:./gxr-3-0-0-release-notes.adoc[3.0.0] |10/1/2025 
-a|* *Datastore*. New Project panel tab to Save, Import, and Export data and views. 
-* *MultiDB Access*. When creating a project.
-* *Relationship Properties* displayed in the Legend.
+|xref:./gxr-3-4-0-release-notes.adoc[3.4.0] |10/21/2025 
+a|* *Usability*
+** Refined UI design for the left navigation menu, toolbar icons, and legend list.
+** Enhanced search behavior
+** Numerous UI improvements in layout, dialog size and styling, and consistent behavior of tooltips, modal dialogs, and scrolling.  
+
+* *Performance*
+** Improved the accuracy of KuzuDB query results through query validation using the database schema.
+** Corrected Kuzu query quoting and enhanced compatibility across schema versions 
+ 
+* *Security and User Access*
+** Implemented enforced password reset upon first login or after resets.
+** Improved access with /forgotPassword, and secure email communication
+ 
+* *Configuration*
+** Google Cloud Integration
+*** Ability to configure Google OAuth behavior via environment variables).
+
+* *GraphXR API* - isCanvasLoaded()   
+
+|xref:./gxr-3-3-0-release-notes.adoc[3.3.0] |10/14/2025 
+a|*  *Usability*
+** Improved visibility of selected items in the left menu.
+**  A paintbrush icon next to a Category list item opens the style setting dialog (Categories only).
+** Refinements to the Cypher/GQL query toggle.
+* *Security and User Access*
+** Multi-Factor Authentication(MFA) can use either the site domain or configured app name as issuer.
+* *Configuration*
+** Google Cloud Integration
+*** Added support for the GraphXR Database Proxy, enabling external database connectivity and improved data flow.
+* *GraphXR API* - Sphere layout
+
+|xref:./gxr-3-2-0-release-notes.adoc[3.2.0] |10/7/2025 
+a|* Environment-driven UI control to automatically adapt the interface to the deployment context.
+* In the *Query* bar, a toggle is added to build either Cypher or GQL queries.
+
+* *Usability* 
+** Improved the right-click *Expand* dialog for easier selection of expand options.
+** An *Advanced Settings* dropdown panel is added to *Layout>Force* and *Project>Settings* panels, to display infrequently-used options.
+** A new *2D/3D* toolbar icon to toggle between 2D and 3D layout.
+** Refinements to dialog text and dark mode styling of the right-click menu. 
+** Left menu bar *Logout*, Project *Home*, *Shortcuts* and *About* options are grouped on a menu accessed by clicking the Kineviz logo icon. 
+
+* *Security and User Access* 
+** Improved user login, to prevent data loss during session timeouts. 
+** Additional reset capability for MFA administrators.
+
+* *Configuration*
+** Improved localization processes and verification. 
+** Google Cloud Integration
+*** Enhanced Google authentication for Spanner and BigQuery projects
+*** Added environment-specific build pipelines
+*** Fixed numeric and type issues for Spanner queries.
+
+|xref:./gxr-3-1-0-release-notes.adoc[3.1.0] |9/30/2025 
+a|* *Multi-Factor Authentication (MFA)* using Time-Based One-Time Passwords (TOTP) introduced.
+* Same category linking now allowed in the *Link* transform.
+ 
+* *Usability Enhancements*
+** Empty canvas overlay added to suggest import options when there is no data on the project canvas.
+** Combined *Query/Search* bar on the project canvas now provides no-code graph database query in addition to full-text search (if supported). 
+** In an *Information* panel, properties can now be deleted.
+** New color palettes and icon set added to the style setting dialog.
+** Design refinements to the toolbar, search bar, and pin icons. 
+  
+* *Performance Enhancements* 
+** Improved Spanner query performance.
+
+* *Security and User Access* 
+** Localization for Chinese MFA strings
+** Additional Google login and authentication support.
+
+* *Configuration*
+** Google Spanner and BigQuery data sources integrated, with support for schema-less graphs.
+
+* *GraphXR API* - gxr.dijkstra() and gxr.yens() path-finding algorithms 
+
+|xref:./gxr-3-0-0-release-notes.adoc[3.0.0] |9/23/2025 
+a|* *MultiDB Access*. Choose a graph database to be connected to a new project.
+*Datastore*. A new *Project* panel tab to manage Import/Export operations, and view current database configuration. 
+* *Sandbox* example editable Grove notebooks for workflow demonstration or learning. 
+* Admin pages for *Project Analytics* and managing *LLM* availability.
 
 * *Usability Enhancements*
-** Deep linking to improve browser refresh behavior.
-** Admin menu item on the *_Projects_* page for registered admin users.
+** *RelProperty* displays relationship properties in the Legend list.  
+** *History* window to revert layout and transform actions to a previous state. 
+** Left menu *More* menu when more than 11 menu items are configured. 
+* *Configuration*
+** Docker builds for separate authorization protocols.
+** Configurable datasource visibility when creating projects.
+* *GraphXR API* - gxr.driver(), gxr.llm()
+* *Extensions* 
+** *_NEW_* *Graph Composer*. Model graph data from a relational database or multiple CSV files. 
 
-* *Performance Enhancements* 
 |xref:./gxr-2-17-0-release-notes.adoc[2.17.0] |9/6/2024 
 a|* *New UI for data Views*
 ** *_Views_* tab in the *_Project_* panel, with list or thumbnail previews of saved views to select, create, load, and update views.
@@ -23,7 +107,7 @@ a|* *New UI for data Views*
 * *Sphere* Layout is added to the *_Geometric_* layouts.
 * *Collection edges*. Edges are added from collected nodes to any collection nodes that their neighbor nodes belong to.
 
-* *Usability Enhancements*
+* *Usability*
 ** A Project opens as soon as it is created.
 ** *_Expand_* defaults to expand all relationships.
 ** Visibility and readability of search terms, toolbar icons, and tooltips is improved.
@@ -33,10 +117,10 @@ a|* *New UI for data Views*
 ** Template import / export from the Admin panel.  
 ** *_UI Configuration_* includes the right-click menu.
 
-* *Performance Enhancements* 
+* *Performance* 
 ** Faster response of *_Fly Out_*, *_Center To_* , and *_Ring_* and *_Tree_* ego layouts.
  
-* *Improved Security and User Access* 
+* *Security and User Access* 
 ** *LDAP (Lightweight Directory Access Protocol) support*.
 ** Disable user / password login, for organizations requiring SSO.
 ** Encrypt views on disk. 
@@ -200,5 +284,4 @@ a|* Visual Query Builder
 * Public share / Read only access through shared link can still tag and annotate, but data won’t be saved back to DB
 |===
 
-
-NOTE: In a GraphXR project, you can click *_About_* at the bottom of the browser page, then click on the current release tag to display this digest of features introduced in current and past releases.
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.

@@ -1,0 +1,90 @@
+= GraphXR 3.1.0 Release Notes
+
+*Release Date:* September 30, 2025
+
+GraphXR 3.1.0 adds Multi-Factor Authentication (MFA), Link transform enhancement, and new path-finding algorithms in GraphXR API. UI enhancements simplify creating a project and querying a connected database, improve toolbar visibility, and add styling options. Google Spanner and BigQuery integration and schema-less graph support is introduced, along with improved performance of Spanner queries.
+
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.1.0
+
+* Added *Multi-Factor Authentication (MFA)* using Time-Based One-Time Passwords (TOTP) for the system, including optional user enrollment, admin reset options, and domain name customization.(GXR-3124).
+* The *Link* transform allows same category or property linking. A node cannot be linked to itself unless explicitly allowed via the *Allow same category, same property link* checkbox (GXR-1724). 
+
+* *Usability Enhancements*
+** An empty canvas overlay guides the user when no data is loaded to the project. (GXR-3110).
++
+image::/v3/V3_1_0_01_EmptyCanvas.png[,420,380,role=text-left]
++
+ 
+** Combined *Query/Search* bar. The project search bar can be used to build and run a no-code query on a connected graph database. Click for a dropdown query menu to build a query pattern from Category and Relationship elements, and specific property values. Then click the magnifying glass (search) icon to run the query.
++
+image::/v3/V3_1_0_02_QuerySearch.png[,720,260,role=text-left]
++
+
+NOTE: Enter text to perform full-text search on data on the project canvas, and also on the database if full-text database search is supported and indexed.
++
+
+** *Information* panel: Properties can be deleted, and text wrapping is improved for long values (GXR-2671, GXR-2799).
+** *Style Setting* dialog
+*** Multiple color palettes added to the color picker(GXR-3096).
++
+image::/v3/V3_1_0_03_StylePalettes.png[,720,680,role=text-left]
++
+** Bottom toolbar and search bar design refinements, and improved switch handling (GXR-3080, GXR-3101).
+** Display of pin icons enhanced for added clarity (GXR-3103).
+
+*** Added new *crime* icon set(GXR-3104).
+** Automatically create an empty Kuzu database when a project is created (GXR-3058).
+** Database type selector for a project includes *None* option(GXR-3093).
+** GraphXR API includes new path-finding algorithms(GXR-3125): 
+*** gxr.dijkstra()
+*** gxr.yens()
+
+* *Performance Enhancements* 
+** Improved Spanner query performance (GXR-3128).
+
+* *Improved Security and User Access* 
+** Verified Chinese localization for MFA-related strings. 
+** Added Google login authentication and server verification support (GXR-3127).
+
+* *Project Configuration*
+** Integrated Google Spanner and BigQuery data sources, including schema-less graph support (GXR-3081).
+
+* *GraphXR API* Additions
+** Path-finding algorithms(GXR-3125): 
+*** gxr.dijkstra()
+*** gxr.yens()
+ 
+== Bug Fixes
+
+=== General
+
+* Fixed undefined variable in Neo4j connection module (GXR-3129).
+* Fixed default database initialization (GXR-3805).
+* Fixed datastore uploads to Kuzu databases (GXR-3112).
+* Fixed duplicate notifications on Cypher errors (GXR-3090).
+* Improved CSV export handling for values containing commas (GXR-2846).
+* Updated Ubuntu LTS base image in the build pipeline (GXR-3099).
+
+=== External
+
+* Improved Helm chart, resolving Mongo dependency issues (GXR-2955).
+
+== Removed 3.1.0
+
+* AI chat window deprecated and hidden.(GXR-3107).
+
+== Extensions 3.1.0
+* *Graph Composer*
+* *Grove* Observable-based javascript notebooks
+
+NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 3.1.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

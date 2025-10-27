@@ -4,8 +4,6 @@
 
 The GraphXR 2.17.0 release includes new features, usability enhancements and significant security and user access enhancements.
 
-NOTE: In GraphXR, click *_About_* at the bottom left of the project space, then click on the current release tag to display a digest of features introduced in current and past releases.
-
 == New Features 2.17.0
 
 * *New UI for data Views*

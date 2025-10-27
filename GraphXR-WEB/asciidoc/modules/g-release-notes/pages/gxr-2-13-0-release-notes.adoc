@@ -4,8 +4,6 @@
 
 The GraphXR 2.13.0 release includes new features and user interface design, added browser and system support, and deprecated interface elements.
 
-NOTE: In GraphXR, click *_About_* at the bottom left of the project space, then click on the current release tag to display a digest of features introduced in current and past releases.
-
 == New Features 2.13.0
 
 * *_Collection Nodes_*. Special _collection nodes_ for a selection of data can be created by clicking the new *_Collect Nodes_* toolbar icon. Collections consist of the nodes connected by one edge of a single relationship to another node. Nodes included in a collection can be inspected, removed, and added back. The new *_Explode Collection_* toolbar icon removes all nodes from selected collection nodes.

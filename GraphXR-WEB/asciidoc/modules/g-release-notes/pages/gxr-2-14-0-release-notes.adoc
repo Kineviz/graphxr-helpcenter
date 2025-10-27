@@ -4,8 +4,6 @@
 
 The GraphXR 2.14.0 release includes new features and user interface design, and new and updated extensions.
 
-NOTE: In GraphXR, click *_About_* at the bottom left of the project space, then click on the current release tag to display a digest of features introduced in current and past releases.
-
 == New Features 2.14.0
 
 * *_Icon system upgrade_*. In the *_Legend_*, clicking the colored dot next to any *_Category_* list item displays the *_Styling Setting_* dialog, with *_Color_* and *_Icon_* tabs to select a node color and icon.

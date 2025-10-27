@@ -1,6 +1,6 @@
 #! /bin/zsh
 
-export PLAYBOOK=~/bitbucket/kineviz-2024/graphxr-docs/GraphXR-WEB/docs-site
+export PLAYBOOK=$HOME/github/Kineviz/kineviz-docs/GraphXR-WEB/docs-site
 cd $PLAYBOOK
 pwd
 echo ######

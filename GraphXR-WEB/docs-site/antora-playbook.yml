@@ -3,7 +3,7 @@ site:
   url: http://petrel.local
 content:
   sources: 
-  - url: ~/bitbucket/kineviz-2024/graphxr-docs/
+  - url: ~/github/Kineviz/kineviz-docs
     start_path: GraphXR-WEB/asciidoc
 ui:
   bundle:

@@ -4,8 +4,6 @@
 
 The GraphXR 2.16.0 release includes new features and user interface design, and updates to general and enterprise extensions.
 
-NOTE: In GraphXR, click *_About_* at the bottom left of the project space, then click on the current release tag to display a digest of features introduced in current and past releases.
-
 == New Features 2.16.0
 
 * *_Right-click Menu._* The right-click menu is re-designed to provide easier access to often-used toolbar and layout functionality. Its elements can also be customized.
