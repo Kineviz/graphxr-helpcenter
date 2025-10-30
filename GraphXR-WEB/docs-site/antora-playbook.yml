@@ -1,6 +1,6 @@
 site: 
   title: Documentation
-  url: http://localhost
+  url: /graphxr-helpcenter-test
 content:
   sources: 
   - url: ../../
