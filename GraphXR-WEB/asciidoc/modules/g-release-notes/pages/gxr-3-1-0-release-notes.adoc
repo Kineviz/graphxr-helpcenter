@@ -14,12 +14,12 @@ NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_
 * *Usability Enhancements*
 ** An empty canvas overlay guides the user when no data is loaded to the project. (GXR-3110).
 +
-image::/v3/V3_1_0_01_EmptyCanvas.png[,420,380,role=text-left]
+image::/v3/V3_1_0_01_EmptyCanvas.png[,240,180,role=text-left]
 +
  
 ** Combined *Query/Search* bar. The project search bar can be used to build and run a no-code query on a connected graph database. Click for a dropdown query menu to build a query pattern from Category and Relationship elements, and specific property values. Then click the magnifying glass (search) icon to run the query.
 +
-image::/v3/V3_1_0_02_QuerySearch.png[,720,260,role=text-left]
+image::/v3/V3_1_0_02_QuerySearch.png[,420,80,role=text-left]
 +
 
 NOTE: Enter text to perform full-text search on data on the project canvas, and also on the database if full-text database search is supported and indexed.
@@ -29,7 +29,7 @@ NOTE: Enter text to perform full-text search on data on the project canvas, and 
 ** *Style Setting* dialog
 *** Multiple color palettes added to the color picker(GXR-3096).
 +
-image::/v3/V3_1_0_03_StylePalettes.png[,720,680,role=text-left]
+image::/v3/V3_1_0_03_StylePalettes.png[,340,260,role=text-left]
 +
 ** Bottom toolbar and search bar design refinements, and improved switch handling (GXR-3080, GXR-3101).
 ** Display of pin icons enhanced for added clarity (GXR-3103).
