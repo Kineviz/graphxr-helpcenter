@@ -13,19 +13,19 @@ NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_
 * Users can toggle between building Cypher or GQL queries to Spanner Graph using a toggle in the Query bar (GXR-3160).
  
 * *Usability Enhancements*
-** Improved the right-click *Expand* dialog to make available directional relationships easier to select. *NEEDS IMAGE* Basic and Advanced Expansion. Not the same as using the Expand toolbar icon.
-** Re-organized layout and settings controls (GXR-3159, GXR-3152, GXR-3156, GXR-3145)
-*** An *Advanced Settings* dropdown in *Layout>Force* and *Project>Settings* panels  displays advanced options that are not often used.
+** Improved the right-click *Expand* menu and dialog to make relationships immediately available to the selected nodes easier to expand on, while still providing the ability to expand on all relationships.  
 +
 image::/v3/V3_2_0_01_ExpandRCMenu.png[,420,240,role=text-left]
 +
+** Re-organized layout and settings controls (GXR-3159, GXR-3152, GXR-3156, GXR-3145)
+*** An *Advanced Settings* dropdown in *Layout>Force* and *Project>Settings* panels  displays advanced options that are not often used.
 *** A new *2D/3D* icon at the far right end of the Toolbar toggles the canvas between 2D and 3D layout.
 +
 image::/v3/V3_2_0_02_Toolbar3DToggle.png[,240,80,role=text-left]
 + 
 ** Action prompts are updated in the empty canvas overlay.
 ** Refined the right-click context menu layout and dark mode styling.
-** The Kineviz icon at the bottom of the left menu bar now displays a popup menu for  access to *Logout*, *Home*, Shortcut*, and *About* actions.
+** The Kineviz icon at the bottom of the left menu bar now displays a popup menu for  access to *Logout*, *Home*, *Shortcut*, and *About* actions.
 
 * *Security and User Access*  
 ** Improved workflow for the login popup to prevent graph data loss during session timeouts (GXR-2899).
