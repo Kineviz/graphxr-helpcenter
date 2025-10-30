@@ -1,0 +1,50 @@
+name: Publish to GitHub Pages
+on:
+  push:
+    branches: [3.0]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v5
+    - name: Configure Pages
+      uses: actions/configure-pages@v5
+    - name: Install Node.js
+      uses: actions/setup-node@v5
+      with:
+        node-version: '18'
+    - name: Install UI dependencies
+      run: npm install
+      working-directory: ./ui
+    - name: Build UI bundle
+      run: npm run build
+      working-directory: ./ui
+    - name: Copy UI bundle to docs site
+      run: cp ./ui/build/ui-bundle.zip ./GraphXR-WEB/docs-site/ui-bundle.zip
+    - name: Install Antora with the Antora Lunr Extension
+      run: npm i
+      working-directory: ./GraphXR-WEB/docs-site 
+    - name: Generate Site
+      run: npx antora --fetch antora-playbook.yml
+      working-directory: ./GraphXR-WEB/docs-site
+    - name: Upload Artifacts
+      uses: actions/upload-pages-artifact@v4
+      with:
+        path: GraphXR-WEB/docs-site/build/site
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
