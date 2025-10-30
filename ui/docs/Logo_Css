@@ -1,0 +1,49 @@
+/* additions for logo plus text */
+
+
+.navbar-item {
+  flex: none;
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+.navbar-item__brand-wrapper {
+  /* align-items: baseline !important; */
+  /* margin-top: 0.25rem; */
+  text-transform: lowercase;
+  font-weight: 600;
+  display: flex;
+  flex-grow: 1;
+}
+
+.navbar-item__brand-wrapper a:hover {
+  opacity: 0.85;
+}
+
+.navbar-item__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.75rem;
+  padding-right: 0.25rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar-item__logo {
+  width: 2rem;
+  margin-right: 0.3rem;
+  flex-shrink: 0;
+  display: block;
+}
+
+.navbar-item__name {
+  display: flex;
+  align-items: center;
+  padding-top: 0.65rem;
+  padding-left: 0.5rem;
+  color: var(--color-navbar-text);
+  font-size: 1.15rem;
+}
+
+end of additions for logo plus text
+*/

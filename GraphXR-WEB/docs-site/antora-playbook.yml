@@ -1,13 +1,13 @@
 site: 
   title: Documentation
-  url: http://petrel.local
+  url: http://localhost
 content:
   sources: 
-  - url: ~/github/Kineviz/kineviz-docs
+  - url: ../../
     start_path: GraphXR-WEB/asciidoc
 ui:
   bundle:
-    url: ./ui-bundleOct23.zip
+    url: ./ui-bundle.zip
     snapshot: true
 antora:
   extensions:

@@ -1,0 +1,119 @@
+antoraVersion: '1.0.0'
+site:
+  url: http://localhost:5252
+  title: Documentation
+  homeUrl: &home_url /xyz/2.16/index.html
+  components:
+  - name: abc
+    title: Project ABC
+    url: '#'
+    versions:
+    - &latest_version_abc
+      url: '#'
+      version: '1.1'
+      displayVersion: '1.1'
+    - url: '#'
+      version: '1.0'
+      displayVersion: '1.0'
+    latestVersion: *latest_version_abc
+  - &component
+    name: xyz
+    title: &component_title Documentation
+    url: /xyz/6.0/index.html
+    versions:
+    - &latest_version_xyz
+      url: /xyz/6.0/index.html
+      version: '6.0'
+      displayVersion: '6.0'
+    - &component_version
+      title: *component_title
+      url: '#'
+      version: '2.16'
+      displayVersion: '2.16'
+    - url: '#'
+      version: '5.1'
+      displayVersion: '5.1'
+    - url: '#'
+      version: '5.0'
+      displayVersion: '5.0'
+    latestVersion: *latest_version_xyz
+  - name: '123'
+    title: Project 123
+    url: '#'
+    versions:
+    - &latest_version_123
+      url: '#'
+      version: '2.2'
+      displayVersion: '2.2'
+    - url: '#'
+      version: '2.1'
+      displayVersion: '2.1'
+    - url: '#'
+      version: '2.0'
+      displayVersion: '2.0'
+    latestVersion: *latest_version_123
+page:
+  url: *home_url
+  home: true
+  title: Hardware &amp; Software Requirements
+  component: *component
+  componentVersion: *component_version
+  version: '2.16'
+  displayVersion: '2.16'
+  module: ROOT
+  relativeSrcPath: index.adoc
+  editUrl: http://example.com/project-xyz/blob/main/index.adoc
+  origin:
+    private: false
+  previous:
+    content: Quickstart
+    url: '#'
+    urlType: 'internal'
+  next:
+    content: Liber Recusabo
+    url: '#'
+    urlType: 'internal'
+  breadcrumbs:
+  - content: Quickstart
+    url: '#'
+    urlType: fragment
+  - content: Hardware &amp; Software Requirements
+    url: /xyz/5.2/index.html
+    urlType: internal
+  versions:
+  - version: '2.17'
+    displayVersion: '2.17'
+    url: '#'
+  - version: '2.16'
+    displayVersion: '2.16'
+    url: '#'
+  navigation:
+  - root: true
+    items:
+    - content: Preview
+      url: '#'
+      urlType: fragment
+      items:
+      - content: Hardware &amp; Software Requirements
+        url: /xyz/2.16/index.html
+        urlType: internal
+      - content: Import Data
+        url: '/xyz/2.16/index.html#cu-solet'
+        urlType: internal
+      - content: Visualize the Graph
+        url: '/xyz/2.16/index.html#english+中文'
+        urlType: internal
+    - content: FAQ
+      url: '#liber-recusabo'
+      urlType: fragment
+    - content: Reference
+      items:
+      - content: Keyboard Shortcuts
+        url: '#'
+        urlType: fragment
+      - content: Importing and Exporting
+        url: '#'
+        urlType: fragment
+      - content: Some Code
+        url: '/xyz/2.16/index.html#some-code'
+        urlType: internal

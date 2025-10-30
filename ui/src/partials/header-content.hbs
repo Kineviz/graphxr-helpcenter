@@ -1,0 +1,43 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="{{siteRootPath}}/user-guides/3.0.0/index.html"><img src="{{siteRootPath}}/kv-logo.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="{{siteRootPath}}/user-guides/3.0.0/index.html">{{site.title}}</a>
+      {{#if env.SITE_SEARCH_PROVIDER}}
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs"{{#if page.home}} autofocus{{/if}}>
+        </div>
+      </div>
+      {{/if}}
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="{{siteRootPath}}/user-guides/3.0.0/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="{{siteRootPath}}/user-guides/3.0.0/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="{{siteRootPath}}/user-guides/3.0.0/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="{{siteRootPath}}/user-guides/3.0.0/g-user/graphxr-extensions/intro-extensions.html">Extensions</a>
+            <a class="navbar-item" href="{{siteRootPath}}/user-guides/3.0.0/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="{{siteRootPath}}/user-guides/3.0.0/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="{{siteRootPath}}/user-guides/3.0.0/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
