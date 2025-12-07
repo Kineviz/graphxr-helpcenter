@@ -1,0 +1,42 @@
+= Deleting Data
+
+Deleting data from the project space is easily done. You can:
+ 
+* Delete selected nodes and edges.
+* Clear all data from the project.
+* Clear unused category labels from the *_Project_* panel when no nodes of that category remain in your project.
+
+Deleting data in the graph space does not delete the data you pulled from a Neo4j database. The data model persists, and the _Categories_ and _Relationships_ tabs in the *_Project_* panel still list your defined entity labels.
+
+WARNING: Editing and transformations done in your GraphXR project are lost when you exit a project unless you save the data. You can xref:data-save-views/data-save-views.adoc[save a persistent data view in the project], xref:data-export/data-export-neo4j.adoc[export data to Neo4j], export a xref:data-export/data-export-views.adoc[data view or snapshot archive] or export data as xref:data-export/data-export-csv-excel.adoc[CSV or Excel files].
+
+== Delete Selected Nodes 
+
+*To delete a data selection:*
+
+* Select data using any method, and select the *_Delete_* (trash can)icon on the right-click menu or toolbar (or press *_del_* or *_backspace_*).
+
+== Clear All Data
+
+*To clear all data from a project:*
+
+* Click the *_Clear_* toolbar icon (*_Ctrl_* + *_Shift_* + *_C_*).
++
+image::/v2_17/05_01_03_DeleteIcons1344.png[,720,340,role=text-left]
+
+IMPORTANT: You can use *_Ctrl_*+*_Z_* to immediately undo a *_Delete_* or  *_Clear_* action.
+
+== Clean Unused Category Labels
+
+The *_Project_* panel retains category labels even when no nodes of that category remain in your project. You can use the *_Clean_* button to clean out unused labels.
+
+*To remove unused category labels:*
+
+. Open the *_Project_* panel, select the category bubble, and click the *_Clean_* button.
++
+image::/v2_17/05_01_03a_CleanCat720.png[,520,220,role=text-left]
++
+. In the warning dialog, click *_OK_* to confirm removal of the category label.
++
+image::/v2_17/05_01_03b_CleanCatDialog720.png[,520,220,role=text-left]
++

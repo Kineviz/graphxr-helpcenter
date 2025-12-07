@@ -1,0 +1,100 @@
+= GraphXR 3.0.0 Release Notes
+
+*Release Date:* September 23, 2025
+
+GraphXR 3.0.0 includes new features for connecting to graph databases, managing data operations, and creating example notebooks within a project. UI enhancements include left navbar menu re-design, Undo/Redo capability, and display of relationship properties in the legend.
+
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.0.0
+
+=== Usability Enhancements 
+
+* *MultiDB Access*. From a list of available options choose a graph database to connect to a new project.
++
+image::/v3/V3_0_0_01_MultiDBSelector.png[,240,420,role=text-left]
++
+ 
+* *Datastore*. A new tab in the *Project* panel to manage the project's graph data and views:  
+** *Import* data stored as CSVs or graph views.
+** *Save/Export* data, views, or screenshots:
+*** *Export* the current view locally as a CSV or Excel .zip archive
+*** *Export* all views saved to the project in a single .zip archive
+*** *Save* the current view to Neo4j, or to the embedded KuzuDB graph database. 
+*** Take a .png Screenshot, or export an SVG image of the current view.
+*** Save the current project and style settings as a Template.
+** View the current *Database Configuration*.
++
+image::/v3/V3_0_0_02_DataStore.png[,320,320,role=text-left]
++
+ 
+* A new configurable *RelProperty* element in the legend to select relationship properties and display and style the list of property values. *RelProperty* can be hidden using the project's UI Configuration.
++
+image::/v3/V3_0_0_04_LegendRP.png[,320,520,role=text-left]
++
+ 
+* *History* window to revert the graph to a previous state. *History* tracks addition and deletion of nodes, and layout changes. Click a list item to return to any state in the history list.
++
+image::/v3/V3_0_0_05_History.png[,420,220,role=text-left]
++
+TIP:  Use Undo (*ctrl+Z*), and Redo (*ctrl+Y*) on layout, selection, and transform operations on data in the project canvas. 
++
+
+* *More* menu in the left menu bar to open panels or extensions when the left menu bar has more than 11 items on it.
+* New *Kineviz icon* menu at the bottom left to *Log out*, return to the Projects *Home* page, or display keyboard navigation *Shortcuts*.
++
+image::/v3/V3_0_0_06_KVIconMenu.png[,100,210,role=text-left]
++
+
+=== Performance Enhancements
+
+* None
+
+=== Administration, Security, Configuration, and Deployment Enhancements
+
+* Datasource visibility on project creation can be configured (GXR-3132).
+* *Admin* dashboard enhancements
+** *Project Analytics* page to show the number of projects and activity per user.
+** Manage *LLMs* page to establish and manage connection to LLM models.
+
+* Users are now required to change passwords as set by the admin user.
+
+* Docker builds created for separate authorization protocols, e.g. Google Cloud Platform, and others.
+
+=== GraphXR API 
+
+* gxr.llm()
+* gxr.driver()
+
+== Removed 3.0.0
+
+* None
+
+== Extensions 3.0.0
+
+=== NEW Graph Composer
+
+_Property graph data modeling in GraphXR_. Provides graph data modeling for relational database tables or multiple CSVs. Includes editing and organization of input tables, mapping of table elements to graph categories and properties, and definition of graph relationships.
+ 
+=== Grove
+ 
+_Observable-based javascript notebooks_
+
+* *Sandbox* example Grove notebooks for demonstration and learning.
++
+image::/v3/V3_0_0_03_CreateSandbox.png[,420,180,role=text-left]
++
+
+** Create and rename a Sandbox project based on an available example.
+** Open and learn from the project notebook.
+** Optionally, customize the notebook workflow and data.  
+
+NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 3.0.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

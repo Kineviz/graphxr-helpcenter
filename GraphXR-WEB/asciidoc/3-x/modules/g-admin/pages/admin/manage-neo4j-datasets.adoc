@@ -1,0 +1,28 @@
+= Managing Neo4j Datasets in GraphXR
+
+The *_Neo4j Setting_* panel shows the existing connections to Neo4j graph databases:
+
+image::/v2_17/04_01_Neo4jDBs.png[,720,420,role=text-left]
+
+The following details about each database are included:
+
+* *_Name_*: Name of the Neo4j database.
+* *_Hostname_*: Host name, and *_Type_*.
+* *_User:_* Users with *_readOnly_* or *_write_* authorization.
+* *_Auth Users Count_*: Number of authorized users for the database.
+* *_Created Time_*: Date-time stamp when the database was added to the list.
+
+You can review existing connected databases, and use the *_Add Neo4j_* dialog to provide connection to a new Neo4j database.
+
+image::/v2_17/04_02_Neo4jDB_Add.png[,720,420,role=text-left]
+
+NOTE: *_About Neo4J_*. Since GraphXR works seamlessly with Neo4j graph databases, you may want to investigate graph data modeling and database management as it applies to Neo4j.
+
+*For information on installing and configuring Neo4j:*
+
+* https://neo4j.com/developer/neo4j-desktop/[_Neo4j Desktop Installation Guide_]
+
+*For information on data modeling with Neo4j:*
+
+* https://neo4j.com/developer/data-modeling/[_Graph Data Modeling_]
+* https://neo4j.com/why-graph-databases/?ref=footer[_Neo4j Graph Databases_]

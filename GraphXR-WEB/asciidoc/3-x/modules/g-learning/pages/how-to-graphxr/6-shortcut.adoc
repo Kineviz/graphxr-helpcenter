@@ -1,0 +1,44 @@
+= 6 Shortcut
+
+[cols="1,1"]
+|===
+| In this Session... | Before you begin...
+
+a| * Using *_Shortcut_* to simplify a graph pattern.
+a| To follow along, download:
+link:/wiki/spaces/TES/pages/1029111867/6.+Shortcut?preview=%2F1029111867%2F1624571919%2FHowTo_06_START_2_14.graphxrsnapshots.zip[HowTo_06_START_2_14.grap...]
+
+and the snapshots library:
+link:/wiki/spaces/TES/pages/1029111867/6.+Shortcut?preview=%2F1029111867%2F1624571919%2FHowTo_06_START_2_14.graphxrsnapshots.zip[HowTo_06_START_2_14.grap...]
+|===
+
+[cols="1"]
+|===
+|+++<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQMq3xJtDOgCx_55P_WUV34onoUNU5z8y75F7LIisKtpm34ooz9lYpzKUe9ZRuvwkElIGZciPytlpxi/embed?start=false&loop=false&delayms=60000" frameborder="0" width="768" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">++++++</iframe>+++
+|===
+
+[cols="1,13"]
+|===
+| *Slide* | *Text*
+
+| 3
+| Before working with the *_Shortcut_* transform, we'll load the Snapshot we took in our previous session right before merging. Click the expand/collapse arrow in the Snapshots title bar, then click snapshot's cloud icon.
+
+| 4
+| Now we'll use *_Shortcut_* to create a simpler graph focused on characters and the episodes in which they have appeared. Open the *Transform* panel and *Shortcut* tab.
+
+| 5
+| To create a shortcut, you first need to select at least one center node of an edge-node-edge pattern. Click Lines in the Legend to select all the Lines nodes.
+
+| 6
+| Here we'll shortcut the SPOKE-Lines-SPOKEN_ON pattern to a new APPEARED_ON relationship that will connect Characters to Episodes. We can copy properties from Lines to APPEARED_ON, but here we don't need to. Enter the pattern and click *Run*.
+
+| 7
+| We've now added the new APPEARED_ON  relationship but our source pattern is still present. Click *_Category_* on the Legend and _Lines_ to select all nodes of that category.
+
+| 8
+| With _Lines_ selected, press your delete key, or click the *Delete* icon.
+
+| 9
+| This removes all _Lines_ nodes and their connected SPOKE and SPOKEN_ON edges. We've now re-modeled the graph patterns to focus on characters and episodes. Save a snapshot, and we'll continue with this data in _Module 7. Preferences._
+|===

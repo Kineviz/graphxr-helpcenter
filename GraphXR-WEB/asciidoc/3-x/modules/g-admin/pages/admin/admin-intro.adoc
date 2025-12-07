@@ -1,0 +1,21 @@
+= GraphXR Administration
+
+Admin accounts can be provided for GraphXR multi-user installations. They are configured and registered during installation. However, admin privileges can be updated without requiring re-installation.
+
+Registered admin users see an *_Admin_* item on the *_Projects_* page's user menu. It opens the admin panel to: 
+
+* Manage users, roles, and security.
+* Track GraphXR usage.
+* Manage Neo4j datasets.
+* Review and respond to user email feedback.* Create and manage user Surveys.
+* Review and manage *_Extensions_*.
+* Review and respond to user email feedback.
+* Manage custom *_Icon_* sheets.
+* Create and manage project *_Templates_* that can be applied when creating or editing a project.
+* Create and manage *_Short URL_* lists for shared views or iFrames.
++
+image::/v2_17/01_01_AdminOpen.png[,720,480,role=text-left] 
++
+
+
+

@@ -1,0 +1,74 @@
+= Working with Layouts
+
+GraphXR provides a wide variety of flexible layout options for displaying data in the project space. By enabling you to select, organize and separate data in the graph space, layouts make it possible to create and share information-rich visualizations of high-dimensional data. Options include sorting by property value, positioning and setting orientation along X- Y- and Z- axes, and much more.
+
+NOTE: Layouts (and the geospatial mapping provided in the *_Map_* panel) rely on the ability to fix, or *_Pin_* nodes in 3D space in various specific ways, and to *_Release_* the pinned nodes when desired.
+
+== The Layout Panel
+
+Tabs in the *_Layout_* panel let you arrange data in the project space in a variety of  *_Force directed_*, *_Parametric_*, *_Geometric_*, or hierarchical *_Tree_* layouts.
+
+=== *_Force_* Layout
+
+The default force-directed layout renders nodes and edges in the graph space using a physics simulation that attempts to keep individual nodes and edges close enough, while reducing the number of crossing lines or hidden entities. You can adjust simulation parameters including link strength and distance, gravity, collision, and more.
+
+image::/v2_17/08_00_01_ForceLayout720.png[,480,480,role=text-left]
+
+=== *_Parametric_* Layouts
+
+Create scatter plots of nodes based on property values which are saved along with a saved view.
+
+image::/v2_17/08_00_02_ParametricLayout720.png[,480,480,role=text-left]
+
+=== *_Geometric_* Layouts
+
+Arrange any selected group of nodes in a *_Line_*, *_Grid_*, *_Circle_*, *_Spiral_*, *_Cube_*, or *_Spring_* layout. The nodes involved can be ordered by property value and the layout can be scaled, placed, and rotated along X-, Y-, or Z- axes in the project space.
+
+image::/v2_17/08_00_03_GeometricLayout720.png[,480,480,role=text-left]
+
+You can also apply *_Ring_* or *_Tree_* layouts around selected central nodes, and  specify the depth of the hierarchy and the relative edge length.
+
+image::/v2_17/08_00_04_EgoRings.png[,480,380,role=text-left]
+
+TIP: One-click geometric layouts are available through the *_Quick Layout_* menu in the toolbar and the right-click context menu. You can apply geometric layouts (*_Line_*, *_Grid_*, *_Circle_*, *_Spiral_*, *_Cube_*, *_Spring_*, Ego *_Tree_*, or *_Ring_*) to any selection of nodes in one click, and to *_Expand_* or *_Contract_* the layout in pre-set increments. These easy layouts provide rapid visualization, and are especially useful when you don't immediately need to order or distribute nodes by property value, or fine-tune the 3D orientation of your layout.
+
+image::/v2_17/08_00_03a_GeoQuickLayout.png[,480,480,role=text-left]
+
+=== *_Tree_* Layout
+
+This layout automatically arranges nodes in a hierarchical tree structure that you can modify on the fly.
+
+image::/v2_17/08_00_05_TreeLayout720.png[,480,480,role=text-left]
+
+== Pinning or Releasing Nodes 
+
+_Pinning_ locks a nodes to its current position in the 3D project space.
+
+GraphXR automatically pins nodes when you:
+
+* Move one or more selected nodes to a new position.
+* Apply a *_Geometric_* layout. The nodes become pinned to their new layout position.
+* Drop nodes with geospatial coordinates on a *_Map_*. The nodes are pinned according to their latitude/longitude coordinates and the map perspective you choose.
+
+Nodes are _released_ (or un-pinned) when you:
+
+* Select pinned nodes and click *_Release_* in the right-click menu or toolbar.
+* Select *_Hide Map_*, which releases the nodes pinned to locations on the world map, _except for any nodes previously pinned before being dropped on the map_.
+
+NOTE: A _Pin_ icon appears on all pinned nodes. These icons can obscure other node display options such as icons or images, and you will usually want to hide them using the *_Hide Pin Icon_* checkbox in *_Project>Settings_*.
+
+*To pin and release one or more nodes:*
+
+. Select one or more nodes and select *_Pin_* on the right-click menu or toolbar.
++
+image::/v2_17/04_02_01_PinStart520.png[,260,240,role=text-left]
++
+The selected nodes will be pinned (in addition to any already pinned nodes).
++
+image::/v2_17/04_02_02_PinPinned520.png[,260,280,role=text-left]
+
+. To release, select one or more pinned nodes. The *_Pin*_ icon changes to _*Release_*.
++
+image::/v2_17/04_02_03_ReleaseSelect520.png[,260,240,role=text-left]
+
+. Click the *_Release_* icon to release the selected pinned nodes and return them to a default *_Force_* layout.

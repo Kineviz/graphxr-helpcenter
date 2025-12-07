@@ -1,0 +1,28 @@
+= SeekerXR
+
+SeekerXR is a one-stop platform for rapid, cost-effective crime and risk investigation. Developed by Harod Analysis in partnership with Kineviz, it is designed by investigators for investigators to provide:
+
+* *Access to 80+ OSINT data sources*, including global corporate records, land and vessel titles, litigation, politically exposed persons (PEPs), sanctions, adverse media and compliance, domain and IP analysis, import and export cargo data, cryptocurrency analysis, and more.
+
+* *Focused Visualization and Analysis* 
+ 
+* *Secure Collaboration*  
+ 
+== Quick Start
+
+Here's a quick tour of how Seeker XR is used to power an investigation. (e.g. "How Do I...?")
+
+[cols="^3,^3,^3"]
+|===
+| *Open an Investigation*  
+| *Load Initial Data*
+| *Expand on Connections*
+ 
+| *Highlight Key Results*
+| *Save Your Work* 
+| *Share Results*
+
+|===
+
+
+

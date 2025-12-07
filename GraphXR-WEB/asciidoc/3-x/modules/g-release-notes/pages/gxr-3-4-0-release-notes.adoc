@@ -1,0 +1,77 @@
+= GraphXR 3.4.0 Release Notes
+
+*Release Date:* October 21, 2025
+
+GraphXR 3.4.0 introduces improvements across the UI, query handling, authentication, and Google Cloud integration. Major updates include enhanced search bar behavior, schema validation for Kuzu queries, and the addition of new API and MFA functionalities. UI refinements improve clarity, accessibility, and workflow responsiveness throughout the application.
+
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.4.0
+
+=== Usability Enhancements 
+
+** Enhanced environment-based UI hiding to streamline the user experience and declutter interface elements (GXR-3159).
+** Enhanced styling for the left navigation menu, including rounded borders and refined highlight colors (GXR-3050).
+** Updated legend and toolbars with larger icons and hover effects (GXR-3209).
+** Improved canvas behaviors regarding empty canvas logic and hidden toolbars when no nodes are present, and created smoother transitions (GXR-3214, GXR-3224, GXR-3188).
+** Search enhancements
+*** Better focus behavior for search-related UI elements, including hiding the legend and title bar when active (GXR-3200).
+*** Spinner and visual feedback during search operations (GXR-3184).
+*** Disabled autocomplete in canvas search mode to reduce visual noise (GXR-3183).
+*** Improved placeholder language and animation for search bar interaction (GXR-3191, GXR-3197).
+** Addressed minor UI inconsistencies with tooltips, modals, and scroll handling (GXR-3238).
+** Fixed layout and styling, including positioning of spring layout, scrolling of project lists, and modal sizing (GXR-3223, GXR-3238, GXR-3217).
+
+=== Performance Enhancements 
+
+** Improved KuzuDB query validation using the database schema before conversion to graph format, ensuring more accurate query results (GXR-3222, GXR-3239).
+** Corrected Kuzu query quoting issues, and enhanced compatibility across schema versions (GXR-3218, GXR-3240).
+
+=== Administration, Security, Configuration, and Deployment Enhancements
+ 
+* Additional Multi-Factor Authentication(MFA) implementation. (GXR-3124)
+* Implemented enforced password reset, requiring users to change credentials upon first login or after resets (GXR-2911).
+* Resolved access issues with the /forgotPassword route (GXR-3242).
+* Upgraded the Nodemailer package for secure email communication (GXR-3241).
+
+* Google Cloud Integration
+** Added support for configuring Google OAuth behavior via environment variables, including disabling OAuth when necessary (GXR-3178).
+** Updated related documentation and environment configuration examples (GXR-3178). 
+
+=== GraphXR API 
+
+* isCanvasLoaded() API method (GXR-3247).
+ 
+== Bug Fixes
+* Adjusted default force layout gravity values in 2D mode (GXR-3182).
+* Corrected positioning and scaling for bottom-left GraphXR logo (GXR-3221). 
+* Fixed issues with property filtering, autocomplete, and search behavior for various data types (GXR-3202, GXR-3185, GXR-3183).
+* Resolved login and sandbox initialization bugs for more reliable project startup (GXR-3172, GXR-3237).
+* Fixed compatibility between PuppyGraph schema v0.95 and earlier versions (GXR-3240).
+
+== Removed 3.4.0
+
+* None
+
+== Extensions 3.4.0
+
+=== Graph Composer
+
+_Property graph data modeling in GraphXR_ 
+ 
+=== Grove
+ 
+_Observable-based javascript notebooks_
+ 
+* Improved sandbox project creation and checkbox synchronization for Grove workflows (GXR-3172).
+* Added configuration-based feature toggling for GXR3 tags and UI components (GXR-3219).
+
+NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 3.4.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

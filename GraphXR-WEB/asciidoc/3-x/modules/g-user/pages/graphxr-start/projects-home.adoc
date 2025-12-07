@@ -1,0 +1,224 @@
+= GraphXR Projects
+
+The *_Projects_* page is your portal to create and manage individual GraphXR projects. It's also where you review details of your GraphXR account, register questions and comments, and where admin users can access administrator functions. 
+
+image::/v2_17/01_02_04_ProjectsPage.png[,720,640,role=text-left]
+
+== Project Page Organization
+
+Items at the top of the top of the *_Projects_* page include:
+
+* The user menu, where you edit your GraphXR account settings or log out. 
++
+image::/v2_17/01_03_01_ProjectsUserMenu.png[,720,240,role=text-left]
++
+** Select *_Settings_* to review your account details, change your password, or delete your account. Once you've made changes, click *_Update_* to update your account, or click *_Projects_* at the upper left of the browser to close the dialog without making any changes.
++
+image::/v2_17/01_03_02_ProjectsUserSettings.png[,420,520,role=text-left]  
++
+** Select *_Logout_* to log out of GraphXR.
++
+
+NOTE: Administrators of a multi-user account also have an *_Admin_* menu item that provides access to managing users and connected databases, as well as other administrative tasks. 
++
+* Click *_Feedback_* to log questions and comments for administrator response.
+* Click *_Help_* to access learning resources and contact information.
++
+ 
+NOTE: Click the version number at the bottom of the browser window to show release notes in a separate browser window.
+
++
+image::/v2_17/01_03_03_VersionHelpCenterLink.png[,720,240,role=text-left]
++
+* Use the language selector to switch between the default *English* or *Chinese* UI (or other localized languages which may be provided).
++
+image::/v2_17/01_03_04_ProjectsChineseMenuOnly.png[,720,240,role=text-left]
+
+The body of the *_Projects_* page lets you create and manage your GraphXR projects:
+
+image::/v2_17/01_03_05_ProjectsTiles1080.png[,520,520,role=text-left]
+
+* Use the *_Search_* bar at the top of the page to find one or more projects by name.
+* Click the display icon to show projects in a more compact list, instead of the default  tiles.
++
+image::/v2_17/01_03_06_ProjectsList1080.png[,520,480,role=text-left]
+
+Projects are organized into the following sections:
+
+* *_Recent Projects_* displays projects you have recently opened.
+* *_My Projects_* lets you *_Create_* a new project, and shows projects you've created.
+* *_Demo Projects_* provides a *_Select Demo_* dropdown to select a demo project from those available.
+* *_Shared Projects_* shows projects that other users have created and shared with you.
+
+
+== Explore a Demo Project
+
+To get started quickly with GraphXR you can explore a *_Demo_* project. 
+
+NOTE: Demo projects are limited to three projects which can have up to 500 nodes and edges and three views. You cannot share a demo project or export data views.  
+
+*To open a Demo project:*
+
+. Click a demo project tile, for example, the *_VC_* demo, to enter its project space.  This demo includes venture capital investor data. It is connected to a Neo4j database.
++
+image::/v2_17/01_03_07_VCDemoSelected.png[,720,240,role=text-left]
++
+
++
+IMPORTANT: The project's graph space is empty when you open it. You'll either pull data from the connected database or load a saved data view.
++
+
++
+image::/v2_17/01_03_08_ProjectSpace.png[,720,480,role=text-left]
++
+
+. Click the *_Project_* menu item on the upper left side of the browser window.
+
++
+The *_Project_* panel opens, with the *_Views_* tab open. It includes thumbnail images for data views which have been saved (if any). A view menu at the top center of the project space indicates the view that's currently loaded. The current view is listed as an *_Unsaved View_* in the *_VC_* project.
+
++
+image::/v2_17/01_03_09_ViewsTab.png[,720,480,role=text-left]
++
+ 
+. Now click the *_Category_* tab and  *_Relationship_* tab to explore categories and relationships that are in the Neo4j database connected to the project. 
++
+image::/v2_17/01_03_10_VCCategories.png[,720,480,role=text-left]
++
+
+The VC demo uses a very simple schema such that nodes of just one _Investor_ category are connected through edges of a single _link_to_ relationship. A color has been assigned to the category and the relationship, and each includes a list of defined properties.
++
+
+. Click the *_Pull_* button on the _Investor_ category to quickly import 25 nodes of that category from the database. This is a quick way to import some data. 
+
++
+image::/v2_17/01_03_11_DemoPull.png[,720,480,role=text-left]
++ 
+
+. You can also xref:data-import:import-from-neo4j[import more data from Neo4j]. You can:
++
+
+* Search the database. For example, in the search bar at the top left, we can search for any _Investor_ with the name "Partner", then import some or all of the nodes found in the database into the graph. 
+ 
++
+image::/v2_17/01_03_12_DemoSearch.png[,720,480,role=text-left]
++ 
+
+* Expand on relationships using GraphXR's *_Expand_* function. It brings in additional nodes connected through relationships you select. To try this, click on one or more _Investor_ nodes, then right click and choose *_Expand_* from the menu.
++
+image::/v2_17/01_03_13a_DemoExpand.png[,240,240,role=text-left]
++ 
+ 
+In the *_Expand with Relationships_* dialog, click the *_Expand_* button. 
++
+image::/v2_17/01_03_13b_DemoExpandDialog.png[,520,340,role=text-left]
++ 
+Additional nodes which are connected to the selected _Investor_ node have been returned.
++
+image::/v2_17/01_03_13c_DemoExpandDone.png[,720,480,role=text-left]
++ 
+
+* Query the database directly. Since the VC demo is connected to a Neo4j database, you can go to the *_Query_* panel and *_Cypher_* tab and run a simple example Cypher query. Click the *_Collection List_* arrow to display the sample query, and click on it to copy it to the Cypher query window. To bring in a sample of ten more nodes and their relationships, we can edit the LIMIT parameter to return ten nodes instead of 100. Then click the *_Run_* arrow.
++
+image::/v2_17/01_03_14_DemoCypherQuery.png[,720,480,role=text-left]
++ 
+ 
+. Now you can save the data view on the server so that when you return to this project, either after going back to the *_Projects_* page or logging out, your view will still be available. From the view menu, select *_Save As_*, enter a descriptive view name, and click *_Submit_*.
++
+Open the *_Project_* panel and *_View_* tab to see that the thumbnail of your saved view has been added. 
+
++
+image::/v2_17/01_03_15_DemoSaveView.png[,720,480,role=text-left]
++ 
+
+IMPORTANT: If you want to save a view, you must do it before exiting the project.
+ 
+== Create a Project
+
+You can create and configure a new GraphXR project and either leave the project unconnected, or immediately connect to a Neo4j database.
+
+=== Create a stand-alone project
+
+In a standalone project (one that's not connected to a Neo4j database) you can import and work with data in formats such as CSV, SQL, JSON, GraphXR's GXRF and Snapshot files, and others. You can import a data file into the project simply by drag and drop, or use GraphXR's xref:data-import/import-using-a-mapping.adoc[*Mapping Editor*].
+
+*To create a standalone project:*
+
+. In the *_Projects_* page, click the *_Create_* button or tile in the *_My Projects_* area.
++
+image::/v2_17/01_03_16_CreateProject1_540.png[,540,320,role=text-left]
+
+. In the *_Project Name_* text box, enter a descriptive project name. Leave *_Config Neo4j Instance_* unchecked.
++
+image::/v2_17/01_03_17_CreateProject2_540.png[create,240,200,role=text-left]
+
+. If project templates have been provided, you can optionally select one from the dropdown menu. Templates specify colors, icons and other settings so that they can be easily applied to more than one project. 
+
+. Click *_Confirm_*.
++
+The new project is automatically opened. To see that it now appears under *_My Projects_*, click the *_Home_* button to exit the project and return to the *_Projects_* page.
+
+=== Set project configuration 
+
+A new project is configured according to the template used (if any) and a variety of default settings. You can configure project details at any time: 
+
+* Click the project's *_Enable Share/Disable Share_* (Lock) icon to enable sharing of data views with another user. Share users you *_Invite_* have access only to that project and the data views that you share.
++
+image::/v2_17/01_03_18_CreateProject3_Share.png[,540,220,role=text-left]
++
+
++
+NOTE: Use *_ShareUI Config_* to restrict share users' ability to navigate or edit project data.
++
+
++
+image::/v2_17/01_03_19_CreateProject4_Clone.png[,540,220,role=text-left]
++
+* Click the *_Edit_* icon to edit project configuration.
+
+* Click the *_Clone_* icon to duplicate the project.
+
+* Click the *_Delete_* (trash can) icon to delete the project.
+
+=== Create a project connected to a Neo4j database
+
+Connect a new or existing project to an existing Neo4j graph database by specifying the database and server details.  
+
+*To create a project connected to a Neo4j database:*
+
+. In the *_Projects_* page, under *_My Projects_* click the *_Create_* button.
+. Now click the *_Configure Neo4j Instance_* checkbox.
+. Enter the information required to connect to your Neo4j database:
++
+image::/v2_17/01_03_20_CreateNeo4jDialog.png[,380,520,role=text-left]
++
+* *_Project Name_*: Descriptive name, (e.g., the name of the Neo4j database). +
+* *_Neo4j DB Host_*: Host address, (e.g., a url such as _localhost_, or other host location). Do not include <<,https://,>> bolt://, or :(port number) here. +
+* *_Bolt Port_*: (e.g. 7687) +
+* *_Neo4j DB Username_*: DB user name +
+* *_Neo4j DB Password_*: DB password +
+* *_Connection Type_*: Choose one of the following:
++
+** *_Browser Connection_*: GraphXR connects to the Neo4j DB directly through the browser. +
+HTTPS is required to be on for Neo4j, and this is the preferred connection type.
++
+** *_Through GraphXR server connection_*: Data flows from the Neo4j DB through a GraphXR server to the browser. In this mode you can share the project. HTTPS is optional for the Neo4j DB.
+* *_Advanced Neo4j Filter_*: This enables you to specify data structures to be returned.
+
+. Click *_Confirm_*.
+* The project opens. 
++
+image::/v2_17/01_03_21_NewNeo4j.png[,240,180,role=text-left]
++
+. To see that the new project appears in *_My Projects_* click *_Home_* to return to the *_Projects_* page.
+
+You can now:
+
+* Click the *_Settings_* icon, labeled *_APOC Search Index Config_*, to use Neo4j's indexing plugin to configure the allowed search terms for the project. You can modify these search terms at any time.
+* Click the project's *_Switch DB_* icon to edit its Neo4j configuration.
+* Click the project's *_Enable Share/Disable Share_* (Lock) icon to enable sharing of data views with another user. Share users you *_Invite_* have access only to that project and its data views. 
++
+NOTE: Click *_ShareUI Config_* to restrict share users' ability to navigate or edit project data.
++
+
+* Click on the project name to enter the project and begin pulling data from the Neo4j database.
+* Click the *_Delete_* (trash can) icon to delete a project. This deletes only the GraphXR project, not its Neo4j database.

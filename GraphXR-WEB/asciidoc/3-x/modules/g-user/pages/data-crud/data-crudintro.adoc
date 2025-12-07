@@ -1,0 +1,12 @@
+= Create and Edit Data
+
+Graph data can be easily created and edited within GraphXR. At any time you can:
+
+* xref:data-crud/data-add.adoc[Add nodes and edges] and their properties.
+* xref:data-crud/data-edit.adoc[Add and edit labels] of categories, relationships, and properties.
+
+For larger-scale data modeling, GraphXR xref:transform-data/intro-transforms.adoc[*Transforms*] use existing category and relationship patterns to create data arranged in new graph patterns. You can:
+
+** Extract a property as a new category and define its connected relationship. 
+** Aggregate, merge, or simplify complex patterns.
+** Re-format and combine property values as needed.

@@ -1,0 +1,187 @@
+= Graph Composer
+
+GraphXR’s Graph Composer extension is a visual point-and-click interface for modeling and building property graphs from a variety of data sources, including  collections of CSV tables as well as sources in transactional databases such as those managed in the Google Cloud Platform (GCP) Spanner or BigQuery.
+
+image::/v3x/12_01_01_Composer_Intro.png[]
+
+Graph Composer is designed to guide you through creating a mapping that models a property graph from data sources you select and edit, applying the mapping in a live preview to verify that it's what you want, and saving the result for re-use and export. The steps in the workflow are:
+
+.  *_Mapping Management_*, where you create the mapping.
+.  *_Data Sources_*, where you select and edit data to be mapped.
+.  *_Schema Design_*, where you
++
+* Specify node and relationship labels, and the properties associated with each.
+* Set the private or foreign key properties that will control the mapping.
++
+.  *_Export_*, where you save the mapping, and export it as a .json or a datastore file.  
+    
+
+Modeling a graph in Graph Composer differs depending on the data source:
+
+* For mapping a CSV file, the entire table is imported. 
+* For mapping tables of a connected database, a sample of the tables is imported. You model and build a graph from the sample, immediately explore it with GraphXR’s intuitive visualization, and generate a DDL statement to build the graph in the cloud––without needing to move or replicate the underlying data. 
+
+We'll show how this works for a set of CSV tables, and also for a Google Cloud Platform (GCP) Spanner database. 
+
+== Modeling a Property Graph from CSV data sources
+
+When working with CSVs, Graph Composer can ingest entire tables, where they can be edited, modeled, and loaded as graph data within the GraphXR project. 
+
+NOTE: For a connected database, the process for modeling the graph from the source tables is the same. The resulting mapping can only be applied to the source database by exporting it as an appropriate DDL file.
+
+In a GraphXR project, click the *_Graph Composer_* icon to open it, then:
+
+.  Click the *_Mapping management_* step. You can:
++
+- Enter a mapping name, and click *_Create New Mapping_*
+- Click to select an existing mapping from the list.
+- Click *_Upload Mapping_* to upload a saved mapping.
++
+
+. Click the *_Data Sources_* step or *_Next_* to add your data sources, then click *_Add Table_* to navigate to a table on your system. You can:   
++
+- Add multiple CSV files, one by one. 
+- Review the sample data in the table columns. Optionally you can edit table column headings, create new columns, select and delete rows, transform data formats, and specify handling of null or missing values.
++
+
+. Click the *_Schema Design_* step or *_Next_* to specify how your data is mapped, including its nodes, edges, and their properties.
++
+In the *_Graph Visualization_* pane, you'll see a live graphic of the source tables and the property graph schema mapped from it. Colored rectangles represent the data sources you've added, and the graph schema will appear as circles and connecting lines as you build the mapping. You can click and drag to arrange all of these elements in the window.
++
+
+.. Click *_Edit Schema_* to start modeling your graph. The *_Graph Visualization_* window displays a live graphic of the source tables and the property graph schema mapped from it.
+.. Create node types: Node label (name), properties, and set the primary key that controls how nodes are uniquely identified. 
+.. Connect nodes through relationships: Relationship label, table, properties (if any), and the foreign keys (if any) that are needed.
+.. Review the connections
+.. Preview the graph and Load to GraphXR. 
+
+. Click the *_Export_* step or *_Next_* to save and/or export the mapping. You can:
++
+- Save the Mapping to the server.
+- Download a .json file of the mapping to your local system.
+- Export the mapped data to the project DataStore
++
+
++
+NOTE: You can save a mapping at any time. In fact, once you have a valid graph schema mapped, even if partially complete, you should save your mapping. A mapped schema that hasn't been saved will not persist after you log out of GraphXR. 
+
+== Modeling a Property Graph from a connected Spanner database
+
+In a GraphXR project, click the *_Graph Composer_* icon to open it, then:
+
+. Click the *_Mapping Management_* step, and either create a new mapping or select an existing one.
+. Click the *_Data Sources_* step (or *_Next_* to add Spanner Tables 
+.. Click *_Add Table_*, and select the Data Source, Spanner instance and database from the dropdown menu.
++
+By default, 100 Sample Data Rows will be previewed. Optionally, you can change this number. The tables available in the database are listed.
++ 
+.. Click the checkbox next to a table, or click Select All, and click OK.
++
+The selected tables now appear in both in the Data Sources area...
++
+
++
+...and in the *_Schema Design_* section.
++
+
+.. Review and Edit Spanner Tables
++
+Before you begin modeling your graph, you’ll want to review the data in the tables. This can help organize your mapping strategy and build the graph you want.
++ 
+The table list is summarizes information about the sampled tables, including the source database, detailed source path, and the number of columns in each table. You can inspect an individual table to review the data it contains. 
++
+Optionally, you can apply modifications that will be applied to the property graph, such as renaming column headings, adding or deleting columns, re-formatting data types, and handling null or missing values in specific ways.
++  
+ 
+. Click the *_Schema Design_* step to map your data to a Property Graph
+
++
+The *_Schema Design_* area is your visual interface for building the property graph schema, where you'll map table columns to node types (called Categories in GraphXR), relationships, and their properties. Through mapping, you create a schema and the data definition to apply to the sample data, and ultimately, to your Spanner database.
+
+.. Click *_Edit Schema_*. 
++
+The  editor opens with an undefined node category that you’ll configure.
++
+.. Click the node to select it and open the *_Node Configuration_* pane. 
+.. Enter a node Name. This will be the category label for these node types (e.g. _User_). 
+.. Select the table, and the properties to be included, and click *_Add Selected Properties_*.
+.. Under *_Property Configuration_*, click the *_Primary Key_* checkbox to set the appropriate property as the primary key (e.g. _UserID_).
+..  Now click the plus icon at the upper left to add the new node  (e.g.  *_Order_*)
+.. Click the new node to configure it. Enter the name, then select the appropriate table, select and add its properties, and set the appropriate property as the primary key (e.g. _OrderID_).
+.. Next we model the directional relationship between the two node types. Roll over the source node, then click and drag to the destination node. 
++
+A relationship line is created, with a default name of the source and target node types, (e.g. Order_User). 
++
+.. Click the relationship line to open *_Relationship Configuration_*. Edit the relationship Name, and select the table that includes properties you need, either to be used as foreign keys, or to add property values to the edges. For example, we can choose an Orders table which includes both _UserID_ and _OrderID_. Adding property values to edges is optional, and is sometimes appropriate. Here we won’t add any.
++ 
+TIP: The standard convention for naming relationships is to use all capital letters, with underscores separating words. e.g. ORDERED_BY_USER.
++ 
+.. In the *_Foreign Key_* section, configure any foreign keys to map an edge connection to its source and target nodes. A foreign key isn't needed if the same table is referenced for the source and target nodes. If a foreign key is needed, you can choose to *_Auto Generate_* or *_Manually Configure_* the keys. 
+
+.. Click *_Back_* to see the graphic visualization of the schema and its mapped data sources. 
++
+Examine the visual schema to verify that you’ve defined it as you want, find errors and omissions, and identify needed changes or additions. To continue editing the mapping, click *_Edit Schema_* to return to the mapping window.
++
+WARNING:  Currently the mapping you've built persists in the project until you log out of GraphXR. Once you have a valid graph schema mapped, even if it is not yet complete, you should go to the *_Export_* step to save the mapping.
++     
+
+.. Click the *_Preview_* tab to see the graph. 
++
+Once you have a valid graph schema mapped, you can preview the data definition code and load a graph created from the sample data to the GraphXR project. You can:
++
+- Inspect the code for node and edge mapping
+- Click *_Load to GraphXR_* to map the sample data to a property graph and display it in the GraphXR project space.
++
+As you explore the sample graph in the project, you might notice errors or omissions in your mapping, such as data that’s in an inconsistent format, a category with too many nodes (indicating that a key isn't set properly), confused relationships, or missing properties that should have been associated with node types or relationships.  
+Just return to the Graph Composer to make needed edits, then preview the graph again. 
++
+ 
+. Click the *_Export_* step (or *_Next_*) to save the mapping. You can:
++
+- Click *_Save Mapping_* to save the mapping to the GraphXR server.
+- Click *_Download JSON_* to download the mapping to your system as a .json file.
+- Click *_Export to Data Store_* to save the mapped data to a specified database. 
+
+    
+== Save a view of the graph or sample graph 
+
+After using *_Preview_* to load the mapped graph data into GraphXR, you can save it as a live *_View_* using the dropdown menu at the center top of the project canvas. 
+This can be useful for collaborative graph modeling. Sharing a view can allow colleagues to comment on the model and to craft visualization and analytics for specific needs.
+  
+== Connecting to GCP Spanner
+
+The basic steps to connect a Spanner database to GraphXR and Graph Composer are:
+
+. Prepare your database and instance, in this case using GCP Spanner. For instructions on creating a Spanner instance and database, refer to the Google Cloud Spanner documentation.
+
+. Connect to the database provider through its API and authorization protocols. On GCP, the GraphXR Explorer version available on the the GCP Marketplace helps to guide you through this process.
+
+=== Obtain a Google Service Account credential for your database
+In  your Google Cloud account: 
+
+. *Create a Service Account*
+.. Open the Google Cloud Console and select your project.
+.. Navigate to IAM & Admin > Service Accounts.
+.. Click Create Service Account, and enter service account details.
+.. Assign the necessary permissions, and click Done.
+
+. *Generate a Google Cloud Service Account Key*
+.. In the Service Accounts list, click Manage Keys for your account.
+.. Click Add Key to create a new key. 
+.. Select JSON as the key type and click Create.
++
+This downloads the key file to your local system that you’ll need to connect the Spanner database to your GraphXR project.
+
+=== Connect to your GraphXR Project
+
+Now follow the steps in the connection wizard. When connecting through GraphXR Explorer the Spanner database and instance name will appear. You'll need to:
+
+. Upload the service account key file and click *Next*.
+
+. Check that the Spanner database and instance name is what you expect, and click Done.
++
+The GraphXR project opens, and you are now ready to use Graph Composer. Click the Graph Composer icon on the left menu to open Graph Composer.
++
+
+NOTE: In GraphXR Explorer, the Graph Composer extension is hidden by default. To show it, go to the  *Project* > *Settings* panel, click *UI Configuration*, and under *Extensions*, click to add *Composer*. Then scroll back to the top and click *Save* to return to your project. You will now see the *Composer* icon on the left project menu.
++

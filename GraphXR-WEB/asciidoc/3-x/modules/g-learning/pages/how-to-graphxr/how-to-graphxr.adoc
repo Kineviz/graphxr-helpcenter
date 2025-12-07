@@ -1,0 +1,54 @@
+= How to GraphXR
+
+This series of tutorials covers the basics of how to work with graph-connected data in GraphXR. To work hands-on, you'll need to create a GraphXR account, log in, download the data, and drop it in a GraphXR project space.
+
+If you are unfamiliar with graph data or GraphXR, the first module, xref:./1-graph-anatomy-and-interface[Graph Anatomy and Interface], is a good place to start. The tutorials are designed to be viewed in order, but you can start anywhere in the series if you want to focus on a specific feature. The data you'll need for each module is provided.
+
+NOTE: Data used in these tutorials is from an archive relating to the HBO television series _Game of Thrones._ This extensive dataset has been developed and provided https://jeffreylancaster.github.io/game-of-thrones/[here] courtesy of https://www.jeffreylancaster.com[Jeffrey Lancaster].
+
+[cols="1,13"]
+|===
+| *Module* | *Topic*
+
+| 1
+| xref:./1-graph-anatomy-and-interface.adoc[Graph Anatomy and Interface]
+
+| 2
+| xref:./2-loading-data.adoc[Loading Data]
+
+| 3
+| xref:./3-properties-and-extract.adoc[Properties and Extract]
+
+| 4
+| xref:./4-link-and-filter.adoc[[Link and Filter]
+
+| 5
+| xref:./5-aggregate-merge-and-fx.adoc[Aggregate, Merge, and f(x)]
+
+| 6
+| xref:./6-shortcut.adoc[Shortcut]
+
+| 7
+| xref:./7-preferences.adoc[Preferences]
+
+| 8
+| xref:./8-layout-and-pinning.adoc[Layout and Pinning]
+
+| 9
+| xref:./9-time-series.adoc[Time Series]
+
+| 10
+| xref:./10-algorithms.adoc[Algorithms]
+
+| 11
+| xref:./11-editing.adoc[Editing]
+
+| 12
+| xref:./12-geospatial-mapping-and-tagging.adoc[Geospatial Mapping and Tagging]
+
+| 13
+| xref:./13-query-expand-and-search.adoc[Querying]
+
+| 14
+| xref:./14-data-mapping.adoc[Data Mapping]
+|===

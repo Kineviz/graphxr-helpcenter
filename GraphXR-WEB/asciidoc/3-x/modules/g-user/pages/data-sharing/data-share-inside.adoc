@@ -1,0 +1,83 @@
+= Sharing Project Views
+
+You can share any project with other GraphXR users. Once shared, its data views are available to the invited users. 
+
+== Granting Shared Access to a Project
+
+Projects are not shared by default. You must explicitly grant shared access, and set a sharing configuration that sets the navigation and editing capabilities that will be available to sharing users.
+
+*To share a project and its data views:*
+
+. Go to the *_Projects_* (Home) page, locate the project you want to share, and click its *_Enable Share_* icon (the lock icon at the lower right of the project label).
++
+image::/v2_17/02_08_06a_ShareProject.png[,260,120,role=text-left]
++
+The lock icon changes to *_DisableShare_*, and additional *_GoToShare_*, *_Invite_*, and *_ShareUIConfig_* icons appear.
++
+image::/v2_17/02_08_06b_ShareProject1.png[,260,120,role=text-left]
+
+. Click the project's *_ShareUI Config_* icon to display the dialog to review the project's sharing configuration.
++
+image::/v2_17/02_08_06c_ShareProject2.png[,260,120,role=text-left]
++
+By default, all user interface functions are enabled.
++
+image::/v2_17/02_08_06d_ShareConfig.png[,720,410,role=text-left]
+
+. Click the icon next to the functions you want removed for share users. This cycles through the following options: 
+
++
+* Enabled on the project and for shared users.
+* Enabled on the Project
+* Disabled
+
++
+
+. Click *_Save_*, or click the arrow icon at the upper left to exit the dialog without making changes.
+
+. Now click the projects's *_Invite_* icon to send an email invitation to another GraphXR user.
++
+image::/v2_17/02_08_07a_ShareInviteIcon.png[,260,120,role=text-left]
++
+
+. Select or enter a GraphXR user, and click *_Invite_*.
+
++
+image::/v2_17/02_08_07b_ShareInvite.png[,380,220,role=text-left]
++
+
+When the recipient accepts the invitation, the project appears in the *_Shared Projects_* area on their *_Projects_* page.
+
+== Accessing a Shared Project or View
+
+After you are invited to share a project, the project tile appears on your *_Projects_* page in the *_Shared Projects_* area. Your ability to navigate or edit the view is determined by the project's sharing configuration.
+
+You can simply enter the project and go to the *_Views_* tab to see all the project's data views. Alternatively, in the *_Projects_* page you can select an individual view from the project's *_Share_* menu. This automatically opens the project and loads the view. 
+
+=== Loading a Shared View
+
+When you already know the view you want to work with, you can select it in the *_Projects_* page.  
+
+*To load a shared project view:*
+
+. In the *_Projects_* (Home) page, locate the project in the *_Shared Projects_* area.
+. Click the project's *_Share_* icon to display a menu of the views saved in that project.
++
+image::/v2_17/02_04_01_SharedProjectMenu540.png[,240,200,role=text-left]
++
+. Select a view from the menu.
++
+The project automatically opens with the selected view loaded.
++
+image::/v2_17/02_04_02_SharedView1320.png[,720,480,role=text-left]
+
+
+=== Entering a Shared Project
+
+You can enter a shared project without loading a view first. Once in the project, you can load a view from the list in the *_Views_* tab. 
+
+*To enter a shared project without loading a view:*
+
+. In the *_Projects_* (Home) page, locate the project in the *_Shared Projects_* area.
+. Click the project tile to enter the project.
+. Go to the *_Project_* panel and *_Views_* tab, locate a saved view, and click the view's thumbnail tile or list item.

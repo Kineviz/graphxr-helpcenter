@@ -1,0 +1,57 @@
+= GraphXR 3.7.0 Release Notes
+
+*Release Date:* November 13, 2025
+
+GraphXR 3.7.0 enhances database connectivity and schema handling, including improved support for Memgraph schema modes and relationship metadata. Refinements to the user interface include more accurate database relationships in the query bar, and an improved Table > Category panel. Release and deployment tooling are strengthened with updated scripts, Docker improvements, and cleanup of experimental developer environment configurations.
+
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.7.0
+
+=== Usability Enhancements 
+
+* Table > Category panel refactor (GXR-3305): Refactored the Table > Category panel to use Ant Design’s Table component, improving consistency and maintainability of the UI.
+
+=== Performance Enhancements 
+
+* Internal Data Store relationship modeling (GXR-2956): Extended schema handling to support relationships with multiple start and end nodes in the internal data store schema viewer.
+
+=== Administration, Security, Configuration, and Deployment Enhancements
+ 
+* Memgraph schema mode support and configuration (GXR-3309): Added support for the latest Memgraph with and without schema mode, including configuration via environment variables and reuse of existing Neo4j environment variables.
+* Release script and Docker improvements (GXR-3306): Updated release scripts and Dockerfiles, improved loading status feedback, refined hide menu and hide settings behavior for notebook/sandbox views, and fixed an issue where links failed to open.
+* Release pipeline configuration updates (GXR-3306): Adjusted release scripting to better support configurations for GraphXR Explorer on Spanner and BigQuery.
+  
+=== GraphXR API 
+
+* None
+  
+== Bug Fixes
+
+* Query Bar relationship accuracy fix (GXR-3244): Corrected the Query Bar to use the correct relationship metadata source so that all relationships in a Neo4j database are shown without duplication.
+* Extension pinning behavior fix (GXR-3138): Fixed an issue where a pinned extension could not be opened the first time it was pinned from the Extensions tab.
+
+
+== Removed 3.7.0
+
+* None
+
+== Extensions 3.7.0
+
+=== Graph Composer
+
+_Property graph data modeling in GraphXR_ 
+ 
+=== Grove
+ 
+_Observable-based javascript notebooks_
+ 
+NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 3.7.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

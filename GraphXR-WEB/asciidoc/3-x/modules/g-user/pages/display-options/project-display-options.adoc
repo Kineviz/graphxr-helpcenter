@@ -1,0 +1,99 @@
+= Setting Project Display Options
+
+The *Project* panel's *Settings* tab includes options to set the appearance of the project space and the project-wide appearance of nodes and edges.
+
+image::/v2_17/03_01_01_DisplaySettings.png[,720,520,role=text-center]
+
+== Setting display of the project space
+
+For the project space, you can choose a dark or light theme, and show or hide the *_Snapshots_* window and information panels. You can also scale the size of nodes or width of edges, and set a *_Fog Density_* scale so that nodes and edges become dimmer the further from the viewer they are in the virtual 3D space.
+
+*To set display of the project space:*
+
+. Click to open the *_Project_* Panel and *_Settings_* tab.
+. Set one or more of the following display options:
+
+* Click the *_Theme_* icon to toggle between the default _dark_ mode and _light_ mode.
++
+image::/v2_17/03_01_02_DisplaySettingsTheme.png[,720,520,role=text-center]
+
+* Click the *_Quick Info_* checkbox to display an information pane when you roll over a node or edge. You can also click *_Quick Info_* in the context menu to toggle the rollover info pane on and off.
++
+image::/v2_17/03_01_03_DisplaySettingsQInfo.png[,720,520,role=text-left]
+
+* Click the *_Show Snapshot_* checkbox to display the menu bar for the floating *_Snapshots_* window. At any time, you can click the *X* in the *_Snapshots_* title bar to dismiss it from the project space, which also automatically unchecks the checkbox.
++
+image::/v2_17/03_01_04_DisplaySettingsSnapshot.png[,720,520,role=text-left]
+
+* Use the *_Fog Density_* slider to enhance the 3D experience by dimming nodes and edges the further from the viewer they are in the virtual 3D space. A fog density of zero (0) provides crisp rendering of all graph elements.
++
+image::/v2_17/03_01_05_DisplaySettingsFog.png[,720,480,role=text-left]
+
+== Setting project-wide node display
+
+You can scale the project-wide size of nodes and their captions, control whether an avatar image or the pin icon is displayed on the node, and select an icon sheet and icon display mode for the project.
+
+NOTE: In the legend list, click the colored dot next to a *_Category_* item for the *_Styling Setting_*  dialog to set node color, icon, avatar, size scaled by a property value, and captions by property value for that Category. This icon will be applied when you display the *_Property_* list, but you can set a different color and icon for specific property values.
+
+*To set project-wide display of nodes:*
+
+. Click to open the *_Project_* Panel and *_Settings_* tab.
+. Set one or more of the display options for nodes, as outlined below.
++
+image::/v2_17/03_01_06_DisplayNodes.png[,720,480,role=text-left]
++
+
+* *_Auto Avatar_* checkbox. Show images associated with nodes through a URL property of its Category. An attempt to load an image will be made for any property key of __photo_, _photo_, _avatar_, image_, _picture_, or _icon_ which has a property value starting with _http_, _https_, or _ftp_. Formats supported are _jpg, jpeg, png, gif, bmp_. An image appears when you zoom in to a fixed virtual distance from the node. When you zoom out from that point the Category's color and icon is displayed instead. 
++ 
+If *_Auto Avatar_* is not checked, images will appear only if you select an _Avatar Url_ property for a specific category in the category's *_Styling Setting_* dialog or in the *_Project > Category_* tab.   
++
+
+TIP: For faster navigation in the graph space, deselect the *_Auto Avatar_* checkbox. Icons (if any) are still displayed.
++
+
+* *_Auto Caption_* checkbox. Automatically apply a default caption property  (caption>label>title>name) for all categories and relationships. 
+
+* *_Hide Pin Icon_* checkbox. Hide the Pin icon that displays on a pinned node. The Pin icon can obscure graph patterns you want to visualize using color, icons or images.
+* *_Node Size Scale_* slider. Set a global value for the size of all nodes. This value controls the relative size scale for all nodes. It is applied independently of scaling a category's node size by a property value.
+* *_Caption Size Scale_* slider. Set a global value for the size of captions for both nodes and edges.
+* *_Node Caption Position_* dropdown menu. Position options are _Right_, _Top_ (left-aligned or centered), _Bottom_ (left-aligned or centered), and _Vertical_.
+* *_Icon Mode_* dropdown menu. Set a display mode for icons overlaid on nodes.
++
+image::/v2_17/03_01_07_SettingsIconModeMenu.png[,720,480,role=text-left]
++
+Options are:
+
+** *_Background Transparent_*. Removes the node background. Only the icon is colored and the rest of the node circle is transparent.
++
+image::/v2_17/03_01_07b_DisplayIconBkTransparent.png[,520,120,role=text-left]
++
+** *_Icon Transparent_*. Makes the icon transparent, and overlays it on the node circle.
++
+image::/v2_17/03_01_07a_DisplayIconTransparent.png[,520,120,role=text-left]
++
+** *_Mix Color_*. Automatically selects a lighter, contrasting hue for the icon and overlays it on the node circle.
++
+image::/v2_17/03_01_07c_DisplayIconMixColor.png[,520,120,role=text-left]
+
+== Setting project-wide edge display
+
+Project-wide options for displaying edges let you scale edge width and caption size, use a curved or straight line, show or hide directional arrowheads, show or hide the relationship name, and display a blended, lighter color for edges that overlay one another.
+
+NOTE: Click the colored line next to a Relationship item in the legend list for a dialog to set edge color, edge width scaled by a property value, and captions by property value for that Relationship. These can also be set in the *Project* panel and *Relationship* tab.
+
+*To set project-wide display of edges:*
+
+. Click to open the *_Project_* panel and *_Settings_* tab.
+. Set one or more of the following display options for edges:
++
+image::/v2_17/03_01_10_EdgeDisplay.png[,720,480,role=text-left]
+
+* *_Auto Caption_* checkbox. Automatically apply a default caption property  (caption>label>title>name) for all categories and relationships. 
+* *_Alternate Caption Rendering_* checkbox. Use a more compact rendering of captions which may be more legible.
+* *_Show Relationship Name_* checkbox. Label every edge with its relationship name.
+* *_Use Curve Line_* checkbox. Represent edges as curved lines rather than straight lines. This is especially useful when pairs of nodes in a graph share multiple relationships.
+* *_Hide Arrow_* checkbox. Hide the arrowheads that show the edge direction.
+* *_Blend Edges_* checkbox. This enables additive blending of edge color such that multiple edges stacked on top of one another will appear brighter.
+* *_Dash Line_* checkbox. Render edges as a dashed, rather than a solid line.
+* *_Edge Width Scale_* slider. Set a global scale value fo the relative width of all edges.
+* *_Caption Size Scale_* slider. Set a global scale value for the size of captions for both nodes and edges.

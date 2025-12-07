@@ -1,0 +1,214 @@
+= 8 Layout and Pinning
+
+[cols="1,1"]
+|===
+| In this Session... | Before you begin...
+
+a| * Using *_Layouts_* to organize and visualize data:
+* Pinning and Releasing nodes
+* Using *_Force_* directed, *_Parametric_*, *_Geometric_*,and *_Tree_* layouts.
+* Using the *_Quick Layout_* toolbar menu for geometric layout.
+a| To follow along, download:
+
+link:/wiki/spaces/TES/pages/1029013566/8.+Layout+and+Pinning?preview=%2F1029013566%2F1624375375%2FHowTo_08START_2_14.graphxr.zip[HowTo_08START_2_14.graph...]
+
+and the snapshot library:
+
+link:/wiki/spaces/TES/pages/1029013566/8.+Layout+and+Pinning?preview=%2F1029013566%2F1624375381%2FHowTo_08START_2_14.graphxrsnapshots.zip[HowTo_08START_2_14.graph...]
+|===
+
+[cols="1"]
+|===
+|+++<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQqP-L5e9Zl7BNTHZOY3DSyAPx72my6TU1ptxkdBJDg0R1TPgVqBKm8_X4M4r9roBKdos_IU6DdYMxO/embed?start=false&loop=false&delayms=60000" frameborder="0" width="768" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">++++++</iframe>+++
+|===
+
+[cols="1,13"]
+|===
+| *Slide* | *Text*
+
+| 3
+| As we've already seen, layouts can help us discover and work with graph patterns in our project. With our data loaded, let's first click the *_Pin/Release_* toolbar icon to return to the default force-directed layout.
+
+| 4
+| The *_Layout_* panel includes tabs to adjust the default layout appearance, to work with *_Geometric_* and hierarchical layouts, and to create *_Parametric_* 3D scatterplots.
+
+| 5
+| In addition to detailed controls in the *_Layout_* panel, the *_Quick Layout_* toolbar icon provides a one-click menu of often-used geometric layout options.
+
+| 6
+| We'll delve into the various layout options in detail in a moment.  +
+First, though, we'll look at pinning to understand how it affects working with layouts.  +
+Open the *_Project_* panel and *_Settings_* tab, and deselect *_Hide Pin Icon_*.
+
+| 7
+| A pin icon appears on the nodes arranged with the geometric grid layout, showing that they are pinned to that xyz location in the project space.   +
+In addition, nodes that are moved manually (using *_left click + drag_*)are pinned.The number of currently pinned nodes appears on the badge next to the icon.
+
+| 8
+| We use the *_Pin / Release_* toolbar icon to pin (or release) selected nodes.   +
+Pinned nodes are not included when you apply or adjust a force layout, and that may be what we want. But we can always release pinned nodes if desired.
+
+| 9
+| When you select pinned nodes, the icon changes to *_Release_*. Simply click to release those nodes to the default force-directed layout. With no data selected, you can click to release (or pin) all the data.
+
+| 10
+| To release all pinned data and return to a force layout in one click, open the *_Layouts_* panel and *_Geometric_* layout tab. Click on an empty part of the graph to de-select all data, and click the *_Release_* button.
+
+| 11
+| Now let's look at force-directed layout. It's a dynamic physics simulation that arranges nodes and edges of your graph for reasonably good 3D visibility. Open the *_Layout_* panel and *_Force_* tab. Here you can adjust some of its key parameters. Adjustments affect all the data except for any pinned nodes.
+
+| 12
+| Adjust the *_Link Strength_* slider to control how strongly the edges of the graph pull the nodes together. _TIP: If the graph moves out of the view, click *Center To* or *Fly Out*  toolbar icons._
+
+| 13
+| Edge length can also be controlled by the *Link Distance* slider.
+
+| 14
+| The *Gravity* slider controls how strongly all nodes are attracted to a central point.
+
+| 15
+| The *Charge* slider adjusts how strongly nodes are attracted to each other. Moving the slider tothe left results in greater repulsive force between the nodes.
+
+| 16
+| Use the *Collision* slider to separate nodes that overlap in the view. This is particularly useful in a 2D view, to un-stack nodes projected on top of one another.
+
+| 17
+| Move the *Z-Compress* slider to the right to flatten the node layout so that it is more 2-dimensional.
+
+| 18
+| A fully 2D layout can be useful, especially for reports. In the *_Project_* panel and *_Settings_* tab, click the *_2D Mode_* checkbox. You'll longer be able to rotate the view of the graph in 3D, and the *_Z-Compress_* slider will be hidden.
+
+| 19
+| When you move nodes around the graph space by left click dragging them, the remaining unpinned nodes are rearranged. To prevent this, the *_Enable/Disable Force Layout_* toolbar toggle temporarily disables force layout.
+
+| 20
+| To display nodes randomly distributed roughly within a 3D cube you can click the *_Enable/Disable Force Layout_* toggle (in the Layout panel or toolbar) then click *_Randomize Node Positions_*. Pinned nodes are not included.
+
+| 21
+| *_Restore Default Settings_* resets slider controls to their defaults. The graph data also returns to the default force layout, again, except for any pinned nodes.   +
+Now let's look at our other layout options.
+
+| 22
+| The *_Quick Layout_* menu available in the toolbar lets you apply many geometric layouts in one click, and to *_Expand_* or *_*Contrac*_*t a layout by a default scale factor.
+
+| 23
+| For example, nodes can be arranged in hierarchical rings or trees around a central selection of nodes, and we can do this from the *_Quick Layout_* menu.
+
+| 24
+| We'll first select the Episodes nodes and *_Hide_* them temporarily, because we just want to see Character nodes arranged around their respective House nodes. The depth of hierarchical *_Ring_* or *_Tree_* layouts can be set in the *_Geometric_* layout panel, but not in a *_Quick Layout_*.
+
+| 25
+| Next, select the House nodes, and in the *_Quick Layout_* menu choose *_Circle_*, and then *_Expand_*, as many times as you like to expand the circle layout. (While this isn't necessary, it will make it easier to see the *_Ring_* layout you'll apply next.)
+
+| 26
+| With the House nodes still selected, click *_Quick Layout_* and choose *_Ring_* from the menu. The Character nodes are now arranged in rings around their respective House nodes.  +
+NOTE: If you don't select central nodes, GraphXR chooses for you.
+
+| 27
+| With the House nodes still selected, choose *_Tree_* in the *_Quick Layout_* menu. The Character nodes are arranged in trees to the right of their respective House nodes.
+
+| 28
+| Choose *_Ring_* again to return to the ring layout. Now click *_Show Hidden Nodes_* in the toolbar to restore our hidden Episode nodes.
+
+| 29
+| We can experiment with adjusting the layout from here. For example:  +
+• Select House nodes and move them using *_left click + drag_*.  +
+• Select Episode nodes and apply a *_Spiral_* (or other) layout.  +
+• *_Expand_* or *_Contract_* any selection of nodes, or all nodes.
+
+| 30
+| Now go to the *_Layout → Geometric_* tab and click *_Release_* to return to the default force layout.
+
+| 31
+| The *_Geometric_* layout tab provides more layout options, controls to position nodes precisely in the project space, and the ability to order nodes by a property value.
+
+| 32
+| As with *_Quick Layout_* we can apply a *_Line_*, *_Grid_*, *_Circle_*, *_Spiral_*, *_Cube_*, or *_Spring_* layout to any selection of nodes. But here we can also order the nodes by a property value.
+
+| 33
+| Select our House nodes, click the *_Order by Property_* checkbox, select the House Category and _houseName_ property, and click the *_Ascend_* (or *_Descend_*) checkbox. Now click *_Line_*.
+
+| 34
+| In the Legend, select Episodes. Order by _seasonEpisode_ property and click *_Grid_*. For all geometric layouts, unselected and unpinned nodes stay in force layout around the selected nodes (unless you disable force layout using the toolbar icon).
+
+| 35
+| In the Legend, select Characters nodes, order the nodes by the _kills_ property, and click *_Circle._*.
+
+| 36
+| *_Rotate_*, *_Scale_*, and *_Shift_* controls let you adjust the orientation, scale, and position of a selection in the 3D space. Select Character nodes and click *_Rotate Y_* to rotate the default 90 degrees. Select House nodes and click *_Expand_* (or *_Contract_*) to expand or contract the line layout by the default 1.5 times.
+
+| 37
+| Select the Episodes category that's in a grid layout and click the Shift *_Y_* button to shift the nodes up by the default 1.1 times.
+
+| 38
+| You can enter positive or negative values for *_Rotate_*, *_Scale_*, and *_Shift_*, to reposition any selection of nodes precisely in the graph space.
+
+| 39
+| At any time, you can choose a new layout for a selection of nodes or the entire graph. Select Characters nodes and click *_Cube_* to display the nodes in a 3D cube.
+
+| 40
+| If no nodes are selected a geometric layout arranges all the nodes. To see this, deselect all nodes and click *_Spiral_*, then click *_Expand_* several times.
+
+| 41
+| A *_Distribution_* layout spreads nodes grouped by a property value in the X, Y or Z direction. To illustrate, we'll first go to the *_Project\=>Category_* tab, choose Episodes and set _seasonNumber_ as a caption.
+
+| 42
+| Back in the *_Geometric_* layout tab, select Episodes nodes. Under *_Distribution_*, click the *_Spread Out_* checkbox and increase the *_Range_* to 6. Click *_Order by Property_*, choose _seasonNumber_, and click the *_Ascend_* and *_Number_* checkboxes. +
+ +
+Finally, click *_X_* to distribute the Episodes nodes by _seasonNumber_ along the X-axis.
+
+| 43
+| Now click *_Release_* to return to the force layout.
+
+| 44
+| *_Quick Layout_* uses default settings for *_Ring_* or *_Tree_* layouts. Scroll down in the *_Geometric_* tab to see that we can set the *_Ego depth_* (i.e. the number of hops from the central node), scale the edge *_Length_*, and order nodes by a property value.
+
+| 45
+| As we did before, lay out House nodes in a circle, ordered by _houseName_, then *_Expand_* the circle using the *_Quick Layout_* menu_._ Again, this simply makes it easier to see the results.
+
+| 46
+| With the House nodes still selected, scroll down to the bottom of the panel.   +
+For *_Ego depth_*, enter 1, and for the edge *_Length_*, enter 6. Click *_Order by Property_* and select Character and the _kills_ property. Now click *_Ring_*.
+
+| 47
+| Notice that with *_Ego depth_* set at 1, the Episodes nodes remain in force layout.
+
+| 48
+| With House nodes still selected, click *_Tree_*. Character nodes are arranged in a tree pattern to the right of their respective House nodes. Click *_Left_*, *_Right_*, *_Up_*, or *_Down_* checkboxes and *_Tree_* again to re-orient the connected nodes.
+
+| 49
+| Click *_Ring_* again to display our ring layout. You can also change orientation for rings (but it's easier to see the effect in trees).
+
+| 50
+| The rings or trees are laid out on a 2D plane, but other nodes can be positioned anywhere in the 3D project space. For example, select the Episode nodes and apply a *_Grid_* or *_Cube_* layout with nodes ordered by the _seasonEpisode_ property.
+
+| 51
+| At any time you can click *_Release_* to return all nodes to the default force layout. Any pinned nodes are automatically released.
+
+| 52
+| Now open the *_Tree_* layout tab. Here you can arrange nodes as a hierarchy starting from any selection of nodes. Select House nodes and click *_Apply_*. The House nodes form the base of the tree and unselected nodes follow level by level according to their connection to the base nodes.
+
+| 53
+| Select Episode nodes and click *_Apply_*. Now the Episode nodes form the base of the tree. This immediately separates out the many Character nodes that are not yet connected to an Episode.
+
+| 54
+| Use the *_Axis_* slider and click *_Apply_* to scale the tree layout. To return to a force layout, click *_Reset_*.
+
+| 55
+| Next we'll go to the *_Parametric_* layout tab to create a 3D scatterplot. Use the X, Y, and Z dropdown menus to select properties, and click *_Apply_*. Your choices are saved, letting you apply that layout again.
+
+| 56
+| Use the *Axis* slider to adjust the size of the 3D layout, and the *Show Axes* and *Show Grid* checkboxes  to toggle the labeled axes and grid on and off.
+
+| 57
+| We've selected properties that exist only on Episodes nodes (_seasonNumber_, _millionViewers_, and _totalLines_). Nodes without the properties (e.g. House or Character), or which have a null value are stacked up at the origin point.
+
+| 58
+| To see a force layout of the nodes that don't have the selected properties, click the *_Enable Force Layout_* toggle in the layout panel (not in the toolbar).  *_Disable Force Layout_* returns us to our specified parametric layout.
+
+| 59
+| Click *_Reset_* to return the entire graph to force layout.
+
+| 60
+| We've seen how to lay out data in the project space for easier visualization and selection of graph patterns. Next, in _Module 9: Time Series_, we'll look at exploring the graph by filtering on timestamp properties.
+|===

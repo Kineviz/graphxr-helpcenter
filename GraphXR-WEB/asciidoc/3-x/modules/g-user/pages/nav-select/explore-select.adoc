@@ -1,0 +1,30 @@
+= Navigating and Selecting Graph Data
+
+GraphXR provides the capability to explore, select, and group data efficiently in the project graph space.
+
+To xref:./navigate.adoc[_navigate_] the graph on the desktop you can:
+
+* Use mouse and/or keyboard shortcuts to pan, rotate, and zoom in and out of the view.
+* Use *_Center To_* and *_Fly Out_* icons on the context toolbar to reposition your view of the graph.
+* Use full-text xref:./navigate.adoc[_keyword search_] on properties of the graph data to locate, select, and fly to an individual node.
+* Open and search a xref:./table-explore.adoc[*_Table_*], fly to a node or edge, and select search results.
+
+To xref:./select.adoc[_select_] data in the graph space you can use:
+
+* xref:./ref-shortcut-keys.adoc[Mouse and/or keyboard shortcuts] to select nodes or groups of nodes, and to add or subtract from your selection.
+* *_Select Visible_* (*_Ctrl +A)_* to select all currently visible nodes in the project space.
+* List items in the *_Legend_* to select all nodes of any category or tag, or any listed property value, or to select all the edges of a relationship.
+* *_Trace Neighbor_* to highlight all the nodes within a specified number of connections to a selected node. Once highlighted, you can use *_Select Visible_* (*_Ctrl +A)_* to select the traced nodes.
+* *_Inverse_* to select all the nodes not in the current selection (*_Ctrl_* *+* *_R_*).
+* xref:./hide-show.adoc[*_Hide_*] data temporarily:
+ ** *_Hide Selection_* hides selected nodes temporarily, and *_Un-Hide Selection_*  restores hidden nodes.
+ ** Deselect the *_Visible_* checkbox for a category or relationship to temporarily hide nodes of a category, or edges of a relationship.
+ ** Select the *_Exclude_* checkbox for any property of a category or relationship to temporarily exclude it from display in tables or the information panel.
+* The xref:./filter.adoc[*_Filter_*] panel to filter data by any numerical property, including Date and Time, using multiple composable filters. Filter animation enables dynamic display of connected patterns.
+* *_Find Path_* on the right-click menu to find a path between two selected nodes.  
+
+To _group_ selected data in the graph space you can use:
+
+* ref:./tag-nodes.adoc[*_Tag_*] to save and label any selection of nodes.
+* xref:./collect-nodes.adoc[*_Collect Nodes_*] (and *_Explode Collections_*) icons to collect nodes with few (or no) connections to selected nodes and place them in special temporary collection nodes.
+* An xref:./table-explore.adoc[*_Enhanced Table_*] to select, edit, and export selected data.

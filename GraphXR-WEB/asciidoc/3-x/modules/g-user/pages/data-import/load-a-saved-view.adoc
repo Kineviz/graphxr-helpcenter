@@ -1,0 +1,45 @@
+= Load a Saved View
+
+Once a view has been saved, you can load it into the project at any time. It will include the nodes and edges as well as the 3D perspective and layout of the graph as it was when the view was last saved.  
+
+NOTE: A data view is automatically available only in the project where it was created. However, you can import views that have been exported as a GXRF file or Snapshot archive  to another project. Data saved as a CSV or Excel archive can also be imported to another project, except that its 3D layout is not preserved.
+
+WARNING: Loading a view replaces any data that are already in the project space. Before you load a saved view be sure to save your current view. You can save it back to the current view, save it as a new view, or export it as a GXRF file or snapshot archive.  
+
+
+*To load a saved view:*
+
+. Open the *_Project_* panel and *_View_* tab. 
+
++
+NOTE: Or, you can use the dropdown view menu to select the view name from a list of recent views or all views.
++
+
++
+image::/v2_17/02_10_01a_LoadViewMenu.png[,720,520,role=text-left]
++ 
+
++
+In the *_View_* tab, thumbnail preview tiles are displayed by default. You can click the tile icon at the upper left to toggle between tile and list views. 
+
++
+image::/v2_17/02_10_01_LoadViewStart.png[,720,520,role=text-left]
++
+
+. When there are many saved views you can:
++
+* Sort the tile or list view by view *_Name_*, *_Date Created_*, or *_Date Modified_* in ascending or descending order.
+* Click the magnifying glass icon to filter views by name.
++
+image::/v2_17/02_10_02_LoadViewFiltered.png[,520,320,role=text-left]
++
+
+. Once you locate the view, click the tile or list item to load it. 
+
++
+The view is loaded into the project space. 
++
+image::/v2_17/02_10_03_LoadViewDone.png[,720,420,role=text-left]
++
+
+NOTE: When you import a saved view by drag and drop, or by using *_Import_* or *_Import View_* in the *_Data_* tab, an _Unsaved View_ view is made ready. However, the existing view label, date of creation, and date last modified are not preserved. 

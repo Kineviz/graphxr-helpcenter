@@ -1,0 +1,193 @@
+= Import using the Mapping Editor
+
+GraphXR's *_Mapping Editor_* lets you map data in a single CSV file (or table of SQL query results) to a graph pattern or model. You can map just the data you want; you need not import the entire table. A mapping queries the data of interest and converts it to graph data, assigning  the categories, properties, relationships, and key values you specify.
+
+image::/v2_17/02_02_01_MappingStart.png[,720,480,role=text-left]
+
+You can:
+
+* Map a table column as a *static* Category or Relationship label, map additional columns as properties, and create nodes and edges according to properties set as key values.
+* Map the values within a table column as *dynamic* Category or Relationship labels. This maps unique values within the column to separate Categories (or Relationships) and creates nodes and edges accordingly. This can help you visualize changes in data that's updated periodically.
++
+To create a dynamic mapping, you enter a column name in *curly braces { }* in the Mapping Editor's *_Category Name_* or *_Relationship Name_* field. To make the labels more readable, additional text can be included both before and after the name (e.g. _Text_{Column Name}_MoreText_).
++
+For example, the mapping shown above helps to visualize and work with photo assets by location and author, since separate categories are created for unique values found in _PlaceName_ and _Provider_ columns.
++
+
+Separate _TAKEN_BY_ relationships (e.g. _TAKEN_BY_Provider 1_, _TAKEN_BY_Provider 2_) are also defined for unique values in the _Provider_ column. Now each author's connection to images is displayed in a separate color, which rapidly highlights authorship in the graph.
++
+
+image::/v2_17/02_02_02_GeoMapAuthorLoc1320.png[,720,480,role=text-left]
+
+Once you create a mapping, you can:
+
+* Save, apply, and edit the mapping.
+* Export a saved mapping as a .JSON file. You can include this with the original data, and import it to other GraphXR projects.
+
+NOTE: Data mapping is available in both the *_CSV_* and *_SQL_* tabs of the *_Query_* panel. The result of a SQL query must be in the form of a table with column headings in order for mapping to be possible.  
+
+== Creating a Mapping
+
+We'll start with an example CSV file that contains a table (with headers) of photographic images and associated metadata such as photographer, image ID, size, date taken, keywords and ratings, and location (place names and latitude-longitude).
+
+image::/v2_17/02_02_03_CSV720.png[,720,480,role=text-left]
+
+Using static and dynamic mapping, we can design a model to connect location, ratings and authors of photographic images. We'll create image_, _Rating_, and _Author_ categories and map appropriate properties from the CSV as follows:
+
+* image_ can include the _pkey_ (since we have one), _photo ID number_, _name_, _url_, image size_, _date taken_, _provider_, _copyright_, _place name_, _latitude_ and _longitude_, _state_, and _country_.
+* _Rating_ can include _Rating_.
+* _Author_ can include _Provider_.
+
+We'll also map dynamic relationships as:
+
+* _RATED_AT_\{Rating}_ to connect image_ and _Rating_ nodes with edges labeled by _Rating_.
+* _TAKEN_BY_\{Provider}_ to connect image_ and _Author_ nodes with edges labeled by _Provider_.
++
+image::/v2_17/02_02_04_ImageRatingAuthor1320.png[,720,480,role=text-left]
+
+NOTE: Mapping data from a table in a SQL relational database uses the same mapping editor interface.
+
+*To create a mapping:*
+
+. In the *_Query_* panel, open the *_CSV_* tab, click *_Load CSV_*, navigate to your CSV file, and click *_Open_*. Notice that the *_Mapping Editor_* is only available once you have loaded your CSV file.
++
+image::/v2_17/02_02_05_LoadCSV720.png[,720,480,role=text-left]
++
+The file name and number of rows and columns are displayed next to the *_Load CSV_* button. The contents of the file including its column headings are displayed in a data table, 10 records at a time. Below that are the controls to create, update and apply a mapping and to access saved mappings.
++
+
+NOTE: A mapping is applied to the CSV file that's loaded. You can load a different CSV and apply a saved mapping to it if it also includes the column headings and properties specified in the mapping.
+
+. Scroll to the bottom of the panel, and click *_New_* to display the *_Mapping Editor_*.
++
+image::/v2_17/02_02_06_CSVMapping720.png[,720,480,role=text-left]
+
+. The *_Mapping Editor_* window is divided into left and right functional areas:
++
+* On the left, you add categories and relationships, and save or export your mapping.
+* On the right, you enter a *_Category Name_* (or *_Relationship Name_*), inspect *_Sample Data_* from the CSV, and specify the *_Properties_* to be mapped from the CSV *_ColumnName_* to a *_PropertyName_* for the current category or relationship.
++
+
+The first category, shown as a circular icon labeled _Category1_, is automatically created and selected.
++
+image::/v2_17/02_02_07_MappingEditor720.png[,720,480,role=text-left]
+
+. On the right, in *_CategoryName_*, change the label to image_. 
++
+image::/v2_17/02_02_08_Cat1_Image.png[,720,480,role=text-left]
++
+
+TIP: A standard naming convention for categories and relationships will make mappings and your graph data more readable. For example, capitalize category names (*Image*), and use upper case with words separated by underscore characters for relationship names (*TAKEN_AT*).
+
++
+. Now add properties for the image_ category. 
++
+* From the *_Sample Data_* area, click the *+* (plus) icon next to columns to be included as properties. Each column name appears in the *_Properties_* list as you add it. A property will be named as in the CSV file, but you can enter a different name. If you add a property by mistake, simply click its trash can icon in the *_Remove_* column.
+* Click the *_AsKey_* checkbox to set one or more properties as key values. In this example, we set the _pkey_photo_ property as the key. This ensures that there will be only one node for each unique photo.
++
+
+TIP: Notice that you can set *AsKey* for more than one property, which provides flexibility in how you define unique entities in your mapping.
+
++
+. We'll add a second _Rating_ category connected to the image_ category. Roll over the image_ icon, click in the purple highlighted area, and drag to add a new category and  relationship.
++
+image::/v2_17/02_02_08_Cat2_ImageNewCat.png[,720,480,role=text-left]
++
+
+. Select the new category icon, and change its *_Category Name_* to _Rating_.
++
+The relationship now appears as a directed arrow with a default image_Category1_ name.
++ 
+. Click to add the _Rating_ column from the CSV as a property, and click to set it *AsKey* so that there will be a single node for each unique rating. 
+
+. Add a third _Author_ category connected to the image_ category. Roll over the image_ icon, click in the purple highlighted area, and drag to add the new category and  relationship. 
+
+. Select the new icon and change its *_Category Name_* to _ Author_ . Click to add the _Provider_ column as a property, rename it to _authorName_, and click *_AsKey_* so that there will be a single node for each unique photographer. 
++
+image::/v2_17/02_02_10_C2_RatingC3.png[,720,480,role=text-left]
++
+
+NOTE: The *_Add Category_* and *_Add Edge_* icons at the upper left let you add categories and connect them to relationships separately rather than in one step. This can make it easier to model specific directional relationships.
+
+. Now edit the relationship names and specify dynamic relationships.
++
+* Click the  image_Category1_ relationship and change its *_Relationship Name_* to _RATED_AT\{Rating}_. Optionally, properties can be added to the relationship, but here we don't need to.
+* Click the  image_Category2_ relationship and change its *_Relationship Name_* to _TAKEN_BY_\{Provider}_.
++  
+image::/v2_17/02_02_12_DynamicRelRatingAuthor.png[,720,480,role=text-left]
++ 
+
+IMPORTANT: A name you enter in the curly braces must exactly match the column header name *_in the CSV_*. If the Mapping Editor can't match the name (for example, because it is misspelled), the relationship will be created but will be labeled "_undefined_".
+
+. Click any category or relationship icon to review and make any changes.
+
+. Click the *_Save As_* icon in the *_Mapping Editor_* window.
++
+image::/v2_17/02_02_13_SaveMapping1320.png[,720,220,role=text-left]
+ 
+. In the dialog box, enter a name in the *_Save As_* text field, and click *_OK_*.
++
+image::/v2_17/02_02_14_SaveAsDialog.png[,340,220,role=text-left]
++
+The name appears in the *_Mapping_* dropdown menu.
+    
+. Click *_Apply_* to apply the mapping to the loaded file and import the mapped data.
++
+image::/v2_17/02_02_15_ApplyMapping.png[,720,780,role=text-left]
++
+GraphXR queries the CSV, maps the data, and loads it to the project space.
++
+image::/v2_17/02_02_16_MappingDone.png[,720,480,role=text-left]
+
+== Editing a mapping
+
+You can edit the mapping at any time and *_Save_* it, or use *_Save As_* to edit and save as a new mapping. A CSV will still be loaded, so during the editing process, a mapping can easily be edited and then re-applied.
+
+*To edit a mapping:*
+
+. Open the *_CSV_* tab in the *_Query_* panel, click *_Load CSV_*, navigate to the CSV file associated with the mapping, and click *_Open_*.
+. Select the mapping you want to edit from the *_Mapping_* dropdown menu and click *_Edit_*.
+. Edit, add or delete categories, relationships, and their properties.
+. Click either the *_Save As_* icon to save your work as a new mapping, or the *_Save and Exit_* icon to save to the existing mapping.
++
+image::/v2_17/02_02_17_SaveMapping1320.png[,720,180,role=text-left]
++
+To exit the editor without saving changes, click the *X* at the upper right of the *_Mapping Editor_* window.
+
+== Exporting or Importing a mapping
+
+You can export a mapping as a JSON file, and then re-import it whenever you want.
+
+TIP: It is good practice to export mappings before you exit a project.
+
+*To export a mapping as a JSON file:*
+
+. Open the *_CSV_* tab in the *_Query_* panel, click *_Load CSV_*, navigate to the CSV file associated with the mapping, and click *_Open_*.
+. Select the mapping in the dropdown menu, and click *_Edit_* to open the *_Mapping Editor_*.
+. Click the *_Export Schema_* icon at the top left.
++
+image::/v2_17/02_02_18_ExportSchema1320.png[,720,180,role=text-left]
++
+A JSON file for the mapping is written to your local machine.
+
+*To import a mapping saved as a JSON file:*
+
+. Open the *_CSV_* tab in the *_Query_* panel, click *_Load CSV_*, navigate to the CSV file associated with the mapping, and click *_Open_*.
+. Click *_Import_*, navigate to the JSON file, and click *_Open_*. 
++
+The mapping appears in the Mapping menu.
+. Select the mapping and click *_Apply_* to map the loaded CSV data.
++
+
+If you choose a mapping that was not defined on the CSV file you loaded, the following message displays: "Mapping not compatible with the data."
+
+== Deleting a mapping
+
+You can delete any or all of the mappings at any time.
+
+*To delete a mapping:*
+
+. Open the *_CSV_* tab in the *_Query_* panel.
+. Select the mapping you want to delete from the *_Mapping_* menu and click *_Delete_*.
++
+image::/v2_17/02_02_19_DeleteMapping.png[,720,260,role=text-left]

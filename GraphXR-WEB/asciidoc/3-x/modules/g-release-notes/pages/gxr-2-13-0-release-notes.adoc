@@ -1,0 +1,62 @@
+= GraphXR 2.13.0 Release Notes
+
+*Release Date:* Feb 7, 2022
+
+The GraphXR 2.13.0 release includes new features and user interface design, added browser and system support, and deprecated interface elements.
+
+== New Features 2.13.0
+
+* *_Collection Nodes_*. Special _collection nodes_ for a selection of data can be created by clicking the new *_Collect Nodes_* toolbar icon. Collections consist of the nodes connected by one edge of a single relationship to another node. Nodes included in a collection can be inspected, removed, and added back. The new *_Explode Collection_* toolbar icon removes all nodes from selected collection nodes.
++
+image::/v2_17/V2_13_01_Collections.png[,520,340,role=text-left]
++
+This feature helps simplify the patterns in graph data. It replaces and greatly extends functionality previously provided by temporary leaf trimming supernodes.
+* *_Full 2D Mode_* In the *_Force_* layout tab, setting the dimension slider all the way to *_2D_* now sets the layout to a fully flattened 2D mode.
+* *_Screen Capture tool_*. The *_Take Screenshot_* icon on the toolbar takes a _.png_ screenshot of the entire graph space that includes the legend, but leaves out the menu bar, toolbar and any open panel.
++
+image::/v2_17/V2_13_02_ContextWithData720.png[,720,72,role=text-left]
+
+* *_Blend Edges_*. The *_Settings_* panel includes a checkbox to display lighter hues when multiple edges are stacked on top of each other so that they will appear brighter.
++
+image::/v2_17/V2_13_03_EdgeBlend.png[,520,370,role=text-left]
+
+* *_Show Relationship Name_*. The *_Settings_* panel includes a checkbox to show or hide the relationship name on all edges in the graph.
++
+image::/v2_17/V2_13_04_EdgeLabelNodeCaptionPos.png[,520,370,role=text-left]
+
+* *_Caption orientation_*. The *_Node Caption Position_* menu on the *_Settings_* panel lets you set the position of node captions to the right, left, top, or bottom of the node, either center or left justified.
+* *_Alternate Caption Rendering_* The *_Settings_* panel includes a checkbox to display captions using an alternate rendering that may be more legible than the default rendering at very small text sizes. However the number of captions rendered at one time is limited.
+
+* *_Edge captions_*. Captions based on properties of a relationship can be displayed on its edges, using the *_Caption_* checkbox for the relationship and property in the *_Project_* panel and *_Relationship_* tab.
+* *_Multiline property_* support. You can now enter more than one property value for a property of a node or edge. In captions, these will be displayed on separate lines. Multiple property values for a new node or edge can be entered in *_Add Node_* or *_Add Edge_* dialog boxes, and new properties and multiline values for an existing node or edge can be entered or edited on the fly in an *_Information_* panel.
++
+image::/v2_17/V2_13_05_MultiPropCaptions1080.png[,520,370,role=text-left]
+
+* Project name is displayed in the *_Data_* tab.
+* *_Chinese language support_*. A menu on the *_Project_* page lets you choose to display the GraphXR user interface with either English or Chinese language labels.
++
+image::/v2_17/V2_13_06_ProjectsChineseMenuOnly.png[,420,72,role=text-left]
+
+== Removed 2.13.0
+
+* The *_Leaf Trimming_* toolbar icon, and Leaf Trimming supernodes. Basic leaf trimming is still available using the *_Ctrl + L_* shortcut key.
+* *_Project> Settings > Multi-Language_* checkbox. All captions now accept the full UTF-8 character set.
+
+== Extensions 2.13.0
+
+* *_Visual Query Builder_*. _Build Cypher queries using no-code building blocks._
+** Bug fixes.
+* *_Grove_* (beta-release). _Observable-inspired in-app javascript notebook._
+** Continuing UI and API development
+* For Enterprise subscriptions, limited release extensions may be available for connecting to specific external data sources, or importing data from RDBMS, document, or mixed data sources.
+
+== Supported Environments 2.13.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING
+* OCULUS RIFT, HTC VIVE, AND WINDOWS MIXED REALITY
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
+* The GraphXR client includes beta support for Virtual Reality (VR) hardware in the Google Chrome browser via WebXR.
+* GraphXR Cloud supports local and cloud storage. In addition, GraphXR Enterprise is available via on-premises or private cloud deployments.
+
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

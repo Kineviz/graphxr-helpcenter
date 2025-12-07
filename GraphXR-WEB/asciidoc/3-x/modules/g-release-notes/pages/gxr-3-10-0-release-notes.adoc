@@ -1,0 +1,60 @@
+= GraphXR 3.10.0 Release Notes
+
+*Release Date:* December 2, 2025
+
+GraphXR 3.10.0 introduces introduces an interactive CSV mapping tutorial sandbox, significant improvements to the Transform → Link workflow, and refinements to the More menu including dark mode and an admin entry point. Floating panel positions and mouse interactions are more predictable, the Settings panel is less resource-intensive, and localization is safer for end users. Deployment options are expanded with updates to GraphXR Lite Docker images (including Puppygraph and Neo4j support) and groundwork for a mobile viewer.
+
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.10.0
+
+=== Usability Enhancements
+* Enhanced *Link* transform (GXR-757): To better detect similar entities, the Transform → Link workflow is improved with user-defined similarity test functions, new matching recipes, an re-designed Link panel, and additional tests and examples for gxr.link.
+
+* Refined *_More_* menu styling (GXR-3448): Improves visual styling and consistency in the *_More_* menu using Ant Design components.
+
+* Dark mode toggle in *_More_* menu (GXR-3447): For faster theme switching, a dark mode toggle is added to the *_More_* menu.
+
+* Persistent floating panel positions (GXR-3353): Improves behavior of floating panels  so that panels and subtabs remember their last position, including across sandbox clones.
+
+* Mouse interaction stability (GXR-3308): Blocks mouse wheel events while mouse buttons are pressed to prevent the scene from disappearing when zooming and dragging simultaneously.
+ 
+=== Performance Enhancements 
+* Full-text search is improved for better accuracy and responsiveness in detecting a Neo4j schema and its relationships. (GXR-3244) 
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* GraphXR Lite with Puppygraph and Neo4j (GXR-3329): Adds Puppygraph and Neo4j support to the GraphXR Lite (free) Docker configuration to simplify single-user, single-project deployments.
+
+* GraphXR Viewer project setup (GXR-3304): Introduces mobile project .gitignore configuration as groundwork for the GraphXR Viewer app.
+
+ 
+=== GraphXR API 
+* None
+  
+== Bug Fixes
+* Settings panel save throttling (GXR-3466): Resolves an issue where the Settings panel was saving every 300 ms, causing unnecessary writes and degraded responsiveness.
+
+== Removed 3.10.0
+
+* None
+
+== Extensions 3.10.0
+
+=== Graph Composer
+_Property graph data modeling in GraphXR_ 
+
+* CSV mapping tutorial sandbox (GXR-3339): Adds a guided sandbox for learning how to map CSV data using *_Graph Composer_*, including tutorial progress tracking, keyboard navigation (using _Enter_ to advance steps), and improved drag-and-drop visuals and behavior.
+
+=== Grove 
+_Observable-based javascript notebooks_
+ 
+NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 3.10.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

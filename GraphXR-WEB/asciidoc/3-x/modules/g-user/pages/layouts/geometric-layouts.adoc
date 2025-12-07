@@ -1,0 +1,197 @@
+= Using Geometric Layouts
+
+Geometric layouts let you arrange all nodes or selected nodes in a *_Line_*, *Grid*, *_Cube_*, *_Circle_*, *_Sphere_*, *_Spiral_*, or *_Spring_* ordered by one of the property values in the data. The edges between nodes continue to be displayed.
+
+image::/v2_17/08_03_01_GeomLayout1320.png[,720,540,role=text-left]
+
+In addition, you can:
+
+* *_Distribute_* selected nodes in an X, Y, or Z direction ordered by a property value. This is useful for grouping data by date and time or other numerical or categorical property values.
++
+image::/v2_17/08_03_02_GeomDistributeDates.png[,720,480,role=text-left]
+
+* *_Align_* nodes along the virtual *_X_*, *_Y_*, and *_Z_* axes of the project space.
+* *_Rotate_*, *_Scale_*, and *_Shift_* nodes in the project space by specified amounts. This provides fine control of layouts to craft compelling visualizations.
++
+image::/v2_17/08_03_03_GeomRotateAlign.png[,720,480,role=text-left]
+
+* Apply *_Ring_* or *_Tree_* layouts around selected central nodes, and specify the depth of the hierarchy and the relative length of the edges.
++
+image::/v2_17/08_03_04_GeomRings.png[,720,520,role=text-left]
++
+You can combine layouts in a variety of ways. The layout shown above uses a *_Grid_* layout for one of the categories of nodes (_Location_), and then applies a *_Ring_* layout to the nodes of a different category (_Photos_) which are connected by one edge to the nodes in the grid.
+
+WARNING: Layouts can't be reverted easily, so make a habit of saving *_Snapshots_*  or data *_Views_* as you work.
+
+image::/v2_17/08_03_05a_GeomSnapshotCrop.png[,720,140,role=text-left]
+
+TIP: To share a static image of a layout, you can click the *_Take Screenshot_* icon in the toolbar. It downloads a .png screenshot of the project space that includes just the data and the legend (not the toolbar, panel menu, panel or any other UI elements).
+
+image::/v2_17/08_03_05b_GeomScreenshotCrop.png[,720,180,role=text-left]
+
+== Applying a geometric layout
+
+You can apply one of the named geometric layouts, either to all the data or to any selection. In the example layout above, nodes for each category are displayed in a different geometry.
+
+*To apply a geometric layout:*
+
+. Open the *_Layout_* panel and *_Geometric_* tab.
+. Select nodes to lay out using any method. Often, you'll want to use the lists in the legend to select all the nodes of a given category or tag. If no nodes are selected, the layout is applied to all the data.
+. Now click the *_Line_*, *Grid*, *_Cube_*, *_Circle_*, *_Sphere_*, *_Spiral_*, or *_Spring_* button to display the data in that layout.
++
+image::/v2_17/08_03_06_Layouts.png[,520,340,role=text-left]
+
+The nodes are still selected after you apply the layout. You can move them as group and  further adjust the orientation, size, and position using *_Rotate_*, *_Scale_*, and *_Shift_* layout controls.
+
++
+WARNING: Be aware that the *_Release_* button on the *_Layout_* panel will release any pinned nodes and return the entire graph to a force layout, regardless of whether any nodes are selected. This action cannot be undone. To avoid losing useful layouts by mistake, save data *_Views_* or take *_Snapshots_* regularly as you work.
+
+== Ordering nodes in a geometric layout by a property value
+
+One of the property values in the data you select can be used to order the nodes in a geometric layout.
+
+*To order a geometric layout by a property value:*
+
+. Select nodes to be ordered. For example, use the legend to select all nodes of a given category.
+. In the *_Layout_* section, click the *_Order by property_* checkbox to display its *_Category_* and *_Property_* dropdown menus.
+. Select the category and property name you want.
+. Click the *_Ascend_* or *_Descend_* checkbox to display the nodes in either ascending or descending order.
+. Click a geometric layout button to apply it (i.e. *_Line_*, *Grid*, *_Cube_*, *_Circle_*, *_Sphere_*, *_Spiral_*, or *_Spring_*.)
++
+image::/v2_17/08_03_07_OrderBy1320.png[,720,480,role=text-left]
+
+== Distributing nodes by a property value
+
+*_Distribution_* uses one of the property values available in a selection of data to group the nodes and distribute the groups in the project space along the *_X_*, *_Y_*, or *_Z_* direction. With *_Distribution_*, you can group data quickly by any date, numerical or categorical property available in your data. This helps highlight patterns quickly and makes it easier to select groups of nodes for further inspection, labeling, and analysis.
+
+*To distribute nodes by a property value:*
+
+. Select nodes to to be grouped and distributed, for example, using the legend to select all nodes of a given category.
+. Click the *_Spread Out_* checkbox to enter a scale *_Range_* by which the groups of nodes will be distributed in the graph space.
+. Click the *_Distribution_* option's *_Order by Property_* checkbox to display *_Category_* and *_Property_* dropdown menus.
+. Select the category and property you want.
+. Click the *_Ascend_* or *_Descend_* checkbox to display the distributed groups in either ascending or descending order.
+. Click either *_Number_*, *_Date_*, or *_Categorical_* checkboxes, depending on the value of the property you selected.
+. Now click the *_X_*, *_Y_*, or *_Z_* button to group and distribute the selected data. In the example, we've chosen to group _Photos_ nodes by their _Ratings_ property values (1 to 5), and to distribute the groups on the *X* axis.
++
+image::/v2_17/08_03_08_GeomDistRatings.png[,720,480,role=text-left]
++
+
+You can further adjust distributed groups using *_Rotate_*, *_Scale_*, and *_Shift_* layout controls.
++
+TIP: Nodes that are grouped and distributed are  pinned in the graph space. So if the distribution isn't quite what you want, simply press the *_Release_* toolbar icon (or  *_Ctrl+P_*) to start over.
+ 
+== Aligning nodes
+
+The *_Align_* option projects the selected (or all) nodes onto the remaining axes.
+
+image::/v2_17/08_03_09_Align1320.png[,520,180,role=text-left]
+
+For example, click *_X_* to project nodes to the _Y_ and _Z_ axes. If you click two of the buttons, for example, *X* and *Z*, the nodes are projected onto the _Y_ axis, in a line. 
+
+*_Align_* is useful for organizing and separating data into specific groupings. In the example below,  _Location_ nodes, and distributed _Photo_ nodes grouped by _Rating_ are all projected onto an X axis (and the _Location_ nodes moved up using _left-click-drag_).
+
+image::/v2_17/08_03_10_AlignExample.png[,720,480,role=text-left]
+
+TIP: If you click all three buttons, the nodes are stacked on top of one another at the origin viewpoint. While they are still selected, you can click one of the *_Layout_* options to unstack them. You can also click the *_Release_* button in the *_Layout_* section to return them to a force layout.
+
+== Using the Rotate, Scale, and Shift layout controls
+
+You can move the nodes in a layout as a group, and you can further adjust the orientation, size, and position using *_Rotate_*, *_Scale_*, and *_Shift_* layout controls. You can select any group of nodes. If no data are selected, the controls operate on all the data.
+
+image::/v2_17/08_03_11_ShiftScale.png[,520,340,role=text-left]
+
+You can:
+
+* *_Rotate_* separately along the X, Y, or Z axes, for fine-tuned control of 3D orientation. Enter a number of degrees to rotate the layout (either a positive or negative value), then click *_Rotate X_*, *_Rotate Y_*, or *_Rotate Z_* buttons.
+* *_Scale_* a selection (or the entire layout). You can either expand or contract the scale, and choose to scale along X, Y, and/or Z axes as well. Enter a *_Scale_* factor, select axes using the checkboxes, then click *_Expand_* or *_Contract_*. For example, you can expand the scale for data displayed in a line, and contract the scale for other data displayed in circles or grids.
+* *_Shift_* data on the X, Y, or Z axis to separate selected data visually in the graph space. Enter a *_Shift_* factor (either a positive or negative value) and click *_X_*, *_Y_*, or *_Z_*.
+
+== Using Ring or Tree hierarchical layouts
+
+With *_Ring_* or *_Tree_* hierarchical layouts, you select a node (or nodes) as central points, and neighboring nodes are automatically arranged according to the number of edges away they are from the centers.
+
+image::/v2_17/08_03_12a_EgoForce.png[,480,480,role=text-left]
+
+Ring or tree hierarchies can greatly aid visualization when combined with another geometric layout, such as the following *_Grid_* layout:
+
+image::/v2_17/08_03_12b_EgoGrid.png[,480,480,role=text-left]
+
+They are also useful for geospatial display since the rings or trees persist when central data nodes with lat-long coordinates are dropped onto the map.
+
+image::/v2_17/08_03_12c_EgoMap.png[,720,380,role=text-left]
+
+You can:
+
+* Set the *_Ego Depth_* of the hierarchy (i.e. the number hops from the selected central nodes to include). The default depth of 100 will typically include all the data since a depth of 100 connections will cover most graphs. For example, with an *_Ego depth_* of 3, nodes NOT selected as centers AND three edges away are included. Nodes further away remain in the original force layout.
+* Set the relative *_Length_* of the connecting edges. The default length of 0.4 is suitable for many graphs.
+* Order the data in rings or trees by a property value.
+* Orient rings or trees using *_Left_*, *_Right_*, *_Up_* or *_Down_* checkboxes.
+
+image::/v2_17/08_03_12d_EgoStart960.png[,520,240,role=text-left]
+
+*To display a hierarchical ring layout:*
+
+. Select nodes of primary interest as your center nodes. In this example from a contact tracing dataset, we select all _Infected_Person_ nodes, laid out in a grid ordered by the number of connections for each node.
++
+image::/v2_17/08_03_12e_EgoSelectCentral1320.png[,720,480,role=text-left]
+
+. Now scroll down to the *_Scale_* option and click the *_Expand_* button several times to expand the grid layout. This makes room to arrange first- and second- level contacts in rings around the central nodes.
++
+image::/v2_17/08_03_11_ShiftScale.png[,520,240,role=text-left]
+
+. With the central _Infected_Person_ nodes still selected, click the *_Ring_* button.
++
+With the default *_Ego depth_* of 100, nodes NOT selected as centers AND 100 edges away are displayed in concentric rings around the central nodes.
++
+image::/v2_17/08_03_12f_EgoRings1320.png[,720,480,role=text-left]
+
+. You can adjust the display further using *Left*, *Right*, *Up*, or *Down* checkboxes. Click one of the checkboxes, then click *_Rings_* to rotate or reflect the connected rings.
+
+*To display a hierarchical tree layout:*
+
+. Select nodes of primary interest as your central nodes. In this example from a contact tracing dataset, we select all _Infected_Person_ nodes, laid out in a grid ordered by the number of connections for each node.
++
+image::/v2_17/08_03_12e_EgoSelectCentral1320.png[,720,480,role=text-left]
+
+. Scroll down to the *_Scale_* option and click the *_Expand_* button several times to expand the grid. This makes room to arrange first- and second- level contacts in trees connected to the central nodes.
+. With _Infected_Person_ nodes still selected, click *_Trees_* to see a tree layout for nodes the default 100 edges away from the selected nodes.
++
+image::/v2_17/08_03_12g_EgoTrees1320.png[,720,480,role=text-left]
+
+. You can adjust the layout further using *Left*, *Right*, *Up*, or *Down* checkboxes.
++
+Click one of the checkboxes (for example, *_Right_*), then with your central nodes selected, click *_Trees_* to see the layout to the left of the central nodes.
++
+Now click the *_Up_* checkbox and click *_Trees_* again. The tree layouts now appear above the central nodes, rather than to the left of them.
+
+== Using Quick Layouts
+
+The *_Quick Layout_* toolbar icon displays a menu that lets you quickly apply and modify pre-set geometric layouts to all or part of your data. This menu is also provided on the right-click context menu under *_Layout_*.  
+
+image::/v2_17/08_03_13_QuickLayoutStart.png[,520,520,role=text-left]
+
+You can select items on the menu to:
+
+* Apply a *_Line_*, *_Grid_*, *_Cube_*, *_Circle_*, *_Spiral_*, or *_Spring_* layout to any selection of nodes.
+* Apply a *_Ring_* or *_Tree_* hierarchical layout. You can select central nodes first, but it is not required. If you apply the layout to all the data, GraphXR will determine the nodes most likely to be central. For simpler graph patterns, selecting central nodes first may not make a difference.
+* *_Expand_* or *_Contract_* the layout of any selection of nodes.
++
+NOTE: With *_Quick Layout_* you cannot order nodes by property value, distribute nodes, specify controlled *_Shift_* or *_Rotate_* actions, or enter specifications for a *_Ring_* or *_Tree_* layout. You can, however, reposition selected nodes using navigation controls (e.g *_left-click drag_* to shift or *_right-click drag_* to rotate.)
+
+*To create a Quick Layout:*
+
+. Select nodes using any selection method and click the *_Quick Layout_* toolbar icon to display the quick layout menu.
+. Select one of the quick layout options (for example *_Line_*).
+. With the nodes still selected, you can click *_Expand_* or *_Contract_* on the menu to adjust the size of the layout.
++
+image::/v2_17/08_03_14_QuickLayoutExpand.png[,720,480,role=text-left]
++
+If you need to make room for hierarchical rings or trees in an initial geometric layout, expand the layout first, then apply the additional hierarchical layout.
+
+. With the nodes still selected, choose *_Ring_* or *_Tree._*
++
+image::/v2_17/08_03_15a_QuickLayoutRings.png[,720,480,role=text-left]
++
+
+NOTE: Selecting *_Expand_* or *_Contract_* in the above ring layout expands only the layout of the selected central nodes, not the rings.

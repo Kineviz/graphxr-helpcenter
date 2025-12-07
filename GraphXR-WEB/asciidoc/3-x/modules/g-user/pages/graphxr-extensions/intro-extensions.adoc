@@ -1,0 +1,19 @@
+= GraphXR Extensions
+
+Kineviz has developed extensions that enhance or customize GraphXR for the needs of specific user communities.
+
+GraphXR includes the following extensions:
+
+* xref:./grove.adoc[*_Grove_*] for building reproducible workflows, dashboards, and learning resources in an observable-based javascript notebook environment.
+* xref:./graph-composer.adoc[*_Graph Composer_*] for modeling property graphs from relational tables or CSVs.
+
+For Enterprise subscriptions, additional extensions are available, including:
+
+* One-stop connection to external OSINT sources
+* AI-enabled entity extraction and knowledge mapping of unstructured data
+* Connection to specific SQL, document, or mixed format databases.
+
+NOTE: For information about extensions, please contact https://www.kineviz.com[Kineviz].
+
+
+

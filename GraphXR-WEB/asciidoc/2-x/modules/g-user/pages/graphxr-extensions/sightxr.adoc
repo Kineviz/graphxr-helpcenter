@@ -1,0 +1,19 @@
+= SightXR
+
+SightXR is a Generative AI-powered web application to extract information from unstructured text documents, visualize it as a Knowledge Map, and investigate using AI-powered Q&A. Users can set context, process, and analyze a document corpus within a single integrated platform. The resulting Knowledge Map becomes the entry point to navigate through and begin Q&A inquiry of large volumes of text, thereby offering clear, concise insights where traditional text summaries fall short.
+
+== SightXR in Action
+
+Examples of using SightXR to build visual Knowledge Maps from unstructured text, and begin interactive Q&A inquiry. 
+
+[cols="^3,^3,^3"]
+|===
+| *The Epstein Case* +
+For the recently-unsealed documents in the Epstein human trafficking case, SightXR was used to build a visual Knowledge Map from 943 pages of text and begin Q&A inquiry – all in about an hour. 
+| *Enron*
+| *SEC Filings*
+ 
+|===
+
+
+

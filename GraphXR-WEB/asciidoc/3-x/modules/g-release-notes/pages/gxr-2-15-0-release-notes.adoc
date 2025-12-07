@@ -1,0 +1,113 @@
+= GraphXR 2.15.0 Release Notes
+
+*Release Date:* November 14, 2022
+
+The GraphXR 2.15.0 release includes new features and user interface design, and new and updated extensions.
+
+== New Features 2.15.0
+
+* *_Show the nodes in a collection in a Table_*. You can now select a collection node and display a table of its contents. Select the collection node, open the *_Table_* panel, and click the category of the nodes in the collection. Also, in-graph search and filtering now operates on the nodes in a collection.
++
+image::/v2_17/V2_15_01_CollectionTable.png[,520,420,role=text-left]
+
+* *_Animated Filters_*. Filters include an auto-play function, which enables animated display of data by numerical, lat-long, or date-time properties. The animation can be set to loop continuously over a specified time interval. This enables creation of animated views of data, which can be shared through an iframe.
++
+image::/v2_17/V2_15_02_FilterAnimated.png[,520,420,role=text-left]
+* *_Improved Data Views._*
+** A maximum of 100 data views (increased from just 10) can be created.
+** Data views can be shared individually with any user. In the *_Project>Data_* tab and views list, click the *_Share_* icon to open the shared view. Its url can be copied and shared with any user.
++
+image::/v2_17/V2_15_03_DataViews.png[,520,420,role=text-left]
+
+* *_Project UI Configuration_*. User interface elements can now be configured from within the project. The configuration UI also enables display of icons to access extensions on the left menu below the panel icons. In the *_Project>Settings_* tab, click *_UI Configuration_* (located at the bottom of the Settings panel).
++
+image::/v2_17/V2_15_04_UIConfiguration.png[,420,480,role=text-left]
++
+The UI Configuration dialog is displayed. Click to set the visibility of UI elements (visible to everyone, only to project users, or hidden from everyone), and click *_Save_* to return to the project space.
++
+image::/v2_17/V2_15_05_ProjectUIConfig.png[,520,420,role=text-left]
+
+* Categories and Relationships can be re-named directly using the *_Enhanced Table_*. Open the *_Table_* panel, click to select the category and click to open the *_Enhanced Table_*. Double-click the category (or relationship) label to edit it, and click return. The label is immediately updated in the graph.
++
+image::/v2_17/V2_15_06_RenameCatRel.png[,520,420,role=text-left]
+
+* For Enterprise clients, *_Project Templates_* can be configured at the server level, such that Category settings, node sizes, and more are already set. Templates are created and edited by admin users on the server through _/admin_ and are available for selection when a non-admin user creates or edits a project. Multiple templates can be configured.
++
+image::/v2_17/V2_15_07_ProjectTemplates_Add.png[,520,420,role=text-left]
++
+A template enables the administrator to:
+** Define the initial project settings
+** Define styling for a predefined list of Categories and Relationships.
+** Remove unneeded UI elements and add UI buttons on the left menu to access selected extensions.
++
+image::/V2_15_08_ProjectTemplates_Configure.png[,520,420,role=text-left]
+
+* In the *_Project>Data_* tab, the *_Download Category and Relationship Settings_* button saves settings from an existing project as a .json file which can then be imported into a template.
++
+image::/v2_17/V2_15_09_DownloadCatRelSettings.png[,520,420,role=text-left]
+
+* *_Usability Improvements_*.
+** Improved keyboard/mouse/trackpad navigation and selection.
+*** To move any selection of nodes, simply *_left-click+drag_*.
+*** To center a node in the project space, hold *c* and *_double-click_* the node. (Simply double-clicking a node displays its Information window).
+*** To zoom in or out quickly, use _**Alt (**or Option) *+mouse* (or trackpad) *scroll*_*.*
+*** To select the nodes or edges of more than one Category or Relationship, or the nodes or edges with specific property values, *_Ctrl + left click_* the items in the Legend. *__*
+** The contextual toolbar includes the additional *_Quick Layout_* icon, which displays a menu to apply one of the basic geometric layouts in one click (*_Line_*, *_Grid,_* *_Cube_*, *_Circle_*, *_Spiral_*, and *_Spring_*), or the *_Tree_* or *_Ring_* layouts to a selection (or to all the data).
++
+image::/v2_17/V2_15_10_QuickLayoutToolbar.png[,720,120,role=text-left]
++
+The layout can be adjusted using *_Expand_* or *_Contract_* menu items.
++
+image::/v2_17/V2_15_11_QuickLayoutMenu.png[,520,420,role=text-left]
++
+
+NOTE: Quick layouts may be adequate for initial exploration. Full features to display data by property value and to position data in the project space remain available in the *Geometric* layout panel.
++
+** In the *_Layout > Geometric_* tab
+*** The nodes in *_Ring_* or *_Tree_* layouts can be arranged by a property value.
++
+image::/v2_17/V2_15_12_PropertiesEgoRingTree.png[,520,420,role=text-left]
+
+** In the *_Project>**_Category_** tab
+*** A *_Clean_* button lets you remove a category not in the currently connected database, or, for a project not connected to a database, a category not in the data currently in the graph.
++
+image::/v2_17/V2_15_13_CleanCatRel.png[,520,420,role=text-left]
++
+** In the Project>**_Settings_** tab
+*** A *_2D Mode_* checkbox reduces rendering to the 2D plane. When 2D mode is enabled, the *_Z Compress_* slider in the *_Layout>Force_* tab is hidden, since a Z-axis is not rendered.
++
+image::/v2_17/V2_15_14_2DCheckbox.png[,520,420,role=text-left]
++
+*** The *_Neo4j Database_* menu that enables selection of a different database from within a project appears only when the project is connected to a Neo4j database.
++
+image::/v2_17/V2_15_15_NeoDBMenu.png[,320,200,role=text-left]
++
+*** The *_UI Configuration_* button is added.
+
+== Removed 2.15.0
+
+* None
+
+== Extensions 2.15.0
+
+* *_Visual Query Builder_*. _Build Cypher queries using no-code building blocks._
+** Category blocks include plus *+* icons to add a relationship and category block to a query in one step. This makes it faster and easier to modify a visual query.
+** A single category block can now include a connection to more than one relationship block.
++
+image::/v2_17/V2_15_16_VQB.png[,520,420,role=text-left]
+
+* *_Grove_* (beta-release). _Observable-inspired in-app javascript notebook._
+** Continuing UI and API development
+* For Enterprise subscriptions, limited release extensions are available for connecting to specific external data sources, or importing data from RDBMS, document, or mixed data sources.
+
+== Supported Environments 2.15.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING
+* OCULUS RIFT, HTC VIVE, AND WINDOWS MIXED REALITY
+
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
+* The GraphXR client includes beta support for Virtual Reality (VR) hardware in the Google Chrome browser via WebXR.
+* GraphXR Cloud supports local and cloud storage. In addition, GraphXR Enterprise is available via on-premises or private cloud deployments.
+
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

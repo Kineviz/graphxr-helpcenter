@@ -1,0 +1,84 @@
+= Navigating the Graph
+
+Mouse and/or keyboard xref:./ref-shortcut-keys.adoc[*_Navigation Shortcuts_*] let you manually pan, rotate, zoom in and out, and move all data in the project space. You can also use the mouse to operate GraphXR's GUI navigation controls.
+ 
+NOTE: Navigation controls operate on all the data. However, rotation and zoom functions center on selected nodes, if any.
+
+Additional navigation options include:
+
+* *_Center To_* and *_Fly Out_* on the toolbar or right-click menu to reposition your view of the graph.
+* Full-text keyword search on property values to search and center the graph on matching nodes.
+* Opening a *_Table_* to search for and center on one or more nodes or edges and optionally select them.
+
+NOTE: In a project, click the *_Shortcut_* icon located at the lower left of the browser window for a quick reference to navigation and selection hotkeys.
+
+== Navigating with Fly Out and Center To
+
+The *_Fly Out_* and *_Center To_* icons on the context toolbar or right-click menu  reposition your view of the graph.
+
+* Click or select *_Fly Out_* to display all the graph data centered in your browser window. Or, click the *_Reset_* circle in the GUI navigation controls.
+
+* Click or select *_Center To_* to zoom in to a view of the data centered on a selected node or nodes.
++
+image::/v2_17/04_01_03_CenterTo720.png[,420,500,role=text-left]
+
+== Navigating using a keyword search
+
+The search bar at the top left provides full-text keyword search on properties of nodes in the graph. Nodes with matching property values are highlighted as you enter search terms. You can then click items on the list to select and center the graph on a node. 
+
+NOTE: A graph search lets you locate and navigate to data already in the graph. You can also search a connected Neo4j database to import nodes with specific property values. If  your project is connected to a database, an icon to the right of the search bar toggles between *_Search From Graph_* and *_Search From Database_*. 
+
+*To navigate using keyword search of property values:*
+
+. Enter a full or partial search term. For example, to find a _Character_ node with the _name_ property value of _Grey Wind_, you can simply enter "`win`".
++
+image::/v2_17/04_01_04_KeywordGraph1080.png[,520,380,role=text-left]
+
++
+As you enter the term, nodes with property values matching the search term are selected. A list by category and node of results appears below the search bar. The example search returned two _Character_ nodes, one of which has the _name_ property value we want.
+
++
+NOTE: In a graph search partial text is entered without asterisks. Any space between search terms is recognized as *OR* logic. *AND* logic is not recognized. 
+
+. Mouse over a list item to see an information window. This can help you choose the one you want.
+. Click anywhere on an item to select the node and center it in the project space.   
++
+image::/v2_17/04_01_05_KeywordFlyTo1080.png[,720,480,role=text-left]
+
+. Click the *X* in the search bar to clear a search.
+
+== Navigating using a Table
+
+From a table of the data for any category or relationship, you can navigate to a node or edge by clicking a table row. 
+
+The *_Table_* panel's *_Search_* bar lets you display only the table entries that match specified property values, and to select the resulting data in the graph.  
+
+*To navigate to a node or edge from a table:*
+
+. Select data in the graph using any method, or double-click in an empty area to de-select all data.
++
+NOTE: All data appears on a table when nothing is selected; otherwise only selected data  appears.
+
+. Click *_Table_* in the Main Menu.
+. In the *_Table_* panel's *_Category_* tab, click a category to display a table of its nodes in the graph.
++
+OR
++
+In the *_Table_* panel's *_Relationship_* tab, click a relationship to display a table of its edges in the graph.
++
+. Click the table row of a single node (or edge) of interest.
++
+The graph centers on the node (or edge). Select it with *_left mouse click_*, and notice that the table now only displays that one row. 
++
+. In a large table, you can use *_Search_* to locate and focus on smaller amounts of data. Enter a search term in the *_Search_* field.
+
++ 
+NOTE: Properties are in alphabetical order by property name, so you may need to use the horizontal scroll bar to see all the property values returned by the search.
++
+
+. Click *_Select All_* to select all the data that match your search.
++
+image::/v2_17/04_01_06_TableSearchSelectNew.png[,720,480,role=text-left]
++ 
+
+. Now you can click the table row of a single node (or edge) to center the graph on each selected node (or edge) in the table.

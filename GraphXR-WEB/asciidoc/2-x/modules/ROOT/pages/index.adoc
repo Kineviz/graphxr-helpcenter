@@ -1,0 +1,34 @@
+= Getting Started
+
+https://www.kineviz.com/graphxr[GraphXR] makes it easy to explore graph data visually, and in the process build compelling 2D or 3D graph visualizations of complex connections in information.
+ 
+== Basic GraphXR Workflow
+
+A basic GraphXR workflow for investigation and analysis is outlined below, with links to the details that will help you dive right in.   
+
+[cols="^3,^3"]
+|===
+| xref:g-user:graphxr-start/open-graphxr.adoc[1. *Log in*] and xref:g-user:graphxr-start/projects-home.adoc[*Create a Project*]
+ 
+ _Connect to an available graph database (if any)_
+| xref:g-user:data-import/data-import-intro.adoc[2. *Import Data*]
+
+_Database query or drag and drop_  
+
+| xref:g-user:nav-select/explore-select.adoc[3. *Navigate and Select Data*]
+| xref:g-user:display-options/using-display-options.adoc[4. *Set Display Options*: _Color, Icon, Size_]
+
+| xref:g-user:transform-data/intro-transforms.adoc[5. *Remodel and Transform Data*] 
+| xref:g-user:graph-analytics.adoc[6. *Discover Connected Paths*]
+
+| xref:g-user:layouts/working-with-layouts.adoc[7. *Choose Layouts*] and xref:g-user:geospatial-maps.adoc[*Geospatial Maps*]
+| xref:g-user:data-sharing/data-share-views.adoc[8. *Share*], xref:g-user:data-save-views/data-save-intro.adoc[*Save*] and xref:g-user:data-export/data-export-intro.adoc[*Export*] _your data views_.  
+|===
+
+== Learning Resources
+
+* For insights into the art of effective graph visualization, follow our  https://medium.com/kineviz[Blogs].
+
+* Review example use cases that GraphXR supports in our https://www.youtube.com/@kineviz[Video] playlist.
+
+* Consult our xref:g-learning:faq.adoc[FAQ (Frequently Asked Questions)].

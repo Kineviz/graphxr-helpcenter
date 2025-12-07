@@ -1,0 +1,51 @@
+= GraphXR 2.12.0 Release Notes
+
+*Release Date:* Oct. 4, 2021
+
+The GraphXR 2.12.0 release includes new features and user interface design, document model improvement, and AWS Neptune Gremlin support.
+
+== New Features 2.12.0
+
+* User interface re-design for consistency and improved ease of use.
+* *_Quick Info toolbar icon_*. The content toolbar and right-click context menus include a *_Quick Info_* icon (and menu item) that enables you to turn on and off the Quick Info rollover panel. You no longer need to use the checkbox in the *_Projects_* panel and *_Settings_* tab.
++
+image::/v2_17/V2_12_01_ContextToolbarRN.png[,520,150,role=text-left]
+* *_Category legend menu_* displays the currently selected icon sheet in addition to the color picker. You no longer need to select icons in the *_Project>Category_* panel.
++
+image::/v2_17/V2_12_02_SelectIconRN.png[,420,430,role=text-left]
+* *_Mapping Editor_* now supports dynamic mapping (e.g. from CSV or SQL tables) to categories and relationships. This is useful for mapping data that may be updated frequently.
++
+image::/v2_17/V2_12_03_DynamicRelAuthor.png[,520,250,role=text-left]
+* *_Geometric Layouts_* now include *_Ring_* and *_Tree_* Layouts to lay out data connected through a selected number of edges.
++
+image::/v2_17/V2_12_04_Ego3Rings1320.png[,520,260,role=text-left]
+* _*Leaf Trimming supernodes*._ The leaf trimming toolbar icon collects nodes with just one connection to another node in a selection of data into temporary _GXR_Super_ nodes with _GXR_Super_ relationships.
++
+image::/v2_17/V2_12_05_LeafTrimCategory.png[,420,420,role=text-left]
+
+== *Removed* 2.12.0
+
+N/A
+
+== Extensions 2.12.0
+
+* *_Visual Query Builder_*. _Build Cypher queries using no-code building blocks._
+** UI improvements.
+** Bug fixes.
+* *_Grove_* _(beta-release). Observable-inspired in-app javascript notebook._
+** Basic functional UI and API.
++
+image::/v2_17/V2_12_06_Grove720.png[,520,340,role=text-left]
+* For Enterprise subscriptions, limited release extensions may be available for connecting to specific external data sources, or importing data from RDBMS, document, or mixed data sources.
+
+== Supported Environments 2.12.0
+
+* WINDOWS, MAC OSX, iOS?? (iPad?), AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING
+* OCULUS RIFT, HTC VIVE, AND WINDOWS MIXED REALITY
+
+* The GraphXR client runs best in Google Chrome. Compatibility with other browsers may vary.
+* The GraphXR client includes beta support for Virtual Reality (VR) hardware in the Google Chrome browser via WebXR.
+* GraphXR Cloud supports local and cloud storage. In addition, GraphXR Enterprise is available via on-premises or private cloud deployments.
+
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

@@ -1,0 +1,8 @@
+name: user-guides
+title: Home
+version: v3.x
+nav:
+- modules/ROOT/nav.adoc
+- modules/g-user/nav.adoc
+- modules/g-admin/nav.adoc
+- modules/g-release-notes/nav.adoc

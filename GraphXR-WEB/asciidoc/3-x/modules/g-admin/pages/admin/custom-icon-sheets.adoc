@@ -1,0 +1,13 @@
+= Adding Custom Icon Sheets
+
+Use the *_Icons_* panel to upload and manage custom icon sheets for your GraphXR installation. You can:
+
+* *_Add Icon_* collections, named as you prefer.
++
+image::/v2_17/07_01_IconSheets.png[,720,420,role=text-left]
+* *_Edit_* or *_Delete_* existing icon collections.
++
+image::/v2_17/07_02_EditIcon.png[,720,420,role=text-left]
+* *_Search_* for icons by name or date range.
++
+image::/v2_17/07_03_SearchIcon.png[,720,420,role=text-left]

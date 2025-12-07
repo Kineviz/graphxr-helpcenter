@@ -1,0 +1,42 @@
+= GraphXR 2.10.0 Release Notes
+
+*Release Date:* April 15, 2021
+
+The GraphXR 2.10.0 release includes new features, user interface design, extensions, and logging support.
+
+== New Features 2.10.0
+
+* *_Category color picker_*. A color picker for categories is now included in the Legend menu. You no longer have to go to the *_Project>Category_* tab to change a category color.
++
+image::/v2_17/V2_10_01_SelectColor520.png[Color,420,420,role=text-left]
+* *_Healthcare icon sheet_*. A new icon sheet for use with healthcare data is included for all users.
+* The state of a GraphXR Extension is now saved when the extension is closed.
+* LDAP and Audit Logging is now supported.
+
+== Removed 2.10.0
+
+N/A
+
+== Extensions 2.10.0
+
+* *_Visual Query Builder_*. Build Cypher queries using no-code building blocks._
+** Build and run complex Cypher queries on a Neo4j database connected to a GraphXR project.
+** Copy queries to the clipboard and the GraphXR *_Cypher Query_* panel.
+** Export queries for sharing with other users or projects.
++
+image::/v2_17/V2_10_02_VQB_1080.png[]
+* For _Enterprise_ subscriptions, limited release extensions may be available for connecting to specific external data sources, or for importing data from RDBMS, document, or mixed data sources.
+
+== Supported Environments 2.10.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING
+* OCULUS RIFT, HTC VIVE, AND WINDOWS MIXED REALITY
+
+[.aui-icon .aui-icon-small .aui-iconfont-info .confluence-information-macro-icon]##
+
+* The GraphXR client runs best in Google Chrome. Compatibility with other browsers may vary.
+* The GraphXR client includes beta support for Virtual Reality (VR) hardware in the Google Chrome browser via WebXR.
+* _GraphXR Cloud_ or _Pro_ supports local and cloud storage. _GraphXR Enterprise_ is available via on-premises or private cloud deployments.
+
+For more information, please contact https://www.kineviz.com[Kineviz].

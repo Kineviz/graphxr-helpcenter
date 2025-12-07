@@ -1,0 +1,31 @@
+= GraphXR User Guide
+
+GraphXR is a browser-based visualization application that brings speed and flexibility to visualizing complex and hidden connections in data.
+
+== The GraphXR Platform 
+
+image::/v2_17/01_00_01_GettingStartedIntro.png[] 
+
+With GraphXR you can:
+
+* Seamlessly import graph data from a graph database or other source (Neo4j via Cypher, RDBMS via SQL, CSV, JSON, Azure DB via Gremlin, etc.).
+
+* Navigate, select, and edit data efficiently in the graph environment.
+
+* Model and transform data dynamically using data mapping and a powerful suite of data transforms.
+
+* Explore graph connections through widely used graph algorithms such as *PageRank* and *Shortest Path*.
+
+* Visualize the graph through layouts, geospatial mapping, and time series display.
+
+* Save and share a project's data and views.
+
+== Supported Environments
+
+* WINDOWS, MAC OSX, AND LINUX
+
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING.
+
+* OCULUS RIFT, HTC VIVE, AND WINDOWS MIXED REALITY. The GraphXR client includes beta support for Virtual Reality (VR) hardware in the Google Chrome browser via WebXR.
+
+* The GraphXR client runs best in Google Chrome. Compatibility with other browsers may vary.

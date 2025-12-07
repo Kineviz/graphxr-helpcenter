@@ -1,0 +1,40 @@
+= GraphXR 2.11.0 Release Notes
+
+*Release Date:* June 28, 2021
+
+The GraphXR 2.11.0 release includes new general features, improvements to the Visual Query Builder Extension, and a beta-release of the Grove notebook extension.
+
+== New Features 2.11.0
+
+* *_Multi-Language Caption_*. The *_Settings_* panel includes a checkbox that lets you display captions using the full UTF-8 character set.
++
+image::/v2_17/V2_11_01_MultiLanguage.png[lang,404,253,role=text-left]
+* *_Extended Healthcare icon sheet_* Additional icons for use in healthcare projects are included in the _Healthcare_ icon sheet available in the *_Project>Settings_* panel and *_Icon Sheet_* dropdown menu.
+
+== Removed 2.11.0
+
+N/A
+
+== Extensions 2.11.0
+
+* *_Visual Query Builder_*. _Build Cypher queries using no-code building blocks._
+** Advanced Cypher query functions: select length (number of edges away) and direction of relationships.
++
+image::/v2_17/V2_11_02_VQB_02Length.png[]
+** User interface improvements.
+** Bug fixes
+* *_Grove_* (beta-release). _Observable-inspired in-app javascript notebook._
+** Continuing UI and API development
+* For Enterprise subscriptions, limited release extensions may be available for connecting to specific external data sources, or importing data from RDBMS, document, or mixed data sources.
+
+== Supported Environments 2.11.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING
+* OCULUS RIFT, HTC VIVE, AND WINDOWS MIXED REALITY
+
+* The GraphXR client runs best in Google Chrome. Compatibility with other browsers may vary.
+* The GraphXR client includes beta support for Virtual Reality (VR) hardware in the Google Chrome browser via WebXR.
+* GraphXR Cloud supports local and cloud storage. GraphXR Enterprise is available via on-premises or private cloud deployments.
+
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

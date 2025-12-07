@@ -1,0 +1,135 @@
+= GraphXR 2.16.0 Release Notes
+
+*Release Date:* July 24, 2023
+
+The GraphXR 2.16.0 release includes new features and user interface design, and updates to general and enterprise extensions.
+
+== New Features 2.16.0
+
+* *_Right-click Menu._* The right-click menu is re-designed to provide easier access to often-used toolbar and layout functionality. Its elements can also be customized.
++
+image::/v2_17/V2_16_01_RCMenu_1.png[,340,520,role=text-left]
++
+Default right-click menu items are:
++
+** *_Information_*
+** *_Add Node_*
+** *_Add Edge_*
+** *_Select_*, *_Actions_*, and *_Layout_* submenus:
++
+image::/v2_17/V2_16_02_RCMenu_2_AllSubmenus.png[,720,270,role=text-left]
+*** *_Select_*: *_All Nodes_*, *_Add to Selection_*, *_Subtract from Selection_*, *_Invert_*, *_Deselect_*, select *_Floating Nodes_* (those with no connected edges), *_Leaf Nodes_* (those with only one connected edge), *_Neighbor Nodes_* or *_Neighbor Edges_* (for selected nodes), and *_Connected Nodes_* (for selected edges).
+*** *_Actions_*: The new *_Change Category_* function**_, Collect Nodes_** or *_Explode Nodes_* in collections, *_Tag_*, *_Hide_* or *_Show Hidden_*, *_Pin_*, and *_Release_*.
+*** *_Layout_*: the same Quick Layout menu available on the bottom toolbar. In 2D mode, the 3D layouts (*_Cube_* and *_Spring_*) are grayed out and unavailable.
+** *_Expand_*
+** *_Find Path._* A new function that traces a path between two selected nodes, similar to *_Trace Path_* in the *_Algorithm_* panel, except that the algorithm panel includes a *_Spotlight_* / *_Un -spotlight Path_* toggle.
++
+image::/v2_17/V2_16_03_FindPath1.png[,520,280,role=text-left]
++
+From the right-click menu, you can isolate the path using *_Select> Invert_* to select data not on the path, then *_Actions>Hide_* to hide those data.
++
+image::/v2_17/V2_16_04_FindPathSpotlight.png[,520,240,role=text-left]
+** *_Center To_*
+** *_Fly Out_*
+** *_Delete_*
+* *_Change Category._* From the right-click *_Actions>Change Category_* menu, nodes can be assigned to a new or existing category. All the properties of the selected nodes will be transferred to the selected category. An existing category would therefore include both the existing and newly added properties.
++
+image::/v2_17/V2_16_05_ChangeCategory.png[,420,160,role=text-left]
++
+
+WARNING: *_Change Category_* cannot be undone using Ctrl-Z. Before using *_Change Category_*, take a snapshot, save a data view, or save a GXRF file to enable quick recovery from a mistaken change.
++
+* *_Display and Selection in the Legend._*
+** Category, Relationship, and Property lists can be hidden by clicking the tab on the Legend.
++
+image::/v2_17/V2_16_06_Legend_On_Off.png[,520,200,role=text-left]
+
+** _Ctrl-click_ to select more than one Category, Relationship, Property, or Tag from the list.
++
+image::/v2_17/V2_16_07_LegendSelectMultiple.png[,520,340,role=text-left]
+
+** Styling dialogs now include additional *_Avatar_*, *_Size_*, and *_Caption_* tabs for categories, *_Bind Width_* and *_Caption_* tabs for relationships, and a color and icon picker for individual properties and tags. It is no longer necessary to open the *_Settings_* panel to access these controls.
++
+image::/v2_17/V2_16_08_StylingDialogs.png[,520,140,role=text-left]
+
+* *_Filter Enhancements._*
+** *_Filter categorical (text string) property values._* Node or edge property values which are text strings (as opposed to numerical, date or lat-long values) can now be filtered. A categorical filter displays a list of the unique string values found in the selected property. Selection checkboxes are provided, as well as a *_Match_* function to filter data using a search string or regular expression.
+** *_Filter continuous (numerical) values as categorical ones._* For numerical property values, a *_Continuous_* / *_Categorical_* toggle lets you filter numerical values as text strings. This can be useful for filtering properties with integer numerical values.
++
+image::/v2_17/V2_16_09_FilterCategoricalToggle.png[,520,560,role=text-left]
+
+** *Select Categories or Relationships to be filtered*. When a property name is used in more than one category (or relationship) the filter displays an active list you can use to select the labels to be filtered.
++
+image::/v2_17/V2_16_10_FilterMultipleCats.png[,520,620,role=text-left]
+
+** *_Chart_*. For continuous filters (numerical, date, latitude, or longitude property values), a live histogram (bar chart) of the data being filtered is displayed by default. The *_Chart_* checkbox lets you hide or show the histogram, and a *_Number of Buckets_* selector is provided to set the maximum number of bars in the chart.
+* *_Named and parameterized Cypher queries._* In the *_Query>Cypher_* panel, users can create named Cypher queries that include a descriptive name and optional input parameters. Once stored to the project, queries are available in shared projects and data views. This enables the creation of a set of standard queries that can be used by any of the project’s users.
+** The *+* button to add a Cypher query to the collection of stored queries opens an *_Alias Name_* dialog asking you to enter and confirm a name when storing the query.
++
+image::/v2_17/V2_16_11_CypherNamed.png[,520,280,role=text-left]
+
+** Stored queries are listed in the *_Query_* panel. As soon as they are stored on the project, other project users on other machines can access and run them.
+** A query can be parameterized by using the special syntax `+$param+` in the query definition. For example:
++
+`+MATCH (n:Person {age: $age}) RETURN n+`
++
+See https://neo4j.com/docs/cypher-manual/5/syntax/parameters/[Parameters - Cypher Manual] for details.
+** Running a query that includes parameters displays a dialog asking the user to enter appropriate values for the parameters. Optionally, a shared view on the project can run a query by specifying the name of the query and key value pairs for the parameters.
++
+image::/v2_17/V2_16_12_CypherParams.png[,520,280,role=text-left]
+
+* *_Map Enhancements_*. Map configuration details persist (including map boundaries set using *_Map Control_*) and are saved in data views, snapshots, and .GXRF export files.
+* *_Navigation, Selection, and Visibility Enhancements_*.
+** Properties of a Category or Relationship, which by default are displayed in alphabetical order, can be re-ordered in the *_Project_* panel by clicking arrow icons that appear on rollover at the left edge of the property list.
++
+image::/v2_17/V2_16_13a_ReorderProperty.png[,520,340,role=text-left]
++
+The new order is immediately updated in information windows.
++
+image::/v2_17/V2_16_13b_ReorderPropertyInfo.png[,520,340,role=text-left]
+
+** The *_Settings_* panel now includes an *_Auto Caption_* checkbox, which is selected by default.
+** Double click a node or edge to display its information panel.
+** Deleting a node closes its Information window.
+** Edges can be selected more easily.
+** Additional shortcut keys
+*** Orbit around x, y, or z axes:
+**** x: ctrl+alt+shift+o (Mac); ctrl+alt+shift+o (Windows)
+**** y: ctrl+o (Mac); shift+o (Windows)
+**** z: ctrl+shift+o (Mac); alt+shift+o (Windows)
+*** Select all orphaned nodes: shift+D
+* *_Improved Security and User Access_*. Data views include optional password protection.
++
+image::/v2_17/V2_16_14_SetViewPassword.png[,520,140,role=text-left]
+
+* *_Performance._*
+** *_Extract_* works for more than 50,000 nodes.
+** Faster response for *_Quick Information_* rollovers.
+** Improved CSV parser.
+* *_Project Configuration_*
+** Admin user is created on startup.
+** Creating Projects is streamlined.
+
+== Removed 2.16.0
+
+* None
+
+== Extensions 2.16.0
+
+* *_Visual Query Builder_*. _Build Cypher queries using no-code building blocks._
+** UI improvements.
+* *_Grove_* (beta-release). _Observable-inspired in-app javascript notebook._
+** Continuing UI and API development
+* For Enterprise subscriptions, limited release extensions are available for connecting to specific external data sources, or for importing data from RDBMS, document, or mixed data sources.
+
+== Supported Environments 2.16.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING
+* OCULUS RIFT, HTC VIVE, AND WINDOWS MIXED REALITY
+
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
+* The GraphXR client includes beta support for Virtual Reality (VR) hardware in the Google Chrome browser via WebXR.
+* GraphXR Cloud supports local and cloud storage. In addition, GraphXR Enterprise is available via on-premises or private cloud deployments.
+
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

@@ -1,0 +1,64 @@
+= Import Data by Drag and Drop
+
+You can import data in _.CSV_, _.JSON_, GraphXR's _.graphxr_ and _.graphxrsnapshots_, and many other data formats by drag and drop. Simply locate the file on your system, then drag and drop it anywhere in the project graph space.
+
+NOTE: In the *_Project_* panel and *_Data_* tab you can also click *_Import_* or *_Import Views_* to navigate to a file and import the data.
+
+image::/v2_17/02_01_01_ProjectImport.png[,720,420,role=text-left]
+
+WARNING: Be sure to save any current view before you import data. To do this go to the project view menu and either *_Save_* your current view, or *_Save As_* a new view. If you do unintentionally import data to an existing view, you can immediately use *_Save As_* to create a new view.  
+
+== Importing flat files by drag and drop
+
+When you import data that has no defined graph schema, such as a flat .CSV file, each row is imported as a node of a single default category. 
+
+NOTE: Keep in mind that data from _CSV_ , _Excel_, or _.JSON_ files is *added to* any data already in the project space. To create a new empty view, save your current view, and then select *_New_* from the project view menu. This clears the existing data and opens a new empty _Unsaved View_.    
+
+For example, the following spreadsheet can be dropped onto the project space. It's a travel log with three columns headed _date_, _from_country_, and _to_country_ .
+
+* A node representing a single travel event is created for each row. All the nodes are assigned a single category labeled with the name of the file (i.e. _COVID-19 Travel Log - Sheet1)_.
++
+image::/v2_17/02_01_02_ImportCSVCovid.png[,720,420,role=text-left]
+
+* The column headings in the file are assigned as property names: _date_, _from_country_, and _to_country_, and property values are transferred for the respective nodes. In the *_Table_* panel, you can inspect the imported nodes and their property values.
++
+image::/v2_17/02_01_03_CSVImportMapping.png[,720,420,role=text-left]
+
+Starting with unconnected nodes, you can create connected graph data using GraphXR's navigation, selection, and transformation tools. In particular, the *_Transform_* panel provides powerful ways to extract and/or simplify categories, properties, and  relationships.
+
+== Importing graph data views by drag and drop
+
+You can simply drag and drop graph data held in a JSON file, _CSV_ or _Excel_ archive, _graphxr_ file, or _graphxrsnapshots_ archive. The categories, relationships, and their properties are included. The data in _graphxr_ files or a _graphxrsnapshots_ archive retain the 3D layout and view perspective it had when it was saved. 
+
+WARNING: Keep in mind that data imported from a _.graphxr_ view, _.graphxrsnapshots_ archive, or data _View_  *replaces* any data already in the project space. Be sure to save (or  export) your current view before you import a view. 
+
+You can:
+
+* Use the view menu or *_Views_* tab to save your view, or
+* Go to the *_Project_* panel and *_Data_* tab and choose *_Save GXRF_*, *_Save CSV_*, *_Save Excel_* or, if a database is connected to your project, *_Save Neo4j_*.
+
+== Importing Snapshots
+
+Once a snapshot archive has been saved, you can simply restore it to your project by drag and drop. 
+
+*To import a snapshot archive:*
+
+. Open a GraphXR project.
+. Locate the _.graphxrsnapshots_ archive file, and drag and drop it on your project's graph space.
++
+The set of snapshots appear in the *_Snapshots_* window, and the most recent snapshot is imported to the graph space.
++
+
+WARNING: Existing data if any is replaced with the most recent snapshot view. 
+
+. You can import any of the snapshots in the archived set as your new starting point. Click the arrow on the left edge of the *_Snapshots_* window to expand the archive and locate the snapshot you want.
++
+image::/v2_17/02_01_04_SnapshotStart720.png[,720,420,role=text-left]
+
+. Click the snapshot's *cloud* icon to import it.
++
+image::/v2_17/02_01_05_SnapshotEnd720.png[,720,420,role=text-left]
++
+
+IMPORTANT: When you exit or log out, snapshots are deleted. Before you exit the project space, use *_Save Snapshots_* to export a snapshots archive to your local system that you can then import by drag and drop.
+

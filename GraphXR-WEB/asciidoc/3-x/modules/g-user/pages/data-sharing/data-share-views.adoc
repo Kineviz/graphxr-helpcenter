@@ -1,0 +1,8 @@
+= Sharing Data Views
+
+A project's saved views can be shared with other users by:
+
+* Enabling sharing for the project.
+* Sharing individual views through a link or iFrame.
+
+NOTE: You can also xref:./load-a-saved-view[load a saved view] and then xref:./data-export-views[export] it as a GXRF, CSV or Excel archive, or Snapshot archive. The exported file can then be loaded to another project by drag and drop or by using *_Import_* or *_Import File_* in the *_Project > Data_* tab.

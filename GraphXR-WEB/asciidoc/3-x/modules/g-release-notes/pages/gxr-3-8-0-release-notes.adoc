@@ -1,0 +1,58 @@
+= GraphXR 3.8.0 Release Notes
+
+*Release Date:* November 18, 2025
+
+GraphXR 3.8.0 introduces a flexible floating panel system that improves layout control and usability across the GraphXR interface, including support for floating built-in panels, pinned extensions, and Grove links. UI issues involving panels and screenshots are resolved. Privacy and compliance are strengthened through default masking of PostHog session replay data and configurable project auto-deletion. Deployment options expand with a new GraphXR Lite Memgraph Docker image and updated Helm charts, while CI pipelines are stabilized through a series of Docker and Bitbucket build improvements.  
+
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.8.0
+
+=== Usability Enhancements
+* Floating panels and layout controls (GXR-3328): A new unified floating panel system allows built-in panels, pinned extensions, and Grove links to float in the canvas. It provides improved location presets, corner offset variants, header actions, and Ant design-based styling, along with better z-index behavior on first mount and while dragging.
+* Property panel search synchronization (GXR-3164): Keeps the property panel in sync with the active selection when search results change, ensuring displayed properties match the current selection.
+ 
+=== Performance Enhancements
+
+* Full-text search is improved for better accuracy and responsiveness in detecting a Neo4j schema and its relationships. (GXR-3244) 
+
+=== Administration, Security, Configuration, and Deployment Enhancements
+ 
+* Configurable project auto-deletion (GXR-3307): Introduces optional project auto-deletion that removes projects and their associated views after a configurable retention period, supporting stricter security and compliance policies. Disabled by default (i.e. behind a setting in config.js, default OFF!) 
+ 
+* PostHog session replay masking (GXR-3340): Adds a configuration via config.js to control PostHog options. By default it masks all text and inputs in session replay, with an opt-in mechanism using a data attribute to set specific elements to remain readable.
+
+* GraphXR Lite Memgraph Docker image (GXR-3330): Provides a new graphxr-lite:memgraph Docker image suitable for single-user, single-project deployments with node count limits, enabling easy integration with Memgraph’s free offering via docker-compose.
+
+* Kubernetes Helm support (GXR-2909): Enhances Helm charts for MongoDB and GraphXR and publishes Helm release 0.1.1, simplifying Kubernetes-based deployments and upgrades.
+ 
+=== GraphXR API 
+* Include legends in API-generated screenshots (GXR-3303): Ensures GraphXR API-generated screenshots include legend overlays so exported images more accurately reflect the on-screen view.
+  
+== Bug Fixes
+
+* Project loading and panel reliability (GXR-3328): Fixes issues with built-in floating panel sub-tabs and the Project > Settings tab, and restores correct loading indicators across the app by introducing an isLoading flag in Redux and correcting showLoading behavior on the projects page.
+
+* Info panel z-order fix (GXR-3165): Adjusts the info panel z-order so it remains visible above the left-hand panel instead of being obscured.
+
+== Removed 3.8.0
+
+* None
+
+== Extensions 3.8.0
+
+=== Grove
+ 
+_Observable-based javascript notebooks_
+
+* Grovebook display options (GXR-3328): Adds project settings to control how and where a Grovebook opens (left vs. floating mode and configurable default location) and switches pinned Grove references to use fileKey instead of _id for better behavior when cloning sandboxes.
+ 
+NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 3.8.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

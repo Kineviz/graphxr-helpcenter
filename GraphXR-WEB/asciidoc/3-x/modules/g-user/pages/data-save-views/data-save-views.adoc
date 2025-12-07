@@ -1,0 +1,48 @@
+= Saving a View
+
+Saving the visible data in the project space preserves both the graph data and its 3D layout. A data view is saved on the server, making it available to any user of the project. xref:./data-export-views[Exporting] a view as a GXRF file saves it on the local machine. Both are saved in GraphXR's GXRF format.
+
+NOTE: In the *_Project > Data_* tab you can xref:./data-export-views[export] a single view, or all the project views at once. You might do this to maintain a local backup or offline archive of views.  
+
+*To save a data view:*
+
+. Either open the view menu or go to the *_Project > Views_* tab.
+
++
+image::/v2_17/02_08_10a_ViewSaveStart.png[,720,480,role=text-left]
++
+
+. Select *_Save_* to save data to the current view or *_Save As_* to enter a new view name and save the data as a different view. 
+
++
+image::/v2_17/02_08_10b_ViewSaveAsDialog.png[,320,180,role=text-left]
++
+
++
+NOTE: Entering a view name is optional. By default, a new view is named *_Untitled View_*. Click the pencil icon to the left of the view name to enter a new name.
++
+
++
+The view appears in the *_Views_* tab as a thumbnail tile or list item. It is highlighted with a lighter background color, indicating that it is the view that will be updated the next time you *_Save_*.
+
++
+The view menu is also updated. The asterisk disappears, indicating that the view is updated to the current state of the graph. If you save the data to an existing view, the view name stays the same. If you save the data as a new view the menu shows the new name. 
+
++
+image::/v2_17/02_08_10c_ViewSaved.png[,720,380,role=text-left]
++
+
++
+In the *_Views_* thumbnail previews or list, you can inspect, edit, and share saved views.
++
+image::/v2_17/02_08_12_ViewIcons.png[,380,160,role=text-left]
+
+You can now:
+
+* Click the information icon to see details about the saved view, including *_Node count_*, *_Edge count_*, *_Date Created_*, and *_Date Modified_*, and to add *_Remarks_*.
++
+image::/v2_17/02_08_11_ViewInfoPanel.png[,720,480,role=text-left]
++
+* Click a view's *_Share_* icon to xref:./data-share-views[share] the view with specific internal or external users.
+* Click the *_Edit_* icon next to the view name to rename the view.
+* Click the *_Delete_* (trash can) icon to delete the view. This deletes that view (not the data currently present in the graph space).

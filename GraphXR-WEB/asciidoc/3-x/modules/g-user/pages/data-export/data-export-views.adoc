@@ -1,0 +1,69 @@
+= Export Data Views
+
+GraphXR's GXRF files and snapshot archives enable you to export views that retain the data as well as the 3D layout and perspective of the graph.
+
+NOTE: An archive of current snapshots is exported from the *_Snapshots_* pane or title bar using the *_Save Snapshots_* button or icon. For details see xref:data-save-views/data-save-snapshots[Working with Snapshots]. 
+ 
+In the *_Project > Data_* tab, you can export GXRF files using: 
+
+* *_Save GXRF_* to export a single GXRF file of the data currently in the project space.
+* *_Export All Views_* to export all of the project's saved views. 
+
+An exported GXRF files receives the _Project_ name, _View_ name (if any) and the _.graphxr_ extension. For example: _Demo2_Crime.graphxr_
+ 
+If the data have not yet been saved as a view, the view name is numbered as the nth view saved from that project. For example: _Demo2 (1).graphxr_
+
+
+== Exporting a GXRF file
+
+Use *_Save GXRF_* to export a single file of the data currently in the project space, whether it is saved as a view or not.
+  
+*To export a single GXRF file:*
+
+. Click the *_Project_* panel and *_Data_* tab.
+
+. Click *_Save GXRF_*.
++
+image::/v2_17/02_07_01a_SaveGXRF.png[,540,280,role=text-left]
++
+
+Once exported, the file name appears in the Downloads tab of your Chrome browser window. 
+
++
+You can re-import it by drag and drop from there.
++
+
+OR 
++
+
+In the *_Project > Data_* tab click the *_Import Views_* button, navigate to the file and click *_Open_*. 
+
++
+image::/v2_17/02_07_01c_ImportViews.png[,540,280,role=text-left]
+
+
+== Exporting all data views
+
+Use *_Export All Views_* to export all the saved views currently in the project. The  saved views are loaded to the project space and then exported one by one. They receive the project name and the view name.
+
+NOTE: An exported view does not retain its original date of creation or modification. 
+  
+*To export a all saved views:*
+
+. Click the *_Project_* panel and *_Data_* tab.
+
+. Click *_Save GXRF_*.
++
+image::/v2_17/02_07_01b_SaveAllViews.png[,540,280,role=text-left]
++
+
+Once exported, each file name appears in the Downloads tab of your Chrome browser window.
++
+
+You can re-import any of the views by drag and drop.
++
+
+OR 
++
+
+In the the *_Project > Data_* tab click the *_Import Views_* button, navigate to the file you want and click *_Open_*.  

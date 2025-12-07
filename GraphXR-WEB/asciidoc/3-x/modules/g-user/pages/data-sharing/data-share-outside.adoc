@@ -1,0 +1,76 @@
+= Sharing Views Externally
+
+Once you have saved a view you can:
+
+* Share its url directly with others using the *_Project > Views_* tab. Optionally you can require authentication and set a password.
+ 
+* Embed a shared GraphXR view as an iframe on another web page, using the dropdown list of the project's saved views available on the *_Projects_* (Home) page.
+
+== Sharing a Single View
+
+Yu can go to the *_Project > Views_* tab to obtain a view link for an individual view that can be shared with anyone external to the project, even if they do not have a GraphXR login. Optionally, you can protect the view by requiring login and password authentication. 
+
+*To share a view link:*
+
+. Enter the project, and open the *_Project > Views_* tab.
+
+. Locate the view you want to share in the thumbnail tile or list view, and click its *Share view_* icon.
+
++ 
+In the *_Share..._* dialog you can simply click *_Copy Link_* to copy a url that you can email to another user. You have the option to require authentication such that the user must log in, and must have a password to open the view.
+
++
+image::/v2_17/02_04_04a_ShareOneView.png[,260,120,role=text-left]
++
+
+. Click the *_Require authentication_* checkbox.
+
++
+image::/v2_17/02_04_04b_ShareOneViewPassword.png[,260,120,role=text-left]
++
+
+. Enter a password and click *_Save_*.
+
++ 
+
+A message indicates that the password has been saved. You can now click *_Copy Link_* and paste it into an email to the user. Send the password in a separate email. 
+
++
+image::/v2_17/02_04_04c_ShareOneViewCopyLink.png[,260,120,role=text-left]
+
+
+== Embed a view as an iFrame
+
+Code for iFrame embedding can be obtained from a project's list of shared views. The  views will be displayed according tho the sharing configuration set in the project.
+
+*To embed a view as an iFrame:*
+
+. In the *_Project_* (Home) page, click the project's *_Share_* icon to see the menu of shared views. 
+
++
+image::/v2_17/02_04_03_SharedViewIframe.png[,480,520,role=text-left]
++
+
+. Locate the view to embed and click the icon at the right to generate iframe code. 
+
++
+A message indicates that the code has been copied to the clipboard. 
+
+. Paste the iFrame embed code into the html for the web page of your choice. This code should be similar to the following example:
+
++
+
+----
+<iframe id="iframe-id-graph" src="VIEW URL GOES HERE" height="600px" width = "100%"></iframe>
+<script>
+let graphXRIframe = document.getElementById("iframe-id-graph");
+graphXRIframe.addEventListener('mouseover', function () {
+    window.document.body.style.overflow = 'hidden';
+    graphXRIframe.style.overflow = 'auto';
+});
+graphXRIframe.addEventListener('mouseout', function () {
+    window.document.body.style.overflow = 'auto';
+    graphXRIframe.style.overflow = 'hidden';
+})
+</script>
+----

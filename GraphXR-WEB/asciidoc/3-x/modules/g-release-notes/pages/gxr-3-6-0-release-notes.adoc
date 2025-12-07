@@ -1,0 +1,84 @@
+= GraphXR 3.6.0 Release Notes
+
+*Release Date:* November 4, 2025
+
+GraphXR 3.6.0 focuses on improving usability across the GraphXR interface and query workflow, strengthening data-store integrations, and tightening administration and security controls. Users gain smoother trackpad navigation, a more discoverable and responsive Query Bar with an onboarding overlay, and an enhanced Property Info Panel with edit and copy capabilities. Kuzu and Neo4j integrations are more reliable thanks to multiple schema and save-path fixes. Administrators benefit from optional forced password changes and clearer configuration, while developers gain automated API documentation pipelines, improved Helm deployment support, and clearer API function naming.
+
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.6.0
+
+=== Usability Enhancements 
+
+* Left navigation visibility (GXR-3050): Improved styling of the active left navbar item to make the selected menu option more visible.
+
+* Extension pinning in left sidebar (GXR-3138): Added pin/unpin controls for extensions and ensured extensions can be opened reliably from the Extensions tab and pinned to the left navbar.
+
+* Quick Info and context menu behavior (GXR-3120): Prevented the Quick Info panel from covering the node context menu when right-click is open.
+
+* Database type indicators (GXR-3072): Added icon/text indicators in the UI to show the backend database type for each project.
+
+* Property Info Panel enhancements (GXR-2799): Added edit and copy-value buttons, improved handling of long property values, and introduced Ant Design components to standardize and modernize the UI.
+
+* Empty canvas overlay (GXR-3110): Added an overlay that appears when the canvas is empty, providing clear actions to help users start building their graph in the Query Bar.
+
+* Query Bar placeholder text updated (GXR-3197): To prompt pattern-based querying vs. free-text search.
+
+* Trackpad navigation and zoom (GXR-3292): Added an experimental mode that pans with the trackpad and zooms when holding Cmd/Ctrl while scrolling.Project
+ 
+=== Performance Enhancements 
+
+* Query Bar layout responsiveness for smaller screens (GXR-3268): Adjusted the default width and responsive behavior of the Query Bar so it no longer overlaps the title bar when empty.
+* Quoted category and relationship names supported (GXR-3271): Updated generated Cypher to quote category and relationship names, supporting spaces and special characters safely.
+* Internal schema support (GXR-2956): Introduced a SchemaType class as groundwork toward a schema viewer/editor for the internal Kuzu-backed data store.
+
+=== Administration, Security, Configuration, and Deployment Enhancements
+
+* Optional forced password change (GXR-2911): Added the ability to require users to change their password on first login after an admin-created or reset password.
+* Session timeout configuration alignment (GXR-3062): Renamed enableSessionTimeout to sessionTimeoutEnabled in config.example.js to match the application’s runtime configuration and remove unused options.
+* Production error handling for adminInitOffline (GXR-3296): Suppressed adminInitOffline error messages from being shown in production, while preserving logging and diagnostics.
+* Dependency audit workflow refinement (GXR-3241): Improved the audit-fix-check command to ignore low-severity issues, keeping focus on higher-impact vulnerabilities.
+* Helm-based Kubernetes deployment (GXR-2909): Enhanced Helm configuration to support MongoDB as a dependency, simplifying Kubernetes-based deployments of GraphXR.
+ 
+=== GraphXR API
+ 
+* randomGraph default behavior (GXR-3300): Updated gxr.randomGraph so generated nodes are added to the canvas by default, making quick graph generation immediately visible. 
+* Automated API reference pipeline (GXR-3283): Added CI steps to build, update, and deploy the GraphXR API reference to graphxr-dev-docs on each development commit, improving documentation freshness.
+* GXR API reference assets (GXR-3303): Added a GraphXR API screenshot asset for use in the API reference documentation.
+* API function naming clarity (GXR-3302, GXR-3301): Renamed graph.ts to getGraphSelection.ts and add.ts to addToGraph.ts to better reflect each function’s purpose in the API.
+  
+== Bug Fixes
+
+* Project title display (GXR-3278): Fixed an issue where new projects briefly showed "undefined" in the title bar after creation.
+* Restored live canvas search (GXR-3270): Re-enabled per-keystroke canvas search so results update as the user types, matching previous behavior.
+* Neo4j relationship schema accuracy (GXR-3244): Corrected schema mapping so Query Bar schema reflects all Neo4j relationships (such as OBSERVATION and RELATED_TO), ensuring queries can target the full graph structure.
+* Kuzu save reliability for relationships (GXR-3273): Fixed save failures when relationships referenced more than one start or end category and clarified naming rules for categories, relationships, and properties to ensure Kuzu compatibility.
+* Ordered property writes for Kuzu (GXR-3281): Ensured properties are written in a stable, ordered fashion during UNWIND operations to prevent Kuzu save failures caused by property order differences.
+* Kuzu view filters and hidden nodes (GXR-3288): Addressed issues where filters and hidden nodes could be lost and reappear when Kuzu automatically verified nodes in loaded views.
+
+
+== Removed 3.6.0
+
+* Remove 3D Tree Layout panel (GXR-1388): Removed the 3D Tree panel to streamline the panel set and eliminate related reset issues. 2D Ego Tree layouts remain available. 
+
+
+== Extensions 3.6.0
+
+=== Graph Composer
+
+_Property graph data modeling in GraphXR_ 
+ 
+=== Grove
+ 
+_Observable-based javascript notebooks_
+ 
+NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 3.6.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].
+

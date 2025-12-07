@@ -1,0 +1,29 @@
+= Export Data to Neo4j
+
+If your project is connected to a Neo4j database, and you have the necessary user privileges on the Neo4j database, you can save data to it. You will be prompted to:
+
+* Review categories and their properties that exist in the graph space, and set a key for each.
+* Specify the location and user details for the database.
+
+*To save to a Neo4j database:*
+
+. Go to the *_Projects_* panel and *_Data_* tab, and click *_Save Neo4j_*.
++
+image::/v2_17/02_06_01_SaveNeo4j.png[,520,280,role=text-left]
++
+
+. Review the list of categories and their properties that exist in the graph space.
++
+image::/v2_17/02_06_02_SavetoNeo4j.png[,520,480,role=text-left]
++
+
+. For each category, you must set one of the properties as a *_Key_* by clicking the *+* (plus) icon next to the property in the list.
++
+
+. Enter the following details, then click *_Save to Neo4j_*.
++
+* *_Neo4j Hostname_* +
+* *_Bolt Port_* +
+* *_Username_* +
+* *_Password_* +
+* *_Database Name_* (for Neo4j 4+)

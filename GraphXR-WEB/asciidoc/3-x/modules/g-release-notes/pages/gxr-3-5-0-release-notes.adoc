@@ -1,0 +1,57 @@
+= GraphXR 3.5.0 Release Notes
+
+*Release Date:* October 29, 2025
+
+GraphXR 3.5.0 introduces UI enhancements, improved query system behavior, and extended capability for Neo4j configuration. For single-user project configurations, Helm and Neo4j integration has also been strengthened.
+
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.5.0
+
+=== Usability Enhancements
+ 
+* Right-click *Layout* menu incudes a visual divider between basic geometric layouts (*Line*, *Grid*, etc) and the layout *Expand*, *Contract* and *Rotate* menu options. (GXR-3211)
+* Improved Expand query feedback: for an Expand operation, a spinner displays during query processing to indicate ongoing progress. (GXR-3208) 
+* In light mode, visibility of *Map* panel controls is enhanced. (GXR-3179)
+* Added *RdYlGn* (red-yellow-green) scale to property-based color scaling options. (GXR-3253) 
+
+=== Performance Enhancements 
+
+* Kuzu schema handling is improved to prevent duplicate properties by ensuring that queries use the correct database schema. (GXR-3239) 
+* Query bar now clears previous query results when switching databases. (GXR-3230)
+* Full-text search is improved for better accuracy and responsiveness in detecting a Neo4j schema and its relationships. (GXR-3244) 
+
+=== Administration, Security, Configuration, and Deployment Enhancements
+
+* Helm and Kubernetes enhancements improve Helm deployment for EU environments and provide added support for single-project, single-user Neo4j configurations via environment variables. (GXR-2909, GXR-3250)
+
+=== GraphXR API 
+
+* gxr.colorNodesByProperty() for improved control of coloring nodes. (GXR-3248)
+  
+== Bug Fixes
+* Schema-Less Spanner: Merged id fields into properties for correct display.(GXR-3266)
+
+== Removed 3.5.0
+
+* None
+
+== Extensions 3.5.0
+
+=== Graph Composer
+
+_Property graph data modeling in GraphXR_ 
+ 
+=== Grove
+ 
+_Observable-based javascript notebooks_
+ 
+NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 3.5.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

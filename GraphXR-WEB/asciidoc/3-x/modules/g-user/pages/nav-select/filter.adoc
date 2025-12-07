@@ -1,0 +1,133 @@
+= Filtering Data
+
+The *_Filter_* panel enables you to specify multiple filters that filter data by
+
+* _numerical_ continuous properties such as numbers, date-time, and lat-long coordinates), and
+* _categorical_ properties such as names or other text string labels.    
+
+An individual filter operates on a single property (of either nodes or edges). Creating multiple filters that operate at once lets you select data with a combination of properties (for example, _Name of account holder_,  _transaction amount, date range_, etc.).
+
+Data that meets filter criteria remains in the graph space where it can be selected using the *_Select Visible Nodes_* button in the *_Filter_* panel or the *_Select Visible Nodes_* toolbar icon. You can then either save or delete the filtered nodes.  
+
+== Filtering on numerical properties
+
+This example uses a dataset of a TV series viewership per episode displayed in a link:../working-with-layouts/using-parametric-layouts[parametric layout]. We can create a filter by date, then add a second filter for the number of viewers.
+
+NOTE: To be considered continuous values, date-time values must be formatted as _YYYY-MM-DD hh:mm:ss_. Date-timestamps not in that format can be converted using an *_f(x)_* function in the *_Transform_* panel. Or, numerical values can be treated as  categorical ones by clicking the *_Continuous_* / *_Categorical_* toggle on the filter.
+
+image::/v2_17/04_03_01a_FilterNumCat.png[,540,280,role=text-left]
+
+*To filter using numerical (continuous) properties:*
+
+. Open the *_Filter_* panel. First we'll filter by date.
+. From the *_Node Properties_* menu, choose the _episodeAirdate_ property.
++
+The filter is labeled with the property name and the category or relationship label (e.g. _episodeAirdate_(_Episodes_)). A slider shows the range of the property's timestamp values.
++
+image::/v2_17/04_03_01_FilterMultiStart.png[,720,480,role=text-left]
+
+. Set a range of dates using the *_Min_* and *_Max_* selectors under the slider.
++
+For filtering by date, you can click the value to display a calendar and select dates.
++
+image::/v2_17/04_03_02_FilterMultiselDate.png[,260,180,role=text-left]
+
++
+You can lock down a range of values, then use the slider or animation playhead to filter using that range (for example, by year, month, or week).
++
+image::/v2_17/04_03_03_FilterLockRange.png[,720,380,role=text-left]
+
+. Now select another property (e.g. _millionViewers_) from the *_Node Properties_* menu to add a second filter for viewership. 
+. Set a range by entering minimum and maximum values in the *_Min_* and *_Max_* text boxes (e.g. 5 and 10).
++
+image::/v2_17/04_03_04_FilterMultiSecond.png[,720,380,role=text-left]
++
+The project space now includes only the filtered data. List items in the legend are updated to show the filtered numbers for each category, relationship, etc.
++
+The animation playhead lets you play through the range of filtered values. You can set start and ending values on the slider, then enter a duration and select options for the direction of play and for continuous looping through the filter values. Each filter has its own independently set playhead.
+
+You can dismiss the *_Filter_* panel and continue working with the filtered data.
+
+IMPORTANT: The data that's filtered out is only hidden, not deleted. To restore the hidden data, delete the operative filter.  
+ 
+
+== Filtering on categorical properties
+
+This example uses a dataset of crimes and their investigating officers. We can filter the data by _type_ of crime, which is a text string property.
+
+*To filter using categorical properties:*
+
+. Open the *_Filter_* panel.
+. From the *_Node Properties_* menu, choose the property (e.g. _type_).
++
+The filter is labeled with the property name and the category or relationship label ( _type_(_Crime_)). The property values in the data are displayed in alphanumeric order, with a *_Show_* checkbox for each.  
++
+image::/v2_17/04_03_05_FilterCatStart.png[,720,480,role=text-left]
+
+. All values are selected by default. Click the *_Select All_* checkbox to deselect everything, and then choose the values you want.
++
+image::/v2_17/04_03_06_FilterCatDone.png[,720,480,role=text-left]
++
+In the example, we've chosen various types of theft (e.g. _bicycle theft_, _burglary_, _shoplifting_, etc.)
++
+The data in the project space now includes only the filtered data. List items in the legend are updated to show the new numbers for each category, relationship, etc.
+
+
+== Clearing a filter
+
+To restore data hidden by a filter, delete that filter. To see all your data again, clear (i.e., delete) all your existing filters.
+
+* Click the *_Delete_* button above the filter's slider, or click the property name in the *_Node Properties_* menu.
++
+image::/v2_17/04_03_07_FilterDelete.png[,420,340,role=text-left]
+
+NOTE: Filters do not persist when you exit the project. However, when you load a saved  *_View_* or *_Snapshot_* of a filtered graph, the filters are restored and the data that was filtered out is hidden.
+
+== Saving or deleting filtered nodes with Select Visible Nodes
+
+Filters do not delete data; if you want to delete filtered data, it must be explicitly selected and deleted. You can delete either the visible data, or the data that has been filtered out.
+
+*To delete visible data:*
+
+. Click *_Select Visible Nodes_* and press *_del_* or *_backspace_*.
++
+The visible nodes and any connected edges are deleted. The graph space appears empty. 
++
+. Clear your filters to restore data that was filtered out. Click the *_Del_* button to the right of the filter's slider (or the *_x_* next to the property name in the *_Node Properties_* menu).
+
+*To delete filtered data:*
+
+. Click *_Select Visible Nodes_* (the nodes you want to keep).
+. Clear your filters to restore data that was filtered out. Click the *_Del_* button to the right of the filter's slider (or the *_x_* next to the property name in the *_Node Properties_* menu).
++
+All the data appears, with the nodes and connecting edges you want still selected.
++
+. Click *_Inverse_* to invert the selection.
+. Press *_del_* or *_backspace_* to delete. 
++
+NOTE: You can click *_Hide Selection_* in the toolbar or right-click *_Actions_* menu to hide data temporarily, rather than delete it.
+
+== Isolating subgraphs from filtered data
+
+Starting with filtered results, the right-click *select and add* mode that operates on the *_Select_* menu lets you build subgraphs quickly. To add to a selection simply hold down *_Ctrl_* or *_Alt_* before choosing an item on the *_Select_* menu. Available options include *_Floating Nodes_*, *_Leaf Nodes_*, *_Neighbor Nodes_*, *_Child Nodes_*, *_Parent Nodes_*, *_Neighbor Edges_*, and *_Connected Nodes_*.
+
+In the categorical filter example above, _Crimes_ involving theft of various kinds have been retained. We can now isolate the graph of _Officers_ who investigated those filtered _Crimes_.  
+ 
+*To isolate a subgraph from filtered data:*
+
+. With the filter applied, in the Legend, click to select e.g. the _Crime_ nodes. 
+. Right-click, press *_Ctrl_* and choose *_Select > Neighbor Edges_* to add the edges to the current selection. 
++
+image::/v2_17/04_03_08_FilterSelectSubGraph.png[,720,380,role=text-left]
++
+. Right-click again, press *_Ctrl_* and choose *_Select > Connected Nodes_* to add the connected _Officer_ nodes to the current selection. 
++
+A subgraph of filtered _Crime_ nodes, the investigating _Officer_ nodes, and the INVESTIGATED_BY edges are selected. 
++
+image::/v2_17/04_03_09_FilterSubGraphDone.png[,420,320,role=text-left]
++
+TIP: *_left click + drag_* to move the selected subgraph away from the rest of the visible data.
++
+. You can now clear the filter to show all the data, then use *_Inverse_* to select data not on the subgraph and *_Actions > Hide_* to hide that data (or *_Delete_* to delete it).
+ 
+. Save the subgraph by taking a snapshot or saving it as a new View. 

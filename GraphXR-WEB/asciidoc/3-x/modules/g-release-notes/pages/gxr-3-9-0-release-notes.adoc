@@ -1,0 +1,67 @@
+= GraphXR 3.9.0 Release Notes
+
+*Release Date:* November 25, 2025
+
+GraphXR 3.9.0 introduces improved end-to-end experience for new and existing users, from a guided CSV mapping sandbox tutorial and smoother onboarding flows to a refreshed Projects page and more reliable notifications. The Query Bar includes better pattern support, case-insensitive filtering, and stronger KuzuDB integration. New APIs and tooling make it easier to keep schemas in sync and to deploy GroveBooks and Puppygraph images. Under the hood, startup performance and bundle size are improved to make GraphXR faster and more responsive.
+
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.9.0
+
+=== Usability Enhancements
+
+* Case-insensitive property filters (GXR-3315): Updated the Query Bar so CONTAINS filters are case-insensitive by default, with an option to enable case-sensitive matching when needed.
+* Bidirectional pattern support (GXR-3359): Enhanced the Query Bar’s bidirectional option to support the patterns (n)-[r]->(m), n<-(r)-(m), and (n)-[r]-(m), improving flexibility when exploring relationships.
+* Projects page redesign (GXR-3341): Refined the Projects page for new users to deliver a clearer, more focused workspace. Improved styling of the *_New Project_* card, removed  distracting hover box-shadows, adjusted *_Recent Projects_* sorting, and cleaned up incidental code.
+* Schema refresh after Save to KuzuDB (GXR-3361): Ensured that saving to KuzuDB automatically updates the GraphXR schema so the Query Bar reflects the latest categories and relationships without manual page refresh.
+* Toast notifications (GXR-1753): Provided more reliable and consistent in-app notifications by restoring and modernizing the gxr.toast() helper using react-toastify.
+ 
+=== Performance Enhancements
+ 
+* Startup and load performance (GXR-3354): Improved GraphXR startup and load times by optimizing webpack configuration, removing Storybook and legacy kuzu-wasm bundles, and refining server start logic.
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* Verification controls for login (GXR-3360): Introduced a requireVerificationToLogin configuration option and improved messaging so administrators can enforce email or admin verification before users are allowed to log in.
+
+* Streamlined post-registration experience (GXR-3356): Added an option to automatically log in new users after registration, clone a sandbox, and enter it immediately, reducing friction for first-time users.
+
+* Puppygraph Docker image (GXR-3329): Created a Puppygraph-compatible GraphXR Lite Docker image, making it easier to deploy a single-user, node-limited GraphXR instance alongside Puppygraph offerings.
+
+
+=== GraphXR API 
+
+* gxr.graph().updateSchema() (GXR-3362): API element including example usage, enabling scripts and integrations to update schema definitions programmatically.
+  
+== Bug Fixes
+
+* KuzuDB queries with hyphenated labels (GXR-3358): Fixed KuzuDB query failures when categories or relationships include hyphens (for example, match(n:abc-efg)), and validated search, pull, and expand operations against BigQuery, Spanner, and Puppygraph backends.
+
+* Merge relationship selection (GXR-700): Corrected the Merge dialog so relationship dropdown options respect the set of selected edges instead of showing all relationships.
+
+== Removed 3.9.0
+
+* None
+
+== Extensions 3.9.0
+
+=== Graph Composer
+
+_Property graph data modeling in GraphXR_ 
+
+* CSV mapping tutorial sandbox (GXR-3339): Introduced a driver.js-based sandbox that teaches users how to perform CSV mapping with *_Graph Composer_*, including clickable SVG elements and checkboxes, automatic scrolling to off-screen targets, streamlined tutorial navigation, and cleaner typing within the tutorial extension.
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+* GroveBook as extension (GXR-2931): Added tooling to convert Grove JSON files into deployable extension ZIPs, allowing GroveBooks to be version-controlled and deployed via the existing GraphXR manager workflow.
+ 
+NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 3.9.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

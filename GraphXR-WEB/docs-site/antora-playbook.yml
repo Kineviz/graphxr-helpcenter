@@ -1,11 +1,13 @@
 site: 
   title: Documentation
   # url: /graphxr-helpcenter
-  start_page: user-guides::index.adoc
+  # start_page: user-guides::index.adoc
 content:
   sources: 
   - url: ../../
-    start_path: GraphXR-WEB/asciidoc
+    start_path: GraphXR-WEB/asciidoc/3-x
+  - url: ../../
+    start_path: GraphXR-WEB/asciidoc/2-x
 ui:
   bundle:
     url: ./ui-bundle.zip

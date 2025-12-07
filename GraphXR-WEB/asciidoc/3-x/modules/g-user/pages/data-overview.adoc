@@ -1,0 +1,15 @@
+= Managing Data and Views in GraphXR
+
+When you enter a project's graph space for the first time, it will be empty. 
+
+To manage data import and the live data views you'll be creating in GraphXR you'll need to know how to:
+ 
+* xref:data-import/data-import-intro.adoc[*Import*] from sources. You can import data by database query or a mapping, or by drag and drop of a saved view or view archive.
+
+* xref:data-save-views/data-save-intro.adoc[*Save*] data and data views as you work. At any time, you can save the state of your graph data as a data view or snapshot.   
+
+* xref:data-sharing/data-share-inside.adoc[*Share*] data and views within a project. You can invite other users to share a project, which makes its views available for collaboration. 
+
+* xref:data-export/data-export-intro.adoc[*Export*] data. You can export graph data to a connected Neo4j database, or to a CSV archive or Excel workbook. Data views can be exported locally as a view, snapshot archive, or iFrame embedding.
+
+WARNING: When you *_Clear_* data, exit a project or log out of GraphXR, the data in the project and any snapshot views will be deleted. Saved data views do persist. To avoid losing your work, save views and/or export data whenever you come to a point in your exploration that you may want to re-visit.

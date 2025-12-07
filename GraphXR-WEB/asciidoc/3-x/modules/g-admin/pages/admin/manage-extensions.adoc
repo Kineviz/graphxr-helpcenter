@@ -1,0 +1,25 @@
+= Managing Extensions
+
+The *_Extensions_* panel lets you manage extensions that are globally available to your GraphXR installation.
+
+image::/v2_17/06_01_Extensions.png[,720,480,role=text-left]
+
+You can:
+
+* Review currently installed extensions, including the *_Name_*, *_Type_*, *_Version_*, and last *_Updated Time_*.
+* *_Import_*, and *_Add_* extensions individually.
+* *_Search_* for extensions by time period, name or description, then *_Pull The Extensions From GraphXR Manager Server_*.
+* *_Delete_* an extension from your installation.
+* *_Edit_* the version of the extension being used.
++
+image::/v2_17/06_04_Extensions_Edit.png[,720,480,role=text-left]
+
+* Set up a list of authorized users, using *_Auth Users_*, either for selected extensions, or all extensions.
++
+image::/v2_17/06_02_Extensions_AuthUsers.png[,720,420,role=text-left]
+
+* *_Export_* extensions as a .zip archive. You can export selected extensions, or all extensions at once.
++
+image::/v2_17/06_03_Extensions_Export.png[,720,420,role=text-left]
+
+NOTE: As the administrator, you can create project *_Templates_* to restrict the availability of extensions within a project. In addition, general users with access to the *_UI Configuration_* button in the project’s *_Settings_* panel can adjust visibility of extensions from within a project.

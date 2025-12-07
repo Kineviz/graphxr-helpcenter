@@ -1,0 +1,30 @@
+= GraphXR Extensions
+
+Kineviz has developed extensions that enhance or customize GraphXR for the needs of specific user communities.
+
+[cols="2,6,2"]
+|===
+| *Extension* | *Description* | *Availability* 
+
+| xref:./grove.adoc[*Grove*]
+| Develop Observable-inspired javascript notebooks for reproducible, interactive data visualization, discovery and analysis. 
+| Basic
+
+| xref:./visual-query-builder.adoc[*Visual Query Builder*]
+| Build and run no-code *_Cypher_* queries from within a GraphXR project.
+| Basic
+
+| xref:./sightxr.adoc[*SightXR*]
+| Extract information from unstructured documents, visualize it as a Knowledge Map, and investigate using AI-powered Q&A.
+| Enterprise
+
+| xref:./seekerxr.adoc[*SeekerXR*]
+| A one-stop customized platform for rapid, secure, and collaborative investigation of crime and risk. _Developed in partnership with Harod Associates_.  
+| Enterprise
+
+|===
+
+NOTE: For Enterprise subscribers, additional custom extensions can be made available. Please contact http://kineviz.com[Kineviz] for more information.
+
+
+

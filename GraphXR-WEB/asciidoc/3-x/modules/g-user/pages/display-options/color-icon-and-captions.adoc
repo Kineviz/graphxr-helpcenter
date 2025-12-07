@@ -1,0 +1,116 @@
+= Setting Colors, Icons, and Captions
+
+Using color, icons, and adding captions makes it much easier to highlight patterns, select data for further analysis and transformation, and create compelling visualizations. Categories, relationships, property values, and tags are assigned colors automatically. At any time, you can:
+
+* Change the color assigned to a category, and the color assigned to a relationship, tag, or property value.
+* Change the icon applied to a category using a searchable icon library available via a category's *_Style Setting_* dialog. In the *_Settings_* panel, the *_Icon Mode_* menu enables you to select one of three global coloring modes.
+* Label nodes and edges with captions derived from a category's property values.
+* Scale the size of the nodes of a category or edges of a relationship by a property value.
+
+== Selecting a color
+
+You can set a color and icon for a category, relationship, or property value using the list in the *_Legend_*. Clicking the colored dot next to any list item displays the *_Styling Setting_* dialog, a combined color and icon picker with separate *_Color_* and *_Icon_* tabs.
+
+NOTE: A color and icon can be applied to tags, but only if you click *_Save As a Property_* in the *_Manager Tags_* dialog. This creates a special _graphxrtags_ property. In the *_Property_* legend list, you can set the color and icon of _graphxrtags_ property values, and these then also appear in the *_Tag_* list. 
+
+You can also select a new color and icon for a category or a relationship color in the *_Project_* panel's *_Category_* or *_Relationship_* tab. Select a category (or relationship) and click its colored circle (or rectangle) to display the color and icon pickers.
+
+*To select a color:*
+
+. Go to the *_Legend_* and click the *_Category_*, *_Relationship_*, or *_Property_* tab.
+
++
+NOTE: Tags are colored using the temporary __graphxrtags_ property created in the *_Manager Tags_* dialog and *_Save Tags as Property_* button.
++
+
+. Locate the item in the legend list, or for a *_Property_*, select a property name from the dropdown menu and then locate the list item for one of its values.
+. Click the colored dot or line at the right of the item to display a color picker.
+. In the *_Styling Setting_* dialog, click one of the pre-set colored dots, use the color palette to select the color of your choice, or enter the hex value for the color.
++
+image::/v2_17/01_04_11a_Legend_CategoryStyling720.png[,340,340,role=text-left]
++
+The new color is applied immediately.
+
+. Click the *X* at the upper right to close the dialog.
+
+== Selecting a color scaled by a property value
+
+You can assign a color scale or gradient for the property values of a category or tag  using the list in the *_Legend_*.
+
+*To set a color scale for a property:*
+
+. Go to the *_Legend_* and click the *_Property_* tab.
+. Select a property name from the dropdown menu. The menu includes the properties of all visible categories, in alphabetic order.
+. Click the *_Use Scale Color_* checkbox, and choose a color scale from the additional dropdown menu.
++
+image::/v2_17/03_02_02_SelectColorScale.png[,520,340,role=text-left]
++
+In the example above, the _BuPu_ scale colors visible _Character_ nodes according to their _kills_ property value, on a gradient with a lowest value assigned a pale blue, and the highest a dark purple.
++
+All nodes of the category or tag are colored, whether selected or not. Hidden nodes are colored as soon as they are restored to the graph space.
+
+
+== Selecting an icon
+
+A category, property, or tag can include an icon as well as a color. You select an icon using the *_Legend_* and *_Styling Setting_* dialog, in the same way you select a color. You can search for an icon by name, or use the dropdown menu to select general types of icons.
+
+TIP: Icons are colored with your current color choice and icon mode. To change the coloring mode for icons, go to the *_Project \-> Settings_* and *_Icon Mode_* menu at the bottom of the panel.
+
+*To select an icon for a Category:*
+
+. Go to the *_Legend_* and click the *_Category_* tab.
+. Locate the Category in the list and click the colored dot at the right. This displays the *_Styling Setting_* dialog.
+. Click the *_Icon_* tab to display the icon picker. To locate icons, you can
++
+* Search by name (e.g. "`_home_`").
++
+image::/v2_17/03_02_03_SearchIcon.png[,420,280,role=text-left]
++
+* Use the dropdown menu to display groups of similar icons.
++
+image::/v2_17/03_02_03a_SearchSelIcon.png[,420,280,role=text-left]
++
+
+. Click to select an icon for the category.
++
+The new icon is applied to all the nodes of the category, colored with your current color choice and mode, and the dialog closes.
+
+== Applying captions to nodes or edges
+
+In the *_Styling Setting_* dialog for a category or relationship you can select one or more properties of a category or relationship whose values will be used as captions on those nodes or edges. 
+
+The caption for each property you select is displayed on a separate line. Captions appear when the node or edge is close enough to your virtual viewpoint, and disappear when you navigate further away.
+
+image::/v2_17/03_02_05_CaptionsSS.png[,480,240,role=text-left]
+
+NOTE: You can also go to the *_Projects_* panel and *_Category_* or *_Relationship_* tab and use *_Caption_* checkboxes in the lists of properties of a category or relationship to select captions. 
+
+image::/v2_17/03_02_06_CaptionsCat.png[,720,380,role=text-left]
+
+Often a property will have just one value, but multi-line property values are also supported, and are displayed in captions. A property with more than one value will appear with each value on a separate line.
+
+image::/v2_17/03_02_07_CaptionsMultiLine.png[,720,480,role=text-left]
+
+The *_Projects_* panel and *_Settings_* tab provides options to set the global display of captions:
+
+image::/v2_17/03_02_08_CaptionsGlobal.png[,720,480,role=text-left]
+
+* *_Auto Caption_* checkbox automatically applies a default caption property  (caption>label>title>name) if the user hasn't selected one for that category. 
+* *_Alternate Caption Rendering_* checkbox displays captions using an alternate rendering that may be more legible than the default rendering at very small text sizes. However, the number of captions which can be rendered at a time is limited.
+* *_Show Relationship Name_* checkbox displays the relationship name on every edge.
+* *_Caption Size Scale_* slider lets you adjust the global text size of captions.
+* *_Node Caption Position_* dropdown menu lets you adjust the position of captions on nodes. Position options are _Right_, _Top_ (left-aligned or centered), _Bottom_ (left-aligned or centered), and _Vertical_.
+
+*To apply captions:*
+
+. In the legend, click the colored dot or line next to a category or relationship to show the *_Styling Setting_* dialog.
+. Click the *_Caption_* tab.
+. From the dropdown menu, select the properties to be applied as captions on the nodes (or edges).
++
+image::/v2_17/03_02_05_CaptionsSS.png[,420,340,role=text-left]
++
+If you select more than one property, the caption displays in the order you add the properties to the list in the *_Styling Setting_* dialog, or select properties using the *_Caption_* checkboxes in the *_Project_* panel.
++
+For example, a caption with the _Episode_'s property values selected in order of _season_, _episode_, and _title_ appears as follows:
++
+image::/v2_17/03_02_09_CaptionsMultiple.png[,720,480,role=text-left]

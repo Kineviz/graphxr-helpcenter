@@ -1,0 +1,12 @@
+= GraphXR Resources
+
+* Follow our https://medium.com/kineviz[Blogs] showcasing GraphXR solutions. 
+
+* Watch how-to https://www.youtube.com/@Kineviz[Videos] on our Kineviz YouTube channel.
+
+For detailed information:
+
+* Consult our xref:./faq.adoc[FAQ].
+* Deep dive into GraphXR functionality with xref:g-user:intro-overview.adoc[User Guides].
+
+Questions? Please contact https://www.kineviz.com[Kineviz].
