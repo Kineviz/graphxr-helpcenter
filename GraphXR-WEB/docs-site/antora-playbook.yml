@@ -1,7 +1,6 @@
 site: 
   title: Documentation
-  # url: /graphxr-helpcenter
-  # start_page: user-guides::index.adoc
+  start_page: v3.x@user-guides::index.adoc
 content:
   sources: 
   - url: ../../
