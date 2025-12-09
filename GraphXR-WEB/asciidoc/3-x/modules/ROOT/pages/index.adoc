@@ -2,20 +2,6 @@
 
 https://www.kineviz.com/graphxr[GraphXR] makes it easy to explore graph data visually, and in the process build compelling 2D or 3D graph visualizations of complex connections in information.
  
-Available features depend on your subscription:
-
-* GraphXR *_Enterprise_*. Full-featured visualization and graph data modeling, including multiple Projects, multi-user and multi-database support.  
-
-* GraphXR *_Explorer_*. One Project only. Visualization for SpannerGraph and  BigQueryGraph databases, limited to 50,000 nodes and 50,000 edges.
-+
-[cols="3,3"]
-|===
-|xref:attachment$quick-start-card.pdf[*Spanner Quick Start Card*]  |xref:attachment$quick-start-guide.pdf[*Spanner Quick Start Guide*]
-|===
-+
- 
-* GraphXR *_Trial_*. One Project only. Watermarked visualization for graph databases (e.g. Puppygraph, Memgraph, Neo4j), limited to 1000 nodes and 1000 edges. 
-
 == Basic GraphXR Workflow
 
 A basic GraphXR workflow for investigation and analysis is outlined below, with links to the details that will help you dive right in.   
