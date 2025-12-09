@@ -2,4 +2,5 @@ static_files:
 - favicon.ico
 - kv-logo.png
 - about/*
+- graphxr-releases/**/*
 
