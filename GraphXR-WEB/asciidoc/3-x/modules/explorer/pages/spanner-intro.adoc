@@ -2,28 +2,31 @@
 
 GraphXR Explorer provides a one-stop connection to a property graph on Google Spanner from the Google Cloud Marketplace. 
 
+xref:attachment$quick-start-card.pdf[*Quick Start Card*] 
+
 link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-spanner?q=search&invt=Abtgig&project=kineviz-public[Deploy on Google Cloud Marketplace]
 
-* One Project only. 
-* Limited to 50,000 nodes and 50,000 edges
-* Simplified Visualization for Spanner Graph.
-* User-managed *UI Configuration* for additional GraphXR features such as Transforms, Map, Algorithms, and Extensions.
+== Features
 
-== xref:attachment$quick-start-card.pdf[*Quick Start Card*] *PDF* 
+* Single Project
+* Single User
+* Supports up to 50,000 nodes and 50,000 edges
+* Streamlined visualization for Spanner Graph.
+* User-managed *UI Configuration* for additional GraphXR features such as Transforms, Map, Algorithms, and Extensions.
 
 == Video Overviews
 
-* *Connect Explorer to Spanner Graph*
+* *Setting up GraphXR Explorer for Spanner Graph*
 
-video::XdzcP8fHTo8[youtube]
+video::2Hj2VDIv5q0[youtube]
 
-* *Visualize Loan Repayment in Explorer*
+* *Exploring Loan Repayment in Spanner Graph and GraphXR Explorer*
 
 video::XdzcP8fHTo8[youtube]
 
 == User Guide
 
-=== xref:attachment$quick-start-guide.pdf[*GraphXR Explorer for Spanner User Guide*] *PDF*
+xref:attachment$quick-start-guide.pdf[*GraphXR Explorer for Spanner User Guide*]
  
 === Before you begin…
 
