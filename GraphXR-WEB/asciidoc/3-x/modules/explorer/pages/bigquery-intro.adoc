@@ -1,6 +1,12 @@
 = GraphXR Explorer for BigQuery
 
-GraphXR *_Explorer_* provides a one-stop connection from the Google Cloud Marketplace to to a BigQuery data source.
+*GraphXR Explorer for BigQuery is under development. Please link:https://kineviz.com/contact[contact us] for more information.*
+
+
+* One Project only. 
+* Limited to 50,000 nodes and 50,000 edges
+* Simplified Visualization for Spanner Graph.
+* User-managed *UI Configuration* for additional GraphXR features such as Transforms, Map, Algorithms, and Extensions.
 
 == Quick Start Card 
 

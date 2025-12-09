@@ -1,3 +1,2 @@
-* xref:explorer-intro.adoc[*GraphXR Explorer*]
-** xref:spanner-intro.adoc[*Spanner*]
-** xref:bigquery-intro.adoc[*BigQuery*]
+* xref:spanner-intro.adoc[*GraphXR Explorer for Spanner*]
+* xref:bigquery-intro.adoc[*GraphXR Explorer for BigQuery*]

@@ -1,6 +1,13 @@
 = GraphXR Explorer for Spanner
 
-GraphXR *_Explorer_* provides a one-stop connection to a Spanner or Spanner Graph database from the Google Cloud Marketplace. 
+GraphXR Explorer provides a one-stop connection to a property graph on Google Spanner from the Google Cloud Marketplace. 
+
+link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-spanner?q=search&invt=Abtgig&project=kineviz-public[Deploy on Google Cloud Marketplace]
+
+* One Project only. 
+* Limited to 50,000 nodes and 50,000 edges
+* Simplified Visualization for Spanner Graph.
+* User-managed *UI Configuration* for additional GraphXR features such as Transforms, Map, Algorithms, and Extensions.
 
 == xref:attachment$quick-start-card.pdf[*Quick Start Card*] *PDF* 
 
