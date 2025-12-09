@@ -1,0 +1,20 @@
+= Connect to Spanner 
+
+== Before you begin…
+
+To connect to Spanner, you need:
+
+* A Google Cloud Spanner account
+* A Spanner database and Spanner Graph property graph database based on it.
++
+NOTE You can start with Spanner demo data available for free trial. 
+
+== Connection Options
+
+* GraphXR *_Explorer_* provides a one-stop connection from the Google Cloud Marketplace to to a single project and a limited amount of data held in a Spanner or Spanner Graph database.
+
+* GraphXR *_Enterprise_* provides full GraphXR collaborative multi-user access to unlimited projects. 
+
+
+
+ 

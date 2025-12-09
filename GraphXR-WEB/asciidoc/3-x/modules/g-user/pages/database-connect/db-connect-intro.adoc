@@ -1,0 +1,14 @@
+= Connecting GraphXR to an External Database
+
+You can connect any GraphXR project to the following external relational or graph data sources for property graph visualization and analytics in a collaborative workspace, with no need to replicate or move data: 
+
+* Neo4j 
+* Puppygraph
+* Memgraph
+* Kuzu
+* Oracle
+* xref:explorer:spanner-intro.adoc[*Spanner*]. Use GraphXR Explorer on the GCP Marketplace to connect to a Spanner Graph or Spanner database, build and run graph queries, and explore a visual graph.
+  
+* xref:explorer:bigquery-intro.adoc[*BigQuery*]. Use GraphXR Explorer on the GCP Marketplace to connect to BigQuery data sources, model a graph directly in GraphXR, and explore a visual graph.
+
+

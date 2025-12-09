@@ -4,6 +4,7 @@
 *** xref:graphxr-start/open-graphxr.adoc[GraphXR Login]
 *** xref:graphxr-start/projects-home.adoc[Create and Manage Projects]
 *** xref:graphxr-start/project-ui.adoc[Working in a Project]
+** xref:database-connect/db-connect-intro.adoc[*Database Connection*]
 ** xref:data-overview.adoc[*Data Management*]
 *** xref:data-import/data-import-intro.adoc[Import Data]
 **** xref:data-import/import-by-drag-and-drop.adoc[Drag and Drop]
