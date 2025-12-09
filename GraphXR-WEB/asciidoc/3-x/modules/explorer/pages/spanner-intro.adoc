@@ -1,0 +1,27 @@
+= GraphXR Explorer for Spanner
+
+GraphXR *_Explorer_* provides a one-stop connection to a Spanner or Spanner Graph database from the Google Cloud Marketplace. 
+
+== xref:attachment$quick-start-card.pdf[*Quick Start Card*] *PDF* 
+
+== Video Overviews
+
+* *Connect Explorer to Spanner Graph*
+
+
+* *Visualize Loan Repayment in Explorer*
+
+== User Guide
+
+=== xref:attachment$quick-start-guide.pdf[*GraphXR Explorer for Spanner User Guide*] *PDF*
+ 
+=== Before you begin…
+
+Before you can use GraphXR Explorer, you need:
+
+* A Google Cloud Spanner account.
+* A Spanner database and Spanner Graph property graph database based on it.
++
+NOTE You can start with Spanner Graph demo data available for free trial through your Google Cloud Platform account. 
+
+ 

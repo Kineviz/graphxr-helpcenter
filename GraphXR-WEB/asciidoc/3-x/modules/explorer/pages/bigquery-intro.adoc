@@ -1,0 +1,25 @@
+= GraphXR Explorer for BigQuery
+
+GraphXR *_Explorer_* provides a one-stop connection from the Google Cloud Marketplace to to a BigQuery data source.
+
+== Quick Start Card 
+
+*Explorer for BigQuery Quick Start Card* *PDF*
+
+== Video Overviews
+
+* *Connect to BigQuery*
+
+== User Guide 
+
+*Explorer for BigQuery Guide* *PDF*
+ 
+=== Before you begin…
+
+Before you can use GraphXR Explorer, you need:
+
+* A Google Cloud BigQuery account
+* A BigQuery database.
++
+NOTE  You can start with BigQuery demo data available for free trial through your Google Cloud Platform account. 
+

@@ -5,4 +5,5 @@ nav:
 - modules/ROOT/nav.adoc
 - modules/g-user/nav.adoc
 - modules/g-admin/nav.adoc
+- modules/explorer/nav.adoc
 - modules/g-release-notes/nav.adoc
