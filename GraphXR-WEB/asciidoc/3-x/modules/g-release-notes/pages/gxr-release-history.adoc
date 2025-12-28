@@ -3,6 +3,33 @@
 [cols="1,1,10"]
 |===
 |*Tag* |*Date* |*Release Highlights*
+|xref:./gxr-3-12-0-release-notes.adoc[3.12.0] |12/17/2025 
+a|* *Usability*
+** Restore UI Configuration to basic Settings.
+
+* *Performance* 
+** Reduced memory usage on startup.
+ 
+* *Admin, Security, Configuration, and Deployment*
+** Enable signup by default on first boot.
+** MIT: Improve SAML login.
+
+|xref:./gxr-3-11-0-release-notes.adoc[3.11.0] |12/10/2025 
+a|* *Usability*
+** *DataStore* UI enhancements for clarity and safer database deletion.
+** *Home* and *Logout* confirmation modals improved.
+** Query Bar now surrounds property identifiers with backticks.
+ 
+* *Admin, Security, Configuration, and Deployment*
+** User consent modal added to PostHog session replay.
+
+* *GraphXR API* 
+** Deprecated gxr.add()
+
+* *Extensions* 
+** Enforce extension version compatibility.
+** Support for installing extensions and Grove notebooks via configuration and environment variables.
+
 |xref:./gxr-3-10-0-release-notes.adoc[3.10.0] |12/2/2025 
 a|* *Usability*
 ** Enhanced similarity matching for the *_Link_* transform.

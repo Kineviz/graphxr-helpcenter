@@ -1,0 +1,57 @@
+= GraphXR 3.12.0 Release Notes
+
+*Release Date:* December 17, 2025
+
+This release provides easy access to UI Configuration, improves first-time user onboarding and configuration, restores and documents SAML-based login flows, and enhances extension management for better compatibility with GraphXR core functionality. Startup memory usage has been reduced, and new environment variables make it easier to run GraphXR in different product modes.
+  
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.12.0
+
+=== Usability Enhancements
+
+* Restore UI configuration access in Settings (GXR-3493): The *UI Config* button is now available in the basic *Settings* panel.
+ 
+=== Performance Enhancements
+ 
+* Reduce memory usage on startup (GXR-3484): Startup is optimized to avoid excessive memory consumption and reduce the likelihood of Node.js out-of-memory errors during initialization.
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* Enable signup by default on first boot (GXR-3498): Updated default GUIConfig.signup value so the Sign Up button is visible on fresh installations without additional environment configuration.
+
+* MIT: Improve SAML login (GXR-3490): Added a Keycloak SAML login example. Updated MIT-specific documentation to ensure SAML authentication works correctly after upgrading to @node-saml/passport-saml.
+ 
+=== GraphXR API 
+
+* None
+  
+== Bug Fixes
+
+* None
+
+== Removed 3.12.0
+
+* None
+
+== Extensions 3.12.0
+
+* Enforce extension version compatibility (GXR-3494): Ensured that extension versions are checked for compatibility with the running GraphXR version to prevent runtime issues.
+
+=== Graph Composer
+_Property graph data modeling in GraphXR_ 
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+* Environment-driven extension and Grove notebook installation (GXR-3495): Added support for installing extensions and Grove notebooks via configuration and environment variables, including improvements to the OpenGrove on-load behavior.
+ 
+NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 3.12.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].

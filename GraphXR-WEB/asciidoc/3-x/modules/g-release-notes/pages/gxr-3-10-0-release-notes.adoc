@@ -2,7 +2,7 @@
 
 *Release Date:* December 2, 2025
 
-GraphXR 3.10.0 introduces introduces an interactive CSV mapping tutorial sandbox, significant improvements to the Transform → Link workflow, and refinements to the More menu including dark mode and an admin entry point. Floating panel positions and mouse interactions are more predictable, the Settings panel is less resource-intensive, and localization is safer for end users. Deployment options are expanded with updates to GraphXR Lite Docker images (including Puppygraph and Neo4j support) and groundwork for a mobile viewer.
+GraphXR 3.10.0 introduces an interactive CSV mapping tutorial sandbox, significant improvements to the Transform → Link workflow, and refinements to the More menu including dark mode and an admin entry point. Floating panel positions and mouse interactions are more predictable, the Settings panel is less resource-intensive, and localization is safer for end users. Deployment options are expanded with updates to GraphXR Lite Docker images (including Puppygraph and Neo4j support) and groundwork for a mobile viewer.
 
 NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
 

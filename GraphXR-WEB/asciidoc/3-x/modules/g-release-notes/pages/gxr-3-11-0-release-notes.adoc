@@ -1,0 +1,68 @@
+= GraphXR 3.11.0 Release Notes
+
+*Release Date:* December 10, 2025
+
+This release strengthens authentication and privacy controls, introduces safer database management actions, and improves the GraphXR API for programmatic use. Several UI and query-related bugs are resolved, making  everyday workflows more reliable. 
+
+Internal developers benefit from an optional in-memory MongoDB backend, configurable BrowserSync ports, and added automation and git tooling. 
+
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.11.0
+
+=== Usability Enhancements
+
+* DataStore tab (GXR-3483): Improved DataStore tab and legend styling; Hid *Save to Neo4j* when the database type is not Neo4j.
+
+* Safer database deletion (GXR-3476): Replaced the visible *Delete Database* button with an *Empty Database* button and moved the destructive _delete_ action into a collapsed section.
+
+* Renamed internal data store (GXR-3477): *Kuzu* UI references  changed to *Internal Data Store* for clarity and consistency.
+
+* Confirmation modal improvements (GXR-3475): *Home* and *Logout* confirmation modals refactored for more consistent and reliable user experience.
+
+* Query Bar property specification (GXR-3445): The Query Bar now surrounds property identifiers with backticks to improve query robustness and compatibility.
+ 
+=== Performance Enhancements
+ 
+* None
+ 
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* PostHog Session Replay consent (GXR-3471): Added a user consent modal before enabling PostHog Session Replay and removed unnecessary logging from session-masking logic.
+
+* MIT: Fix SAML login regression (GXR-3490): Restored SAML login compatibility for MITLL by reverting to a stable SAML library.
+
+* MIT Docker image updates (GXR-3468): Updated the custom MIT GraphXR Dockerfile to Node.js 22 and fixed related build issues.
+
+=== GraphXR API
+ 
+* Deprecated gxr.add() and updated API reference (GXR-3467): gxr.add()is deprecated in favor of gxr.addNode, gxr.addNodes, gxr.addEdge, and gxr.addEdges.   
+  
+== Bug Fixes
+
+* GraphXR API screenshot behavior (GXR-3303): The GUI is restored correctly after taking screenshots via the GraphXR API.
+
+* Node extract visibility fix (GXR-3474): Extracted nodes remain visible even when they share the same values across properties with different names.
+
+
+== Removed 3.11.0
+
+* None
+
+== Extensions 3.11.0
+
+=== Graph Composer
+_Property graph data modeling in GraphXR_ 
+
+=== Grove 
+_Observable-based javascript notebooks_
+ 
+NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
+ 
+== Supported Environments 3.11.0
+
+* WINDOWS, MAC OSX, AND LINUX
+* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
+* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
++
+_For more information,_ please contact https://www.kineviz.com[Kineviz].
