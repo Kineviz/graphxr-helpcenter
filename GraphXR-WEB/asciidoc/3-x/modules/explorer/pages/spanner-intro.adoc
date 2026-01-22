@@ -18,7 +18,7 @@ link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr
 
 * *Setting up GraphXR Explorer for Spanner Graph*
 
-video::2Hj2VDIv5q0[youtube]
+video::4AtwuCxkXc4[youtube]
 
 * *Exploring Loan Repayment in Spanner Graph and GraphXR Explorer*
 
