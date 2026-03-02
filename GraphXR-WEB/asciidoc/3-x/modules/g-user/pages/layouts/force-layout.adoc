@@ -1,88 +1,121 @@
-= Using Force Layouts
+= Force Layouts
 
-A *_Force_* directed layout is a rendering of a physics simulation in which each node pushes away from other nodes while edges pull the nodes together. There is no intrinsic meaning to node position or edge length in a force-directed layout. Rather, the rendering is designed to result in a graph that is visually pleasing and reasonably easy to navigate.
+A *_Force_* directed layout is a rendering of a physics simulation in which each node pushes away from other nodes while edges pull the nodes together. There is no intrinsic meaning to node position or edge length. Rather, the rendering is designed to result in a graph that's visually pleasing and reasonably easy to navigate.
 
-GraphXR provides a default force-directed layout, but you can:
+GraphXR renders data in a default force-directed layout, but you can:
 
-* Adjust force layout parameters for the entire graph, and restore default settings.
+* Set force layout parameters for rendering the entire (non-pinned) graph.
+* Temporarily disable (and enable) force layout for the entire (non-pinned) graph.
 * Randomize node positions for all or part of the graph.
-* Temporarily disable force layout for all or part the graph.
-* *_Run_* a brief force layout simulation for the entire graph.
 
-== Adjusting Force layout parameters
++
+NOTE: *Pinned* nodes are left where they were placed. This applies to nodes you've moved manually on the project canvas, and to those pinned automatically with a geometric layout. To release pinned nodes, either use the *_Pin/Release_* toolbar icon or right-click menu, or the *_Release_* button in the *_Geometric_* layout panel.
+ 
+== Set Force layout parameters
 
-The *_Force_* tab of the *_Layout_* panel includes a set of sliders to adjust default layout parameters for the entire graph.
+In the *_Layout_* panel and *_Force_* subpanel:
 
-image::/v2_17/08_01_01_ForceLayout.png[,720,480,role=text-left]
+* Use the slider controls organized under *_Basic Settings_* and an *_Advanced Settings_* dropdown to adjust key parameters for the entire graph *except for pinned nodes*. The new force layouts are rendered as soon as you change the sliders.
 
-You can adjust parameters as follows:
++
+image::/v3/08_01_01_ForceLayout.png[,720,480,role=text-left]
+
+
+=== Set *_Basic Settings_*
+
+*_Basic Settings_* includes controls for two parameters that are often adjusted:
+   
+* *_Link Distance_*. Adjusts the relative distance between nodes (i.e. edge length).
+* *_Gravity_*. Pulls the nodes toward the center of the project canvas (i.e. the point the view rotates around when nothing is selected).
+
+
+NOTE: To restore default settings, click the *_Default Settings_* button at the bottom of the panel. This action applies only to slider settings, not to the *_2D - 3D_* or *_Enable - Disable Force Layout_* toolbar toggle icons.
+
+=== Set *_Advanced Settings_*
+
+*_Advanced Settings_* includes controls for additional, but less often used force layout parameters:
+
+image::/v3/08_01_02_ForceLayoutAdvanced.png[,420,520,role=text-left]
 
 * *_Link Strength_*. Adjusts how strongly the links (i.e. edges) pull the nodes together.
-* *_Link Distance_*. Adjusts the distance between nodes (i.e. edge length).
-* *_Gravity_*. Pulls the nodes toward the center of the graph space, that is, the point the view rotates around when nothing is selected.
 * *_Charge_*. Adjusts how strongly the nodes push away from one another.
-* *_Collision_*. Adjusts the degree to which nodes are allowed to overlap each other. This is especially useful in a 2D layout, to un-stack nodes projected on top of one another. When set all the way to the right, some overlap can still occur.
+* *_Collision_*. Adjusts the degree to which nodes are allowed to overlap each other. For a 2D layout, adjusting *_Collision_* helps to un-stack nodes projected on top of one another. Some overlap can still occur.
 +
-image::/v2_17/08_01_02_ForceCollision1320.png[,720,480,role=text-left]
+image::/v3/08_01_03_ForceCollision.png[,720,380,role=text-left]
 
-* *_Z Compress_*. Compresses nodes on the Z axis to become a flatter, more 2D layout. To project a 3D view to near-2D, set the *_Z-Compress_* slider all the way to the rightmost position. You will still be able to rotate the data in 3D.
-* Click the *_Restore Default Settings_* button to restore the sliders to their default positions and re-render the default force layout for the selected graph.
-
-NOTE: Any pinned node is excluded from adjustment, and left where it was placed. This applies to nodes you've arranged manually in the project space, and to those pinned automatically using a geometric layout. To release pinned nodes, either use the *_Pin/Release_* toolbar icon or right-click menu, or the *_Release_* button in the *_Geometric_* layout panel.
-
-== Restricting layouts to 2D
-
-3D visualization provides a powerful advantage for exploring high-dimensional data. However, you can switch to 2D mode at any time, or even work exclusively in 2D mode.
-
-For example, a flat 2D project space can be useful when creating and sharing views for analytic reports of various kinds. Many of the  xref:./geometric-layouts[*_Geometric_* layouts] do translate well to purely 2D presentation, including *_Line_*, *_Circle_*, *_Spiral_*, and *_Grid_*, as well as  hierarchical *_Rings_* or *_Trees_*
-
-*To set the project space to 2D:*
-
-* In the *_Project_* panel and *_Settings_* tab, click the *_2D Mode_* checkbox.
-+
-image::/v2_17/08_01_03_2DCheckbox2.png[,720,380,role=text-left]
-+
-
- ** Project data are now arranged on a flat plane, and the data cannot be rotated in 3D.
- ** In the *_Force_* layout tab the *_Z-Compress_* slider is no longer displayed.
- ** The 3D *_Cube_*, *_Spring_*, and *_Sphere_* geometric layouts are no longer available.
-
-== Randomizing node positions
-
-In *_Force_* layout, nodes are rendered in randomized positions. The *_Randomize Node Positions_* button lets you render a different random arrangement either for selected data, or all data if no data are selected (*except for any pinned nodes*).
-
-*To randomize a force-directed layout:*
-
-. Select nodes using any method.
-+
-
-NOTE: If no nodes are selected, all node positions are randomized, *_except for any pinned nodes_*.
+* *_Z Compress_*. Compresses nodes on the Z axis into a flatter, more 2D rendering, while still allowing 3D rotation. To project a 3D view to near-2D, set the *_Z-Compress_* slider all the way to the rightmost position. 
 
 +
-. Make sure that the label next to the icon reads *_Disable Force Layout_*. This means that force layout is currently enabled, and your selection will be randomized according to the current force layout parameters.
-+
-image::/v2_17/08_01_05_RandomizeForce.png[,420,280,role=text-left]
-+
-. Click the *_Randomize Node Positions_* button to render a different random force layout for your selection.
-
-== Disabling Force Layout
-
-You can disable the force layout for all or part of the graph. This causes selected nodes to be rendered in a random, more compact arrangement that does not use a force-directed simulation. This can help you focus quickly on subgraphs of interest.
-
-*To disable force layout and randomize node positions:*
-
-. Select nodes using any method.
-. Click the force layout icon. The text next to the icon should now read *_Enable Force Layout_*, which means that force layout is currently disabled.
-. Click the *_Randomize Node Positions_* button to display a different random order for your selection. +
-The selected data are randomized in a more compact layout, while the data not selected remains in force layout.
-+
-image::/v2_17/08_01_06_DisableAndRandomize.png[,720,480,role=text-left]
+NOTE: To switch to full 2D rendering, click the *_3D-2D_* toggle icon in the toolbar. When set to full *_2D_*, the *_Z-Compress_*  slider no longer appears in *_Advanced Settings_*. 
 +
 
-NOTE: If no data are selected, all node positions are randomized in a non-force layout, *_except for any pinned nodes_*.
++
+image::/v3/08_01_04_2DToggle.png[,420,280,role=text-left]
 
-. Click the icon next to *_Enable Force Layout_* at any time to return the selected nodes to force-directed layout.
 
-== Using Run and Stop
+== Enable or disable Force layout
 
-With force layout enabled, you can click *_Run_* to run a brief (1- or 2- second) force layout simulation for the entire graph. Click *_Stop_* to freeze the layout when you see a rendering you like.
+The force layout is continuously adjusted as you move your viewpoint on the canvas, but you might not always want this to happen. 
+
+In particular, separating subgraphs on the canvas can be easier when force layout isn't operating.That's because when you rotate or move the entire graph on the project canvas, the nodes and edges retain their last force layout positions relative to one another. Only the viewpoint changes. 
+
+*To disable force layout:*  
+
+* Click the *_Enable - Disable Force Layout_* toggle icon in the toolbar to temporarily turn off force layout rendering. 
+
++
+image::/v3/08_01_05_ForceDisable.png[,420,280,role=text-left]
++
+
++
+NOTE: You can still adjust force layout slider controls, but the changes will not take effect until you enable force layout again.
+
+ 
+== Toggle between 2D and 3D rendering
+
+3D visualization is a powerful advantage for exploring high-dimensional data. However, you can switch to full 2D mode at any time, or even work exclusively in it.
+
+A flat 2D project space can be useful when creating and sharing views for analytic reports. Many of the  xref:./geometric-layouts[*_Geometric_* layouts] translate well to purely 2D presentation, including *_Line_*, *_Circle_*, *_Spiral_*, and *_Grid_*, as well as  hierarchical *_Rings_* or *_Trees_*
+
+*To toggle to 2D rendering:*
+
+. Click the *_3D-2D_* toggle icon in the toolbar.
+
++
+* Project data are now arranged on a 2D plane, and can no longer be rotated in 3D.
+* In the *_Force_* layout subpanel, the *_Z-Compress_* slider is no longer displayed.
+* *_Geometric_* 3-dimensional *_Cube_*, *_Spring_*, and *_Sphere_* layouts are no longer displayed.
++
+image::/v3/08_01_06_ForceFull2D.png[,720,380,role=text-left]
++
+. To return to 3D rendering at any time, click the *_3D-2D_* toggle icon in the toolbar. 
++
+On the canvas, the data will still be flattened.
++
+. In the *_Force_* layout subpanel, click *_Randomize Position_* or *_Run_* to render a full 3D force layout.  
+
+== Randomize Positions
+
+In *_Force_* layout, nodes are initially rendered in randomized positions. The *_Randomize Positions_* button lets you render a different random arrangement either for selected data, or all data if no data are selected (*except for pinned nodes*).
+
+NOTE: Other force layout controls operate on the entire graph (*except for any pinned nodes*).
+
+* If force layout is enabled, the selected data is randomized as a group.
+* If force layout is disabled, the selected data is randomized as a compact cube (or square) cluster. This can be useful for isolating data and moving it away from other data on the canvas.
+
+*To randomize positions in a force layout:*
+
+. If desired, click the *_Enable - Disable Force Layout_* toggle icon in the toolbar to temporarily turn off force layout rendering.  
+. Select nodes using any method. If no nodes are selected, all node positions are randomized, *_except for pinned nodes_*.
+. In the *_Layout > Force_* subpanel, click the *_Randomize Positions_* button. 
++
+The example below shows a *_Randomize Positions_* operation when force layout is disabled.
++
+image::/v3/08_01_07_RandomizeForce.png[,720,380,role=text-left]
+
+==  Run and Stop 
+
+With force layout enabled, you can:
+
+. Click *_Run_* to run a brief (1- or 2- second) force layout simulation.
+. Click *_Stop_* to freeze the layout when you see a rendering you like.

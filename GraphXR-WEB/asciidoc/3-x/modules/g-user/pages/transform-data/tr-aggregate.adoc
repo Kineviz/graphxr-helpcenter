@@ -1,14 +1,12 @@
-= Collecting data with Aggregate
+= Aggregate Property values
 
-*_Aggregate_* lets you gather properties from a node's neighboring nodes or edges, optionally perform a function on those values, and write the result back to the origin node. You can use *_Aggregate_* to generate quantitative data relating to how graph data are connected. For example, in a telephone call log, you can aggregate the number of incoming and outgoing calls for a given caller, and write that aggregate value as a property on each caller node.
+*_Aggregate_* lets you gather properties from a node's neighboring nodes or edges, optionally perform a function on those values, and write the result back to the origin node. The *_Aggregate_* transform starts from a node, collects neighbors connected by a specific relationship, calculates aggregate property values, and writes them back to the original node as a new property. You can aggregate along a property of neighbor nodes or a property of connecting edges.
 
-The *_Aggregate_* transform starts from a node, collects neighbors connected by a specified relationship, calculates new aggregate property values, and writes them back to the original node as a new property.
-
-You can aggregate along either a property of neighbor nodes or a property of connecting edges.
+Use *_Aggregate_* to generate quantitative data relating to how the graph is connected. For example, in a telephone call log, you can aggregate the number of incoming and outgoing calls for a given caller, and write that aggregate value as a property on each caller node.
 
 == Preset formulas for an Aggregate property
 
-Preset formulas are available for often-used calculations, as shown in the following table. You can also enter a _custom_ javascript formula.
+Preset formulas for often-used calculations are shown in the following table. You can also enter a _custom_ javascript formula.
 
 [cols="1,2,4"]
 |===
@@ -47,41 +45,36 @@ Preset formulas are available for often-used calculations, as shown in the follo
 | (neighborPropValues) \=> _.minBy(neighborPropValues, d \=> Number(d) \| 0)
 |===
 
-Editing a preset moves it to the _custom_ item, where you can test or run the modified formula.
+== Aggregate connections between nodes
 
-== Aggregating connections between nodes
+We can use *_Aggregate_* to add the total number of lines spoken on each Game of Thrones episode to the graph.
 
-We can use *_Aggregate_* to find the total number of lines spoken on each Game of Thrones episode.
+NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. For a hands-on exercise see our xref:g-learning:how-to-graphxr/how-to-graphxr.adoc[How to GraphXR] tutorials. A _Lines.csv_ file includes data about the dialog in the show, and an _Episodes.csv_ file includes details about each season and episode. 
 
-NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. For a hands-on exercise see our xref:g-learning:how-to-graphxr/how-to-graphxr.adoc[How to GraphXR] tutorials. 
+We first transform the imported data as follows:
 
-A _Lines.csv_ file includes data about the dialog in the show, and an _Episodes.csv_ file includes details about each season and episode. 
-
-We first transform data imported from these files as follows:
-
-* Use the xref:./tr-fx.adoc[*_f(x)_* transform] to calculate _seasonEpisode_ property values for the _Episodes_ category. This allows us to match the _seasonEpisode_ property in _the Lines_ category.
+* Use an xref:./tr-fx.adoc[*_f(x)_* transform] to format _seasonEpisode_ property values for the _Episodes_ category, so that they match the _seasonEpisode_ property in _the Lines_ category.
 * Use the xref:./tr-link.adoc[*_Link_* transform] to link lines to their respective episodes through a new _SPOKEN_ON_ relationship.
 
 *To aggregate connections between nodes:*
 
-. Select one or more nodes. For example, click the _Episodes_ category to select its nodes.
-. Open the *_Transform_* panel and *_Aggregate_* tab, and enter the following:
+. Deselect the data on the canvas.
+. Open the *_Transform_* panel and *_Aggregate_* subpanel.
 
-* In *_Aggregate To Category_*, select _Episodes_. +
-* In *_Aggregate Along_* select the _SPOKEN_ON_ relationship. +
-* Click *_Property from neighbor nodes_* and select the _lineCount_ property. +
-* In the *_New Prop_* textbox, enter _totalLines_. This is the new aggregate property that will contain the total number of lines of dialog in an episode. +
-* In the *_Formula Name_* menu, select the _sum_ preset. A sample result is displayed below the property name.
-+
-image::/v2_17/06_03_01_Aggregate1320.png[,720,480,role=text-left]
-
-. Click *_Run_*. Error and completion messages appear below the *_Run_* button.
-+
-Since we are just adding a new property, the graph does not visually change.
+. In *_Aggregate To Category_*, select _Episodes_. +
+. In *_Aggregate Along_* select the _SPOKEN_ON_ relationship. +
+. In *_Property Source_*, we'll click  *_Property from neighbor nodes_* and select the _lineCount_ property.
+. In *_Formula_*, choose the *_Sum_* preset from the dropdown menu.
+. In the *_New Property_* textbox, enter _totalLines_. This is the new aggregate property that will contain the total number of lines of dialog in an episode. A sample result is displayed below the property name.  
 
 +
-image::/v2_17/06_03_02_RunMessages720.png[,720,240,role=text-left]
+image::/v3/06_03_01_AggregateSetup.png[,720,480,role=text-left]
 
-. To review the new _totalLines_ property, open the *_Table_* panel, click the *Category* tab, and select _Episodes_. You can also *_Export_* the entire table as a CSV, or open an *_Enhanced Table_* to edit and export the table.
+. Click the *_Run_* button, which also shows the number of nodes involved. *_Log_* Error and completion messages appear below the *_Run_* button.
 +
-image::/v2_17/06_03_03_AggregateTable1320.png[,720,480,role=text-left]
+Since we are just adding a new property to nodes, the graph on the canvas does not visually change.
++
+
+. To review the new _totalLines_ property, open the *_Table_* panel, click the *Category* subpanel, and select _Episodes_.
++
+image::/v3/06_03_02_AggregateTable.png[,420,480,role=text-left]

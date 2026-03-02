@@ -1,64 +1,123 @@
 = Import Data by Drag and Drop
 
-You can import data in _.CSV_, _.JSON_, GraphXR's _.graphxr_ and _.graphxrsnapshots_, and many other data formats by drag and drop. Simply locate the file on your system, then drag and drop it anywhere in the project graph space.
+You can quickly import data of many kinds by drag and drop. These include:
 
-NOTE: In the *_Project_* panel and *_Data_* tab you can also click *_Import_* or *_Import Views_* to navigate to a file and import the data.
+* A CSV or Excel flat file
+* A view exported as a zipped CSV or Excel archive 
+* Graph data views, including an exported _.graphxr_ file or a _.graphxrsnapshot_ view archive
+* An exported internal database. REFERENCE
+* JSON data mapping or template files REFERENCE
 
-image::/v2_17/02_01_01_ProjectImport.png[,720,420,role=text-left]
+Data in an CSV or Excel flat file or view archive is *added* to the existing view. 
 
-WARNING: Be sure to save any current view before you import data. To do this go to the project view menu and either *_Save_* your current view, or *_Save As_* a new view. If you do unintentionally import data to an existing view, you can immediately use *_Save As_* to create a new view.  
+Views in _.graphxr_ files or a _.graphxrsnapshots_ archive *replace* the existing view.
 
-== Importing flat files by drag and drop
+NOTE: When you import a saved view by drag and drop, or by using *_Import_* in the *_Data Store_* subpanel, an _Untitled_ view is created. However, the existing view label, date of creation, date last modified, or view annotations are not preserved. 
 
-When you import data that has no defined graph schema, such as a flat .CSV file, each row is imported as a node of a single default category. 
+IMPORTANT: Before importing data, save the current view, and consider whether you want to add the data to the current view, or import it into a new unsaved view. 
 
-NOTE: Keep in mind that data from _CSV_ , _Excel_, or _.JSON_ files is *added to* any data already in the project space. To create a new empty view, save your current view, and then select *_New_* from the project view menu. This clears the existing data and opens a new empty _Unsaved View_.    
+== Import a single CSV or Excel file
 
-For example, the following spreadsheet can be dropped onto the project space. It's a travel log with three columns headed _date_, _from_country_, and _to_country_ .
+When you import data that has no defined graph elements, such as a flat CSV or Excel file, each row is imported as a node of a single default category, with properties defined by the column headings and row values. No relationships are created. 
 
-* A node representing a single travel event is created for each row. All the nodes are assigned a single category labeled with the name of the file (i.e. _COVID-19 Travel Log - Sheet1)_.
+*To import a CSV or Excel file:*
+
+. On the project view menu, save your current view.
+. If you don't want to add the data to the current view, choose *_New_* on the view menu to create a new unsaved view and clear the canvas.
+. Locate the file on your system, and drag and drop it anywhere on the project canvas.
 +
-image::/v2_17/02_01_02_ImportCSVCovid.png[,720,420,role=text-left]
-
-* The column headings in the file are assigned as property names: _date_, _from_country_, and _to_country_, and property values are transferred for the respective nodes. In the *_Table_* panel, you can inspect the imported nodes and their property values.
+NOTE: You can  open the *_Project > Data Store_* subpanel and use the *_Import_* menu to navigate to local files you want to import.
 +
-image::/v2_17/02_01_03_CSVImportMapping.png[,720,420,role=text-left]
 
-Starting with unconnected nodes, you can create connected graph data using GraphXR's navigation, selection, and transformation tools. In particular, the *_Transform_* panel provides powerful ways to extract and/or simplify categories, properties, and  relationships.
++
+For example, when this travel log spreadsheet is dropped onto the canvas of a new view:
++
 
-== Importing graph data views by drag and drop
+* A node representing a single travel event is created for each row. All nodes are assigned a single category labeled with the name of the file (i.e. _COVID-19 Travel Log - Sheet1)_.
++
+image::/v3/02_01_01_ImportCSVCovid.png[,720,420,role=text-left]
 
-You can simply drag and drop graph data held in a JSON file, _CSV_ or _Excel_ archive, _graphxr_ file, or _graphxrsnapshots_ archive. The categories, relationships, and their properties are included. The data in _graphxr_ files or a _graphxrsnapshots_ archive retain the 3D layout and view perspective it had when it was saved. 
+* The column headings in the file are assigned as property names: _date_, _from_country_, and _to_country_, and property values are transferred for the respective nodes. You can inspect the imported nodes and their property values in the *_Table_* panel.
++
+image::/v3/02_01_02_ImportCSVTable.png[,720,420,role=text-left]
++
 
-WARNING: Keep in mind that data imported from a _.graphxr_ view, _.graphxrsnapshots_ archive, or data _View_  *replaces* any data already in the project space. Be sure to save (or  export) your current view before you import a view. 
++
+NOTE: Starting with unconnected nodes, you can create connected graph data using GraphXR *_Transforms_* to extract new categories, assign properties, and create relationships. 
+ 
+== Import project views by drag and drop
 
-You can:
+You can simply drag and drop graph data held in a JSON file, _CSV_ or _Excel_ archive, _graphxr_ file, or _graphxrsnapshots_ archive. 
 
-* Use the view menu or *_Views_* tab to save your view, or
-* Go to the *_Project_* panel and *_Data_* tab and choose *_Save GXRF_*, *_Save CSV_*, *_Save Excel_* or, if a database is connected to your project, *_Save Neo4j_*.
+=== Import a CSV or Excel view archive
 
-== Importing Snapshots
+A project view exported as a CSV or Excel archive consists of a set of tables that retain the view's *visible* graph elements, but not its layout or data that's temporarily hidden.   
 
-Once a snapshot archive has been saved, you can simply restore it to your project by drag and drop. 
+Importing this zipped file by drag and drop *adds* the graph data to the data currently on the canvas, in a default force layout. 
+
+*To import a CSV or Excel view archive:*
+
+. On the project view menu, save your current view.
+. If you don't want to add data to the current view, choose *_New_* on the view menu to create a new unsaved view and clear the canvas.
+. Locate the file on your system, and drag and drop it anywhere on the project canvas.
++
+image::/v3/02_01_03_ImportExcelViewArchive.png[,720,420,role=text-left]
++
+
++
+NOTE: You can also open the *_Project > Data Store_* subpanel and use the *_Import_* menu to navigate to local files you want to import.
++
+
++
+The view's visible graph elements (but not any hidden data) are added to the project canvas.
++
+
+. On the view menu, choose *_Save As_*, enter a descriptive name, and click *_Save_*.
++
+image::/v3/02_01_04_ImportExcelViewVisible.png[,720,420,role=text-left]
++
++
+Once saved, the imported view appears on the *_Project > View_* subpanel, and on the view menu.
++
++
+image::/v3/02_01_05_ImportSavedExcelView.png[,420,280,role=text-left]
+
+=== Import a _.graphxr_ view
+
+In a  _graphxr_ file  or  _graphxrsnapshots_ archive, categories, relationships, and their properties are preserved. Visible data retains its 3D layout and view perspective, and hidden data is included. 
+
+A _.graphxr_ view file  *replaces* any data already on the canvas. 
+
+IMPORTANT: Save (or export) your current view before you import a view. 
+
+*To import a .graphxr view:*
+
+. Save your current view.
+. Locate the _.graphxr_  view file, and drag and drop it on your project canvas.
++
+The view *replaces* the view on the canvas.
++
+image::/v3/02_01_06_ImportGXRFView.png[,720,420,role=text-left]
+
+
+=== Import a _.graphxrsnapshots_ archive 
+
+You can restore an exported _graphxrsnapshots_ archive to your project by drag and drop. As with a single .graphxr view, the categories, relationships, and their properties are preserved, cisible data retains its 3D layout and view perspective, and hidden data is included.  
+
+A _.graphxrsnapshots_ archive *replaces* any data already on the canvas with the most recent snapshot view. 
 
 *To import a snapshot archive:*
 
-. Open a GraphXR project.
-. Locate the _.graphxrsnapshots_ archive file, and drag and drop it on your project's graph space.
+. Save your current view.
+. Locate the _.graphxrsnapshots_ archive file, and drag and drop it on your project canvas.
 +
-The set of snapshots appear in the *_Snapshots_* window, and the most recent snapshot is imported to the graph space.
+image::/v3/02_01_07_SnapshotStart.png[,720,420,role=text-left]
 +
-
-WARNING: Existing data if any is replaced with the most recent snapshot view. 
-
-. You can import any of the snapshots in the archived set as your new starting point. Click the arrow on the left edge of the *_Snapshots_* window to expand the archive and locate the snapshot you want.
 +
-image::/v2_17/02_01_04_SnapshotStart720.png[,720,420,role=text-left]
-
-. Click the snapshot's *cloud* icon to import it.
+The set of snapshots appear in the *_Snapshots_* pane, and the most recent snapshot in the archive *replaces* the view on the canvas.
++ 
+. You can load any of the snapshots in the archived set to the current view as your new starting point. Locate the snapshot view you want and click its cloud icon to replace the current view on the canvas.
 +
-image::/v2_17/02_01_05_SnapshotEnd720.png[,720,420,role=text-left]
-+
+image::/v3/02_01_08_SnapshotLoadOtherView.png[,720,420,role=text-left]
 
-IMPORTANT: When you exit or log out, snapshots are deleted. Before you exit the project space, use *_Save Snapshots_* to export a snapshots archive to your local system that you can then import by drag and drop.
-
+ 

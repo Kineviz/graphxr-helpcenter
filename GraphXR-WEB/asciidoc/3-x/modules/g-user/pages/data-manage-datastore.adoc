@@ -1,0 +1,163 @@
+= Manage the Data Store
+
+The *_Projects > Data Store_* subpanel provides utilities for data import and export, and options to manage the the database connected to the project.  
+
+image::/v3/02_06_01_DataStore.png[,520,520,role=text-left]
+
+* The *_Utilities_* section enables you to import and export data and views, and to save a template. Its *_Export All Views_* and *_Save Template_* functions are available only as *_Data Store_* utilities.
+
++
+NOTE:  See xref:display-options/create-template.adoc[*Create a Template*] for details on using *_Save Template_* to create, save, apply, and edit a project template.
++
+ 
+* The *_Data Store_* section is where you manage the project's connected databases. You can:
+
+** Review details for the graph database specified when the project was created.
+** Save the graph on the canvas to the internal data store or external database.  
+** Export the internal graph database as a .zip file. 
+** Upload a graph database .zip file to the existing (or a new) internal database instance.
+** Empty the current internal graph database.
+** Delete any of the connected databases, if you are an admin user. 
+  
+== Export from the Data Store
+
+Exporting data from a project may be needed, for example, to provide data to another application or user, or for external backup of important data transformations or results.
+
+For most import and export options, you don't need to open the *_Data Store_* subpanel. You can export data and views using the *_Export_* menu at the top right of the project canvas, and import data files (except for .JSON mappings) by drag and drop. 
+
+However, the *_Export All Views_* function is available only as a *_Data Store_* utility.
+
+*To export all the project's saved views:*
+
+. Open the *_Projects > Data Store_* subpanel
+. In the *_Utilities_* section at the top, click the *_Export All Views_* button. 
+ 
++
+image::/v3/02_06_02_ExportAllViews.png[,420,180,role=text-left]
++
+
++
+Each view is exported to your local system as a separate _.graphxr_ file labeled with the view name and a timestamp.
+
++
+image::/v3/02_06_03_GraphXRExportedViews.png[,320,200,role=text-left]
+
+
+== Manage the internal graph database
+
+The *_Data Store_* section below the *_Utilities_* provides options to manage the project's connected graph databases. 
+
+You can:
+** Review details for the graph database specified when the project was created.
+** Save the graph on the canvas to the internal data store, optionally creating a new database instance.  
+** Export the internal graph database as a .zip file. 
+** Upload a graph database .zip file to the existing (or a new) internal database instance. 
+** Empty the current internal graph database.
+** Delete the database. 
+
+
+=== Save the current view to the internal graph database
+
+If you have the necessary user privileges, you can save the data in the current view on the canvas to an internal Kuzu graph database connected to the project.
+
+*To save the data in a view to the internal data store:*
+
+. Open the *_Project > Data Store_* subpanel and scroll down to the *_Data Store_* section.
+. Review the current details for the connected internal database: *_Database Type_*, *_Database Name_*, *_Version_*, and *_Size_*.
+. Click the *_Save Canvas to Internal Data Store_* button.
++
+image::/v3/02_06_04_SaveToInternal.png[,420,380,role=text-left]
++
+
+. In the *_Save to Internal Data Store_* dialog:
++
+* To create a new database instance for the saved data, edit the *_Database name_*. Otherwise the data in the view will be added to the current internal database instance.
+* Review the list of categories and their properties. For each category, you must set at least one property as a *_Key_* by clicking its *-* (minus) icon.
++
+Keys you choose are moved to the *_Key_* list at the top of each category, marked with a *+* (plus) icon. 
++
+
++
+image::/v3/02_06_05_SaveDBDialog.png[,520,480,role=text-left]
++
+
+. Click *_Save to Internal Data Store_*. 
++
+A message that saving was successful display, or an error message details any problems saving to the database.
+
+=== Export or Upload the internal graph database
+
+*To export the internal graph database as a .zip file:*
+
+. Open the *_Project > Data Store_* subpanel and scroll down to the *_Data Store_* section. 
+. Click the *_Export Database_* button.
+
++
+image::/v3/02_06_06_GraphXRExportedDatabase.png[,420,180,role=text-left]
++
+
++
+The database is exported to your local system as a .zip file.
+
+*To upload an exported graph database .zip file:*
+
+. Open the *_Project > Data Store_* subpanel and scroll down to the *_Data Store_* section. 
+. Click the *_Upload ZIP_* button.
++
+The database is uploaded to the project.
+
+
+=== Empty the current internal graph database
+
+If you have transformed data to a much different model than you started with, you may want to  remove all the data in the internal database before you save more data to it. 
+
+IMPORTANT: Consider exporting the current database before emptying it.  
+
+*To empty the current internal graph database:*
+
+. Open the *_Project > Data Store_* subpanel and scroll down to the *_Data Store_* section. 
+. Click the *_Empty Database_* button.
++
+image::/v3/02_06_07_EmptyDatabase.png[,420,180,role=text-left]
++
+ 
+A message asks you to confirm emptying the database. 
+
++
+image::/v3/02_06_08_ConfirmEmpty.png[,320,180,role=text-left]
++
+
+. Check the database name to be sure it is the one you want to empty.
+. Click  *_Empty Database*,  or *_Cancel_* to exit without emptying the database
+
+
+=== Delete an internal graph database instance
+
+If you have created several database instances you may want to delete them. Since this is irreversible, the *_Danger Zone_* dropdown hides the button so that you are less likely to choose it my mistake. 
+
+*To delete an internal graph database instance:*
+
+. Open the *_Project > Data Store_* subpanel and scroll down to the *_Data Store_* section. 
+. Click the *_Danger Zone_* dropdown to reveal the *_Delete Database_* button.
++
+image::/v3/02_06_09_DeleteDatabase.png[,420,480,role=text-left]
++
+. Click *_Delete Database_*.
+ 
++
+A message asks you to confirm the deletion of the database.
++
+
++
+image::/v3/02_06_10_ConfirmDelete.png[,320,180,role=text-left]
++
+
+. Check the database name to be sure it is the one you want to delete.
+. Click  *_Delete_*,  or *_Cancel_* to exit without deleting the database.
+ 
+
+
+
+
+
+

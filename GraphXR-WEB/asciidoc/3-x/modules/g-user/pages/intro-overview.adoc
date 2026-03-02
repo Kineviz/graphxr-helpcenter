@@ -1,31 +1,35 @@
 = GraphXR User Guide
 
-GraphXR is a browser-based visualization application that brings speed and flexibility to visualizing complex and hidden connections in data.
+https://www.kineviz.com/graphxr[GraphXR] is a visual analytics platform for exploring labeled property graphs. A GraphXR project is a virtual 3D workspace designed to accelerate exploration and foster collaborative discovery.
 
 == The GraphXR Platform 
 
-image::/v2_17/01_00_01_GettingStartedIntro.png[] 
+image::/v3/01_00_01_UserGuideIntro.png[] 
 
 With GraphXR you can:
 
-* Seamlessly import graph data from a graph database or other source (Neo4j via Cypher, RDBMS via SQL, CSV, JSON, Azure DB via Gremlin, etc.).
+* Seamlessly import graph data from sources including:
 
-* Navigate, select, and edit data efficiently in the graph environment.
+** A graph database via GQL, Cypher, or visual no-code graph query. Supported databases include Google SpannerGraph, Memgraph, Puppygraph, Neo4j, and more.
+** A relational database via SQL or Azure DB via Gremlin.
+** CSV and JSON via drag and drop. 
 
-* Model and transform data dynamically using data mapping and a powerful suite of data transforms.
+* Navigate the graph efficiently in GraphXR's 3D graph environment.
 
-* Explore graph connections through widely used graph algorithms such as *PageRank* and *Shortest Path*.
+* Model, transform, and simplify complex graphs iteratively through data mapping and powerful data transforms, and save your work to a project's views and its internal datastore. 
 
-* Visualize the graph through layouts, geospatial mapping, and time series display.
+* Discover graph patterns through widely used graph algorithms for *Path Finding*, *Centrality*, and *Community Detection*.
 
-* Save and share a project's data and views.
+* Create compelling graph visualizations using flexible layouts and geospatial mapping.
+ 
+* Save, share, and export data views and the internal datastore.
+
+* Securely collaborate via managed users, permissions, and data sources.
 
 == Supported Environments
 
 * WINDOWS, MAC OSX, AND LINUX
 
 * CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING.
-
-* OCULUS RIFT, HTC VIVE, AND WINDOWS MIXED REALITY. The GraphXR client includes beta support for Virtual Reality (VR) hardware in the Google Chrome browser via WebXR.
 
 * The GraphXR client runs best in Google Chrome. Compatibility with other browsers may vary.

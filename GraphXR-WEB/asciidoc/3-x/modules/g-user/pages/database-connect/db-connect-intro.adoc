@@ -1,4 +1,4 @@
-= Connecting GraphXR to an External Database
+= Connect GraphXR to an External Database
 
 You can connect any GraphXR project to the following external relational or graph data sources for property graph visualization and analytics in a collaborative workspace, with no need to replicate or move data: 
 

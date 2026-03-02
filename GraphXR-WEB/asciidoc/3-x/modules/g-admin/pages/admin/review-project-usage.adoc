@@ -1,0 +1,13 @@
+= Track Project Usage
+
+In the *_Project  Analytics_* panel you can 
+
+* Review the total number of users, projects, and views maintained i GraphXR. 
+* Review the number of projects and views created by each user.
+* Enter a user email to see project usage by that user.
+
+* Filter analytics by time period.
+* Display usage on line or bar graphs or in lists.
+* Export analytic details in formats such as .CSV files or .PNG graphics.
++
+image::/v3/03_02_ProjectAnalytics.png[,720,340,role=text-left]

@@ -1,20 +1,24 @@
-= Deleting Data
+= Delete Data
 
-Deleting data from the project space is easily done. You can:
+You can delete data at any time:
  
-* Delete selected nodes and edges.
-* Clear all data from the project.
-* Clear unused category labels from the *_Project_* panel when no nodes of that category remain in your project.
+* Delete selected nodes and edges from the canvas.
+* Delete a property and its values from the nodes (or edges) of a category (or relationship).
+* Clear all data from the project, including any hidden data.
+* Clean unused category and relationship labels from the *_Project_* panel's *_Category_* and *_Relationship_* subpanels.
 
-Deleting data in the graph space does not delete the data you pulled from a Neo4j database. The data model persists, and the _Categories_ and _Relationships_ tabs in the *_Project_* panel still list your defined entity labels.
-
-WARNING: Editing and transformations done in your GraphXR project are lost when you exit a project unless you save the data. You can xref:data-save-views/data-save-views.adoc[save a persistent data view in the project], xref:data-export/data-export-neo4j.adoc[export data to Neo4j], export a xref:data-export/data-export-views.adoc[data view or snapshot archive] or export data as xref:data-export/data-export-csv-excel.adoc[CSV or Excel files].
+Data is deleted from the project canvas, not from saved views or the connected internal or external database. 
 
 == Delete Selected Nodes 
 
 *To delete a data selection:*
 
-* Select data using any method, and select the *_Delete_* (trash can)icon on the right-click menu or toolbar (or press *_del_* or *_backspace_*).
+. Select data using any method.
+. Select *_Delete_* (trash can icon) on the toolbar or the right-click menu (or press *_del_* or *_backspace_*).
++
+image::/v3/05_20_01_ToolbarDeleteIcon.png[,720,340,role=text-left]
+
+TIP: Use *_Ctrl_*+*_Z_* to immediately undo a *_Delete_* or *_Clear_* action.
 
 == Clear All Data
 
@@ -22,21 +26,123 @@ WARNING: Editing and transformations done in your GraphXR project are lost when 
 
 * Click the *_Clear_* toolbar icon (*_Ctrl_* + *_Shift_* + *_C_*).
 +
-image::/v2_17/05_01_03_DeleteIcons1344.png[,720,340,role=text-left]
+image::/v3/05_20_02_ToolbarClearIcon.png[,720,340,role=text-left]
 
-IMPORTANT: You can use *_Ctrl_*+*_Z_* to immediately undo a *_Delete_* or  *_Clear_* action.
+TIP: Use *_Ctrl_*+*_Z_* to immediately undo a *_Delete_* or *_Clear_* action.
 
-== Clean Unused Category Labels
+== Delete a Property
 
-The *_Project_* panel retains category labels even when no nodes of that category remain in your project. You can use the *_Clean_* button to clean out unused labels.
+In an Enhanced Table you can delete any property and its values from all the nodes (or edges) of a category (or relationship).
 
-*To remove unused category labels:*
+*To delete a property:*
 
-. Open the *_Project_* panel, select the category bubble, and click the *_Clean_* button.
+. Deselect all the data on the canvas.
+. Open the *_Table_* panel, and  the *_Category_* or *_Relationship_* subpanel.
+. Click to select the category (or relationship) that includes the property you want to delete.
+
 +
-image::/v2_17/05_01_03a_CleanCat720.png[,520,220,role=text-left]
+image::/v3/05_19_01_PropDeleteTable.png[,520,340,role=text-left]
 +
-. In the warning dialog, click *_OK_* to confirm removal of the category label.
+
+. Click *_Enhanced Table_* to open the editable table.
+. Click the settings icon next to the property name, and select *_Delete_*.
+
 +
-image::/v2_17/05_01_03b_CleanCatDialog720.png[,520,220,role=text-left]
+image::/v3/05_19_02_PropDeleteEnhanced.png[,520,340,role=text-left]
 +
+
++
+The property column is removed.
++
+
++
+image::/v3/05_19_03_PropDeleted.png[,520,340,role=text-left]
++
+
+. Click the *X* in the upper right corner to close the *_Enhanced Table_*.
+
++ 
+The property and its values are now deleted from the basic table, and no longer appear in information panels, style setting dialogs, or the property lists in the *_Projects_* panel.
+
++
+image::/v3/05_19_04_PropDeletedBasicTable.png[,520,340,role=text-left]
+
+
+== Clean Unused Labels
+
+When you delete data or clear the graph, the data model and its metadata persists. This means that the *_Categories_* and *_Relationships_* subpanels in the *_Project_* panel retain category and relationship labels even when no entities of that type remain in the project.
+
+To clean out unused labels you can: 
+ 
+* Use the *_Clean_* button that appears when a category or relationship is unused, or
+* Use the *_Clean Unused Config for Categories/Relationships_* button in the *_Settings_* panel to remove all unused labels in one step. 
+
+=== Clean an unused label
+
+*To remove a single unused entity label:*
+
+. Open the *_Project_* panel and *_Category_* or *_Relationship_* subpanel, and click an unused label.
++
+image::/v3/05_20_03_CleanSingle.png[,520,220,role=text-left]
++
+. Click its *_Clean_* button.
+
++
+A *_Warning_* message asks you to confirm removal of the metadata for the entity.
+
++
+image::/v3/05_20_04_CleanWarning.png[,520,220,role=text-left]
++
+. Click *_OK_* to confirm. 
++
+The unused label disappears from the *_Category_* or *_Relationship_* subpanel.
+   
+=== Clean all unused labels
+
+*To clean all unused entity labels:*
+
+. Open the *_Project_* panel and *_Settings_* subpanel, and click the *_Advanced Settings_* dropdown arrow.
+. Scroll to the bottom of the panel, and click *_Clean Unused Config for Categories/Relationships_*.
++
+image::/v3/05_20_05_CleanAllUnused.png[,520,220,role=text-left]
++
+
++
+A message indicates successful removal of the unused labels.
++
+
+. Re-open the *_Category_* and *_Relationship_* panels to see that the only remaining labels are for nodes and edges currently on the canvas. 
+
+== Empty or delete a project's internal database
+
+In some situations, you may want to empty a project's internal database, for example, if it includes transformed graph elements you no longer find useful. 
+
+You can also delete a project's connected internal database – a more extreme action. You might do this for a project where you want the saved views to persist, but not the data in the internal database.   
+
+IMPORTANT: Consider exporting the current database before emptying or deleting it. 
+
+NOTE: To manage the internal database, the project must be configured to grant access to the *_Project > Data Store_* subpanel. 
+
+*To empty the internal connected database:*
+
+. Open the *_Project > Data Store_* subpanel.
+. In the *_Data Store_* section, optionally click *_Export Database_* 
+. Click *_Empty Database_*
++
+Confirmation message
++
+. Click  *_Empty Database_* to proceed, or *_Cancel_* to exit.
+ 
+*To delete the internal connected database:*
+
+. Open the *_Project > Data Store_* subpanel.
+. In the *_Data Store_* section, optionally click *_Export Database_* 
+. Click the dropdown arrow to open the *_Danger Zone_*.
+. Click *_Delete Database_*.
++
+Confirmation message
++
+. Click  *_Delete_* to proceed, or *_Cancel_* to exit.
+
+ 
+ 

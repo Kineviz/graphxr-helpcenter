@@ -1,4 +1,4 @@
-= Combining data with Merge
+= Combine nodes with Merge
 
 *_Merge_* lets you combine nodes of a single category, or edges of a single relationship based on a property value. This is useful for simplifying a graph quickly.
 
@@ -9,17 +9,26 @@ NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. F
 *To combine nodes using Merge:*
 
 . Deselect all the data to operate on all the data.
-. Open the *_Transform_* panel and *_Merge_* tab.
-. Click *_Category_* and select the _Lines_ category from the dropdown menu.
-. In the *_Select key properties_* dropdown (or scrollable list), select the _seasonEpisode_ property.
+. Open the *_Transform_* panel and *_Merge_* subpanel.
+. In *_Choose merge type_*, click *_Category_* and select the _Lines_ category from the dropdown menu.
+. In the *_Select Property_* dropdown menu, select the _seasonEpisode_ property.
 +
-image::/v2_17/06_04_01_Merge1320.png[,720,480,role=text-left]
+image::/v3/06_04_01_MergeSetup.png[,720,480,role=text-left]
++
+. In *_Options_*, click the *_Clear Unselected Properties_* checkbox.
+ 
++
+NOTE: A merged node will preserve only one of the values for each property from its source nodes. The preserved property value on a merged node is usually meaningless and should be cleared.
 +
 
-NOTE: The resulting merged node will preserve only one of the values for each property from its source nodes. In most cases, these properties should be cleared by checking the *_Clear Unselected Properties_* checkbox before running the merge.
+. Click the *_Run_* button, which also indicates how many nodes (or edges) will be included in the merge.
 
-. Click *_Run_*. Error and progress messages will appear beneath the *_Run_* button.
 +
-The graph is now far simpler. Instead of a few thousand nodes, the _Lines_ category now includes only 73 nodes, the number of episodes in the series.
+The *_Log_* beneath the *_Run_* button displays error and status messages.
 +
-image::/v2_17/06_04_02_MergeDone1320.png[,720,480,role=text-left]
+
++
+On the canvas, the merged graph is now far simpler. Instead of a few thousand nodes, the _Lines_ category now includes only 73 nodes, the number of episodes in the series.
++
+
+image::/v3/06_04_02_MergeDone.png[,720,480,role=text-left]

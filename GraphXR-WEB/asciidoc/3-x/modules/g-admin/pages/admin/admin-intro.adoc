@@ -13,8 +13,9 @@ Registered admin users see an *_Admin_* item on the *_Projects_* page's user men
 * Manage custom *_Icon_* sheets.
 * Create and manage project *_Templates_* that can be applied when creating or editing a project.
 * Create and manage *_Short URL_* lists for shared views or iFrames.
+* Manage LLM connection to GraphXR.
 +
-image::/v2_17/01_01_AdminOpen.png[,720,480,role=text-left] 
+image::/v3/01_01_AdminOpen.png[,720,480,role=text-left] 
 +
 
 

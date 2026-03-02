@@ -1,0 +1,77 @@
+= Property Graphs in GraphXR
+
+A property graph expresses information as *_patterns_* built from entities, connections, and  their associated properties. Exploring graph patterns in terms of both direction and multi-hop connection can quickly reveal insights that are difficult or impossible to discover within tables or hierarchical structures. 
+
+== Property Graph Elements
+
+image:/v3/01_01_02_PropertyGraphExample.png[,540,320,role=text-left]
+
+In GraphXR, a property graph consists of
+
+* *_Nodes_* labeled with a specific *_Category_*, rendered as circles. In GraphXR, a node has only one category label and is therefore an entity within a single category. Each node appears on a GraphXR project canvas as a circle, colored and styled according to its category, for example the _Character_ node with the name _Mad Hatter_.
+  
+* *Edges* labeled with a specific *_Relationship_*, a source node ID and a destination node ID. An edge is rendered as a line connecting two nodes, colored according to its relationship label. A relationship can be defined as directed or directionless. For example, a directed relationship such as PARENT_OF would have an arrow at one end, while a directionless one such as FRIENDS_WITH would not. 
++
+NOTE: Unconnected (floating) nodes can exist; unconnected edges cannot. 
++
+* *Properties* are key-value pairs consisting of a _Property Name_ and its _Property Value_, labeled with a specific category or relationship, and associated with a specific node or edge. For example, the  selected node of the *Book* category shown below includes _author_, _published_, _series_, and _title_  properties, each with its property value.
+
++
+image:/v3/01_01_03_PropertyGraph.png[,420,260,role=text-left]
++
+
+In GraphXR, properties and their values are not initially shown on nodes or edges. You can set properties whose values are used as captions. You can also review and work with properties and their values in an information panel, tables or GraphXR's legend list.
++ 
+Property values can be defined in GraphXR as numbers, text, geospatial coordinates, urls, dates or timestamps. Multiple values can be entered for a property of a node or edge. 
+
+== The Property Graph Schema
+
+The categories, relationships, and properties in a property graph define its current model, or *_schema_*.
+ 
+image:/v3/01_01_04_PropGraphSchema.png[,420,290,role=text-left]
+
+A property graph schema is flexible. You can easily extend and modify it, which lets you explore a graph from many different perspectives. At any time you can:
+
+* Create new categories and relationships. 
+* Add a property to a node or edge.
+* Delete a property value.   
+
+== Sources of Graph Data
+
+Data can be added to your graph from many different sources. You can:
+
+* Pull or query graph data from a graph database connected to GraphXR, or load data exported from other graph databases or another GraphXR project. Data exported from a graph database will include its defined categories, relationships, and properties.
+
+* xref:g-user:data-import/import-by-drag-and-drop.adoc[Import data] in CSV, JSON, and many other formats simply by drag and drop. When you import data that has no associated graph model, such as a flat CSV file, each row in the table is imported as a node of a single default category. In most cases, you will then re-model data imported by drag and drop using GraphXR transforms.
+
+* xref:g-user:data-crud/data-add.adoc[Add new nodes and edges] of existing or new categories or relationships directly in GraphXR. Normally, this is only done for very small amounts of data.
+* xref:g-user:data-crud/data-edit.adoc[Edit] category, relationship, or property labels, and edit property values.
+
+== Graph Data Modeling
+
+The property graph data model is both flexible and extensible. This is a powerful advantage because data exploration and analysis is highly iterative. New categories, relationships, and properties can be added, and old ones re-defined as investigation and analysis proceeds.
+
+* GraphXR's xref:g-user:graphxr-extensions/graph-composer.adoc[*Graph Composer*] extension lets you map graph patterns from multiple CSV data sources or from samples of relational database tables.
++
+image:/v3/01_01_05_SourceGraphComposer.png[,420,390,role=text-left]
++
+
+* GraphXR's xref:g-user:data-import/import-via-mapping.adoc[*Mapping Editor*] lets you construct graph patterns from the columns in a single flat CSV file or relational database table, and apply the model during import. Your mapping is saved and can be re-used and edited. It can even be applied to other tabular files that have content labeled in the same way.
++
+image:/v3/01_01_06_SourceCSVMapping.png[,420,540,role=text-left]
++
+* Once data have been imported, you can
+** xref:g-user:data-crud/data-edit.adoc[Edit] category, relationship, or property labels, and edit property values.
+
+** Use GraphXR xref:g-user:transform-data/intro-transforms.adoc[*Transforms*] to quickly define and apply new data models. You can:
+
+*** Extract a property as a new category and define its connected relationship. 
+*** Aggregate, merge, or simplify complex patterns.
+*** Re-format and combine property values as needed.
++
+image:/v3/01_01_07_SourceTransformExtract.png[,420,540,role=text-left]
+
+
+
+
+

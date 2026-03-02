@@ -2,7 +2,7 @@
 
 Kineviz has developed extensions that enhance or customize GraphXR for the needs of specific user communities.
 
-GraphXR includes the following extensions:
+GraphXR includes the following extensions by default:
 
 * xref:./grove.adoc[*_Grove_*] for building reproducible workflows, dashboards, and learning resources in an observable-based javascript notebook environment.
 * xref:./graph-composer.adoc[*_Graph Composer_*] for modeling property graphs from relational tables or CSVs.

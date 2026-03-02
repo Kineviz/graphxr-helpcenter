@@ -181,4 +181,4 @@ An admin account is set up and registered during installation.
 +
 Once the admin account is registered, an admin user can select *_Admin_* from the user dropdown menu to open the *_Admin_* panel.
 +
-image::/v2_17/01_01_AdminOpen.png[,720,480,role=text-left] 
+image::/v3/01_01_AdminOpen.png[,720,480,role=text-left] 

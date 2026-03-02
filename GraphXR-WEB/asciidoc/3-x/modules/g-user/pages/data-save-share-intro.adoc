@@ -1,0 +1,8 @@
+= Save and Share Graph Data
+
+At any time, you can xref:./data-save.adoc[*Save*] the graph on the project canvas as a view or snapshot. 
+
+You can then xref:data-share-views.adoc[*Share Saved Views*], either by:
+
+* Inviting other users to share a project and make all its views available for collaboration
+* Sharing a single view or creating an iframe embedding for a view.

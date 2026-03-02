@@ -1,8 +1,8 @@
-= Managing Neo4j Datasets in GraphXR
+= Manage Neo4j Datasets
 
 The *_Neo4j Setting_* panel shows the existing connections to Neo4j graph databases:
 
-image::/v2_17/04_01_Neo4jDBs.png[,720,420,role=text-left]
+image::/v3/04_01_Neo4jDBs.png[,720,420,role=text-left]
 
 The following details about each database are included:
 
@@ -14,7 +14,7 @@ The following details about each database are included:
 
 You can review existing connected databases, and use the *_Add Neo4j_* dialog to provide connection to a new Neo4j database.
 
-image::/v2_17/04_02_Neo4jDB_Add.png[,720,420,role=text-left]
+image::/v3/04_02_Neo4jDB_Add.png[,720,420,role=text-left]
 
 NOTE: *_About Neo4J_*. Since GraphXR works seamlessly with Neo4j graph databases, you may want to investigate graph data modeling and database management as it applies to Neo4j.
 

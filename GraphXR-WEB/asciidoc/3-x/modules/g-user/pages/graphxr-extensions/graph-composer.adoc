@@ -2,7 +2,7 @@
 
 GraphXR’s Graph Composer extension is a visual point-and-click interface for modeling and building property graphs from a variety of data sources, including  collections of CSV tables as well as sources in transactional databases such as those managed in the Google Cloud Platform (GCP) Spanner or BigQuery.
 
-image::/v3x/12_01_01_Composer_Intro.png[]
+image::/v3/12_01_01_Composer_Intro.png[]
 
 Graph Composer is designed to guide you through creating a mapping that models a property graph from data sources you select and edit, applying the mapping in a live preview to verify that it's what you want, and saving the result for re-use and export. The steps in the workflow are:
 

@@ -1,29 +1,29 @@
-= Creating and Managing Project Templates
+= Create and Manage Project Templates
 
-A template saves the current settings in a project, including node and edge sizes,  captions, colors, and icons, as well as *_UI configuration_* options that control which interface elements are shown or hidden in the project. It enables a user to apply all the current settings to any new or existing project in one step.
+A template saves the current settings in a project, including node and edge sizes,  captions, colors, and icons, as well as *_UI configuration_* options that control which interface elements are shown or hidden in the project. A user can apply a template to any new or existing project, replicating its settings in one step.
 
-A template can be created by either:
+A template can be created by :
 
-* a general user within a project using the *_Create Template_* button in the *_Project > Data_* tab.
-* an admin user in the *_Templates_* panel. 
+* A general user within a project using the *_Create Template_* button in the *_Project > Data Store_* subpanel.
+* An admin user in the *_Templates_* panel. 
 
 As soon as it is created, the template appears on the template menu available when creating or updating a GraphXR project.
 
-image::/v2_17/08_02_ProjectTemplates_Set.png[,420,420,role=text-left]
+image::/v3/08_02_ProjectTemplates_Set.png[,420,420,role=text-left]
 
-The *_Templates_* panel enables an admin user to configure and manage the entire set of  templates at the server level. 
+In the *_Templates_* panel, an admin user can configure and manage the entire set of  templates at the server level. 
  
-image::/v2_17/08_01_ProjectTemplates_Start.png[,720,480,role=text-left]
+image::/v3/08_01_ProjectTemplates_Start.png[,720,480,role=text-left]
 
-== Adding or Deleting a template
+== Add or Delete a template
 
-You can add a new template at any time. You can either create a template with a  a default configuration which you can then edit, or upload a template .JSON file.
+You can add a new template at any time. You can either create a template with a default configuration which you can then edit, or upload a template .JSON file.
 
 *To add a template:*
 
 . Click *_Add Template_*, and provide a name and description.
 +
-image::/v2_17/08_03_ProjectTemplates_Add.png[,720,340,role=text-left]
+image::/v3/08_03_ProjectTemplates_Add.png[,720,340,role=text-left]
 +
 . Either:
 +
@@ -37,14 +37,14 @@ The new template appears on the template list.
 . Click a template’s *_Delete_* button.
 . Click *_OK_* to confirm deleting the template.
 +
-image::/v2_17/08_04_ProjectTemplates_Delete.png[,720,340,role=text-left]
+image::/v3/08_04_ProjectTemplates_Delete.png[,720,340,role=text-left]
 +
 The template is deleted from the list and the template menu.
 +
 NOTE: If it could be useful later, you can *_Download_* a template to your local system before deleting it. 
 
 
-== Editing a template
+== Edit a template
 
 For any existing template, you can:
 
@@ -53,7 +53,7 @@ For any existing template, you can:
 * Set a *_Priority_* that controls the order in which it appears on the template menu.
 * Download the JSON template file to your local system
 
-=== Edit a template
+=== Edit and upload a template
 
 *To edit or upload a template*:
 
@@ -62,13 +62,13 @@ For any existing template, you can:
 ** Change the template name if desired.
 ** Click *_Upload_* to upload a template file from your local system.
 +
-image::/v2_17/08_05_ProjectTemplates_Edit.png[]
+image::/v3/08_05_ProjectTemplates_Edit.png[]
 
 === Configure a template
 
 Template configuration is organized in separate tabs:
 
-image::/v2_17/08_06_ProjectTemplates_Configure.png[,720,340,role=text-left]
+image::/v3/08_06_ProjectTemplates_Configure.png[,720,340,role=text-left]
 
 * *_UI Config_* configuration, to grant or deny access to specific UI elements.
 * *_Category Relationship Config_*, to edit predefined colors, icons, and captions. 
@@ -91,20 +91,24 @@ The *_UI Config_* panel is opened by default.
 +
 TIP: By default, extensions are found in the *_Extensions_* panel and menu, but you can click any extension to make it visible as a UI button on the left menu.
 +
+
 +
-image::/v2_17/08_07_ProjectTemplates_HideAddExtension.png[,720,420,role=text-left]
+image::/v3/08_07_ProjectTemplates_HideAddExtension.png[,720,420,role=text-left]
++
+
 +
 For example, with the configuration shown above, the Algorithm panel is hidden, and Visual Query Builder and Grove extensions are placed as icons on the left menu bar.
 +
+
 +
-image::/v2_17/08_08_ProjectTemplates_NewMenu.png[,720,720,role=text-left]
+image::/v3/08_08_ProjectTemplates_NewMenu.png[,720,720,role=text-left]
 
 *To edit a template's Category and Relationship settings*:
 
 . Click a template's *_Config_* button
 . Open the *_Category Relationship Config_* tab.
 +
-image::/v2_17/08_09_ProjectTemplates_CatRel.png[,720,480,role=text-left] 
+image::/v3/08_09_ProjectTemplates_CatRel.png[,720,480,role=text-left] 
 +
 * Optionally, click *_Upload_* to navigate to a template file and upload it.
 * Edit the existing styling in the code panel.
@@ -118,11 +122,11 @@ image::/v2_17/08_09_ProjectTemplates_CatRel.png[,720,480,role=text-left]
 + 
 * Choose the initial project *_Settings_* just as you would when opening a project. For example,adjust node and edge scale, and display of captions, avatars, arrow and line style, or pin icons, and more.
 +
-image::/v2_17/08_10_ProjectTemplates_Settings.png[,720,480,role=text-left]
+image::/v3/08_10_ProjectTemplates_Settings.png[,720,480,role=text-left]
 +
 . Click the arrow to return to the *_Templates_* panel. Project settings are automatically saved.
 
-=== Set a template's Priority
+=== Set a template priority
 
 The template *_Priority_* buttons group templates in order of priority on the template menu. Templates within the same priority level are listed in alphabetical order.
 
@@ -132,7 +136,7 @@ The template *_Priority_* buttons group templates in order of priority on the te
 +
 The button toggles between setting a priority of 0, 1, or 2.
 +
-image::/v2_17/08_11_TemplatePriority.png[,720,480,role=text-left]
+image::/v3/08_11_TemplatePriority.png[,720,480,role=text-left]
 
 === Download a template file
 
@@ -142,7 +146,7 @@ image::/v2_17/08_11_TemplatePriority.png[,720,480,role=text-left]
 +
 A JSON template file is downloaded to your local system.
 +
-image::/v2_17/08_12_TemplateDownload.png[,720,280,role=text-left]
+image::/v3/08_12_TemplateDownload.png[,720,280,role=text-left]
 
 
 

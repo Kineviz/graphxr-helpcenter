@@ -1,0 +1,54 @@
+= Manage LLMs
+
+The *_LLM_* panel lets you add and review Large Language Models (LLMs) that can be connected to GraphXR. You can:
+
+* Add an LLM.
+* Review and update version, usage limits and other LLM details.  
+
+*To add an LLM:*
+
+. Open the *_LLM_* panel and click the *_Add_* button at the upper right corner.
+
+image::/v3/10_01_LLMPanelAdd.png[,720,340,role=text-left]
+
+. In the *_Add_* dialog, enter the required details for the LLM, including:
++
+* *_Provider_*: LLM provider (i.e. OpenAI, Claude, etc.)
+* *_Name_*: The name of your LLM instance (e.g.my_openai). 
+* *_API URL_*:
+* *_API Key_*:
+* *_Organization_*:
+* *_Model Name_*:
+* *_Embedding Model_*:
+* *_Chat Limit_*: Set maximum chat requests allowed for non-admin users per 2 hours. Zero (0) means no limit
+* *_Default Model_* checkbox: Click to use the default LLM model.
++
+. Click *_Save_* or *_Cancel_*.
++
+When saved, the  LLM appears in the list. 
++
+
++
+image::/v3/10_02_LLMAdded.png[,720,340,role=text-left]
++
+
+*To update an LLM connection:*
+
+. Open the *_LLM_* panel and click the *_Edit_* button for a connected LLM.
++
+image::/v3/10_03_LLMEdit.png[,720,340,role=text-left]
++
+
+. Enter updated details, such as *_Model Name_* and *_Chat Limit_*.
+. Click *_Save_* or *_Cancel_*.
+
+*To delete an LLM connection:*
+
+. Open the *_LLM_* panel and click the *_Delete_* (trash can) button for the connected LLM.
++
+image::/v3/10_04_LLMDelete.png[,720,340,role=text-left]
++
+
+. Click *_Delete_* (or *_Cancel_*) in the confirmation message.
+
+

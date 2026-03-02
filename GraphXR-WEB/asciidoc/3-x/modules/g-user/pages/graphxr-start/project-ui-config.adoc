@@ -1,0 +1,42 @@
+= Configure a Project User Interface
+
+You can configure user interface (UI) elements displayed in a GraphXR project, to either limit or expand the tools and functionality available in a project with the default GraphXR UI. 
+
+The *_UI Config_* button in the *_Project > Settings_* subpanel opens a UI configuration dialog where you can enable or disable presentation of UI panels, extensions, and right-click menu and toolbar options. 
+
+With UI configuration, a project can be granted additional GraphXR functionality that may not be present in your default configuration. 
+
+For example, a GraphXR xref:explorer:spanner-intro.adoc[*_Explorer_*] project presents a streamlined UI designed primarily for graph database query and visual exploration. Additional UI features a user may want to add include: 
+
+* *_Layout_*, for the panel to sort nodes in geometric layouts by property value, which is not available in the toolbar's *_Quick Layout_* menu.
+* *_Map_*, for the panel to drop nodes with lat-long property values on a world map.
+* Property graph modeling features:
+** The *_Transform_* panel and its Formula, Extract, Link, Aggregate, Merge, and Shortcut subpanels). 
+** The *_Graph Composer_* extension to model collections of relational tables or CSVs as a property graph.
+** The *_Grove_* extension, for building and sharing Observable-based notebooks.
+
+*To configure a project's User Interface elements:*
+
+. In the *_Project > Settings_* subpanel, click *_UI Config_*.
+
++
+image::/v3/01_04_30_SettingsUIConfig.png[,520,280,role=text-left]
+
+
++
+The project *_UI Configuration _* dialog displays all the UI elements you can enable globally, enable on the project, or disable. The icon next to each element indicates its current status.
++
+
++
+image::/v3/01_04_31_ProjectUIConfiguration.png[,720,480,role=text-left]
++
+
+. Click the checkbox or icon next to an element to enable (or disable) it in the project.
+. Scroll to the top of the dialog and click *_Save_* to apply the changes and exit to the project canvas.
+
++
+The UI is updated. For example, the example project menu below now includes icons for previously hidden GraphXR panels and extensions.
++
+
++
+image::/v3/01_04_32_ProjectUIConfigNewMenu.png[,520,380,role=text-left]

@@ -1,6 +1,9 @@
-= Reformatting Data with fx
+= Reformat with fx 
 
-With graph-based _f(x)_ _functions_ you can calculate values based on existing properties and write the results back to the source nodes or edges. This capability is similar to _formulas_ in Excel and SQL, and _functions_ in a MapReduce framework. An _f(x)_ formula lets you run javascript formulas on a single category or relationship. You select existing properties in the data to create new properties according to pre-defined or custom formulas.
+With graph-based _f(x)_ _functions_ you can calculate values based on existing properties and write the results back to new or existing properties of the source nodes or edges. This capability is similar to _formulas_ in Excel and SQL, and _functions_ in a MapReduce framework.
+
+An _f(x)_ javascript formula is run on the data of a single category or relationship.
+To apply a pre-defined or custom formula, you select existing categories or relationships and their properties, specify the formula, and either write the results to a new property  or overwrite the original property value.
 
 == f(x) Preset formulas
 
@@ -10,7 +13,7 @@ The following table lists the available preset formulas and their general format
 |===
 | *Preset* | *Function* | *Format*
 
-| _toCustom_
+| _Custom_
 | Editable format
 | (propVal,props) \=> propVal
 
@@ -27,7 +30,7 @@ The following table lists the available preset formulas and their general format
 a _YYYY-MM-DD HH:mm:ss_ timestamp
 | (propVal,props) \=> moment(propVal).format('YYYY-MM-DD HH:mm:ss')
 
-| _toWeek_
+| _toDayOfWeek_
 | Valid date-time \=>  +
 a weekday (e.g. _Monday_)
 | (propVal,props) \=> moment(propVal).format('dddd')
@@ -36,91 +39,104 @@ a weekday (e.g. _Monday_)
 | Custom date format _MM,DD,YYYY_ \=> a _YYYY-MM-DD HH:mm:ss_ timestamp
 | (propVal,props) \=> moment(propVal, "MM,DD,YYYY").format('YYYY-MM-DD HH:mm:ss')
 
-| _fullName_
-| Combine _firstName_ and _lastName_ property values \=>  +
-the new property, as a full name.
-| (propVal,props) \=> !props['firstName'] ? propVal : `${props['firstName']}-${props['lastName']}`
+| _fixDayFirst_
+| Custom date format _DD/MM/YYYY_ \=> a _YYYY-MM-DD HH:mm:ss_ timestamp
+| (propVal,props) \=> moment(propVal, "MM/DD/YYYY").format('YYYY-MM-DD HH:mm:ss')
+
 |===
 
-Editing a preset moves it to the *_toCustom_* item, where you can test or run the edited formula.
 
-== Running a preset f(x) formula
+== Run a preset f(x) formula
 
-Formulas apply to a single category or relationship at a time. However, you can run more than one formula at a time on a selection of data.
+Formulas apply to one category or relationship at a time. You can run more than one formula at a time on a selection of data. In the following example we'll use the *_toString_* preset to transform data from numerical values to a string.
 
-In the following example numerical data in the file _ImportSample.csv_ has been entered as a text string. We'll use the *_toNumber_* preset to transform the data to numerical values.
+*To run a preset formula:*
 
-*To run preset formulas to create and populate new properties:*
-
-. Deselect all the data in the graph space to ensure that the transform applies to all nodes or edges of a specified Category or Relationship.
 . Open the *_Transform_* panel and *_f(x)_* tab.
-. Select a _Category_ or _Relationship_ for the data you want to operate on (e.g. _ImportSample_).
-. In the *_Apply Formula to Properties_* dropdown, select the property value to transform (e.g. _Score_), or click the *_+_* icon in the table of properties below the dropdown to select it. +
-The review panel below the properties shows a sample of existing values and their data formats.
-. Choose a preset formula from the dropdown menu, in this case, _*toNumber*,_ to convert the _Score_ text string to a numerical value.
-+
-image::/v2_17/06_01_01_FunctionStart1320.png[,720,480,role=text-left]
-
-. Enter a new property name (e.g. _scoreNumerical_) to save the result. Or you can use the default, which simply adds __new_ to the *_Selected Property_* name.
-+
-
-NOTE: It is usually best to create a new property and give it a descriptive name. Entering the source property name overwrites the existing data, which may be appropriate in some cases.
-
-. Check the sample input and output property values for the formula (displayed beneath the *_Selected Property_* and *_New Property Name_*, respectively) to see that the formula returns values you expect.
-+
-
-NOTE: If the input property value is invalid for a selected formula the area below the new property name displays a brief description of the problem.
+. Under *_Select Target_*, choose a _Category_ or _Relationship_ from the dropdown menu.  
 
 +
-* In this example, we'll run just one formula. However, at this point, you can:
-**  Add more formulas (for example to transform other property values available in the selected Category or Relationship). +
-** Delete a formula by clicking its Trash icon.
-
-. Once you have added all the formulas you want, you can scroll to the bottom of the panel and either:
+NOTE: All the data for the chosen category or relationship will be transformed unless you explicitly select data to be transformed. If you select nodes or edges on the canvas, the transform operates only on that data. You might do this to test your transform with a subset of the data for the selected category or relationship. 
 +
-* Click *_Test_* to run a test and review the results. +
-OR
+
+. Under *_Select Properties_* choose the property value to transform (e.g. _Score_), or click the *_+_* icon in the table of properties below the dropdown to select it. A preview shows existing values and their data formats.
+. Choose a preset formula from the dropdown menu, in this case, *_toString_* to convert the numerical values in the _Score_ property to text strings.
 +
-* Click *_Run_* to create the new property values for the category or relationship. +
-The new property will be added to the selected category or relationship and the calculated value will be added to each node (or edge) that includes valid input.
+image::/v3/06_01_01_FxPresetStart.png[,520,680,role=text-left]
 +
-Messages appear below the *_Run_* and *_Test_* buttons showing the results, including the number of nodes with the new property.
+
+. Enter a descriptive name for the new property (e.g. _scoreString_). If you don't enter a name, the default transform simply adds _new_ to the existing *_Selected Property_* name. 
+
 +
-image::/v2_17/06_01_02_FunctionDone720.png[,720,720,role=text-left]
+image::/v3/06_01_02_FxPresetToString.png[,520,680,role=text-left]
++
 
-== Running a custom f(x) formula
++
+NOTE: You can enter the source property name to overwrite the existing property values, and this may be useful in some cases. However, it is usually best to create a new property. 
++
 
-Custom formulas enable you to use javascript functions to handle complex data conversions, and also to bring multiple properties into a single property. The libraries https://lodash.com/docs[_Lodash.js_] and https://momentjs.com/docs/[_Moment.js_] are supported.
+. Check the sample  output property values for the formula (displayed beneath the *_Selected Property_* and *_New Property Name_*, respectively) to see that the formula returns values you expect.
++
 
-NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. For a hands-on exercise see our xref:g-learning:how-to-graphxr/how-to-graphxr.adoc[How to GraphXR] tutorials.
++
+NOTE: If the input property value is invalid for a selected formula, a brief description of the problem is displayed.
++
 
-We'll use a custom formula to reformat existing properties in our dataset and write them to a new _seasonEpisode_ property. First we import two CSV files by drag and drop:
++
+* In this example, we'll run just one formula. At this point we could:
+**  Add more formulas (for example to transform other property values in the selected Category or Relationship). 
+** Delete a formula by clicking its *Trash can* icon.
++
 
-* _Lines.csv_, with details about dialog spoken in the show. In the imported the _Lines_ category, season and episode number are combined into a single _seasonEpisode_ property as a text string (e.g. 'S1E3').
-* _Episodes.csv_, with details about the show's episodes. In the imported _Episodes_ category, _seasonNumber_ and _episodeNumber_ are separate properties with integer values (e.g. '1'). We want these combined into a single string and written to a new _seasonEpisode_ property to match _Lines_.
+. Scroll to the bottom of the panel to run the transform. On the run button, check that the number of nodes (or edges) is what you expect. Then click the button to create the new property and calculate its values.    
++
+The new property is added to the category or relationship. The property name and calculated value is added to each node (or edge) that supplies valid input. *_Log_* status messages appear below the run button.
++
+
++
+image::/v3/06_01_03_FxPresetToStringDone.png[,720,720,role=text-left]
++
+
+. To inspect the new property and its values, open the *_Table_* panel and under *_Category_* or *_Relationship_*, click to show the table. You can also review the new property in an information panel for a node or edge.
+
+== Run a Custom f(x) formula
+
+Custom formulas enable you to enter javascript functions to combine multiple properties into a single property, and handle many other complex data conversions.
+
+Supported libraries are https://lodash.com/docs[_Lodash.js_] and https://momentjs.com/docs/[_Moment.js_].
 
 *To run a custom formula to create a new property:*
 
-. Deselect all the data in the graph space to ensure that the transform applies to all nodes or edges of a specified Category or Relationship.
 . Open the *_Transform_* panel and *_f(x)_* tab.
-. Click *_Category_* and select the _Episodes_ category from the dropdown menu.
-. Click _episodeNumber_ in the list of properties to add it to the *_Selected Property_* list and display your *_Input Formula_* options.
-. In the *_New Property Name_* textbox, enter _seasonEpisode_.
-. Select _toCustom_ from the *_Input Formula_* menu, and enter the following javascript formula:
++ 
+In this example, we use a custom formula on the nodes of an _Officer_ category to combine first _name_  and  _surname_ property values to create a new _fullName_ property.
++
+
+. In the *_Select Target_* section, we click *_Category_* and select _Officer_ from the dropdown menu.
+
+. In *_Select Properties_* choose a property (e.g. _name_) from the dropdown menu, or click its name in the preview list. This copies it to the *_Configure Transformations_* section.  
+. In *_Configure Transformations_* we open the *_Input formula_* menu, select *_Custom_* , and enter the following javascript formula:
 +
 ----
-(propVal,props) => 'S'+props.seasonNumber+'E'+props.episodeNumber
+(propVal, props) => !props['name'] ? propVal : `${props['name']} ${props['surname']}`
 ----
-
-. As you enter a formula, a sample result appears beneath the new property name. If there is a problem with the formula or the source data, a brief message appears (for example, "Invalid input").
 +
-image::/v2_17/06_01_03_CustomFcnStart1320.png[,720,480,role=text-left]
 
-. Click *_Test_* to test the custom function, or *_Run_* to run it. +
-In either case a message shows the result of the transformation, including the number of nodes with the new property.
 +
-image::/v2_17/06_01_04_CustomFcnDone1320.png[,720,520,role=text-left]
+If there is a problem with the formula or the source data, a brief message appears under the property name (for example, "Invalid input").
++
 
-. To inspect the new _seasonEpisode_ property and its values, open the *_Table_* panel and select the _Episodes_ category. You can also see the new property in a node's information panel.
+. In the *_New Property Name_* textbox, enter the new property name (e.g. _fullName_).
+
++ 
+image::/v3/06_01_04_CustomFxSetup.png[,720,480,role=text-left]
 +
-image::/v2_17/06_01_04_CustomFcnTable1320.png[,720,480,role=text-left]
+
+. Scroll to the bottom of the panel to run the transform. Click  the run button to create the new custom property values.    
++
+The new property is added to the selected category and the name and calculated value will be added to each node that includes valid input, and *_Log_* status messages appear below the run button.
++
+image::/v3/06_01_05_CustomFxDone.png[,720,720,role=text-left]
++
+
+. To inspect the new property and its values, open the *_Table_* panel and select the category (or relationship). You can also see the new property in a node's information panel.

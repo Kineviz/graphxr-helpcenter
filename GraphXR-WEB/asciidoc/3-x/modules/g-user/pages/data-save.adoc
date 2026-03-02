@@ -1,0 +1,131 @@
+= Save Graph Views
+  
+To save the visible and hidden data on the project canvas (including the visible 3D layout) you can:
+
+* Save a *_View_*, a named .graphxr file uploaded to the server that persists in the project until you delete it, and is available to any user of a shared project. 
+
++
+image::/v3/02_09_01_SaveViewIntro.png[,720,380,role=text-left] 
++
+
+* Save one or more *_Snapshot_* views using the *_Snapshots_* pane. These views are saved locally in the project, and persist until you exit the project. To save a set of snapshots, you must download the snapshot archive *before you exit the project*. 
+
++
+image::/v3/02_09_02_SnapshotIntro.png[,420,280,role=text-left] 
++
+
+NOTE: You can also go to the xref:./data-manage-datastore.adoc[*_Projects > Data Store_*] subpanel to add data in the current view to a connected internal graph database.
+
+== Save a View
+
+At any time, you can save the view on the canvas to the server, either by updating the current view or creating a new view.
+
+Use the View dropdown menu at the top center of the canvas to *_Save_* the current view (including visible and any hidden data), either to the current view, or to a new one. An asterisk appears next to a current view name when the view on the server differs from the one on the canvas.  
+ 
+image::/v3/02_09_03_SaveViewMenu.png[,720,280,role=text-left]
+
+NOTE: Manually moving nodes and edges, applying a new layout, or adding, editing, or deleting nodes, edges, or properties counts as a change. Moving the entire graph or shifting the canvas viewpoint (i.e. with Pan, Zoom, Rotate, Center To, or Fly Out) does not.
+
+IMPORTANT: All data on the canvas is deleted when you leave the project or log out. You should save any view that you may want to revisit, such as a complex layout or  transformed graph. 
+
+In the View menu you can also:
+
+* Select *_New_* to clear the graph and set the canvas as an empty _Unsaved View_, optionally saving the current view in the process. This action is only available on the Views menu. 
+* Select and load a view by name either from a list of *_recent views_* sorted by the date last modified, or *_all views_* sorted alphabetically.
+* Select *_Share_* to share the current view.
+
++
+NOTE: The *_Project > Views_* subpanel also includes a *_Save_* or *_Save As_* button for saving the current view, as well as the ability to load a view to the canvas or share a view.    
+
+=== Save the current view
+
+*To save the current view:* 
+
+. In the view dropdown menu select either *_Save_* to save the view with its current name or *_Save As_* to save  to a new named view.
+
+. If you choose *_Save As_* enter a descriptive name in the dialog and click *_Save_*.
+
++
+image::/v3/02_09_04_ViewSaveAsDialog.png[,720,380,role=text-left]
++
+
++
+The new view appears on the view menu and in the *_Views_* subpanel.
++
+
++
+image::/v3/02_09_05_SaveViewDone.png[,520,280,role=text-left]
+
+
+=== Save and create a new empty view
+
+When you want to import different data to the canvas (for example, via a new database query or an imported file), you can use *_New_* on the view menu to save the current view, then clear the graph and create a new empty _Unsaved View_ in one step.   
+ 
+*To save the current view and create a new empty view:* 
+
+. Open the View dropdown menu.
+. Select *_New_*.
+
++
+An *_Unsaved Changes_* dialog asks you to choose to *_Save_* the current view, *_Save As_* a new view, *_Don't Save_* or *_Cancel_*.
++
+
++
+image::/v3/02_09_06_UnsavedChanges.png[,320,180,role=text-left]
++
+
+. If you choose *_Save As_*, enter a descriptive name and click *_Save_*.
+
++
+The canvas is cleared and the current view name changes to _Unsaved View_.
++
+
++
+image::/v3/02_09_07_NewViewUnsaved.png[,320,180,role=text-left]
+ 
+== Save Snapshots
+
+Snapshots let you save a set of up to ten (10) views in memory, re-load any one of them at any time. You can save and re-load a collection of views as a .graphxrsnapshot archive at any time.
+
+Unlike saved project views, snapshots cannot be shared with other project users. However, they are very useful for saving views of the graph at key points you may want to re-visit as you explore and transform the graph.
+
+The *_Snapshots_* pane floats conveniently in the graph space. You can move it anywhere in the space, and take a snapshot at any time. Icons on the *_Snapshots_* title bar let you create snapshots and download the archive without expanding the pane.
+
+image::/v3/02_09_08_SnapshotTitleOnly.png[,480,340,role=text-left]
+
+The expanded *_Snapshots_* window displays thumbnail previews of each snapshot. Each snapshot includes a number, thumbnail, timestamp, and a *_Note_* field where you can add descriptive text. 
+
+image::/v3/02_09_09_SnapshotFloatingFull.png[,480,340,role=text-left]
+
+With one or more snapshots saved, you can: 
+
+* Click *_Create Snapshot_* (or the plus (*_+_*) icon in the title bar) to add to your set.
+* Click *_Save Snapshots_* (or the download icon on the title bar) to download the set as a snapshot archive.
+* Click a snapshot *_Trash can_* icon to delete the snapshot.
+* Click a snapshot *_Cloud_* icon to load the snapshot.
+* Click in the *_Note_* field to edit a snapshot description.
+
+
+IMPORTANT: When you exit the project or log out, snapshots are deleted. In addition, when you import a snapshot archive to your project, it replaces the current set of snapshots. Before exiting the project canvas or importing another snapshot archive, use *_Save Snapshots_* or the download icon on the title bar to export the current snapshot archive to your local system.  
+
+*To save snapshots:
+
+. Open the *_Project > Settings_* subpanel, and the *_Advanced Settings_* dropdown.
+. Click the  *_Show Snapshots_* checkbox to display the *_Snapshots_* title bar on the canvas. 
++
+image::/v3/02_09_10_SettingsShowSnapshots.png[,720,380,role=text-left] 
++
+ 
+. Click the dropdown arrow at the left to open the *_Snapshots_* pane, and click *_Create Snapshot_*, or click the plus (*_+_*) icon in the title bar to create a snapshot without opening the pane.
+
++ 
+A thumbnail of the current view is added to the top of the *_Snapshot_* list, and a *_Note_* shows a date-time timestamp for the snapshot view.
++
+
++
+image::/v3/02_09_11_SnapshotOpenPane.png[,420,380,role=text-left] 
++
+
+. To save your snapshots, before you exit the project you must click *_Save Snapshots_* (or the download icon on the *_Snapshots_* title bar) to download the set of views as a _.graphxrsnapshots_ archive. 
+
+  

@@ -1,0 +1,190 @@
+= Export Data
+
+By exporting data from a project, you can provide data to another application or user, or archive views and the data store at key points during an analytic workflow. 
+
+You can export all or part of the project data at any time, including: 
+ 
+* Project Views
+
+* All or part of a xref:nav-select/table-explore.adoc[*_Table_*] of the data on the canvas  as a CSV or Excel file.
+
+* The internal graph database from the xref:./data-manage-datastore.adoc[*_Data Store_*] subpanel: 
+
+* A data mapping created in the xref:data-import/import-via-mapping.adoc[*_Mapping Editor_*] as a JSON file using the *_Save Schema_* button.
+
+IMPORTANT: When you *_Clear_* data, exit a project or log out of GraphXR, saved data views and the internal database persist, but the graph on the project canvas and any snapshot views are deleted. To avoid losing work, save a view and/or export data when you come to a point in an exploration that you may want to re-visit. 
+
+== Export Project Views
+
+To export any view on the canvas:
+
+* Export the current view as a *_CSV_* or *_Excel_* archive or  *_.graphxr_* file from the *_Export_* menu at the top right of the project canvas.  
++
+NOTE: You can also export a static *_.png_* or or *_SVG_* screenshot from the *_Export_* menu.
++
+
+* Export all saved data views in one step from the xref:./data-manage-datastore.adoc[*_Data Store_*] subpanel.
+
+* Export a _.graphxrsnapshots_ view archive from the *_Snapshots_* title bar.
+
+
+=== Export the current view
+
+You can export the current view on the canvas as a CSV or Excel flat file archive, or as a Kineviz _.graphxr_ file.
+
+* Export as a CSV or Excel archive creates in a collection of flat files, one for each category and relationship. A file for a category includes node IDs, properties and their values. A file for a relationship includes the node source and target IDs, and any edge properties and their values. 
+
+* Export as a *_.graphxr_* file retains the graph data as well as its 3D layout and perspective *whether or not it is saved before export*. 
+** A view that's *saved* before export is named with the _Project_ name, _View_ name, and _.graphxr_ extension. For example: _Demo_Crime.graphxr_ 
+** A view that's *not saved* before export is named with the_Project_ name, (nth view saved from the project), and _.graphxr_. For example, _Demo (1).graphxr_ 
+
++
+NOTE: Consider saving a view before exporting it. This provides a descriptive view name to search for when importing the view.
++
+
++
+NOTE: For a .graphxr file, when the saved view you exported is loaded to the canvas, and you then re-import the exported file, the view name and original date of creation is preserved. However, when imported into a new view, the original view name and date of creation are not preserved.
++
+
+*To export the current view on the project canvas:*
+
+. Optionally, save the view, either as the existing view or a new view.
+. In the *_Export_* dropdown menu at the top right of the canvas, choose from:
+
++
+* *_CSV_* to export a *CSV* archive with a _.zip_ extension: _ProjectName_ViewName.zip_
+* *_Excel_* to export an *Excel* archive with an _.xlsx_ extension: _ProjectName_ViewName.xlsx_ 
+* *_.graphxr_* to export a _.graphxr_ file: _ProjectName_ViewName(or number).graphxr_.
++
+
++
+image::/v3/02_07_01_ExportMenu.png[,320,340,role=text-left]
++
+
++
+The file name appears in the _Downloads_ tab of your Chrome browser window. Once exported, you can import any of the views to another (or the same) project by drag and drop.
+
+=== Export all saved views in one step
+
+The *_Export All Views_* option in the xref:./data-manage-datastore.adoc[*_Project > Data Store_*] subpanel exports all your saved views in one step. Views are exported one by one as _.graphxr_ files. 
+
+*To export all saved views in one step:*
+
+. Open the *_Project > Data Store_* subpanel.
+. In the *_Utilities_* section at the top, click *_Export All Views_*.
++
+image::/v3/02_07_02_DataStoreExportViews.png[,520,240,role=text-left]
++ 
+
++
+For each view, a _.graphxr_ file is exported, labeled with the  _ProjectName_ and saved _ViewName_. 
+
+=== Export a Snapshot view archive
+
+Snapshots provide a way to save a set of up to 10 views locally. For exploratory analysis, snapshots make it easier to return quickly to specific branching points in an investigation.   
+
+Snapshot views are saved locally, not to the server. To save the snapshots you've created during a project session, you must export them as a _.graphxrsnapshots_ view archive before you exit the project. 
+
+For a _.graphxrsnapshot_ archive, view metadata is preserved when you re-load the views.  
+
+NOTE: by default, the *_Snapshots_* feature is hidden. To display it, open the *_Project > Settings_* subpanel and *_Advanced Settings dropdown_*, and click the *_Show Snapshot_* checkbox.  
+
+*To export a snapshot view archive:*
+
+. Optionally, open the *_Snapshots_* window to review, annotate, or delete the snapshots created during the project session. 
+. Click the *_Save Snapshots_*  button. 
++
+image::/v3/02_07_03_SnapshotsSave.png[,420,180,role=text-left]
++
+
++
+NOTE: You can click the _export_ icon in the *_Snapshots_* title bar to export a snapshot archive without opening the window or reviewing its views.  
+
+=== Export data from a table
+
+For any single category or relationship, you can export some or all of data that's visible on the canvas as a table of nodes or edges and their property values. You can:
+ 
+* Select data and export the results from a basic table.
+* From a basic table, open an *_Enhanced Table_* to further select or edit the data before you export it. 
+
+The exported file receives a default name based on the category or relationship label: _Label(YYYY-MM-DD).xlsx_ or _.csv_ 
+
+For example, _Location(2023-05-02).CSV_ contains a table of _Location_ nodes exported on 2023-05-02.
+
+*To export data from a basic table*
+
+. Select data on the canvas using any method, or de-select all data for tables of all the data.
+. Open the *_Table_* panel.
+
++
+The *_Table > Category_* subpanel is open by default. It shows all the categories present in the current selection on the canvas (or all visible data if no selection has been made). Open the *_Table > Relationship_* subpanel to see all the relationships present, and click a relationship bubble to see its table.  
++
+
+. Select a table to export by clicking its category or relationship bubble: 
+
+. Optionally, enter a table *_Search_* term to find and select the table rows you want to export.  
+
++
+image::/v3/02_07_04_TableCategory.png[,720,380,role=text-left]
++
+
+. Scroll to the bottom of the table and click *_Select All_* if you want to export only  the rows returned by the search (if any). 
+
++
+image::/v3/02_07_05_TableCategorySelected.png[,720,380,role=text-left]
++
+
+. Click *_Export Excel_* or *_Export CSV_* to export the table of visible or selected data. 
+
++
+The exported Excel file shown below includes only the selected table rows.
++
+
++
+image::/v3/02_07_06_ExportCSVExcelTable.png[,520,280,role=text-left]
+
+
+== Export the internal graph database
+
+The internal graph database is managed from the xref:./data-manage-datastore.adoc[*_Data Store_*] subpanel. 
+
+*To export the internal graph database:*
+
+. Open the *_Project > Data Store_* subpanel.
+. In the *_Data Store_* section, select the *_Database Name_* for the instance you want to export (there may only be one _default_ option).  
+. At the bottom of the section, click *_Export Database_*.
+
++
+image::/v3/02_07_07_ExportInternalDB.png[,520,280,role=text-left]
++
+
++
+The exported file is named _DatabaseName__export_ _(number).kuzu_. For example, the second time you export the default database, the filename will be _default_export(2).kuzu_.
+ 
+== Export a data mapping
+
+A data mapping is a graph schema for a single table that you define in the GraphXR xref:data-import/import-via-mapping.adoc[*_Mapping Editor_*]. A mapping is saved to the server and is available on the *_Mapping_* menu in the *_Query > CSV_* and *_Query > SQL_* subpanels. From there, it can be applied, edited, and saved as a new mapping. 
+
+A CSV or SQL mapping is available to sharing users of the project and persists in a project until you delete the mapping (or the project).
+
+You may need to export a mapping to include it in a different project, or to maintain an archive on your local system.
+
+*To export a mapping:*
+
+. Open the  *_Query > CSV_* or *_Query > SQL_* subpanel.
+. In the *_Mapping_* menu, select the mapping to export.
+
++
+image::/v3/02_07_08_ExportMappingQueryPanel.png[,520,520,role=text-left]
++
+
+. Click *_Edit_* to display the *_Mapping Editor_* window.
+. Click the *_Export Schema_* icon at the top left.
+
++
+image::/v3/02_07_09_ExportMappingSchemaIcon.png[,520,480,role=text-left]
++
+
++
+The mapping is exported to your local system as a .json file named _MappingName.json_.
+ 

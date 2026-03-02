@@ -1,8 +1,8 @@
-= Managing Short URLs for Shared Views #
+= Manage Short URLs for Shared Views
 
 Use the *_Short URL_* panel to maintain a list of shortened urls for shared views or iframes.
 
-image::/v2_17/09_01_ShortURL.png[,720,420,role=text-left]
+image::/v3/09_01_ShortURL.png[,720,420,role=text-left]
 
 You can:
 

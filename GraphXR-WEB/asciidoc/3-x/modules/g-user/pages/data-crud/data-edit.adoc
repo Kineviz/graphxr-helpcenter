@@ -1,9 +1,10 @@
-= Change Category, Relationship, and Property labels
+= Edit Category, Relationship, and Property labels
 
 At any time you can 
 
 * Relabel (i.e. rename) a Category, Relationship, or Property.
-* Change the category of selected nodes to a new or existing category. 
+* Change the category of selected nodes to a new or existing category. Nodes can now be moved to another (new or existing) category using the right click menu.
+* Merge two or more nodes into a single node.
 
 == Rename a category, relationship, or property
 
@@ -26,7 +27,7 @@ The enhanced table displays with its *_Category_* tab open.
 +
 . Enter a new category (or relationship) name and hit return. 
 +
-image::/v2_17/04_06_03h_EnTableRenameCat.png[,720,340,role=text-left]
+image::/v3/04_06_03h_EnTableRenameCat.png[,720,340,role=text-left]
 
 *To rename a property:*
 
@@ -35,11 +36,11 @@ image::/v2_17/04_06_03h_EnTableRenameCat.png[,720,340,role=text-left]
 . Click the settings icon next to a property's column heading (its current name) and select *_Rename_*.
 . Enter a new name and click *_Save_*.
 +
-image::/v2_17/04_06_03i_EnTablePropRename.png[,420,280,role=text-left]
+image::/v3/04_06_03i_EnTablePropRename.png[,420,280,role=text-left]
 
 == Change the category of selected nodes
 
-The right-click *_Actions > Change Category_* option lets you immediately change the category of any selection of nodes. You can select an existing category, or create a new one. This is useful when combining equivalent data imported from a variety of different sources, or when data needs to be categorized in greater detail.
+The right-click *_Actions > Change Category_* option lets you immediately change the category of any selection of nodes. You can select an existing category, or create a new one. This is useful when combining data imported from a variety of different sources, or when data needs to be categorized in greater detail.
 
 WARNING: *_Actions>Change Category_* cannot be reverted. Before using it, save a data View, snapshot, or .GXRF file so that you can undo a mistaken change if necessary.
 
@@ -48,19 +49,71 @@ WARNING: *_Actions>Change Category_* cannot be reverted. Before using it, save a
 . Select nodes using any method. 
 . Right-click and choose *_Actions_*> *_Change Category_*.
 +
-image::/v2_17/05_02_01_ChangeCatStart.png[,520,240,role=text-left]
+image::/v3/05_02_01_ChangeCatStart.png[,520,240,role=text-left]
 +
 . In the *_Change Category_* dialog, use the dropdown menu to select the new label, or enter a name for a new category.
 +
-image::/v2_17/05_02_02_ChangeCatVideo.png[,520,240,role=text-left]
+image::/v3/05_02_02_ChangeCatVideo.png[,520,240,role=text-left]
 +
 . Click *_Change_* to apply the change. Click *_Cancel_* or the *_x_* to exit the dialog without changing the label.
 +
-image::/v2_17/05_02_03_ChangeCatChange.png[,520,240,role=text-left]
+image::/v3/05_02_03_ChangeCatChange.png[,520,240,role=text-left]
 +
 The category is changed. Any properties of the changed nodes not present in the target category are transferred.
 +
-image::/v2_17/05_02_04_ChangeCatDone.png[,320,280,role=text-left]
+image::/v3/05_02_04_ChangeCatDone.png[,320,280,role=text-left]
+
+== Merge selected nodes
+
+You can merge two or more selected nodes using right-click *_Actions > Merge_* , or the *_Merge_* transform. This is useful to combine duplicated nodes quickly.  
+
+=== Use Quick Merge 
+
+The quick merge option is designed to combine duplicated nodes, or to collect property information that's in two separate nodes into a single node. 
+Often this involves merging two nodes, but any number of nodes you select (of any category) will be merged into one. 
+
+WARNING: Quick merge available in *_Actions>Merge_* cannot be undone. Also, any selection of nodes (of any category) will be merged into one node. If you select nodes by mistake, the properties of the merged node may not be what you expect. Before using quick merge, either save a data *_View_* or *_Export_* a .graphxr file to your loacal system so that you can undo a mistaken merge.
+  
+*To quick-merge selected nodes:*
+
+. Select nodes using any selection method.
+. Right-click and choose *_Actions > Merge_*. 
+
++
+image::/v3/05_02_05_ActionsQuickMerge.png[,420,540,role=text-left]
++
+
++
+The selected nodes are merged into a single node.  
+
+=== Combine nodes using *_Merge_* transform
+
+The *_Merge_* transform can be used to combine duplicated nodes of the same category. 
+
+IMPORTANT: You can immediately *_Undo_* (*ctrl + Z_*) a *_Merge_* transform. For merging modes of the same category, using the transform is a safer option than the right-click quick merge.   
+
+*To merge selected nodes of a single category:*
+
+. Select nodes of a single category that you want to merge.
+. Open the *_Transform_* panel and *_Merge_* subpanel.
+. In *_Select Category_*, choose the Category of nodes you are merging.
+. In *_Select Property_*, do not select a property.
+. In *_Options_*, deselect the *_Clear Unselected Property_* checkbox.
+. In the *_Run _* button, see that the number of nodes is what you expect, then click to run the merge.
+
++
+image::/v3/05_02_06_MergeNodeSetup.png[,420,540,role=text-left]
++
+
++
+A *_Warning_* displays, alerting you that since you didn't select any properties, all the selected nodes will be merged into one.
++
+
++
+image::/v3/05_02_07_MergeNodesWarning.png[,340,180,role=text-left]
++
+
+. Click *_Proceed_* to merge the nodes, or *_Cancel_* to exit without merging.
 
 
 

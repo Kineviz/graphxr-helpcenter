@@ -1,0 +1,150 @@
+= Share Projects and Views
+
+A project's saved views can be shared with other users by:
+
+* Enabling sharing for the project.
+
+* Sharing individual project views through a *_Share_* link or iFrame.
+
+NOTE: You can also xref:./data-export-views[export] the current view to your local system as a CSV or Excel archive, .graphxr file, or *_Snapshot_* archive (.graphxrsnapshots). The exported file can then be imported into another project by drag and drop or by using *_Import_* in the *_Project > Data Store_* subpanel.
+
+== Share a Project
+
+You can share any project with other GraphXR users. Once shared, the project's data views are available to the invited users. 
+
+NOTE: You can export a view to your local system as a .graphxr file, and from there load it into a different project as a new view. However, it is usually better to share a project or its views.
+
+
+=== Grant Shared Access to a Project
+
+Projects are not shared by default. You must explicitly grant shared access.
+
+*To share a project and its data views:*
+
+. Go to the *_Projects_* (Home) page, locate the project you want to share, and click its *_Enable Share_* icon (the lock icon at the lower right of the project label).
++
+image::/v3/02_08_01_ShareProject.png[,260,120,role=text-left]
++
+The lock icon changes to *_DisableShare_*, and additional *_Share_*, *_Invite_*, and *_UIConfiguration_* icons appear. 
+
++
+image::/v3/02_08_02_ShareProjectUnlock.png[,260,120,role=text-left]
++
+
+. Optionally, you can review and edit the user interface presented in the project. Click the project's *_UIConfiguration_* icon.
+
++
+image::/v3/02_08_03_ShareUIConfig.png[,260,120,role=text-left]
++
+By default, all user interface functions are enabled.
++
+image::/v3/02_08_04_UIConfigDialog.png[,720,410,role=text-left]
+
+. Click the icon next to the functions to remove, cycling through the following options: 
+
++
+* Enabled on the project and for shared users.
+* Enabled on the Project
+* Disabled
++
+
+. Click *_Save_* (or click the arrow icon at the upper left to exit without UI changes).
+
+
+. Now click the projects's *_Invite_* icon to send an email invitation to another GraphXR user.
+
++
+image::/v3/02_08_05_ShareInviteIcon.png[,260,120,role=text-left]
++
+
+. Select or enter a GraphXR user email, and click *_Invite_*.
+
++
+image::/v3/02_08_06_ShareInvite.png[,380,220,role=text-left]
+
+
+=== Access a Shared Project
+
+After you are invited to share a project, the project appears on your *_Projects_* page in the *_Shared Projects_* area.
+
+image::/v3/02_08_07_SharedProjects.png[,520,340,role=text-left]
+
+* Click the shared project tile (or list) to open the project. You can then go to its *_Views_* tab to see the project's data views and select one to load. 
+
++
+image::/v3/02_08_08_EnterSharedProject.png[,520,340,role=text-left]
+
+== Share a single View
+
+Once you have saved a view you can:
+
+* Share its url directly with others using the View menu or the *_Project > Views_* subpanel.
+ 
+* Embed a shared GraphXR view as an iframe on another web page, using the dropdown list of the project's saved views on the *_Projects_* (Home) page.
+
+== Use a *_Share_* link
+
+From the view menu or *_Project > Views_* tab you can obtain a *_Share_* link for an individual view that you can send to anyone external to the project, even if they do not have a GraphXR login. 
+
+Optionally, you can protect the view by requiring login with a password. 
+
+*To generate a *_Share_* link for a view:*
+
+. Enter the project, and open the *_Project > Views_* tab.
+. Locate the view you want to share in the thumbnail tile or list view, and click its *_Share view_* icon. 
+
++
+image::/v3/02_04_01_ShareOneView.png[,420,180,role=text-left]
++
+
++
+NOTE: For a view that's currently loaded, choose *_Share_* from the dropdown view menu at the top center of the canvas.
++ 
+
+. In the *_Share..._* dialog you can simply click *_Copy Link_* to copy a url that you can email to another user.  
+
+. To require the user to log in with a password, click the *_Require authentication_* checkbox.
+
++
+image::/v3/02_04_02_RequireAuthentication.png[,260,120,role=text-left]
++
+
+. Enter a password and click *_Save_*.
+
++ 
+A message indicates that the password has been saved.
++
+
+. You can now click *_Copy Link_* and paste it into an email to the user. Send the login password in a separate email. 
+
++
+image::/v3/02_04_03_ShareOneViewCopyLink.png[,260,120,role=text-left]
+
+
+=== Embed a view as an iFrame
+
+You can obtain code for iFrame embedding from a project's list of shared views.
+
+*To embed a view as an iFrame:*
+
+. In the *_Project_* (Home) page, click the project's *_Share_* icon to see the menu of shared views. 
+
++
+image::/v3/02_04_04_SharedViewIframe.png[,480,520,role=text-left]
++
+
+. Locate the view to embed and click the icon at the right to generate iframe code. 
+
++
+A message indicates that the code has been copied to the clipboard. 
++
+
+. Paste the iFrame embed code into the html for the web page of your choice. This code should be similar to the following example:
+
++
+
+----
+<iframe src="https://graphxr.kineviz.com/share/604c569c7af08100387c966b/GOT_CSVs/698c44da828b5d7306d8f992" frameborder="0" width="100%" height="100%">
+</iframe>
+----
+

@@ -1,0 +1,123 @@
+= Run Graph Algorithms
+
+The *_Algorithm_* panel provides a library of algorithms widely used to analyze patterns of graph connection. Algorithms are organized into *_Path Finding_*, *_Centrality_* and *_Community Detection_* tabs.
+
+* *_Path Finding_* traces the path between a set of selected start and end nodes, and can apply an optional weight based on a relationship property.
+* *_Centrality_* and *_Community Detection_* algorithms evaluate each node in the graph and return a numerical measure of its connectedness or grouping.
+
+NOTE: For an e-book introduction to graph algorithms and their uses, see 
+https://neo4j.com/lp/book-graph-algorithms-ms/?utm_source=bing&utm_medium=ppc&utm_campaign=*NA%20-%20Search%20-%20Graph%20Algorithms&utm_adgroup=*NA%20-%20Search%20-%20Graph%20Algorithms%20-%20Graph%20Algorithm&utm_term=graph%20algorithms&msclkid=b90c0620812219ca24845b97d8af0b68%5BGraph[Graph Algorithms: Practical Examples in Apache Spark and Neo4j].
+
+== Path Finding
+
+*_Path Finding_* traces the shortest path between selected start and end nodes. You can weight the path using a numerical property of relationships in the path as a weighting factor. The nodes and edges on the path are traced and selected.
+
+Once a path is traced, you can click *_Spotlight Path_* to display only its nodes and edges.
+
+*To find a path between connected nodes:*
+
+. Open the *_Algorithm_* panel and *_Path Finding_* tab.
++
+image::/v3/07_00_01_AlgorithmPanel.png[,520,380,role=text-left]
+
+. Select one or more starting nodes in the graph, and click *_Add to Start_*. +
+Your selected nodes are listed in *_Start Nodes_*.
+
++
+NOTE: An error message displays if you select too many start and end nodes such that there are more than ten pairs for tracing the shortest path.
++
+
+. Now select ending nodes in the graph, and click *_Add to End_*. 
+The selected nodes are listed in *_End Nodes_*.
+
++
+NOTE: You can click *_Remove Start Node_* or *_Remove End Node_* to delete your current selection and choose other nodes.
++
+
+. In the *_Weight Property_* menu you can select a property of one of the relationships in the path to be used as a path weighting value, or leave the default *_Ignore Weight Property_* selected. If the relationships have no properties (which is often the case), *_Ignore Weight Property_* will be the only choice.
+. Click *_Trace Path_* to display and select the nodes and edges for the shortest path(s) between your start and end nodes.
+
++
+image::/v3/07_01_01_AlgorithmPath.png[,720,420,role=text-left]
++
+
+. Click *_Spotlight Path_* to display only the nodes and edges in the path. The button label changes to *_Un-spotlight Path_*.
+
++
+image::/v3/07_01_02_AlgorithmSpotlight.png[,720,420,role=text-left]
++
+
+. At this point, you can tag the path, and save the tag as a property so that you can easily find it again. You may also want to save and share a data *_View_*, export a *_GXRF_* file, or save and export a *_Snapshot_*.
+
++
+image::/v3/07_01_03_PathTag.png[,420,240,role=text-left]
++
+
+. Click *_Un-spotlight Path_* to deselect the path and return the all the data to the graph. The start and end nodes persist in the *_Path Finding_* tab until you remove them, so you can click *_Trace Path_* again.
+
+NOTE: For a path with a single start and end node, select the two nodes, then right-click and select *_Find Path_*. This might be faster than using the *_Path Finding_* algorithm.  To isolate (i.e. spotlight) the resulting path, select *_Inverse_*, then *_Hide Selection_*. You can now tag the path and/or save the view.  
+
+== Centrality or Community Detection
+
+GraphXR includes a library of commonly used *_Centrality_* or *_Community Detection_* algorithms, which calculate measures of connectedness (both with respect to distance and strength of connection) in multi-dimensional data. There are many such algorithms, and each has its own characteristic behavior and strengths.
+
+When you run a *_Centrality_* or *_Community Detection_* algorithm the computed result is added as a property and its value to each node in the graph. The property values can be displayed (for example, in a scatter plot or geometric layout), accessed for other processes within GraphXR, or exported to other graph analytics or statistics applications.
+
+The following table lists the available algorithms and the property names GraphXR uses for the results.
+
+[cols="2,2,2"]
+|===
+| Algorithm Type | Algorithm | Property Name
+
+| Centrality
+| PageRank
+| pageRank
+
+| Centrality
+| Betweenness
+| betweenness
+
+| Centrality
+| Closeness
+| closeness
+
+| Centrality
+| Eigenvector
+| eigenvector
+
+| Community Detection
+| Connected Component
+| componentId
+
+| Community Detection
+| Strong Connected Component
+| strongComponentId
+
+| Community Detection
+| Louvain
+| louvainComponentId
+
+| Community Detection
+| Label Propagation
+| labelPropagationId
+|===
+
+*To run a Centrality or Community Detection algorithm:*
+
+. In the *_Algorithm_* panel, click to open the *_Centrality_* or *_Community Detection_* tab.
++
+image::/v3/07_01_04_Centrality.png[,720,380,role=text-left]
+
+. Click the button for the algorithm you want to run.
++
+A message displays when the calculation is finished. The property and calculated value is added to each node in the graph. To review the results, you can:
+
+* Open a table.
++
+image::/v3/07_01_05_AlgorithmResultsTable.png[,520,420,role=text-left]
++
+OR
+
+* Inspect any node's information panel.
++
+image::/v3/07_01_06_CommunityDetectionInfo.png[,720,480,role=text-left]

@@ -1,0 +1,154 @@
+= Tag Selected Nodes
+
+Use *_Tag_* to create a label for any selection of nodes. This lets you group any set of nodes you consider related in some way. More than one tag can be added to a node.
+
+To create a tag, you must first select nodes, then use the *_Tag_* icon in the context menu to show the *_ManagerTags_* dialog. You can then:
+
+* Create a tag (i.e. tag the selected nodes). 
+* Add (or remove) selected nodes to an existing tag.
+* Use *_Save Tags As Property_* to add the temporary property __graphxrtags_ to all currently tagged nodes. When a tag is deleted, the property is removed from its tagged nodes.
+* Use *_Clean Nodes Tags_* to delete all the tags on selected nodes.
+
+Tags appear in the legend under *_Tag_*, labeled with a color, name, number of nodes with that tag, and number that are currently selected. GraphXR automatically assigns a color for each tag. In the graph, a tagged node receives a small label listing its tag names.
+
+image::/v3/04_05_01_TagOverview.png[,720,480,role=text-left]
+
+== Create a tag
+
+*To create a tag:*
+
+. Select one or more nodes using any selection method.
+. Click the *_Tag_* toolbar icon or select *_Actions>Tag_* in the right-click menu to display the *_Manager Tags_* dialog.
++
+Existing tag names are displayed along with the number of tagged nodes for each.
++
+image::/v3/04_05_02_TagManager.png[,420,340,role=text-left]
+
+. Enter a unique name for the tag in the textbox and click *_Add Tag_*.
++
+The new tag name is displayed above the textbox. In the graph, the tag label appears on the selected nodes.
++
+
++
+NOTE: A node can have more than one tag. In the following example, we've selected and tagged four overlapping groups of nodes, such that some nodes have all four tags.    
++
+
++
+image::/v3/04_05_03_TagManagerDone.png[,420,340,role=text-left]
++
+
+. Click the *X* at the top right to dismiss the *_Manager Tags_* dialog.
+
+. Click *_Tag_* in the legend to see the tags on the list.
+
++
+* The tag name is displayed, along with its number of nodes. You can check that you've tagged the expected number of nodes.
+* Tags are listed in order of the number of nodes in the tag.
+* Initially, when the  *_Tag_* list is displayed, tags are not automatically styled with a color. Click a tag's brush icon to assign a node color and icon. 
++
+
++
+image::/v3/04_05_04_TagNodeLegend.png[,420,420,role=text-left]
+
+== Add and review the __graphxrtags_ property
+
+Optionally, you can click *_Save Tags As Property_* to add the __graphxrtags_ property to *all* currently tagged nodes. You can then:
+ 
+* Select and style tags and tag groupings in the *_Property_* legend.
++
+NOTE: A separate color can be applied for every combination of multiple tags (including the different orders in which tags were added).
++
+* Review __graphxrtags_ property values in an *_Information_* panel and *_Table_*.
+
+=== Add the __graphxrtags_ property 
+
+*To add the  __graphxrtags_ property to nodes:*
+
+. Select one or more nodes.
+. Click the *_Tag_* icon or select *_Actions>Tag_* in the right-click menu to display the *_Manager Tags_* dialog.
+. Click *_Save Tags As Property_*.
++
+image::/v3/04_05_05_TagManagerSaveTags.png[,420,340,role=text-left]
++
+A message displays indicating success. The __graphxrtags_ property is added to all tagged nodes, with the tag label as its property value.
++ 
+. Click the *X* at the upper right to dismiss the *_Manager Tags_* dialog.
+
+=== View __graphxrtags_ values in the legend
+
+*To select and style __graphxrtags_ properties:*
+
+. Click to display the *_Property_* legend.
+. In the property dropdown menu, select __graphxrtags_.
++
+image::/v3/04_05_06_TagPropertySelect.png[,520,380,role=text-left]
++
+
+. Click the *_Values_* display option to show the list of unique __graphxrtags_ property values. 
++
+For nodes with more than one tag, the property value consists of the different tag names separated by colons.
++
+
++
+image::/v3/04_05_07_TagPropValueSelect.png[,520,380,role=text-left]
+
+=== Review the __graphxrtags_ property on nodes
+
+*To review  __graphxrtags_ properties:*
+
+. Select one or more nodes by tag, property, or any other method.
++
+* For a single node, display its information window (*_Ctrl_*+*_I_*) or quick info rollover.
++
+
++
+image::/v3/04_05_08_TagPropertyInfo.png[,420,380,role=text-left]
++
+
+* For more than one node, open the *_Table_* panel, and click to show the table for a category included in the tag. 
++
+In the example below, the tags in the selected data include nodes in _Merchant_, _Client_, and _Transaction_ categories, which are shown in separate tables.
++
+
++
+image::/v3/04_05_09_TagPropertyTable.png[,520,380,role=text-left]
+
+== Add or remove tags from nodes
+
+*To add or remove a tag from nodes:*
+
+. Select a group of nodes using any selection method.
+. Click the *_Tag_* icon or select *_Actions>Tag_* in the right-click menu to display the *_Manager Tags_* dialog.
+. Locate a tag name and either:
+
++
+Click the *_+_* icon on the tag label to *add* the tag to the selected nodes.
++
+OR
++
+Click the *_-_* icon on the tag label to *remove* the tag from the selected nodes.
++
+image::/v3/04_05_10_TagManagerAddRemove.png[,420,340,role=text-left]
++
+The number of tagged nodes for that tag is immediately updated. If the tag has been removed from all nodes, the tag name disappears from the dialog.
+
+. Click the *X* at the top right to dismiss the *_Manager Tags_* dialog.
+
+== Clean all tags from nodes
+
+You can remove all the tags from any selection of nodes in one step, rather than selecting nodes with specific tags and then deleting that tag individually.
+
+*To clean tags from selected nodes:*
+
+. Select a group of nodes using any selection method.
+. Click the *_Tag_* icon or *_Actions>Tag_* in the right-click menu to display the *_Manager Tags_* dialog.
+. Click *_Clean Nodes Tags_*.
++
+image::/v3/04_05_11_TagManagerCleanTags.png[,720,340,role=text-left]
++
+
++
+* All of the tags applied to those nodes are removed.
+* In the *_Manager Tags_* dialog and in the *_Tag_* legend, the total number of nodes for each tag is updated. If no nodes remain, the tag is deleted.
+* In the graph, the tag label is removed from the selected nodes.
++

@@ -1,0 +1,13 @@
+= Create and Edit Data
+
+Graph data can be easily created, edited, and deleted within GraphXR. At any time you can:
+
+* xref:data-crud/data-add.adoc[*_Add nodes and edges_*] and their properties.
+* xref:data-crud/data-edit.adoc[*_Add and edit labels_*] of categories, relationships, and properties.
+* xref:data-crud/tag-nodes.adoc[*_Tag_*] selected data to label and save any selection of nodes. 
+* Use xref:data-crud/graph-analytics.adoc[*_Graph Algorithms_*] to add measures of graph connectivity and to find connected paths.
+* Use xref:transform-data/intro-transforms.adoc[*_Transforms_*] to re-model the graph:
+** Extract a property as a new category and define its connected relationship. 
+** Aggregate, Merge, or Shortcut complex patterns.
+** Reformat and Link data.
+* xref:data-crud/data-delete.adoc[*_Delete_*] nodes, edges, and properties, clean out unused category or relationship metadata, and empty or delete the internal graph database. 

@@ -1,16 +1,19 @@
 = Grove
 
-Grove provides developers with a javascript authoring environment that runs in the browser along with GraphXR. With Grove, you can develop Observable-inspired javascript notebooks that deliver reproducible, interactive data visualization, discovery and analysis. These can include customer-facing (read-only) dashboards, as well as collaborative (code-sharing) notebooks for data discovery and analytics. 
+Grove provides developers with a javascript authoring environment that runs in the browser along with GraphXR. With Grove, you can develop Observable-inspired javascript notebooks that deliver reproducible, interactive data modeling, visualization, and analysis. These can include customer-facing (read-only) dashboards, as well as collaborative (code-sharing) notebooks for data discovery and analytics. 
  
 For developers, Grove leverages https://observablehq.com/@anjana/functional-javascript-first-steps[functional JavaScript] and open-source visualization packages such as https://d3js.org[D3], https://vega.github.io/vega-lite/[Vega-Lite], https://plotly.com/[Plotly], and https://observablehq.com/@observablehq/introducing-observable-plot[Observable Plot] to delve deeper into high-dimensional data. 
 
-The *_Grove Demo_* project includes example notebooks that developers can explore and copy to jump-start development of their own notebooks. 
+Grove includes example notebooks that developers can use to jump-start development of their own notebooks. 
 
-A *_Grove API_* provides access to GraphXR functions needed to load, transform, and display graph data.
+The GraphXR API provides access to GraphXR functions used in Grove to load, transform, and display graph data.
+
+Once you have created a Grovebook in a project, you can set display of attached Grovebooks  in the *_Project > Extensions_* subpanel.
+
 
 == Grove Demo Quick Tour
 
-Example notebooks in the *_Grove Demo_* project use publicly available sample data sets to demonstrate Grove basics such as:
+Example notebooks in the *_Grove Demo_* project use publicly available sample data sets to demonstrate Grove basics including:
 
 * Connecting graph data + local CSV/JSON files to your Grove notebook.
 * Using the Grove API to filter large datasets
@@ -27,11 +30,11 @@ Example notebooks in the *_Grove Demo_* project use publicly available sample da
 +
 Click the *_Overview_* or *_Share_* tabs to see notebooks available in the demo, either in tile or list view.
 +
-image::/v2_17/11_01_01_GroveNotebookPanel1320.png[]
+image::/v3/11_01_01_GroveNotebookPanel1320.png[]
 
 . Click to select a demo notebook. (e.g. _Map_, entitled _Geospatial Analysis_), and dismiss the *_Notebooks_* panel. The selected notebook displays in the split screen. To use more of the screen you can click the *_Full Screen_* icon at the upper right to use the entire screen, or the *_Airplane_* icon to display the notebook in a separate window.
 +
-image::/v2_17/11_01_02_GroveTourMap1320.png[]
+image::/v3/11_01_02_GroveTourMap1320.png[]
 
 === Navigating the notebook
 
@@ -39,7 +42,7 @@ A Grove notebook consists of cells of Observable-inflected javascript code. The 
 
 The simple _Map_ notebook above loads geospatial data for counties, and displays the data on a map, colored by region. A *_Load Counties_* button appears below the map.
 
-image::/v2_17/11_01_03_GroveCells1320.png[]
+image::/v3/11_01_03_GroveCells1320.png[]
 
 * Roll over the small circles at the far right margin to see names of the cells in the notebook. Clicking a circle takes you to the code cell. In this notebook, a GraphXR API call is used, and Vegalite and D3 javascript packages provide data parsing and geospatial mapping.
 * Title bars located at the top of the window provide information about the project and the open notebook, ways to navigate Grove functions and to edit the code.
@@ -48,7 +51,7 @@ image::/v2_17/11_01_03_GroveCells1320.png[]
 NOTE: The top bar is divided into two, depending on the size of your browser window.
 
 +
-image::/v2_17/11_01_05_MoreMenu720.png[]
+image::/v3/11_01_05_MoreMenu720.png[]
 
 ==== Title bar functions
 
@@ -71,13 +74,13 @@ Depending on the width of your browser you see one or two title bars at the top 
 * Badges for the contributors to the notebook.
 * *_View Code_* and *_Edit Code_* icons. This displays the javascript code cells and makes them editable.
 +
-image::/v2_17/11_01_05_ViewEditCode720.png[]
+image::/v3/11_01_05_ViewEditCode720.png[]
 
 An additional title bar includes information and action icons for the notebook, including:
 
 * *_Version_* icon. Click to display a *_Version Control_* history for this notebook.
 +
-image::/v2_17/11_01_07_VersionHistory720.png[]
+image::/v3/11_01_07_VersionHistory720.png[]
 
 * *_Publish_* (globe) icon. Click to display a *_Publish Settings_* dialog where you can change the permission level for the notebook or unpublish it.
 * The latest published time
@@ -97,10 +100,10 @@ You can also access a shared notebook under the *_Grove Links_* tab. This may be
 +
 The notebook opens in a separate window.
 +
-image::/v2_17/11_01_20_GroveLinks720.png[]
+image::/v3/11_01_20_GroveLinks720.png[]
 
-. Click the *_Load Data_* button in the example notebook, which loads selected csv data to the GraphXR graph space.
+. Click the *_Load Data_* button in the example notebook, which loads selected csv data to the GraphXR project canvas.
 +
-image::/v2_17/11_01_21_GroveLinks720.png[]
+image::/v3/11_01_21_GroveLinks720.png[]
 +
 If desired, you can review the code or make a copy of the example notebook.

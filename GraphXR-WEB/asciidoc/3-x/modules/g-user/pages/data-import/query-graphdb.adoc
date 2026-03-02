@@ -1,0 +1,163 @@
+= Query a graph database
+
+When you first open a GraphXR project, the canvas is empty. If the project is connected to a graph database (an external one, or the internal data store), you must query to import its data to the project canvas.
+
+* No-code queries are available using the project *_Query / Search_* bar, the *_Expand with Relationships_* tool, and the *_Pull_* button for samples of data by Category or Relationship.
+* Those comfortable with a graph query language can open the *_Query_* panel to enter, run, and save Cypher or GQL queries. 
+
+NOTE: If views have been saved in the project, you can load one of them, then query the database to add data to the view, if desired.  
+ 
+== No-code Query in the Query bar
+
+For a project connected to a graph database, you can use the project *_Query /Search_* bar to build and run a no-code visual query for the data matching a specific graph pattern.
+
+You can 
+* Query for a category of nodes.  
+* Query for any pattern based on the categories and their relationships defined in the database
+* Optionally, add a property filter to category or relationship elements to narrow down the patterns that are returned.   
+
+*To build a no-code visual query:*
+
+. In the project *_Query / Search_* bar, click to show the query dropdown menu.
+. Select categories and relationships (and optionally specify property values) to build the query pattern. 
++
+At each step the available relationships or categories appear in the dropdown menu. The example query below returns patterns where *_VMInstance_* nodes are connected  through *_ASSIGNED_ROLE_* edges to *_Role_* nodes connected through *_ALLOWS _ACCESS_TO_*  edges to *_Resource_* nodes.   
++ 
+
++
+image::/v3/02_03_01_QueryBarPuppyGraph.png[,420,180,role=text-left]
++
+
+. Click the run arrow on the far right end of the Query bar. 
+
++
+image::/v3/02_03_02_QueryRun.png[,520,280,role=text-left]
+
+ 
+== No-code query with Expand
+
+Once data have been returned to the canvas you can select nodes, and use no-code *_Expand_* to query for additional nodes in the database which are connected to the selected nodes through any of the database's defined relationships. 
+
+=== Basic *_Expand_* 
+
+*To query using right-click *_Expand_*:*
+
+. Select one or more nodes on the canvas using any method.
+. Right-click and choose *_Expand_* to see the list of relationships (and their directions) connected to the selected nodes. 
++
+image::/v3/02_03_03_ExpandBooks.png[,340,400,role=text-left]
++
+
+. Select a relationship, or select *_All_*, to expand on all the possible relationships and return up to 1000 nodes and their connecting edges.
+
++
+If more than 1000 items match the query, an *_Expand Next Page_* dialog indicates the number of items that have been returned so far.
++
+
+. Click *_Expand More_* to return the next 1000 connected nodes, or *_Cancel_* (or the *X* at the upper right) to close the dialog without returning all the results. 
+
++
+image::/v3/02_03_04_ExpandMore.png[,360,220,role=text-left]
++
+
++
+When there are no more nodes to return, a message indicates that all relationships have been expanded. 
+
+=== Advanced no-code *_Expand_*
+
+More specific expansion options are available either through the right-click *_Advanced Expansion_* dialog or through the *_Expand_* toolbar's  *_Expand with Relationships_* dialog.
+
+* Use either dialog to select more than one specific relationship to expand on, and to edit the limit of the number of edges expanded upon.
++
+image::/v3/02_03_05_RCAdvancedExpand.png[,340,400,role=text-left]
++
+* Use the *_Expand_* toolbar's *_Expand with Relationships_* dialog if you also want to specify the direction of the relationships or the number of repeated expand queries to perform. 
++
+image::/v3/02_03_06_ExpandDialog.png[,340,400,role=text-left]
+ 
+ 
+*To run an advanced *_Expand_* query:*
+ 
+. Click *_Expand_* in the toolbar to display the full *_Expand with relationships_* dialog.  
+. Click the checkbox next to a relationship name to expand on that relationship (or click *_All_* to expand on all available relationships).
+. Set additional options for the query:
++
+* In the *_Limit_* textbox, edit the limit for the number of edges expanded upon in each query.
+* Click the *_Only among selected nodes_* checkbox to expand relationships only for the selected nodes.
+* Set *_Directional_* relationships using the dropdown menu. You can choose *_All_* directions, only nodes connected by relationships *_From_* the selected nodes or *_To_* the selected nodes.
+* Increase *_Repeat relationship times_*, which repeatedly expands on the specified edge *_Limit_*.
+ 
+
+== Pull data by Category or Relationship
+
+You can pull a sample of 25 nodes, or edges with their attached nodes, from any category or relationship in the connected database. 
+
+NOTE: While *_Pull_* is useful for initial exploration, a no-code query (or keyword search) combined with *_Expand with Relationships_* will usually yield more focused results.
+
+*To pull data by Category:*
+
+. Open the *_Project > Category_* subpanel.
+. Click one of the *_Category_* items to select it.
++
+image::/v3/02_03_07_PullBank.png[,520,280,role=text-left]
++
+. Click *_Pull_* to pull 25 nodes of that category.
++
+image::/v3/02_03_08_PullBankDone.png[,720,380,role=text-left]
++
+. For more samples, click again, as many times as you want.
+
+*To pull data by relationship:*
+
+. Open the *_Project > Relationship_* subpanel.
+. Click one of the *_Relationship_* items to select it.
++
+image::/v3/02_03_09_PullTOBANK.png[,520,280,role=text-left]
++
+. Click *_Pull_* to pull 25 edges associated with that relationship and the connected nodes.
++
+image::/v3/02_03_08_PullEdgesDone.png[,520,280,role=text-left]
++
+. For more samples, click again, as many times as you want.
+
+
+== Query using Cypher or GQL
+
+Even though no-code visual query through the *_Query_* bar and *_Expand_* tool is fast and effective in many cases, you may want to specify more complex graph patterns that Cypher, and ISO-standard Graph Query Language (GQL) support. 
+
+In the project's *_Query_* panel, you can:    
+
+* Enter a Cypher or GQL query and click its _Run_ icon to run it.
+* Save and name a query by clicking its *+* (plus) icon. The saved query appears on the dropdown *_Collection List_*.
+* Run a saved query by selecting it in the *_Collection List_* , which transfers it to the query window where you can _Run_ it.
++
+image::/v3/02_03_10_CypherQuery.png[,320,180,role=text-left]
+
+All GraphXR projects include a basic Cypher query that pulls 100 connected nodes from the database. This query will *MATCH* any pattern of nodes *n* and *m* connected by any relationship *r*, and *RETURN* the first *100* found. A *LIMIT* is set because this query will likely return a large amount of data.
+
+----
+MATCH (n)-[r]-(m) RETURN * LIMIT 100
+----
+
+A more specific, but still basic query for  graph patterns is shown below.  
+
+----
+MATCH (c:Characters)-[r:belongs_to]-(h:House) RETURN *
+----
+
+This query will *MATCH* any pattern of _Characters_ and _House_ nodes connected by a _belongs_to_ relationship and *RETURN* all the matching graph patterns. The variables *c*, *r*, and *h* are assigned to simplify further query specifications.
+
+NOTE: See https://neo4j.com/developer/cypher/[For Beginners - Cypher Query language] and the https://neo4j.com/docs/cypher-manual/current/introduction/[Neo4j Cypher Manual].
+
+*To run and save a Cypher query:*
+
+. Open the *_Query_* panel and *_Cypher_* subpanel.
+. Enter a Cypher query in the query text box (or click the *_Collection List_* dropdown arrow to select a saved query).
+. Click the *_Load Inner Relationship_* checkbox to include the relationships between the nodes pulled by a query.
+. Click the _Run Cypher_ icon to query the connected database.
++
+The nodes and connecting edges matching the query pattern are returned to the project canvas.
++
+image::/v3/02_03_11_CypherQueryRun.png[,720,280,role=text-left]
+
+. Click the *+* (plus) icon to save the query. In the *_Alias Name_* dialog, enter a name for the query, and click *_Confirm_*.

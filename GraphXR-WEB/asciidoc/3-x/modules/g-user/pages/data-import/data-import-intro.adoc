@@ -1,24 +1,19 @@
-= Importing Data
+= Import Data
 
-GraphXR enables you to import data from many different sources. You can:
+When you enter a project's graph space for the first time, it will be empty. You can  import data to the project canvas from many different sources, including:
 
-* xref:./import-by-drag-and-drop.adoc[Import by drag and drop]. Files you can drag and drop include CSV or Excel files or archives, JSON files, data views exported as GraphXR's GXRF files, or Snapshot archives.
+* xref:./import-by-drag-and-drop.adoc[Import by drag and drop]. Files you can drag and drop include CSV or Excel files, JSON files, and data views exported as a CSV or Excel archive, a _.graphxr_ file, or a _.graphxrsnapshots_ archive.
+
+* xref:./query-graphdb.adoc[Query a Graph Database]. You can perform no-code query in the  project *_Query / Search_* bar, use the *_Expand_* tool to expand the graph through its relationships, pull by category or relationship, or enter and run a Cypher or GQL query.  
+
+* Query a xref:./import-via-mapping.adoc[*_CSV_*] file.
+* Query a connected xref:./query-sql.adoc[*_SQL_*] database and import the resulting table as graph data.
 +
-
-NOTE: You can also use *_Import_* or *_Import Views_* buttons on the *_Data_* tab in the *_Projects_* panel to locate and import files. *_Import Views_* highlights files on your system that have the _graphxr_ extension.
-
-+
-
-* xref:./import-from-neo4j.adoc[Import from Neo4j]. You can pull by category or relationship, import the results of database search, use the *_Expand_* tool, or use a Cypher query. The  *_Visual Query Builder_* extension lets you create and run basic no-code visual Cypher queries. 
-+ 
-* Query a CSV file and import it as graph data. 
-
-* Query a connected SQL database and return a table of results that can be imported as graph data.
-+
-NOTE: Data in a single table can be extracted as categories, relationships, properties, and key values using the xref:./import-using-a-mapping.adoc[*_Mapping Editor_*]. 
+For a CSV file or a SQL table, GraphXR's xref:./import-via-mapping.adoc[*_Mapping Editor_*] lets you transform the data in a single table according to a graph model you specify. 
 +
 * Query a JSON file or perform a Gremlin query on a suitable connected database.
 
-* xref:./load-a-saved-view.adoc[Load a project's data *_View_*] or access xref:data-sharing/data-share-views.adoc[shared views]. 
+* xref:./load-a-saved-view.adoc[Load a project's data *_View_*] and access xref:g-user:data-share-views.adoc[Shared views]. 
 
-* For Enterprise users, advanced GraphXR extensions can be provided to import data from other graph or composite databases, and to craft reproducible workflows for data import.
+* For Enterprise users, advanced GraphXR extensions are available to import data from a variety of graph or composite databases, and to craft reproducible workflows for importing data.
+
