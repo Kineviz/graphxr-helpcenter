@@ -11,7 +11,8 @@ NOTE: If views have been saved in the project, you can load one of them, then qu
 
 For a project connected to a graph database, you can use the project *_Query /Search_* bar to build and run a no-code visual query for the data matching a specific graph pattern.
 
-You can 
+You can
+ 
 * Query for a category of nodes.  
 * Query for any pattern based on the categories and their relationships defined in the database
 * Optionally, add a property filter to category or relationship elements to narrow down the patterns that are returned.   
