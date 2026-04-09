@@ -1,0 +1,11 @@
+[project]
+name = "rag"
+version = "0.1.0"
+description = "RAG pipeline for the GraphXR Help Center, powered by LM Studio"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.5.2",
+    "openai>=2.24.0",
+    "rich>=14.3.3",
+]
