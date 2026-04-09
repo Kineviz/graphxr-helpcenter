@@ -15,13 +15,6 @@ xref:attachment$quickstart-card-bigquery.pdf[*Quick Start Card for BigQuery*]
 
 link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-for-bigquery?project=kineviz-public[Deploy on Google Cloud Marketplace]
 
-== Features
-
-* Single Project
-* Single User
-* Supports up to 50,000 nodes and 50,000 edges
-* User-managed *UI Configuration* for additional GraphXR features such as Transforms, Map, Algorithms, and Extensions.
-
 == Video Overviews
 
 * *From Unstructured to Actionable: Google BigQuery Graph and Kineviz GraphXR*
