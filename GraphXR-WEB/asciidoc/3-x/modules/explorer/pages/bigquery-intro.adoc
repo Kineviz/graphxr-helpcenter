@@ -1,6 +1,6 @@
 = GraphXR Explorer for BigQuery
 
-*GraphXR Explorer for BigQuery is under development. Please link:https://kineviz.com/contact[contact us] for more information.*
+GraphXR Explorer provides a one-stop connection from the Google Cloud Marketplace to a BigQuery property graph. 
 
 == Features
 
@@ -9,3 +9,60 @@
 * Supports up to 50,000 nodes and 50,000 edges
 * Streamlined visualization for BigQuery.
 * User-managed *UI Configuration* for additional GraphXR features such as Transforms, Map, Algorithms, and Extensions.
+
+
+xref:attachment$quickstart-card-bigquery.pdf[*Quick Start Card for BigQuery*] 
+
+link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-for-bigquery?project=kineviz-public[Deploy on Google Cloud Marketplace]
+
+== Features
+
+* Single Project
+* Single User
+* Supports up to 50,000 nodes and 50,000 edges
+* User-managed *UI Configuration* for additional GraphXR features such as Transforms, Map, Algorithms, and Extensions.
+
+== Video Overviews
+
+* *From Unstructured to Actionable: Google BigQuery Graph and Kineviz GraphXR*
+
+video::mno10Yay9TI[youtube]
+
+* *Patent Intelligence Re-imagined with Kineviz GraphXR and GCP BigQuery Graph*
+
+video::rT513IZ_tC4[youtube]
+
+== User Guide
+
+xref:attachment$quickstart-guide-bigquery.pdf[*GraphXR Explorer for BigQuery User Guide*]
+  
+ 
+=== Before you begin…
+
+Before you can use GraphXR Explorer, you need:
+
+* A Google Cloud BigQuery account.
+* BigQuery data sources and a BigQuery property graph database modeled from them.
++
+NOTE: You can start with BigQuery demo data available for free trial through your Google Cloud Platform account.
++
+
+[cols="^3,^3"]
+|===
+| xref:g-user:graphxr-start/projects-home.adoc[1. *Connect to BigQuery*]
+ 
+| xref:g-user:data-import/query-graphdb.adoc[2. *No-Code Graph Query*]
+
+| xref:g-user:display-options/using-display-options.adoc[3. *Style the Graph*]
+
+| xref:g-user:nav-select/explore-select.adoc[4. *Navigate and Select*]
+
+| xref:g-user:layouts/working-with-layouts.adoc[5. *Choose Layouts*]
+
+| xref:g-user:nav-select/select-paths.adoc[6. *Discover Connected Paths*]
+
+| xref:g-user:data-share-views.adoc[7. *Save and Share Views*]
+  
+| xref:g-user:graphxr-start/project-ui-config.adoc[8. *Add Features to Explorer*]
+
+|===

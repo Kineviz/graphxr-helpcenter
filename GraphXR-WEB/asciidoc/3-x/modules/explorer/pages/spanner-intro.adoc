@@ -2,7 +2,7 @@
 
 GraphXR Explorer provides a one-stop connection to a property graph on Google Spanner from the Google Cloud Marketplace. 
 
-xref:attachment$quick-start-card.pdf[*Quick Start Card*] 
+xref:attachment$quickstart-card-spanner.pdf[*Quick Start Card for Spanner*] 
 
 link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-spanner?q=search&invt=Abtgig&project=kineviz-public[Deploy on Google Cloud Marketplace]
 
@@ -26,7 +26,7 @@ video::XdzcP8fHTo8[youtube]
 
 == User Guide
 
-xref:attachment$quick-start-guide.pdf[*GraphXR Explorer for Spanner User Guide*]
+xref:attachment$quickstart-guide-spanner.pdf[*GraphXR Explorer for Spanner User Guide*]
   
  
 === Before you begin…
