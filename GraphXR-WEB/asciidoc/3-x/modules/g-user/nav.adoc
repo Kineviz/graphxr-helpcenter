@@ -62,9 +62,10 @@
 *** xref:geospatial-maps.adoc[World Map Layout]
 
 
+** xref:graphxr-agent.adoc[*GraphXR Agent*]
+
 ** xref:graphxr-extensions/intro-extensions.adoc[*GraphXR Extensions*]
 *** xref:graphxr-extensions/grove.adoc[*Grove*]
 *** xref:graphxr-extensions/graph-composer.adoc[*Graph Composer*]
-*** xref:graphxr-extensions/graphxr-agent.adoc[*GraphXR Agent*]
 
 ** xref:nav-select/ref-shortcut-keys.adoc[*Shortcut Keys Reference*]
