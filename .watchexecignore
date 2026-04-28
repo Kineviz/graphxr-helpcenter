@@ -1,0 +1,5 @@
+**/.git/**
+**/node_modules/**
+GraphXR-WEB/docs-site/build/**
+ui/build/**
+ui/public/**

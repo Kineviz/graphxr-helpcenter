@@ -1,0 +1,25 @@
+= GraphXR Agent
+
+GraphXR Agent is an AI-assisted extension for working with graph data in GraphXR. Use it to turn natural-language questions and instructions into guided graph exploration, data preparation, and analysis steps.
+
+GraphXR Agent helps analysts move from a question to an actionable graph workflow by suggesting the next operation, explaining graph patterns, and helping prepare data for investigation.
+
+== Quickstart
+
+. Open a GraphXR project.
++
+image::/v3/Agent_OpenProject.png[]
+. Open GraphXR Agent from the left sidebar and click the "New thread" button.
++
+image::/v3/Agent_OpenGraphXRAgent.png[]
+. Input the prompt "Create a random graph" and click "Send".
++
+image::/v3/Agent_InputPrompt.png[]
+. Wait for the result. Your result may vary.
++
+image::/v3/Agent_CreateRandomGraph.png[]
+
+== Tips
+
+* The Agent saves a view before any destructive actions.
+* Treat generated suggestions as analytical guidance and verify results against your source data.

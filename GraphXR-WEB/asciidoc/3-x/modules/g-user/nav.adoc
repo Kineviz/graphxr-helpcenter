@@ -65,5 +65,6 @@
 ** xref:graphxr-extensions/intro-extensions.adoc[*GraphXR Extensions*]
 *** xref:graphxr-extensions/grove.adoc[*Grove*]
 *** xref:graphxr-extensions/graph-composer.adoc[*Graph Composer*]
+*** xref:graphxr-extensions/graphxr-agent.adoc[*GraphXR Agent*]
 
 ** xref:nav-select/ref-shortcut-keys.adoc[*Shortcut Keys Reference*]

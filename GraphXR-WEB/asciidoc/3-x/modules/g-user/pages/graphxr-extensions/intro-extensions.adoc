@@ -6,6 +6,7 @@ GraphXR includes the following extensions by default:
 
 * xref:./grove.adoc[*_Grove_*] for building reproducible workflows, dashboards, and learning resources in an observable-based javascript notebook environment.
 * xref:./graph-composer.adoc[*_Graph Composer_*] for modeling property graphs from relational tables or CSVs.
+* xref:./graphxr-agent.adoc[*_GraphXR Agent_*] for AI-assisted graph exploration and analysis.
 
 For Enterprise subscriptions, additional extensions are available, including:
 
