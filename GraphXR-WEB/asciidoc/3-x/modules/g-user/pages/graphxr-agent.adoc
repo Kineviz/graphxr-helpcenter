@@ -1,6 +1,6 @@
 = GraphXR Agent
 
-GraphXR Agent is an AI-assisted extension for working with graph data in GraphXR. Use it to turn natural-language questions and instructions into guided graph exploration, data preparation, and analysis steps.
+GraphXR Agent is a built-in AI assistant for working with graph data in GraphXR. Use it to turn natural-language questions and instructions into guided graph exploration, data preparation, and analysis steps.
 
 GraphXR Agent helps analysts move from a question to an actionable graph workflow by suggesting the next operation, explaining graph patterns, and helping prepare data for investigation.
 
