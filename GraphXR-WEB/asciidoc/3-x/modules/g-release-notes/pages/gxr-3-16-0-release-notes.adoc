@@ -1,0 +1,63 @@
+= GraphXR 3.16.0 Release Notes
+
+*Release Date:* March 17, 2026
+
+This release includes enhanced usability for Views and shared projects, faster hiding of nodes in large graphs, bug fixes, and new API calls.  
+  
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.16.0
+
+=== Usability Enhancements
+
+* Add view operations to the Views menu (GXR-3710): Rename, Duplicate, Share, and Delete views is now available from the Views title bar dropdown menu.
+
+* Share projects are now indicated by a blue dot in the Projects list, and sharing authentication and workflows have been improved (GXR-3721 and GXR-3807). 
+
+* While a tutorial is running, a user can now perform other work: add input text, select from a menu and drag files into the drop zone (GXR-3719).
+
+* The default property color picker is now D3, which is more usable than the classic color palette (GXR-3577).
+ 
+=== Performance Enhancements
+ 
+* Speed of hiding nodes in large graphs (10-20K nodes)is accelerated (GXR-3583).
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* None
+ 
+=== GraphXR API 
+
+* gxr.colorNodesByProperty: legend options now set correctly (GXR-3707) 
+* gxr.setGraphMode:  add comment option (GXR-3708) 
+
+* gxr.expandFromDatabase() (GXR-3702)
+
+  
+== Bug Fixes
+
+* Aggregate transform custom functions now only add the aggregate property to the target  (not the source)(GXR-3583).
+* Set Category Caption menu no longer disappears (GXR-3674).
+* Filter playback now works as expected (GXR-3705).
+
+== Removed 3.16.0
+
+* None
+
+== Extensions 3.16.0
+
+* Enforce extension version compatibility (GXR-3494): Ensured that extension versions are checked for compatibility with the running GraphXR version to prevent runtime issues.
+
+=== Graph Composer
+_Property graph data modeling in GraphXR_ 
+
+* Graph Composer tutorial refinements and UI enhancements (GXR-3511).
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+* Legacy grovebooks now converted to .md format so that they open reliably (GXR-3691).
+* Grove display from full screen to half-screen now works(GXR-3691).
+
+
+ 

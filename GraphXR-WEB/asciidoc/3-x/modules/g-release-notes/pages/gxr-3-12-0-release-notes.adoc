@@ -45,13 +45,3 @@ _Property graph data modeling in GraphXR_
 _Observable-based javascript notebooks_
 
 * Environment-driven extension and Grove notebook installation (GXR-3495): Added support for installing extensions and Grove notebooks via configuration and environment variables, including improvements to the OpenGrove on-load behavior.
- 
-NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
- 
-== Supported Environments 3.12.0
-
-* WINDOWS, MAC OSX, AND LINUX
-* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
-* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
-+
-_For more information,_ please contact https://www.kineviz.com[Kineviz].

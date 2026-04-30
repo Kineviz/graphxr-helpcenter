@@ -45,13 +45,3 @@ _Property graph data modeling in GraphXR_
 === Grove
  
 _Observable-based javascript notebooks_
- 
-NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
- 
-== Supported Environments 3.7.0
-
-* WINDOWS, MAC OSX, AND LINUX
-* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
-* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
-+
-_For more information,_ please contact https://www.kineviz.com[Kineviz].

@@ -1,0 +1,60 @@
+= GraphXR 3.18.0 Release Notes
+
+*Release Date:* April 22, 2026
+
+This release includes improved usability of the Query bar, enhancements to the Map panel and Shortcut transform, and various bug fixes.
+  
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.18.0
+
+=== Usability Enhancements
+
+* Query Bar enhancements: 
+** The property filters applied to a category are now shown on the query (GXR-3295).
+** An open-ended pattern is now a valid query(e.g. Category - RELATIONSHIP - Any) (GXR-3204).
+** Press backspace to delete the most recent query item (GGXR-3196).
+** A *RESULTS LIMIT* menu in the query dropdown lets users set a limit (or *No Limit*) for the number of nodes a query can return. The default is 2000 nodes (GXR-3578).
+
+* When a graph includes nodes but no edges, in the Shortcut transform panel, the options to select edges are not displayed (GXR-3726).
+* Map panel boundaries are now visible (GXR-3681).
+* A Parametric layout is now cleared before a Map layout is applied (GXR-3848).
+
+* In the Other menu (Kineviz logo), Cmd or Ctrl - Click to open a menu selection in a separate tab (GXR-3846).
+ 
+=== Performance Enhancements
+ 
+* None
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* None
+ 
+=== GraphXR API 
+
+* gxr.query() corrected so that Cypher queries operate the same through the API and the Query panel UI (GXR-3703).
+  
+== Bug Fixes
+
+* When applying a filter to a view with hidden nodes, hidden nodes now stay hidden (GXR-3745).
+* Hidden nodes now stay hidden when a view with hidden nodes is loaded (GXR-38475).
+* Map Auto-fit now persists after Style Setting (GXR-3735).
+* Function (f(x)) transforms show the transformed format only under the new property (not the source property)(GXR-3741).
+* Parametric layouts stack unused nodes at the origin by default, providing a clean layout without needing to explicitly hide the nodes, and this functionality has been restored.  Also, the unused nodes can be rendered in a force layout on the canvas by checking the force layout checkbox (but this is rarely useful) (GXR-3739).
+* Parametric layouts stack unused nodes at the origin by default, providing a clean layout without needing to explicitly hide any nodes, and this functionality has been restored.  Also, although rarely useful, you can use the the force layout checkbox to render the unused nodes in a force layout on the canvas (GXR-3739).
+* The sensitivity of the Fog Density slider is now properly adjusted (GXR-3740).
+* The Expand function applied to Kuzu DB now returns all connected nodes as expected. (GXR-3002).
+* Nodes on the canvas are now properly synchronized with those in the internal data store. (GXR-3567).
+* *Save to Internal Datastore* now uses the correct plus or minus icons to select properties. (GXR-3872).
+
+== Removed 3.18.0
+
+* None
+
+== Extensions 3.18.0
+
+=== Graph Composer
+_Property graph data modeling in GraphXR_ 
+
+=== Grove 
+_Observable-based javascript notebooks_

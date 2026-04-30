@@ -1,0 +1,49 @@
+= GraphXR 3.15.0 Release Notes
+
+*Release Date:* March 4, 2026
+
+This release fixes bugs, improves usability of the Extract transform, and enhances performance of path finding in large graphs. New API elements are added. 
+  
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.15.0
+
+=== Usability Enhancements
+
+* Extract transform UI is improved for clarity and usability (GXR-3575).
+ 
+=== Performance Enhancements
+ 
+* Speed of path finding in large graphs is accelerated (GXR-3586).
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+*  None
+ 
+=== GraphXR API 
+
+* gxr.screenshot styles improved (GXR-3670) 
+
+* gxr.views.save, gxr.views.list, and gxr.views.load (GXR-3668)
+* gxr.files.get(path) (GXR-3665) 
+ 
+  
+== Bug Fixes
+
+* CSV/SQL Mapping Editor ID conflict resolved  when creating new node (GXR 3657).
+* Legend icons for style setting are now all consistent (brush icons) (GXR 3613).
+* Map search now works as expected (GXR 35877)
+
+== Removed 3.15.0
+
+* None
+
+== Extensions 3.15.0
+
+=== Graph Composer
+_Property graph data modeling in GraphXR_ 
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+* Button added to open Grove in Antigravity (GXR-3596).

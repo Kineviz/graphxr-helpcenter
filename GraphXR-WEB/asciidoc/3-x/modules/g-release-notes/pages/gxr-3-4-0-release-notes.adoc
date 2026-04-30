@@ -65,13 +65,3 @@ _Observable-based javascript notebooks_
  
 * Improved sandbox project creation and checkbox synchronization for Grove workflows (GXR-3172).
 * Added configuration-based feature toggling for GXR3 tags and UI components (GXR-3219).
-
-NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
- 
-== Supported Environments 3.4.0
-
-* WINDOWS, MAC OSX, AND LINUX
-* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
-* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
-+
-_For more information,_ please contact https://www.kineviz.com[Kineviz].

@@ -46,13 +46,3 @@ NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_
 _Observable-based javascript notebooks_
 
 * Grovebook display options (GXR-3328): Adds project settings to control how and where a Grovebook opens (left vs. floating mode and configurable default location) and switches pinned Grove references to use fileKey instead of _id for better behavior when cloning sandboxes.
- 
-NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
- 
-== Supported Environments 3.8.0
-
-* WINDOWS, MAC OSX, AND LINUX
-* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
-* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
-+
-_For more information,_ please contact https://www.kineviz.com[Kineviz].

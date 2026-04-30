@@ -1,0 +1,55 @@
+= GraphXR 3.14.0 Release Notes
+
+*Release Date:* February 11, 2026
+
+This release includes refactored Transforms, Legend, and Query Bar functions and UI to improve performance and usability, and strengthen compatibility with the GraphXR API.
+  
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.14.0
+
+=== Usability Enhancements
+
+* Refactor Transform Panels: Use AntD components and strengthen compatibility with GraphXR API for Formula (GXR 3566), Extract (GXR 3563), Link (GXR 3523), Merge (GXR 3551), and  Shortcut (GXR 3551) panels.
+
+* Refactor the Legend (GXR 3509, GXR 3555, GXR 3560, GXR 3553) to use AntD components. Legend labels switch to icons when browser window is made narrower.
+
+* *Export* menu in the legend re-designed to be more compact (GXR 3559).
+
+* Query bar property filter improved (GXR 3597).
+
+ 
+=== Performance Enhancements
+ 
+* None
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* Add API key for database proxy (GXR-3633):  
+* Add per-user API keys (GXR 3534)
+ 
+=== GraphXR API 
+
+* gxr.relationshipSelect() (GXR-3554)
+* gxr.categorySelect() (GXR-3552) 
+  
+== Bug Fixes
+
+* Category Style Selector now opens when paintbrush is clicked (GXR 3565).
+* Extract delivers nodes of the correct color (GXR 3562).
+* Extract no longer creates unwanted edges when isSplit and inheritLinks is selected (GXR 3561).
+* Floating panels are now not included in screen shots (GXR 3545).
+* Aggregate along multiple relationships now works as expected (GXR 3543).
+* Dragging to resize a panel is now faster and smoother (GXR 3505).
+
+== Removed 3.14.0
+
+* None
+
+== Extensions 3.14.0
+
+=== Graph Composer
+_Property graph data modeling in GraphXR_ 
+
+=== Grove 
+_Observable-based javascript notebooks_

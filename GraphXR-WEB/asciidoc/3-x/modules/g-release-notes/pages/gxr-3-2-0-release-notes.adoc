@@ -69,13 +69,3 @@ _Observable-based javascript notebooks_
 * Added support for reordering pinned Grove links.(GXR-3089, GXR-3079, GXR-2859)
 * Added pop-out Grovebook capability for multitasking.
 * Improved default behavior for non-authenticated and “default project only” users.
-
-NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
- 
-== Supported Environments 3.2.0
-
-* WINDOWS, MAC OSX, AND LINUX
-* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING 
-* The GraphXR client runs best in Google Chrome; works in Safari. Compatibility with other browsers may vary.
-+
-_For more information,_ please contact https://www.kineviz.com[Kineviz].

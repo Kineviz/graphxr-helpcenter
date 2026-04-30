@@ -1,0 +1,43 @@
+= GraphXR 3.13.0 Release Notes
+
+*Release Date:* January 6, 2026
+
+This release adds an item to the *More* menu to switch to another project without returning to the *Projects* home page, and improves performance of floating panels.
+  
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.13.0
+
+=== Usability Enhancements
+
+* *Recent Projects* item added to *More* menu (GXR-3515): *Recent Projects* lists most recently opened projects, letting you switch to another project without returning to the *Projects* home page.
+ 
+=== Performance Enhancements
+ 
+* Floating panel and Extension Panel share the same iframe, avoiding reloads (GXR-3518).
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* None
+ 
+=== GraphXR API 
+
+* None
+  
+== Bug Fixes
+
+* None
+
+== Removed 3.13.0
+
+* None
+
+== Extensions 3.13.0
+
+=== Graph Composer
+_Property graph data modeling in GraphXR_ 
+
+* Graph Composer Tutorial (GXR-3510): Tutorial edited and refined.
+
+=== Grove 
+_Observable-based javascript notebooks_

@@ -3,6 +3,71 @@
 [cols="1,1,10"]
 |===
 |*Tag* |*Date* |*Release Highlights*
+|xref:./gxr-3-19-0-release-notes.adoc[3.19.0] |4/29/2026 
+a|* *Usability*
+** Interactive *Minimap* added to the project canvas to orient the user.
+** Other menu (Kineviz logo) includes *Create New Project* item.
+
+* *Performance* 
+** Speed and response of panning and camera reset is improved.
+
+|xref:./gxr-3-18-0-release-notes.adoc[3.18.0] |4/22/2026 
+a|* *Usability*
+** Query bar accepts open-ended pattern, and user-selected limit on results.
+** Map panel boundaries are now visible.
+** A parametric layout is cleared before a Map layout is applied.
+** In the Other menu (Kineviz logo), Cmd or Ctrl - Click to open a menu selection in a separate tab  
+
+|xref:./gxr-3-17-0-release-notes.adoc[3.17.0] |4/1/2026 
+a|* *Usability*
+** Legend labeled with icons, not text.
+** Shared projects include a blue dot in the Projects list.
+
+* *GraphXR API* 
+** gxr.invertSelectedNodes()
+
+|xref:./gxr-3-16-0-release-notes.adoc[3.16.0] |3/17/2026 
+a|* *Usability*
+** Views menu includes Rename, Duplicate, Share, and Delete a view.
+** Shared projects include a blue dot in the Projects list.
+
+* *Performance* 
+** Speed of hiding nodes in large graphs accelerated.
+
+* *GraphXR API* 
+** gxr.expandFromDatabase()
+
+|xref:./gxr-3-15-0-release-notes.adoc[3.15.0] |3/4/2026 
+a|* *Usability*
+** Transform panels and Legend refactored with antD components and new UI.
+** *Export* menu at the right of the Legend more compact.
+** Query bar property filter improved
+
+* *Performance* 
+** Speed of path finding in large graphs accelerated.
+
+* *GraphXR API* 
+** gxr.views.save, gxr.views.list, and gxr.views.load
+** gxr.files.get(path) 
+
+|xref:./gxr-3-14-0-release-notes.adoc[3.14.0] |2/11/2026 
+a|* *Usability*
+** Transform panels and Legend refactored with antD components and new UI.
+** *Export* menu at the right of the Legend more compact.
+** Query bar property filter improved
+
+* *Admin, Security, Configuration, and Deployment*
+** API key for database proxy.
+** Per-user API keys
+
+* *GraphXR API* 
+** gxr.relationshipSelect() 
+** gxr.categorySelect()
+
+|xref:./gxr-3-13-0-release-notes.adoc[3.13.0] |1/6/2026 
+a|* *Usability*
+** *Recent Projects* item added to *More* menu.
+
 |xref:./gxr-3-12-0-release-notes.adoc[3.12.0] |12/17/2025 
 a|* *Usability*
 ** Restore UI Configuration to basic Settings.

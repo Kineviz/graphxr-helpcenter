@@ -1,0 +1,43 @@
+= GraphXR 3.17.0 Release Notes
+
+*Release Date:* April 1, 2026
+
+This release includes improved Legend labeling, a new API call, and bug fixes.
+  
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.17.0
+
+=== Usability Enhancements
+
+* Legend sections now labeled with icons, rather than text (GXR-3730): The Legend is labeled with icons even when the browser window is wide for a compact UI that leaves more room for the View title bar menu.
+ 
+=== Performance Enhancements
+ 
+* None
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* None
+ 
+=== GraphXR API 
+
+* gxr.invertSelectedNodes() (GXR-3734)
+  
+== Bug Fixes
+
+* Expanding repeatedly on a Kuzu db using ctrl-x now works as expected (GXR-3827).
+* Floating panel overlays no longer conflict (GXR-3610).
+
+
+== Removed 3.17.0
+
+* None
+
+== Extensions 3.17.0
+
+=== Graph Composer
+_Property graph data modeling in GraphXR_ 
+
+=== Grove 
+_Observable-based javascript notebooks_

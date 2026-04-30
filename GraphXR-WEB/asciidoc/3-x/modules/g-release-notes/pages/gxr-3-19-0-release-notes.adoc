@@ -1,0 +1,58 @@
+= GraphXR 3.19.0 Release Notes
+
+*Release Date:* April 29, 2026
+
+This release introduces a live Minimap of the entire project canvas, improved Other menu (Kineviz logo) and separate About menu item.
+  
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.19.0
+
+=== Usability Enhancements
+
+* *Minimap* is a small interactive view of the entire graph, displayed in a rectangle at the bottom right of the project window. It includes an outline of the portion of the graph currently shown on the canvas (GXR-3228). 
++
+image::/v3/V3_19_0_01_Minimap.png[,340,250,role=text-left]
++
+** Click and drag the outline to reposition the camera view. 
+** Dismiss or restore the Minimap by clicking the minus icon on the upper right of the Minimap, or the Minimap icon above the GUI navigation controls. 
++
+image::/v3/V3_19_0_02_MinimapRestore.png[,340,180,role=text-left]
++
+* Query bar enhancements:
+** Improved UI tips for Filtering by Property (GXR-3877).  
+** The Query / Search bar more clearly distinguishes between query results delivered to the canvas and full text search for nodes on the canvas (or the connected database, if available) (GXR-3930). 
+* Other menu (Kineviz logo) now includes *Create New Project* (except when only one project is supported) (GXR-3873).
+* A spinner shows progress of loading a view, preventing other actions until the view is loaded (GXR-3874).  
+ 
+=== Performance Enhancements
+ 
+* Speed and response of panning and camera reset is improved (GXR-3893).
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* None
+ 
+=== GraphXR API 
+
+* None
+  
+== Bug Fixes
+
+* *Save as New View* preserves settings added to the view on the canvas (not those on the view when first loaded) (GXR-3908).
+* Map layout now applies the correct default map orientation (GXR-3884).
+
+== Removed 3.19.0
+
+* None
+
+== Extensions 3.19.0
+
+=== Graph Composer
+_Property graph data modeling in GraphXR_ 
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+* Shared projects now open project Grovebooks as expected (GXR-3875).
+ 
