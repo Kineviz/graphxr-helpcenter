@@ -52,11 +52,11 @@ image::/v3/V3_20_0_06_ViewToClone.png[,320,180,role=text-left]
 
 * More than one view (or all project views) can be deleted at a time. Select the checkbox at the upper right of a view thumbnail or list and in the modal dialog, click *Delete Selected* (or choose *Select all* to delete all project views).
 +
-image::/v3/V3_20_0_07_ViewBulkDelete.png[,420,180,role=text-left]
+image::/v3/V3_20_0_07_ViewsBulkDelete.png[,420,180,role=text-left]
 +
 * A *Help* button is added to the left menu for easier access to current GraphXR version and release information (GXR-4006). 
 +
-image::/v3/V3_20_0_09_HelpButton.png[,240,120,role=text-left]
+image::/v3/V3_20_0_08_HelpButton.png[,240,120,role=text-left]
 +
 * The Other menu (Kineviz logo) now displays the logged in user name working in the project (GXR-3986). Clicking the user name opens a dialog to (optionally) change the user password.
 +
