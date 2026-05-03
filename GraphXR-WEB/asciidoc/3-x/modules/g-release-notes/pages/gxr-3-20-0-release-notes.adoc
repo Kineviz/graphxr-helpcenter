@@ -1,0 +1,101 @@
+= GraphXR 3.20.0 Release Notes
+
+*Release Date:* May 8, 2026
+
+This release introduces GraphXR Agent (beta) which enables exploring and visualizing a graph using natural language and pre-built or user-defined agentic skills. Additional API calls are included to support agentic functions and copying views. The internal datastore is now a Ladybug database, replacing KuzuDB. Additional enhancements include the option to *Expand All* relationships without pagination, a *Minimap* to orient the user on the canvas, the ability to position and resize function panels on the canvas, the ability to select views to be copied to a new project, or to be deleted in one step, and a new *About* left menu item.
+  
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.20.0
+
+=== Usability Enhancements
+
+* GraphXR Agent (beta), a new feature providing agentic engagement within a GraphXR project and its connected database (if any). Its system prompt includes canvas context, project context, and interaction mode, and a gxr.agent API surfaces sessions, snapshots, and view-copying.
+
+** Users click the *Agent* icon on the left menu, opening the Agent panel:  
++
+image::/v3/V3_20_0_01_Agent_User.png[,420,380,role=text-left]
++
+*** Create and/or query graph data using natural language prompts and saved skills
+*** Create and share re-usable agent skills 
+*** Copy Agent responses to the clipboard as .md files.
+*** See current context, token, and budget usage.
+*** Restrict or hide Agent display via project *UI Configuration*. 
+*** Set up reproducible agentic workflows through Grovebooks.
+** Administrators use the Admin UI and Agent tab:
++
+image::/v3/V3_20_0_02_Agent_Admin[,420,420,role=text-left]
++
+*** Install or de-install specific LLM models. 
+*** Grant project and user-specific thinking levels and budgets.
+*** Set usage budgets in daily, token, and dollar amounts.
+** Use the hands-on Patents Explorer Sandbox to explore Google/Alphabet patents relating to machine learning, robotics, and control systems using GraphXR Agent.  
+
+* Right-click *Expand > All* includes an option to return all results, rather than 1000 results at a time (GXR-3894). 
++
+image::/v3/V3_20_0_03_ExpandAll[,240,120,role=text-left]
++
+* Floating panels are enabled by default. Users can customize the default left menu UI panels (e.g. Project, Query, Transform, Filter, Layout, etc.) and their individual tabs(GXR-4007). Panels and tabs can be floated, grouped, resized on the canvas, and docked to the right margin of the browser window as desired. Right-click any panel menu item and choose *Float* or *Dock To* to float the panel or dock it (as a tab) to another panel. Or, to float an open left-menu item, simply click the float icon at the upper right of its panel. 
++
+image::/v3/V3_20_0_04_FloatingPanelLeftDockTo[,420,100,role=text-left]
++
++ 
+On a floating panel, use its *Dock* menu to dock panels or tabs to each other, to a right menu, or back to the left menu.  
++
+image::/v3/V3_20_0_05_FloatingPanelDockMenu[,420,180,role=text-left]
++
+
+* Views can be automatically copied to a cloned project by setting a checkbox in the view's information dialog (GXR-4016).
++
+image::/v3/V3_20_0_06_ViewToClone[,320,180,role=text-left]
++
+
+* More than one view (or all project views) can be deleted at a time. Select the checkbox at the upper right of a view thumbnail or list and in the modal dialog, click *Delete Selected* (or choose *Select all* to delete all project views).
++
+image::/v3/V3_20_0_07_ViewBulkDelete[,420,180,role=text-left]
++
+* A *Help* button is added to the left menu for easier access to current GraphXR version and release information (GXR-4006). 
++
+image::/v3/V3_20_0_09_HelpButton[,240,120,role=text-left]
++
+* The Other menu (Kineviz logo) now displays the logged in user name working in the project (GXR-3986). Clicking the user name opens a dialog to (optionally) change the user password.
++
+image::/v3/V3_20_0_09_OtherMenuUser[,340,240,role=text-left]
++
+
+* Minimap display is configurable per project in *Settings > UI Configuration* (GXR-3913).
+
+=== Performance Enhancements
+ 
+* Neo4j data loading time is improved.
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* Internal data stores are now migrated from kuzu to a ladybug database (GXR-3983).
+* GraphXR Explorer supports a single project, so the *Create Project* item in the Other (Kineviz logo) menu is hidden.  
+ 
+=== GraphXR API 
+
+* API to create a new Agent thread and enter it (GXR-4013).
+** gxr.agent.createSession(). To create a new local Agent session/thread, add it to the Agent panel tab order, activate it, and set the Agent panel page to chat.
+** gxr.agent.setActiveSessionId(sessionId). To normalize/validate a session id, add it to tab order if needed, and make it active.
+** gxr.database() is removed to prevent confusion with gxr.query(). REFERENCE.md is updated (GXR-3971).
+
+* gxr.views.copyToProjectFiles({id:"theViewID"}) (GXR-3995).
+  
+== Bug Fixes
+
+*  Nodes created using the expand API now are assigned the correct category color (GXR-3973). 
+
+* Clicking the x button on a floating panel minimizes it to its original dock target instead of closing it (GXR-3978).
+
+== Removed 3.20.0
+
+* None
+
+== Extensions 3.20.0
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+* Grovebook auto-open behavior is now aware of project sandbox settings (GXR-4015).
