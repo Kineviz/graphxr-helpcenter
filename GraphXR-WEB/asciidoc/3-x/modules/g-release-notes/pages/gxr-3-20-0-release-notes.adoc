@@ -24,7 +24,7 @@ image::/v3/V3_20_0_01_Agent_User.png[,420,380,role=text-left]
 *** Set up reproducible agentic workflows through Grovebooks.
 ** Administrators use the Admin UI and Agent tab:
 +
-image::/v3/V3_20_0_02_Agent_Admin[,420,420,role=text-left]
+image::/v3/V3_20_0_02_Agent_Admin.png[,420,420,role=text-left]
 +
 *** Install or de-install specific LLM models. 
 *** Grant project and user-specific thinking levels and budgets.
@@ -33,34 +33,34 @@ image::/v3/V3_20_0_02_Agent_Admin[,420,420,role=text-left]
 
 * Right-click *Expand > All* includes an option to return all results, rather than 1000 results at a time (GXR-3894). 
 +
-image::/v3/V3_20_0_03_ExpandAll[,240,120,role=text-left]
+image::/v3/V3_20_0_03_ExpandAll.png[,240,120,role=text-left]
 +
 * Floating panels are enabled by default. Users can customize the default left menu UI panels (e.g. Project, Query, Transform, Filter, Layout, etc.) and their individual tabs(GXR-4007). Panels and tabs can be floated, grouped, resized on the canvas, and docked to the right margin of the browser window as desired. Right-click any panel menu item and choose *Float* or *Dock To* to float the panel or dock it (as a tab) to another panel. Or, to float an open left-menu item, simply click the float icon at the upper right of its panel. 
 +
-image::/v3/V3_20_0_04_FloatingPanelLeftDockTo[,420,100,role=text-left]
+image::/v3/V3_20_0_04_FloatingPanelLeftDockTo.png[,420,100,role=text-left]
 +
 + 
 On a floating panel, use its *Dock* menu to dock panels or tabs to each other, to a right menu, or back to the left menu.  
 +
-image::/v3/V3_20_0_05_FloatingPanelDockMenu[,420,180,role=text-left]
+image::/v3/V3_20_0_05_FloatingPanelDockMenu.png[,420,180,role=text-left]
 +
 
 * Views can be automatically copied to a cloned project by setting a checkbox in the view's information dialog (GXR-4016).
 +
-image::/v3/V3_20_0_06_ViewToClone[,320,180,role=text-left]
+image::/v3/V3_20_0_06_ViewToClone.png[,320,180,role=text-left]
 +
 
 * More than one view (or all project views) can be deleted at a time. Select the checkbox at the upper right of a view thumbnail or list and in the modal dialog, click *Delete Selected* (or choose *Select all* to delete all project views).
 +
-image::/v3/V3_20_0_07_ViewBulkDelete[,420,180,role=text-left]
+image::/v3/V3_20_0_07_ViewBulkDelete.png[,420,180,role=text-left]
 +
 * A *Help* button is added to the left menu for easier access to current GraphXR version and release information (GXR-4006). 
 +
-image::/v3/V3_20_0_09_HelpButton[,240,120,role=text-left]
+image::/v3/V3_20_0_09_HelpButton.png[,240,120,role=text-left]
 +
 * The Other menu (Kineviz logo) now displays the logged in user name working in the project (GXR-3986). Clicking the user name opens a dialog to (optionally) change the user password.
 +
-image::/v3/V3_20_0_09_OtherMenuUser[,340,240,role=text-left]
+image::/v3/V3_20_0_09_OtherMenuUser.png[,340,240,role=text-left]
 +
 
 * Minimap display is configurable per project in *Settings > UI Configuration* (GXR-3913).
