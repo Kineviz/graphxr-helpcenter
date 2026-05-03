@@ -1,6 +1,6 @@
 = GraphXR 3.20.0 Release Notes
 
-*Release Date:* May 8, 2026
+*Release Date:* May 9, 2026
 
 This release introduces GraphXR Agent (beta) which enables exploring and visualizing a graph using natural language and pre-built or user-defined agentic skills. Additional API calls are included to support agentic functions and copying views. The internal datastore is now a Ladybug database, replacing KuzuDB. Additional enhancements include the option to *Expand All* relationships without pagination, a *Minimap* to orient the user on the canvas, the ability to position and resize function panels on the canvas, the ability to select views to be copied to a new project, or to be deleted in one step, and a new *About* left menu item.
   
@@ -79,7 +79,7 @@ image::/v3/V3_20_0_09_OtherMenuUser[,340,240,role=text-left]
 * API to create a new Agent thread and enter it (GXR-4013).
 ** gxr.agent.createSession(). To create a new local Agent session/thread, add it to the Agent panel tab order, activate it, and set the Agent panel page to chat.
 ** gxr.agent.setActiveSessionId(sessionId). To normalize/validate a session id, add it to tab order if needed, and make it active.
-** gxr.database() is removed to prevent confusion with gxr.query(). REFERENCE.md is updated (GXR-3971).
+** gxr.database() is removed to prevent confusion with gxr.query().(GXR-3971).
 
 * gxr.views.copyToProjectFiles({id:"theViewID"}) (GXR-3995).
   
