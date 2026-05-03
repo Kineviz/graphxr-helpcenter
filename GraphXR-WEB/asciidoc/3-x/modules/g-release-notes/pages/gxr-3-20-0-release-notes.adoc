@@ -29,7 +29,7 @@ image::/v3/V3_20_0_02_Agent_Admin.png[,420,420,role=text-left]
 *** Install or de-install specific LLM models. 
 *** Grant project and user-specific thinking levels and budgets.
 *** Set usage budgets in daily, token, and dollar amounts.
-** Use the hands-on Patents Explorer Sandbox to explore Google/Alphabet patents relating to machine learning, robotics, and control systems using GraphXR Agent.  
+** Hands-on GraphXR sandbox demos show how you can GraphXR Agent jump-starts exploration of complex graphs.  
 
 * Right-click *Expand > All* includes an option to return all results, rather than 1000 results at a time (GXR-3894). 
 +
