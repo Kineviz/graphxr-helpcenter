@@ -1,27 +1,206 @@
 = GraphXR Agent
 
-GraphXR Agent is a built-in AI assistant for working with graph data in GraphXR. Use it to turn natural-language questions and instructions into guided graph exploration, data preparation, and analysis steps.
+GraphXR Agent is a built-in AI assistant for working with graph data in a GraphXR project. Use it to turn natural-language questions and instructions into guided graph exploration, data preparation, and analysis. The Agent helps analysts move from a question to an actionable graph workflow by suggesting the next operation, explaining graph patterns, and helping prepare data for detailed analysis.
 
-GraphXR Agent helps analysts move from a question to an actionable graph workflow by suggesting the next operation, explaining graph patterns, and helping prepare data for investigation.
+IMPORTANT: Treat generated suggestions as analytical guidance and verify results against your source data.
 
-NOTE: GraphXR Agent is currently in beta. Features and behavior may change as the product evolves.
+The Agent is available by default to any individual GraphXR user. Users with  administrator privileges can install specific LLM models, and manage usage levels and per-user budgets. 
 
-== Quickstart
+NOTE: GraphXR Agent is currently in beta release. Features and behavior may change as the product evolves.
+
+== GraphXR Agent Quick Start
+
+*To get started using GraphXR Agent:*
 
 . Open a GraphXR project.
 +
-image::/v3/Agent_OpenProject.png[]
-. Open GraphXR Agent from the left sidebar and click the "New thread" button.
+image::/v3/10_01_01_Agent_OpenProject.png[,520,380,role=text-left]
 +
-image::/v3/Agent_OpenGraphXRAgent.png[]
-. Input the prompt "Create a random graph" and click "Send".
+. Open GraphXR Agent from the left menu bar and click the *_New thread_* button.
 +
-image::/v3/Agent_InputPrompt.png[]
+image::/v3/10_01_02_Agent_OpenGraphXRAgent.png[,520,380,role=text-left]
++
+. Input the prompt _Create a random graph_ and click *_Send_*.
++
+image::/v3/10_01_03_Agent_InputPrompt.png[,520,380,role=text-left]
++
 . Wait for the result. Your result may vary.
 +
-image::/v3/Agent_CreateRandomGraph.png[]
+image::/v3/10_01_04_Agent_CreateRandomGraph.png[,520,380,role=text-left]
++
+NOTE: By default, the Agent saves a view before any destructive code action. 
 
-== Tips
+TIP: For examples of Agent workflows for exploring sample data, try a GraphXR Sandbox demo.  
 
-* The Agent saves a view before any destructive actions.
-* Treat generated suggestions as analytical guidance and verify results against your source data.
+== Using GraphXR Agent
+
+You can use GraphXR Agent as soon as you log in and open a project. Its system prompt includes default canvas context, project context, and interaction mode. A gxr.agent API surfaces sessions, snapshots, and view-copying.
+ 
+image::/v3/10_02_01_Agent_Overview.png[,520,380,role=text-left]
+
+You can:
+
+* Set the agent to work on complex exploratory tasks using natural language prompts.
+* Copy Agent code, and Agent responses as .md files to the clipboard. 
+* Review skills and tools available to the Agent.
+* Manage chat threads.
+* Manage views created by the Agent.
+* Review current LLM usage and chat options.
+* Review current usage budgets (in terms of daily token and dollar amounts)
+* Show or hide the Agent per project using the *_Project > Settings > UI Configuration_*  interface.
+
+=== Open The Agent
+
+. Log in to GraphXR
+. Create or open a project. 
+. Click the *_Agent_* icon on the left menu bar to open the Agent panel.
++
+TIP: You can right-click and choose *_Float_* to un-dock any panel from the left menu and reposition it conveniently on the project canvas.
+ 
+=== Create a New Thread
+
+A thread is the record of a chat session, including your prompts and the Agent responses (code and generated text explanations). Threads persist in the project until you delete them.  
+
+A thread is labeled with the text of the first prompt you enter (e.g. _list my skills_), but it will likely include many other prompts. For example, in a single thread you could enter prompts to create graph data, query a connected database, find paths, lay out the graph in a specific pattern, create and save a grove notebook, and more. 
+
+You can create a new thread at any time.
+
+To create a thread:
+
+. Click the New Thread *_+_* icon at the top left.
++
+A *_New Thread_* tab is created.
++
+. Enter a prompt (for example, _list my tools_) and click the *_Send_* icon.
++
+The thread is now labeled with the initial prompt text.
+
+=== Rename a Thread
+
+A thread is labeled with the text of its first prompt (e.g. _please lay out Order nodes in a circle_). You can rename it to be shorter, or more descriptive of the workflow in the thread.
+
+*To rename a thread:*
+
+. Click the Settings icon at the top right, and select *_Rename_*
+. Enter the new name in the dialog, and click *_Save_*.
++
+image::/v3/10_02_02_Agent_ThreadRename.png[,520,180,role=text-left]
+
+ 
+=== Close or Open an Existing Thread
+
+Open threads are shown in separate tabs in the Agent panel. The *_Thread History_* menu lists all the threads you've created (whether currently open or not) in order of when each was last opened. 
+
+*To close a thread:*
+
+. Click the *_X_* icon on the thread tab.
++
+The thread is closed (but not deleted). 
+
+*To open a closed thread:*
+
+. Click the *_Thread History_* icon at the upper right. 
+. Optionally, use the search bar to search for a thread by name.
+. Select the thread from the menu.
++
+image::/v3/10_02_03_Agent_ThreadHistory.png[,520,280,role=text-left]
++
+The thread is opened in a new tab.
+
+=== Delete Threads
+
+You can delete one thread, or clear all threads in a single step.
+
+*To delete one thread:* 
+
+. Open the thread you want to delete.
+. Click the *_Settings_* icon at the top right.
+. Select *_Delete thread_*
+
+*To clear all threads:* 
+
+. Click the *_Settings_* icon at the top right.
+. Select *_Clear threads_*
+. Click *OK* (or *Cancel*) in the dialog to confirm (or cancel) the action. 
++
+image::/v3/10_02_04_Agent_ThreadClear.png[,240,280,role=text-left]
+
+
+=== Attach Files to a Thread
+
+You can attach files with data or information (text or image) that you want the Agent to evaluate in the context of the current prompt. 
+
+*To include an external file in a prompt:*
+
+. Click the *_Attach File_* icon at the bottom left of the panel.
+. Navigate to the file and click *_Open_* to add it to the prompt.
+. Enter the prompt (e.g. _Find UI elements in the attached image_) and click *_Send_*.
++
+The Agent evaluates the attached file according to the prompt and returns its response.
++
+image::/v3/10_02_05_Agent_ImageEval.png[,420,280,role=text-left]
+ 
+=== Copy Agent Results
+
+Each code block or text response includes an icon to copy results to the clipboard to transfer threads to other GraphXR projects, or for use in reports. 
+
+*To copy Agent code or text responses:*
+
+* Click the copy icon next to a code block or a response.
++
+A code block is copied as code, and a response as an .md file.
++
+image::/v3/10_02_06_Agent_CopyCodeText.png[,420,280,role=text-left]
+
+*To copy an entire thread to the clipboard:*
+
+. Click the *_Settings_* icon at the top right.
+. Choose *_Copy Thread_* from the menu. 
+
+=== Start or Stop Automatic View Saving
+
+By default, the Agent saves a view before any destructive code action. If you find that too many views are being created, you can turn this function off. 
+
+*To stop automatic saving of views:*
+
+. Click the *_Settings_* icon at the top right.
+. Choose *_Settings_* from the menu.
+. In *_Save Checkpoint before agent runs code_*, click the button to turn off saving.
+. Click the return arrow at the top left to exit *_Settings_*. 
+
+=== Review LLM Usage and Budget Status
+
+As a user with administrator access (either individual, or in a multi-user installation), you can include LLMs to be used, and limit daily and overall budgets in terms of both tokens and dollar amounts. Setting budgets is done in the Admin's *_Agent_* panel. 
+
+Within a project, you can review current LLM and chat options, view usage status and add a model at any time. 
+
+*To review installed LLMs and chat options:*
+
+. At the bottom of the panel, the LLM menu shows the currently installed LLMs and highlights the one currently in use (e.g. _Gemini Flash 3 Preview_).
+. Click the *_Chat Options_* icon next to the LLM menu to see current thinking level and debug options. At any time, you can:
++
+- Select a different thinking level from the menu.
+- Click the *_Debug logging_* radio button to turn logging on (or off).
++
+image::/v3/10_02_07_Agent_LLMChatOptions.png[,420,280,role=text-left]
+
+*To review LLM usage:*
+
+. Click the *_Settings_* icon at the top right.
+. Choose *_Settings_* from the menu.
++
+The *_Usage_* section shows *_Tokens used today_* and *_Dollars used today_* across all  projects for the logged in user.
++
+image::/v3/10_02_08_Agent_Usage.png[,420,280,role=text-left]
++
+. Click the return arrow at the top left to exit *_Settings_*. 
+
+*To add an LLM model:*
+
+. Click the *_Settings_* icon at the top right.
+. Choose *_Settings_* from the menu.
+. Click *_Add model_* and enter the required Basic and Advanced model details.
+. Click *_Submit_* to add the model (or *_Cancel_* to exit).
+. Click the return arrow at the top left to exit *_Settings_*. 
+
+
