@@ -63,7 +63,11 @@ image::/v3/V3_20_0_08_HelpButton.png[,240,120,role=text-left]
 image::/v3/V3_20_0_09_OtherMenuUser.png[,340,240,role=text-left]
 +
 
-* Minimap display is configurable per project in *Settings > UI Configuration* (GXR-3913).
+* *Minimap* display is configurable per project in *Settings > UI Configuration* (GXR-3913).
+
+* The *Query* bar now saves recent queries in a *Query History* menu. Selecting a query copies it to the query bar where it can be edited or run as is. Running a query adds the results to data already on the canvas (GXR-4022).
++
+image::/v3/V3_20_0_10_QueryHistory.png[,420,240,role=text-left]
 
 === Performance Enhancements
  

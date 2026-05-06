@@ -8,11 +8,12 @@
 a|* *Usability*
 ** *GraphXR Agent* add for AI-enabled enagement with graph visualization and analytics.
 ** Floating panels and tabs and flexible docking enable a customizable project user interface.
-** *Expand All* can be performed in one step, rather than 100 nodes at a time.
+** *Expand All* can be performed in one step, rather than 1000 nodes at a time.
 ** Views can be selected for inclusion in a cloned project.
 ** More than one view can be deleted at a time.
 ** The Other (Kineviz logo) menu lists the logged in user. 
 ** A *Help* button is added to the left menu. 
+** The *Query* bar now saves recent queries in a *Query History* menu.
 
 * *Admin, Security, Configuration, and Deployment*
 ** The internal datastore has been migratred from *Kuzu* to a *ladybug* DB.
