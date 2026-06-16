@@ -6,4 +6,5 @@ nav:
 - modules/g-user/nav.adoc
 - modules/g-admin/nav.adoc
 - modules/explorer/nav.adoc
+- modules/desktop/nav.adoc
 - modules/g-release-notes/nav.adoc

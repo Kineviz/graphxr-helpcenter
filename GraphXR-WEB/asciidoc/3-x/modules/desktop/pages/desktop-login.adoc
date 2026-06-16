@@ -1,0 +1,90 @@
+= Install and Log In to Kineviz Desktop
+
+== Download *Kineviz Desktop* 
+
+Open the xref:https://github.com/Kineviz/kineviz-desktop/releases[*Releases*] page, and download the file that matches your operating system:
+
+=== Windows
+
+[cols="^3,^2,^4"]
+|===
+| *File* | *Chip* | *Notes*
+| Kineviz-Desktop-Setup-0.1.8-win-x64.exe | Intel / AMD (x64)| *Recommended* — standard installer, just double-click to install
+| Kineviz-Desktop-Setup-0.1.8-win-arm64.exe | ARM64)| *Recommended* — standard installer for ARM-based PCs
+| Kineviz-Desktop-0.1.8-win-x64.zip| Intel / AMD (x64)| Portable archive — unzip and run directly
+| Kineviz-Desktop-0.1.8-win-arm64.zip | Intel / ARM64)| Portable archive — unzip and run directly
+|===
+
+NOTE: Most Windows PCs use the x64 build. Only choose the arm64 build if your device uses an ARM processor (e.g., Snapdragon-based PCs).
+
+=== macOS
+
+[cols="^3,^2,^4"]
+|===
+| *File* | *Chip* | *Notes*
+| Kineviz-Desktop-0.1.8-mac-x64.dmg| Intel| *Recommended* — disk image installer
+| Kineviz-Desktop-0.1.8-mac-arm64.dmg | Apple Silicon (M1, M2, M3, etc.)| *Recommended* — disk image installer
+| Kineviz-Desktop-0.1.8-mac-x64.zip| Intel / AMD (x64)| Archive form
+| Kineviz-Desktop-0.1.8-mac-arm64.zip| Intel / ARM64)| Archive form
+|===
+
+NOTE: To check your Mac's chip: click the menu in the top-left corner → *About This Mac*, and look at the *Chip / Processor* information. Choose the arm64 build for Apple M-series chips, or the x64 build for Intel processors. 
+
+== Install and Open Kineviz Desktop
+
+=== Windows
+
+. Double-click the downloaded Kineviz-Desktop-Setup-[Version]-win-x64.exe (or the -win-arm64.exe build for ARM-based PCs).
+. Follow the prompts to complete the installation (you can choose the install location and whether to create a desktop shortcut).
+. Once installed, launch Kineviz Desktop from the Start menu or the desktop icon.
++
+NOTE: If Windows SmartScreen shows a warning, click "More info" → "Run anyway".
+
+=== macOS
+
+. Double-click the downloaded .dmg file.
+. In the window that appears, drag the Kineviz Desktop icon into the "Applications" folder.
+. Open Kineviz Desktop from Launchpad or the Applications folder.
++
+NOTE: If, on first launch, you see *_cannot be opened because it is from an unidentified developer_*, go to *System Settings → Privacy & Security*, find the related prompt and click *Open Anyway*; or right-click the icon in *Applications →  Open*.
+
+
+== Log In to Kineviz Desktop
+
+*Kineviz Desktop* runs locally, which is suitable for offline scenarios, working with local files, and performance-intensive workloads. Its features and experience are largely identical to the browser version of GraphXR, so if you are already familiar with GraphXR, you can get started right away. 
+
+*To log in to your Desktop account and sign in:*
+
+. In the login dialog, sign in or create a Kineviz account and password as prompted.
+
++
+image::/v3/20_00_10_KD_Open.png[,540,420,role=text-left]
++
+
+. If you are signing on to an existing Desktop account, choose *_Update Now_* to automatically replace the existing version with the latest one. When a new version of *Kineviz Desktop* is available, *_Update Now_* appears on the *_Login_*, *_Projects Home_*, and individual project screens. 
+
++
+image::/v3/20_00_12_KD_UpdateVersion.png[,540,420,role=text-left]
++ 
+
+. Click *_Sign in with Kineviz Cloud_*, and click *_Open Kineviz Desktop.app_* 
+
++
+image::/v3/20_00_11_KD_CloudConnect.png[,420,320,role=text-left]
++
+
++
+NOTE: To use the AI Agent managed through Kineviz, you need an *_Online_* connection to Kineviz Cloud. However, you can choose to remain *_Offline_* if desired.    
++ 
+  
++
+The *Kineviz Desktop* *_Projects_* home page opens. 
+
++
+image::/v3/20_01_01_KD_HomeCards.png[,540,720,role=text-left]
++ 
+
+
+
+
+
