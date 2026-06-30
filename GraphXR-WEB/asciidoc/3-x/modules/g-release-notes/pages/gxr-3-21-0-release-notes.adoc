@@ -1,0 +1,58 @@
+= GraphXR 3.21.0 Release Notes
+
+*Release Date:* May 21, 2026
+
+This release includes *_Agent_* enhancements for managing threads and workflows. The *_Files_* and *_Text Editor_* extensions let you access and edit markdown files for system prompts, skills, and data files. Views can now be placed in user-defined folders, making Agent-generated views easier to organize.
+
+NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+  
+== New Features 3.21.0
+
+=== Usability Enhancements
+
+* *_Agent_* enhancements include: 
+** *_Thread History_* icon to search and select threads.
+** An optional *_Connector_* tab in Agent *_Settings_* to manage installed connectors (for example, Firecrawl, for parsing PDFs).
+** For compactness, the LLM model available by default is simply named _Default_ (GXR-4198).
+
+* A View can be assigned to a user-defined folder (GXR-4030). This is useful for organizing views created during different exploratory sessions, and for views generated  by the Agent during a chat session. The Views panel is reorganized to include added icons to *_Save_* the canvas as a view, *_Save As_* a new view, and create a *_Folder_*. Default folders are created for *_All Views_* and *_Unfiled_* views. First, you create and name a new folder. Then click view selection boxes for one or more views, go to the bottom of the panel and click *_Move Selected_*. In the *_Move to Folder_* dialog, select the folder name, and click *_OK_*. The views appear under the folder name, and also under *_All Views_* (GXR-4030_).   
++
+image::/v3/V3_21_0_01_ViewFolders.png[,420,100,role=text-left]
++
+* *_Expand_* supports *_Select Direction_* for directed relationships (GXR_4086).
+
+* A default margin is added to a geographic map by setting the *_Auto-fit_* checkbox in the *_Map_* panel(GXR-3865).
+    
+== Bug Fixes
+
+* _gxr.nodes(NodeID).show()_ now shows only one node at a time (GXR-4032).
+* LIMIT 2000 removed from a KoreDB query via _gxr.query_ (GXR-4131).
+
+== Removed 3.21.0
+
+* None
+
+== Extensions 3.21.0
+
+Extensions are available to create Grove workbooks for reproducible workflows and help manage and edit imported files. Extensions for custom solutions may be available as well. To add an extension to the left panel menu if it is not already there, go to the *_Project > Extensions_* tab, search for the extension, then click its star icon.
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+=== Files 
+_File management for GraphXR_
+
+* *_Files_* organizes project files used in GraphXR or Kineviz Desktop, such as Agent markdown files for system prompts and skills, Kuzu database files, and files such as CSVs or PDFs that a user uploads to the project. Right-click a file to *_Download_*, *_Copy Path_* for use in GraphXR's *_Text Editor_* extension, *_rename_*, *_Duplicate_*, or *_Delete_* the file (GXR-4099).
++
+image::/v3/V3_21_0_02_FilesMgr.png[,420,200,role=text-left]
+
+
+=== Text Editor
+_Text editor for GraphXR_
+
+* The *_Text Editor_* lets you edit text files such as .md, CSV, JSON, and more. To edit files, in the *_Files_* extension, right click on the file name and choose *_Copy Path_*. Then open the *_Text Editor_* extension, click the file folder icon at the top, and paste the path into the dialog. The file opens, and you can edit, and save it.
++
+image::/v3/V3_21_0_03_TextEditor.png[,420,200,role=text-left]
+  
+
+

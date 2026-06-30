@@ -1,0 +1,141 @@
+= GraphXR 3.22.0 Release Notes
+
+*Release Date:* June 30, 2026
+
+This release includes new and re-designed UI to show project, database, and Agent status at a glance, organize views, manage queries, and signal options available to the user.  
+Entire projects can now be exported and imported. Various performance upgrades and bug fixes are also included.     
+
+*_Kineviz Desktop_* (beta), released in  parallel, is a standalone application for single-user GraphXR experience. It is available through a user-managed free subscription (with optional upgrade to paid tiers) that includes optional connection to a Kineviz-managed cloud server for agentic work. *_Kineviz Desktop_* includes the Agent, database connection, file management, data modeling, and graph analytic features of browser-based GraphXR in a locally installed application.
+  
+NOTE: In a GraphXR or Desktop project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+
+== New Features 3.22.0
+
+=== Usability Enhancements
+
+* *_Agent_* 
+
+** User-controlled responsive layout when the width of the Agent panel is changed.
++
+image::/v3/V3_22_0_01_AgentUI.png[,520,380,role=text-left]
++
+** Settings menu now includes *_Export as HTML_*.
++
+image::/v3/V3_22_0_02_AgentExportHTML.png[,240,320,role=text-left]
++
+** The *_copy response_* button only appears at the end of a session (i.e. only one copy button per user prompt) (GXR-4210).
+** UI for importing files into the Agent is made more obvious.
+** Agent checkpoint views are initially assigned to the _Unfiled_ Views folder (GXR-4271).  
+
+* In an open project, a new live *Status Bar* is added at the bottom of the browser or *_Kineviz Desktop_* window (GXR-4251). The status bar includes:
+
+** Name of the currently connected database (e.g. KoreDB, Neo4j, etc.) 
+** Number of node and relationship tables in the connected database.
+** Icon to open the no-code *_Query Bar_* menu to query the connected database.
+** Number of nodes and edges currently showing on the canvas.
+** Icon to open the *_Table_* panel to inspect properties of nodes and edges on the canvas.
+** Number of *_Agent_* chat threads currently running. 
+** Icon to open the *_Views_* panel.
+** A *_Saved_* or *_Unsaved_* status flag for data currently on the canvas. 
++
+image::/v3/V3_22_0_03_ProjectStatusBar.png[,720,180,role=text-left]
++
+
+* *_Export_* and *_Import_* a project (GXR-4066, GXR-4280). Export or import an entire project, including its views, saved queries, templates, and internal database. On Import, the internal project data is mapped back to the original KoreDB instance (e.g. _default_). You can:
+
+** Export or Import a project from the *_Projects_* home page. 
++
+image::/v3/V3_22_0_04_ImportExportHome.png[,320,180,role=text-left]
++
+** Export from within an open project.
++
+image::/v3/V3_22_0_05_ExportInProject.png[,320,180,role=text-left]
++
+
+*  Re-design *_Views_* panel and folders to provide flexible panel layout.(GXR-4068, GXR-4070)
+
+** Icons at the top left display the folder list and views either side-by side, or folders at the top of the panel and the views below. As you change the width of the panel, the area with the view's tile or list is responsive, but the list of folders is static. 
+** Icons at the top of the view area display views either as tiles or as a list.
++
+image::/v3/V3_22_0_06_ViewFolders.png[,420,100,role=text-left]
++
+** Click the 3 dots on the tile or list item for a menu to *_Rename_*, *_Export_*, *_Move_*, *_Share_*, or *_Delete_* a single view.
+** Click view selection checkboxes and use the menu at the bottom of the view list to *_Delete_* or *_Move_* all selected views at once.
+
+** *Cmd+R* opens the View's *_Save or Save As_* dialog (GXR 4175).
+
+* *Cloning or duplicating a project*
+
+** Project names must be unique (GXR-4274).
+** Cloning a project copies its Grove books and Views (GXR-4322). 
+** *_Create from Sandbox_* copies views and folders to the new project (GXR-4177).
+
+* *Transforms*
+** A popup indicates the number of nodes being operated on (GXR-4148). This alerts a user to mistaken selection or specification that may be hard to undo. 
+** A red outline alerts the user to missing or incomplete information for a transform. For example, in the *_Shortcut_* the user is alerted to select a key property (GXR-4132).  
+
+* *Miscellaneous*
+** A project no longer opens with the last opened view loaded (GXR-4169). Instead, a list of recent views is displayed. Simply click a view in the list to load it.
+
+** Query bar text is improved to differentiate case-sensitive queries more clearly (GXR-4037).
+
+** A user can only select properties with quantitative values (not text) for node size or edge width scaling (GXR-4268).
+
+** *_Expand_* options are added for edges with multiple directions (GXR-4077).
+
+
+=== Performance Enhancements
+ 
+* Better notice when *_Save to KoreDB_* is complete (GXR-4303).
+* Performance is improved when resizing floating panels (GXR-4308).
+* Performance is improved for KoreDB queries on MacOS (GXR-4166).
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* Project owners do not need to supply a password for their own password-protected views.  (GXR-4168).  
+
+* Agent Data Connector (ADC) is integrated into BigQuery and Spanner (GXR-3722). 
+
+* *_Kineviz Desktop_* version 0.8.0
+
+** The *_Kineviz Desktop_* access, pricing options, and Stripe payment system is implemented through Kineviz Cloud, supporting Agent implementation and software upgrade from an initial free version.
+** A user is no longer logged out automatically after only one day of inactivity (GXR-4306). 
+** In the cloud admin portal, a user can set a single global minimum required *_Kineviz Desktop_* version, to avoid use of old versions (GXR-4313). 
+** UI for evaluating agent response is included, and is sent as feedback to Kineviz Cloud.
+   
+== Bug Fixes
+
+* gxr.colorNodesByProperty() is corrected to raise an error if a named property does not exist (GXR-4312).  
+
+* The Agent system prompt now writes *KoreDB* queries that correctly reference project files (GXR-4130).
+
+* The Query bar schema is refreshed after a *_Save to KoreDB_* (GXR-4305).
+
+== Removed 3.22.0
+
+* None
+
+== Extensions 3.22.0
+
+Extensions are available to create Grove workbooks for reproducible workflows and help manage and edit imported files. Extensions for custom solutions may be available as well. To add an extension to the left panel menu if it is not already there, go to the *_Project > Extensions_* tab, search for the extension, then click its star icon.
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+=== Files 
+_File management extension for GraphXR_
+
+* The *_Files_* extension now appears by default on the left menu. 
+* Right-click a file and choose *_Open Edit_* to open it directly in the *_Text Editor_* extension (GXR-4142). 
++
+image::/v3/V3_22_0_07_FilesOpenEdit.png[,420,100,role=text-left]
++ 
+* Files can be added using drag and drop (GXR-4128). 
+* *Kineviz Desktop* only: The *_Reveal in Finder_* option is available for local files (GXR-4085). 
+
+=== Text Editor
+_Text editor extension for GraphXR_
+
+* The *_Text Editor_* now appears by default on the left menu and is opened directly from the *_Files_* extension using its *_Open Edit_* option (GXR-4142).  
+
+ 

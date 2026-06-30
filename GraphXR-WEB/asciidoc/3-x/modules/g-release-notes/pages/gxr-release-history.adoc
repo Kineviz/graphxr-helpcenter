@@ -1,8 +1,42 @@
-= GraphXR Release History
+= GraphXR and Kineviz Desktop Release History
 
 [cols="1,1,10"]
 |===
 |*Tag* |*Date* |*Release Highlights*
+
+|xref:./gxr-3-22-0-release-notes.adoc[3.22.0] |6/30/2026 
+a|* *Usability*
+** *Agent* enhancements: Flexible panel UI, *_Export as HTML_*.
+** Live status bar at the bottom of an open project window.
+** *Export* or *Import* a project.
+** Re-design *_Views_* panel and folders for flexible panel layout.
+** Project cloning or duplication copies views and internal data.
+** Improved Expand, Query bar, and alerts for Transforms. 
+
+* *Performance* 
+** Improved UI and KoreDB performance.   
+
+* *Admin, Security, Configuration, and Deployment*
+
+** *Agent Data Connector (ADC)* implemented for BigQuery and Spanner.
+** *Kineviz Desktop* v.0.8.0 (beta) access, payment system, upgrade path, version usage, and agent feedback implemented through Kineviz Cloud.  
+
+* *Extensions* 
+** *Grove*, *File* manager, *Text Editor*
+
+|xref:./gxr-3-21-0-release-notes.adoc[3.21.0] |5/21/2026 
+a|* *Usability*
+** *GraphXR Agent* add for AI-enabled enagement with graph visualization and analytics.
+** Create View folders on the *View* menu to organize and save views for a specific manual or agentic workflow within a project.
+
+* *Admin, Security, Configuration, and Deployment*
+** The internal datastore is renamed *KoreDB* (originally *Kuzu DB*; now based on the open-source *ladybug* DB).
+
+* *Kineviz Desktop* v.0.1.7 (alpha)
+** A *Kineviz Desktop* application enables local access to GraphXR functionality. Upon login, the AI-powered *GraphXR Agent* is optionally connected to managed AI models via a secure *Kineviz Cloud* backend.
+
+* *Extensions* 
+** *Grove*, *File* manager, *Text Editor*
 
 |xref:./gxr-3-20-0-release-notes.adoc[3.20.0] |5/9/2026 
 a|* *Usability*
@@ -16,8 +50,8 @@ a|* *Usability*
 ** The *Query* bar now saves recent queries in a *Query History* menu.
 
 * *Admin, Security, Configuration, and Deployment*
-** The internal datastore has been migratred from *Kuzu* to a *ladybug* DB.
-* Grovebook auto-open behavior is now aware of project sandbox settings.
+** The internal datastore has been migrated from *Kuzu* to a *ladybug* DB.
+** Grovebook auto-open behavior is now aware of project sandbox settings.
 
 * *Performance* 
 ** Speed of loading from Neo4j is increased.
