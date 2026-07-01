@@ -1,76 +1,84 @@
 = Create and Manage Desktop Projects
 
-The *_Projects_* home page is your portal to
+The *_Projects_* home page is where you:
 
-* Create new Desktop projects and manage existing projects.
-* Review details of your Kineviz account, link to information, send feedback to Kineviz, and access user communities.
-
-image::/v3/20_01_04_KD_ManageProjects.png[,540,420,role=text-left]
+* Open and create projects.
+* Manage projects.
+* Review details of your Kineviz account, send feedback to Kineviz, and access user guides and communities.
 
 == Open a Project
 
-Projects are displayed in either a tile or list view organized in the following sections:   
+Projects are displayed in either a tile or list view. Simply click a tile or list item to open the project. 
+
+image::/v3/20_02_01_KD_OpenProjects.png[,540,420,role=text-left]
+
+Projects are organized in sections:   
 
 * *_Recent Projects_*, the projects you recently opened.
 * *_My Projects_*, projects you've created, and a *_Create_* tile or button.
-* *_Create From Sandbox_*, pre-configured projects you can review and copy. 
+* *_Create From Sandbox_*, pre-configured projects you can review and copy. To introduce you to basic graph workflows, at least one Sandbox tutorial project is already included. These Kineviz tutorials use GraphXR's *Grove* notebook extension.
 
-To introduce you to basic graph workflows, at least one Sandbox *_Start Here_* project is already included. These Kineviz tutorials use GraphXR's *Grove* extension, an Observable-based javascript notebook.
+=== Open a tutorial
 
-=== Open the *Start Here* tutorial
+Kineviz *_Sandbox_* tutorials  guide you through basic workflows you are likely to encounter when exploring graph data.
 
-* Click the *Start Here* project tile or list. When the project opens, you can:
-
-** Click the *Grove* icon to open the in-app tutorial notebook. It guides you through a basic workflow where you import a CSV table, transform it to a labeled property graph, explore connections in the data, and save graph views. It also provides examples of using the Kineviz API to work with the demo data. 
- 
-** Click the *Chat* icon to launch *GraphXR Agent*, a pre-configured AI Agent you can use to import, transform, and analyze your data in no-code chat.  
+* Click to open the *City Lifestyles Tutorial*. 
++
+You'll learn to use GraphXR native tools and workflows to explore city livability data. You'll import a CSV table, transform it to a labeled property graph, explore connections and patterns, and save graph views. You can also see how to use the Kineviz API within a *_Grove_* notebook to set up reproducible workflows for graph exploration. 
++
 
 +
-NOTE: Using GraphXR Agent in *Kineviz Desktop* requires an *_Online_* connection to the managed Kineviz Cloud.
+image::/v3/20_02_02_KD_OpenSandbox.png[,540,420,role=text-left]
++
+ 
+Similar tutorials will demonstrate exploring the same data using AI Agent tools and workflows, and showcase more complex data and use cases as well.
+
+NOTE: The tutorials are in-app *_Grove_* notebooks. If you happen to close the tutorial panel, simply click the *Grove_* icon on the left menu to re-open and resume.   
 
 === Create and Open a New Project
 
 *To create a new project:*
 
-. In the *_Projects_* home page, click *_Create_*
+. In the *_Projects_* home page, click *_Create_*.
 . In the *_Create New Project_* dialog:
 .. Enter a *_Project Name_* of your choice.
 .. Optionally, select the *_Database Type_* and enter the requested details for the specific database. 
 +
 *_KoreDB_* is the default, which automatically sets the specifications for the  internal data store. Most other database options require a Hostname (or IP), BOLT port - a default is shown for most options, Username, Password, and Database Name. You may also need to verify that your external database is running before trying to connect to it. 
 + 
-. Click *_Confirm_* to create the project and open it.    
+. Click *_Confirm_* to create the project and open it. 
 
-=== Import an Exported Project
-
-You can export a project from *Kineviz Desktop* (or *GraphXR*) by clicking the  *_Settings_* icon on a project tile or list item and choosing *_Export project_*. 
-
-The exported file includes the project name and a _.gxrproject_ extension, for example: _Tutorial.gxrproject_. It can then be imported into any Desktop or GraphXR instance. 
-
-*To import a saved project:* 
-
-. On the *Projects* home page, click *_Import Project_*.
 +
-image::/v3/20_01_03_KD_ImportProject.png[,540,420,role=text-left]
+image::/v3/20_02_03_KD_AddData.png[,540,420,role=text-left]
 + 
 
-. Navigate to a saved project, and click *_Open_* (or simply drag and drop the file on the dialog).
++
+A new project will not have any data in it yet. You can import data using any method, including:
++
 
-+ 
-The project is added to the *_Projects_* page, and you can choose to open it immediately.  
- 
- 
-== Manage Existing Projects  
++
+* Drag and drop (or navigate to and open) local data files. 
+* Query the connected internal or external database, either using the no-code *Query / Search* bar, or through the full-featured *_Query_* panel.
+* Click the *Chat* icon to launch *GraphXR Agent*, a pre-configured AI Agent you can use to import, transform, and analyze data through no-code text chat. Using GraphXR Agent in *Kineviz Desktop* requires an *_Online_* connection to the managed Kineviz Cloud.
++
 
-A tile or list item includes information and tools to review and configure a project:
++
+NOTE: When project already has saved data views, a list of recent views is displayed, and you can click to select a recent view to load. 
+ 
+== Manage Projects  
+
+A tile or list item includes information and tools to review and edit a project:
 
 * *Project name*
 * *Database badge* showing the database type connected to the project (if any), e.g. *NEO4J*, *SPAN* (Spanner Graph), *PUPPY* (Puppygraph), *KoreDB* (for the internal project database), etc.
 * *Sandbox* badge on pre-configured sandbox projects.  
 * Settings Menu to edit the project.
-
 * An optional brief description of the project. 
 * The date the project was *_Created_*, and the date it was last *_Opened_*. 
+
++
+image::/v3/20_02_04_KD_HomeList.png[,540,420,role=text-left]
+
 
 === Search for a Project
 
@@ -86,7 +94,7 @@ To find a specific project, you can:
  
 === Edit, Clone, or Delete a Project 
 
-In the Settings menu for a Project select:
+In a project's *_Settings_* menu select:
 
 ** *_Edit_* project name, template, and/ or database type.
 ** *_Clone_* to create a copy of the project.
@@ -94,35 +102,54 @@ In the Settings menu for a Project select:
 ** *_Protect from deletion_* / *_Allow deletion_* project options. When protected from deletion, a lock icon appears next to the project name.=.  
 ** *_Delete Project_* to delete the project, its saved views and internal graph database (but not data in an external connected graph database).
 
+=== Export a Project
+
+You can export an entire project from *Kineviz Desktop* (or *GraphXR*). All of its saved views and database connections are exported. 
+
+* In an open project, click the export menu at the top right of the legend, and choose *_Export Project_*.
+* In the *_Projects_* home screen, click the  *_Settings_* icon on a project tile or list item and choose *_Export Project_*. 
+
++
+image::/v3/20_02_05_KD_ExImProject.png[,540,420,role=text-left]
++
+
++
+An exported file includes the project name and a _.gxrproject_ extension, for example: _Tutorial.gxrproject_. It can then be imported into any Desktop or GraphXR instance. 
+
+
+=== Import an Exported Project
+
+You can import a project exported from either browser-based *GraphXR*  or *Kineviz Desktop*. 
+
+*To import an exported  project:* 
+
+. On the *_Projects_* screen, click *_Import Project_*.
+ 
+. Navigate to a saved project, and click *_Open_* (or simply drag and drop the file on the dialog).
++ 
+The project is added to the *_Projects_* page, and you can click to open it.  
+ 
+
 == Manage Your User Account
 
-Go to the user menu at the top of the *_Projects_* page to edit your desktop account settings or log out. 
+Go to the user menu at the top of the *_Projects_* page to edit your desktop account settings or log out: 
 
-=== Update Account Details
-
-* Select *_Settings_* to review your Kineviz Desktop configuration and Cloud settings, including the *_Current plan_* and cloud token usage. Under *_Cloud_* settings, you can click *_Manage account_* to change subscription, billing, and account details on the Kineviz Cloud.  
+* Select *_Settings_* to review your *Kineviz Desktop* *_Configuration_*, *_Icon_*, and *_Cloud_* subscription. Under *_Cloud_*, you can click *_Manage account_* to update subscription, billing, and account details on the Kineviz Cloud website.  
 
 * Select *_Logout_* to log out of *Kineviz Desktop*.
 
-
-===  Select UI Language 
+== Select UI Language 
   
 Use the language selector at the top right of the *_Projects_* page to switch between default *English*, *Chinese*, or *Spanish* user interfaces.
 
-image::/v3/20_01_05_KD_LanguageMenu.png[,520,140,role=text-left]
+image::/v3/20_02_06_KD_LanguageMenu.png[,520,140,role=text-left]
 
-=== Access Documentation
+== Access Help and Community
 
-Click links at the bottom of the browser window to open user guides available on the Kineviz Help Center.
+Click links at the bottom of the *_Projects_* page:
 
-* *_Help_* opens Kineviz Desktop user documentation.
-* The version number at the bottom of the browser window opens release notes for the current Kineviz Desktop version.
-
-=== User Feedback and Community 
-
-Click links at the bottom of the browser window for:
-
-* A *_Feedback_* form to submit questions or comments for Kineviz response.
-* A *_Discord_* invitation to join the Kineviz Discord community.
+* *_Help_* opens user guides available on the Kineviz Help Center.
+* *_Feedback_* opens a form to submit questions or comments for Kineviz response.
+* *_Discord_* opens an invitation to join the Kineviz Discord community.
 
 

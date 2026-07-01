@@ -45,7 +45,7 @@ On a floating panel, use its *Dock* menu to dock panels or tabs to each other, t
 image::/v3/V3_20_0_05_FloatingPanelDockMenu.png[,420,180,role=text-left]
 +
 
-* Views can be automatically copied to a cloned project by setting a checkbox in the view's information dialog (GXR-4016).
+* Views can be selected for automatic inclusion in a cloned project by setting a checkbox in the view's information dialog (GXR-4016).
 +
 image::/v3/V3_20_0_06_ViewToClone.png[,320,180,role=text-left]
 +
@@ -69,6 +69,7 @@ image::/v3/V3_20_0_09_OtherMenuUser.png[,340,240,role=text-left]
 +
 image::/v3/V3_20_0_10_QueryHistory.png[,420,240,role=text-left]
 
+
 === Performance Enhancements
  
 * Neo4j data loading time is improved.
@@ -83,7 +84,7 @@ image::/v3/V3_20_0_10_QueryHistory.png[,420,240,role=text-left]
 * API to create a new Agent thread and enter it (GXR-4013).
 ** gxr.agent.createSession(). To create a new local Agent session/thread, add it to the Agent panel tab order, activate it, and set the Agent panel page to chat.
 ** gxr.agent.setActiveSessionId(sessionId). To normalize/validate a session id, add it to tab order if needed, and make it active.
-** gxr.database() is removed to prevent confusion with gxr.query().(GXR-3971).
+** gxr.database() is removed to prevent confusion with gxr.query(). REFERENCE.md is updated (GXR-3971).
 
 * gxr.views.copyToProjectFiles({id:"theViewID"}) (GXR-3995).
   

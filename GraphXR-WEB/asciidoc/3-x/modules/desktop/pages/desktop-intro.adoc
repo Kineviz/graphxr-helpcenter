@@ -19,14 +19,15 @@ image::/v3/20_01_01_KD_HomeCards.png[,540,420,role=text-left]
 
 == Video Overviews
 
-* TBD - In Progress
+* In Progress
 
 
 == User Guide
 
-xref:attachment$desktop-quick-start-card.pdf[*Kineviz Desktop Quick Start*] 
-  
+*Kineviz Desktop* is available through a user-managed free subscription (with optional upgrade to paid tiers). It includes connection to a Kineviz-managed cloud server for enabling agentic work. Once downloaded and signed in, you can access the full project management, agent, database connection, file management, data modeling, graph analytic features, and public extensions of browser-based GraphXR. As a single user application, *Kineviz Desktop* does not support multi-user project collaboration.  
 
+[caption=]
+.Using *Kineviz Desktop*
 [cols="^3,^3"]
 |===
 | xref:desktop:desktop-login.adoc[1. *Log In to Kineviz Desktop*]
@@ -47,7 +48,7 @@ xref:attachment$desktop-quick-start-card.pdf[*Kineviz Desktop Quick Start*]
 
 | xref:g-user:nav-select/select-paths.adoc[8. *Discover Connected Paths*]
 
-| xref:g-user:data-save.adoc[9. *Save, Import, or Export Views*]
+| xref:g-user:data-save.adoc[9. *Save, Import, or Export Views or Projects*]
   
 |===
 

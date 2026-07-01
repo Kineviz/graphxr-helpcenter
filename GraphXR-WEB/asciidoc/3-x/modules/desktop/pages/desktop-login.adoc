@@ -1,8 +1,10 @@
-= Install and Log In to Kineviz Desktop
+= Install Kineviz Desktop
 
 == Download *Kineviz Desktop* 
 
-Open the xref:https://github.com/Kineviz/kineviz-desktop/releases[*Releases*] page, and download the file that matches your operating system:
+Go to the Kineviz website and click *_Download Kineviz Desktop_*. 
+
+Instructions to download the disk image that matches your operating system appear automatically. You can choose a different file if it seems appropriate. 
 
 === Windows
 
@@ -48,43 +50,81 @@ NOTE: If Windows SmartScreen shows a warning, click "More info" → "Run anyway"
 +
 NOTE: If, on first launch, you see *_cannot be opened because it is from an unidentified developer_*, go to *System Settings → Privacy & Security*, find the related prompt and click *Open Anyway*; or right-click the icon in *Applications →  Open*.
 
-
-== Log In to Kineviz Desktop
+== Open your Free Account
 
 *Kineviz Desktop* runs locally, which is suitable for offline scenarios, working with local files, and performance-intensive workloads. Its features and experience are largely identical to the browser version of GraphXR, so if you are already familiar with GraphXR, you can get started right away. 
 
-*To log in to your Desktop account and sign in:*
+NOTE: To use the AI Agent managed through Kineviz, you need an *_Online_* connection to Kineviz Cloud. However, you can choose to remain *_Offline_* if desired.    
 
-. In the login dialog, sign in or create a Kineviz account and password as prompted.
+*To open your free Desktop account and sign in:*
+
+. In the login dialog, click *_Sign in with Kineviz Cloud_*.
++
+image::/v3/20_00_01_KD_Open.png[,540,380,role=text-left]
++
+
+. Create a Kineviz account and password as prompted.
+
+. If you are signing in to an existing *Desktop* account, choose *_Update Now_* to automatically replace the existing version with the latest one.  
 
 +
-image::/v3/20_00_10_KD_Open.png[,540,420,role=text-left]
-+
-
-. If you are signing on to an existing Desktop account, choose *_Update Now_* to automatically replace the existing version with the latest one. When a new version of *Kineviz Desktop* is available, *_Update Now_* appears on the *_Login_*, *_Projects Home_*, and individual project screens. 
-
-+
-image::/v3/20_00_12_KD_UpdateVersion.png[,540,420,role=text-left]
+image::/v3/20_00_02_KD_UpdateVersion.png[,540,420,role=text-left]
 + 
+
++
+NOTE: When a new version of *Kineviz Desktop* is available, *_Update Now_* appears on the *_Login_*, *_Projects_*, and individual project screens.
++
 
 . Click *_Sign in with Kineviz Cloud_*, and click *_Open Kineviz Desktop.app_* 
 
 +
-image::/v3/20_00_11_KD_CloudConnect.png[,420,320,role=text-left]
+image::/v3/20_00_03_KD_CloudConnect.png[,420,320,role=text-left]
 +
 
 +
-NOTE: To use the AI Agent managed through Kineviz, you need an *_Online_* connection to Kineviz Cloud. However, you can choose to remain *_Offline_* if desired.    
+The *Kineviz Desktop* *_Projects_* screen opens. 
+
++
+image::/v3/20_01_01_KD_HomeCards.png[,540,420,role=text-left]
+ 
+
+=== Review Cloud Settings 
+
+A free *Kineviz Desktop* subscription provides Agent access limited you to a rolling 5-hour session and weekly budget.
+
+*To review your current plan:*
+
+* In the desktop *_Projects_* screen, go to the user menu at the top right, select *_Settings_* and click *_Cloud_*. You can:
+** Review your subscription plan and track current usage.
+** Set a privacy opt-out.
+**  Click *_Manage Account_* to review subscription, billing, and account details on the *Kineviz Cloud* website.
++
+image::/v3/20_01_03_KD_SettingsCloud.png[,540,520,role=text-left]
+
+=== Upgrade through Kineviz Cloud 
+
+The *Kineviz Cloud* website shows your current subscription and privacy settings and a list of your current cloud agents. 
+You can also upgrade to a monthly paid *_Pro_* subscription to receive 5 times the usage of the free tier. 
+
+NOTE: You can cancel the subscription at any time, according to the current terms of service.
+
+*To upgrade to Desktop Pro:*
+
+. In the desktop *_Projects_* screen, go to the user menu at the top right, select *_Settings_* and click *_Cloud_*.
+. Click *_Manage Account_*. 
+. In the *_Kineviz Cloud Agent Admin_* dialog, click *_Sign In_*.
++
+image::/v3/20_01_04_KD_CloudAdminSignIn.png[,420,380,role=text-left]
 + 
+
+. Scroll down to *_Plans_* and click *_Upgrade to Pro_*.
++
+image::/v3/20_01_05_KD_CloudUpdateSub.png[,420,380,role=text-left]
++ 
+
+. Enter payment details and click *_Subscribe_*.
++
+image::/v3/20_01_06_KD_CloudPayment.png[,420,420,role=text-left]
+ 
+
   
-+
-The *Kineviz Desktop* *_Projects_* home page opens. 
-
-+
-image::/v3/20_01_01_KD_HomeCards.png[,540,720,role=text-left]
-+ 
-
-
-
-
-

@@ -96,7 +96,7 @@ image::/v3/V3_22_0_06_ViewFolders.png[,420,100,role=text-left]
 
 * Agent Data Connector (ADC) is integrated into BigQuery and Spanner (GXR-3722). 
 
-* *_Kineviz Desktop_* version 0.8.0
+* *_Kineviz Desktop_* version 0.9.0
 
 ** The *_Kineviz Desktop_* access, pricing options, and Stripe payment system is implemented through Kineviz Cloud, supporting Agent implementation and software upgrade from an initial free version.
 ** A user is no longer logged out automatically after only one day of inactivity (GXR-4306). 
