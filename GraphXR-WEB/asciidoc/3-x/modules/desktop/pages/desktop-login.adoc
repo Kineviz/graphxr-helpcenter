@@ -1,10 +1,10 @@
 = Install Kineviz Desktop
 
-== Download *Kineviz Desktop* 
+== Download and Launch *Kineviz Desktop* 
 
 Go to the Kineviz website and click *_Download Kineviz Desktop_*. 
 
-Instructions to download the disk image that matches your operating system appear automatically. You can choose a different file if it seems appropriate. 
+Instructions to download the disk image that matches your operating system appear automatically. You can choose a different file if necessary. 
 
 === Windows
 
@@ -17,7 +17,19 @@ Instructions to download the disk image that matches your operating system appea
 | Kineviz-Desktop-0.1.8-win-arm64.zip | Intel / ARM64)| Portable archive — unzip and run directly
 |===
 
+
+. Select the appropriate .dmg file.
+
++
 NOTE: Most Windows PCs use the x64 build. Only choose the arm64 build if your device uses an ARM processor (e.g., Snapdragon-based PCs).
++
+
+. Double-click the downloaded Kineviz-Desktop-Setup-[Version]-win-x64.exe (or the -win-arm64.exe build for ARM-based PCs).
+. Follow the prompts to complete the installation (you can choose the install location and whether to create a desktop shortcut).
+. Once installed, launch Kineviz Desktop from the Start menu or the desktop icon.
++
+NOTE: If Windows SmartScreen shows a warning, click "More info" → "Run anyway".
+
 
 === macOS
 
@@ -30,19 +42,11 @@ NOTE: Most Windows PCs use the x64 build. Only choose the arm64 build if your de
 | Kineviz-Desktop-0.1.8-mac-arm64.zip| Intel / ARM64)| Archive form
 |===
 
-NOTE: To check your Mac's chip: click the menu in the top-left corner → *About This Mac*, and look at the *Chip / Processor* information. Choose the arm64 build for Apple M-series chips, or the x64 build for Intel processors. 
+. Select the appropriate .dmg file.
 
-== Install and Open Kineviz Desktop
-
-=== Windows
-
-. Double-click the downloaded Kineviz-Desktop-Setup-[Version]-win-x64.exe (or the -win-arm64.exe build for ARM-based PCs).
-. Follow the prompts to complete the installation (you can choose the install location and whether to create a desktop shortcut).
-. Once installed, launch Kineviz Desktop from the Start menu or the desktop icon.
 +
-NOTE: If Windows SmartScreen shows a warning, click "More info" → "Run anyway".
-
-=== macOS
+NOTE: To check your Mac's chip: click the menu in the top-left corner → *About This Mac*, and look at the *Chip / Processor* information. Choose the arm64 build for Apple M-series chips, or the x64 build for Intel processors. 
++
 
 . Double-click the downloaded .dmg file.
 . In the window that appears, drag the Kineviz Desktop icon into the "Applications" folder.
@@ -50,13 +54,13 @@ NOTE: If Windows SmartScreen shows a warning, click "More info" → "Run anyway"
 +
 NOTE: If, on first launch, you see *_cannot be opened because it is from an unidentified developer_*, go to *System Settings → Privacy & Security*, find the related prompt and click *Open Anyway*; or right-click the icon in *Applications →  Open*.
 
-== Open your Free Account
+== Sign In to your Free Account and Open Kineviz Desktop 
 
-*Kineviz Desktop* runs locally, which is suitable for offline scenarios, working with local files, and performance-intensive workloads. Its features and experience are largely identical to the browser version of GraphXR, so if you are already familiar with GraphXR, you can get started right away. 
+To use the AI Agent managed through Kineviz, you need an *_Online_* connection to Kineviz Cloud. The account you create is automatically set up as a *free* subscription with a daily 5-hour, and weekly limited budget. 
 
-NOTE: To use the AI Agent managed through Kineviz, you need an *_Online_* connection to Kineviz Cloud. However, you can choose to remain *_Offline_* if desired.    
+NOTE: You can choose to remain *_Offline_* if desired. *Kineviz Desktop* runs locally, which is suitable for offline scenarios, working with local files, and performance-intensive workloads. 
 
-*To open your free Desktop account and sign in:*
+*To sign in and open Kineviz Desktop:*
 
 . In the login dialog, click *_Sign in with Kineviz Cloud_*.
 +
@@ -82,31 +86,35 @@ image::/v3/20_00_03_KD_CloudConnect.png[,420,320,role=text-left]
 +
 
 +
-The *Kineviz Desktop* *_Projects_* screen opens. 
+The *Kineviz Desktop* *_Projects_* screen opens. *Kineviz Desktop* is nearly identical to the browser version of GraphXR. So if you are already familiar with GraphXR, you can get started right away. 
++
 
 +
 image::/v3/20_01_01_KD_HomeCards.png[,540,420,role=text-left]
  
 
-=== Review Cloud Settings 
+== Review and Upgrade Your Account
 
-A free *Kineviz Desktop* subscription provides Agent access limited you to a rolling 5-hour session and weekly budget.
+You can monitor your account usage directly in *Kineviz Desktop*. If you need more intensive Agent engagement it's easy to upgrade to a paid *_Pro_* subscription. 
+
+=== Review your Cloud usage 
+
+A free *Kineviz Desktop* subscription provides Agent access limited to a rolling 5-hour session and weekly budget.
 
 *To review your current plan:*
 
 * In the desktop *_Projects_* screen, go to the user menu at the top right, select *_Settings_* and click *_Cloud_*. You can:
 ** Review your subscription plan and track current usage.
 ** Set a privacy opt-out.
-**  Click *_Manage Account_* to review subscription, billing, and account details on the *Kineviz Cloud* website.
+** Click *_Manage Account_* to review subscription, billing, and account details on the *Kineviz Cloud* website.
 +
 image::/v3/20_01_03_KD_SettingsCloud.png[,540,520,role=text-left]
 
-=== Upgrade through Kineviz Cloud 
+=== Upgrade to Pro through Kineviz Cloud 
 
-The *Kineviz Cloud* website shows your current subscription and privacy settings and a list of your current cloud agents. 
-You can also upgrade to a monthly paid *_Pro_* subscription to receive 5 times the usage of the free tier. 
+The *Kineviz Cloud* website tracks your current subscription and privacy settings and a list of your current cloud agents. It is also where you can upgrade to a monthly paid *_Pro_* subscription, giving you 5 times the usage of the free tier. 
 
-NOTE: You can cancel the subscription at any time, according to the current terms of service.
+NOTE: You can cancel a subscription at any time, according to current terms of service.
 
 *To upgrade to Desktop Pro:*
 

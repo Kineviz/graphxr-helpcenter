@@ -1,3 +1,3 @@
 * xref:desktop-intro.adoc[*Kineviz Desktop*]
-** xref:desktop-login.adoc[*Log In to Desktop*]
+** xref:desktop-login.adoc[*Install Desktop*]
 ** xref:desktop-projects-home.adoc[*Desktop Projects*]
