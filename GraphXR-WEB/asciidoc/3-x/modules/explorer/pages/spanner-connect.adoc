@@ -1,0 +1,90 @@
+= Connect to Spanner
+
+Connecting Google Spanner to GraphXR Explorer requires completing the following steps:
+ 
+. Launch Explorer from the GCP Marketplace.
+. Obtain and upload a service account key.
+. Configure the Spanner database.
+. Connect Spanner to the Explorer project. 
+
+== Before you begin…
+
+Before you can use GraphXR Explorer, you need:
+
+* A Google Cloud Spanner account.
+* A Spanner database and Spanner Graph property graph database based on it.
++
+NOTE: You can start with Spanner Graph demo data available for free trial through your Google Cloud Platform account.
+
+== 1. Launch Explorer from the GCP Marketplace
+
+. Go to the link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-spanner?q=search&invt=Abtgig&project=kineviz-public[*Google Cloud Marketplace*]
+. Open the *GraphXR Explorer* product page
+. Click *_Launch_* to configure a deployment.
+. Enter a *_Deployment_* name.
+. Create a *_Service Account_*: under *_Deployment Service Account_*, click *_New Account_*. Enter
++
+* *_Service account name_*, *_ID_* and *_description_*.
+* *_Zone (us-central-c)_*
+* Under *_Firewall_*, click *_Allow HTTP_* and *_Allow HTTPS_* checkboxes.
++
+. Click *_Deploy_* and wait for deployment to complete. This may take a few minutes.
+. Open the deployment *_Details_* tab and locate *_Outputs_*
++
+* Copy the *_Admin Password_* (click the *_Copy Link_* icon)
+* Click *_Site URL_* to open *GraphXR Explorer* login.
++
+. *_Log In_* to *GraphXR Explorer* 
+
++
+image::/v3/50_00_01_SpEx_Login.png[,340,340,role=text-left]
++
+
++
+* Enter your *_user ID_* and *_Admin Password_*.
+* Click *_Login_*.
++
+A *GraphXR Explorer* project is automatically created. A connection wizard shows you how to connect the project to your Spanner database. 
+
+== 2. Obtain and upload the service account key
+
+In the connection wizard, you enter required service account details and download the JSON key file that will connect the *Explorer* project to a specific *Spanner Graph* database. 
+
+image::/v3/50_00_02_SpEx_Wizard1.png[,340,340,role=text-left]
+
+. Click the link to visit the Google Cloud Console *_Service Accounts_* page.
+. Open the service account created for the project (or create a new one).
+. Under *_Permissions_*, assign 3 roles:
++
+* Cloud Spanner *_API Service Agent_*
+* Cloud Spanner *_Database Reader_*
+* Cloud Spanner *_Viewer_*
++
+. Click *_Done_* to return to the *_Service Accounts_* page.
+. Create and download the JSON key file
+.. Click the 3 dots at the far right on the service account list item, and choose *Manage Keys*.
+.. Click *_Add Key_*, and choose *_Create New Key_*, select *_JSON_* and click *_Create_*.
+. Drag the downloaded key file to the connection wizard to upload, and click *_Next_*. 
+
+== 3. Review Database configuration
+
+Database details are pre-filled in the connection wizard.
+
+image::/v3/50_00_03_SpEx_DBConfig.png[,340,340,role=text-left]
+
+* Review the *_Instance_*, *_Database name_*, and *_Graph Database_*, and click *_Done_*.
+
++  
+Your *GraphXR Explorer* project is now open and connected to the *Spanner Graph* database. 
+
+== Query the Database
+
+The project canvas is empty when it first opens. 
+
+image::/v3/50_00_04_SpEx_NewProjectQuery.png[,420,340,role=text-left]
+
+To import data from the connected database you can:
+
+* Click in the *_Query/Search_* bar to use GraphXR’s point-and-click query builder.
+* On the left menu, click to open the GraphXR *_Query_* panel and enter and run a *_Cypher_*, *_GQL_*, or *_SQL_* query.
+  

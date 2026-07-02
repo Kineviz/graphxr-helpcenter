@@ -1,10 +1,8 @@
 = GraphXR Explorer for Spanner
 
-GraphXR Explorer provides a one-stop connection to a property graph on Google Spanner from the Google Cloud Marketplace. 
+GraphXR Explorer provides a one-stop connection to a property graph on Google Spanner from the link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-spanner?q=search&invt=Abtgig&project=kineviz-public[*Google Cloud Platform (GCP) Marketplace*]. 
 
-xref:attachment$quickstart-card-spanner.pdf[*Quick Start Card for Spanner*] 
-
-link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-spanner?q=search&invt=Abtgig&project=kineviz-public[Deploy on Google Cloud Marketplace]
+xref:attachment$quick-start-card.pdf[*Quick Start Card*]
 
 == Features
 
@@ -26,22 +24,13 @@ video::XdzcP8fHTo8[youtube]
 
 == User Guide
 
-xref:attachment$quickstart-guide-spanner.pdf[*GraphXR Explorer for Spanner User Guide*]
-  
- 
-=== Before you begin…
-
-Before you can use GraphXR Explorer, you need:
-
-* A Google Cloud Spanner account.
-* A Spanner database and Spanner Graph property graph database based on it.
-+
-NOTE: You can start with Spanner Graph demo data available for free trial through your Google Cloud Platform account.
-+
-
+xref:attachment$quick-start-guide.pdf[*GraphXR Explorer for Spanner User Guide*]
+   
+[caption=]
+.Using *GraphXR Explorer for Spanner*
 [cols="^3,^3"]
 |===
-| xref:g-user:graphxr-start/projects-home.adoc[1. *Connect to Spanner Graph*]
+| xref:explorer:spanner-connect.adoc[1. *Connect to Spanner Graph*]
  
 | xref:g-user:data-import/query-graphdb.adoc[2. *No-Code Graph Query*]
 

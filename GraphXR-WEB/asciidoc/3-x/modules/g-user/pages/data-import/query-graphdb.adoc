@@ -11,8 +11,7 @@ NOTE: If views have been saved in the project, you can load one of them, then qu
 
 For a project connected to a graph database, you can use the project *_Query /Search_* bar to build and run a no-code visual query for the data matching a specific graph pattern.
 
-You can
- 
+You can 
 * Query for a category of nodes.  
 * Query for any pattern based on the categories and their relationships defined in the database
 * Optionally, add a property filter to category or relationship elements to narrow down the patterns that are returned.   
@@ -35,13 +34,13 @@ image::/v3/02_03_01_QueryBarPuppyGraph.png[,420,180,role=text-left]
 image::/v3/02_03_02_QueryRun.png[,520,280,role=text-left]
 
  
-== No-code query with Expand
+== No-code query with *_Expand_*
 
 Once data have been returned to the canvas you can select nodes, and use no-code *_Expand_* to query for additional nodes in the database which are connected to the selected nodes through any of the database's defined relationships. 
 
 === Basic *_Expand_* 
 
-*To query using right-click *_Expand_*:*
+*To query using right-click *_Expand_* *:
 
 . Select one or more nodes on the canvas using any method.
 . Right-click and choose *_Expand_* to see the list of relationships (and their directions) connected to the selected nodes. 
