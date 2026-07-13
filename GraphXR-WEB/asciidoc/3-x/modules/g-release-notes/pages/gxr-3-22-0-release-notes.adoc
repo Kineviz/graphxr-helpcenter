@@ -6,7 +6,7 @@
 
 ** *_Kineviz Online_* or simply *_Kineviz_* (formerly *_GraphXR_*), Kineviz's online, browser-based platform for multi-user graph visualization and analytics. 
 
-**_Kineviz Desktop_* (beta), a standalone application for a single-user Kineviz experience. It is provided through a user-managed free subscription, with optional connection to a Kineviz-managed cloud server for agentic work, and optional upgrade to a paid tier.  *_Kineviz Desktop_* includes the same Agent, database connection, file management, data modeling, and graph analytics as *_Kineviz Online_*, in a locally installed application.
+** *_Kineviz Desktop_* (beta), a standalone application for a single-user Kineviz experience. It is provided through a user-managed free subscription, with optional connection to a Kineviz-managed cloud server for agentic work, and optional upgrade to a paid tier.  *_Kineviz Desktop_* includes the same Agent, database connection, file management, data modeling, and graph analytics as *_Kineviz Online_*, in a locally installed application.
 
 * The *_Kineviz_* and *_Kineviz Desktop_* release includes a new status bar showing project, database, and Agent status at a glance. Entire projects can now be exported and imported. UI has been re-designed to better organize views, manage queries, and prompt appropriate user inputs. Performance upgrades and bug fixes are also included.     
   
