@@ -1,7 +1,7 @@
 = Kineviz Explorer for BigQuery
 
 Kineviz *Explorer* provides a one-stop connection to Google BigQuery datasets from the 
-https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-for-bigquery?q=search&referrer=search&invt=Abtgig&project=kineviz-public
+https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-for-bigquery?q=search&referrer=search&invt=Abtgig&project=kineviz-public[*Google Cloud Platform (GCP) Marketplace*].
 
 NOTE: *Kineviz Explorer for integrated BigQuery / BigQuery Graph is under development. Please link:https://kineviz.com/contact[contact us] for more information.*
 
