@@ -2,18 +2,24 @@
 
 The *_Projects_* page is your portal to
 
-* Create new GraphXR projects, review existing projects, and manage shared projects.
-* Review details of your GraphXR account, link to GraphXR information, send feedback to Kineviz, and access user communities.
+* Create new *Kineviz* projects, review existing projects, and manage shared projects.
+* Review details of your *Kineviz* account, link to *Kineviz* information, send feedback to Kineviz, and access user communities.
 
 == Projects Page 
 
-On the *_Projects_* page, projects are initially displayed as tiles organized in the following sections:   
+On the *_Projects_* page, projects appear as tiles or a list in the following sections:   
 
-* *_Recent Projects_*, the projects you recently opened.
-* *_My Projects_*, projects you've created, and a *_Create_* tile or button.
-* *_Create From Sandbox_*, pre-configured projects you can review and copy. Sandboxes can help you quickly create and leverage projects for demos, tutorials, and specific workflows.  
+* *_Recent Projects_*, projects you recently opened.
+* *_My Projects_*, projects you've created, plus a *_Create_* tile or button. 
 * *_Shared Projects_*, the projects other users share with you.
-* *_Demo Projects_*, limited demonstration projects that you can explore.
+* *_Create From Sandbox_*, pre-configured projects focused on specific workflows. Opening a sandbox project clones it and displays it in the *_My Projects_* and *_Recent Projects_* sections.
+
++
+NOTE: Kineviz provides a series of in-app tutorials as Sandbox projects. Each focuses on a particular use case or workflow, and illustrates how to use the *Kineviz* platform to investigate and communicate useful results.
++
++  
+IMPORTANT: Opening a project (such as a tutorial) from the *_Sandbox_* section clones the pre-built project and adds it to your *_My Projects_* section. Opening it from the *_My Projects_* list returns you to the project as you last left it. 
++      
 
 image::/v3/01_03_01_ProjectsHomeSort.png[,720,640,role=text-left]
 
@@ -21,10 +27,32 @@ The *_display icon_* at the far right of the *_Recent Projects_* section toggles
  
 image::/v3/01_03_05_ProjectsList.png[,720,520,role=text-left]
 
+== Connecting to a Database
+
+When you create a project, you also establish the database connection you want (if any). In the project's *_Create_* dialog, you must enter connection details and follow the steps required by the database type you select. The *_Database Type_* options are:
+
+* *_None_*, to create a project with no connected database. You can import and model data in formats such as CSV, SQL and JSON, and import graph data via GXRF files, Snapshot archives, and more. Simply drag and drop files directly, or use the *Kineviz* xref:data-import/import-via-mapping.adoc[*Mapping Editor*] for initial graph modeling.
+
+* *_KoreDB_* or *_KoreDb via proxy API_*, to create and connect a default internal KoreDB graph database that you can manage in the *_Project >  Data Store_* subpanel. You can import and/or model graph data in the project, save and query it internally, and export the entire KoreDB database for archival. 
+
+* Connect to one of the following external relational or graph databases, to enable full *Kineviz* property graph visualization and analytics with no need to replicate or move data:  
+
+** Neo4j 
+** BigQuery Property Graph
+** Spanner Property Graph
+** Puppygraph
+** Ultipa Graph
+** Memgraph
+** GalaxyBase
+** Nebula Graph
+** Oracle Graph
+** Database Proxy. A generalized proxy built on open-source middleware, designed to securely connect *Kineviz* to various backend databases. 
+
+NOTE: *Kineviz* *_Explorer_*, a basic version of the *Kineviz* platform, is provided exclusively through the *Google Cloud Platform (GCP) Marketplace* for initial visual exploration of big data. The connection process is similar to that required for *Kineviz* or *Kineviz Desktop*, but is exclusively delivered through two *GCP Marketplace* products:  xref:explorer:spanner-intro.adoc[*Explorer for Spanner Graph*]  and  xref:explorer:bigquery-intro.adoc[*Explorer for BigQuery*]
 
 == Create a Project
 
-You can create and configure a new GraphXR project and optionally connect it to an external or internal database. 
+You can create and configure a *Kineviz* project at any time and optionally connect it to an external or internal database. 
 
 *To create a project:*
 
@@ -43,48 +71,40 @@ image::/v3/01_03_07_ProjectsCreate.png[,320,320,role=text-left]
 image::/v3/01_03_08_CreateUltipaProject1.png[,320,480,role=text-left]
 +
 
++   
+With a *Database Type* of *_None_* or *_Internal Data Store_*, the project is automatically created and opened.
 +
 
-* *_None_* creates a project that's not connected to an external database or the default internal database. You can import and model data in formats such as CSV, SQL and JSON, and import graph data via GXRF files, Snapshot archives, and more. Simply drag and drop files directly, or use GraphXR's xref:data-import/import-via-mapping.adoc[*Mapping Editor*] for initial graph modeling.
-
-* *_Internal Data Store_* is the default. It creates an empty Kuzu graph database connected to the project. This lets you import and/or model graph data in the project, save it in the persistent internal graph database, and export the entire database for archival. 
- 
-* *External Graph Database options* connect a project to an existing external graph database. Options include Google Cloud Platform (GCP) *_Spanner_* and *_BigQuery_* property graphs, *_Neo4j_*, *_Puppygraph_*, *_Memgraph_*, *_Ultipa Graph_*, *_Galaxy Base_*, *_NebulaGraph_*, and *_Oracle Graph_*.  
-
-+   
- 
-With a *Database Type* of *_None_* or *_Internal Data Store_*, the project is automatically created and opened. 
++ 
 For connection to an existing external database, the *_Create New Project_* dialog shows the additional details needed to confirm connection to your database.
-
 +
  
 +
 image::/v3/01_03_09_CreateUltipaProject2.png[,320,480,role=text-left]
-
 +
 
-* Most options require:
++
+* Most connection options require:
 
  ** Hostname (or IP)
  ** BOLT port - a default is shown for most options.
  ** Username
  ** Password
  ** Database Name 
- 
 +
-
+ 
 +
 NOTE: You may also need to verify that your external database is running before trying to connect to it. 
- 
-
 +
-   
+
++ 
+  
 * For GCP Spanner and Big Query property graphs, a connection wizard guides you through a detailed secure deployment process which ends by opening the project.
-* You can also connect through the GraphXR Database Proxy, designed to securely connect GraphXR to various backend databases. An API url is required.
+* If you choose the *Kineviz* Database Proxy, which is designed to securely connect *Kineviz* to various backend databases, an API url is required.
  
 + 
 
-. To see that the new project now appears under *_My Projects_*, you need to exit the project and return to the *_Projects_* page. Click the Kineviz logo at the lower left and choose *_Home_* from the menu. 
+. To see that the new project now appears under *_My Projects_*, you must exit the project and return to the *_Projects_* page. Click the Kineviz logo at the lower left and choose *_Home_*. 
  
 == Work with Existing Projects  
 
@@ -137,7 +157,7 @@ image::/v3/01_03_10_ConfigureProject.png[,540,320,role=text-left]
 
 In a Project tile or list item, click:
 
-* *_Delete_* (trash can) to delete a project. This deletes the GraphXR project with its internal data store and saved views, but not the data in a connected external database. 
+* *_Delete_* (trash can) to delete a project. This deletes the *Kineviz* project with its internal data store and saved views, but not the data in a connected external database. 
 +
 IMPORTANT: Before deleting a project, you should consider exporting its data views and internal database. 
 + 
@@ -147,15 +167,19 @@ IMPORTANT: Before deleting a project, you should consider exporting its data vie
 
 * *_Switch DB_* to switch the project to a different database of the current type.
 
-* *_Clone_* to create a duplicate of the project, optionally including its *_Grove_* notebooks.
+* *_Clone_* to create a duplicate of the project, optionally including its *_Grove_* notebooks. 
 
 +
 image::/v3/01_03_11_CloneProject.png[,320,260,role=text-left]
++
+
++
+NOTE: In a *Kineviz* online project, views are cloned if the *_Copy when cloning project_* checkbox is selected in the view's *_About_* dialog. In *Kineviz Desktop*, all project files and views are cloned by default. 
 
 
 === Enable and Configure Project sharing
 
-You can share an entire project with other GraphXR users. To collaborate with those who don't have a GraphXR account, share individual views securely via iframe.
+You can share a project with other *Kineviz* users. To collaborate with those who don't have a *Kineviz* account, share individual views securely via iframe.
 
 In a Project tile or list item, click *_Enable / Disable Sharing_* (Lock icon) to show the additional icons for sharing the entire project or one of its views with another user:
 
@@ -165,10 +189,71 @@ In a Project tile or list item, click *_Enable / Disable Sharing_* (Lock icon) t
   
 * *_Share_*, to open the shared project, or select one of its views and generate iframe code that you can include in an email, report, proposal, or other communication. 
 
+=== Configure a Sandbox Project
+
+Configuring a project as a sandbox lets you set up a working environment for specific  workflows that can then be used as a starting point for similar follow-on projects. 
+
+image::/v3/01_03_13_SandboxIntro.png[,540,420,role=text-left]
+
+A sandbox project includes full *Kineviz* functionality, including database connection, project styling template, and any saved views, *Grove* notebooks, and *Agent* setup. Once configured, the project appears on the *_Projects_* home page in the *_Create from Sandbox_* section. 
+
+Clicking on a sandbox project clones and opens it. The cloned project then appears on the *_Projects_* home page in the *_My Projects_* and *_Recent Projects_* sections. 
+
+NOTE: A cloned sandbox project is not itself a sandbox. However, as you work in the project, you could find it worthwhile to configure it as a new sandbox.  
+
+You can either:
+
+* Configure any open project as a sandbox by going to *_Project >Settings > Advanced Settings_*, or
+* *_Create_* a new project (choosing a *_Project Name_*, *_Database Type_*, and optional *_Template_*). When the project opens, you can then configure it as a sandbox.  
+
+*To configure a project as a Sandbox:* 
+
+. Open the project (or *_Create_* a new one).
+. Open the *_Project_* panel and *_Settings_* subpanel, and click *_Advanced Settings_*.
+
++
+image::/v3/01_03_14_SandboxAdvancedSettings.png[,320,260,role=text-left]
++
+
+. Scroll down to see Sandbox configuration options at the bottom of the panel.
+
+. Click the *_Sandbox Project_* checkbox.
+. Set sandbox configuration options:
+
++
+image::/v3/01_03_15_SandboxConfigOptions.png[,320,260,role=text-left]
++
+
++
+* *_Description_* text box. Enter a brief description of what the sandbox contains.
+* *_Protect from deletion_* checkbox.
+* *_Grove_* book display options:
+
+** *_Open Grovebook on Load_*. Enter the Grovebook file key (e.g. my-notebook)
+** *_Open Grovebook on Load Display Mode_*. Choose *_Left_* to dock your Grovebook to the left menu, or *_Floating_* to float it on the canvas.
+
+* *_Project Icon_*. Enter a custom icon for the sandbox. By default, a flask icon (fa-flask) is displayed.
+* *_Open View on Load_*. Select one of the project's saved views from the dropdown menu.
+* *_Tags_*. Enter optional tags that indicate intended sandbox usage (e.g. Beginner, Recommended, etc.) 
+* *_Kineviz Desktop_* only:
+** *_Corner Tag_*. Enter a user-defined tag that will appear at the upper right of the project tile to further specify intended sandbox usage (for example *_Agent Tools_*, *_Native Tools_*).
+** *_Card Preview Image_*. Click *_Upload Image_* or *_Remove Image_* to control the preview image (such as a screenshot of one of the project views) that appears on the project tile.
++
+
++
+image::/v3/01_03_16_SandboxDesktopOptions.png[,320,260,role=text-left]
++
+
++
+The configuration is set as soon as you enter the details.
++
+
+.  Return to the *_Projects_* home page to verify that the project now appears in the *_Create from Sandbox_* section. 
+
 
 == Manage Your User Account
 
-Go to the user menu at the top of the *_Projects_* page to edit your GraphXR account settings or log out. 
+Go to the user menu at the top of the *_Projects_* page to edit your *Kineviz* account settings or log out. 
 
 image::/v3/01_03_02_ProjectsUserMenu.png[,720,240,role=text-left]
 
@@ -180,7 +265,7 @@ image::/v3/01_03_02_ProjectsUserMenu.png[,720,240,role=text-left]
 image::/v3/01_03_03_ProjectsUserSettings.png[,240,320,role=text-left]  
 +
 
-* Select *_Logout_* to log out of GraphXR.
+* Select *_Logout_* to log out of *Kineviz*.
 
 +
 NOTE: If you are an administrator of a multi-user account, you'll see an *_Admin_* item on the User menu to open your administrator panel.
@@ -191,12 +276,12 @@ Use the language selector at the top right of the *_Projects_* page to switch be
 
 image::/v3/01_03_04_ProjectsSpanishMenu.png[,520,140,role=text-left]
 
-=== Access GraphXR Documentation
+=== Access Kineviz Documentation
 
 Click links at the bottom of the browser window to open user guides and release notes available on the Kineviz Help Center.
 
-* *_Help_* opens GraphXR user documentation.
-* The version number at the bottom of the browser window opens the release notes for the current GraphXR version.
+* *_Help_* opens *Kineviz* user documentation.
+* The version number at the bottom of the browser window opens the release notes for the current *Kineviz* version.
 
 +
 image::/v3/01_03_12_VersionHelpCenterLink.png[,720,240,role=text-left]

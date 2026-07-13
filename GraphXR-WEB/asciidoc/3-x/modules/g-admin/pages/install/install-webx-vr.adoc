@@ -1,12 +1,12 @@
-= Installing WebXR Virtual Reality for GraphXR
+= Installing WebXR Virtual Reality for Kineviz
 
-GraphXR supports use in a Virtual Reality (VR) or Augmented Reality (AR) environment through WebXR and an Oculus headset.
+Kineviz supports use in a Virtual Reality (VR) or Augmented Reality (AR) environment through WebXR and an Oculus headset.
 
-This guide outlines setting up an environment for using GraphXR with WebXR, in this case, using the Oculus Rift, Oculus Rift-S, and Oculus Quest 2 (via Oculus Link) headsets with Chrome WebXR. The steps are:
+This guide outlines setting up an environment for using Kineviz with WebXR, in this case, using the Oculus Rift, Oculus Rift-S, and Oculus Quest 2 (via Oculus Link) headsets with Chrome WebXR. The steps are:
 
 . Prepare the VR Device, Hardware, and Software
 . Configure the _Chrome_ browser.
-. Run _GraphXR_.
+. Run _Kineviz_.
 
 == Prepare the VR Device, Hardware, and Software
 
@@ -49,7 +49,7 @@ Open _Chrome =>_ Go to __chrome://settings =>__Scroll to _System_ => Enable _Use
 Open _Chrome_ => Go to _chrome://flags_ => Search with _gamepad_ => Enable _Enable Windows.Gaming.Input Extensions_
 . Relaunch _Chrome_.
 
-== Run GraphXR
+== Run Kineviz
 
 . Open the _Oculus client_.
 +
@@ -62,10 +62,10 @@ If you can't start the Oculus client, please go to:
 _C:\Program Files\Oculus\Support\oculus-runtime_, start _OVRServer_x64.exe_.
  +
 Once this is running continuously (this is the terminal GUI, and you will be able to see the logs), _OVRServer_ will automatically open the _Oculus_ client again.
-. Open _GraphXR_:
+. Open _Kineviz_:
 + Open _Chrome_ => Go to *https://graphxr.kineviz.com* => Create _VC Demo_ => _Start_.
 
-. Load Data in to _GraphXR_, for example using a Cypher query as follows:
+. Load Data in to _Kineviz_, for example using a Cypher query as follows:
 .. Click the _Query_ icon.
 .. Enter `+*MATCH (n)-[r]-(m) RETURN * LIMIT 100*+`
 . Click the _play_ icon.

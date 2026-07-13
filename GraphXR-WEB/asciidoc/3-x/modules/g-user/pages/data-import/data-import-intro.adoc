@@ -1,6 +1,6 @@
 = Import Data
 
-When you enter a project's graph space for the first time, it will be empty. You can  import data to the project canvas from many different sources, including:
+When you enter a project for the first time, it will be empty. You can  import data to the project canvas from many different sources, including:
 
 * xref:./import-by-drag-and-drop.adoc[Import by drag and drop]. Files you can drag and drop include CSV or Excel files, JSON files, and data views exported as a CSV or Excel archive, a _.graphxr_ file, or a _.graphxrsnapshots_ archive.
 
@@ -9,11 +9,16 @@ When you enter a project's graph space for the first time, it will be empty. You
 * Query a xref:./import-via-mapping.adoc[*_CSV_*] file.
 * Query a connected xref:./query-sql.adoc[*_SQL_*] database and import the resulting table as graph data.
 +
-For a CSV file or a SQL table, GraphXR's xref:./import-via-mapping.adoc[*_Mapping Editor_*] lets you transform the data in a single table according to a graph model you specify. 
+For a CSV file or a SQL table, the Kineviz xref:./import-via-mapping.adoc[*_Mapping Editor_*] lets you transform the data in a single table according to a graph model you specify. 
 +
 * Query a JSON file or perform a Gremlin query on a suitable connected database.
 
 * xref:./load-a-saved-view.adoc[Load a project's data *_View_*] and access xref:g-user:data-share-views.adoc[Shared views]. 
 
-* For Enterprise users, advanced GraphXR extensions are available to import data from a variety of graph or composite databases, and to craft reproducible workflows for importing data.
+* For Enterprise users, advanced *Kineviz* extensions are available to import data from a variety of graph or composite databases, and to craft reproducible workflows for importing data.
+
++
+NOTE: On the *_Projects_* home page, you can also xref:./import-a-project.adoc[*Import an entire project*] that has been exported as a _.graphxrproject_ file. The imported project will include its UI configuration, styling template, managed files, views, and internal datastore. 
+
+
 

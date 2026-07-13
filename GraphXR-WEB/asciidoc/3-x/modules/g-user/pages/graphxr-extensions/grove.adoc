@@ -1,12 +1,12 @@
 = Grove
 
-Grove provides developers with a javascript authoring environment that runs in the browser along with GraphXR. With Grove, you can develop Observable-inspired javascript notebooks that deliver reproducible, interactive data modeling, visualization, and analysis. These can include customer-facing (read-only) dashboards, as well as collaborative (code-sharing) notebooks for data discovery and analytics. 
+Grove provides developers with a javascript authoring environment that runs in the browser along with *Kineviz*. With Grove, you can develop Observable-inspired javascript notebooks that deliver reproducible, interactive data modeling, visualization, and analysis. These can include customer-facing (read-only) dashboards, as well as collaborative (code-sharing) notebooks for data discovery and analytics. 
  
 For developers, Grove leverages https://observablehq.com/@anjana/functional-javascript-first-steps[functional JavaScript] and open-source visualization packages such as https://d3js.org[D3], https://vega.github.io/vega-lite/[Vega-Lite], https://plotly.com/[Plotly], and https://observablehq.com/@observablehq/introducing-observable-plot[Observable Plot] to delve deeper into high-dimensional data. 
 
 Grove includes example notebooks that developers can use to jump-start development of their own notebooks. 
 
-The GraphXR API provides access to GraphXR functions used in Grove to load, transform, and display graph data.
+The *Kineviz* API provides access to *Kineviz* functions used in Grove to load, transform, and display graph data.
 
 Once you have created a Grovebook in a project, you can set display of attached Grovebooks  in the *_Project > Extensions_* subpanel.
 
@@ -24,7 +24,7 @@ Example notebooks in the *_Grove Demo_* project use publicly available sample da
 
 *To open a Grove demo notebook:*
 
-. Log in to GraphXR and open the *_Grove Demo_* project.
+. Log in to *Kineviz* and open the *_Grove Demo_* project.
 . Go to the *_Project_* panel and *_Extensions_* tab, and select *_Grove_* from the dropdown menu.
 . Click the *_Notebooks_* icon (*_ctrl+Alt+P_*) at the upper right to see demo Notebooks.
 +
@@ -44,7 +44,7 @@ The simple _Map_ notebook above loads geospatial data for counties, and displays
 
 image::/v3/11_01_03_GroveCells1320.png[]
 
-* Roll over the small circles at the far right margin to see names of the cells in the notebook. Clicking a circle takes you to the code cell. In this notebook, a GraphXR API call is used, and Vegalite and D3 javascript packages provide data parsing and geospatial mapping.
+* Roll over the small circles at the far right margin to see names of the cells in the notebook. Clicking a circle takes you to the code cell. In this notebook, a *Kineviz* API call is used, and Vegalite and D3 javascript packages provide data parsing and geospatial mapping.
 * Title bars located at the top of the window provide information about the project and the open notebook, ways to navigate Grove functions and to edit the code.
 +
 
@@ -95,14 +95,14 @@ You can also access a shared notebook under the *_Grove Links_* tab. This may be
 
 *To open a Grove Link notebook:*
 
-. Go to the GraphXR *_Project_* panel and *_Grove Links_* tab.
+. Open a project, and go to the *_Project_* panel and *_Grove Links_* tab.
 . Click the airplane icon next to the Notebook name (e.g. _Import NYERSDA csv_).
 +
 The notebook opens in a separate window.
 +
 image::/v3/11_01_20_GroveLinks720.png[]
 
-. Click the *_Load Data_* button in the example notebook, which loads selected csv data to the GraphXR project canvas.
+. Click the *_Load Data_* button in the example notebook, which loads selected csv data to the *Kineviz* project canvas.
 +
 image::/v3/11_01_21_GroveLinks720.png[]
 +

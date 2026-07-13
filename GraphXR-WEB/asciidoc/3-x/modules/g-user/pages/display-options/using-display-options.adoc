@@ -1,6 +1,6 @@
 = Style the Graph
 
-GraphXR includes options for how nodes and edges are displayed on the project canvas. In a current view, you can: 
+*Kineviz* includes options for how nodes and edges are displayed on the project canvas. In a current view, you can: 
 
 * Toggle the canvas to light or dark mode.
 * Scale the size of nodes, width of edges, and of captions on nodes and edges.

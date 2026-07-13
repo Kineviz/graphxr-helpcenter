@@ -1,6 +1,6 @@
 = Add Custom Icon Sheets
 
-Use the *_Icons_* panel to upload and manage custom icon sheets for your GraphXR installation. You can:
+Use the *_Icons_* panel to upload and manage custom icon sheets for your Kineviz installation. You can:
 
 * *_Add Icon_* collections, named as you prefer.
 +

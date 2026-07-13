@@ -2,7 +2,7 @@
 
 The *_Connector_* provides access through APIs to selected third-party applications and services. These can be useful for injecting data from external sources, or modifying existing data in your graph.
 
-NOTE: The *_Connector_* is available only in GraphXR Enterprise subscriptions.
+NOTE: The *_Connector_* is available only in *Kineviz* Enterprise subscriptions.
 
 The following connectors are available by default:
 

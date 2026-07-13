@@ -1,6 +1,6 @@
 = Map a Table to a Graph with the Mapping Editor
 
-With GraphXR's *_Mapping Editor_* you can map data in a single CSV file or table of SQL query results to a property graph. You need not import the entire table. You just build a graph from the information you want.
+With the *Kineviz* *_Mapping Editor_* you can map data in a single CSV file or table of SQL query results to a property graph. You need not import the entire table. You just build a graph from the information you want.
 
 NOTE: The *_Mapping Editor_* expects a table with column headings, either for a CSV file or SQL query. If an SQL query returns a table without column headings, or returns data in some other form, it cannot be mapped. 
 

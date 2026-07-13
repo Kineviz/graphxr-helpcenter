@@ -4,7 +4,7 @@
 
 In our example data we can use the _seasonEpisode_ property in the _Lines_ category to combine all of the lines spoken on a single episode into a single _Lines_ node connected to its _Episodes_ node.
 
-NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. For a hands-on exercise see our xref:g-learning:how-to-graphxr/how-to-graphxr.adoc[How to GraphXR] tutorials. 
+NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. 
 
 *To combine nodes using Merge:*
 

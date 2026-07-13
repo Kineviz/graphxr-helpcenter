@@ -2,7 +2,7 @@
 
 A *_Force_* directed layout is a rendering of a physics simulation in which each node pushes away from other nodes while edges pull the nodes together. There is no intrinsic meaning to node position or edge length. Rather, the rendering is designed to result in a graph that's visually pleasing and reasonably easy to navigate.
 
-GraphXR renders data in a default force-directed layout, but you can:
+*Kineviz* renders data in a default force-directed layout, but you can:
 
 * Set force layout parameters for rendering the entire (non-pinned) graph.
 * Temporarily disable (and enable) force layout for the entire (non-pinned) graph.
@@ -113,7 +113,7 @@ The example below shows a *_Randomize Positions_* operation when force layout is
 +
 image::/v3/08_01_07_RandomizeForce.png[,720,380,role=text-left]
 
-==  Run and Stop 
+== Run and Stop 
 
 With force layout enabled, you can:
 

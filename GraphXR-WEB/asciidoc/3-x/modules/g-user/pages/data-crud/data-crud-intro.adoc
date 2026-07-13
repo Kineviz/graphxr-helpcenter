@@ -1,6 +1,6 @@
 = Create and Edit Data
 
-Graph data can be easily created, edited, and deleted within GraphXR. At any time you can:
+Graph data can be easily created, edited, and deleted within *Kineviz*. At any time you can:
 
 * xref:data-crud/data-add.adoc[*_Add nodes and edges_*] and their properties.
 * xref:data-crud/data-edit.adoc[*_Add and edit labels_*] of categories, relationships, and properties.

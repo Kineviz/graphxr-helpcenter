@@ -1,12 +1,12 @@
 = Configure a Project User Interface
 
-You can configure user interface (UI) elements displayed in a GraphXR project, to either limit or expand the tools and functionality available in a project with the default GraphXR UI. 
+You can configure user interface (UI) elements displayed in a *Kineviz* project, to either limit or expand the tools and functionality available in a project with the default *Kineviz* UI. 
 
 The *_UI Config_* button in the *_Project > Settings_* subpanel opens a UI configuration dialog where you can enable or disable presentation of UI panels, extensions, and right-click menu and toolbar options. 
 
-With UI configuration, a project can be granted additional GraphXR functionality that may not be present in your default configuration. 
+With UI configuration, a project can be granted additional *Kineviz* functionality that may not be present in your default configuration. 
 
-For example, a GraphXR xref:explorer:spanner-intro.adoc[*_Explorer_*] project presents a streamlined UI designed primarily for graph database query and visual exploration. Additional UI features a user may want to add include: 
+For example, a *Kineviz* xref:explorer:spanner-intro.adoc[*_Explorer_*] project presents a streamlined UI designed primarily for graph database query and visual exploration. Additional UI features a user may want to add include: 
 
 * *_Layout_*, for the panel to sort nodes in geometric layouts by property value, which is not available in the toolbar's *_Quick Layout_* menu.
 * *_Map_*, for the panel to drop nodes with lat-long property values on a world map.
@@ -35,7 +35,7 @@ image::/v3/01_04_31_ProjectUIConfiguration.png[,720,480,role=text-left]
 . Scroll to the top of the dialog and click *_Save_* to apply the changes and exit to the project canvas.
 
 +
-The UI is updated. For example, the example project menu below now includes icons for previously hidden GraphXR panels and extensions.
+The UI is updated. For example, the example project menu below now includes icons for previously hidden *Kineviz* panels and extensions.
 +
 
 +

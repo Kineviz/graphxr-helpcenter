@@ -1,6 +1,6 @@
 = Track App Usage
 
-In the *_App Analytics_* panel you can review and track GraphXR usage in many ways, including:
+In the *_App Analytics_* panel you can review and track Kineviz usage in many ways, including:
 
 * Filter analytics by time period.
 * Display usage on line or bar graphs or in lists.

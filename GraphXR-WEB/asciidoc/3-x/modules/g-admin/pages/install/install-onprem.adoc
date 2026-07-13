@@ -1,17 +1,17 @@
-= On-Prem GraphXR Installation
+= On-Prem Kineviz Installation
 
-For Enterprise users working with GraphXR in a secure environment, on-premises installation options include:
+For Enterprise users working with Kineviz in a secure environment, on-premises installation options include:
  
 * Installation using Docker
 * Install with a Docker Zip file
 * Install with persistent storage
-* Update or re-install GraphXR
+* Update or re-install Kineviz
 
-NOTE: Individual GraphXR users can simply go to the browser, create an account and log in. Installation as such is not needed.
+NOTE: Individual Kineviz users can simply go to the browser, create an account and log in. Installation as such is not needed.
 
 == Basic Docker Install
 
-*To install GraphXR from docker:*
+*To install Kineviz from docker:*
 
 . Login to the docker hub +
 docker login --username=<username> --password=<password>
@@ -19,14 +19,14 @@ docker login --username=<username> --password=<password>
 ....
 docker login --username=<username>  --password=<password>
 ....
-. Pull the GraphXR image (i.e. the executable).
+. Pull the Kineviz image (i.e. the executable).
 +
 ....
 docker pull <binary image name>
 ....
 +
 The database items will be downloaded. When completed, a status message displays.
-. Run the docker container with the GraphXR executable.
+. Run the docker container with the Kineviz executable.
 +
 ....
 docker run -d -it --name graphxr --restart always
@@ -39,22 +39,22 @@ docker run -d -it --name graphxr --restart always
 NOTE: The port numbers must be set to `+8080:9000+`.
 
 +
-On completion, the GraphXR server is running and has established your Admin +
+On completion, the Kineviz server is running and has established your Admin +
 account, which is now ready for configuration. 
 +
 
-NOTE: For security, GraphXR sets cookie security to _true_.
+NOTE: For security, Kineviz sets cookie security to _true_.
 
 == Docker Install via Zip
 
 Installing using a .zip file downloaded from Docker enables onsite installation without connecting directly to Docker. This may be preferable to address additional security requirements some users may have.
 
-*To install GraphXR from Docker using a .zip file:*
+*To install Kineviz from Docker using a .zip file:*
 
 . Pull the image from docker hub.
 +
 ....
-docker pull kineviz/graphxr_custom:develop
+docker pull kineviz/Kineviz_custom:develop
 ....
 . Save the docker image as zip file.
 +
@@ -85,7 +85,7 @@ kineviz/graphxr_custom:develop
 
 == Install with Persistent Storage
 
-*To install GraphXR with persistent storage:*
+*To install Kineviz with persistent storage:*
 
 The tree structure for the _/data_ volume for persistent storage is as follows:
 
@@ -107,7 +107,7 @@ The tree structure for the _/data_ volume for persistent storage is as follows:
 └── tmp  
 ....
 
-Use the following commands to install and run the GraphXR demo with persistent storage.
+Use the following commands to install and run the Kineviz demo with persistent storage.
 
 . {blank}
 +

@@ -28,7 +28,9 @@ image::/v3/01_04_02_ExportMenu.png[,120,180,role=text-left]
 ** *_Map_*, to drop nodes with latitude and longitude property values on a world map. 
 ** Additional menu icons to access *_Grove_* notebook and *_Graph Composer_* extensions, as well as Sandboxes supporting customized workflows.
  
-* Contextual *_Toolbar_* along the bottom of the space, which displays the tools usable on the data currently present or selected on the canvas.
+* Contextual *_Toolbar_* near the bottom of the window, which displays the tools usable on the data currently present or selected on the canvas.
+
+* Live *_Status Bar_* at the bottom edge of the window, which shows current database connection and amount of data, current number of views, AI *Agent* status, and more. 
 
 * Configurable *_Right-click menu_* of the tools and operations usable on your current data selection. You can right-click anywhere on the canvas to perform many graph operations without going to the toolbar or opening a panel.
 
@@ -348,11 +350,27 @@ The Kineviz logo at the bottom left of the browser window displays a menu to ret
 
 image::/v3/01_04_04_KVLogoMenu.png[,160,200,role=text-left]
 
-* *_Logout_*. Log out of GraphXR.
+* *_Logout_*. Log out of *Kineviz*.
 * *_Home_*. Return to the *_Projects_* home page.
 *_Toggle_Theme*. Toggle the theme between light and dark mode.
 * *_Shortcut_*. Display a quick reference card of desktop shortcut keys. See also xref:nav-select/ref-shortcut-keys.adoc[Shortcut Keys Reference].
-* *_About_*. Review the GraphXR version and release information. 
+* *_About_*. Review the *Kineviz* version and release information. 
+
+== Project Status Bar
+
+In an open project, the live *_Status Bar_* at the bottom of the window includes:
+
+* Name of the database currently connected to the project (e.g. KoreDB, Neo4j, etc.) 
+* Number of node and relationship tables in the connected database.
+* Icon to open the no-code *_Query Bar_* menu to query the connected database.
+* Number of nodes and edges currently showing on the canvas.
+* Icon to open the *_Table_* panel to inspect properties of nodes and edges on the canvas.
+* Number of *_Agent_* chat threads currently running. 
+* Icon to open the *_Views_* panel.
+* A *_Saved_* or *_Unsaved_* status flag for data currently on the canvas. 
+
++
+image::/v3/01_04_33_ProjectStatusBar.png[,720,180,role=text-left]
 
 
 == GUI Navigation Controls

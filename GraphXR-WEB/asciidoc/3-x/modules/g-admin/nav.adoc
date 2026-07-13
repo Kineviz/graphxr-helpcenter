@@ -1,4 +1,4 @@
-* xref:install-admin-intro.adoc[*GraphXR Admin Guide*]
+* xref:install-admin-intro.adoc[*Kineviz Admin Guide*]
 ** xref:install/install-intro.adoc[*Installation*]
 *** xref:install/install-onprem.adoc[On Premises]
 *** xref:install/install-webx-vr.adoc[WebX and VR]

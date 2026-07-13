@@ -1,6 +1,6 @@
 = Hide Graph Data 
 
-Hiding nodes temporarily can be useful for focusing on subsets of graph data that you  want to work with further. You can:
+Hiding nodes temporarily can be useful for focusing on subsets of the graph data on the canvas that you want to work with further. You can:
 
 * Use *_Hide Selection_* to hide selected nodes temporarily, and *_Show hidden nodes_* to restore hidden nodes.
 * Deselect the *_Visible_* checkbox for a category or relationship to temporarily hide nodes of a category or edges of a relationship.

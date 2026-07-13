@@ -170,7 +170,7 @@ image::/v3/08_03_17_QuickLayoutStart.png[,520,520,role=text-left]
 You can select items on the menu to:
 
 * Apply a *_Line_*, *_Grid_*, *_Cube_*, *_Circle_*, *_Spiral_*, or *_Spring_* layout to any selection of nodes.
-* Apply a *_Ring_* or *_Tree_* hierarchical layout. You can select central nodes first, but it is not required. If you apply the layout to all the data, GraphXR will determine the nodes most likely to be central. For simpler graph patterns, selecting central nodes first may not make a difference.
+* Apply a *_Ring_* or *_Tree_* hierarchical layout. You can select central nodes first, but it is not required. If you apply the layout to all the data, *Kineviz* will determine the nodes most likely to be central. For simpler graph patterns, selecting central nodes first may not make a difference.
 * *_Expand_* or *_Contract_* the layout of any selection of nodes.
 * *_Rotate_* the selected layout by a preset 90 degrees.
 +

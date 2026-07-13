@@ -11,7 +11,7 @@ Once you enter a project, you can create a new template or update an existing on
 *To create a template*:
 
 . Open the *_Project > Data Store_* subpanel.
-. In the *_Utilities_* section, click *_Create Template_*.
+. In the *_Utilities_* section, click *_Save Template_*.
 +
 image::/v3/03_04_01_SaveTemplate.png[,520,280,role=text-left]
 +
@@ -33,7 +33,7 @@ NOTE: You can edit a template name, but not its description.
 *To update a template*:
 
 . Open the *_Project_* panel and *_Data Store_* tab.
-. In the *_Utilities_* section, click *_Create Template_*.
+. In the *_Utilities_* section, click *_Save Template_*.
 . Under *_Existing Templates_*, click to select a template name.
 +
 image::/v3/03_04_04_SelectExistingTemplate.png[,520,280,role=text-left]

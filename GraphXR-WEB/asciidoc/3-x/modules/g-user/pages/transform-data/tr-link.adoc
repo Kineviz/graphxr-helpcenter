@@ -2,7 +2,7 @@
 
 The *_Link_* transform connects nodes with equivalent property values through edges of a new or existing relationship. Properties can be linked even if the property names differ, especially useful for combining data from different sources. *_Link_* can also be used to explicitly draw a connection among nodes within a data set.
 
-NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. For a hands-on exercise see our xref:g-learning:how-to-graphxr/how-to-graphxr.adoc[How to GraphXR] tutorials. 
+NOTE: Examples use the open-source dataset for the HBO Game of Thrones series.
 
 The Game of Thrones _Characters.csv_ file includes the _characterName_ property, while the _Lines.csv_ file includes the _speaker_ property. Although named differently, the two properties have matching values: the name of the character in the show. We can use those properties to create a relationship between lines of dialog and the character who spoke them.
 

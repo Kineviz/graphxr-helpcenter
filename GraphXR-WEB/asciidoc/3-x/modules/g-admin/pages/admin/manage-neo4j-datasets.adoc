@@ -16,7 +16,7 @@ You can review existing connected databases, and use the *_Add Neo4j_* dialog to
 
 image::/v3/04_02_Neo4jDB_Add.png[,720,420,role=text-left]
 
-NOTE: *_About Neo4J_*. Since GraphXR works seamlessly with Neo4j graph databases, you may want to investigate graph data modeling and database management as it applies to Neo4j.
+NOTE: *_About Neo4J_*. Since Kineviz works seamlessly with Neo4j graph databases, you may want to investigate graph data modeling and database management as it applies to Neo4j.
 
 *For information on installing and configuring Neo4j:*
 

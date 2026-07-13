@@ -1,35 +1,24 @@
-= GraphXR 3.22.0 Release Notes
+= Kineviz (formerly GraphXR) 3.22.0 Release Notes
 
-*Release Date:* June 30, 2026
+*Release Date:* July 13, 2026
 
-This release includes new and re-designed UI to show project, database, and Agent status at a glance, organize views, manage queries, and signal options available to the user.  
-Entire projects can now be exported and imported. Various performance upgrades and bug fixes are also included.     
+* *NEW / RENAMED PRODUCT LINE*:
 
-*_Kineviz Desktop_* (beta), released in  parallel, is a standalone application for single-user GraphXR experience. It is available through a user-managed free subscription (with optional upgrade to paid tiers) that includes optional connection to a Kineviz-managed cloud server for agentic work. *_Kineviz Desktop_* includes the Agent, database connection, file management, data modeling, and graph analytic features of browser-based GraphXR in a locally installed application.
+** *_Kineviz Online_* or simply *_Kineviz_* (formerly *_GraphXR_*), Kineviz's online, browser-based platform for multi-user graph visualization and analytics. 
+
+**_Kineviz Desktop_* (beta), a standalone application for a single-user Kineviz experience. It is provided through a user-managed free subscription, with optional connection to a Kineviz-managed cloud server for agentic work, and optional upgrade to a paid tier.  *_Kineviz Desktop_* includes the same Agent, database connection, file management, data modeling, and graph analytics as *_Kineviz Online_*, in a locally installed application.
+
+* The *_Kineviz_* and *_Kineviz Desktop_* release includes a new status bar showing project, database, and Agent status at a glance. Entire projects can now be exported and imported. UI has been re-designed to better organize views, manage queries, and prompt appropriate user inputs. Performance upgrades and bug fixes are also included.     
   
-NOTE: In a GraphXR or Desktop project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag for a digest of features introduced in current and past releases.
+NOTE: In a *Kineviz Online* or *Desktop* project, click the Kineviz logo at the bottom left, choose *_About_*, then click on the current release tag to access release notes.
 
 == New Features 3.22.0
 
 === Usability Enhancements
 
-* *_Agent_* 
+* In an open project, a new live *Status Bar* is added at the bottom of the *Kineviz* and *Desktop* window (GXR-4251). It includes:
 
-** User-controlled responsive layout when the width of the Agent panel is changed.
-+
-image::/v3/V3_22_0_01_AgentUI.png[,520,380,role=text-left]
-+
-** Settings menu now includes *_Export as HTML_*.
-+
-image::/v3/V3_22_0_02_AgentExportHTML.png[,240,320,role=text-left]
-+
-** The *_copy response_* button only appears at the end of a session (i.e. only one copy button per user prompt) (GXR-4210).
-** UI for importing files into the Agent is made more obvious.
-** Agent checkpoint views are initially assigned to the _Unfiled_ Views folder (GXR-4271).  
-
-* In an open project, a new live *Status Bar* is added at the bottom of the browser or *_Kineviz Desktop_* window (GXR-4251). The status bar includes:
-
-** Name of the currently connected database (e.g. KoreDB, Neo4j, etc.) 
+** Name of the database currently connected to the project (e.g. KoreDB, Neo4j, etc.) 
 ** Number of node and relationship tables in the connected database.
 ** Icon to open the no-code *_Query Bar_* menu to query the connected database.
 ** Number of nodes and edges currently showing on the canvas.
@@ -40,6 +29,21 @@ image::/v3/V3_22_0_02_AgentExportHTML.png[,240,320,role=text-left]
 +
 image::/v3/V3_22_0_03_ProjectStatusBar.png[,720,180,role=text-left]
 +
+
+* *_Agent_* 
+
+** User-controlled responsive layout when the width of the Agent panel is changed.
++
+image::/v3/V3_22_0_01_AgentUI.png[,520,380,role=text-left]
++
+** The Agent *_Settings_* menu now includes *_Export as HTML_*.
++
+image::/v3/V3_22_0_02_AgentExportHTML.png[,240,320,role=text-left]
++
+** The *_copy response_* button only appears at the end of a session (i.e. only one copy button per user prompt) (GXR-4210).
+** UI for importing files into the Agent is made more obvious.
+** Agent checkpoint views are initially assigned to the _Unfiled_ Views folder (GXR-4271).  
+
 
 * *_Export_* and *_Import_* a project (GXR-4066, GXR-4280). Export or import an entire project, including its views, saved queries, templates, and internal database. On Import, the internal project data is mapped back to the original KoreDB instance (e.g. _default_). You can:
 
@@ -52,9 +56,9 @@ image::/v3/V3_22_0_04_ImportExportHome.png[,320,180,role=text-left]
 image::/v3/V3_22_0_05_ExportInProject.png[,320,180,role=text-left]
 +
 
-*  Re-design *_Views_* panel and folders to provide flexible panel layout.(GXR-4068, GXR-4070)
+*  Re-designed *_Views_* panel and folders for flexible panel layout.(GXR-4068, GXR-4070)
 
-** Icons at the top left display the folder list and views either side-by side, or folders at the top of the panel and the views below. As you change the width of the panel, the area with the view's tile or list is responsive, but the list of folders is static. 
+** Icons at the top left toggle display of the folder list and views either side-by side, or with folders at the top of the panel and the views below. As you change the width of the panel, the section with the view's tile or list is responsive, but the list of folders is static. 
 ** Icons at the top of the view area display views either as tiles or as a list.
 +
 image::/v3/V3_22_0_06_ViewFolders.png[,420,100,role=text-left]
@@ -96,7 +100,7 @@ image::/v3/V3_22_0_06_ViewFolders.png[,420,100,role=text-left]
 
 * Agent Data Connector (ADC) is integrated into BigQuery and Spanner (GXR-3722). 
 
-* *_Kineviz Desktop_* version 0.9.0
+* *_Kineviz Desktop_* version 0.14.0
 
 ** The *_Kineviz Desktop_* access, pricing options, and Stripe payment system is implemented through Kineviz Cloud, supporting Agent implementation and software upgrade from an initial free version.
 ** A user is no longer logged out automatically after only one day of inactivity (GXR-4306). 
@@ -109,7 +113,7 @@ image::/v3/V3_22_0_06_ViewFolders.png[,420,100,role=text-left]
 
 * The Agent system prompt now writes *KoreDB* queries that correctly reference project files (GXR-4130).
 
-* The Query bar schema is refreshed after a *_Save to KoreDB_* (GXR-4305).
+* The *Query bar* schema is refreshed after a *_Save to KoreDB_* (GXR-4305).
 
 == Removed 3.22.0
 

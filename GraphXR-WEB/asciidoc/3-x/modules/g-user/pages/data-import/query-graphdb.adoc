@@ -1,6 +1,6 @@
 = Query a graph database
 
-When you first open a GraphXR project, the canvas is empty. If the project is connected to a graph database (an external one, or the internal data store), you must query to import its data to the project canvas.
+When you first open a *Kineviz* project, the canvas is empty. If the project is connected to a graph database (an external one, or the internal data store), you must query to import its data to the project canvas.
 
 * No-code queries are available using the project *_Query / Search_* bar, the *_Expand with Relationships_* tool, and the *_Pull_* button for samples of data by Category or Relationship.
 * Those comfortable with a graph query language can open the *_Query_* panel to enter, run, and save Cypher or GQL queries. 
@@ -14,7 +14,7 @@ For a project connected to a graph database, you can use the project *_Query /Se
 You can 
 * Query for a category of nodes.  
 * Query for any pattern based on the categories and their relationships defined in the database
-* Optionally, add a property filter to category or relationship elements to narrow down the patterns that are returned.   
+* Optionally, add a property filter to category or relationship elements to further limit the returned pattern.   
 
 *To build a no-code visual query:*
 
@@ -133,7 +133,7 @@ In the project's *_Query_* panel, you can:
 +
 image::/v3/02_03_10_CypherQuery.png[,320,180,role=text-left]
 
-All GraphXR projects include a basic Cypher query that pulls 100 connected nodes from the database. This query will *MATCH* any pattern of nodes *n* and *m* connected by any relationship *r*, and *RETURN* the first *100* found. A *LIMIT* is set because this query will likely return a large amount of data.
+All *Kineviz* projects include a basic Cypher query that pulls 100 connected nodes from the database. This query will *MATCH* any pattern of nodes *n* and *m* connected by any relationship *r*, and *RETURN* the first *100* found. A *LIMIT* is set because this query will likely return a large amount of data.
 
 ----
 MATCH (n)-[r]-(m) RETURN * LIMIT 100

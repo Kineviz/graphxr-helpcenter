@@ -1,16 +1,16 @@
 = Share Projects and Views
 
-A project's saved views can be shared with other users by:
+In the multi-user *Kineviz* platform, a project's saved views can be shared with other users by:
 
 * Enabling sharing for the project.
 
 * Sharing individual project views through a *_Share_* link or iFrame.
 
-NOTE: You can also xref:./data-export-views[export] the current view to your local system as a CSV or Excel archive, .graphxr file, or *_Snapshot_* archive (.graphxrsnapshots). The exported file can then be imported into another project by drag and drop or by using *_Import_* in the *_Project > Data Store_* subpanel.
+NOTE: You can also xref:./data-export-views[export] an entire project to your local system  as a _.graphxrproject_ file, or one or more views as a CSV or Excel archive, .graphxr file, or *_Snapshot_* archive (.graphxrsnapshots). These exported files can then be imported into another *Kineviz* or *Kineviz Desktop* project by drag and drop, using  *_Import_* in the *_Project > Data Store_* subpanel, or, for an entire project, the *_Import Project_*  button on the *_Projects_* home page.
 
 == Share a Project
 
-You can share any project with other GraphXR users. Once shared, the project's data views are available to the invited users. 
+You can share any project with other *Kineviz* users. Once shared, the project's data views are available to the invited users. 
 
 NOTE: You can export a view to your local system as a .graphxr file, and from there load it into a different project as a new view. However, it is usually better to share a project or its views.
 
@@ -51,13 +51,13 @@ image::/v3/02_08_04_UIConfigDialog.png[,720,410,role=text-left]
 . Click *_Save_* (or click the arrow icon at the upper left to exit without UI changes).
 
 
-. Now click the projects's *_Invite_* icon to send an email invitation to another GraphXR user.
+. Now click the projects's *_Invite_* icon to send an email invitation to another *Kineviz* user.
 
 +
 image::/v3/02_08_05_ShareInviteIcon.png[,260,120,role=text-left]
 +
 
-. Select or enter a GraphXR user email, and click *_Invite_*.
+. Select or enter a *Kineviz* user email, and click *_Invite_*.
 
 +
 image::/v3/02_08_06_ShareInvite.png[,380,220,role=text-left]
@@ -80,11 +80,11 @@ Once you have saved a view you can:
 
 * Share its url directly with others using the View menu or the *_Project > Views_* subpanel.
  
-* Embed a shared GraphXR view as an iframe on another web page, using the dropdown list of the project's saved views on the *_Projects_* (Home) page.
+* Embed a shared *Kineviz* view as an iframe on another web page, using the dropdown list of the project's saved views on the *_Projects_* (Home) page.
 
 == Use a *_Share_* link
 
-From the view menu or *_Project > Views_* tab you can obtain a *_Share_* link for an individual view that you can send to anyone external to the project, even if they do not have a GraphXR login. 
+From the view menu or *_Project > Views_* tab you can obtain a *_Share_* link for an individual view that you can send to anyone external to the project, even if they do not have a *Kineviz* login. 
 
 Optionally, you can protect the view by requiring login with a password. 
 

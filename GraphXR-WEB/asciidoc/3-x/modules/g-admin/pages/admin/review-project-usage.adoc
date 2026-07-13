@@ -2,7 +2,7 @@
 
 In the *_Project  Analytics_* panel you can 
 
-* Review the total number of users, projects, and views maintained i GraphXR. 
+* Review the total number of users, projects, and views maintained in your Kineviz installation. 
 * Review the number of projects and views created by each user.
 * Enter a user email to see project usage by that user.
 

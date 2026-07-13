@@ -1,6 +1,6 @@
 = Kineviz Desktop
 
-*Kineviz Desktop* is an application that delivers a full browser-based GraphXR experience running locally on your computer. It provides single-user access to powerful GraphXR visual analytics, while letting you maintain local control of your data.
+*Kineviz Desktop* is an application that delivers the full *Kineviz Online* experience running locally on your computer. It provides single-user access to powerful browser-based Kineviz visual analytics, while letting you maintain local control of your data.
 
 image::/v3/20_01_01_KD_HomeCards.png[,540,420,role=text-left]
 
@@ -10,12 +10,12 @@ image::/v3/20_01_01_KD_HomeCards.png[,540,420,role=text-left]
 |===
 | *Operating System* | *Supported Devices*
 | Windows | Windows 10 / 11 (x64 or ARM64)
-| macOS | M3 Mac or better (Intel or Apple Silicon)  
+| macOS | macOS 11 or later, Intel and Apple Silicon)  
 |===
 
 * *Memory*: 16 GB or more.
 * *Free Space*: 30GB or more
-* *Network*: An internet connection is required for initial sign-in and for online features such as GraphXR Agent.
+* *Network*: An internet connection is required for initial sign-in and for online features such as Kineviz Agent.
 
 == Video Overviews
 
@@ -24,7 +24,7 @@ image::/v3/20_01_01_KD_HomeCards.png[,540,420,role=text-left]
 
 == User Guide
 
-*Kineviz Desktop* is available through a user-managed free subscription (with optional upgrade to paid tiers). It includes connection to a Kineviz-managed cloud server for enabling agentic work. Once downloaded and signed in, you can access the full project management, agent, database connection, file management, data modeling, graph analytic features, and public extensions of browser-based GraphXR. As a single user application, *Kineviz Desktop* does not support multi-user project collaboration.  
+*Kineviz Desktop* is available through a user-managed free subscription (with optional upgrade to paid tiers). It includes connection to a Kineviz-managed cloud server for enabling agentic work. Once downloaded and signed in, you can access the full project management, agent, database connection, file management, data modeling, graph analytic features, and public extensions of *Kineviz Online*. As a single user application, *Kineviz Desktop* does not support multi-user project collaboration.  
 
 [caption=]
 .Using *Kineviz Desktop*
@@ -34,7 +34,7 @@ image::/v3/20_01_01_KD_HomeCards.png[,540,420,role=text-left]
 
 | xref:desktop:desktop-projects-home.adoc[2. *Create or Open a Project*]
 
-| xref:g-user:graphxr-agent.adoc[2. *Import data with GraphXR Agent*]
+| xref:g-user:graphxr-agent.adoc[2. *Import data with Kineviz Agent*]
 
 | xref:g-user:data-manage-datastore.adoc[3. *Save to Internal Datastore*]
 

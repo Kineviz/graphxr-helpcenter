@@ -6,3 +6,6 @@ You can then xref:data-share-views.adoc[*Share Saved Views*], either by:
 
 * Inviting other users to share a project and make all its views available for collaboration
 * Sharing a single view or creating an iframe embedding for a view.
+
++
+NOTE: Sharing a project or view is available only in multi-user *Kineviz* online, not in the single-user *Kineviz Desktop* application. 

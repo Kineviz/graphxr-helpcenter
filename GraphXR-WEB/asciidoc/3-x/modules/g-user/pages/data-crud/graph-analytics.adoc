@@ -59,11 +59,11 @@ NOTE: For a path with a single start and end node, select the two nodes, then ri
 
 == Centrality or Community Detection
 
-GraphXR includes a library of commonly used *_Centrality_* or *_Community Detection_* algorithms, which calculate measures of connectedness (both with respect to distance and strength of connection) in multi-dimensional data. There are many such algorithms, and each has its own characteristic behavior and strengths.
+*Kineviz* includes a library of commonly used *_Centrality_* or *_Community Detection_* algorithms, which calculate measures of connectedness (both with respect to distance and strength of connection) in multi-dimensional data. There are many such algorithms, and each has its own characteristic behavior and strengths.
 
-When you run a *_Centrality_* or *_Community Detection_* algorithm the computed result is added as a property and its value to each node in the graph. The property values can be displayed (for example, in a scatter plot or geometric layout), accessed for other processes within GraphXR, or exported to other graph analytics or statistics applications.
+When you run a *_Centrality_* or *_Community Detection_* algorithm the computed result is added as a property and its value to each node in the graph. The property values can be displayed (for example, in a scatter plot or geometric layout), accessed for other processes within *Kineviz*, or exported to other graph analytics or statistics applications.
 
-The following table lists the available algorithms and the property names GraphXR uses for the results.
+The following table lists the available algorithms and the property names *Kineviz* uses for the results.
 
 [cols="2,2,2"]
 |===

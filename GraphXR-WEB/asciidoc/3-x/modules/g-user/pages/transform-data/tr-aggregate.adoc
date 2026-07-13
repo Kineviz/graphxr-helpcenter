@@ -49,7 +49,7 @@ Preset formulas for often-used calculations are shown in the following table. Yo
 
 We can use *_Aggregate_* to add the total number of lines spoken on each Game of Thrones episode to the graph.
 
-NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. For a hands-on exercise see our xref:g-learning:how-to-graphxr/how-to-graphxr.adoc[How to GraphXR] tutorials. A _Lines.csv_ file includes data about the dialog in the show, and an _Episodes.csv_ file includes details about each season and episode. 
+NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. A _Lines.csv_ file includes data about the dialog in the show, and an _Episodes.csv_ file includes details about each season and episode. 
 
 We first transform the imported data as follows:
 

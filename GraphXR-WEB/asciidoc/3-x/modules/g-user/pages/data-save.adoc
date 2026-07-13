@@ -82,6 +82,61 @@ The canvas is cleared and the current view name changes to _Unsaved View_.
 
 +
 image::/v3/02_09_07_NewViewUnsaved.png[,320,180,role=text-left]
+
+=== Manage and Organize Views
+
+The *_Project > Views_* panel lets you review, rename, and annotate your saved views, and save or move existing views to folders you create. 
+
+image::/v3/02_09_12_ViewFolders.png[,540,320,role=text-left]
+
+In the *_Views_* panel, icons at the top left toggle the display of the folder list and views between a side-by side layout, and one with folders at the top of the panel and the views below. 
+
+Use the icons at the top of the individual Views layout to display individual views either as tiles or as a list, and to sort and search for views by name, date created, and date last opened. 
+
+You can:
+
+* Create named folders for saved views. This makes it easy to organize views saved in a step-by-step workflow or an AI Agent chat thread.
+
++
+image::/v3/02_09_16_CreateViewFolder.png[,520,240,role=text-left]
++
+ 
++
+By default, a view saved using the *View* menu is placed in *_All Views_* and *_Unfiled_* folders, unless you select an existing view folder. With related views in separate folders, you can:
++
+
+** Review saved views for a specific investigation to decide which ones to keep for reference or future exploration.  
+** Easily return to an investigation at specific points in a workflow.  
+
++
+NOTE: Views saved at *Kineviz AI Agent* checkpoints are placed in a default *_Agent_* folder. Once it's created, the *_Agent_* folder appears on the folder menu, and you can save a view manually to it if desired.
++  
+
+* Review and organize saved views.
+
+** Click the 3 dots at the upper right of a view tile or list and choose *_About_*, *_Rename_*, *_Share View_*, *_Export_*, or *_Move to Folder_* menu options.
++
+image::/v3/02_09_13_ViewDotMenu.png[,420,100,role=text-left]
+ 
+** In the *_About_* dialog, click the *_copy when cloning project_* checkbox to include the view in a cloned project.
++
+image::/v3/02_09_14_ViewAbout.png[,420,100,role=text-left]
++
+
++
+NOTE: By default, *Kineviz Desktop* copies all project views to a cloned project, so the checkbox does not appear.
++
+
+** Use view checkboxes to select more than one view to *_Delete_* or *_Move_* at a time. 
+
+*** With the views selected, click *_Move Selected_*.
++
+image::/v3/02_09_15_MoveSelectedViews.png[,520,340,role=text-left]
+
+*** In the dialog, choose a folder from the dropdown menu and click *_OK_*. 
++
+image::/v3/02_09_17_MoveSelectedDialog.png[,420,320,role=text-left]
+
  
 == Save Snapshots
 

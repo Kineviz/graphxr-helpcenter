@@ -29,7 +29,7 @@ The _lat_ and _lng_ values must be floating point, not strings.
 
 TIP: For lat-long data encoded as strings, you can open the *_Transform > f(x)_* panel and use _toNumber_ or a custom transform.
 
-The .KML and .KMZ (https://en.wikipedia.org/wiki/Keyhole_Markup_Language[Keyhole Markup Language/Keyhole Markup Zip]) files used by mapping applications such as Google Earth contain properly encoded coordinates, and you can map these files directly in GraphXR.
+The .KML and .KMZ (https://en.wikipedia.org/wiki/Keyhole_Markup_Language[Keyhole Markup Language/Keyhole Markup Zip]) files used by mapping applications such as Google Earth contain properly encoded coordinates, and you can map these files directly in *Kineviz*.
 
 image::/v3/09_01_03_LatLongKMZ.png[,720,380,role=text-left]
 

@@ -8,7 +8,7 @@ You can:
 
 * Edit the colors for each category, property, tag, or relationship. 
 
-** Apply a color to individual labels or property values by clicking the brush icon to open GraphXR's style setting dialog.
+** Apply a color to individual labels or property values by clicking the brush icon to open the *Kineviz* style setting dialog.
 +
 image::/v3/03_02_01_StyleSettingIntro.png[,340,280,role=text-left]
 +
@@ -38,7 +38,7 @@ NOTE: Most often, you access the style setting dialog by clicking on the brush i
 
 == Edit colors
 
-GraphXR automatically assigns colors according to categories, relationships, and the individual values of properties. You can: 
+*Kineviz* automatically assigns colors according to categories, relationships, and the individual values of properties. You can: 
 
 * Edit any of the assigned colors. 
 * For a property, apply a color gradient scale based on the range of property values visible in the data.
@@ -188,7 +188,7 @@ The caption for each property with a single property value is displayed on a sep
 
 image::/v3/03_02_14_CaptionsSingleValue.png[,520,240,role=text-left]
 
-NOTE: Often a property will have just one value, but multiple property values are also supported in GraphXR, and can be displayed in captions. Multiple values separated by a non-breaking space in the property value field are displayed on separate lines; otherwise the values appear on one line.
+NOTE: Often a property will have just one value, but multiple property values are also supported in *Kineviz*, and can be displayed in captions. Multiple values separated by a non-breaking space in the property value field are displayed on separate lines; otherwise the values appear on one line.
 
 image::/v3/03_02_15_CaptionsMultiValue.png[,520,480,role=text-left]
 

@@ -1,6 +1,6 @@
 = Work with Layouts
 
-GraphXR provides many flexible layout options for displaying the graph on the canvas, making it possible to create and share information-rich visualizations of your high-dimensional data. 
+*Kineviz* provides many flexible layout options for displaying the graph on the canvas, making it possible to create and share information-rich visualizations of your high-dimensional data. 
 
 Options include sorting by property value, positioning and setting orientation along X- Y- and Z- axes, and laying out nodes and edges around central nodes.
 
@@ -41,7 +41,7 @@ image::/v3/08_00_05_GeoQuickLayout.png[,480,480,role=text-left]
 
 _Pinning_ locks a nodes to its current position in the 3D project space.
 
-GraphXR automatically pins nodes when you:
+*Kineviz* automatically pins nodes when you:
 
 * Move one or more selected nodes to a new position on the canvas.
 * Apply a *_Geometric_* layout. The nodes become pinned to their new layout position.

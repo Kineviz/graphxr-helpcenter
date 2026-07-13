@@ -9,7 +9,7 @@ To create a tag, you must first select nodes, then use the *_Tag_* icon in the c
 * Use *_Save Tags As Property_* to add the temporary property __graphxrtags_ to all currently tagged nodes. When a tag is deleted, the property is removed from its tagged nodes.
 * Use *_Clean Nodes Tags_* to delete all the tags on selected nodes.
 
-Tags appear in the legend under *_Tag_*, labeled with a color, name, number of nodes with that tag, and number that are currently selected. GraphXR automatically assigns a color for each tag. In the graph, a tagged node receives a small label listing its tag names.
+Tags appear in the legend under *_Tag_*, labeled with a color, name, number of nodes with that tag, and number that are currently selected. *Kineviz* automatically assigns a color for each tag. In the graph, a tagged node receives a small label listing its tag names.
 
 image::/v3/04_05_01_TagOverview.png[,720,480,role=text-left]
 

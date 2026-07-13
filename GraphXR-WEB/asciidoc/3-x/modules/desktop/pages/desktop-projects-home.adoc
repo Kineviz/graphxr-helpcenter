@@ -16,7 +16,7 @@ Projects are organized in sections:
 
 * *_Recent Projects_*, the projects you recently opened.
 * *_My Projects_*, projects you've created, and a *_Create_* tile or button.
-* *_Create From Sandbox_*, pre-configured projects you can review and copy. To introduce you to basic graph workflows, at least one Sandbox tutorial project is already included. These Kineviz tutorials use GraphXR's *Grove* notebook extension.
+* *_Create From Sandbox_*, pre-configured projects you can review and copy. To introduce you to basic graph workflows, at least one Sandbox tutorial project is already included. These tutorials use the Kineviz *Grove* notebook extension.
 
 === Open a tutorial
 
@@ -24,7 +24,7 @@ Kineviz *_Sandbox_* tutorials  guide you through basic workflows you are likely 
 
 * Click to open the *City Lifestyles Tutorial*. 
 +
-You'll learn to use GraphXR native tools and workflows to explore city livability data. You'll import a CSV table, transform it to a labeled property graph, explore connections and patterns, and save graph views. You can also see how to use the Kineviz API within a *_Grove_* notebook to set up reproducible workflows for graph exploration. 
+You'll learn to use Kineviz native tools and workflows to explore city livability data. You'll import a CSV table, transform it to a labeled property graph, explore connections and patterns, and save graph views. You can also see how to use the Kineviz API within a *_Grove_* notebook to set up reproducible workflows for graph exploration. 
 +
 
 +
@@ -59,7 +59,7 @@ A new project will not have any data in it yet. You can import data using any me
 +
 * Drag and drop (or navigate to and open) local data files. 
 * Query the connected internal or external database, either using the no-code *Query / Search* bar, or through the full-featured *_Query_* panel.
-* Click the *Chat* icon to launch *GraphXR Agent*, a pre-configured AI Agent you can use to import, transform, and analyze data through no-code text chat. Using GraphXR Agent in *Kineviz Desktop* requires an *_Online_* connection to the managed Kineviz Cloud.
+* Click the *Chat* icon to launch Kineviz *Agent*, a pre-configured AI Agent you can use to import, transform, and analyze data through no-code text chat. Using *Agent* in *Kineviz Desktop* requires an *_Online_* connection to the managed Kineviz Cloud.
 +
 
 +
@@ -104,7 +104,7 @@ In a project's *_Settings_* menu select:
 
 === Export a Project
 
-You can export an entire project from *Kineviz Desktop* (or *GraphXR*). All of its saved views and database connections are exported. 
+You can export an entire project from *Desktop* (or *Kineviz Online*). All of its saved views and database connections are exported. 
 
 * In an open project, click the export menu at the top right of the legend, and choose *_Export Project_*.
 * In the *_Projects_* home screen, click the  *_Settings_* icon on a project tile or list item and choose *_Export Project_*. 
@@ -114,12 +114,12 @@ image::/v3/20_02_05_KD_ExImProject.png[,540,420,role=text-left]
 +
 
 +
-An exported file includes the project name and a _.gxrproject_ extension, for example: _Tutorial.gxrproject_. It can then be imported into any Desktop or GraphXR instance. 
+An exported file includes the project name and a _.gxrproject_ extension, for example: _Tutorial.gxrproject_. It can then be imported into any *Desktop* or *Online* project. 
 
 
 === Import an Exported Project
 
-You can import a project exported from either browser-based *GraphXR*  or *Kineviz Desktop*. 
+You can import a project exported from either Kineviz *Online* or *Desktop*. 
 
 *To import an exported  project:* 
 

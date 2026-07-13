@@ -1,12 +1,14 @@
 = Getting Started
 
-GraphXR delivers browser-based visual analytics for labeled property graphs. It supports fast, flexible graph modeling and exploration in its secure collaborative project workspaces. 
+*_Kineviz_* (formerly *_GraphXR_*) is a browser-based visual analytics platform for labeled property graphs. It supports fast, flexible graph modeling and exploration in secure collaborative project workspaces. 
 
 image::/v3/00_01_02_Project.png[,720,380,role=text-center]
 
+For offline use, you can download the single-user xref:desktop:desktop-intro.adoc[*_Kineviz Desktop_*] application. It delivers nearly all the functionality of *_Kineviz_* online, running locally on your system.
+ 
 == Basic Graph Exploration
 
-In a GraphXR project you can seamlessly import, model and transform graph data, explore and analyze graph patterns, save your work, and share your insights. Click the links below for details to help you dive right in.
+In a Kineviz project you can seamlessly import, model and transform graph data, explore and analyze graph patterns, save your work, and share your insights. Click the links below for details to help you dive right in.
 
 [cols="^3,^3"]
 |===
@@ -29,7 +31,7 @@ _via xref:g-user:data-import/query-graphdb.adoc[*Database Query*] or xref:g-user
 |===
 
 
-== Iterative Visual Analytics in GraphXR 
+== Iterative Visual Analytics with Kineviz 
   
 Since exploring a graph quickly sparks new questions, graph workflows are highly iterative. As an exploration proceeds, you will most likely need to simplify or transform the graph, edit or add to the data already in the graph, focus on specific subgraphs, and save and communicate key views of the graph as you go. 
 

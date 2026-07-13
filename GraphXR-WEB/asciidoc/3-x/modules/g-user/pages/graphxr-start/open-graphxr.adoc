@@ -1,15 +1,17 @@
-= Log In and Out of GraphXR
+= Log In and Out of *Kineviz*
 
-To use GraphXR, you'll need to create a user account, and then log in.
+To use *Kineviz*, you'll need to create a user account, and then log in.
 
-== Create a GraphXR User Account
+== Create a *Kineviz* User Account
 
-* For GraphXR _Cloud_, go to https://graphxr.kineviz.com/login[GraphXR Login] to create an account.
-* For GraphXR _Enterprise_, contact your system administrator for login credentials.
+* Go to https://graphxr.kineviz.com/login[*Kineviz* Login] to create an account.
+
++
+NOTE: For *Kineviz _Enterprise_*, contact your system administrator for login credentials.
 
 *To create a user account:*
 
-. In your _Chrome_ browser, visit the https://graphxr.kineviz.com/login[GraphXR Login] page and click *_SIGN UP_*.
+. In your _Chrome_ browser, visit the https://graphxr.kineviz.com/login[*Kineviz* Login] page and click *_SIGN UP_*.
 +
 image::/v3/01_02_01_LoginWBrowser420.png[role=text-left]
 +
@@ -29,25 +31,29 @@ image::/v3/01_02_02_SignUp320.png[signin,240,420,role=text-left]
 +
 A message indicates that your account was successfully created (or flags errors you must fix).
 
-== Log In to GraphXR
+== Log In to Kineviz
 
-Once you have registered as a user, you can log in.
+Once registered as a user, you can log in.
 
-*To log in to GraphXR:*
+*To log in to Kineviz:*
 
 . In your _Chrome_ browser, visit the https://graphxr.kineviz.com/login[GraphXR Login] page.
 . Enter your user name (i.e. the *_Email_* used to create the account) and your *_Password_* and click *_LOGIN_*.
 +
 image::/v3/01_02_03_Login320.png[signin,240,320,role=text-left]
 +
-Upon successful login, the GraphXR *_Projects_* page displays.
+Upon successful login, the Kineviz *_Projects_* page displays.
 +
 image::/v3/01_02_04_Login_ProjectsHome.png[,720,640,role=text-left]
 
-== Log Out of GraphXR
+== Log Out of Kineviz
 
-*To log out of GraphXR:*
+*To log out of Kineviz:*
 
 * In the *_Projects_* page, select *_Log Out_* from the user menu on the top right.
 
-NOTE: You can also click the Kineviz logo icon at the bottom left of the browser window, and choose *_Logout_* on the menu.
++
+*OR*
++
+
+* In an open project, click the Kineviz logo at the bottom left of the window, and choose *_Logout_* on the menu.

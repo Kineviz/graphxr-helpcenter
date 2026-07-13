@@ -48,7 +48,7 @@ z: Ctrl+shift+o
 
 | Reset view
 | *_Alt+Shift+R_*
-| Reset entire view to the center of the graph. _*NOTE:* Click the *Fly Out* icon to center all the graph data on the screen, and the *Center To* icon to center the view on selected nodes._
+| Reset entire view to the center of the graph. _NOTE: Click the *Fly Out* icon to center all the graph data on the screen, and the *Center To* icon to center the view on selected nodes._
 | Navigate
 
 | Show info

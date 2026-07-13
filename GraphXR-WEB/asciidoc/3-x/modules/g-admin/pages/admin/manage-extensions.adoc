@@ -1,6 +1,6 @@
 = Manage Extensions
 
-In the *_Extensions_* panel, you can manage the extensions available to your GraphXR installation.
+In the *_Extensions_* panel, you can manage the extensions available to your Kineviz installation.
 
 image::/v3/06_01_Extensions.png[,720,480,role=text-left]
 
@@ -8,7 +8,7 @@ You can:
 
 * Review currently installed extensions, including the *_Name_*, *_Type_*, *_Version_*, and last *_Updated Time_*.
 * *_Import_*, and *_Add_* extensions individually.
-* *_Search_* for extensions by time period, name or description, then *_Pull The Extensions From GraphXR Manager Server_*.
+* *_Search_* for extensions by time period, name or description, then *_Pull The Extensions From Kineviz Manager Server_*.
 * *_Delete_* an extension from your installation.
 * *_Edit_* the version of the extension being used.
 +

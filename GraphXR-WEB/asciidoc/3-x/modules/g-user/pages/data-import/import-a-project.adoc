@@ -1,0 +1,17 @@
+= Import a Project
+
+An entire project can be exported, which is useful for delivering demonstrations or  tutorial projects to another user, or simply to save a project offline for future use. 
+  
+Once downloaded to your system as a _.graphxrproject_ file, the project can be imported into any *Kineviz* or *Kineviz Desktop* account at any time. 
+
+*To import an exported project:*
+
+. Go to the *_Projects_* home page and click *_Import Project_*.
+. Navigate to the _.graphxrproject_ file on your system, and click *_Open_*.
+
++
+The project is imported with  _(imported)_ appended to its original name, and is automatically opened. You can edit the project name as follows if desired.
++
+
+. Go to the *_Projects_* home page.
+. Click the project's *_Edit_* icon, enter a new name, and click *_Confirm_*.   

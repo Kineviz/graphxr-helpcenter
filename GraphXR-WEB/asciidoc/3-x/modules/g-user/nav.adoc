@@ -1,6 +1,6 @@
-* xref:intro-overview.adoc[*GraphXR User Guide*]
-** xref:graphxr-start/propgraph-basics.adoc[*Property Graphs in GraphXR*]
-** xref:graphxr-start/open-graphxr.adoc[*GraphXR Login*]
+* xref:intro-overview.adoc[*Kineviz User Guide*]
+** xref:graphxr-start/propgraph-basics.adoc[*Property Graphs in Kineviz*]
+** xref:graphxr-start/open-graphxr.adoc[*Kineviz Login*]
 ** xref:graphxr-start/projects-home.adoc[*Create and Manage Projects*]
 
 ** xref:graphxr-start/project-ui.adoc[*The Project Workspace*]
@@ -13,6 +13,7 @@
 *** xref:data-import/query-sql.adoc[Import by SQL Query]
 *** xref:data-import/import-via-mapping.adoc[Map a Table to a Graph]
 *** xref:data-import/load-a-saved-view.adoc[Load a Saved View]
+*** xref:data-import/import-a-project.adoc[Import a Project]
 
 ** xref:./data-save-share-intro.adoc[*Save and Share Views*]
 *** xref:data-save.adoc[Save Graph Views]
@@ -62,10 +63,12 @@
 *** xref:geospatial-maps.adoc[World Map Layout]
 
 
-** xref:graphxr-agent.adoc[*GraphXR Agent*]
+** xref:graphxr-agent.adoc[*Kineviz Agent*]
 
-** xref:graphxr-extensions/intro-extensions.adoc[*GraphXR Extensions*]
+** xref:graphxr-extensions/intro-extensions.adoc[*Kineviz Extensions*]
 *** xref:graphxr-extensions/grove.adoc[*Grove*]
-*** xref:graphxr-extensions/graph-composer.adoc[*Graph Composer*]
+*** xref:graphxr-extensions/file-manager.adoc[*Files*]
+*** xref:graphxr-extensions/text-editor.adoc[*Text Editor*]
+
 
 ** xref:nav-select/ref-shortcut-keys.adoc[*Shortcut Keys Reference*]

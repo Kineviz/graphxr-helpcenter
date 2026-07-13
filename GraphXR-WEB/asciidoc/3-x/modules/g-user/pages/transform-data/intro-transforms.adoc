@@ -2,7 +2,7 @@
 
 The *_Transform_* panel organizes a suite of graph-based data operators to transform data on the fly, bringing immediate visual intuition to data modeling. 
 
-Within a project, GraphXR delivers functionality traditionally performed in Excel (Pivot Table, Formula), relational databases (Join, Where, Group By, Formula), or big data environments such as MapReduce or Spark (Map, Reduce, Filter, Group By, Function).  
+Within a project, *Kineviz* delivers functionality traditionally performed in Excel (Pivot Table, Formula), relational databases (Join, Where, Group By, Formula), or big data environments such as MapReduce or Spark (Map, Reduce, Filter, Group By, Function).  
 
 image::/v3/06_00_01_TransformPanel.png[,720,320,role=text-center]
 
@@ -17,4 +17,4 @@ The operators in the *_Transform_* panel are:
 * *_Connector_*, to access APIs for third party applications that inject additional data or transform existing data.
 +
 
-NOTE: The *_Connector_* is only available in GraphXR Enterprise edition.
+NOTE: The *_Connector_* is only available in *Kineviz* Enterprise edition.

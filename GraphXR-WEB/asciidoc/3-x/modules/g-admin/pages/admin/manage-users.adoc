@@ -1,6 +1,6 @@
 = Manage Users
 
-The *_Users_* panel displays the list of current users and lets you review and manage their access to GraphXR and to the connected databases.
+The *_Users_* panel displays the list of current users and lets you review and manage their access to Kineviz and to the connected databases.
 
 image::/v3/01_01_AdminOpen.png[,720,480,role=text-left] 
 
@@ -18,9 +18,9 @@ You can:
 
 == Add a User
 
-When an email server has been configured, each user of GraphXR must have a user account. A user who does not already have an account is prompted for a user name and password when logging in to GraphXR.
+When an email server has been configured, each Kineviz user must have a user account. A user who does not already have an account is prompted for a user name and password when logging in.
 
-If no email server is configured, users only need a url to access GraphXR. This can provide shared use or a read-only account.
+If no email server is configured, users only need a url to access Kineviz. This can provide shared use or a read-only account.
 
 *To add a user:*
 
@@ -38,9 +38,9 @@ image::/v3/02_03_AddUserDialog.png[,720,420,role=text-left]
 
 * *_Email_*: The email used to sign in to the account.
 * *_First Name_* and *_Last Name_*: The user's first and last name.
-* *_Password_*: A password you or the user selects. Upon signing in to GraphXR, a user can reset the password.
+* *_Password_*: A password you or the user selects. Upon signing in to Kineviz, a user can reset the password.
 * *_Force Change Password_* checkbox: Selected by default, so that the user is required to change their password at specific intervals. 
-* *_Tags_*: Enter a version tag to grant access to specific pre-release versions of GraphXR.
+* *_Tags_*: Enter a version tag to grant access to specific pre-release versions of Kineviz.
 * *_Plan Days_*: Indicates the number of days remaining on the user's subscription plan.
 * *_Access_*: Set to _Active_, _Inactive_, _Reset_, or _Freeze_.
 * *_UserType_*: Set as _Normal_ or _Admin_.
@@ -50,8 +50,8 @@ NOTE: When an account is set as _Admin_, *_Set as Manager_* appears for that use
 +
 
 +
-* *_Connector API Auth_*: Click  *_Disable_* or *_Enable_* to grant access to the third party *_Connector_* applications in a GraphXR Enterprise installation.
-* *_API Key Access_*: Click  *_Disable_* or *_Enable_* to grant access to the GraphXR API via a key.
+* *_Connector API Auth_*: Click  *_Disable_* or *_Enable_* to grant access to the third party *_Connector_* applications in a Kineviz Enterprise installation.
+* *_API Key Access_*: Click  *_Disable_* or *_Enable_* to grant access to the Kineviz API via a key.
 +
 
 . Click *_Submit_* to create the user profile, or *_Cancel_*.

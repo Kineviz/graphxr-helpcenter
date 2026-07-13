@@ -7,7 +7,7 @@ A template can be created by :
 * A general user within a project using the *_Create Template_* button in the *_Project > Data Store_* subpanel.
 * An admin user in the *_Templates_* panel. 
 
-As soon as it is created, the template appears on the template menu available when creating or updating a GraphXR project.
+As soon as it is created, the template appears on the template menu available when creating or updating a Kineviz project.
 
 image::/v3/08_02_ProjectTemplates_Set.png[,420,420,role=text-left]
 
