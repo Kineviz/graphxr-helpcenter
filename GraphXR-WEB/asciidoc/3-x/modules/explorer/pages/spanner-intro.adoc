@@ -1,8 +1,8 @@
-= GraphXR Explorer for Spanner
+= Kineviz Explorer for Spanner
 
-GraphXR Explorer provides a one-stop connection to a property graph on Google Spanner from the link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-spanner?q=search&invt=Abtgig&project=kineviz-public[*Google Cloud Platform (GCP) Marketplace*]. 
+Kineviz *Explorer* provides a one-stop connection to a property graph on Google Spanner from the link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-spanner?q=search&invt=Abtgig&project=kineviz-public[*Google Cloud Platform (GCP) Marketplace*]. 
 
-xref:attachment$quick-start-card.pdf[*Quick Start Card*]
+xref:attachment$quick-start-card.pdf[*Kineviz Explorer for Spanner: Quick Start Card*]
 
 == Features
 
@@ -10,24 +10,24 @@ xref:attachment$quick-start-card.pdf[*Quick Start Card*]
 * Single User
 * Supports up to 50,000 nodes and 50,000 edges
 * Streamlined visualization for Spanner Graph.
-* User-managed *UI Configuration* for additional GraphXR features such as Transforms, Map, Algorithms, and Extensions.
+* User-managed *UI Configuration* for additional *Kineviz* features such as Transforms, Map, Algorithms, and Extensions.
 
 == Video Overviews
 
-* *Setting up GraphXR Explorer for Spanner Graph*
+* *Setting up Kineviz Explorer for Spanner Graph*
 
 video::4AtwuCxkXc4[youtube]
 
-* *Exploring Loan Repayment in Spanner Graph and GraphXR Explorer*
+* *Exploring Loan Repayment in Spanner Graph and Kineviz Explorer*
 
 video::XdzcP8fHTo8[youtube]
 
 == User Guide
 
-xref:attachment$quick-start-guide.pdf[*GraphXR Explorer for Spanner User Guide*]
+xref:attachment$quick-start-guide.pdf[*Kineviz Explorer for Spanner: User Guide*]
    
 [caption=]
-.Using *GraphXR Explorer for Spanner*
+.Using *Kineviz Explorer for Spanner*
 [cols="^3,^3"]
 |===
 | xref:explorer:spanner-connect.adoc[1. *Connect to Spanner Graph*]
