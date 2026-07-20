@@ -64,7 +64,7 @@ image:/v3/01_01_06_SourceCSVMapping.png[,420,540,role=text-left]
 *** Aggregate, merge, or simplify complex patterns.
 *** Re-format and combine property values as needed.
 +
-image:/v3/01_01_07_SourceTransformExtract.png[,420,540,role=text-left]
+image:/v3/01_01_07_SourceTransformExtract.png[,640,520,role=text-left]
 
 
 

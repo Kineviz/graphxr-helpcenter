@@ -1,0 +1,34 @@
+= Kineviz Text Editor
+
+The *_Text Editor_* extension lets you edit text files of many kinds, including the files managed in the *_Files_* extension. This includes *_Agent_* markdown files for sessions, the system prompt and skills, as well as other types of files managed in the project. 
+
+NOTE: The *_Text Editor_* panel can be opened as either a floating panel, or as a panel docked to the left menu (or to any other panel). 
+
+image::/v3/22_01_01_TextEditorExisting.png[520,420,role=text-left]
+
+*To open the _Text Editor_ from _Files_:*
+
+. Click the *_Files_* left menu icon to open the file manager panel.
+. Navigate to the file to be edited.
+. Right-click on the file and select *_Open / Edit_*.
+
++
+You can now:
++
+
++
+* *_Edit_* the file.
+* *_Preview_* (markdown (.md) only)
+* *_Save_* your edits.
+* *_Reload_* the file.
+* *_Download_* the file
++
+
+. When you are done editing, *_Save_* the file and close the *_Text Editor_* panel. The  saved file is updated in the file manager, and you can re-open the *_Files_* panel to review and verify. 
+
+ 
+
+
+ 
+
+

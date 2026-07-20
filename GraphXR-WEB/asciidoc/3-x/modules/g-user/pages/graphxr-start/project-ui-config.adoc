@@ -12,7 +12,6 @@ For example, a *Kineviz* xref:explorer:spanner-intro.adoc[*_Explorer_*] project 
 * *_Map_*, for the panel to drop nodes with lat-long property values on a world map.
 * Property graph modeling features:
 ** The *_Transform_* panel and its Formula, Extract, Link, Aggregate, Merge, and Shortcut subpanels). 
-** The *_Graph Composer_* extension to model collections of relational tables or CSVs as a property graph.
 ** The *_Grove_* extension, for building and sharing Observable-based notebooks.
 
 *To configure a project's User Interface elements:*

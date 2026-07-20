@@ -163,7 +163,7 @@ With one or more snapshots saved, you can:
 
 IMPORTANT: When you exit the project or log out, snapshots are deleted. In addition, when you import a snapshot archive to your project, it replaces the current set of snapshots. Before exiting the project canvas or importing another snapshot archive, use *_Save Snapshots_* or the download icon on the title bar to export the current snapshot archive to your local system.  
 
-*To save snapshots:
+*To save snapshots:*
 
 . Open the *_Project > Settings_* subpanel, and the *_Advanced Settings_* dropdown.
 . Click the  *_Show Snapshots_* checkbox to display the *_Snapshots_* title bar on the canvas. 

@@ -13,5 +13,6 @@ Once downloaded to your system as a _.graphxrproject_ file, the project can be i
 The project is imported with  _(imported)_ appended to its original name, and is automatically opened. You can edit the project name as follows if desired.
 +
 
-. Go to the *_Projects_* home page.
-. Click the project's *_Edit_* icon, enter a new name, and click *_Confirm_*.   
+.. Go to the *_Projects_* home page.
+.. Click the project's settings menu, and select *_Edit_*.
+.. In the *_Edit Project_* dialog, enter a new name, and click *_Confirm_*. 

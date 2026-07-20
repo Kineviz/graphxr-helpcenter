@@ -1,15 +1,23 @@
 = Getting Started
 
-*_Kineviz_* (formerly *_GraphXR_*) is a browser-based visual analytics platform for labeled property graphs. It supports fast, flexible graph modeling and exploration in secure collaborative project workspaces. 
+*Kineviz* (formerly *GraphXR*) is  visual analytics platform for working with labeled property graphs. 
 
-image::/v3/00_01_02_Project.png[,720,380,role=text-center]
+* *Kineviz Server* is a *multi-user* browser-based application that supports fast, flexible graph modeling and exploration in secure collaborative project workspaces.  
 
-For offline use, you can download the single-user xref:desktop:desktop-intro.adoc[*_Kineviz Desktop_*] application. It delivers nearly all the functionality of *_Kineviz_* online, running locally on your system.
+* xref:desktop:desktop-intro.adoc[*Kineviz Desktop*] is a *single-user* download that delivers nearly all the functionality of *Kineviz Server* while running locally on your system.
+
+A *Kineviz* account lets you create and manage multiple projects.
+
+image::/v3/00_01_01_ProjectHome.png[,720,340,role=text-center]
  
-== Basic Graph Exploration
+== Basic Graph Exploration 
 
-In a Kineviz project you can seamlessly import, model and transform graph data, explore and analyze graph patterns, save your work, and share your insights. Click the links below for details to help you dive right in.
+Each *Kineviz* project is a workspace where you can seamlessly import, model and transform graph data, explore and analyze graph patterns, save your work, and share your insights. *Kineviz* projects also include a built-in AI *_Agent_* for optional graph modeling and exploration through AI chat.
 
+image::/v3/00_01_02_KinevizAgentProject.png[,720,340,role=text-center]
+
+[caption=]
+.Basic Workflow in a *Kineviz* Project
 [cols="^3,^3"]
 |===
 | xref:g-user:graphxr-start/open-graphxr.adoc[1. *Log in*] and xref:g-user:graphxr-start/projects-home.adoc[*Create a Project*]

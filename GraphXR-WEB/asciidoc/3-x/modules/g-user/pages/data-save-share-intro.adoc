@@ -1,4 +1,4 @@
-= Save and Share Graph Data
+= Save and Share Graph Views
 
 At any time, you can xref:./data-save.adoc[*Save*] the graph on the project canvas as a view or snapshot. 
 

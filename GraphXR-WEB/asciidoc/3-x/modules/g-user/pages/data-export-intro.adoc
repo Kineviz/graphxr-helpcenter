@@ -1,9 +1,11 @@
 = Export Data
 
-By exporting data from a project, you can provide data to another application or user, or archive views and the data store at key points during an analytic workflow. 
+By exporting data from a project, or exporting an entire project, you can provide data to another application or user, or archive views and the data store at key points during an analytic workflow. 
 
-You can export all or part of the project data at any time, including: 
+You can export all or part of a project at any time, including: 
  
+* The entire project. 
+
 * Project Views
 
 * All or part of a xref:nav-select/table-explore.adoc[*_Table_*] of the data on the canvas  as a CSV or Excel file.
@@ -12,11 +14,35 @@ You can export all or part of the project data at any time, including:
 
 * A data mapping created in the xref:data-import/import-via-mapping.adoc[*_Mapping Editor_*] as a JSON file using the *_Save Schema_* button.
 
-IMPORTANT: When you *_Clear_* data, exit a project or log out of GraphXR, saved data views and the internal database persist, but the graph on the project canvas and any snapshot views are deleted. To avoid losing work, save a view and/or export data when you come to a point in an exploration that you may want to re-visit. 
+IMPORTANT: When you *_Clear_* data, exit a project or log out of *Kineviz*, saved data views and the internal database persist, but the graph on the project canvas and any snapshot views are deleted. To avoid losing work, save a view and/or export data when you come to a point in an exploration that you may want to re-visit. 
+
+== Export a Project
+
+Exporting a project downloads a _.graphxrproject_ file to your local system. It includes all of the project's UI and template settings, managed files, AI Agent history, views, and connected internal datastore.  
+
+*To export an entire project:*
+
+* In an open project, click the *_Export_* menu at the top right of the project window, and choose *_Export Project_*.
+
++
+image::/v3/02_07_01_ExportMenu.png[,280,240,role=text-left]
++
+
+*OR*
+
+* On the *_Projects_* home page, locate the project, and click its *_Export Project_* icon.
+
++
+image::/v3/02_07_02_ExportHome.png[,420,480,role=text-left]
++
+
++
+The _.graphxrproject_ file is downloaded to your system (for example, to your *Downloads* folder). You can import it into any *Kineviz* or *Kineviz Desktop* account at any time.
+
 
 == Export Project Views
 
-To export any view on the canvas:
+*To export any view on the canvas:*
 
 * Export the current view as a *_CSV_* or *_Excel_* archive or  *_.graphxr_* file from the *_Export_* menu at the top right of the project canvas.  
 +
@@ -44,7 +70,7 @@ NOTE: Consider saving a view before exporting it. This provides a descriptive vi
 
 +
 NOTE: For a .graphxr file, when the saved view you exported is loaded to the canvas, and you then re-import the exported file, the view name and original date of creation is preserved. However, when imported into a new view, the original view name and date of creation are not preserved.
-+
+
 
 *To export the current view on the project canvas:*
 
@@ -58,7 +84,7 @@ NOTE: For a .graphxr file, when the saved view you exported is loaded to the can
 +
 
 +
-image::/v3/02_07_01_ExportMenu.png[,320,340,role=text-left]
+image::/v3/02_07_03_ExportView.png[,280,240,role=text-left]
 +
 
 +
@@ -73,7 +99,7 @@ The *_Export All Views_* option in the xref:./data-manage-datastore.adoc[*_Proje
 . Open the *_Project > Data Store_* subpanel.
 . In the *_Utilities_* section at the top, click *_Export All Views_*.
 +
-image::/v3/02_07_02_DataStoreExportViews.png[,520,240,role=text-left]
+image::/v3/02_07_04_DataStoreExportViews.png[,520,240,role=text-left]
 + 
 
 +
@@ -100,7 +126,7 @@ image::/v3/02_07_03_SnapshotsSave.png[,420,180,role=text-left]
 +
 NOTE: You can click the _export_ icon in the *_Snapshots_* title bar to export a snapshot archive without opening the window or reviewing its views.  
 
-=== Export data from a table
+== Export data from a table
 
 For any single category or relationship, you can export some or all of data that's visible on the canvas as a table of nodes or edges and their property values. You can:
  
@@ -163,7 +189,7 @@ The exported file is named _DatabaseName__export_ _(number).kuzu_. For example, 
  
 == Export a data mapping
 
-A data mapping is a graph schema for a single table that you define in the GraphXR xref:data-import/import-via-mapping.adoc[*_Mapping Editor_*]. A mapping is saved to the server and is available on the *_Mapping_* menu in the *_Query > CSV_* and *_Query > SQL_* subpanels. From there, it can be applied, edited, and saved as a new mapping. 
+A data mapping is a graph schema for a single table that you define in the *Kineviz* xref:data-import/import-via-mapping.adoc[*_Mapping Editor_*]. A mapping is saved to the server and is available on the *_Mapping_* menu in the *_Query > CSV_* and *_Query > SQL_* subpanels. From there, it can be applied, edited, and saved as a new mapping. 
 
 A CSV or SQL mapping is available to sharing users of the project and persists in a project until you delete the mapping (or the project).
 

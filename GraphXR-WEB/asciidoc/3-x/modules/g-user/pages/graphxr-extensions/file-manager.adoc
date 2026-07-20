@@ -1,0 +1,77 @@
+= Kineviz Files
+
+*Kineviz Files* lets you manage file-based assets including *Agent* system prompt and skills files, *Grove* notebooks, internal KoreDB database files, image files, and more. You can:
+
+* Verify that your *Kineviz* project includes needed files. 
+* Import and export files.
+* Create, open, and edit text files directly.
+* Organize assets in new or existing folders. 
+
+The default *_Files_* icon located on the left panel menu just below the *_Projects_* icon opens the file manager panel.  
+
+== Review and create files 
+
+Files imported or created in the project appear in the *_Files_* panel, and  
+
+*To review managed files:*
+
+. Open the *_Files_* panel and click to open a folder.
+. Select a file and click the *information* icon at the top of the list to preview its contents, size, and the date it was last modified.
++
+image::/v3/21_01_01_FileManagerPanel.png[520,420,role=text-left]
+ 
+
+*To create a new folder and file:*
+
+. Click the *_Files_* left menu icon located on the left menu just below the *_Project_* icon.  
+. In the file manager panel, click the *create folder* icon to create a new folder, or open an existing folder.
+
++
+NOTE: A file you create will be placed in the currently selected folder. To put it in a new folder, you must create the new folder first. 
++
+
+. Click to select the folder, then click the *create file* icon.
+. Enter a file name and valid extension (e.g. Test.md) and click *_Create_*.
+
++
+image::/v3/21_01_02_CreateFolderFile.png[420,380,role=text-left]
++
+ 
++
+The new file opens in a floating *_Text Editor_* panel. 
++
+
++
+image::/v3/21_01_03_NewTextFile.png[420,380,role=text-left]
+
+ 
+== Edit text files 
+
+You can edit a text file present in the file manager at any time, including those you import or create.
+
+image::/v3/21_01_04_EditNewTextFile.png[520,420,role=text-left]
+ 
+* A new file created in the *_Files_* panel is automatically opened in the *_Text Editor_* panel.
+* For an existing file, right-click and select *_Open /Edit_* to open it in the *_Text Editor_*. 
+
+*To edit a text file:*
+
+. Open the *_Files_* panel and locate the file.
+. Click to select and highlight the file.
+. Right-click and select *_Open / Edit_*.
+
++
+The file opens in a floating *_Text Editor_* panel. A markdown(.md) file includes a *_Preview_* tab to see the rendered text.
+
++
+image::/v3/21_01_05_EditExistingTextFile.png[520,420,role=text-left]
++
+
+. Enter changes to the text file, click *_Save_*, and close the editor window. 
+ 
++
+NOTE: In some cases the file may open in a *_Text Editor_* panel docked to the left menu. If this happens, you can click the *_floating panel_* icon at the top right corner of the panel to un-dock it. 
+ 
+
+
+

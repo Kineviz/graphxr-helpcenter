@@ -8,22 +8,24 @@ image::/v3/01_04_01_ProjectOverview.png[,720,450,role=text-center]
 ** Enter a no-code *Query* for data from a connected or internal graph database 
 ** Perform full-text *Search* of property values on indexed data in the database or the data on the project canvas.
 
-* *_View Menu_*, at the center of the top, to save, load, and share data views.
+* *_View Menu_*, at the top center of the canvas, to save, load, duplicate, export, and share data views.
 
 * *_Legend_*, at the top right of the canvas, to display and select a list of nodes by *_Category_*, *_Tag_*, or a category *_Property_* name and value, and edges by *_Relationship_* or a relationship property (*_RelProperty_*) name and value. 
  
 * *_Export_* menu, in the top right corner of the canvas, to export the current data view as a CSV or Excel archive, .graphxr file, .png screenshot, or SVG file.
 
 +
-image::/v3/01_04_02_ExportMenu.png[,120,180,role=text-left]
+image::/v3/01_04_02_ExportMenu.png[,240,180,role=text-left]
 +
 
 * *_Panel Menu_* along the left vertical edge of the project space, with icons to open panels that organize features for working with graph data, including:
 ** *_Projects_*, to manage project *_Views_*, *_Category_* and *_Relationship_* details, and project *_Settings_*, *_Datastore_*, and *_Extension_* details. 
+** *_Files_*, for managing and editing imported and internal files used in the project.
 ** *_Query_*, for entering and running Cypher/GQL, SQL, CSV (and CSV Mapping), JSON, and Gremlin queries.
 ** *_Transform_*, to refocus and simplify the graph model.
 ** *_Table_*, to work with tables of nodes or edges by Category or Relationship.
 ** *_Filter_*, to filter data on the canvas by entity property values.
+** *_Agent_*, to access *Kineviz Agent* features for AI-assisted graph modeling and exploration.
 ** *_Algorithm_*, to use the library of graph-analytic algorithms available in GraphXR. 
 ** *_Map_*, to drop nodes with latitude and longitude property values on a world map. 
 ** Additional menu icons to access *_Grove_* notebook and *_Graph Composer_* extensions, as well as Sandboxes supporting customized workflows.
@@ -34,13 +36,17 @@ image::/v3/01_04_02_ExportMenu.png[,120,180,role=text-left]
 
 * Configurable *_Right-click menu_* of the tools and operations usable on your current data selection. You can right-click anywhere on the canvas to perform many graph operations without going to the toolbar or opening a panel.
 
-* *_GUI Navigation_* controls, at the bottom right, to simulate 3D virtual reality (VR) navigation on the desktop canvas.
+* Kineviz *_Help_* menu (question icon) at the bottom of the left panel menu above the Kineviz logo, to display information about the current *Kineviz* version. 
 
-* Kineviz logo menu at the bottom left of the browser window, to return to the *_Projects_* home page, access GraphXR information or the *_Admin_* panel, and quickly *_Toggle Theme_* between light and dark mode. 
+* Kineviz logo menu at the bottom of the left panel menu, to *_Logout_*, go to the   *_Home_* page, open other *_Recent Projects_* (or create a new project), *_Toggle Theme_* between light and dark mode, show *_Shortcuts_* reference and other *Kineviz* information.
 
 +
-image::/v3/01_04_04_KVLogoMenu.png[,180,240,role=text-left]
+image::/v3/01_04_04_KVLogoMenu.png[,340,280,role=text-left]
 + 
+
+* A *Minimap* near the bottom right, to provide a live thumbnail of the entire canvas and its  graph data. *_Left-click + drag_* to easily re-focus the view on another part of the graph.   
+
+* *_GUI Navigation_* controls, at the bottom right, to simulate 3D virtual reality (VR) navigation on the desktop canvas.
 
 +
 NOTE: Most GraphXR menus and tools are configurable through the project's xref:./project-ui-config.adoc[*UI Configuration*] dialog. This lets you limit (or expand) access to graph modeling and analytics within a project. 
@@ -55,7 +61,7 @@ NOTE: You can load a saved data view, if any are available.
 
 Click in the *_Query_* bar for the dropdown menu to build and run a no-code visual query on the connected graph database.
 
-image::/v3/01_04_06_QueryBar.png[,520,220,role=text-left]
+image::/v3/01_04_06_QueryBar.png[,420,240,role=text-left]
 
 NOTE: Once you have data on the canvas, you can optionally use no-code *_Expand with Relationships_* from the toolbar icon or right-click menu to query for additional nodes connected through the defined relationships you select. 
 
@@ -86,7 +92,7 @@ image::/v3/01_04_06b_SearchDBGraph.png[,520,380,role=text-left]
 
 Use the *_View_* menu to load a saved view.  
 
-image::/v3/01_04_05_ViewsMenu.png[,200,200,role=text-left]
+image::/v3/01_04_05_ViewsMenu.png[,420,380,role=text-left]
 
 NOTE: You can also drag and drop views exported as .graphxr or .graphxrsnapshots files. 
 
@@ -272,7 +278,9 @@ image::/v3/01_04_16_ContextProps.png[,520,320,role=text-left]
 
 == Panel menu
 
-The Panel menu on the left edge of the canvas provides access to panels with tabbed sub-panels organized by function. Click an icon to display its panel. 
+The Panel menu on the left edge of the canvas provides access to panels, many of which include tabbed sub-panels organized by function. Click an icon to display its panel. 
+
+NOTE: Additional icons for *Kineviz* extensions (e.g. *_Grove_* or *_Text Editor_*) or Sandbox tutorials can also be displayed on the Panel menu. 
 
 === Project panel
 
@@ -286,6 +294,13 @@ image::/v3/01_04_20_ProjectPanelView.png[,520,450,role=text-left]
 * *_Data Store_*, to Import data in accepted formats, Export data views, CSV or Excel archives, a .png or SVG screenshot, or all current data views, and  save a template based on the current project that can be applied to other projects. It is also where you manage the project's connected database, if any.
 * *_Extensions_*, to access standard or custom extensions which may be available.
 * *_Grove Links_*, to manage access to Grove notebook sandboxes available to the project.
+
+
+=== Files panel
+
+*_Files_* opens a panel to manage *_Project Files_*, including those for *Kineviz* *_Agent_*, any imported files (CSV, JSON, Excel, .png, etc.), and the database (if any).
+
+image::/v3/01_04_20a_FilesPanelView.png[,520,280,role=text-left]
 
  
 === Query panel
@@ -332,6 +347,13 @@ image::/v3/01_04_25_LayoutPanelGeom.png[,540,620,role=text-left]
 
 image::/v3/01_04_26_FilterPanel.png[,520,520,role=text-left]
 
+=== Agent panel
+
+*_Agent_* opens a panel to engage with and manage the *Kineviz Agent*, a built-in AI assistant for working with graph data in a *Kineviz* project. 
+
+image::/v3/01_04_26a_AgentPanelView.png[,520,450,role=text-left]
+
+
 === Algorithm panel
 
 *_Algorithm_* opens GraphXR's *_Path Finding_*, *_Centrality_*, and *_Community Detection_* graph algorithm library. *_Centrality_* and *_Community Detection_* results are added to nodes as a property value.
@@ -346,15 +368,19 @@ image::/v3/01_04_28_MapPanel.png[,520,450,role=text-left]
 
 == Projects Home, Information, and Logout
 
-The Kineviz logo at the bottom left of the browser window displays a menu to return to the *_Projects_* page, access GraphXR information or the *_Admin_* panel, and quickly *_Toggle_* between a light and dark mode theme.
+The Kineviz logo at the bottom left of the browser window displays a menu for quick access to information and navigation among your *Kineviz* projects.
 
-image::/v3/01_04_04_KVLogoMenu.png[,160,200,role=text-left]
+image::/v3/01_04_04_KVLogoMenu.png[,320,280,role=text-left]
 
-* *_Logout_*. Log out of *Kineviz*.
 * *_Home_*. Return to the *_Projects_* home page.
+* *_Recent Projects and Create Project_*. 
 *_Toggle_Theme*. Toggle the theme between light and dark mode.
 * *_Shortcut_*. Display a quick reference card of desktop shortcut keys. See also xref:nav-select/ref-shortcut-keys.adoc[Shortcut Keys Reference].
 * *_About_*. Review the *Kineviz* version and release information. 
+* *_Admin_*. Open the Administrator panel (if configured).
+* Current logged in user ID.
+* *_Logout_*. Log out of *Kineviz*.
+
 
 == Project Status Bar
 
@@ -377,7 +403,7 @@ image::/v3/01_04_33_ProjectStatusBar.png[,720,180,role=text-left]
 
 The GUI navigation interface at the bottom right of the canvas provides simulated 3D Virtual Reality (VR) navigation controls for use on the desktop.
 
-image::/v3/01_04_29_GUINavControls.png[,420,340,role=text-left]
+image::/v3/01_04_29_GUINavControls.png[,320,280,role=text-left]
 
 * Click and hold the upper arrows to *_Move Right_*, *_Move Left_*, *_Move Up_*, or *_Move Down_*. Click the central circle to *_Reset_* the view to the center point of the data (similar to the *_Center To_* toolbar icon).
 * Click and hold the middle joystick-like controls to *_Rotate Left_* or *_Rotate Right_*.

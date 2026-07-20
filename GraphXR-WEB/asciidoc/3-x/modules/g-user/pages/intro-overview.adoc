@@ -1,35 +1,33 @@
 = Kineviz User Guide
 
-https://www.kineviz.com/graphxr[*Kineviz*] is a browser-based visual analytics platform for exploring labeled property graphs. A *Kineviz* project is a virtual 2D or 3D workspace designed to accelerate exploration and foster collaborative investigation and discovery. 
-
-*Kineviz Desktop* enables single-user offline use. As a standalone application installed it on your system, it delivers graph visualization and analytics that's nearly identical to the *Kineviz* online experience.    
-
-== The Kineviz Platform 
+*Kineviz Server* is a browser-based visual analytics platform for exploring the  connections in data modeled as labeled property graphs. Its multi-user virtual 2D or 3D project workspaces are designed to accelerate exploration and foster collaborative investigation. 
 
 image::/v3/01_00_01_UserGuideIntro.png[,720,380,role=text-center] 
 
-In a *Kineviz* project you can:
+NOTE: xref:desktop:desktop-intro.adoc[*Kineviz Desktop*] is available as a single-user application that you download to your system. It does not support project sharing; otherwise its features and UI elements are nearly identical to *Kineviz Server*.     
 
-* Seamlessly import graph data from:
+== The Kineviz Platform 
 
-** A graph database via GQL, Cypher, or visual no-code graph query. Supported databases include Google SpannerGraph, Memgraph, Puppygraph, Neo4j, and more.
-** A relational database via SQL or Azure DB via Gremlin.
-** CSV and JSON via drag and drop. 
+In the *Kineviz* platform, you create and manage persistent projects that can be connected to graph data sources and shared with other users. You can:
 
-* Explore graph data efficiently.
+* *Import* data in various ways:
 
-* Model, transform, and simplify complex graphs iteratively through data mapping and powerful data transforms, and save your work to a project's views and its internal datastore. 
+** *Query a connected graph database* via visual no-code graph query, Cypher, or GQL. Supported databases include Google Spanner Graph and BigQuery Graph, Neo4j, Memgraph, Puppygraph, UltipaGraph, OracleGraph, GalaxyBase, NebulaGraph, and more.
+** *Query a connected relational database* via SQL or Gremlin.
+** Open (or drag and drop) JSON files and CSV and Excel files or archives. 
 
-* Discover graph patterns through widely used graph algorithms for *Path Finding*, *Centrality*, and *Community Detection*.
+* *Model, transform, and simplify graphs* iteratively through data mapping and powerful data transforms, and save your work to a project's views and internal *KoreDB* data store. 
 
-* Create compelling graph visualizations through flexible layouts and geospatial mapping, and through project templates for saving your color, icon, and captioning choices.
+* *Discover graph patterns* through widely used graph algorithms for *Path Finding*, *Centrality*, and *Community Detection*.
+
+* *Create focused graph visualization* through color, captioning, size scale, selection and filtering, flexible layout, and geospatial mapping. 
+
+* *Save a project template* that specifies color, icon, and captioning choices.
  
-* Save, share, and export a *Kineviz* project, its data views and internal *KoreDB* datastore.
+* *Save, share, and export* a *Kineviz* project, its data views and internal *KoreDB* datastore.
 
-* Securely collaborate via managed users, permissions, and data sources.
-+
-NOTE: *Kineviz* project sharing is not available in the single-user *Kineviz Desktop* application.
-
+* *Securely collaborate* via managed users, permissions, and data sources.
+ 
 == Supported Environments
 
 * WINDOWS, MAC OSX, AND LINUX
