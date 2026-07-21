@@ -2,7 +2,7 @@
 
 Kineviz *Explorer* provides a one-stop connection to a property graph on Google Spanner from the link:https://console.cloud.google.com/marketplace/product/kineviz-public/graphxr-explorer-spanner?q=search&invt=Abtgig&project=kineviz-public[*Google Cloud Platform (GCP) Marketplace*]. 
 
-xref:attachment$quick-start-card.pdf[*Kineviz Explorer for Spanner: Quick Start Card*]
+xref:attachment$quickstart-card-spanner.pdf[*Kineviz Explorer for Spanner: Quick Start Card*]
 
 == Features
 
@@ -24,7 +24,7 @@ video::XdzcP8fHTo8[youtube]
 
 == User Guide
 
-xref:attachment$quick-start-guide.pdf[*Kineviz Explorer for Spanner: User Guide*]
+xref:attachment$quickstart-guide-spanner.pdf[*Kineviz Explorer for Spanner: User Guide*]
    
 [caption=]
 .Using *Kineviz Explorer for Spanner*

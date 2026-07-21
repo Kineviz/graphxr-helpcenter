@@ -90,7 +90,7 @@ image::/v3/04_01_02_FlyOutCrop.png[,420,240,role=text-left]
 * Click *_Fly Out_* to display all the graph data centered in your browser window. Or, click the *_Reset_* circle in the GUI navigation controls.
 * Click *_Center To_* to zoom in to a view of the data centered on a selected node or nodes.
  
-== Navigate using a keyword search
+== Navigate with keyword search
 
 The search bar at the top left provides full-text keyword search on properties of nodes on the project canvas.  
 

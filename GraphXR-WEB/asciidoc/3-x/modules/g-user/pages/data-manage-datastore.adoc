@@ -2,7 +2,7 @@
 
 The *_Projects > Data Store_* subpanel provides utilities for data import and export, and options to manage the the database connected to the project.  
 
-image::/v3/02_06_01_DataStore.png[,520,520,role=text-left]
+image::/v3/02_06_01_DataStore.png[,520,720,role=text-left]
 
 * The *_Utilities_* section enables you to import and export data and views, and to save a template. Its *_Export All Views_* and *_Save Template_* functions are available only as *_Data Store_* utilities.
 
@@ -12,12 +12,12 @@ NOTE:  See xref:display-options/create-template.adoc[*Create a Template*] for de
  
 * The *_Data Store_* section is where you manage the project's connected databases. You can:
 
-** Review details for the graph database specified when the project was created.
-** Save the graph on the canvas to the internal data store or external database.  
+** Review details for the graph database connected to the project.
+** Save the graph on the canvas to the internal KoreDB or external database.  
 ** Export the internal graph database as a .zip file. 
-** Upload a graph database .zip file to the existing (or a new) internal database instance.
-** Empty the current internal graph database.
-** Delete any of the connected databases, if you are an admin user. 
+** Upload a KoreDB .zip file to the existing (or a new) internal database instance.
+** Empty the current KoreDB database.
+** Delete any of the KoreDB databases, if you are an admin user. 
   
 == Export from the Data Store
 
@@ -49,11 +49,12 @@ The *_Data Store_* section below the *_Utilities_* provides options to manage th
 
 You can:
 ** Review details for the graph database specified when the project was created.
-** Save the graph on the canvas to the internal data store, optionally creating a new database instance.  
-** Export the internal graph database as a .zip file. 
-** Upload a graph database .zip file to the existing (or a new) internal database instance. 
-** Empty the current internal graph database.
-** Delete the database. 
+** Review *_Statistics_* showing the current contents of the connected data store.
+** Save the graph on the canvas to the KoreDB data store, optionally creating a new database instance.  
+** Export the KoreDB graph database as a .zip file. 
+** Upload a KoreDB .zip file to the existing (or a new) internal database instance. 
+** Empty the current KoreDB database.
+** Delete the KoreDB database. 
 
 
 === Save the current view to the internal graph database
