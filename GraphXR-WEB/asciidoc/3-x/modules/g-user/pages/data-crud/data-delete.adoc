@@ -119,30 +119,6 @@ In some situations, you may want to empty a project's internal database, for exa
 
 You can also delete a project's connected internal database – a more extreme action. You might do this for a project where you want the saved views to persist, but not the data in the internal database.   
 
-IMPORTANT: Consider exporting the current database before emptying or deleting it. 
-
-NOTE: To manage the internal database, the project must be configured to grant access to the *_Project > Data Store_* subpanel. 
-
-*To empty the internal connected database:*
-
-. Open the *_Project > Data Store_* subpanel.
-. In the *_Data Store_* section, optionally click *_Export Database_* 
-. Click *_Empty Database_*
-+
-Confirmation message
-+
-. Click  *_Empty Database_* to proceed, or *_Cancel_* to exit.
- 
-*To delete the internal connected database:*
-
-. Open the *_Project > Data Store_* subpanel.
-. In the *_Data Store_* section, optionally click *_Export Database_* 
-. Click the dropdown arrow to open the *_Danger Zone_*.
-. Click *_Delete Database_*.
-+
-Confirmation message
-+
-. Click  *_Delete_* to proceed, or *_Cancel_* to exit.
-
+NOTE: For details, see xref:data-manage-datastore.adoc[*_Manage the Data Store_*]. Also note that access to the *_Project > Data Store_* subpanel is controlled through the project's  xref:graphxr-start/project-ui-config.adoc[*_UI Configuration_*].   
  
  

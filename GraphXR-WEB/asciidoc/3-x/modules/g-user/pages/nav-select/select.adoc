@@ -145,7 +145,7 @@ All the edges of a Relationship
 image::/v3/04_02_01_LegendCatRelSelect.png[,420,420,role=text-left]
 
  
-=== Select by Property value
+=== Select by Property Value
 
 . In the Legend, click *_Property_* or *_RelProperty_*
 . Use the dropdown menu to choose the Category (or Relationship) and Property Name.
@@ -161,7 +161,7 @@ TIP: You can see a list of all property names, but since they do not have to be 
 . Click a list item to select all the nodes (or edges) with that specific property value. Use *_Ctrl - click_* to choose more than one list item.
 +
 image::/v3/04_02_03_LegendPropValSelect.png[,420,420,role=text-left]
-+
+ 
 
 == Select using a Table 
 
@@ -177,7 +177,7 @@ image::/v3/04_02_04_TableSearchSelect.png[,520,380,role=text-left]
 + 
 
 +
-TIP: A table search followed by *_Select All _* lets you select multiple nodes (or edges) with similar property values, for example _Location_ nodes with the same _postalCode_.    
+TIP: A table search followed by *_Select All_* lets you select multiple nodes (or edges) with similar property values, for example _Location_ nodes with the same _postalCode_.    
 
 
 

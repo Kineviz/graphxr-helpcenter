@@ -10,7 +10,7 @@ Filters can accept _continuous_ numerical values (e.g. numbers, date-time, and l
 
 The data that meets filter criteria remains on the canvas, and you can select it using  *_Select Visible Nodes_*, either in the *_Filter_* panel or toolbar. Once selected, you can either keep the filtered data, or remove it from the canvas by hiding (or deleting) it.  
 
-== Define multiple property value filters
+== Define Multiple Filters
 
 In the following example graph of crimes committed at various locations, we define two filters:
 

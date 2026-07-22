@@ -1,34 +1,75 @@
-= Combine nodes with Merge
+= Merge graph data
 
-*_Merge_* lets you combine nodes of a single category, or edges of a single relationship based on a property value. This is useful for simplifying a graph quickly.
+The *_Merge_* transform lets you combine
 
-In our example data we can use the _seasonEpisode_ property in the _Lines_ category to combine all of the lines spoken on a single episode into a single _Lines_ node connected to its _Episodes_ node.
+* nodes of a single category, or 
+* edges of a single relationship 
 
-NOTE: Examples use the open-source dataset for the HBO Game of Thrones series. 
+based on one or more of its properties. This is useful for simplifying a graph quickly.  
 
-*To combine nodes using Merge:*
+You can also perform a quick merge on any selection of nodes via the right-click *_Actions > Merge_* menu.
 
-. Deselect all the data to operate on all the data.
+IMPORTANT: You can immediately *_Undo_* (*ctrl + Z_*) a *_Merge_* transform. For merging modes of the same category, using the transform is a safer option than the right-click quick merge.   
+
+== Use the Merge transform
+
+The *_Merge_* transform can be used to combine duplicated nodes of the same category. 
+
+*To merge selected nodes of a single category:*
+
+. Select nodes of a single category that you want to merge.
 . Open the *_Transform_* panel and *_Merge_* subpanel.
-. In *_Choose merge type_*, click *_Category_* and select the _Lines_ category from the dropdown menu.
-. In the *_Select Property_* dropdown menu, select the _seasonEpisode_ property.
+. In *_Choose Merge Type_*, click *_Category_* or *_Relationship_*. 
+. Select the Category or Relationship to merge from the dropdown menu. 
+. In *_Select Property_*, select one or more key properties for the merge.
+. In *_Options_*, select the *_Clear Unselected Property_* checkbox.
+
 +
-image::/v3/06_04_01_MergeSetup.png[,720,480,role=text-left]
-+
-. In *_Options_*, click the *_Clear Unselected Properties_* checkbox.
- 
-+
-NOTE: A merged node will preserve only one of the values for each property from its source nodes. The preserved property value on a merged node is usually meaningless and should be cleared.
+image::/v3/06_04_01_MergeCatSetup.png[,520,540,role=text-left]
 +
 
-. Click the *_Run_* button, which also indicates how many nodes (or edges) will be included in the merge.
++
+NOTE: A merged node will preserve only one of the values for each property from its source nodes. This preserved property _value_ is usually meaningless and should be cleared.
++
+
+. In the *_Run _* button, see that the number of nodes is what you expect, then click to run the merge.
+
+
++
+If you didn't select any properties, a *_Warning_* displays, alerting you that all the selected nodes will be merged into one.
++
+
++
+image::/v3/05_02_07_MergeNodesWarning.png[,340,180,role=text-left]
++
+
+. Click *_Proceed_* to merge the nodes, or *_Cancel_* to exit without merging.
+
++
 
 +
 The *_Log_* beneath the *_Run_* button displays error and status messages.
+ 
+
+== Use Quick Merge 
+
+The quick merge option is designed to either 
+
+* combine duplicated nodes, or 
+* collect property information that's in two separate nodes onto a single node.
+ 
+Often this involves merging two nodes, but any number of nodes you select (*of any category*) will be merged into one. 
+
+WARNING: Quick merge available in *_Actions > Merge_* cannot be undone. Also, any selection of nodes (of any category) will be merged into one node. If you select nodes by mistake, the properties of the merged node may not be what you expect. Before using quick merge, either save a data *_View_* or *_Export_* a .graphxr file to your loacal system so that you can undo a mistaken merge.
+  
+*To quick-merge selected nodes:*
+
+. Select nodes using any selection method.
+. Right-click and choose *_Actions > Merge_*. 
+
++
+image::/v3/05_02_05_ActionsQuickMerge.png[,420,540,role=text-left]
 +
 
 +
-On the canvas, the merged graph is now far simpler. Instead of a few thousand nodes, the _Lines_ category now includes only 73 nodes, the number of episodes in the series.
-+
-
-image::/v3/06_04_02_MergeDone.png[,720,480,role=text-left]
+The selected nodes are merged into a single node.  
