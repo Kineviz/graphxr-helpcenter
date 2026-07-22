@@ -15,13 +15,22 @@
 *** xref:data-import/load-a-saved-view.adoc[Load a Saved View]
 *** xref:data-import/import-a-project.adoc[Import a Project]
 
-** xref:./data-save-share-intro.adoc[*Save and Share Views*]
-*** xref:data-save.adoc[Save Graph Views]
-*** xref:data-share-views.adoc[Share Projects and Views]
+** xref:data-crud/data-crud-intro.adoc[*Create and Edit Data*]
+*** xref:data-crud/data-add.adoc[Add Nodes, Edges, and Properties]
+*** xref:data-crud/data-edit.adoc[Edit Entity Labels]
+*** xref:data-crud/tag-nodes.adoc[Tag Nodes]
+*** xref:data-crud/data-delete.adoc[Delete Data]
 
-** xref:data-export-intro.adoc[*Export Data*]
+** xref:transform-data/intro-transforms.adoc[*Transform Data*]
+*** xref:transform-data/tr-fx.adoc[Reformat with fx]
+*** xref:transform-data/tr-extract.adoc[Extract]
+*** xref:transform-data/tr-aggregate.adoc[Aggregate]
+*** xref:transform-data/tr-merge.adoc[Merge]
+*** xref:transform-data/tr-link.adoc[Link]
+*** xref:transform-data/tr-shortcut.adoc[Shortcut]
+*** xref:transform-data/tr-connector.adoc[Use the Connector]
 
-** xref:data-manage-datastore.adoc[*Manage the Data Store*]
+** xref:data-crud/graph-analytics.adoc[*Run Graph Algorithms*]
 
 ** xref:nav-select/navigate.adoc[*Navigate the Graph*]
 
@@ -40,21 +49,6 @@
 *** xref:display-options/scale-by-property-value.adoc[Set Node and Edge Sizes]
 *** xref:display-options/create-template.adoc[Create Project Templates]
 
-** xref:data-crud/data-crud-intro.adoc[*Create and Edit Data*]
-*** xref:data-crud/data-add.adoc[Add Nodes, Edges, and Properties]
-*** xref:data-crud/data-edit.adoc[Edit Entity Labels]
-*** xref:data-crud/tag-nodes.adoc[Tag Nodes]
-*** xref:data-crud/graph-analytics.adoc[Run Graph Algorithms]
-*** xref:transform-data/intro-transforms.adoc[Transform Data]
-**** xref:transform-data/tr-fx.adoc[Reformat with fx]
-**** xref:transform-data/tr-extract.adoc[Extract]
-**** xref:transform-data/tr-aggregate.adoc[Aggregate]
-**** xref:transform-data/tr-merge.adoc[Merge]
-**** xref:transform-data/tr-link.adoc[Link]
-**** xref:transform-data/tr-shortcut.adoc[Shortcut]
-**** xref:transform-data/tr-connector.adoc[Use the Connector]
-
-*** xref:data-crud/data-delete.adoc[Delete Data]
 
 ** xref:layouts/working-with-layouts.adoc[*Work with Layouts*]
 *** xref:layouts/force-layout.adoc[Force Layout]
@@ -62,13 +56,19 @@
 *** xref:layouts/geometric-layouts.adoc[Geometric Layouts]
 *** xref:geospatial-maps.adoc[World Map Layout]
 
+** xref:./data-save-share-intro.adoc[*Save and Share Views*]
+*** xref:data-save.adoc[Save Graph Views]
+*** xref:data-share-views.adoc[Share Projects and Views]
 
-** xref:graphxr-agent.adoc[*Kineviz Agent*]
+** xref:data-export-intro.adoc[*Export Data*]
+
+** xref:data-manage-datastore.adoc[*Manage the Data Store*]
+
+** xref:kineviz-agent.adoc[*Kineviz AI Agent*]
 
 ** xref:graphxr-extensions/intro-extensions.adoc[*Kineviz Extensions*]
 *** xref:graphxr-extensions/grove.adoc[*Grove*]
 *** xref:graphxr-extensions/file-manager.adoc[*Files*]
 *** xref:graphxr-extensions/text-editor.adoc[*Text Editor*]
-
 
 ** xref:nav-select/ref-shortcut-keys.adoc[*Shortcut Keys Reference*]
