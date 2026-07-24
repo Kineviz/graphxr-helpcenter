@@ -41,6 +41,11 @@ z: Ctrl+shift+o
 | Toggle to rotate all data continuously around the x - y- or z- axis, or stop rotating.
 | Navigate
 
+| Fly to Selected Node
+| *_Ctrl_**+**_0_*
+| Center the view on a selected node.
+| Navigate
+
 | Stepwise Move
 | *_Arrow key click_* (_right_, _left, up_, or _down_)
 | Move all the data a step right, left, up, or down.
@@ -65,6 +70,16 @@ _left mouse double click_
 | Full Screen
 | *_Ctrl_*+*_F_*
 | Enter full screen mode. Press *_Esc_* to exit full screen.
+| Navigate
+
+| Open / Close Panel
+| *_Cmd_*+*_B_*
+| Toggle to close or reopen a panel docked to the left menu.
+| Navigate
+
+| Peek
+| *_Shift_*+*_Z_*
+| Toggle to show or hide all panels, to quickly view the data on the canvas.
 | Navigate
 
 | Select all nodes
@@ -118,7 +133,7 @@ _left mouse double click_
 
 | Expand
 | *_Ctrl_**+**_X_*
-| Display a dialog to pull nodes connected to the selected nodes based on relationships from the project's Neo4j database.
+| Display a dialog to pull nodes connected to the selected nodes based on relationships from the project's connected database.
 | Select & Import
 
 | Leaf Trimming
@@ -145,6 +160,27 @@ _left mouse double click_
 | *_Ctrl+Z_*
 | Immediately undo a *_Delete_* or *_Clear_* action.
 | Edit
+
+| Redo
+| *_Ctrl+Y_*
+| Immediately re-do an *_Undo_* action.
+| Edit
+
+| History
+| *_Ctrl+Shift+H_*
+| Dispay the *_History_* dialog to revert to an earlier state of the graph.
+| Edit
+
+| Encrypt / Decrypt a Property
+| *_Shift+E_*
+| Toggle to encrypt the values of a selected property.
+| Edit
+
+| Add Degree 
+| *_Shift+Ctrl+D_*
+| Add the *_degree_* property (i.e. the number of connected edges) to all nodes.
+| Edit
+
 |===
 
 NOTE: To access shortcut reference within a project, click the Kineviz icon at the lower left of the browser window and select *_Shortcut_* from the menu.

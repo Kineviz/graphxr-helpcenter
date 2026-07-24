@@ -1,4 +1,4 @@
-= Parametric Layouts
+= Parametric Layout
 
 A *_Parametric_* layout enables you to create scatter plots by displaying any numerical property value encoded on a category on X-, Y-, or Z- axes.
 

@@ -16,7 +16,7 @@ The default force-directed layout renders nodes and edges on the project canvas 
 
 image::/v3/08_00_01_ForceLayout.png[,480,480,role=text-left]
 
-=== *_Parametric_* Layouts
+=== *_Parametric_* Layout
 
 Parametric layouts create scatter plots of nodes based on property values. The layout parameters are saved along with a saved view, so that you can easily re-apply it.
 

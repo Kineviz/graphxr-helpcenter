@@ -1,4 +1,4 @@
-= Force Layouts
+= Force Layout
 
 A *_Force_* directed layout is a rendering of a physics simulation in which each node pushes away from other nodes while edges pull the nodes together. There is no intrinsic meaning to node position or edge length. Rather, the rendering is designed to result in a graph that's visually pleasing and reasonably easy to navigate.
 

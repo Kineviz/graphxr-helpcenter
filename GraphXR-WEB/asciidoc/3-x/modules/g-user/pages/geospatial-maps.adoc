@@ -8,6 +8,8 @@ Nodes with no latitude and longitude coordinates, but connected to those on the 
 
 image::/v3/09_01_02_PhotoMap.png[,720,380,role=text-left]
 
+NOTE: When nodes are displayed on a map, the *_Map_* left menu icon is highlighted in green, even if the *_Map_* panel is not open.
+
 == Format for Latitude and Longitude coordinates
 
 Geospatial data must be encoded in the data in separate latitude(_lat_) and longitude(_lng_) properties as follows:
