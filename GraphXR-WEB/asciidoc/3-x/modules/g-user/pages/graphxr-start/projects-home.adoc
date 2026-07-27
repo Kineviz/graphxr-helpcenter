@@ -1,13 +1,17 @@
 = Create and Manage Projects
 
-The *_Projects_* page is your portal to
+The *_Projects_* page is your portal to:
 
 * Create new *Kineviz* projects, review existing projects, and manage shared projects.
 * Review details of your *Kineviz* account, link to *Kineviz* information, send feedback to Kineviz, and access user communities.
 
-== Projects Page 
+== Project Display
 
-On the *_Projects_* page, projects appear as tiles or a list in the following sections:   
+The *_Projects_* page displays existing projects available to your account. You can open  any project simply by clicking on its card or list item. 
+
+image::/v3/01_03_01_ProjectsHomeCards.png[,720,840,role=text-left]
+
+By default, Projects appear as cards in the following sections:  
 
 * *_Recent Projects_*, projects you recently opened.
 * *_My Projects_*, projects you've created, plus a *_Create_* tile or button. 
@@ -15,28 +19,35 @@ On the *_Projects_* page, projects appear as tiles or a list in the following se
 * *_Create From Sandbox_*, pre-configured projects focused on specific workflows. Opening a sandbox project clones it and displays it in the *_My Projects_* and *_Recent Projects_* sections.
 
 +
-NOTE: Kineviz provides a series of in-app tutorials as Sandbox projects. Each focuses on a particular use case or workflow, and illustrates how to use the *Kineviz* platform to investigate and communicate useful results.
+NOTE: Kineviz provides in-app tutorials as *_Sandbox_* projects. Each focuses on a particular use case or workflow, and illustrates how to use the *Kineviz* platform to investigate and communicate useful results.
 +
 
-+  
-IMPORTANT: Opening a project (such as a tutorial) from the *_Sandbox_* section clones the pre-built project and adds it to your *_My Projects_* section. Opening it from the *_My Projects_* list returns you to the project as you last left it. 
-+      
+* *_Demo_*, projects, which may be provided for hands-on exploration.
 
-image::/v3/01_03_01_ProjectsHomeSort.png[,720,640,role=text-left]
-
-The *_display icon_* at the far right of the *_Recent Projects_* section toggles to a more compact list layout. 
+Click the *_Table_* icon at the top of the *_Recent Projects_* section to display a more compact list of your projects. 
  
-image::/v3/01_03_05_ProjectsList.png[,720,520,role=text-left]
+image::/v3/01_03_02_ProjectsHomeTable.png[,720,520,role=text-left] 
 
-== Connecting to a Database
+== Create a Project
 
-When you create a project, you also establish the database connection you want (if any). In the project's *_Create_* dialog, you must enter connection details and follow the steps required by the database type you select. The *_Database Type_* options are:
+You can create and configure a *Kineviz* project at any time and optionally connect it to an external or internal database. 
+
+image::/v3/01_03_03_CreateDatabaseType.png[,420,320,role=text-left] 
+
+
+=== About Database Connection
+
+You can establish a project's database connection(if any) at any time. You must enter connection details and follow the steps required by the database type you select.
+
+NOTE: You can also *_Edit_* the database type and connection details for an existing project.
+
+The *_Database Type_* options are:
 
 * *_None_*, to create a project with no connected database. You can import and model data in formats such as CSV, SQL and JSON, and import graph data via GXRF files, Snapshot archives, and more. Simply drag and drop files directly, or use the *Kineviz* xref:data-import/import-via-mapping.adoc[*Mapping Editor*] for initial graph modeling.
 
 * *_KoreDB_* or *_KoreDb via proxy API_*, to create and connect a default internal KoreDB graph database that you can manage in the *_Project >  Data Store_* subpanel. You can import and/or model graph data in the project, save and query it internally, and export the entire KoreDB database for archival. 
 
-* Connect to one of the following external relational or graph databases, to enable full *Kineviz* property graph visualization and analytics with no need to replicate or move data:  
+* One of the following relational or graph database types, to enable full *Kineviz* property graph visualization and analytics with no need to replicate or move data:  
 
 ** Neo4j 
 ** BigQuery Property Graph
@@ -49,17 +60,15 @@ When you create a project, you also establish the database connection you want (
 ** Oracle Graph
 ** Database Proxy. A generalized proxy built on open-source middleware, designed to securely connect *Kineviz* to various backend databases. 
 
-NOTE: *Kineviz* *_Explorer_*, a basic version of the *Kineviz* platform, is provided exclusively through the *Google Cloud Platform (GCP) Marketplace* for initial visual exploration of big data. The connection process is similar to that required for *Kineviz* or *Kineviz Desktop*, but is exclusively delivered through two *GCP Marketplace* products:  xref:explorer:spanner-intro.adoc[*Explorer for Spanner Graph*]  and  xref:explorer:bigquery-intro.adoc[*Explorer for BigQuery*]
+NOTE: *Kineviz* *_Explorer_*, a basic version of the *Kineviz* platform for initial visual exploration of big data, is provided through the *Google Cloud Platform (GCP) Marketplace*. Configuration and connection is exclusively initiated through two *GCP Marketplace* products: xref:explorer:spanner-intro.adoc[*Explorer for Spanner Graph*]  and  xref:explorer:bigquery-intro.adoc[*Explorer for BigQuery*]
 
-== Create a Project
+=== Create a New Project
 
-You can create and configure a *Kineviz* project at any time and optionally connect it to an external or internal database. 
+*To create a new project:*
 
-*To create a project:*
-
-. Click *_Create_*, either at the top of the *_Projects_* page or at the bottom of the  *_My Projects_* section.
+. Click *_Create_*, at the top right of the *_Projects_* page.
 +
-image::/v3/01_03_07_ProjectsCreate.png[,320,320,role=text-left]
+image::/v3/01_03_04_ProjectsCreateButton.png[,720,280,role=text-left]
 +
 . In the *_Create New Project_* dialog: 
 .. Enter a descriptive *_Project Name_* in the text box.
@@ -67,10 +76,6 @@ image::/v3/01_03_07_ProjectsCreate.png[,320,320,role=text-left]
 .. In *_Apply Template_*, either leave the default *_None_*, or select a template from the menu. Templates specify colors, icons and other UI configuration settings for easy re-use. 
 
 .. Select the *_Database Type_* from the dropdown menu and click *_Confirm_*.
-
-+
-image::/v3/01_03_08_CreateUltipaProject1.png[,320,480,role=text-left]
-+
 
 +   
 With a *Database Type* of *_None_* or *_Internal Data Store_*, the project is automatically created and opened.
@@ -81,7 +86,7 @@ For connection to an existing external database, the *_Create New Project_* dial
 +
  
 +
-image::/v3/01_03_09_CreateUltipaProject2.png[,320,480,role=text-left]
+image::/v3/01_03_05_CreateUltipaProject.png[,420,480,role=text-left]
 +
 
 +
@@ -100,12 +105,37 @@ NOTE: You may also need to verify that your external database is running before 
 
 + 
   
-* For GCP Spanner and Big Query property graphs, a connection wizard guides you through a detailed secure deployment process which ends by opening the project.
+* For GCP Spanner and Big Query property graphs, you select the database type abd click *_Confirm_*. 
+
++
+image::/v3/01_03_06_CreateBigQuery.png[,420,480,role=text-left]
++
+
++
+A connection wizard then guides you through a detailed secure deployment process which ends by opening the project.
++
+
++
+image::/v3/01_03_07_CreateBigQueryWizard.png[,520,480,role=text-left]
++
+
 * If you choose the *Kineviz* Database Proxy, which is designed to securely connect *Kineviz* to various backend databases, an API url is required.
- 
-+ 
+
 
 . To see that the new project now appears under *_My Projects_*, you must exit the project and return to the *_Projects_* page. Click the Kineviz logo at the lower left and choose *_Home_*. 
+
+=== Create a Project from a Sandbox
+
+Clicking on a project in the *_Sandbox_* section of the *_Projects_* page clones the sandbox project and opens it. 
+
+The new cloned project appears in *_My Projects_* and *_Recent Projects_* sections.
+
+IMPORTANT: After creating a project from a sandbox, once you leave the project and return to the *_Projects_* page, be sure to re-open it in *_My Projects_* or *_Recent Projects_*, not from the *_Sandbox_* section. This returns you to the project as you last left it, instead of creating a new cloned project. 
+
+A sandbox project includes full *Kineviz* functionality, including database connection, project styling template, and any saved views, *Grove* notebooks, and *Agent* setup. Once configured, the project appears on the *_Projects_* home page in the *_Create from Sandbox_* section. 
+
+image::/v3/01_03_09_SandboxCreate.png[,540,420,role=text-left]
+
  
 == Work with Existing Projects  
 
@@ -113,94 +143,108 @@ A tile or list item includes information and tools to review and configure a pro
 
 * *Project name*
 * *Database badge* showing the database type connected to the project (if any), e.g. *NEO4J*, *SPAN* (Spanner Graph), *PUPPY* (Puppygraph), *KUZU* (for the internal project database), etc.
-* *Sandbox* badge on pre-configured sandbox projects.  
-* Icons to edit and share the project:
+* *Sandbox* badge on pre-configured sandbox projects. 
+* *Corner badge* in the upper right of a card, to display user-defined text.   
+* A *_Settings_* icon, for a dropdown menu of options to edit and share the project:
 
 +
-image::/v3/01_03_10_ConfigureProject.png[,540,320,role=text-left]
+image::/v3/01_03_10_ProjectsSettingsIconMenu.png[,320,320,role=text-left]
 +
 
-** *_Delete_* (trash can) deletes the project, its saved views and internal graph database (but not data in an external connected graph database).
 ** *_Edit_* project name, template, and/ or database type.
-** *_Configuration Index_* to configure the database search index, if available. 
-** *_Switch DB_* to switch the project to a different database of the current type.
-** *_Clone_* to create a duplicate of the project.
-** *_Enable / Disable Sharing_* to share the entire project or one of its views with another user. Clicking the Lock icon displays:
-*** *_UI Configuration_*, to configure user interface elements the sharing user sees, for example, to limit features to only those needed for collaboration.
-*** *_Invite_*, to send an email invitation to share the entire project.  
-*** *_Share_*, to open the shared project, or select one of its views and generate iframe code that you can include in a report, proposal, or other communication. 
+** *_Clone_* to create a duplicate of the project, including its views and internal database (if any).
+** *_Export Project_*, to export the entire project, downloading it to your system as a _.graphxrproject_ file.
+** *_UI Configuration_*, to configure user interface elements the sharing user sees, for example, to limit features to only those needed for collaboration.
+** *_Share Project_* to share the project with another user of the Kineviz account. 
+** *_Open Views_* to open views and generate iframe code that you can include in a report, proposal, or other communication.
+** *_Enable / Disable Sharing_* to toggle the project between sharing and non-shared status.
+** *_Protect from Deletion_*, to set a flag to prevent project deletion. 
+** *_Delete_* (trash can), to delete the project, its saved views and internal graph database (but not data in an external connected graph database).
 
-* The date the project was *_Created_*, and the date it was last *_Opened_*. 
 
-+
-NOTE: The dates are shown on the list but not on tiles.
+* The project decription (if any).
+* The date the project was *_Created_*, and the date it was last *_Opened_*.
+* For *_Sandbox_* projects, the *_Author_*.
 
 
 === Search for a Project
-
-image::/v3/01_03_06_ProjectsSearch.png[,720,240,role=text-left]
 
 To find a specific project, you can:
 
 * Use the *_Search_* bar at the top of the page to find one or more projects by name.
 
-* Use the dropdown menu in the *_My Projects_* section to sort projects by   
+* Use the dropdown menu to sort projects by   
 ** Project name
 ** Date created  
-** Date last opened 
+** Date last opened
+
+* Select a *_Demo_* to open from the dropdown menu.
+
++
+image::/v3/01_03_11_ProjectsSearch.png[,520,240,role=text-left]
 
  
-=== Update, Clone, or Delete a Project 
+=== Edit a Project 
 
-A project is configured according to the template applied (if any) and other default settings. You can change these details at any time. 
+A project is configured according to the template applied (if any), the database type, and other default UI settings. You can change these details at any time. 
 
-image::/v3/01_03_10_ConfigureProject.png[,540,320,role=text-left]
-
-In a Project tile or list item, click:
-
-* *_Delete_* (trash can) to delete a project. This deletes the *Kineviz* project with its internal data store and saved views, but not the data in a connected external database. 
-+
-IMPORTANT: Before deleting a project, you should consider exporting its data views and internal database. 
-+ 
-* *_Edit_* to display the *_Edit Project_* dialog and change the project name, template, and/ or database type.
-
-* *_Configuration Index_* (settings icon) to configure the database search index. The icon appears only for the search configuration (if any) available for the connected database. 
-
-* *_Switch DB_* to switch the project to a different database of the current type.
-
-* *_Clone_* to create a duplicate of the project, optionally including its *_Grove_* notebooks. 
+. In a Project tile or list item, click its Settings or Actions icon to display the dropdown menu, and select *_Edit_*.
 
 +
-image::/v3/01_03_11_CloneProject.png[,320,260,role=text-left]
+image::/v3/01_03_12_EditProject.png[,320,320,role=text-left]
++
+
+. In the *_Edit Project_* dialog change the project name, template, and/ or database type, and click *_Confirm_*.
+
++
+image::/v3/01_03_12a_EditProjectDialog.png[,320,420,role=text-left]
+
+
+=== Clone a Project 
+
+* In a Project tile or list item, click its Settings or Actions icon to display the dropdown menu, and select *_Clone_*.
+
++
+A duplicate of the project is created, optionally including its *_Grove_* notebooks.
 +
 
 +
-NOTE: In a *Kineviz* online project, views are cloned if the *_Copy when cloning project_* checkbox is selected in the view's *_About_* dialog. In *Kineviz Desktop*, all project files and views are cloned by default. 
+NOTE: In a *Kineviz* Server project, views are cloned if the *_Copy when cloning project_* checkbox is selected in the view's *_About_* dialog. In *Kineviz Desktop*, all project files and views are cloned by default. 
 
-
-=== Enable and Configure Project sharing
+=== Share a Project
 
 You can share a project with other *Kineviz* users. To collaborate with those who don't have a *Kineviz* account, share individual views securely via iframe.
 
-In a Project tile or list item, click *_Enable / Disable Sharing_* (Lock icon) to show the additional icons for sharing the entire project or one of its views with another user:
+. In a Project tile or list item, click its Settings or Actions icon to display the dropdown menu, and select *_Enable Sharing_*.
+. Now select *_Share Project_*
 
-* *_UI Configuration_*, to configure user interface elements the sharing user sees, for example, to limit features to only those needed for collaboration or reports.
++
+image::/v3/01_03_13_ShareProject.png[,320,180,role=text-left]
++
 
-* *_Invite_*, to send an email invitation to share the entire project.
-  
-* *_Share_*, to open the shared project, or select one of its views and generate iframe code that you can include in an email, report, proposal, or other communication. 
+. Select a sharing user from the dropdown menu, and click *_Invite_*.
+
+=== Open Views to Share
+
+You can select project views and generate iframe code that you can share in an email, report, proposal, or other communication.
+
+. In a Project tile or list item, click its Settings or Actions icon to display the dropdown menu, and select *_Enable Sharing_*.
+. Click *_Open Views_* 
+
+. In the list of project views, either click
+
++
+* *_Open view_* to open the view in a separate browser window.
+* *_Generate iframe code_*, which is copied to the clipboard for sharing with an external user. 
+
++
+image::/v3/01_03_14_OpenViews.png[,420,320,role=text-left]
 
 === Configure a Sandbox Project
 
-Configuring a project as a sandbox lets you set up a working environment for specific  workflows that can then be used as a starting point for similar follow-on projects. 
+A cloned sandbox project is not itself a sandbox. However, as you work in the project, you could find it worthwhile to configure it as a new sandbox. Configuring a project as a sandbox lets you set up a working environment for specific  workflows that can then be used as a starting point for similar follow-on projects. 
 
-image::/v3/01_03_13_SandboxIntro.png[,540,420,role=text-left]
-
-A sandbox project includes full *Kineviz* functionality, including database connection, project styling template, and any saved views, *Grove* notebooks, and *Agent* setup. Once configured, the project appears on the *_Projects_* home page in the *_Create from Sandbox_* section. 
-
-Clicking on a sandbox project clones and opens it. The cloned project then appears on the *_Projects_* home page in the *_My Projects_* and *_Recent Projects_* sections. 
-
-NOTE: A cloned sandbox project is not itself a sandbox. However, as you work in the project, you could find it worthwhile to configure it as a new sandbox.  
+image::/v3/01_03_15_SandboxIntro.png[,540,420,role=text-left]
 
 You can either:
 
@@ -213,7 +257,7 @@ You can either:
 . Open the *_Project_* panel and *_Settings_* subpanel, and click *_Advanced Settings_*.
 
 +
-image::/v3/01_03_14_SandboxAdvancedSettings.png[,320,260,role=text-left]
+image::/v3/01_03_16_SandboxAdvancedSettings.png[,420,320,role=text-left]
 +
 
 . Scroll down to see Sandbox configuration options at the bottom of the panel.
@@ -222,7 +266,7 @@ image::/v3/01_03_14_SandboxAdvancedSettings.png[,320,260,role=text-left]
 . Set sandbox configuration options:
 
 +
-image::/v3/01_03_15_SandboxConfigOptions.png[,320,260,role=text-left]
+image::/v3/01_03_17_SandboxConfigOptions.png[,420,260,role=text-left]
 +
 
 +
@@ -237,12 +281,11 @@ image::/v3/01_03_15_SandboxConfigOptions.png[,320,260,role=text-left]
 * *_Open View on Load_*. Select one of the project's saved views from the dropdown menu.
 * *_Tags_*. Enter optional tags that indicate intended sandbox usage (e.g. Beginner, Recommended, etc.) 
 * *_Card Preview Image_*. Click *_Upload Image_* or *_Remove Image_* to control the preview image (such as a screenshot of one of the project views) that appears on the project tile.
-* *_Kineviz Desktop_* only:
-** *_Corner Tag_*. Enter a user-defined tag that will appear at the upper right of the project tile to further specify intended sandbox usage (for example *_Agent Tools_*, *_Native Tools_*).
+* *_Corner Tag_*. Enter a user-defined tag that will appear at the upper right of the project tile to further specify intended sandbox usage (for example *_Agent Tools_*, *_Native Tools_*).
 +
 
 +
-image::/v3/01_03_16_SandboxDesktopOptions.png[,320,260,role=text-left]
+image::/v3/01_03_18_SandboxDesktopOptions.png[,420,420,role=text-left]
 +
 
 +
