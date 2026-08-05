@@ -1,8 +1,437 @@
 = Frequently Asked Questions (FAQ)
 
+== The Kineviz Platform
+
+.*What is Kineviz?*
+[%collapsible]
+====
+Kineviz (formerly GraphXR) is a platform for graph data visualization and analytics that turns connected data — people, accounts, transactions, events — into interactive visual network graphs you can explore, analyze, and share. Entities are displayed as nodes and relationships as edges, making hidden connections visible for faster decision-making. Kineviz powers insight through intuitive visual analytics and AI-assisted discovery: you can pull data from graph or relational databases, CSV or JSON files, and third-party APIs, then visualize, analyze, and collaborate in an immersive browser environment (Kineviz Online) or as a downloadable desktop app (Kineviz Desktop).
+====
+
+.*How does graph visualization deliver actionable results?*
+[%collapsible]
+====
+For relationship-centric analysis, graph visualization outperforms general BI dashboards because it puts connections at the center of exploration and analysis. For example, a law enforcement agency used Kineviz network visualization to map and deplatform an entire extremist recruitment network on social media simultaneously, instead of playing whack-a-mole with individual accounts. One betting intelligence manager reported doing "in 3 minutes what used to take us 3 days."
+====
+
+.*What's the advantage of 3D graph visualization for complex relationship data?*
+[%collapsible]
+====
+Dense networks with intricate relationships can become unreadable in flat layouts; Kineviz's immersive 3D environment supports intuitive navigation of those relationships.
+====
+
+.*What is community detection and centrality in graph analysis?*
+[%collapsible]
+====
+Community detection groups densely connected nodes to reveal clusters, while centrality identifies the most influential nodes in a network. Kineviz (formerly GraphXR) includes built-in algorithms for community detection, centrality, and shortest path. Analysts combine them with geospatial, time series, and social network views to discover hidden connections in investigations like anti-money laundering, OSINT, and collusion cases.
+====
+
+.*How do I visualize a knowledge graph?*
+[%collapsible]
+====
+Either connect a tool like Kineviz (formerly GraphXR) to your graph database or load  files directly. Kineviz connects to graph and relational databases, ingests CSV, JSON, and third-party API data, and fuses sources into one view. From there you explore  the knowledge graph interactively.
+====
+
+.*What is a good visualization tool for Neo4j or other graph database?*
+[%collapsible]
+====
+Kineviz (formerly GraphXR) connects directly to Neo4j and other graph databases, letting you query, visualize, explore, and analyze your graph. It provides graph analytics like path finding, centrality, and community detection, plus geospatial, time series, and social network views. You can fine-tune graphs on the fly with icons, portrait images, custom colors, and layouts.
+====
+
+.*Kineviz vs Neo4j Bloom: what's the difference?*
+[%collapsible]
+====
+Neo4j *Bloom* displays the contents of a Neo4j database. Kineviz (formerly GraphXR) treats visualization as the starting point: you can analyze, transform, fuse, model, and author graphs, and do it across many data stores rather than a single database. Kineviz adds AI-assisted entity extraction, built-in analytics, geospatial and time series views, and enterprise deployment options including on-premises and air-gapped environments.
+====
+
+
+=== Kineviz Agent
+
+.*What is Kineviz Agent?*
+[%collapsible]
+====
+Kineviz Agent is an AI agent for data analysis built for people who can't take AI at its word. Every observation it makes stays connected to the source data behind it, so analysts can check the work themselves. It performs conversational graph analysis and builds custom applications — dashboards, workflows, and reports — inside Kineviz. The Community edition is free, with a Pro upgrade for power users.
+====
+
+.*How does AI help with network analysis and investigation?*
+[%collapsible]
+====
+The Kineviz approach to AI is "human-centered intelligence". The platform is designed so that AI agents and visual analytics work together to surface relationships and insights. We believe that human questions should shape data models and AI tools should augment, but not replace human judgment.
+====
+
+.*How can I trust the findings of an AI data analysis agent?*
+[%collapsible]
+====
+*Kineviz Agent* treats each observation as a claim about your data, rather than a statement of fact, and delivers it with the supporting records — select a finding and see exactly which nodes, edges, and fields it drew from. Analysts can review the evidence, not just the summary, and can confirm, challenge, or throw out any finding.
+====
+
+.*How do you prevent AI hallucinations in investigative data analysis?*
+[%collapsible]
+====
+The most reliable safeguard is source traceability — requiring every AI observation to link back to real records. *Kineviz Agent* is designed around this: every observation stays connected to the original data behind it, every step it takes is recorded, and every conclusion is traceable. Instead of trusting a summary, analysts inspect the source data each finding drew from, and every conclusion presents its own evidence.
+====
+
+.*What can an AI agent do for graph and network analysis?*
+[%collapsible]
+====
+An AI agent can run analyses you describe in plain language. With *Kineviz Agent*, you ask for what you want to see — for example, "show me every account within two hops of the flagged wallet, sized by transaction volume and colored by transaction type" — and it runs the analysis, builds the model, and draws the visualization in your graph, handling filtering, community detection, and time-series charts.
+====
+
+.*Can an AI agent build dashboards and reports without engineering help?*
+[%collapsible]
+====
+Yes. *Kineviz Agent* builds applications inside *Kineviz* through plain-language requests — custom interfaces, dashboards, workflows, and reports shaped to your team's investigation. For example, you can ask it to "build a triage dashboard for new alerts, with a one-click case report" and get a ready-to-use tool for your analysts.
+====
+
+.*AI-assisted analysis vs manual investigation: do analysts stay in control?*
+[%collapsible]
+====
+With Kineviz Agent, yes — the agent accelerates the work while analysts keep final judgment. It rapidly finds connections, traces paths, and surfacesg anomalies, but every step is visible and every finding comes with its supporting evidence. Analysts confirm, challenge, or discard each observation with the source data in front of them as required by investigative standards.
+====
+
+
+=== Kineviz Online or Desktop
+
+.*Is Kineviz browser-based or a desktop application?*
+[%collapsible]
+====
+Both. *Kineviz Online* (formerly *GraphXR*) runs in the browser, while *Kineviz Desktop* brings the same workspace to your computer with an embedded graph database and a built-in AI agent. Teams can launch *Kineviz Online* directly from kineviz.com or download *Kineviz Desktop*, choosing the deployment that best fits their data and security requirements.
+====
+
+.*What is Kineviz Desktop?*
+[%collapsible]
+====
+Kineviz Desktop is a workspace for connected data analysis that runs on your own computer. It is available as a free download from kineviz.com. It ships with an embedded (KoreDB) graph database and includes Kineviz Agent, an AI agent built for investigative work, and provides in-app sandboxes and tutorials covering first steps to advanced analytics. Drop in a spreadsheet or folder and it becomes a graph in minutes. If you already run BigQuery Graph, Neo4j, or another graph source, Kineviz Desktop connects directly so you can analyze the data in place. 
+====
+
+.*Can I use an AI agent to analyze my data locally on my computer?*
+[%collapsible]
+====
+Yes — your data and your analysis workspace stay on your computer. *Kineviz Desktop* includes Kineviz Agent, an AI agent built for investigative work on connected data. Ask it to find connections, trace paths, or surface what's unusual in your graph. You stay in control: every step it takes is visible, and nothing goes into a report that you can't verify. The AI model itself runs as a cloud service. Organizations that need the model on their own infrastructure can host it locally with *Kineviz Enterprise*.  
+====
+
+.*Does Kineviz Desktop connect to BigQuery or Neo4j?*
+[%collapsible]
+====
+Yes. If you're already running Google BigQuery Graph, Spanner Graph, PuppyGraph, UltipaGraph, Neo4j, or another graph or big data store, both *Kineviz Online* and *Desktop* connect directly and let you analyze the data in place — no export or migration needed. For data that isn't in a graph database yet, Kineviz turns relational data, spreadsheets, CSVs, and folders of files into graphs in minutes. Ask the agent, or model  using visual transforms. The embedded KoreDB database keeps the result local.
+====
+
+.*For Kineviz Online do the hardware and software requirements apply only to the server or also to clients?*
+[%collapsible]
+====
+The hardware and software requirements are for clients.
+====
+
+
+=== Kineviz Enterprise
+
+.*What is an enterprise graph analytics platform?*
+[%collapsible]
+====
+An enterprise graph analytics platform lets analyst teams explore connected data under  security controls that large organizations require. *Kineviz Enterprise* is graph analysis deployed on your terms: self-hosted, with SSO, role-based and row-level access controls, and the audit logging needed by investigation teams in financial services, forensics, and government.
+====
+
+.*Can I run graph visualization software on-premises or self-hosted?*
+[%collapsible]
+====
+Yes. *Kineviz Enterprise* runs inside your own infrastructure, on-prem or in your private cloud, so your data stays behind your firewall, under your policies, on hardware you control. The self-hosted deployment model is built for organizations whose data can't leave the building, including regulated industries and government agencies.
+====
+
+.*Does Kineviz Enterprise work in an air-gapped environment?*
+[%collapsible]
+====
+Yes. *Kineviz Enterprise* supports fully air-gapped deployment - no outside connectivity at all. It is designed for regulated, classified, and sovereign environments: you choose where your data lives and where it's processed — a specific region, a specific country, or an isolated network. Agencies and regulated industries with residency requirements can run the same graph analysis capabilities inside  boundaries they define.
+====
+
+.*How does Kineviz Enterprise handle data sovereignty requirements?*
+[%collapsible]
+====
+Kineviz Enterprise deploys within the boundaries your organization defines, giving you control over where data lives and where it's processed. Options range from deployment in a specific region or country to a fully air-gapped network with no external connectivity. Combined with self-hosting behind your firewall, this addresses residency and sovereignty requirements for government agencies and regulated industries without giving up graph analysis capability.
+====
+
+.*What access controls does an enterprise graph analysis tool need for investigations?*
+[%collapsible]
+====
+Investigation platforms need role-based and row-level controls plus a full audit trail, and *Kineviz Enterprise* provides all three. You can define roles with specific privileges — admin, analyst, read-only reviewer, or roles shaped to your workflow — and restrict visibility down to individual rows, so two analysts in the same project each see only records they're authorized to see. Audit logging records who accessed what, when, and what they did.
+====
+
+.*Does Kineviz Enterprise support single sign-on (SSO) with SAML or OIDC?*
+[%collapsible]
+====
+Yes. *Kineviz* connects to your identity provider over SAML or OIDC, so your existing authentication policies — MFA, session rules, and instant offboarding — apply automatically. Administrators also get a central console for managing users, permissions, deployments, and policies, giving your organization the visibility and levers to run *Kineviz* as your security team requires.
+====
+
+.*How is Kineviz Enterprise priced?*
+[%collapsible]
+====
+Kineviz keeps enterprise pricing simple, and you'll hear it on the first call. There's no drawn-out discovery process before you get a number. If your evaluation involves a security questionnaire, the Enterprise offering covers self-hosted and air-gapped deployment, SSO over SAML/OIDC, role-based and row-level access controls, audit logging, and admin controls, so procurement and security review can move quickly.
+====
+
+
+=== Kineviz Explorer and Google Cloud Platform
+
+.*What is Kineviz (GraphXR) Explorer?*
+[%collapsible]
+====
+*Kineviz Explorer* is an offering through the Google Cloud Platform marketplace to connect Kineviz either to a Google Big Query data warehouse or Google Spanner relational database. 
+====
+
+==== Kineviz with Google BigQuery
+
+.*What is Kineviz (GraphXR) Explorer for BigQuery?*
+[%collapsible]
+====
+*Kineviz Explorer* for Google *BigQuery* is a new offering that, together with *BigQuery AI Functions* and *BigQuery Graph*, gives enterprises a streamlined way to turn unstructured data — PDFs, emails, regulatory filings — into explorable, visual knowledge graphs without complex ETL pipelines, separate graph databases, or the need to replicate data.  
+====
+
+.*How do I visualize Google BigQuery data as a graph?*
+[%collapsible]
+====
+You can visualize BigQuery data as an interactive graph using *Kineviz Explorer* for BigQuery, a browser-based tool that connects to your Google Cloud database.
+====
+
+.*What is BigQuery Graph?*
+[%collapsible]
+====
+BigQuery Graph is Google Cloud's capability for running graph queries over data already stored in BigQuery. It lets you analyze relationships without moving data to a separate graph database. Kineviz serves as the visual analysis layer for BigQuery Graph: its GraphXR Explorer for BigQuery turns query results into interactive visual graphs, letting analysts explore entities and relationships in datasets directly from Google Cloud.
+====
+
+.*Do I need a separate graph database to do graph analysis on BigQuery data?*
+[%collapsible]
+====
+No. With BigQuery Graph, your data stays in BigQuery, and *Kineviz Explorer* for BigQuery simply provides the exploration, analysis, and visualization layer. That means you can go from a Google Cloud project to an interactive graph view of your dataset without standing up another graph database.
+====
+
+.*How do I get started exploring a BigQuery dataset in Kineviz?*
+[%collapsible]
+====
+Start by launching *Kineviz Explorer for BigQuery* from the Kineviz BigQuery page. The process is: start a Google Cloud project, connect it to *Kineviz*, then explore your dataset interactively as a graph. There's no heavyweight installation required to begin visualizing your BigQuery data.
+====
+
+.*What are common use cases for graph analytics on BigQuery data?*
+[%collapsible]
+====
+Graph analytics on warehouse data is most valuable where relationships matter as much as rows: fraud detection, cybersecurity, supply chain, customer 360/KYC, and healthcare are among the industries Kineviz highlights for its Google Cloud visual analytics integrations. By visualizing BigQuery data as connected entities in Kineviz, analysts can trace relationships across records that would be hard to spot in tabular query results alone.
+====
+
+==== Kineviz with Google Spanner Graph
+
+.*What is Kineviz Explorer for Spanner Graph?*
+[%collapsible]
+====
+*Kineviz Explorer* for Spanner Graph turns massive Spanner tables into clear, connected stories. Built through a strategic partnership between Kineviz and Google Cloud, it lets you query petabyte-scale Spanner Graph data and visualize it instantly, trace entities, relationships, and transactions across billions of rows.
+====
+
+.*How does Kineviz work with Google Spanner Graph?*
+[%collapsible]
+====
+*Kineviz Explorer* can connect directly with Spanner Graph, combining Spanner Graph's scalability and reliability with Kineviz's interactive visualization and advanced analytics. Published workflows include financial fraud detection at scale — tracing a mule ring from a single shared-PII query with zero ETL — and visual telco analysis for communication service providers.
+====
+
+.*What is Spanner Graph used for?*
+[%collapsible]
+====
+Spanner Graph is ideal for fraud detection, financial services, network optimization, and knowledge management — domains where hidden patterns live in relationships between entities. Kineviz queries and built-in analytics help to unlock deeper insights from large-scale graph data.
+====
+
+.*Can Spanner Graph handle petabyte-scale graph data?*
+[%collapsible]
+====
+Yes. Spanner Graph's distributed architecture ensures top-speed data processing at scale, and Kineviz lets you query petabyte-scale Spanner Graph data and visualize it instantly. Analysts can trace entities, relationships, and transactions across billions of rows, so scale no longer forces a trade-off between the size of the graph and the ability to explore it interactively.
+====
+
+.*Can I share Spanner Graph analysis results with non-technical stakeholders?*
+[%collapsible]
+====
+Yes. Kineviz lets you share interactive storylines that leadership can act on, turning Spanner Graph query results into connected visual narratives rather than raw output. That means the same environment analysts use to trace entities and transactions across billions of rows also produces shareable, interactive views suited to decision-makers.
+====
+
+== Kineviz Uses
+
+
+.*Who uses Kineviz for investigations?*
+[%collapsible]
+====
+Kineviz is used by law enforcement, financial institutions, and regulators across counter-terrorism, fraud, supply chain, customer 360/KYC, cybersecurity, and game analytics. Published case studies include a multinational law enforcement agency deplatforming an extremist network on social media, the Dutch police visualizing OSINT geospatial data on drug production, real-time threat detection across 40 million daily gaming events, and a horse racing regulator fighting collusion.
+====  
+
+.*What data sources does Kineviz connect to?*
+[%collapsible]
+====
+Kineviz provides native integrations with Neo4j, Google BigQuery, Spanner, and more. It provides no-code graph exploration built for analysts, so data teams can investigate connected data daily without writing queries — and it's trusted in regulated industries, from global banks to government agencies investigating financial crime.
+====  
+
+
+=== Kineviz for Law Enforcement & Cybersecurity
+
+.*How does link analysis software help law enforcement investigations?*
+[%collapsible]
+====
+Link analysis software helps law enforcement by turning information residing in both structured and unstructured documents into a connected view of how suspects, assets, and events relate, exposing networks that isolated records hide. With Kineviz, investigators retrieve and structure digital footprints, social and professional connections, commercial interests, and assets into a navigable reasoning graph—accelerating investigative decision-making with improved confidence.
+====
+
+.*What tools do OSINT investigators use for link analysis?*
+[%collapsible]
+====
+OSINT investigators use graph visualization platforms to map relationships between people, accounts, and events gleaned from open source information. As such, Kineviz equips analysts to rapidly gather, fuse, and interpret both OSINT and proprietary data — its *SeekerXR* offering reaches more than 80 OSINT and proprietary sources — combining closed-web data, open sources, and AI-enhanced document analysis into a unified graph of relationships investigators can explore visually
+====
+
+.*How is graph visualization used in cybersecurity and threat intelligence?*
+[%collapsible]
+====
+Graph visualization maps relationships between threat signals so security analysts can see hidden networks and emerging risks, instead of scanning isolated alerts. Kineviz turns fragmented signals into a connected intelligence layer AI can reason over, letting cybersecurity teams explore how entities connect and surface emerging threats with evidence-backed insight.
+====
+
+.*Can network visualization be used to investigate activity on social media?*
+[%collapsible]
+====
+Yes— a published Kineviz case study describes using network visualization to deplatform an extremist group from social media, demonstrating how mapping relationships across accounts supports concrete enforcement outcomes.
+====
+
+.*Can law enforcement analyze geospatial and time-series data together in investigations?*
+[%collapsible]
+====
+Yes—location and timing are often the connective tissue of a case, and folding them into an analysis of relationships reveals patterns neither shows alone. A published Kineviez case study shows how investigators interpreted where and when events occurring within a connected graph.
+====
+
+.*How do investigators combine OSINT with proprietary or closed-web data?*
+[%collapsible]
+====
+Investigators combine OSINT and proprietary data by fusing them into a single relationship graph where entities from every source connect. Kineviz unifies closed-web data, OSINT sources (SeekerXR alone covers 80+ OSINT and proprietary sources), and AI-enhanced document analysis into one graph; AI handles extracting and connecting signals across sources, while investigators visually trace relationships, validate findings, and refine hypotheses in real time.
+====
+
+.*What makes an investigation defensible and transparent when using AI tools?*
+[%collapsible]
+====
+A defensible investigation requires every conclusion to be traceable to evidence. To achieve this, Kineviz keeps humans in the loop: AI extracts and connects signals and their underlying sources and presents the results as a network graph. Investigators then visually trace each relationship, validate findings against sources, and refine hypotheses themselves. The graph enables faster threat detection along with transparent, defensible, and auditable investigations.
+====
+
+
+=== Kineviz for Anti-Fraud
+
+.*How does graph analytics help detect fraud and collusion?*
+[%collapsible]
+====
+Graph analytics spotlights fraud by revealing relationship patterns such as shared accounts, coordinated behavior, and money flows that row-and-column BI tools miss.  With Kineviz this is a visualization-first approach: analysts explore relationships in multi-dimensional graph views, use interactive filtering to remove noise, and trace AI-derived insights back to source data. When a case needs outside context, Kineviz *SeekerXR* brings in open-source intelligence from 80+ OSINT and proprietary sources.
+
+====
+
+.*Why use graph data for fraud detection instead of traditional tools?*
+[%collapsible]
+====
+Graph databases store data as entities and relationships, so multi-hop connections that reveal fraud rings stay intact instead of being flattened into rows and joins. Kineviz provides visualization and analytics in a navigable system that both AI and human analysts can reason over, making it faster to uncover hidden patterns and validate findings. When an online gaming platform needed to find fraudulent activity lurking in its stream of 40 million events per day, standard BI tools were overwhelmed. Using Kineviz with real-time big data analytics, evolving collusion and fraud threats were detected early enough to act before losses mounted.
+====
+
+.*Can AI be used for fraud detection, and how do you trust its output?*
+[%collapsible]
+====
+Yes — and the right role for AI is amplifying investigators, not replacing them: it accelerates fraud detection, but trustworthy results require transparency, not black-box scores. The Kineviz AI Agent is built for law enforcement, fraud investigation, intelligence, and compliance, where findings must meet an evidentiary standard. The Agent can quickly build a network graph that augments the analyst's field of view, recording every step it takes and keeping a complete trail from each conclusion back to the supporting source data. With this information, an analyst can highlight results that are explainable, auditable, and backed by real evidence.
+====
+
+.*What does a fraud analyst's investigation workflow look like in a graph tool?*
+[%collapsible]
+====
+A graph-based fraud workflow is iterative: connect data, visualize relationships, filter noise, test hypotheses, and document evidence. With Kineviz , analysts combine intuitive interfaces with multi-dimensional graph visualization and interactive filtering, accelerating iteration from initial signals to decision-ready findings.
+====
+
+.*Do fraud analysts need to know a query language to use graph visualization software?*
+[%collapsible]
+====
+No. Kineviz includes no-code, point-and-click Cypher queries. Combined with seamless data integration and visual exploration, fraud teams can explore relationships directly, without needing to translate every investigative question into code.
+====
+
+=== Kineviz for Business Intelligence
+
+.*What is graph-powered business intelligence?*
+[%collapsible]
+====
+Graph-powered business intelligence analyzes data as a network of connected entities rather than static charts and tables, revealing the relationships behind the metrics. Kineviz presents your data as a connected graph that AI can reason over, so you see not just static metrics, but how entities, signals, and dependencies relate--surfacing opportunities and emerging risks.
+====
+
+.*How does graph analytics differ from traditional BI dashboards?*
+[%collapsible]
+====
+Traditional BI aggregates data into dashboards that show what happened; graph analytics preserves the relationships between data points so you can explore why. Kineviz describes it as *_dashboard meets mind map_*: structured metrics combined with a connected data model you can navigate at the forest, tree, and leaf level, instead of static side-by-side charts.
+====
+
+.*Can BI tools show causation instead of just correlation?*
+[%collapsible]
+====
+Traditional BI only takes you as far as correlation; identifying cause and effect requires analyzing relationships between entities. Kineviz addresses this with AI-assisted, graph-powered analysis. By preserving structure, it reveals clusters, paths, and causal patterns that disappear in isolated charts, helping analysts drill down from correlated metrics to the mechanisms behind them.
+====
+
+.*How do you extract value from a data lake?*
+[%collapsible]
+====
+You extract value from a data lake by making its contents easy to connect, explore, and visualize. Kineviz helps _reclaim the data lake_ by turning existing data into a connected, explorable graph, with visual transforms for cleaning and modeling data on the fly, so analysts can test hypotheses quickly without lengthy data engineering cycles.
+====
+
+.*What role does AI play in modern business intelligence?*
+[%collapsible]
+====
+AI for BI is making analysts dramatically more effective by moving analysis from static reporting to relationship-driven reasoning: finding patterns, testing hypotheses, and explaining outcomes. Kineviz turns charts and tables into a connected graph AI can reason over, within a shared, explainable reasoning environment where analysts can explore context, validate assumptions, and refine insights.
+====
+
+.*How can analysts detect black swan events or hidden risks in business data?*
+[%collapsible]
+====
+Hidden risks and _black swans_ usually emerge from interdependencies between entities, which static dashboards tend to flatten away. Kineviz helps analysts spotlight risks by connecting entities, signals, and dependencies into a navigable graph. This lets teams monitor interdependencies across many levels of detail and detect emerging risk patterns in the relationships behind their metrics before they surface in headline numbers.
+====
+
+
+=== Kineviz for Healthcare and Life Sciences
+
+.*Is Kineviz used in life sciences and healthcare?*
+[%collapsible]
+====
+Yes. Kineviz customers in life sciences and healthcare enterprise include Thermo Fisher, Cepheid, Octave Bioscience, Rally Health, and the National Institute of Allergy and Infectious Diseases and National Institutes of Health. These organizations use Kineviz's visual graph analytics to connect and explore complex biomedical and research information.
+====
+
+.*What is a knowledge graph in healthcare and life sciences?*
+[%collapsible]
+====
+A healthcare knowledge graph connects entities like diseases, treatments, markers, and publications into a network of relationships that researchers and AI can reason over. Kineviz can build unified live knowledge graphs that extract and connect the key information available in these sources.  
+====
+
+.*How are knowledge graphs used in biomedical research and discovery?*
+[%collapsible]
+====
+Knowledge graphs accelerate biomedical discovery by revealing relationships across literature, experiments, and observations which would remain hidden in isolated sources of information. With Kineviz, researchers can track novel markers in a multi-dimensional graph view that surfaces emerging patterns, trace each marker back to its source publications. This provides research teams with transparent, relationship-driven exploration and analysis in a collaborative exploratory workspace.
+====
+
+.*What is patient journey mapping and how is it visualized?*
+[%collapsible]
+====
+Patient journey mapping visualizes a patient's experiences and clinical events over time so teams can understand progression, context, and outcomes. Kineviz supports mapping of patient journeys, which can include complex data from clinical trials, advanced 3D imaging, and other healthcare innovations.
+====
+
+.*How can medical imaging data like MRI scans be analyzed as a graph?*
+[%collapsible]
+====
+Graph analysis links imaging findings to patient context and derived features, so researchers can study how changes relate over time instead of just comparing scans. Kineviz can expose the temporal and topological attributes of progressive diseases by connecting MRI findings into a navigable graph, helping researchers resolve ambiguities and communicate evidence-backed insights to clinicians and patients.
+====
+
+.*How does AI help build knowledge graphs from medical literature?*
+[%collapsible]
+====
+AI automates the extraction of entities and relationships from peer-reviewed publications, turning unstructured text into a structured, connected information. In Kineviz, AI-extracted relationships join experimental data and observations in a unified knowledge graph that research teams can navigate collaboratively. Patterns hidden in isolated tables are revealed while keeping every finding traceable to its source.
+====
+
+.*What are the benefits of graph visualization for clinical trial data?*
+[%collapsible]
+====
+Graph visualization helps clinical teams see relationships across trial data relating to patients, timestamps, findings, and derived features. When applied to complex clinical trial and imaging data, this can expose temporal patterns in disease progression and make results easier to explore, validate, and communicate clearly across teams, clinicians, and patients.
+====
+
+.*How do research teams collaborate on a shared biomedical knowledge base?*
+[%collapsible]
+====
+Effective collaboration requires a shared, navigable structure where information links back to its evidence. In Kineviz this is presented as a collaborative knowledge graph: researchers explore connected literature, experimental data, and observations together, trace novel markers to their sources, and communicate evidence-based insights clearly across teams.
+====
+
 == Installation and Administration
 
-.*Do the hardware and software requirements apply only to the server or also to clients?*
+.*Do Kineviz Online hardware and software requirements apply only to the server or also to clients?*
 [%collapsible]
 ====
 The hardware and software requirements are for clients.
@@ -48,6 +477,12 @@ Many kinds of files can be imported simply by drag and drop:
 .CSV, .JSON. Maltego .mgtx, Google Earth KML (for geolocated data), and the Kineviz  .graphxr and .graphxrsnapshots files. 
 
 You can query for data in the internal KoreDB database, or a connected database using the no-code Query / Search bar. In the Query panel, you can enter Cypher (e.g. for Neo4j), SQL (MySQL or MSSQL), or Gremlin queries. And you can load .CSV and .JSON files with or without querying and mapping the contents.
+====
+
+.*How do I turn a CSV file into a graph visualization?*
+[%collapsible]
+====
+In Kineviz (formerly GraphXR) you can: hand the file to Kineviz Agent and let it build the graph, map fields to nodes and edges yourself in the Kineviz *_Mapping Editor_*, or model  the graph step by step with visual transforms (extract, shortcut, link, merge). *Kineviz* fuses and transforms data from a wide range of sources, including CSV and JSON files, relational and graph databases, and third-party APIs, so you can merge everything into one focused, explorable visualization.
 ====
  
 .*Can I use Kineviz to connect to a MySQL Workbench on a local machine?*
@@ -107,7 +542,7 @@ Yes, if permission to CREATE or DELETE data have been granted on the external DB
 .*Can an ETL job be run in Kineviz?*
 [%collapsible]
 ====
-ETL (i.e. Extract from multiple data sources, Transform according to business rules, and Load to Kineviz) can be set up and run in the *Grove* Extension, a JavaScript/Observable notebook application currently in beta release.
+ETL (i.e. Extract from multiple data sources, Transform according to business rules, and Load to Kineviz) can be set up and run in the *Grove* Extension, a JavaScript/Observable notebook application.
 ====
 
 .*Where do the relationships listed in the _Expand_ function come from?*
@@ -139,13 +574,13 @@ Yes. Import the CSV data into Kineviz as nodes. Then you can use the *_Add Edge_
 .*Why do new categories and relationships persist in the Project panel after all their nodes and edges are deleted?*
 [%collapsible]
 ====
-When you create new categories or relationships they are added to the existing Kineviz project schema, which persists (even if there are no data associated with it) until you exit the project and reload it. If your project was connected to a Neo4j database AND you wrote the new data types to it, the new entities will persist. Otherwise any "`orphan`" categories or relationships will be deleted.
+When you create new categories or relationships they are added to the existing Kineviz project schema, which persists (even if there are no data associated with it) until you exit the project and reload it. To clear any unused entities, go to *_Settings > Advanced Settings_*, scroll to the bottom and click *_Clean Unused Config_*.
 ====
 
-.*Can I save the new relationship generated by the Shortcut function onto a Neo4j database?*
+.*Can I save the new relationship generated by the Shortcut function to a graph database?*
 [%collapsible]
 ====
-Yes, you can save new relationships (and categories) to Neo4j, if the database is set up to allow it. Neo4j validation can be set up to reject data of types that aren't already defined. In that case, you'd need to change constraints on the DB side. A new relationship and its edges are simply added to the extensible graph data. Data collision wouldn't happen because a new relationship (or category) has to have a unique name--one not already in use.
+Yes, you can save new relationships (and categories) to a connected graph database (such as Neo4j), if the database is set up to allow it. Database validation can be set up to reject data of types that aren't already defined. In that case, you must relax the constraints on the DB side. A new relationship and its edges are simply added to the extensible graph data. Data collision doesn't happen because in *Kineviz*, a new relationship (or category) must have a unique name--one not already in use.
 ====
 
 == Graph Data Rendering and Visualization
@@ -153,19 +588,19 @@ Yes, you can save new relationships (and categories) to Neo4j, if the database i
 .*Is the graph visualization rendered in the server or the browser?*
 [%collapsible]
 ====
-Currently, it's 100% in the browser.
+For *Kineviz Online*, it's 100% in the browser. For *Kineviz Desktop*, it's within the downloaded application.
 ====
 
 .*How are edge lengths computed in Kineviz?*
 [%collapsible]
 ====
-Edge length is computed using https://github.com/vasturiano/d3-force-3d[force layout]. We don't consider individual edge strength, so if a group of nodes has many connections between them, they will be relatively closer to each other.
+Edge length is computed using https://github.com/vasturiano/d3-force-3d[force layout]. If a group of nodes has many connections between them, they will be relatively closer to each other.
 ====
 
 .*In the _Force_ layout tab, what does _Link Strength_, _Link Distance_, and_Gravity_ mean? How are they used?*
 [%collapsible]
 ====
-*_Link Strength_*, *_Link Distance_*, and *_Gravity_* are parameters used in the  force-directed graph drawing algorithm, which is used to render the force-directed layout. This class of algorithms assign specific physical forces to the edges and nodes of a graph, such that edges are of similar length, connected nodes are attracted to one another, as few crossed edges are created as possible, and the distribution of nodes in 3D space is reasonably symmetric. Adjusting the parameters lets you change how the force layout is calculated: how spread out the nodes are, how long the edges are, and how compact the display becomes.
+*_Link Strength_*, *_Link Distance_*, and *_Gravity_* are parameters used in the  force-directed graph drawing algorithm used to render the force-directed layout. This class of algorithms assign specific physical forces to the edges and nodes of a graph, such that edges are of similar length, connected nodes are attracted to one another, as few crossed edges are created as possible, and the distribution of nodes in 3D space is reasonably symmetric. Adjusting the parameters lets you change how the force layout is calculated: how spread out the nodes are, how long the edges are, and how compact the display becomes.
 ====
 
 .*How are URL images applied to nodes when the Show Avatar setting is enabled?*
@@ -180,16 +615,16 @@ An attempt to load a URL image will occur when there is a property key of __phot
 There's not an internal glow or light source option. However, you can create that effect by choosing a light color for the relationship and showing the edge's arrowheads. Select the color using the list in the legend, and in *_Project>Settings_* make sure the *_Hide Arrow_* checkbox is not selected.
 ====
 
-.*What is _Ego Depth_ in the Geometric layout options?*
+.*What is _Ego Depth_ in the _Geometric_ layout options?*
 [%collapsible]
 ====
-The *_Ego Depth_* layout lets you select a node (or nodes) as centers and arrange its neighbors in either ring or tree patterns according to their separation from the center. You set a *_Depth_* value (for example, 3) to disregard any node more than that many edges away from the center node.
+The *_Ego Depth_* layout lets you select a node (or nodes) as centers and arrange its neighbors in either ring or tree patterns according to their separation from the center. You set a *_Depth_* value (for example, 3) to disregard any node more than that many edges away from the center node. Adjusting the depth is only available in the *_Layout_* panel, not in the *_Quick Layout_* menu.
 ====
 
 .*Does geo-location mapping support using a custom map server?*
 [%collapsible]
 ====
-Yes. Go to _Map>Settings_ to display the _Map Settings_ dialog where you can add your own map server.
+Yes. Go to *_Map>Settings_* to display the *_Map Settings_* dialog where you can add your own map server.
 ====
 
 .*Where are the views created in _Project>Data_ saved?*
@@ -213,20 +648,19 @@ You can save up to 100 data *_Views_*.
 Select the data, and left-click-mouse drag. (Many other xref:g-user:nav-select/ref-shortcut-keys.adoc[mouse and keyboard shortcuts]for navigating your graph data are also available.)
 ====
 
-== Kineviz with VR/XR
-
-.*What is the difference between 2D and XR?*
-[%collapsible]
-====
-XR requires a VR headset and a PC with a dedicated GPU. The 2D mode enables you to work with a 3D space that's projected onto a 2D screen (desktop, laptop, etc.).
-====
 
 == Learning Kineviz
 
-.*Is there a course to learn Kineviz*
+.*Is there a course to learn Kineviz?*
 [%collapsible]
 ====
 Kineviz provides tutorial sandboxes for hands-on overview of key graph workflows, including how to import, model, explore, and lay out high-impact graph visualizations. We also offer personalized training to Enterprise users.
+====
+
+.*How do I learn graph analysis as a beginner?*
+[%collapsible]
+====
+Kineviz includes in-app sandboxes and tutorials that cover everything from first steps to advanced analytics — open a sandbox and see how each technique works on live data. When you're ready, analyzing your own data is as simple as dragging and dropping a CSV, turning it into a graph with Kineviz Agent, or modeling with visual transforms and saving the result to the embedded database.
 ====
 
 .*Where can we find help or blogs to craft effective graph layouts?*
@@ -234,3 +668,27 @@ Kineviz provides tutorial sandboxes for hands-on overview of key graph workflows
 ====
 Our Kineviz Blog and Video channels contain many examples for both general and specific use cases. We are also happy to work directly with you.
 ====
+
+.*Where can I find Kineviz (formerly GraphXR) tutorials?*
+[%collapsible]
+====
+Kineviz's tutorials page offers video walkthroughs for learning the essentials of working with graph-connected data. Topics include importing from CSV to Neo4j, traversing networks with quick layouts and find path, investigating collusion with search and expand, mapping insurance fraud with SightXR (a GenAI knowledge-mapping tool whose capabilities now live in Kineviz), and using SeekerXR to reveal how two people are connected.
+====
+
+.*Has Kineviz presented at key graph and AI conferences?*
+[%collapsible]
+====
+Kineviz talks include "GraphBI: Expanding Analytics to All Data Through the Combination of GenAI, Graph, & Visual Analytics" (2025), "The Potential of LLMs & Knowledge Graphs through Visualization" (2024), "Visualizing Emerging Patterns in Big Data for Proactive Threat Response" (2023), and Graph + AI Summit (2021). Recordings and presentations are linked from the Kineviz Events page.
+====
+
+.*Where can I read the latest Kineviz news and blog posts?*
+[%collapsible]
+====
+The Kineviz News page collects the company's latest stories on visual analytics, AI-assisted knowledge graphs, and investigative workflows, with links to full posts on the Kineviz blog. Recent highlights include GraphXR Explorer for BigQuery, Spanner Graph collaborations with Google Cloud, SightXR analyses, PuppyGraph supply chain insights, and exploration of LLM-generated knowledge maps.
+====
+
+
+
+
+
+
