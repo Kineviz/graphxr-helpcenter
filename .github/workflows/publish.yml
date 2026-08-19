@@ -41,6 +41,37 @@ jobs:
     - name: Generate Site
       run: npx antora --fetch antora-playbook.yml
       working-directory: ./GraphXR-WEB/docs-site
+    - name: Keep superseded versions out of the sitemap
+      # Antora lists every component version it builds. v2.x is kept online for
+      # anyone still on that release, but it should not be promoted as current —
+      # ranking for instructions that no longer match the product creates
+      # support tickets and makes the software look broken.
+      #
+      # Not done with robots.txt Disallow on purpose: that would strand v2 users
+      # searching for help with their own release, and a sitemap listing pages
+      # robots.txt forbids is a mixed signal. Leaving them crawlable but
+      # unlisted says "findable, not promoted", which is the intent.
+      #
+      # Fails the build if the filter matches nothing, so a path change here
+      # surfaces as a red build rather than silently doing nothing.
+      run: |
+        set -euo pipefail
+        SITEMAP=./GraphXR-WEB/docs-site/build/site/sitemap.xml
+        before=$(grep -c '<loc>' "$SITEMAP")
+        python3 - "$SITEMAP" <<'PY'
+        import re, sys, pathlib
+        p = pathlib.Path(sys.argv[1]); s = p.read_text()
+        s = re.sub(r"\s*<url>(?:(?!</url>).)*?/user-guides/v2\.x/.*?</url>", "", s, flags=re.S)
+        p.write_text(s)
+        PY
+        after=$(grep -c '<loc>' "$SITEMAP")
+        echo "sitemap: $before -> $after urls"
+        if [ "$before" -eq "$after" ]; then
+          echo "::error::Filtered nothing. The v2.x path has probably changed — check the sitemap."
+          exit 1
+        fi
+        grep -q 'v2\.x' "$SITEMAP" && { echo "::error::v2.x still present"; exit 1; } || true
+
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v4
       with:
