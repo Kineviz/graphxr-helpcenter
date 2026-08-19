@@ -41,6 +41,19 @@ jobs:
     - name: Generate Site
       run: npx antora --fetch antora-playbook.yml
       working-directory: ./GraphXR-WEB/docs-site
+    - name: Copy site-root files
+      # Ownership-verification files and anything else that must live at the top
+      # of the domain rather than under user-guides/. Copied after Antora runs so
+      # it survives every rebuild — Google re-checks periodically, and a file
+      # that only existed once gets the property un-verified later.
+      run: |
+        set -euo pipefail
+        SRC=./GraphXR-WEB/docs-site/static
+        DEST=./GraphXR-WEB/docs-site/build/site
+        find "$SRC" -maxdepth 1 -type f ! -name 'README.md' -print -exec cp {} "$DEST/" \;
+        echo "--- site root now contains ---"
+        ls -1 "$DEST" | head -20
+
     - name: Keep superseded versions out of the sitemap
       # Antora lists every component version it builds. v2.x is kept online for
       # anyone still on that release, but it should not be promoted as current —
