@@ -1,6 +1,26 @@
 site: 
   title: Documentation
+  # Antora only generates sitemap.xml when site.url is set. Without it the site
+  # builds perfectly and is completely invisible to search engines — 111 pages
+  # of GraphXR documentation that nothing was telling anyone about.
+  url: https://helpcenter.kineviz.com
   start_page: v3@user-guides::index.adoc
+  # Antora writes this verbatim to /robots.txt.
+  #
+  # Deliberately NOT disallowing v2.x. The first version did, and that was too
+  # heavy-handed twice over: it strands anyone still on v2 who searches for help
+  # with their actual release, and it contradicts the sitemap, which Antora
+  # generates for every version. A sitemap listing pages that robots.txt forbids
+  # is the kind of mixed signal Search Console flags.
+  #
+  # Instead v2.x is simply left out of the sitemap (see publish.yml). Crawlable
+  # if someone looks for it, not promoted as current. A sitemap says "these are
+  # the pages I want found", which is exactly the distinction wanted here.
+  robots: |
+    User-agent: *
+    Allow: /
+
+    Sitemap: https://helpcenter.kineviz.com/sitemap.xml
 content:
   sources: 
   - url: ../../
