@@ -4,6 +4,38 @@
 |===
 |*Tag* |*Date* |*Release Highlights*
 
+|xref:./gxr-3-24-0-release-notes.adoc[3.24.0] |8/12/2026 
+a|* *Usability*
+** *_Hide Icon on Avatar_* setting added.
+
+* *Admin, Security, Configuration, and Deployment*
+
+** In *Kineviz Desktop* support direct BigQuery / Spanner Google login.  
+
+* *Extensions* 
+** *Grove*, *File* manager, *Text Editor*
+
+|xref:./gxr-3-23-0-release-notes.adoc[3.23.0] |7/29/2026 
+a|* *Usability*
+** Redesigned *_Projects_* home page.
+** A _Peek_ shortcut (*Ctrl + Z*) toggle.
+** *View* menu split into project and view side-by-side menus.
+** Redesigned *_Table_* panel to include enhanced table functionality.
+** Legend readability enhancements.
+** *_Agent_* workflow enhancements.
+** A cloned project includes all its views. 
+** New API calls
+
+* *Performance* 
+** Improved KoreDB performance.   
+
+* *Admin, Security, Configuration, and Deployment*
+** Admin user can set *Kineviz Desktop* minimum version.  
+
+* *Extensions* 
+** *Grove*, *File* manager, *Text Editor*
+
+
 |xref:./gxr-3-22-0-release-notes.adoc[3.22.0] |7/13/2026 
 a|* *Usability*
 ** *NEW / RENAMED PRODUCT LINE*: *Kineviz* (formerly *GraphXR*) and *Kineviz Desktop*

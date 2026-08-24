@@ -1,0 +1,91 @@
+= Kineviz (formerly GraphXR) 3.23.0 Release Notes
+
+*Release Date:* July 29, 2026
+
+* The *_Kineviz_* release includes numerous usability enhancements. The *_Projects_* home page has been redesigned, and project UI added for easier project switching, usability of tables, and Agent workflow. New APIs and bug fixes are included as well.     
+  
+NOTE: In a *Kineviz Online* or *Kineviz Desktop* project, to access release notes, click the *Kineviz* logo at the bottom left, choose *_About_*, then click on the current release tag.
+
+== New Features 3.23.0
+
+=== Usability Enhancements
+
+* Re-designed Projects home page (GXR-4367), including:  
+** New Tile (card) UI. Project options are now listed on a Settings menu that includes *_Edit_*, *_Clone_*, *_Export Project_*, *_UI Configuration_*, *_Share Project_*, *_Open Views_*, *_Disable Share_*, *_Protect from Deletion_*, and *_Delete Project_*. 
+** A protected icon is displayed on a tile if a project is protected from deletion.
+** A flask icon appears by default on sandbox projects (GXR-4360). 
+** The project List view includes a column showing project sharing status, and a project checkbox to allow deleting more than one project at a time. 
+** A text description, icon, descriptive tag, and/or image can be attached to a project tile (GXR-4363). In an open project go to *_Advanced Settings_* and scroll down to *_Description_*, *_Corner Tag_* , *_Card Preview Image_* , and *_Project Icon_* items. 
+
+* A _Peek_ shortcut (*Ctrl + Z*) toggle closes (or reopens) panels for a full view of the canvas (GXR_4373). 
+
+* The project *View* menu is split into two menus (GXR-4396):
+** A project navigator menu to show the current project name, switch to any other project, click *_All Projects_* to return to the home page, or *_Create New_* project to return to the home page and open the *_Create project _* dialog.
+** The *View* menu to show the current view name, save a view or create a new one, or open a different view.
+
+* The basic *_Table_* is redesigned to include *_Enhanced Table_* functionality.
+
+* *Legend* enhancements:
+** The legend list now includes text labels for the current selections (Category, Property, Tag, Relationship, RelProperty) (GXR-4335).
+** A selected property includes its category (or relationship) label (GXR-4295). For example,  _Person.name_, not just _name_.
+* The *_Extract_* transform alerts the user to the currently selected nodes (category and number) that the transform will operate on (GXR-4309). 
+
+* *_Agent_* enhancements: 
+** Thinking and tool calls are now in collapsible blocks, and tabs are easier to open and close (GXR-4391, GXR-4369).
+** A task tool is included for sub-agent work (GXR-4376).  
+** Display queue messages using * + Enter*, or pressing the amber *Queue* button (GXR-4332). 
+** Cloud Agent percent of budget used is shown in the *Context* rollover at the bottom of the panel (GXR-4333, GXR_4327). 
+
+* Copy when cloning a project now includes all views by default (GXR-4404, GXR-4322).
+
+* *_Kineviz Desktop_* version 0.17.0
+
+** An in-app title bar with project view/name is added (GXR-4393).
+** An Open folder button is added to the Projects page (GXR-4375). The user picks a directory which becomes the project's Project Files root — no copies.
+
+=== Performance Enhancements
+ 
+* Refactor Save to KoreDB modal for improved performance (GXR-4307).
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* In the cloud admin portal, a *_Kineviz Desktop_*  admin user can set a global minimum required version, to avoid use of old versions (GXR-4313). 
+
+* By default, a project created from a sandbox is not protected from deletion (GXR-4359).  To protect it, choose *_Protect from Deletion_* from its *_Settings_* menu.
+
+=== Kineviz API 
+
+* writeProjectFile() (GXR-4320).
+* window.showExtensionsTab() (GXR-4319). Add Extensions tab through an API call.
+* gxr.queryToCanvas() fixes error handling in Agent-authored query through gxr.query(), which is now read-only (GXR-4382).
+* gxr.getTheme() returns the current theme state of the application (dark or light mode)  (GXR-4315).
+* gxr.expandFromDatabase() hydrates nodes via API (GXR-4390).
+* gxr.expandFromDatabase() removes edges (GXR-4387).
+   
+== Bug Fixes
+
+* Using the *Merge* transform on a graph with nodes that can't be merged now retains edges (GXR-4357)
+* The *Query bar* schema is refreshed after a *_Save to KoreDB_* (GXR-4305).
+* Agent-authored KoreDB multi-statement Cypher scripts now work (GXR-4386)
+* Project titles with non-latin1 characters now export as expected (GXR-4362) 
+* gxr.expandFromDatabase() hydrates nodes properly via API (GXR-4390).
+* gxr.expandFromDatabase() retains edges appropriately (GXR-4387).
+
+== Removed 3.23.0
+
+* The *_Enhanced Table_* is deprecated. Functionality is now included in the basic *_Table_* panel.
+
+== Extensions 3.23.0
+
+Extensions are available to create Grove workbooks for reproducible workflows and help manage and edit imported files. Extensions for custom solutions may be available as well. To add (or remove) an extension on the left panel menu, go to the *_Project > Extensions_* tab, search for the extension, then click its star icon.
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+=== Files 
+_File management extension_
+
+=== Text Editor
+_Text editor extension_
+
+ 

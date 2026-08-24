@@ -1,0 +1,44 @@
+= Kineviz 3.24.0 Release Notes
+
+*Release Date:* August 12, 2026
+
+* The *_Kineviz_* release includes usability enhancements, and additional deployment and administration support.     
+  
+NOTE: In a *Kineviz Online* or *Kineviz Desktop* project, to access release notes, click the *Kineviz* logo at the bottom left, choose *_About_*, then click on the current release tag.
+
+== New Features 3.24.0
+
+=== Usability Enhancements
+
+* A *_Hide Icon on Avatar_* option is added to the *_Settings > Advanced Settings_* panel, to hide the node corner badge when an avatar is displayed (GXR-4426). 
+
+=== Performance Enhancements
+
+* None 
+
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* In *Kineviz Desktop*, support direct Google login for BigQuery and Spanner (GXR-4479).
+    
+== Bug Fixes
+
+* A scroll bar is added to the right-click *_Expand_* menu to ease selecting from among numerous relationships (GXR-4399).
+ 
+== Removed 3.24.0
+
+* None
+
+== Extensions 3.24.0
+
+Extensions are available to create Grove workbooks for reproducible workflows and help manage and edit imported files. Extensions for custom solutions may be available as well. To add (or remove) an extension on the left panel menu, go to the *_Project > Extensions_* tab, search for the extension, then click its star icon.
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+=== Files 
+_File management extension_
+
+=== Text Editor
+_Text editor extension_
+
+ 
