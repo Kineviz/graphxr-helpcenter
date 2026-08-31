@@ -4,6 +4,26 @@
 |===
 |*Tag* |*Date* |*Release Highlights*
 
+|xref:./gxr-3-25-0-release-notes.adoc[3.25.0] |8/28/2026 
+a|* *Usability*
+
+** Add images, tags, and icons to project tiles from the *_Projects_* home page.
+** Save floating, docked, and split panels as persistent project workspaces.
+** Redesigned and streamlined *Legend*, *GUI navigation*, and right-click *context menus*. 
+** Refactored *_Query panel_*.
+
+* *Admin, Security, Configuration, and Deployment*
+
+** Re-organized *_Admin_* portal.
+** Support for *Rocketgraph* and latest *AWS Neptune*.
+** Improved support for Google *BigQuery* roles and login. 
+
+* *GraphXR API* 
+** gxr.agent.run() to support headless agent operations.
+   
+* *Extensions* 
+** *Grove*, *File* manager, *Text Editor*
+
 |xref:./gxr-3-24-0-release-notes.adoc[3.24.0] |8/12/2026 
 a|* *Usability*
 ** *_Hide Icon on Avatar_* setting added.
@@ -24,17 +44,21 @@ a|* *Usability*
 ** Legend readability enhancements.
 ** *_Agent_* workflow enhancements.
 ** A cloned project includes all its views. 
-** New API calls
 
 * *Performance* 
 ** Improved KoreDB performance.   
 
 * *Admin, Security, Configuration, and Deployment*
-** Admin user can set *Kineviz Desktop* minimum version.  
+** Admin user can set *Kineviz Desktop* minimum version. 
+
+* *GraphXR API* 
+** gxr.queryToCanvas () to fix error handling in Agent-authored query through gxr.query().  
+** writeProjectFile
+** window.showExtensionsTab()
+** gxr.getTheme() 
 
 * *Extensions* 
 ** *Grove*, *File* manager, *Text Editor*
-
 
 |xref:./gxr-3-22-0-release-notes.adoc[3.22.0] |7/13/2026 
 a|* *Usability*

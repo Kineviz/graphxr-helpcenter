@@ -1,0 +1,88 @@
+= Kineviz 3.25.0 Release Notes
+
+*Release Date:* August 28, 2026
+
+*_Kineviz_* and *_Kineviz Desktop_* include UI changes, performance upgrades and bug fixes. Usability enhancements include project editing from the *_Projects_* home page, user-defined project workspaces, and new or re-designed elements in the *Legend*, context menu, and toolbars. Agent UI is enhanced and and administrator functions reorganized. Database access is added or enhanced for *Rocketgraph*, *AWS Neptune*, and Google *BigQuery*.             
+  
+NOTE: In a *Kineviz Online* or *Kineviz Desktop* project, to access release notes, click the *Kineviz* logo at the bottom left, choose *_About_*, then click on the current release tag.
+
+== New Features 3.25.0
+
+=== Usability Enhancements
+
+* From the Projects home page, add a tag, image, description, or sandbox icon to a project tile by opening its *_Create_* or *_Edit_* dialog. (GXR-4444)
+
+* User-defined workspaces. 
+** Kineviz panels can be floated on the canvas, docked to the *_Left_*, or *_Right_* margin, or the the *_Center_* of the canvas as desired. Panels docked to the left or right margin can be vertically split. (GXR-4372) 
+** A line of icons above the Legend let the user save current panel positions as a named workspace in the project, reset the workspace to the default left panel configuration, open or close docked panels, and use the *_Peek_* toggle icon to close all panels for a view of the full canvas, then open them again.  
+
+
+* *Legend* re-design
+** The colored dot or line next to a category, relationship, tag, or property now opens the *_Style Setting_* dialog, where you choose the color, icon, caption, and/or bind width for the selected element. When you choose an icon, the dot changes to display it. A separate brush icon to open the dialog is no longer present. 
+** On mouse rollover, the category name and number of nodes is displayed (in *Server*, not *Desktop*). (GXR_4450)
+
+* Navigation and Selection tools 
+** The person icon on the left menu bar at the bottom opens the *Account* menu with current user name, and the *_Logout_*, *_Settings_*, *_About_*, *_Shortcuts_*, *_Toggle Theme_*, *_Recent Projects_* (for switching to another project), and *_Home_* menu items. The Kineviz logo at the top of the left menu bar now returns you to the *_Projects_* home page. (GXR-4485)
+** The *Account* menu stays open until you click elsewhere in the project space. (GXR-4452)
+** *GUI Navigation* controls are now redesigned as a line of small icons on the right vertical margin, with added *_Center To_* and *_Fly Out_* tools.  
+** The right-click *context menu* is modernized to be more compact. (GXR-4467)
+
+* *_Query_* 
+** The *_Query_* panel is refactored to use current UI elements. (GXR-3694)
+** A message is displayed when a query returns no results. (GXR-4471)
+** The Query bar shows case sensitivity in queries more clearly. (GXR-4027)
+ 
+* *_Agent_* 
+** Opening the *_Agent_* panel with no open chat tabs (i.e. on first open, or reopening after all tabs were closed) automatically opens a new thread. (GXR-4458()
+** When gxr.agent.run() creates a view, a short view title is proposed based on the visible graph (categories, counts, selection).	(GXR-4486)
+
+* The *Login* screen is re-designed to conform to Kineviz product design. (GXR-4206)
+
+
+=== Performance Enhancements
+ 
+* In the *_Admin>User_* panel, one page of a long list of users is loaded at first, reducing wait time (GXR-4483).
+* For Kineviz *Desktop*, an improved sqlite build is provided. (GXR-4480).
+ 
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* KoreDB uses the latest kuzu or ladybug version. (GXR-4457) 
+* Support is added for Rocketgraph. (GXR-4456) 
+* Support is added for the latest AWS Neptune. (GXR-4451) 
+* BigQuery includes improved roles description. (GXR-4440) 
+* Kineviz *Desktop* enables direct Google login for *BigQuery* and *Spanner*. (GXR-4479)
+
+* Kineviz *_Admin Portal_*
+** A *_Secrets_* manager is provided for both *Desktop* and *Server*. (GXR-4487)   
+** In the *_Agent_* section, the *_Models_* sub-tabs is moved to the far left. The five sub-tabs are now *_Models_*, *_Connectors_*, *_Budgets_*, *_Usage_*, and *_Sessions_* (for server mode only). Models is the tab admins need first because it holds the saved model registry (plus _allow user models_ and _MCP Hub_ toggles). (GXR-4461)
+** *_Stripe_*, *_Legal_* and *_Desktop_* tabs are reorganized. *_Stripe_* and *_Desktop_* share /api/agent-model-config with the *_Agent_* tab; *_Legal_* admin routes stay manager-only. (GXR-4462) 
+
+=== Kineviz API 
+
+* gxr.agent.run() to support headless agent operations. (GXR-4441)
+
+
+== Bug Fixes
+
+* With gxr.query(), reading the wrong QueryResult accessor now raises an instructive error message (rows vs graph) (GXR-4463).
+* The Agent 2.0 static schema card now maintains schema labels properly. (GXR-4439)
+* The the screenshot button now captures the legend as it appears on the canvas. (GXR-4003)  
+ 
+== Removed 3.25.0
+
+* None
+
+== Extensions 3.25.0
+
+The Kineviz extensions provided by default let you create Grove workbooks for reproducible workflows and manage and edit imported files. Extensions for custom solutions may also be available. To add (or remove) an extension on the left panel menu, go to the *_Project > Extensions_* tab, search for the extension, then click its star icon.
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+=== Files 
+_File management extension_
+
+=== Text Editor
+_Text editor extension_
+
+ 
