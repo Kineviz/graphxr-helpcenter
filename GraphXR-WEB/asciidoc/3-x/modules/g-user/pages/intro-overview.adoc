@@ -4,7 +4,7 @@
 
 image::/v3/01_00_01_UserGuideIntro.png[,720,380,role=text-center] 
 
-NOTE: xref:desktop:desktop-intro.adoc[*Kineviz Desktop*] is available as a single-user application that you download to your system. It does not support project sharing; otherwise its features and UI elements are nearly identical to *Kineviz Server*.     
+NOTE: xref:desktop:desktop-intro.adoc[*Kineviz Desktop*] is available as a single-user application for download to your system. It does not support project sharing; otherwise its features and UI elements are nearly identical to *Kineviz Server*.     
 
 == The Kineviz Platform 
 
@@ -12,7 +12,7 @@ In the *Kineviz* platform, you create and manage persistent projects that can be
 
 * *Import* data in various ways:
 
-** *Query a connected graph database* via visual no-code graph query, Cypher, or GQL. Supported databases include Google Spanner Graph and BigQuery Graph, Neo4j, Memgraph, Puppygraph, UltipaGraph, OracleGraph, GalaxyBase, NebulaGraph, and more.
+** *Query a connected graph database* via visual no-code graph query, Cypher, Gremlin, or GQL. Supported databases include Google Spanner Graph and BigQuery Graph, Neo4j, Memgraph, Puppygraph, UltipaGraph, OracleGraph, GalaxyBase, NebulaGraph, and more.
 ** *Query a connected relational database* via SQL or Gremlin.
 ** Open (or drag and drop) JSON files and CSV and Excel files or archives. 
 
@@ -30,8 +30,8 @@ In the *Kineviz* platform, you create and manage persistent projects that can be
  
 == Supported Environments
 
-* WINDOWS, MAC OSX, AND LINUX
+* WINDOWS, MAC OSX, and LINUX
 
-* CLOUD, PRIVATE CLOUD, AND ON-PREMISES DATA HOSTING.
+* CLOUD, PRIVATE CLOUD, and ON-PREMISES DATA HOSTING.
 
 * The *Kineviz* client runs best in Google Chrome. Compatibility with other browsers may vary.

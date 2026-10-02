@@ -55,7 +55,7 @@ image::/v2_17/05_01_06_AddedNode720.png[,420,340,role=text-left]
 
 In the *_Add Edge_* dialog you can create new edges that connect selected nodes to each other via a new or existing directed relationship. You can add properties and single or multiline property values to edges just as you can for nodes.
 
-TIP: An easy edge feature lets you select one or more nodes, then use *_Ctrl-drag_* to select a target node When the target is selected, dashed lines appear between the nodes. The *_Add Edge_* dialog opens, and you can select an existing relationship or create a new one, then click *_Create_* or *_Cancel_*. 
+TIP: An easy edge feature lets you select one or more nodes, then use *_Cmd-drag_* to select a target node When the target is selected, dashed lines appear between the nodes. The *_Add Edge_* dialog opens, and you can select an existing relationship or create a new one, then click *_Create_* or *_Cancel_*. 
 
 image::/v2_17/05_01_07a_EasyEdge.png[,520,340,role=text-left]
 
@@ -63,7 +63,7 @@ image::/v2_17/05_01_07a_EasyEdge.png[,520,340,role=text-left]
 
 . Using any selection method, select one or more nodes that you want to connect to other nodes via a directed relationship.
 
-. Click the *_Add Edge_* icon, select *_Add Edge_* from the right-click menu, or use *_Ctrl-drag_* to select a single target node. 
+. Click the *_Add Edge_* icon, select *_Add Edge_* from the right-click menu, or use *_Cmd-drag_* to select a single target node. 
 
 . In the *_Add Edge_* dialog, either enter the name of a new relationship to be assigned to the new edges (e.g. _OWNED_BY_) and press return, or select an existing relationship from the dropdown menu.
 +

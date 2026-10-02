@@ -1,20 +1,26 @@
 = Getting Started
 
-*Kineviz* (formerly *GraphXR*) is  visual analytics platform for working with labeled property graphs. 
+*Kineviz* (formerly *GraphXR*) is visual analytics platform for exploring the connections in _labeled property graphs_. Graph data defined as *_nodes_* and connected *_edges_* with their associated *_properties_* is rendered as a visual network that you can navigate, edit, analyze, and save within a *Kineviz* project. 
 
-* *Kineviz Server* is a *multi-user* browser-based application that supports fast, flexible graph modeling and exploration in secure collaborative project workspaces.  
+image::/v3/00_01_00_ProjectPropertyGraph.png[,540,340,role=text-center]
 
-* xref:desktop:desktop-intro.adoc[*Kineviz Desktop*] is a *single-user* download that delivers nearly all the functionality of *Kineviz Server* while running locally on your system.
-
-A *Kineviz* account lets you create and manage multiple projects.
+A *Kineviz* account lets you create and manage multiple projects, and access many different sources of data.
 
 image::/v3/00_01_01_ProjectHome.png[,720,340,role=text-center]
+
+The Kineviz platform is available as either:      
+
+* *Kineviz Server*, a *multi-user* browser-based application that supports fast, flexible graph modeling and exploration in secure collaborative project workspaces.  
+
+* xref:desktop:desktop-intro.adoc[*Kineviz Desktop*], a *single-user* download that delivers nearly all the functionality of *Kineviz Server* while running locally on your system.
  
 == Basic Graph Exploration 
 
-Each *Kineviz* project is a workspace where you can seamlessly import, model and transform graph data, explore and analyze graph patterns, save your work, and share your insights. *Kineviz* projects also include a built-in AI *_Agent_* for optional graph modeling and exploration through AI chat.
+Each *Kineviz* project is a workspace where you can import, model and transform graph data, explore and analyze graph patterns, save your work, and share your insights. 
 
-image::/v3/00_01_02_KinevizAgentProject.png[,720,340,role=text-center]
+*Kineviz* projects also include a built-in AI *_Agent_* for optional graph modeling and exploration through AI chat.
+
+image::/v3/00_01_02_KinevizAgentProject.png[,540,340,role=text-center]
 
 [caption=]
 .Basic Workflow in a *Kineviz* Project
@@ -41,13 +47,13 @@ _via xref:g-user:data-import/query-graphdb.adoc[*Database Query*] or xref:g-user
 
 == Iterative Visual Analytics with Kineviz 
   
-Since exploring a graph quickly sparks new questions, graph workflows are highly iterative. As an exploration proceeds, you will most likely need to simplify or transform the graph, edit or add to the data already in the graph, focus on specific subgraphs, and save and communicate key views of the graph as you go. 
+Since exploring a property graph quickly sparks new questions, the workflow is highly iterative. As exploration proceeds, you will most likely want to simplify or transform the graph, edit or add to the data already in the graph, focus on specific subgraphs, and save and communicate key views of the graph as you go. 
 
 image::/v3/00_01_03_IterativeWorkflow.png[,420,380,role=text-center]
 
 == Learning Resources
 
-* Use cases and workflows for visual graph analytics
+* Use cases and workflows for visual graph modeling and analytics
 
 ** https://medium.com/kineviz[Kineviz Blogs] 
 

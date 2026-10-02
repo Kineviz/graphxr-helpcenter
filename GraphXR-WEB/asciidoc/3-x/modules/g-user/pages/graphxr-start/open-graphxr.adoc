@@ -15,13 +15,9 @@ NOTE: For *Kineviz _Enterprise_*, contact your system administrator for login cr
 *To create a user account:*
 
 . In your _Chrome_ browser, visit the https://graphxr.kineviz.com/login[*Kineviz* Login] page and click *_SIGN UP_*.
-+
-image::/v3/01_02_01_LoginWBrowser420.png[role=text-left]
-+
-
 . In the sign-up form, enter the information required to create your user account.
 +
-image::/v3/01_02_02_SignUp320.png[signin,240,420,role=text-left]
+image::/v3/01_02_01_ServerCreateAccount.png[signin,420,480,role=text-left]
 +
 • Your *_Email_*. You'll use this to log in. +
 • A *_Password_*. +
@@ -43,38 +39,67 @@ Once registered as a user, you can log in.
 . In your _Chrome_ browser, visit the https://graphxr.kineviz.com/login[GraphXR Login] page.
 . Enter your user name (i.e. the *_Email_* used to create the account) and your *_Password_* and click *_LOGIN_*.
 +
-image::/v3/01_02_03_Login320.png[signin,240,320,role=text-left]
+image::/v3/01_02_02_ServerLogin.png[signin,420,480,role=text-left]
 +
 Upon successful login, the Kineviz *_Projects_* page displays.
 +
-image::/v3/01_02_04_Login_ProjectsHome.png[,720,540,role=text-left]
-
-== Manage Your User Account
-
-Go to the user menu at the top of the *_Projects_* page to edit your *Kineviz* account settings or log out. 
-
-image::/v3/01_02_05_ProjectsUserMenu.png[,720,240,role=text-left]
-
-=== Update Account Details
-
-* Select *_Settings_* to review your account details, change your password, or delete your account. Click *_Update_* to update your account, or click *_Projects_* at the upper left of the browser to close the dialog without making any changes.
-
+image::/v3/01_02_03_Login_ProjectsHome.png[,720,540,role=text-left]
 +
-image::/v3/01_02_06_ProjectsUserSettings.png[,240,320,role=text-left]  
+. Click the user icon at the bottom left of the *_Projects_* page for the menu of options to manage user settings, quickly change the language and display mode, and log out of *Kineviz*. 
++
+NOTE: If you are an administrator of a multi-user account, you'll see an *_Admin_* item on the account menu that opens your administrator panel.
+
+== Manage Your User Settings
+
+* Select *_Settings_* from the account menu at the bottom left of the *_Projects_* page. 
+
+The *_Settings_* dialog is divided into *_Profile_*, *_Sessions_*, *_API Keys_*, *_Secrets_*, and *_Billing_* sections. 
+
+* In *_Profile_*, update your user profile, change your password, or delete your account.
++
+image::/v3/01_02_04_AccountSettings.png[,420,320,role=text-left]  
++  
+
+* In *_Sessions_*, review and if desired, log out of browser sessions.  
++
+image::/v3/01_02_05_AccountSettingsSessions.png[,420,320,role=text-left]  
 +
 
-* Select *_Logout_* to log out of *Kineviz*.
-
+* In *_API Key_* review and edit API keys you need in order to authenticate API requests without a thread.  
 +
-NOTE: If you are an administrator of a multi-user account, you'll see an *_Admin_* item on the User menu to open your administrator panel.
+image::/v3/01_02_06_AccountSettingsAPIKey.png[,420,320,role=text-left]  
++
 
-===  Select UI Language 
+* In *_Secrets_*, store named secrets (API keys, tokens, and passwords) encrypted at rest. Values are masked in lists and revealed only on request.  
++
+image::/v3/01_02_07_AccountSettingsSecrets.png[,420,320,role=text-left]  
++
+
+* In *_Billing_* you can:
+
+** Review and update your current *_Plan_*.
+** Review *_Usage_* status
+** Set a *_Privacy_* option. Using your cloud agent sessions to improve the Kineviz Agent is opted in by default, but you can opt out. 
+** Review your *_Cloud Agents_* sessions.  
+
+image::/v3/01_02_08_AccountSettingsBilling.png[,420,320,role=text-left]  
+
+NOTE: Click the *Kineviz* logo at the upper left of the browser to close the *_Settings_* dialog without making changes.
+ 
+==  Select the UI Language 
   
-Use the language selector at the top right of the *_Projects_* page to switch between default *English*, *Chinese*, or *Spanish* user interfaces.
+From the user account menu, choose *English*, *Chinese*, or *Spanish* to switch the language of the user interface text.
 
-image::/v3/01_02_07_ProjectsSpanishMenu.png[,520,140,role=text-left]
+image::/v3/01_02_09_AccountLanguageSpanish.png[,240,240,role=text-left]
 
-=== Access Kineviz Documentation
+==  Toggle the Light/Dark Theme 
+  
+* From the account menu, select *_Switch to light mode_* or *_Switch to dark mode_* (or, in an open project, select *_Toggle Theme_*).
+
+image::/v3/01_02_10_ThemeToggle.png[,320,240,role=text-left]
+
+
+== Access Kineviz Documentation
 
 Click links at the bottom of the browser window to open user guides and release notes available on the Kineviz Help Center.
 
@@ -82,9 +107,9 @@ Click links at the bottom of the browser window to open user guides and release 
 * The version number at the bottom of the browser window opens the release notes for the current *Kineviz* version.
 
 +
-image::/v3/01_02_08_VersionHelpCenterLink.png[,720,240,role=text-left]
+image::/v3/01_02_11_VersionHelpCenterLink.png[,720,240,role=text-left]
 
-=== User Community 
+== User Community 
 
 Click links at the bottom of the browser window for:
 
@@ -94,10 +119,7 @@ Click links at the bottom of the browser window for:
 
 *To log out of Kineviz:*
 
-* In the *_Projects_* page, select *_Log Out_* from the user menu on the top right.
+* In the *_Projects_* page or in any open project, select *_Logout_* from the user account menu at the bottom left.
 
-+
-*OR*
-+
-
-* In an open project, click the *Kineviz logo* at the bottom left of the window, and choose *_Logout_* on the menu.
+image::/v3/01_02_12_AccountLogout.png[,240,240,role=text-left]
+ 

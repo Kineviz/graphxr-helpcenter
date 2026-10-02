@@ -89,7 +89,7 @@ image::/v3/05_01_08_CreateEdges.png[,420,360,role=text-left]
 The new edges appear on the canvas. A new relationship appears in the Legend's *_Relationship_* list. For an existing relationship, the total number of its edges is updated.
 
 + 
-TIP: If you are creating one or more edges connecting to a single node, you can use an _Easy Edge_ shortcut to open the *_Add Edge_* dialog with the source nodes and target node already set. Select one or more nodes and *_Ctrl-drag_* to select a single target node.  Dashed lines appear between the source nodes and the target. The *_Add Edge_* dialog is displayed, and you then finish creating the edges as outlined above. 
+TIP: If you are creating one or more edges connecting to a single node, you can use an _Easy Edge_ shortcut to open the *_Add Edge_* dialog with the source nodes and target node already set. Select one or more nodes and *_Cmd-drag_* to select a single target node.  Dashed lines appear between the source nodes and the target. The *_Add Edge_* dialog is displayed, and you then finish creating the edges as outlined above. 
 +
 
 +
