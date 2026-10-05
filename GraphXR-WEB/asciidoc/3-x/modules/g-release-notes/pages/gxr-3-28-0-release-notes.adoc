@@ -1,0 +1,63 @@
+= Kineviz 3.28.0 Release Notes
+
+*Release Date:* September 15, 2026
+
+*_Kineviz_* and *_Kineviz Desktop_* include enhancements for geometric layout, import and mapping of multiple CSV or Excel files, Agent UI improvement, added API capability, and bug fixes.             
+  
+NOTE: In a *Kineviz Online* or *Kineviz Desktop* project, to access release notes, click the *Kineviz* logo at the bottom left, choose *_About_*, then click on the release tag.
+
+== New Features 3.28.0
+
+=== Usability Enhancements
+
+* A floating *_Canvas picture-in-picture_* panel provides a dockable overview of the data on the canvas, which updates as you work on the canvas. It includes the *_Show canvas_* (shift + Z) toggle that dismisses all panels for a peek at the full canvas. (GXR-4625)    
+
+* The *_Layout panel_* is updated to display its features in a more compact and readable form. (GXR-4641) 
+
+* The *_Mapping Editor_* is redesigned to:
+** Display the column headings in one or more source CSV or Excel files, and their current mapping to categories and properties. (GXR-4629)
+** *_Auto Map_* CSV or Excel files, either by reading table shape directly, or through an AI agent analysis based on a text prompt. (GXR-4628) 
+ 
+* *_Agent_* 
+
+** Creating a project from a text prompt is added to the *_Projects_* home page. (GXR-4610)    
+** The *_Agent_* panel can be displayed either as a vertically split panel that lists chat (aka thread) history, or as horizontally arranged tabs that focus more on the current thread. (GXR_4627)
+** A more compact conversation-first layout is displayed at small panel heights. (GXR_4575)
+** A *_Copy thread as markdown_* item is added to the chat menu. (GXR_3992)
+** The *_Agent_* file dropzone accepts imported content with image (.jpeg, .png, .gif, and .webp), file (.csv, .xlsx, .json, .zip, .graphxr, .gexf, .kml, .graphml, .opml, .mm, .smmx, .kuzu, .mgtx, .kmz), and .pdf file types. (GXR_4601)
+ 
+=== Performance Enhancements 
+
+* NA
+   
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* https://kineviz-marketplace.exe.xyz/[*Kineviz Marketplace*] is deployed as a central repository for extensions and sandboxes. (GXR-4617)    
+
+=== Kineviz API 
+
+* The *_Project > Files_* API now performs checks for project ownership, permissions, and sharing status. (GXR-4365)
+
+
+== Bug Fixes
+
+* Overlapped docked panels are no longer seen in user-designed workspaces. (GXR-4626)
+
+== Removed 3.28.0
+
+* None
+
+== Extensions 3.28.0
+
+Kineviz extensions provided by default (shown on the *_Project > Extensions_* tab) let you create *_Grove_* workbooks for reproducible workflows,  and manage and edit imported files. Extensions for custom solutions may also be available.
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+=== Files 
+_File management extension_
+
+=== Text Editor
+_Text editor extension_
+
+ 

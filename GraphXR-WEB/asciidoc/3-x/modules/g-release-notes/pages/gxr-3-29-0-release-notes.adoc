@@ -1,0 +1,108 @@
+= Kineviz 3.29.0 Release Notes
+
+*Release Date:* September 22, 2026
+
+*_Kineviz_* and *_Kineviz Desktop_* include UI changes, performance upgrades and bug fixes. Numerous usability enhancements include a redesigned *Toolbar*, split *Views* and *Project* menu, *_Information panel_*, and *Legend* features. *_Gizmo_* layout and *_Annotate_* tools, social network analysis (SNA) algorithms, and workspace options are added. System prompt and UI enhancements provide clearer Agent interaction.              
+  
+NOTE: In a *Kineviz Online* or *Kineviz Desktop* project, to access release notes, click the *Kineviz* logo at the bottom left, choose *_About_*, then click on the release tag.
+
+== New Features 3.29.0
+
+=== Usability Enhancements
+
+* From the *_Edit Project_* dialog, either click *_Confirm_* to remain on the *_Project_* home page, or *_Confirm and Open_* to open the edited project. (GXR-4667)
+
+* The project *Toolbar* is no longer contextual. A tool unavailable to the current graph or selection is simply grayed out.  *_Information_*, *_Trace Neighbor_*, *_Quick Layout_* tools are redesigned. Two new tools (*_Annotate_* and *_Gizmo_*) are added. The *_Information_*,  *_Expand_*, *_Add Node_*, and *_Add Edge_* panels are now dockable for crafting user-defined workspaces. (GXR-4652, GXR-4706)
++
+Tools are displayed by default in the following labeled sections, which wrap bottom to top as the browser window is resized:
++
+ 
+** *History*: *_Undo_* / *_Redo_*, and a *_More..._* menu with *_Link_*, *_Video_*, and *_Image_* tools.
+** *Display*: *_Take Screenshot_*, *_Show hidden nodes_*, *_Hide nodes_*, *_Annotate_* *(new)*, *_Quick Info_* toggle, and the *_3D-2D_* toggle.
+** *Arrange*: *_Collect nodes_*, *_Explode Collections_*, *_Gizmo_* (new, *_Gizmo Settings_* (new), *_Pin/Release_* nodes, *_Force Layout_* toggle, *_Quick Layout_* menu.  
+** *Edit*: *_Add Node_*, *_Add Edge_*, *_Expand_*, *_Tag_*.
+** *Select*: *_Select Visible_*, *_Inverse_*, *_Trace Neighbor_* (re-designed), *_Information_* (re-designed) 
+
+* *_Information_* panel is re-designed. (GXR-4675, GXR-4680)
+** A selection of nodes or edges can be displayed, not just a single entity at a time.
+** Navigate the list, select a node or edge to view/edit properties, view *_Neighbors_*, and the *_Graph_* represented in the selected elements.
+** *_Style_* selected nodes (but not edges) separately from the styles applied in the Settings or Legend, and remove the special styling as needed.
+
+* The new *_Gizmo_*  tool provides on-canvas layout to move, rotate, or scale any selection of the graph in the X-, Y-, or Z- direction either directly on the canvas, or by clicking the new *_Gizmo settings_* tool to display the *_Gizmo_* tab on the *_Layout_* panel (rather than the controls available in the *_Geometric_* layout panel). (GXR-4635). 
+
+* The new *_Annotate_* tool lets you add and style text commentary, graphic callouts, and a title to the canvas. Annotations are saved in the view, and an annotated view can be captured as a .png screenshot. (GXR-4488)
+
+* Improved *Legend*:
+** For a Category with a label too long to display in full, a rollover tooltip shows the full label, and the number of selected and total nodes. (GXR-4712)
+** A scrollbar is included to navigate numerous categories or relationships. GXR-4717)
+** A category's *_Style Setting > Icon_* tab includes an *_Auto-Pick Icons_* button. It uses the AI agent and _gxr.agent.run()_ API call to auto-pick Category icons, bulk-filling missing icons across the full category list, while preserving existing choices. (GXR-4644) 
+
+* The *_Minimap_* is closed by default.(GXR-4688) 
+
+* The *_Fly Out_* navigation icon on the right edge centers the graph on the visible canvas (i.e the space not covered by open panels) (GXR-4643)
+
+* The in-project *Project / View* menu now includes the standard project editing functions (*_Add to Favorites_*, *_Edit Project_*, *_Clone Project_*, *_Export Project_*, *_Protect from deletion_* , and *_Delete_* ) in addition to *_Create Project_*, a menu to switch to another project, and *_All Projects_* to return to the Projects home page. (GXR-4677)
+
+* The *_Save As_* view dialog is redesigned and enhanced to show a view thumbnail and the number of nodes and edges. Users must enter a view name, and can enter a description, choose a view folder, and enable sharing through project access and/or a view link. (GXR-4697, GXR-4701)
+
+* New settings in the *_Project > Settings_* panel
+** A *_Theme Manager_* menu, to select from a variety of pre-configured themes (e.g. Kineviz, Japandi, Bauhaus, etc.). (GXR-4682). 
+** Under *_Advanced Settings_*, *_Show recent views on empty canvas_*, to either show or hide the list of views displayed when a project is opened. (GXR-4655). 
+
+* For CSV/Excel import by drag and drop or *_Import_*, a dialog now includes options to *_Import directly_*, in which every row in a table becomes a node with the column values as its properties, or to *_Create mapping_*, which loads the files to the CSV/Excel query interface and opens the *_Mapping Editor_* to create a mapping for the files. (GXR-4613) 
+
+* New *_SNA_* tab in the *_Algorithm_* panel for Social Network Analysis (SNA) Algorithms, including measures of *Fragmentation*, *Frequency*, *Density*, *Closure*, and overall *Network Statistics*. (GXR-3139) 
+
+* *_Agent_* 
+** Users can now respond to agent results via *_Accept / Reject_* buttons, not just by typing _OK_. (GXR_4709)
+** A *_Retry_* button re-runs a prompt. (GXR_4722)
+** Click the Agent panel's text input to add the suggested ghost question (and note that clicking twice clears the text input). You must click *_Tab_* to submit the suggested question. (GXR_4723)
+** System prompt is updated to prevent nodes stacking on top of each other after API-driven changes to the canvas (e.g. gxr.addNodes, gxr.queryToCanvas, gxr.randomGraph, etc). (GXR_4659)
+** System prompt is updated so that URL fetch occurs through the backend proxy when a direct fetch fails. (GXR_4661)
+** System prompt is updated and a skill added to load JSON files into KoreDB. (GXR_4663)
+** The runTask sub-agent includes an expanded view and an added Open button to display the full transcript in one click. (GXR_4662)
+
+=== Performance Enhancements 
+
+NA
+   
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* Users can hide *_Files_* and *_Text Editor_* extensions in the *_Settings > UI Configuration_* dialog. (GXR-4679) 
+* The *_Email Me_* checkbox is opt-in per deployment. (GXR-4715)
+* *_Agent_* skills can be contributed to the https://kineviz-marketplace.exe.xyz/[*Kineviz Marketplace*]. (GXR-4689)
+
+=== Kineviz API 
+
+* *gxr.ask* is used to configure AI models for extensions. _gxr.llm_ and its _injectGraphSchema_ option is deprecated_. (GXR-4686)
+
+* *gxr.agent.run()*, used to auto-pick icons based on category settings and legend. It bulk fills missing icons across the full category list while preserving existing choices. Two additional options enable cheap text completion, or restricting the agent to reading the graph: tools?: string[] | false - allow-list; false or [] means no tools at all (pure text completion), and excludeTools?: string[] - deny-list, which wins over the allow-list.   (GXR-4688) 
+ 
+ 
+== Bug Fixes
+
+NA
+
+ 
+== Removed 3.29.0
+
+* Agent: checkpoint views removed (GXR-4707)
+* *gxr.llm()* deprecated in favor of *gxr.ask()*. (GXR-4686)
+
+== Extensions 3.29.0
+
+The Kineviz extensions provided by default let you create Grove workbooks for reproducible workflows and manage and edit imported files. Extensions for custom solutions may also be available. To add (or remove) an extension on the left panel menu, go to the *_Project > Extensions_* tab, search for the extension, then click its star icon.
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+=== Files 
+_File management extension_
+
+* The *_Files_* panel sidebar is resizeable. (GXR-4695)
+
+
+=== Text Editor
+_Text editor extension_
+
+ 

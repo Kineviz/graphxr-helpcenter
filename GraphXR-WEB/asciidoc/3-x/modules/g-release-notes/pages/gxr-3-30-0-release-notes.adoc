@@ -1,0 +1,83 @@
+= Kineviz 3.30.0 Release Notes
+
+*Release Date:* September 30, 2026
+
+*_Kineviz_* and *_Kineviz Desktop_* include enhanced view saving and sharing, a redesigned *_Trace Neighbor_* tool, improved *_Agent_* UI and *_Expand_* performance, support for Apache AGE, and bug fixes.           
+  
+NOTE: In a *Kineviz Online* or *Kineviz Desktop* project, to access release notes, click the *Kineviz* logo at the bottom left, choose *_About_*, then click on the release tag.
+
+== New Features 3.30.0
+
+=== Usability Enhancements
+
+* In Project settings and the in-project split view menu, a *_Transfer ownership_* item opens a dialog to transfer ownership of the selected project to another user, and optionally remain a collaborator. (GXR-4703)
+
+* The view *_Save As_* dialog is enhanced with
+** A subtitle stating whether a new view or a saved copy of the loaded view will be created.
+** *_Suggest_* button to suggest a view name
+** *_New Folder_* inline link to create a new named view folder
+** optional view *_Description_*
+** A *_Saved with it_* section displaying a canvas thumbnail, node count, and edge count.
+** An *_Enter saves_* hint, i.e. pressing *Enter* or *Return* saves the view. 
+** A new *_Save & share_* button that saves and opens the *_Share_* dialog for the new view. (GXR-4697).
+
+* The *_Trace Neighbor_* tool is re-designed to include directional trace, and a *_Select Traced_* button to select the traced nodes and edges without leaving the dialog. (GXR-677), (GXR-2836).
+
+* Algorithms in the *_Algorithm_* panel's *_Centrality_* and *_Community_* tabs include a brief description of their typical use. (GXR-4636).
+
+* In the *_Project > Views_*  panel, the folder sidebar is resizeable, and search is enabled for folder names. (GXR-4726).
+
+ 
+* *_Agent_* 
+
+** A screenshotCanvas tool is added to enable agent to evaluate an image of the current canvas. (GXR_4727)
+** A new row indicates when a model run returns no result, and provides the option to retry. (GXR_4731)
+** The settings button is now pinned to the top of the *_Agent_* panel, and displayed on mouse rollover. (GXR_4733)
+** Budget block messages are reported as a percentage, not in dollars or tokens. (GXR_4757)
+
+=== Performance Enhancements 
+
+* *_Expand_* on selected nodes longer automatically hydrates node IDs for the entire graph, improving speed and reliability, and preventing automatic KoreDB update. Now, moving data on the canvas to KoreDB is done deliberately using *_Data Store > Hydrate IDs_*. Unresolved seeds now raise a message saying how many were skipped and pointing at *_Hydrate IDs_* (GXR-4670)
+
+** A size/verbosity rule is added to reduce Agent token cost whereby large files and localization bundles are split according to specific protocols. (GXR_4770)
+
+   
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* Support is added for Apache AGE (PG 15/16/17/18), a PostgreSQL extension that adds graph database capabilities to a regular relational database. (GXR-4761)
+
+* By default, *Kineviz Desktop* signs in on cloud.kineviz.com. (GXR-4772)
+
+
+=== Kineviz API 
+
+NA
+
+== Bug Fixes
+
+* *_Fly Out_* no longer frames the graph under the legend. (GXR-4732)
+*  The *_Map_* scroll/zoom function works as expected. (GXR-4738)
+*  Renaming a relationship works as expected. (GXR-4765)
+*  Right click + drag to rotate the canvas works in all themes (GXR-4771)
+*  Deleting a project deletes on files inside its folder, not any others (GXR-4774)
+ 
+== Removed 3.30.0
+
+* None
+
+== Extensions 3.30.0
+
+The Kineviz extensions provided by default let you create Grove workbooks for reproducible workflows and manage and edit imported files. Extensions for custom solutions may also be available. 
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+=== Files 
+_File management extension_
+
+* In the *_Files_*  panel, the folder explorer sidebar stays visible unless a user explicitly hides it. (GXR-4742).
+
+=== Text Editor
+_Text editor extension_
+
+ 

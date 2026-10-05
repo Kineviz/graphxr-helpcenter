@@ -1,0 +1,71 @@
+= Kineviz 3.27.0 Release Notes
+
+*Release Date:* September 8, 2026
+
+*_Kineviz_* and *_Kineviz Desktop_* include enhancements for user-defined workspaces,  support for connection to many additional external databases, enhanced Agent UI, and added API capability.             
+  
+NOTE: In a *Kineviz Online* or *Kineviz Desktop* project, to access release notes, click the *Kineviz* logo at the bottom left, choose *_About_*, then click on the release tag.
+
+== New Features 3.27.0
+
+=== Usability Enhancements
+
+* In the left panel menu, click and drag to change the order of menu items. (GXR-4541)
+* The *_Query_* bar at the top left is made more compact. A shortcut key (Cmd+K) opens it.  (GXR-4535) 
+
+* In *_Datastore>Utilities_*, a *_Schema_* button displays the schema of the currently connected database, and lets you:
+** Add Categories and Relationships.
+** *_Import_* or *_Export_* the schema.
+** *_Reload_* the schema from the database.
+** *_Save_* the schema to the connected database. (GXR-4584)
+ 
+* Improve syntax error messages when querying non-KoreDB databases.(GXR-4539)
+  
+* *_Agent_* 
+
+** Agent. (GXR_4611)
+** *_Copy thread_* menu item added. (GXR_4589)
+** PDF upload supported. (GXR_4576)
+** Agent connectivity improved. (GXR_4561)
+
+=== Performance Enhancements 
+
+* Connecting a project to one of the following external databases is now supported:
+** Azure, Cosmos, FalkorDB (GXR-4564)
+** AlloyDB, Omni (GXR-4607) 
+** ArcadeDB (GXR-4608) 
+** Gremlin, JanusGraph (GXR-4568) 
+** TuGraph (GXR-4537) 
+** Tiger Graph, Huge Graph (GXR-4542) 
+   
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* For admin users, the Settings icon in the *_Extensions_* panel opens the admin portal to manage extensions. (GXR-4594)
+
+=== Kineviz API 
+
+* gxr.map() adds scriptable geographic mapping capability, including 12 function calls  to perform various map actions. (GXR-4543)
+* gxr.agent.run() model selection follows the *_Agent_* panel's precedents. (GXR-4567)
+
+== Bug Fixes
+
+ 
+== Removed 3.27.0
+
+* *_Agent_*  Queue button deprecated. (GXR_4551)
+
+
+== Extensions 3.27.0
+
+Kineviz extensions provided by default (shown on the *_Project > Extensions_* tab) let you create *_Grove_* workbooks for reproducible workflows,  and manage and edit imported files. Extensions for custom solutions may also be available.
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+=== Files 
+_File management extension_
+
+=== Text Editor
+_Text editor extension_
+
+ 

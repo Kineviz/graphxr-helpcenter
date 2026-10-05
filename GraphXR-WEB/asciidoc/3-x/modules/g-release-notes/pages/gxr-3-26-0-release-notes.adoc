@@ -1,0 +1,64 @@
+= Kineviz 3.26.0 Release Notes
+
+*Release Date:* September 2, 2026
+
+*_Kineviz_* and *_Kineviz Desktop_* are enhanced through a redesigned *_Projects_* page, left menu labels, a bottom docking option for workspaces, and added Agent UI. Database access is added or improved for *Rocketgraph*, *AWS Neptune*, and Google *BigQuery*.             
+  
+NOTE: In a *Kineviz Online* or *Kineviz Desktop* project, to access release notes, click the *Kineviz* logo at the bottom left, choose *_About_*, then click on the release tag.
+
+== New Features 3.26.0
+
+=== Usability Enhancements
+
+* The Projects home page is redesigned to make it easier to create and manage numerous projects, including:
+** A left sidebar to filter projects to be displayed. Default filters are provided for *_All Projects_*,  *_Favorites_*, *_Shared_*, or *_My Sandbox_* projects. Use *_Add Filter_* to filter projects by *Tag*, *Database Type*, *Authors*, date *Created* or *Opened*, or the status of *Deletion protection*. (GXR-4533)
+** A section to the right, displaying recently opened projects, and filtered projects as project cards or a table. 
+** A search bar at the top.
+** Options for creating a project: using the *_New Project_* or *_Import project_* menu items, entering an agent-enabled text description, or choosing *_From a sandbox_* to start with an existing sandbox.    
+
+* Text labels on the left panel menu can be shown or hidden. (GXR-4509) 
+
+* In a user-defined workspace, a panel can now be docked to the *_Bottom_* of the canvas. (GXR-4527) 
+
+* On the bottom status bar, click the *_Node_* or *_Relationship_* table items to open the *_Category_* or *_Relationship_* panels (respectively.)  (GXR-4510) 
+
+ 
+* *_Agent_* 
+
+** An inline question card is added so  that the agent can ask a clarifying question. (GXR_4508)
+** The thread history list is now paginated. (GXR_4512)
+
+=== Performance Enhancements 
+
+* Agent includes KoreDB self-correction guidance for query errors. (GXR_4516)
+   
+=== Administration, Security, Configuration, and Deployment Enhancements 
+
+* The *_Sign Up_* screen is re-designed to conform to Kineviz product design. (GXR-4511)
+
+=== Kineviz API 
+
+NA
+
+== Bug Fixes
+
+* Agent session ids with null values are now removed from analytics. (GXR_4513)
+
+== Removed 3.26.0
+
+* None
+
+== Extensions 3.26.0
+
+Kineviz extensions provided by default (shown on the *_Project > Extensions_* tab) let you create *_Grove_* workbooks for reproducible workflows,  and manage and edit imported files. Extensions for custom solutions may also be available.
+
+=== Grove 
+_Observable-based javascript notebooks_
+
+=== Files 
+_File management extension_
+
+=== Text Editor
+_Text editor extension_
+
+ 
