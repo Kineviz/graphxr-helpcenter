@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kineviz 3.25.0 Release Notes :: Documentation</title>
+    <link rel="canonical" href="http://petrel.local/user-guides/v3/g-release-notes/gxr-3-25-0-release-notes.html">
+    <meta name="generator" content="Antora 3.1.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+        <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__logo" href="../../../user-guides/v3.x/index.html"><img src="../../../kv-logo.png" alt="Kineviz" class="navbar-item__logo" max-width="100px" width="45vw" >
+        </a>
+        </div>
+      <a class="navbar-item" href="../../../user-guides/v3.x/index.html">Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../user-guides/v3.x/index.html">GraphXR</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../user-guides/v3.x/g-user/intro-overview.html">User Guide</a>
+            <a class="navbar-item" href="../../../user-guides/v3.x/g-admin/install-admin-intro.html">Admin Guide</a>
+            <a class="navbar-item" href="../../../user-guides/v3.x/g-release-notes/gxr-release-history.html">Release Notes</a>
+          </div>
+        </div>
+          <a class="navbar-item" href="../../../user-guides/v3.x/g-learning/faq.html">FAQ</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="../../../user-guides/v3.x/g-learning/learn.html">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.youtube.com/@Kineviz">Videos</a>
+            <a class="navbar-item" href="https://medium.com/kineviz">Blog</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="user-guides" data-version="v3">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Home</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html"><strong>Getting Started</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/intro-overview.html"><strong>Kineviz User Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/graphxr-start/propgraph-basics.html"><strong>Property Graphs in Kineviz</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/graphxr-start/open-graphxr.html"><strong>Kineviz Login</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/graphxr-start/projects-home.html"><strong>Create and Manage Projects</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/graphxr-start/project-ui.html"><strong>The Project Workspace</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/graphxr-start/project-ui-config.html"><strong>Configure a Project UI</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-import/data-import-intro.html"><strong>Import Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-import/import-by-drag-and-drop.html">Drag and Drop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-import/query-graphdb.html">Query a Graph Database</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-import/query-sql.html">Import by SQL Query</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-import/import-via-mapping.html">Map a Table to a Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-import/load-a-saved-view.html">Load a Saved View</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-import/import-a-project.html">Import a Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-crud/data-crud-intro.html"><strong>Create and Edit Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-crud/data-add.html">Add Nodes, Edges, and Properties</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-crud/data-edit.html">Edit Entity Labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-crud/tag-nodes.html">Tag Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-crud/data-delete.html">Delete Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/transform-data/intro-transforms.html"><strong>Transform Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-fx.html">Reformat with fx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-extract.html">Extract</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-aggregate.html">Aggregate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-link.html">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-shortcut.html">Shortcut</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/transform-data/tr-connector.html">Use the Connector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/data-crud/graph-analytics.html"><strong>Run Graph Algorithms</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/nav-select/navigate.html"><strong>Navigate the Graph</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/nav-select/explore-select.html"><strong>Select Graph Data</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/select.html">Select Nodes and Edges</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/filter.html">Filter Nodes and Edges</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/nav-select/select-paths.html">Select Paths and Connections</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/nav-select/hide-show.html"><strong>Hide Graph Data</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/nav-select/table-explore.html"><strong>Work with View Tables</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/display-options/using-display-options.html"><strong>Style the Graph</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/project-display-options.html">Project Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/color-icon-and-captions.html">Set Color, Icon, and Captions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/scale-by-property-value.html">Set Node and Edge Sizes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/display-options/create-template.html">Create Project Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/layouts/working-with-layouts.html"><strong>Work with Layouts</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/layouts/force-layout.html">Force Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/layouts/parametric-layouts.html">Parametric Layout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/layouts/geometric-layouts.html">Geometric Layouts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/geospatial-maps.html">World Map Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/data-save-share-intro.html"><strong>Save and Share Views</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-save.html">Save Graph Views</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/data-share-views.html">Share Projects and Views</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/data-export-intro.html"><strong>Export Data</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/data-manage-datastore.html"><strong>Manage the Data Store</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/kineviz-agent.html"><strong>Kineviz AI Agent</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-user/graphxr-extensions/intro-extensions.html"><strong>Kineviz Extensions</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/graphxr-extensions/grove.html"><strong>Grove</strong></a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/graphxr-extensions/file-manager.html"><strong>Files</strong></a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-user/graphxr-extensions/text-editor.html"><strong>Text Editor</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../g-user/nav-select/ref-shortcut-keys.html"><strong>Shortcut Keys Reference</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../desktop/desktop-intro.html"><strong>Kineviz Desktop</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../desktop/desktop-login.html"><strong>Install Desktop</strong></a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../desktop/desktop-projects-home.html"><strong>Desktop Projects</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../explorer/spanner-intro.html"><strong>Kineviz Explorer for Spanner</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../explorer/spanner-connect.html"><strong>Connect to Spanner</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../explorer/bigquery-intro.html"><strong>Kineviz Explorer for BigQuery</strong></a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/install-admin-intro.html"><strong>Kineviz Admin Guide</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/install/install-intro.html"><strong>Installation</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/install/install-onprem.html">On Premises</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/install/install-webx-vr.html">WebX and VR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../g-admin/admin/admin-intro.html"><strong>Administration</strong></a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-users.html">Manage Users</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/review-user-analytics.html">Track App Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/review-project-usage.html">Track Project Usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-user-feedback.html">Manage User Feedback</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-neo4j-datasets.html">Manage Neo4j Datasets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-llms.html">Manage LLMs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-extensions.html">Manage Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/create-project-templates.html">Create Project Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/custom-icon-sheets.html">Apply Custom Icon Sheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../g-admin/admin/manage-shorturls-shared-views.html">Manage Short URLs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Home</span>
+    <span class="version">v3</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Home</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">v3</a>
+        </li>
+        <li class="version">
+          <a href="../../v2/index.html">v2</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="gxr-3-25-0-release-notes.html">Kineviz 3.25.0 Release Notes</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">v3</button>
+  <div class="version-menu">
+    <a class="version is-current" href="gxr-3-25-0-release-notes.html">v3</a>
+    <a class="version is-missing" href="../../v2/index.html">v2</a>
+  </div>
+</div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Kineviz 3.25.0 Release Notes</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Release Date:</strong> August 28, 2026</p>
+</div>
+<div class="paragraph">
+<p><strong><em>Kineviz</em></strong> and <strong><em>Kineviz Desktop</em></strong> include UI changes, performance upgrades and bug fixes. Usability enhancements include project editing from the <strong><em>Projects</em></strong> home page, user-defined project workspaces, and new or re-designed elements in the <strong>Legend</strong>, context menu, and toolbars. Agent UI is enhanced and and administrator functions reorganized. Database access is added or enhanced for <strong>Rocketgraph</strong>, <strong>AWS Neptune</strong>, and Google <strong>BigQuery</strong>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In a <strong>Kineviz Online</strong> or <strong>Kineviz Desktop</strong> project, to access release notes, click the <strong>Kineviz</strong> logo at the bottom left, choose <strong><em>About</em></strong>, then click on the current release tag.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_new_features_3_25_0"><a class="anchor" href="#_new_features_3_25_0"></a>New Features 3.25.0</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_usability_enhancements"><a class="anchor" href="#_usability_enhancements"></a>Usability Enhancements</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>From the Projects home page, add a tag, image, description, or sandbox icon to a project tile by opening its <strong><em>Create</em></strong> or <strong><em>Edit</em></strong> dialog. (GXR-4444)</p>
+</li>
+<li>
+<p>When creating a Project, a suggested title is supplied which is used if the user does not enter a title. (GXR-4453)</p>
+</li>
+<li>
+<p>User-defined workspaces.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Kineviz panels can be floated on the canvas, docked to the <strong><em>Left</em></strong>, or <strong><em>Right</em></strong> margin, or the the <strong><em>Center</em></strong> of the canvas as desired. Panels docked to the left or right margin can be vertically split. (GXR-4372)</p>
+</li>
+<li>
+<p>A line of icons above the Legend let the user save current panel positions as a named workspace in the project, reset the workspace to the default left panel configuration, open or close docked panels</p>
+</li>
+<li>
+<p>A <strong><em>Peek</em></strong> toggle icon (or <strong>shift + Z</strong> shortcut) closes (or opens) all panels for a view of the full canvas.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Legend</strong> re-design</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The colored dot or line next to a category, relationship, tag, or property now opens the <strong><em>Style Setting</em></strong> dialog, where you choose the color, icon, caption, and/or bind width for the selected element. When you choose an icon, the dot changes to display it. A separate brush icon to open the dialog is no longer present.</p>
+</li>
+<li>
+<p>On mouse rollover, the category name and number of nodes is displayed (in <strong>Server</strong>, not <strong>Desktop</strong>). (GXR_4450)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Navigation and Selection tools</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The person icon on the left menu bar at the bottom opens the <strong>Account</strong> menu with current user name, and the <strong><em>Logout</em></strong>, <strong><em>Settings</em></strong>, <strong><em>About</em></strong>, <strong><em>Shortcuts</em></strong>, <strong><em>Toggle Theme</em></strong>, <strong><em>Recent Projects</em></strong> (for switching to another project), and <strong><em>Home</em></strong> menu items. The Kineviz logo at the top of the left menu bar now returns you to the <strong><em>Projects</em></strong> home page. (GXR-4485)</p>
+</li>
+<li>
+<p>The <strong>Account</strong> menu stays open until you click elsewhere in the project space. (GXR-4452)</p>
+</li>
+<li>
+<p><strong>GUI Navigation</strong> (camera) controls are now redesigned as a line of small icons on the right vertical margin, with added <strong><em>Center To</em></strong> and <strong><em>Fly Out</em></strong> tools. (GXR-4506)</p>
+</li>
+<li>
+<p>The right-click <strong>context menu</strong> is modernized to be more compact. (GXR-4467)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><em>Query</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>The <strong><em>Query</em></strong> panel is refactored to use current UI elements. (GXR-3694)</p>
+</li>
+<li>
+<p>A message is displayed when a query returns no results. (GXR-4471)</p>
+</li>
+<li>
+<p>The Query bar shows case sensitivity in queries more clearly. (GXR-4027)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><em>Agent</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Opening the <strong><em>Agent</em></strong> panel with no open chat tabs (i.e. on first open, or reopening after all tabs were closed) automatically opens a new thread. (GXR-4458()</p>
+</li>
+<li>
+<p>When gxr.agent.run() creates a view, a short view title is proposed based on the visible graph (categories, counts, selection).	(GXR-4486)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The <strong>Login</strong> screen is re-designed to conform to Kineviz product design. (GXR-4206)</p>
+</li>
+<li>
+<p>Support is added to vertically split left and right panels (GXR-4372)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_performance_enhancements"><a class="anchor" href="#_performance_enhancements"></a>Performance Enhancements</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>In the <strong><em>Admin&gt;User</em></strong> panel, one page of a long list of users is loaded at first, reducing wait time (GXR-4483).</p>
+</li>
+<li>
+<p>For Kineviz <strong>Desktop</strong>, an improved sqlite build is provided. (GXR-4480).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_administration_security_configuration_and_deployment_enhancements"><a class="anchor" href="#_administration_security_configuration_and_deployment_enhancements"></a>Administration, Security, Configuration, and Deployment Enhancements</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>KoreDB uses the latest kuzu or ladybug version. (GXR-4457)</p>
+</li>
+<li>
+<p>Support is added for Rocketgraph. (GXR-4456)</p>
+</li>
+<li>
+<p>Support is added for the latest AWS Neptune. (GXR-4451)</p>
+</li>
+<li>
+<p>BigQuery includes improved roles description. (GXR-4440)</p>
+</li>
+<li>
+<p>Kineviz <strong>Desktop</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Direct Google login for <strong>BigQuery</strong> and <strong>Spanner</strong>. (GXR-4479)</p>
+</li>
+<li>
+<p>A Linux target is added for Kineviz Desktop. (GXR-4443)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Kineviz <strong><em>Admin Portal</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>A <strong><em>Secrets</em></strong> manager is provided for both <strong>Desktop</strong> and <strong>Server</strong>. (GXR-4487)</p>
+</li>
+<li>
+<p>In the <strong><em>Agent</em></strong> section, the <strong><em>Models</em></strong> sub-tabs is moved to the far left. The five sub-tabs are now <strong><em>Models</em></strong>, <strong><em>Connectors</em></strong>, <strong><em>Budgets</em></strong>, <strong><em>Usage</em></strong>, and <strong><em>Sessions</em></strong> (for server mode only). Models is the tab admins need first because it holds the saved model registry (plus <em>allow user models</em> and <em>MCP Hub</em> toggles). (GXR-4461)</p>
+</li>
+<li>
+<p><strong><em>Stripe</em></strong>, <strong><em>Legal</em></strong> and <strong><em>Desktop</em></strong> tabs are reorganized. <strong><em>Stripe</em></strong> and <strong><em>Desktop</em></strong> share /api/agent-model-config with the <strong><em>Agent</em></strong> tab; <strong><em>Legal</em></strong> admin routes stay manager-only. (GXR-4462)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_kineviz_api"><a class="anchor" href="#_kineviz_api"></a>Kineviz API</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>gxr.agent.run() to support headless agent operations. (GXR-4441)</p>
+</li>
+<li>
+<p>gxr.screenshot() now includes previously missing category items. (GXR-4003)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bug_fixes"><a class="anchor" href="#_bug_fixes"></a>Bug Fixes</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>With gxr.query(), reading the wrong QueryResult accessor now raises an instructive error message (rows vs graph) (GXR-4463).</p>
+</li>
+<li>
+<p>The Agent 2.0 static schema card now maintains schema labels properly. (GXR-4439)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_removed_3_25_0"><a class="anchor" href="#_removed_3_25_0"></a>Removed 3.25.0</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>None</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_extensions_3_25_0"><a class="anchor" href="#_extensions_3_25_0"></a>Extensions 3.25.0</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Kineviz extensions provided by default (shown on the <strong><em>Project &gt; Extensions</em></strong> tab) let you create <strong><em>Grove</em></strong> workbooks for reproducible workflows,  and manage and edit imported files. Extensions for custom solutions may also be available.</p>
+</div>
+<div class="sect2">
+<h3 id="_grove"><a class="anchor" href="#_grove"></a>Grove</h3>
+<div class="paragraph">
+<p><em>Observable-based javascript notebooks</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_files"><a class="anchor" href="#_files"></a>Files</h3>
+<div class="paragraph">
+<p><em>File management extension</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_text_editor"><a class="anchor" href="#_text_editor"></a>Text Editor</h3>
+<div class="paragraph">
+<p><em>Text editor extension</em></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+
+  <p>© 2019-2025 Kineviz, Inc.</p>
+  <p>This site is based on the Antora default UI. Its source code is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>
