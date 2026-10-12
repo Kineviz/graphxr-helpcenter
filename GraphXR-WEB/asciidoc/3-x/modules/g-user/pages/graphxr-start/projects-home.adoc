@@ -1,156 +1,345 @@
 = Create and Manage Projects
 
-The *_Projects_* page is your portal to:
+The *_Projects_* (or *_Home_*) page is your portal to:
 
-* Create new *Kineviz* projects, review existing projects, and manage shared projects.
-* Review details of your *Kineviz* account, link to *Kineviz* information, send feedback to Kineviz, and access user communities.
+* Create or import *Kineviz* projects, and optionally connect to an external or internal database.
+* Review and edit existing projects, including shared projects, sandboxes and demos.
 
-== Project Display
+image::/v3/01_03_01_ProjectHome.png[,720,340,role=text-left]
 
-The *_Projects_* page displays existing projects available to your account. You can open  any project simply by clicking on its card or list item. 
+Project *_Cards_* display project details and editing options. The *_Table_* icon at the top right lets you display a more compact project list.  
 
-image::/v3/01_03_01_ProjectsHomeCards.png[,720,840,role=text-left]
+image::/v3/01_03_02_ProjectsTable.png[,720,520,role=text-left]
 
-By default, Projects appear as cards in the following sections:  
+== Database Connection to Kineviz Projects
 
-* *_Recent Projects_*, projects you recently opened.
-* *_My Projects_*, projects you've created, plus a *_Create_* tile or button. 
-* *_Shared Projects_*, the projects other users share with you.
-* *_Create From Sandbox_*, pre-configured projects focused on specific workflows. Opening a sandbox project clones it and displays it in the *_My Projects_* and *_Recent Projects_* sections.
+A Kineviz project can be connected to an internal KoreDB database or one of several external databases when you create it. The options are:
 
+* An Internal *_KoreDB_* or *_KoreDB via proxy API_*, to create and connect a default internal KoreDB graph database queried using *Cypher*. You can import and/or model graph data in the project, save and query it internally, and export the entire KoreDB database for archival. 
+
+* An external graph database, to enable *Kineviz* property graph visualization and analytics without replicating or moving data.   
+
+NOTE: Connecting a project when you create it is optional, and you can *_Edit_* connection details for an existing project at any time. 
+
+To review a list of currently supported databases:
+
+. Click *_New Project_* at the upper right of the *_Project_* home page. 
+. In the *_New Project_* dialog, click *_Your Database_* to display the list.
+
++ 
+image::/v3/01_03_03_CreateDatabaseType.png[,540,320,role=text-left]
 +
-NOTE: Kineviz provides in-app tutorials as *_Sandbox_* projects. Each focuses on a particular use case or workflow, and illustrates how to use the *Kineviz* platform to investigate and communicate useful results.
 +
+Current options are listed in *_Cypher_*, *_Gremlin_*, *_GQL/PGQL_*, and *_Other_* sections.
 
-* *_Demo_*, projects, which may be provided for hands-on exploration.
 
-Click the *_Table_* icon at the top of the *_Recent Projects_* section to display a more compact list of your projects. 
+[caption=]
+.External Graph Database Connection Supported in Kineviz
+[cols="2,5,8"]
+|===
+| *DB Type* | *Database* | *Connection Type* 
+
+| Cypher
+| *Amazon Neptune*
+| openCypher over Bolt
+
+| Cypher
+| *Apache AGE*
+| openCypher on PostgreSQL
+
+| Cypher
+| *Apache HugeGraph*
+| openCypher over REST
+
+| Cypher
+| *ArcadeDB*
+| openCypher over HTTP
+
+| Cypher
+| *FalkorDB*
+| openCypher over Redis
+
+| Cypher
+| *GalaxyBase*
+| GalaxyBase distributed graph database
+
+| Cypher
+| *Mapped graph*
+| Map SQL tables or Elasticsearch indexes as read-only graph queried with openCypher
+
+| Cypher
+| *Memgraph*
+| In-memory graph database, Bolt compatible
+
+| Cypher
+| *NebulaGraph*
+| Open source distributed graph database
+
+| Cypher
+| *Neo4j / OpenCypher*
+| Bolt connection to a Neo4j instance
+
+| Cypher
+| *PuppyGraph*
+| Graph engine over your data lake
+
+| Cypher
+| *RocketGraph*
+| XGT graph over REST
+
+| Cypher
+| *TigerGRaph*
+| openCypher over GSQL REST API
+
+| Cypher
+| *TuGraph*
+| Bolt-compatible graph database
+
+| Gremlin
+| *Azure Cosmos DB*
+| Gremlin over WebSocket
+
+| Gremlin
+| *Gremlin*
+| Any Apache TinkerPop server, over Gremlin
+
+| Gremlin
+| *JanusGraph*
+| Gremlin over WebSocket
+
+| GQL / PGQL
+| *Google AlloyDB Omni*
+| Google Alloy DB Omni property graphs (SQL/PGQ)
+
+| GQL / PGQL
+| *Google BigQuery Property Graph*
+| Property graphs in Google BigQuery
+
+| GQL / PGQL
+| *Google Spanner Property Graph*
+| Graph queries on Google Cloud Spanner
+
+| GQL / PGQL
+| *Oracle Graph*
+| Graph query on Oracle Database
+
+| GQL / PGQL
+| *PostgreSQL*
+| PostgreSQL property graphs
+
+| GQL / PGQL
+| *Ultipa Graph*
+| Ultipa HTAP graph server
+
+| Other
+| *Database Proxy*
+| Generalized proxy built on open-source middleware, to securely connect *Kineviz* to various backend databases.
+|===
+
+TIP: A rollover tooltip on the version number includes current connection requirements and troubleshooting tips. 
+
+image::/v3/01_03_04_CreateDatabaseTooltip.png[,320,380,role=text-left]
  
-image::/v3/01_03_02_ProjectsHomeTable.png[,720,520,role=text-left] 
+NOTE: *Kineviz* *_Explorer_*, a basic version of the *Kineviz* platform for initial visual exploration of big data, is provided through the *Google Cloud Platform (GCP) Marketplace*. Configuration and connection is exclusively initiated through two *GCP Marketplace* products: xref:explorer:spanner-intro.adoc[*Explorer for Spanner Graph*]  and  xref:explorer:bigquery-intro.adoc[*Explorer for BigQuery*]
 
 == Create a Project
 
-You can create and configure a *Kineviz* project at any time and optionally connect it to an external or internal database. 
+You can create and configure a *Kineviz* project at any time and optionally connect it to an external or internal database. You can:
 
-image::/v3/01_03_03_CreateDatabaseType.png[,420,320,role=text-left] 
-
-
-=== About Database Connection
-
-You can establish a project's database connection(if any) at any time. You must enter connection details and follow the steps required by the database type you select.
-
-NOTE: You can also *_Edit_* the database type and connection details for an existing project.
-
-The *_Database Type_* options are:
-
-* *_None_*, to create a project with no connected database. You can import and model data in formats such as CSV, SQL and JSON, and import graph data via GXRF files, Snapshot archives, and more. Simply drag and drop files directly, or use the *Kineviz* xref:data-import/import-via-mapping.adoc[*Mapping Editor*] for initial graph modeling.
-
-* *_KoreDB_* or *_KoreDb via proxy API_*, to create and connect a default internal KoreDB graph database that you can manage in the *_Project >  Data Store_* subpanel. You can import and/or model graph data in the project, save and query it internally, and export the entire KoreDB database for archival. 
-
-* One of the following relational or graph database types, to enable full *Kineviz* property graph visualization and analytics with no need to replicate or move data:  
-
-** Neo4j 
-** BigQuery Property Graph
-** Spanner Property Graph
-** Puppygraph
-** Ultipa Graph
-** Memgraph
-** GalaxyBase
-** Nebula Graph
-** Oracle Graph
-** Database Proxy. A generalized proxy built on open-source middleware, designed to securely connect *Kineviz* to various backend databases. 
-
-NOTE: *Kineviz* *_Explorer_*, a basic version of the *Kineviz* platform for initial visual exploration of big data, is provided through the *Google Cloud Platform (GCP) Marketplace*. Configuration and connection is exclusively initiated through two *GCP Marketplace* products: xref:explorer:spanner-intro.adoc[*Explorer for Spanner Graph*]  and  xref:explorer:bigquery-intro.adoc[*Explorer for BigQuery*]
+* create a new project manually
+* create a project by prompting the built-in Kineviz *_Agent_*  
+* start from a pre-configured sandbox project.
 
 === Create a New Project
 
 *To create a new project:*
 
-. Click *_Create_*, at the top right of the *_Projects_* page.
+. Click *_New Project_*, at the top right of the *_Projects_* page.
 +
-image::/v3/01_03_04_ProjectsCreateButton.png[,720,280,role=text-left]
+image::/v3/01_03_05_ProjectsCreateButton.png[,720,180,role=text-left]
 +
-. In the *_Create New Project_* dialog: 
-.. Enter a descriptive *_Project Name_* in the text box.
 
-.. In *_Apply Template_*, either leave the default *_None_*, or select a template from the menu. Templates specify colors, icons and other UI configuration settings for easy re-use. 
+. In the *_New Project_* dialog: 
 
-.. Select the *_Database Type_* from the dropdown menu and click *_Confirm_*.
+.. Select the optional database connection (or skip connection):
 
 +   
-With a *Database Type* of *_None_* or *_Internal Data Store_*, the project is automatically created and opened.
+* Click *Empty Graph* to automatically create an internal *_KoreDB_*. 
+* Click *Your database* to select an existing external database. The databases Kineviz supports are listed in the dropdown menu in *_Cypher_*, *_Gremlin_*, *_GQL/PGQL_*, or *_Other_* sections. To more easily locate the desired database, select the menu's *_Grid_* view and either enter a search in the search bar, or click to display only the list for a section. Then click to select the database you want.
+* Click *_Skip database_* below the *Your database* menu to create a project with no connected database. You can import and model data in formats such as CSV, SQL and JSON, and import graph data via GXRF files, Snapshot archives, and more. Simply drag and drop files directly, or use the *Kineviz* xref:data-import/import-via-mapping.adoc[*Mapping Editor*] for initial graph modeling.
 +
 
 + 
-For connection to an existing external database, the *_Create New Project_* dialog shows the additional details needed to confirm connection to your database.
-+
- 
-+
-image::/v3/01_03_05_CreateUltipaProject.png[,420,480,role=text-left]
+If you select an external database, additional details needed to confirm connection to your database are displayed.
 +
 
 +
-* Most connection options require:
+image::/v3/01_03_06_CreatePostgreSQLProject.png[,420,480,role=text-left]
++
 
- ** Hostname (or IP)
- ** BOLT port - a default is shown for most options.
++
+NOTE: You may also need to verify that your external database is running before trying to connect to it. 
++
+
++
+* Most database types require:
+
+ ** Host (or IP)
+ ** Port - a default is shown for most options.
+ ** Database
  ** Username
  ** Password
  ** Database Name 
 +
  
-+
-NOTE: You may also need to verify that your external database is running before trying to connect to it. 
-+
-
-+ 
-  
-* For GCP Spanner and Big Query property graphs, you select the database type abd click *_Confirm_*. 
-
-+
-image::/v3/01_03_06_CreateBigQuery.png[,420,480,role=text-left]
-+
-
-+
-A connection wizard then guides you through a detailed secure deployment process which ends by opening the project.
++  
+* For GCP Spanner and Big Query property graphs, when you select the database type and click *_Confirm_*, a connection wizard guides you through a detailed secure deployment process which ends by opening the project.
 +
 
 +
 image::/v3/01_03_07_CreateBigQueryWizard.png[,520,480,role=text-left]
 +
 
-* If you choose the *Kineviz* Database Proxy, which is designed to securely connect *Kineviz* to various backend databases, an API url is required.
++
+* The *Kineviz* Database Proxy which securely connects *Kineviz* to various backend databases requires an API url.
++
+
+.. In *_Apply Template_*, either leave the default *_None_*, or select a template from the menu. Templates specify colors, icons and other UI configuration settings for easy re-use.
+.. Enter a descriptive *_Project Name_* in the text box. A name is automatically suggested; you will likely want to change it.
+.. Enter an optional project *_Description_*. You can add or edit this later if desired.
+.. Enter or select optional *_Tags_* that indicate the general topic or audience for the project.
+.. In *_Slug_*, enter an optional short name to be used in the project's share link instead of its id. Use a name unique to the server of 3–64 characters with lowercase letters, numbers and hyphens only. 
++
+image::/v3/01_03_08_ProjectNameDesc.png[,720,480,role=text-left]
++
+
++
+The project card that will be displayed on the *_Projects_* page is updated as you enter details. Click *_Upload image_* to upload an optional thumbnail image to display on the card, or you can do it later.
++
+
+. Click *_Create and Open_* to create the new project and open it, *_Create only_* to create the project and return to the *_Projects_* page, or *_Cancel_* to return to the *_Projects_* page without creating a project. 
+
+=== Create a Project from a Prompt
+
+You can use the Kineviz *_Agent_* to create a project, locate and import data, and model  the graph. 
+
+*To start a project with a prompt:*
+
+. On the projects home page, click the *_Start a project_* text box.
+
++
+image::/v3/01_03_09_ProjectPromptTextBox.png[,720,280,role=text-left]
++
+ 
+. Under *_Start a project with a prompt_* enter a project name and any details about what you want the project to accomplish. 
+
++
+image::/v3/01_03_10_ProjectPromptCreate.png[,720,280,role=text-left]
++
 
 
-. To see that the new project now appears under *_My Projects_*, you must exit the project and return to the *_Projects_* page. Click the Kineviz logo at the lower left and choose *_Home_*. 
++
+TIP: For hints about how to start, click the *_See some examples_* link below the prompt window. 
++
+ 
+. Click *_Create project_*
+
++
+The project opens, starting a chat in the *_Agent_* panel where you can specify the data and model and direct agentic exploration and visualization. 
++
+
++
+image::/v3/01_03_11_ProjectPromptOpenAgent.png[,720,280,role=text-left]
+ 
 
 === Create a Project from a Sandbox
 
-Clicking on a project in the *_Sandbox_* section of the *_Projects_* page clones the sandbox project and opens it. 
+A sandbox is a pre-configured project that you can duplicate. It can include a database connection, data views, styling templates, and any Kineviz extensions it uses. A project created from a sandbox is cloned and automatically opened. 
 
-The new cloned project appears in *_My Projects_* and *_Recent Projects_* sections.
+NOTE: Kineviz provides in-app tutorials as *_Sandbox_* projects that show how to create and explore graph data, and communicate useful results. You can flag any of your existing projects as collaborative sandboxes for your specific use cases. 
+ 
+*To create a project from a sandbox:*
 
-IMPORTANT: After creating a project from a sandbox, once you leave the project and return to the *_Projects_* page, be sure to re-open it in *_My Projects_* or *_Recent Projects_*, not from the *_Sandbox_* section. This returns you to the project as you last left it, instead of creating a new cloned project. 
+. On the projects home page, in the *start a project* area near the top, click *_From a sandbox_*.
++
+image::/v3/01_03_12_ProjectsStartSandbox.png[,720,280,role=text-left]
++
 
-A sandbox project includes full *Kineviz* functionality, including database connection, project styling template, and any saved views, *Grove* notebooks, and *Agent* setup. Once configured, the project appears on the *_Projects_* home page in the *_Create from Sandbox_* section. 
+. In the *_Start from a Sandbox_* dropdown, locate the sandbox. You can click the link at the bottom of the short list to display all the sandboxes available to your account.
 
-image::/v3/01_03_09_SandboxCreate.png[,540,420,role=text-left]
++
+image::/v3/01_03_13_ProjectsSandboxChoose.png[,420,280,role=text-left]
++
+ 
+. Click the card for the sandbox you want to copy (or click the Kineviz logo at the top to return to the *_Projects_* page without creating a new project.)
+
++
+The new project is created and opened, named  _Sandbox Name (n)_ (for example _Books Sandbox (1)_.
++
+
++
+image::/v3/01_03_14_SandboxCreated.png[,540,420,role=text-left]
++
+
++
+NOTE: To re-name the project, choose *_Edit_* in the project split view menu at the top center of the canvas, and in the *_Edit Project_* dialog, enter the new name and click *_Confirm_*. 
++
+
++
+A project created from a sandbox  includes the database connection (if any), saved data views, UI configuration, and workspace configuration, *Kineviz Notebooks*, and *Agent* setup present in the sandbox. It is not itself a sandbox, so its project card or list does not display the blue flask icon. 
 
  
 == Work with Existing Projects  
 
-A tile or list item includes information and tools to review and configure a project:
+All the projects existing in your account are displayed on the *_Kineviz_* home page. You can:
 
-* *Project name*
-* *Database badge* showing the database type connected to the project (if any), e.g. *NEO4J*, *SPAN* (Spanner Graph), *PUPPY* (Puppygraph), *KUZU* (for the internal project database), etc.
-* *Sandbox* badge on pre-configured sandbox projects. 
-* *Corner badge* in the upper right of a card, to display user-defined text.   
-* A *_Settings_* icon, for a dropdown menu of options to edit and share the project:
+* Review projects in either a *_Card_* or *_Table_* (tabular list) format. 
+* Sort, search and filter Projects
+* Click a project card or list item to open it.
+* *_Jump back in_* to any of the last four recently opened projects.
+* Add to or remove from *_Favorites_*
+* *_Edit_* project details including name, description, tags, database connection, and sandbox status. 
+* *_Import_* a project
+* *_Clone_* a project
+* *_Export a Project_*
+* *_Transfer ownership_* of a project
+* *_Delete_* a project, unless it is protected from deletion.
+
+=== Review Projects
+
+On the projects page, projects are displayed in either a *_Card_* or *_Table_* (tabular list). You can click to open a project from either one. 
+
+Both formats display information and tools to search, sort, review and configure a project. 
+
+NOTE: Project configuration can also be changed within an open project using the split *Project / View* menu at the top center of the canvas. 
+
+==== Project Card Display
+
+A project *_Card_* is created for each project available to your account. 
+
+image::/v3/01_03_15_ProjectsCardDisplay.png[,420,540,role=text-left]
+
+A project card includes:
+
+* A project image area with:
+
+** A window to upload an optional image (card only). You can add or update it at any time, either within an open project, or using the project's *_Edit_* menu.
+** A star icon at the top right. Click it to set the project as a *_Favorite_*. 
+** A database badge at the bottom left showing the connected database (if any).
+* An optional workflow badge (e.g. Agentic, Manual, etc) at the top right. 
+* A *Project title*
+* A blue flask icon on pre-configured sandbox projects, and a green sharing icon on projects shared with you.
+* A lock icon for projects that have been protected from deletion.
+* The project description (Card only).
+* The date the project was *_Created_*, and the date it was last *_Opened_*.
+* For a *_Shared_* project, the *_Author_*.
+* A settings icon, for a contextual dropdown menu of options to edit, share, export, or delete the project:
 
 +
-image::/v3/01_03_10_ProjectsSettingsIconMenu.png[,320,320,role=text-left]
+image::/v3/01_03_16_ProjectsSettingsMenu.png[,420,580,role=text-left]
 +
 
+** *_Add to Favorites_* / *_Remove from Favorites_*.
 ** *_Edit_* project name, template, and/ or database type.
 ** *_Clone_* to create a duplicate of the project, including its views and internal database (if any).
 ** *_Export Project_*, to export the entire project, downloading it to your system as a _.graphxrproject_ file.
@@ -158,138 +347,265 @@ image::/v3/01_03_10_ProjectsSettingsIconMenu.png[,320,320,role=text-left]
 ** *_Share Project_* to share the project with another user of the Kineviz account. 
 ** *_Open Views_* to open views and generate iframe code that you can include in a report, proposal, or other communication.
 ** *_Enable / Disable Sharing_* to toggle the project between sharing and non-shared status.
-** *_Protect from Deletion_*, to set a flag to prevent project deletion. 
-** *_Delete_* (trash can), to delete the project, its saved views and internal graph database (but not data in an external connected graph database).
+** *_Transfer ownership_*, to transfer control of a project to another user. 
+** *_Allow_* or *_Protect from Deletion_*, to set a flag to prevent project deletion. 
+** *_Delete_* (trash can), to delete the project, its saved views, and internal graph database (but not data in an external connected graph database), if deletion is allowed.
 
+==== Project Table Display
 
-* The project decription (if any).
-* The date the project was *_Created_*, and the date it was last *_Opened_*.
-* For *_Sandbox_* projects, the *_Author_*.
+The *_Table_* display option is a more compact table or list. It includes most of the information and editing options available on the cards, as well as the same project search and filter options as in the *_Card_* display. 
+ 
+image::/v3/01_03_17_ProjectsTableList.png[,720,420,role=text-left]
 
+The *_Table_* display includes:
 
-=== Search for a Project
-
-To find a specific project, you can:
-
-* Use the *_Search_* bar at the top of the page to find one or more projects by name.
-
-* Use the dropdown menu to sort projects by   
-** Project name
-** Date created  
-** Date last opened
-
-* Select a *_Demo_* to open from the dropdown menu.
+* Compact, sortable lists of projects in separate *_My Projects_* and *_Shared Projects_* sections. Sandbox and lock icons are displayed with the project *_Name_*   
+* The settings dropdown menu for project editing options, located in the *_Actions_* column on the far right.
 
 +
-image::/v3/01_03_11_ProjectsSearch.png[,520,240,role=text-left]
+NOTE: Project image, tags, and description are only shown on the card or in the *_Edit Project_* dialog. 
 
+
+=== Sort, Search, and Filter Projects
+
+To display only specific projects, you can use pre-defined sorting and filters, and/or the project search bar. 
+
+image::/v3/01_03_18_ProjectsSortSearchFilter.png[,720,420,role=text-left]
+
+
+==== Sort displayed projects
+
+In the *_Card_* display, use the dropdown sort menu to sort projects by:   
+* Project name
+* Date created  
+* Date last opened
+* Author
  
+In the *_Table_* display, simply click arrows next to a table heading to sort in ascending or descending order.
+ 
+==== Search for a specific project
+
+To display a specific project, enter all or part of a name, author, tag, or description in the *_Search_* bar at the top of the page. 
+
+The search operates on currently displayed projects, and a search term is applied until you remove it. 
+
+==== Filter projects
+
+Pre-defined filters appear on the left menu bar. 
+ 
+* Default filters include:
+
+** *_All Projects_*, projects you've created, shared projects, and sandbox projects.
+** *_Favorites_*, projects where you've clicked the *star* icon on the project card or  *_Add to Favorites_* on the edit menu in a table view. 
+** *_Shared with me_*, projects other users have shared with you.     
+** *_My sandboxes_*, sandbox projects available to your account.
+
+* Additional pre-defined filters can be chosen from the *_Add Filter_* menu, including:
+** User-defined project *_Tag_* (e.g. Beginner, Intermediate, etc.)
+** Date last *_Opened_*, displaying a slider control to filter projects from the previous 7 to 90 days.
+** Date *_Created_*, displaying a slider control to filter projects from the previous 7 to 90 days.
+** *_Database Type_*
+** Project *_Authors_*
+** Projects with *_Deletion protection_*
+
++
+image::/v3/01_03_19_ProjectsAddFilter.png[,420,520,role=text-left]
+
+
+=== Open a Project
+
+To open a project, simply click its card or list item. 
+
+To open a recent project, you can either:
+
+* Search for projects by *_Date last opened_*
+* Click *_All Projects_* to display a *_Jump back in_* section with cards for the last four project you opened. The small cards show how long ago each project was last opened. Click a card to open the project.
+
++ 
+image::/v3/01_03_20_ProjectsJumpBackIn.png[,720,540,role=text-left]
++
++
+NOTE: Project sorting and filters do not apply to the *_Jump back in_* section. 
+    
+
 === Edit a Project 
 
-A project is configured according to the template applied (if any), the database type, and other default UI settings. You can change these details at any time. 
+The *_Edit Project_* dialog lets you change project details at any time. Open it by selecting *_Edit_* on either:
 
-. In a Project tile or list item, click its Settings or Actions icon to display the dropdown menu, and select *_Edit_*.
+* the settings menu on the project home page, or 
+* the split Project / View menu in any open project. 
+
+image::/v3/01_03_21_EditProjectMenu.png[,520,420,role=text-left]
+
+*To edit project details and configuration:*
+
+. In a project's settings dropdown menu, select *_Edit_*.
 
 +
-image::/v3/01_03_12_EditProject.png[,320,320,role=text-left]
+image::/v3/01_03_22_EditProjectDialog.png[,540,420,role=text-left]
 +
 
-. In the *_Edit Project_* dialog change the project name, template, and/ or database type, and click *_Confirm_*.
+. In the *_Edit Project_* dialog you can: 
 
 +
-image::/v3/01_03_12a_EditProjectDialog.png[,320,420,role=text-left]
+* Enter a new *_Project Name_*, optional *_Description_*, and *_Slug_* (short name used in a project's share link)
+* Click to select different *_Tags_* to be displayed on the project card. 
+* Enter different database connection details.
+* Apply or reapply a styling template.
+* Flag a project as a sandbox, and specify who it can be shared with. You can flag any existing project as a sandbox, which adds it to *_My Sandboxes_* and makes it available for other users to copy and extend. In the *_Who can open this sandbox_* dropdown, the default is *_Signed in - anyone on this server_*. The other options are *_Public - anyone with the link_*, or *_Restricted - only people you share it with_*
++
 
++
+image::/v3/01_03_23_SandboxCheckbox.png[,540,420,role=text-left]
++
+
+. Click *_Confirm_*. 
+ 
++
+Changes take effect immediately on the project page and in the open project:
+
+* A changed project name and configuration details are immediately updated 
+* When you flag the project as a sandbox:
+** A blue _flask_ icon appears on the project card or list.
+** The count in *_My Sandboxes_* in the project navigation menu is updated.
 
 === Clone a Project 
 
-* In a Project tile or list item, click its Settings or Actions icon to display the dropdown menu, and select *_Clone_*.
+Cloning a project duplicates its description, data, views, and styling. A default name is applied that you can change before creating the clone.
+
+*To clone a project:*
+
+. In the project's settings dropdown menu, select *_Clone_*.
+. In the *_Clone Project_*  dialog, optionally enter a new name.
+. Click *_Confirm_*
 
 +
-A duplicate of the project is created, optionally including its *_Grove_* notebooks.
+A duplicate of the project is created (including any *_Kineviz Notebook_* files), and the project is opened automatically.
+
+=== Export a Project 
+
+You can export an entire project as a _.gxrproject_ file downloaded to your system. This is useful for archiving projects, moving projects offline for later use.
+
+*To export a project:*
+
+* In the project's settings dropdown menu, select *_Export project_*.
+
++
+Messages indicate successful export and download of the named _.gxrproject_ file.
+
+
+=== Import a Project
+
+Any project exported as a _.gxrproject_ file can be imported into your account. A _.gxrproject_ file includes all project views, the internal database, and the template  and other styling in effect when the project was exported. 
+
+*To import a project:*
+
+. In the *_Projects_* home page, click the *_New Project_* dropdown arrow, and select *_Import Project_*.
+
++
+image::/v3/01_03_24_ImportProjectMenu.png[,720,240,role=text-left]
++
+
+. In the *_Import project_* dialog, click to locate and select the  _.gxrproject_ file (or drag and drop the file).
+
++
+image::/v3/01_03_25_ImportProjectFind.png[,420,340,role=text-left]
++
+
+. Click *_Import_*. 
+. When the project is imported successfully, either click *_Open_* to open it, or *_Cancel_* to return to the *_Projects_* home page. 
+
++
+image::/v3/01_03_26_ImportProjectDone.png[,320,180,role=text-left]
 +
 
 +
-NOTE: In a *Kineviz* Server project, views are cloned if the *_Copy when cloning project_* checkbox is selected in the view's *_About_* dialog. In *Kineviz Desktop*, all project files and views are cloned by default. 
+The imported project is named as _Project name (imported)_. To re-name the project, choose *_Edit_* either on the project card or list or in the project split view menu. In the *_Edit Project_* dialog, enter the new name and click *_Confirm_* 
+
 
 === Share a Project
 
-You can share a project with other *Kineviz* users. To collaborate with those who don't have a *Kineviz* account, share individual views securely via iframe.
+You can directly share a project with other *Kineviz* users. 
 
-. In a Project tile or list item, click its Settings or Actions icon to display the dropdown menu, and select *_Enable Sharing_*.
+NOTE: To collaborate with those who don't have a *Kineviz* account, you can share individual views securely via iframe.
+
+*To share a project:* 
+
+. In the project's settings dropdown menu, select *_Enable Share_* 
+
++
+image::/v3/01_03_27_ShareEnable.png[,720,280,role=text-left]
++
+
 . Now select *_Share Project_*
 
 +
-image::/v3/01_03_13_ShareProject.png[,320,180,role=text-left]
+image::/v3/01_03_28_ShareProject.png[,320,480,role=text-left]
 +
 
 . Select a sharing user from the dropdown menu, and click *_Invite_*.
 
-=== Open Views to Share
++
+image::/v3/01_03_29_ShareInvite.png[,420,520,role=text-left]
+ 
+
+
+=== Share Project Views
 
 You can select project views and generate iframe code that you can share in an email, report, proposal, or other communication.
 
-. In a Project tile or list item, click its Settings or Actions icon to display the dropdown menu, and select *_Enable Sharing_*.
-. Click *_Open Views_* 
+*To share project views:* 
 
-. In the list of project views, either click
+. In the project's settings dropdown menu, select *_Enable Share_*.
+. Now select *_Open Views_* to see the list of project views.
+
++
+image::/v3/01_03_30_OpenViewsList.png[,520,320,role=text-left]
++
+
+. In the list of project views, either click:
 
 +
 * *_Open view_* to open the view in a separate browser window.
-* *_Generate iframe code_*, which is copied to the clipboard for sharing with an external user. 
+* *_Generate iframe code_*, copying it to the clipboard for sharing with an external user.
+ 
+
+=== Transfer Project Ownership
+
+You can transfer ownership of a project to another *Kineviz* user, and choose whether or not you will retain access.
+
+*To transfer project ownership:* 
+
+. In the project's settings dropdown menu, select *_Transfer ownership_*.
 
 +
-image::/v3/01_03_14_OpenViews.png[,420,320,role=text-left]
-
-=== Configure a Sandbox Project
-
-A cloned sandbox project is not itself a sandbox. However, as you work in the project, you could find it worthwhile to configure it as a new sandbox. Configuring a project as a sandbox lets you set up a working environment for specific  workflows that can then be used as a starting point for similar follow-on projects. 
-
-image::/v3/01_03_15_SandboxIntro.png[,540,420,role=text-left]
-
-You can either:
-
-* Configure any open project as a sandbox by going to *_Project >Settings > Advanced Settings_*, or
-* *_Create_* a new project (choosing a *_Project Name_*, *_Database Type_*, and optional *_Template_*). When the project opens, you can then configure it as a sandbox.  
-
-*To configure a project as a Sandbox:* 
-
-. Open the project (or *_Create_* a new one).
-. Open the *_Project_* panel and *_Settings_* subpanel, and click *_Advanced Settings_*.
-
-+
-image::/v3/01_03_16_SandboxAdvancedSettings.png[,420,320,role=text-left]
+image::/v3/01_03_31_TransferMenu.png[,240,180,role=text-left]
 +
 
-. Scroll down to see Sandbox configuration options at the bottom of the panel.
 
-. Click the *_Sandbox Project_* checkbox.
-. Set sandbox configuration options:
+. In the dialog, choose the user from the dropdown menu.
 
 +
-image::/v3/01_03_17_SandboxConfigOptions.png[,420,260,role=text-left]
+image::/v3/01_03_32_TransferProject.png[,380,240,role=text-left]
 +
 
-+
-* *_Description_* text box. Enter a brief description of what the sandbox contains.
-* *_Protect from deletion_* checkbox.
-* *_Grove_* book display options:
+. Optionally de-select the *_Keep me as a collaborator_* checkbox (which is selected by default). 
+. Click *_Transfer_*.
 
-** *_Open Grovebook on Load_*. Enter the Grovebook file key (e.g. my-notebook)
-** *_Open Grovebook on Load Display Mode_*. Choose *_Left_* to dock your Grovebook to the left menu, or *_Floating_* to float it on the canvas.
+=== Delete a Project
 
-* *_Project Icon_*. Enter a custom icon for the sandbox. By default, a flask icon (fa-flask) is displayed.
-* *_Open View on Load_*. Select one of the project's saved views from the dropdown menu.
-* *_Tags_*. Enter optional tags that indicate intended sandbox usage (e.g. Beginner, Recommended, etc.) 
-* *_Card Preview Image_*. Click *_Upload Image_* or *_Remove Image_* to control the preview image (such as a screenshot of one of the project views) that appears on the project tile.
-* *_Corner Tag_*. Enter a user-defined tag that will appear at the upper right of the project tile to further specify intended sandbox usage (for example *_Agent Tools_*, *_Native Tools_*).
-+
+You can delete a project from your account. If it is protected from deletion, a lock icon appears on the project cadd or list item, and you must remove protection first.
+
+*To delete a project:* 
+
+. If the project is protected, in the project's settings dropdown menu, select *_Allow deletion_*.
 
 +
-image::/v3/01_03_18_SandboxDesktopOptions.png[,420,420,role=text-left]
+image::/v3/01_03_33_AllowDeletion.png[,720,380,role=text-left]
 +
 
-+
-The configuration is set as soon as you enter the details.
-+
+. Once the update occurs, select *_Delete Project_*.
 
-.  Return to the *_Projects_* home page to verify that the project now appears in the *_Create from Sandbox_* section. 
++
+image::/v3/01_03_34_DeleteProject.png[,240,180,role=text-left]
+
