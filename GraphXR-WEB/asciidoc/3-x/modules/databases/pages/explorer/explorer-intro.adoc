@@ -1,0 +1,25 @@
+= Kineviz Explorer
+
+*Kineviz* *_Explorer_* is a basic version of the *Kineviz* platform for initial visual exploration of big data. It provides:
+
+* Connection through customized *Kineviz* or *Kineviz Desktop* connection wizards.
+* Single Project
+* Single User
+* Supports up to 50,000 nodes and 50,000 edges
+* Streamlined visualization.
+* User-managed *UI Configuration* for additional *Kineviz* features such as Transforms, Map, Algorithms, and Extensions.
+
+
+*_Explorer_* is delivered exclusively as two *Google Cloud Platform (GCP) Marketplace* products:
+
+* xref:explorer/spanner-intro.adoc[*Explorer for Spanner Graph*] 
+* xref:explorer/bigquery-intro.adoc[*Explorer for BigQuery*]
+
+
+
+ 
+
+
+
+
+ 

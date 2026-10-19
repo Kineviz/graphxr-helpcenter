@@ -1,0 +1,126 @@
+= Kineviz Database Support
+
+The databases that can be connected to *Kineviz* are displayed when you create a project. 
+
+*To review the list of supported databases:*
+
+. Click *_New Project_* at the upper right of the *_Project_* home page. 
+. In the *_New Project_* dialog, click *_Your Database_* to display the list.
+
++ 
+image::/v3/01_03_03_CreateDatabaseType.png[,540,320,role=text-left]
++
+
++
+Current options are listed in *_Cypher_*, *_Gremlin_*, *_GQL/PGQL_*, and *_Other_* sections.
+
+
+[caption=]
+.External Graph Database Connection Supported in Kineviz
+[cols="2,5,8"]
+|===
+| *DB Type* | *Database* | *Connection Type* 
+
+| Cypher
+| *Amazon Neptune*
+| openCypher over Bolt
+
+| Cypher
+| *Apache AGE*
+| openCypher on PostgreSQL
+
+| Cypher
+| *Apache HugeGraph*
+| openCypher over REST
+
+| Cypher
+| *ArcadeDB*
+| openCypher over HTTP
+
+| Cypher
+| *FalkorDB*
+| openCypher over Redis
+
+| Cypher
+| *GalaxyBase*
+| GalaxyBase distributed graph database
+
+| Cypher
+| *Mapped graph*
+| Map SQL tables or Elasticsearch indexes as read-only graph queried with openCypher
+
+| Cypher
+| *Memgraph*
+| In-memory graph database, Bolt compatible
+
+| Cypher
+| *NebulaGraph*
+| Open source distributed graph database
+
+| Cypher
+| *Neo4j / OpenCypher*
+| Bolt connection to a Neo4j instance
+
+| Cypher
+| *PuppyGraph*
+| Graph engine over your data lake
+
+| Cypher
+| *RocketGraph*
+| XGT graph over REST
+
+| Cypher
+| *TigerGRaph*
+| openCypher over GSQL REST API
+
+| Cypher
+| *TuGraph*
+| Bolt-compatible graph database
+
+| Gremlin
+| *Azure Cosmos DB*
+| Gremlin over WebSocket
+
+| Gremlin
+| *Gremlin*
+| Any Apache TinkerPop server, over Gremlin
+
+| Gremlin
+| *JanusGraph*
+| Gremlin over WebSocket
+
+| GQL / PGQL
+| *Google AlloyDB Omni*
+| Google Alloy DB Omni property graphs (SQL/PGQ)
+
+| GQL / PGQL
+| *Google BigQuery Property Graph*
+| Property graphs in Google BigQuery
+
+| GQL / PGQL
+| *Google Spanner Property Graph*
+| Graph queries on Google Cloud Spanner
+
+| GQL / PGQL
+| *Oracle Graph*
+| Graph query on Oracle Database
+
+| GQL / PGQL
+| *PostgreSQL*
+| PostgreSQL property graphs
+
+| GQL / PGQL
+| *Ultipa Graph*
+| Ultipa HTAP graph server
+
+| Other
+| *Database Proxy*
+| Generalized proxy built on open-source middleware, to securely connect *Kineviz* to various backend databases.
+|===
+
+TIP: A rollover tooltip on the version number includes current connection requirements and troubleshooting tips. 
+
+image::/v3/01_03_04_CreateDatabaseTooltip.png[,320,380,role=text-left]
+ 
+NOTE: *Kineviz* *_Explorer_*, a basic version of the *Kineviz* platform for initial visual exploration of big data, is provided through the *Google Cloud Platform (GCP) Marketplace*. Configuration and connection is exclusively initiated through two *GCP Marketplace* products: xref:databases:explorer/spanner-intro.adoc[*Explorer for Spanner Graph*]  and  xref:databases:explorer/bigquery-intro.adoc[*Explorer for BigQuery*]
+

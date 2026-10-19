@@ -1,3 +1,0 @@
-* xref:spanner-intro.adoc[*Kineviz Explorer for Spanner*]
-** xref:spanner-connect.adoc[*Connect to Spanner*]
-* xref:bigquery-intro.adoc[*Kineviz Explorer for BigQuery*]

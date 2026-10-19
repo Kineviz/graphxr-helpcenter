@@ -1,0 +1,190 @@
+= Kineviz Dashboards
+
+*_Dashboard_* opens the panel to create, present, and manage one or more live Kineviz dashboards that summarize the graph on the project canvas. 
+
+image::/v3/01_04_13_DashboardPanel.png[,520,420,role=text-left]
+
+NOTE: *Kineviz* Dashboard is in beta release. Features and behavior may change as the feature evolves.
+
+== Create a New Dashboard
+
+You can create a new dashboard at any time, either from a blank dashboard or a demo template. Once created, you'll need to add and configure the monitoring widgets you want, either manually or using the embedded *_AI_* agent.
+
+*To create a new dashboard:* 
+
+. Click the dashboard *_Library_* icon.
+ 
++
+image::/v3/13_01_01_LibraryIcon.png[,420,180,role=text-left]
++
+
+. In the dashboard library, click *_New_*.
+
++
+image::/v3/13_01_02_LibraryNewPanel.png[,420,180,role=text-left]
++
+ 
+. Enter a title for the dashboard.
+. Optionally, click *_Icon_* and choose an icon to be displayed on the dashboard's library tile.
+. Under *_Start From_* choose either *_Blank_* to open a blank dashboard, or *_Demo template_* to create a new dashboard that includes often-used widgets.
+
+. Click *_Create_*  (or *_Cancel_*). 
+
++
+The dashboard opens in manual *_Edit_* mode.
++
+
++
+image::/v3/13_01_03_NewDashboardEdit.png[,420,180,role=text-left]
++
+
++
+* A *_Blank_* dashboard includes a single *_Selected_* widget that displays the number of nodes currently selected on the graph.
+* A *_Demo_* dashboard includes several often-used widgets.
+  
+
+== Configure a Dashboard
+
+To configure the widgets on any dashboard, you can use either manual *_Edit_* mode or *_AI_* mode with its embedded AI agent.
+
+=== Configure a Dashboard in Edit Mode
+
+*To configure a dashboard manually:*
+
+. In an open dashboard, click the *pencil* icon  to open *_Edit_* mode.
+
++
+image::/v3/13_01_04_EditPencil.png[,420,180,role=text-left]
++
+
++
+NOTE: A *_New_* dashboard opens automatically in manual *_Edit_* mode.
++
+
+. In the *_Edit_* pane at the bottom of the dashboard panel, set the canvas data that every widget will read. 
+
++
+image::/v3/13_01_05_EditMode.png[,520,380,role=text-left]
++
+
++
+The options are:
+* *_Follow the live canvas_*, to present whatever is on the canvas.
+* *_Pin to a saved view_*, to read that view’s saved snapshot. 
++
+
+. Click to pick a widget from existing named widgets, or click the *_+_* icon at the top of the dashboard panel to add a new widget.
+
++
+The widget is highlighted on the dashboard, and its configuration details appear in the *_Edit_* pane. 
++
+
++
+NOTE: Once one widget is highlighted, a settings icon is displayed on its tile, and on all the other widgets in the dashboard. You can click another widget's settings icon to switch to editing it.
++
+
+. Enter details such as data source, queries and parameters, and widget size.
+
++
+TIP: To delete a widget, open the dashboard in edit mode and click the *_X_* at the top right of the widget.
++ 
+
+. Click the *_checkmark_* icon at the top of the dashboard panel to save the widget configuration and exit edit mode. 
+ 
+
+=== Configure a Dashboard in AI mode
+
+*To configure a dashboard with the AI agent:*
+
+. In an open dashboard, click the *_AI_* icon at the top of the panel, or the *_AI_* tab in the edit pane at the bottom.
+
++
+image::/v3/13_01_06_DashboardAIEdit.png[,520,480,role=text-left]
++
+
+. In the *_Describe a change_* textbox, enter a description of what you want, or click one of the starter options. 
+
++
+The dashboard is changed in place — you can review, locate, and undo changes.
++
+
+. Click the *_checkmark_* at the top of the dashboard panel to save the changes and exit AI edit mode. 
+   
+
+== Display a Dashboard
+
+A dashboard can be opened for display within the *_Dashboard_* panel, and presented as a full-screen report or live presentation which can be exported for external use. 
+
+* Click the *_Library _* icon to open the dashboard library, then click a dashboard's tile to open it. 
+ 
++
+image::/v3/13_01_07_DashboardLibrary.png[,520,480,role=text-left]
+ 
+
+=== Open a Full-screen Presentation
+
+*To open a full-screen dashboard presentation:*
+
+. In an open dashboard click the three dots at the top right of the panel, and select *_Present_*.
+
++
+image::/v3/13_01_08_DashboardPresentMenu.png[,520,280,role=text-left]
++
+
++
+The full-screen presentation is opened directly in the project.
++
+
++
+image::/v3/13_01_09_DashboardPresentation.png[,520,280,role=text-left]
++
+
++
+NOTE: To export a dashboard as a  _.json_ file, click the three dots at the top right of the panel, and select *_Export_*, or go to the *_Library_*, and click the *_Export_* icon in the dashboard tile.
++
+
+. Click *_Exit_* to return to the *_Dashboard_* panel. 
+ 
+
+=== Open a Full-screen Report
+
+*To open a full-screen dashboard report:*
+
+. In an open dashboard, click the *_Report_* icon the top right of the panel.
+
++
+image::/v3/13_01_10_DashboardReportIcon.png[,320,180,role=text-left]
++
+
++
+A formatted, date-stamped report is opened directly in the project. 
++
++
+image::/v3/13_01_11_DashboardReport.png[,320,180,role=text-left]
++
+
+. Optionally, click *_Download HTML_* to download the report as an _.html_ file you can include in external reports.
+
+. Click *_Exit_* to return to the *_Dashboard_* panel.
+ 
+ 
+== Manage Dashboards
+
+The dashboard *_Library_* displays all project dashboards as tiles.
+
+image::/v3/13_01_12_DashboardLibrary.png[,520,480,role=text-left]
+
+Use dashboard tiles to: 
+
+* Review dashboard details: date created, number of widgets, and the filename for its exported _.json_ file
+* Mark a dashboard as a *_Favorite_* by clicking the star icon on the tile.
+* *Dock* the dashboard to a specific edge of the browser window.
+* *Export* a dashboard.
+* *Delete* a dashboard.
+
+In the *_Library_* you can also:
+
+* Create a *_New_* dashboard
+*_Import_* a dashboard saved as a _.json_ file.
+* Search for a dashboard by its title.
+

@@ -94,7 +94,7 @@ image::/v3/01_02_09_AccountLanguageSpanish.png[,240,240,role=text-left]
 
 ==  Toggle the Light/Dark Theme 
   
-* From the account menu, select *_Switch to light mode_* or *_Switch to dark mode_* (or, in an open project, select *_Toggle Theme_*).
+From the account menu, select *_Switch to light mode_* or *_Switch to dark mode_* (or, in an open project, select *_Toggle Theme_*).
 
 image::/v3/01_02_10_ThemeToggle.png[,320,240,role=text-left]
 
@@ -121,5 +121,6 @@ Click links at the bottom of the browser window for:
 
 * In the *_Projects_* page or in any open project, select *_Logout_* from the user account menu at the bottom left.
 
++
 image::/v3/01_02_12_AccountLogout.png[,240,240,role=text-left]
  

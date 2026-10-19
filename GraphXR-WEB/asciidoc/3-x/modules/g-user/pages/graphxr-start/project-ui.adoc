@@ -1,67 +1,59 @@
 = The Project Workspace
 
-The project workspace is a virtual 3D or 2D canvas that includes the following default tools and features:  
+The *Kineviz* project workspace is designed to enable users to work seamlessly with the visualized graph and its connected database. It provides a virtual 3D or 2D canvas for visual display, navigation, and layout of the graph, and a configurable set of features and tools for data management and exploratory analytics. 
 
-image::/v3/01_04_01_ProjectOverview.png[,720,450,role=text-center]
-
-* Combined *_Query/Search_* bar at the top left, to either:
-** Enter a no-code *Query* for data from a connected or internal graph database 
-** Perform full-text *Search* of property values on indexed data in the database or the data on the project canvas.
-
-* *_View Menu_*, at the top center of the canvas, to save, load, duplicate, export, and share data views.
-
-* *_Legend_*, at the top right of the canvas, to display and select a list of nodes by *_Category_*, *_Tag_*, or a category *_Property_* name and value, and edges by *_Relationship_* or a relationship property (*_RelProperty_*) name and value. 
+image::/v3/01_04_01_ProjectOverviewLabeled.png[,720,450,role=text-center]
  
-* *_Export_* menu, in the top right corner of the canvas, to export the current data view as a CSV or Excel archive, .graphxr file, .png screenshot, or SVG file.
+Functions and tools are organized in panels, a legend, a toolbar, dropdown menus, and a live status bar, as follows:
+
+* *Kineviz logo* at the top right, to return to the projects home page.
+
+* Combined *_Query/Search_* bar at the top left of the browser window, to either enter a no-code *Query* on the connected graph database, or a *Search* of property values in the database or on the project canvas.
+
+* Split *Project / View* menus, at the top center of the browser window:
+** *Project* menu, to create, open, and manage projects within any open project.  
+** *Views* menu, to create and manage the project's data views without opening its *_Views_* panel.
+
+* *_Saved Workspaces_* menu and toggles at the top right of the browser window, to save and apply user-defined workspaces, and show or hide the panels of a workspace. 
 
 +
-image::/v3/01_04_02_ExportMenu.png[,240,180,role=text-left]
+NOTE: For specific workflows that focus or limit user access to tools and features, you can xref:g-user:graphxr-start/project-ui-config.adoc[*Configure User-defined Project Workspaces*] within an open project. Most *Kineviz* menus and tools can be shown or hidden, and one or more customized panel layouts can be configured and saved as named project workspaces.
 +
 
-* *_Panel Menu_* along the left vertical edge of the project space, with icons to open panels that organize features for working with graph data, including:
-** *_Projects_*, to manage project *_Views_*, *_Category_* and *_Relationship_* details, and project *_Settings_*, *_Datastore_*, and *_Extension_* details. 
-** *_Files_*, for managing and editing imported and internal files used in the project.
-** *_Query_*, for entering and running Cypher/GQL, SQL, CSV (and CSV Mapping), JSON, and Gremlin queries.
-** *_Transform_*, to refocus and simplify the graph model.
-** *_Table_*, to work with tables of nodes or edges by Category or Relationship.
-** *_Filter_*, to filter data on the canvas by entity property values.
-** *_Agent_*, to access *Kineviz Agent* features for AI-assisted graph modeling and exploration.
-** *_Algorithm_*, to use the library of graph-analytic algorithms available in GraphXR. 
-** *_Map_*, to drop nodes with latitude and longitude property values on a world map. 
-** Additional menu icons to access *_Grove_* notebook and *_Graph Composer_* extensions, as well as Sandboxes supporting customized workflows.
+* *_Legend_*, on the right of the canvas, to display, select, and style nodes by *_Category_*, *_Tag_*, or a category *_Property_* name and value, and edges by *_Relationship_* or a relationship property (*_RelProperty_*) name and value. 
  
-* Contextual *_Toolbar_* near the bottom of the window, which displays the tools usable on the data currently present or selected on the canvas.
+* *_Export_* menu, to the right of the legend, to export the entire project or the current data view to your local system.
 
-* Live *_Status Bar_* at the bottom edge of the window, which shows current database connection and amount of data, current number of views, AI *Agent* status, and more. 
-
-* Configurable *_Right-click menu_* of the tools and operations usable on your current data selection. You can right-click anywhere on the canvas to perform many graph operations without going to the toolbar or opening a panel.
-
-* Kineviz *_Help_* menu (question icon) at the bottom of the left panel menu above the Kineviz logo, to display information about the current *Kineviz* version. 
-
-* Kineviz logo menu at the bottom of the left panel menu, to *_Logout_*, go to the   *_Home_* page, open other *_Recent Projects_* (or create a new project), *_Toggle Theme_* between light and dark mode, show *_Shortcuts_* reference and other *Kineviz* information.
+* *_Panel Menu_* on the left edge of the browser window. Kineviz functions are organized in *_Projects_*, *_Files_*, *_Dashboard_*, *_Query_*, *_Transform_*, *_Table_*, *_Layout_*, *_Filter_*, *_Algorithm_*, *_Agent_*, and *_Map_* panels. Click an item to open its panel.
 
 +
-image::/v3/01_04_04_KVLogoMenu.png[,340,280,role=text-left]
-+ 
-
-* A *Minimap* near the bottom right, to provide a live thumbnail of the entire canvas and its  graph data. *_Left-click + drag_* to easily re-focus the view on another part of the graph.   
-
-* *_GUI Navigation_* controls, at the bottom right, to simulate 3D virtual reality (VR) navigation on the desktop canvas.
-
+NOTE: Additional panel menu icons are displayed when extensions such as the *_Kineviz Notebook_* and any preconfigured sandboxes are activated.
 +
-NOTE: Most GraphXR menus and tools are configurable through the project's xref:./project-ui-config.adoc[*UI Configuration*] dialog. This lets you limit (or expand) access to graph modeling and analytics within a project. 
+ 
+* *_Toolbar_* near the bottom of the window, for the available tools to  *_Select_*, *_Edit_*, *_Arrange_*, and *_Display_* the graph, display *_Media_*, undo or redo *_History_* actions, or *_Remove_* data.
+
+* Configurable *_Right-click menu_* of tools and operations usable on your current data selection. Right-click anywhere on the canvas to perform many graph operations without going to the toolbar or opening a panel.
+
+* *Navigation* icons along the bottom right vertical edge, including *_Reset_*, *_Rotate Right_* and *_Rotate Left_* (by 90 degrees), *_Zoom _* controls, *_Center To_*, *_Fly Out_*, and a live *_Minimap_*  thumbnail view of the canvas. 
+ 
+* A *_Status Bar_* at the bottom edge, to monitor the connected database and its categories and relationships, see the number of nodes and edges on the canvas, open tables of nodes and edges, monitor Kineviz *_Agent_* status, and monitor data views. 
+
+* Kineviz *_Help_* menu (question icon) at the bottom of the left panel menu, to display information about the current *Kineviz* version. 
+
+* *User account* menu at the bottom left, to show *Kineviz* information, switch to another project, edit the project theme and language, open the administrator portal, or log out.  
 
 == Query/Search bar
 
-When you first open a project, its canvas is empty. You will need to import data to the canvas.
+Use the *_Query_* bar (or enter *_Cmd + K_*) to
 
-NOTE: You can load a saved data view, if any are available.
+* Enter a no-code *Query* for data from a connected or internal graph database. 
+* Perform full-text *Search* of property values on indexed data in the database, or the data on the project canvas. 
 
 === No-code graph Query
 
-Click in the *_Query_* bar for the dropdown menu to build and run a no-code visual query on the connected graph database.
+Click in the *_Query_* bar (or enter *_Cmd + K_*) for a query dropdown menu to build and run a no-code visual query on the connected graph database.
 
-image::/v3/01_04_06_QueryBar.png[,420,240,role=text-left]
+image::/v3/01_04_02_QueryBarQuery.png[,420,240,role=text-left]
 
 NOTE: Once you have data on the canvas, you can optionally use no-code *_Expand with Relationships_* from the toolbar icon or right-click menu to query for additional nodes connected through the defined relationships you select. 
 
@@ -73,39 +65,62 @@ The search bar at the top left also enables full-text search. You can either:
 * Search data already on the canvas.
 
 +
-image::/v3/01_04_06a_SearchCanvasDB.png[,420,240,role=text-left]
+image::/v3/01_04_03_SearchCanvasDB.png[,240,320,role=text-left]
 +
 
 + 
-NOTE: Use *_Search Index Configuration_* to index the properties available for search.
+NOTE: Click *_Configure Search Index_* icon to open a dialog to index the database properties available for search.
 +
 
 Search results are listed by category below the search bar. Click a single node or a group of nodes in the search results to either:
 
 * Import the data from the database, or
-* Select the nodes returned by a search of data already on the canvas.
+* Select and center the graph on the nodes already on the canvas.
 
-+
-image::/v3/01_04_06b_SearchDBGraph.png[,520,380,role=text-left]
 
-== View Menu
+== Project / View Menu
 
-Use the *_View_* menu to load a saved view.  
+Use the split *Project / View* menu at the top center of the canvas to manage projects and views from within an open project.
 
-image::/v3/01_04_05_ViewsMenu.png[,420,380,role=text-left]
+=== Project Menu
 
-NOTE: You can also drag and drop views exported as .graphxr or .graphxrsnapshots files. 
+With the canvas *Project* menu, you can create and manage projects without returning to the *Kineviz* home page. 
+
+image::/v3/01_04_05_CanvasProjectMenu.png[,420,380,role=text-left]
+
+You can:
+
+* Add or remove a project from *_Favorites_*
+* *_Edit_*, *_Clone_*, *_Export_*, *_Share_*, *_Transfer ownership_*, and *_Delete_*   the currently open project.
+* *_Create_* and open a new project, or select *_All Projects_* to return to the Kineviz home page.
+* Switch to another project by selecting it on the dropdown menu of *_Recent Projects_*.
+
+=== View Menu
+
+With the canvas *View* menu, you can save and manage views in the current project without opening the *_Project > Views_* panel. 
+
+image::/v3/01_04_06_CanvasViewMenu.png[,420,380,role=text-left]
+
+You can:
+
+* Create a *_New_* view. 
+* *_Save_* the current graph on the canvas to the current view, or  *_Save As_* a different view.
+* *_Rename_* or *_Duplicate_ the current view.
+* *_Share_* the view with another user.
+* *_Export_* the current view as a .graphxr file.
+* *_Delete_* the current view.
+* Load a saved view from the *_Views in the this project_* dropdown  menu.  .  
+
 
 == Legend
 
-The legend at the top right corner of the canvas provides selectable lists of nodes or edges by *_Category_*, *_Relationship_*, *_Tag_*, *_Property_* (i.e. properties defined on Categories), or *_RelProperty_* (i.e. properties defined on Relationships). Labels on nodes (Category, Tag, or Property) are displayed above labels on relationships. 
+The legend at the upper right corner of the canvas provides selectable lists of nodes or edges by *_Category_*, *_Relationship_*, *_Tag_*, *_Property_* (i.e. properties defined on Categories), or *_RelProperty_* (i.e. properties defined on Relationships).
 
-image::/v3/01_04_07_LegendCatRel.png[,420,240,role=text-left]
+image::/v3/01_04_07_LegendCatRel.png[,240,380,role=text-left]
 
-Each list bubble includes:
+Each list bubble displays:
 
-* Entity label (for a category, relationship, or tag) or property value (for a property)
-* Icon applied (to a category, property or tag, if any)
+* The entity label (for a category, relationship, or tag) or property value (for a property)
 * Number of currently selected nodes or edges with that label or value
 * Total number of nodes or edges with that label or value  
 
@@ -118,20 +133,290 @@ Use the legend lists to:
 TIP: Use _ctrl-left click_ to select multiple items, and the mouse wheel or scroll gesture to scroll a long list.
 +
 
-* Click the brush icon next to a list item to style nodes and edges:
+* Click the colored dot next to a list item to style nodes and edges:
 ** For a category, you can set *_Color_*, an *_Icon_*, and select properties to be used for one or more *_Captions_*, an *_Avatar_* url, and relative node *_Size_* (based on a property value).
 +
-image::/v3/01_04_08_Style_Category.png[,380,320,role=text-left]
+image::/v3/01_04_08_Style_Category.png[,240,320,role=text-left]
 +
 ** For a relationship, you can set the *_Color_*, and select properties for *_Captions_* and *_Bind Width_* (relative width of the edge based on a property value).
+
 +
-image::/v3/01_04_09_Style_Relationship.png[,380,240,role=text-left]
+image::/v3/01_04_09_Style_Relationship.png[,240,240,role=text-left]
++
+
 +
 ** For a listed property value or tag, you can set a *_Color_* and *_Icon_*.
+
+
+== Export Menu
+
+Use the *_Export_* menu to the right of the legend to download:
+
+* The entire project, including its internal database and data views, as a _.graphxrproject_ file.
+* Tthe current data view as a CSV or Excel archive, _.graphxr_ file, _.png_ screenshot, or _SVG_ file.
+
++
+image::/v3/01_04_10_ExportMenu.png[,240,180,role=text-left]
+
+
+
+== Panel menu
+
+The *Panel* menu on the left edge of the canvas displays icons to open panels (and their tabbed subpanels) organized by major function. You can:
+
+* Click an icon to display its panel. 
+* Click the menu's arrow icon to show or dismiss text labels for each icon.
+
+NOTE: The *Panel* menu is configurable. You can *click + drag* an icon to change the order on the menu. You can also show or hide most panels and extensions, either through *_Settings > UI Configuration_* or *_Project > Extensions_*.  
+
+=== Project panel
+
+*_Project_* opens sub-panels to manage a project's data views, review graph entities, set overall display preferences, manage the datastore, and access extensions:
+
+image::/v3/01_04_11_ProjectPanelView.png[,520,450,role=text-left]
+
+* *_Views_*, to display data views saved to the server, to save, update, select, and annotate views, and to load a data view to the project space. 
+* *_Category_* and *_Relationship_*, to review defined graph entities, pull specific types of nodes or edges from a connected database and set display options for entities and their properties.
+* *_Settings_*, to set display options for project theme and light/dark mode, nodes,  edges and captions, set the project *_UI Configuration_*, show or hide *_Snapshot_*, *_History_*, *_Quick Info_*, and *_Show recent views on the empty canvas_*, *_Clean Unused Configuration (for Categories and Relationships)_*, and edit the project description and its API *_Secrets_*.
+* *_Data Store_*, for *_Utilities_* to *_Import_* data, *_Export_* the project or its data views, *_Save Template_* based on the view on canvas, show and edit the current database *_Schema_*, or *_Hydrate IDs_* of the graph on the canvas. In the *_Data Store_* section,  you can review details for the connected database, create a new instance, *_Save Canvas to KoreDB_*, *_Upload KoreDB ZIP_*, *_Export Database_*, and *_Empty_* or  *_Delete_* the database.
+* *_Extensions_*, to import and access Kineviz extensions, either in the panel, or in the Admin portal.  
+* *_Grove Links_*, to manage access to Kineviz notebooks available to the project.
+
+
+=== Files panel
+
+*_Files_* opens a panel to manage *_Project Files_*, including those for *Kineviz* *_Agent_*, *_Grove_*, *_Reports_*, any imported files (CSV, JSON, Excel, .png, .md, etc.), and the database (if any).
+
+image::/v3/01_04_12_FilesPanelView.png[,520,280,role=text-left]
+
+=== Dashboard panel
+
+*_Dashboard_* opens the panel for creating and displaying Kineviz dashboards available to the project. 
+
+image::/v3/01_04_13_DashboardPanel.png[,520,280,role=text-left]
+
+You can:
+
+* Create and *_Save_* a *_New_* dashboard.
+* *_Search_* existing dashboards by name and/or show only those marked as *_Favorites_*.
+* *_Import_* a dashboard .json file by drag and drop or by navigating to it on your system. 
+
+ 
+=== Query panel
+
+*_Query_* opens sub-panels to enter and save a Cypher or GQL *_Query_* on a connected database, to query *_SQL_* databases (MySQL, MSSQL, PostgreSQL, or ElasticSearch), *_CSV/Excel_* files, and *_JSON_* files.
+
+image::/v3/01_04_14_QueryPanelQuery.png[,520,450,role=text-left]
+
+The *_SQL_* and *_CSV_* tabs include the Kineviz *_Mapping Editor_* to map data in flat files or SQL tables to a graph model.
+
+image::/v3/01_04_15_QueryPanelCSV.png[,520,620,role=text-left]
+
+=== Transform panel
+
+*_Transform_* opens sub-panels for operations to transform graph data directly in GraphXR.
+
+image::/v3/01_04_16_TransformPanelShortcut.png[,520,450,role=text-left]
+
+Transform sub-panels include:
+
+* *_Formula_*, to execute functions similar to formulas in Excel and SQL or functions in MapReduce frameworks. You can run formulas to add information from one column of data to another, or to modify data formats.
+* *_Extract_*, to define a new category (and its properties) and relationship from an existing category, and extract new nodes and edges based upon it.
+* *_Aggregate_*, to collect properties from a starting node's neighboring edges and nodes, apply a calculation, and write the result to the starting node as a property. This makes it possible to simplify a graph, yet retain key information about its original complexity.  
+* *_Merge_*, to combine two nodes with matching properties into a single node.
+* *_Link_*, to connect nodes with the same property values. This can be used to bring two different data sets together and also to draw explicit connections among nodes of the same type.
+* *_Shortcut_*, to connect two nodes that share a common neighbor with a new link.
+* *_Connector_*, to provide access to external applications for enhancing data.
+
+=== Table panel
+
+*_Table_* open live searchable tables of nodes and edges by *_Category_* or *_Relationship_*. You can rename categories and relationships on the fly, select, sort, edit, and reformat data, select (mark) data in the graph on the canvas, and export data as a CSV or Excel archive.
+
+image::/v3/01_04_17_TablePanelCat.png[,520,450,role=text-left]
+
+=== Layout panel
+ 
+*_Layout_* opens *_Force_*, *_Parametric_*, *_Geometric_* , and *_Gizmo_* sub-panels for applying detailed layouts to all or part of the data on the canvas. Most layout options are also available from the *_Quick layout_* toolbar or right-click menu. 
+
+image::/v3/01_04_18_LayoutPanelGeom.png[,540,620,role=text-left]
+
+NOTE: The *_Gizmo_* is a tool to rotate and scale all or part of the graph directly on the canvas. Its tab in the *_Layout_* panel lets you specify the rotation axes that appear, or enter and apply numerical values to move, rotate, and scale a selection (similar to those you can enter in the *_Layout_* panel).
+
+image::/v3/01_04_19_LayoutPanelGizmo.png[,420,520,role=text-left]
+
+
+=== Filter panel
+
+*_Filter_* opens a panel to filter and select data by multiple _Node_ or _Edge_ property values. You can filter on numerical property values including date-time and latitude/longitude, as well as categorical(text string) property values.
+
+image::/v3/01_04_20_FilterPanel.png[,520,520,role=text-left]
+
+=== Agent panel
+
+*_Agent_* opens a panel to engage with and manage the *Kineviz Agent*, a built-in AI assistant for working with graph data in a *Kineviz* project. 
+
+image::/v3/01_04_21_AgentPanelView.png[,520,450,role=text-left]
+
+
+=== Algorithm panel
+
+*_Algorithm_* opens GraphXR's *_Path Finding_*, *_Centrality_*, *_Community Detection_*, and *_SNA_* (Social Network Analysis) graph algorithm library. *_Centrality_*, *_Community Detection_*, and some *_SNA_* results are added to nodes as a property value.
+
+image::/v3/01_04_22_AlgoPanelSNA.png[,520,450,role=text-left]
+
+=== Map panel
+
+*_Map_* opens a panel to drop nodes with latitude and longitude coordinates on a world map. Map controls and settings are provided to search map locations, set map boundaries and orientation, and choose a map server (default choices are MapBox, Open Street Maps, and Google Maps).  
+
+image::/v3/01_04_23_MapPanel.png[,520,450,role=text-left]
+
+
+== Toolbar
+
+The *_Toolbar_* near the bottom of the window displays available one-click tools to *_Select_*, *_Edit_*, *_Arrange_*, and *_Display_* graph nodes and edges, undo or redo *_History_* actions, display *_Media_*, or *_Remove_* data. As you narrow the browser window, toolbar sections are responsively arranged in two (or more) rows.
+
+image::/v3/01_04_24_ToolbarLabeled.png[,720,160,role=text-left]
+
+NOTE: A *_Media_* section appears in the toolbar only when a selected node includes an image web link.
+
+=== Remove
+
+In the *_Remove_* toolbar section:
+
+image::/v3/01_04_25_ToolbarRemove.png[,720,120,role=text-left]
+
+* *_Clear_*. Removes all data from the canvas.
+* *_Delete_*. Deletes selected nodes and edges.
+
+=== History
+
+In the *_History_* toolbar section:
+
+image::/v3/01_04_26_ToolbarHistory.png[,720,120,role=text-left]
+
+* *_Undo_* and *_Redo_*. Reverts or restores recent actions.
+
+NOTE: For a list of actions that can be undone, enter *_Ctrl+Shift+H_* to open the  *_History_* window.  
+
+=== Display
+
+In the *_Display_* toolbar section:
+
+image::/v3/01_04_27_ToolbarDisplay.png[,720,120,role=text-left]
+
+* *_3D/2D_*. Toggles between a 2- and 3- dimensional rendering of data on the canvas.
+* *_Quick Info_*. Toggles between turning on and off *_Quick Info_* rollovers for nodes and edges.
+* *_Enlarge Avatar_*. Enlarges the avatar image (if any) displayed on nodes. 
+* *_Annotate_*. Opens the dockable *_Annotate_* pane, and toggles it between *_Editing_* and *_Navigating_* states.
+
++
+image::/v3/01_04_28_ToolbarAnnotate.png[,520,240,role=text-left]
 +
 
-See xref:display-options/using-display-options[*Using Display Options*].
+* *_Hide Selection_*. Hides selected nodes and edges temporarily. 
+* *_Un-Hide Selection_*. Restores all hidden nodes and edges to the canvas and de-selects them.
 
++
+NOTE: When all nodes or edges of a category or relationship are hidden, the information bubble in the legend is faded out and a line drawn through the label.
++ 
+
+* *_Take Screenshot_*. Downloads a .png screenshot of the canvas, without panels or the toolbar.
+* *_Explain my canvas_*. Summarizes the current view using the Kineviz *Agent*: the node  labels, number of nodes and edges, and a *_Takeaway_* summary. You can *_Copy_* the text, take a *_Screenshot with explanation_*, and/or click *_Continue in Agent_* to open the thread in the *_Agent_* panel. 
+
++
+image::/v3/01_04_29_ToolbarExplain.png[,420,280,role=text-left]
+
+
+=== Arrange
+
+In the *_Arrange_* toolbar section:
+
+image::/v3/01_04_30_ToolbarArrange.png[,720,160,role=text-left]
+
+
+* *_Quick Layout_*. Displays a menu to lay out selected data in  *_Line_*, *_Grid_*, *_Cube_*, *_Circle_*, *_Sphere_*, *_Spiral_*, or *_Spring_* layouts, or to create a hierarchical *_Tree_* or *_Ring_* layout around selected nodes. Additional layout options include:
+** *_Scale_*, for a slider control to expand or contract the layout
+** *_Untangle_*, to apply curved edges and reduce crossed edges in the layout.
+** *_Sort By_* menu, to sort the nodes in a layout by a property value.
+
++
+image::/v3/01_04_31_ToolbarQuickLayout.png[,320,4200,role=text-left]
++
+
+* *_Force Layout_*. Toggles between turning on and off a force-directed physics layout.
+* *_Pin_* or *_UnPin_* nodes. Toggles between pinning nodes to a location in the canvas space, and releasing nodes from being pinned. The badge on the icon shows how many nodes are currently pinned.  
+* *_Gizmo_*. Displays a tool to rotate any selection of nodes in x-, y- , or z- direction, and to expand or contract the scale independently along x-, y-, or z axes. 
+
++
+image::/v3/01_04_32_ToolbarGizmo.png[,280,280,role=text-left]
++
+
+* *_Gizmo settings_*. Opens the *_Layout > Gizmo_* tab to enter settings and numerical values for rotation and scaling.   
+* *_Collect Nodes._* Collects nodes connected to selected nodes by only one edge, and places them in special _collection nodes_. The information panel for a collection lists the included nodes, and enables you to remove or add back nodes.
+* *_Explode Collections._* Deletes selected collection nodes and restores the collected nodes to the canvas.
+
+=== Edit
+
+In the *_Edit_* toolbar section:
+
+image::/v3/01_04_33_ToolbarEdit.png[,720,160,role=text-left]
+
+* *_Tag_*. Opens the *_Create Tag_* dialog to add a user-defined to tag any set of selected nodes.
+* *_Expand_*. Opens the *_Advanced Expansion_* dialog to query the connected database for  additional nodes connected to the selected nodes through specified relationships.
+* *_Add Node_*. Displays a dialog to define and add a single node.
+* *_Add Edge_*. Displays a dialog to add edges between selected nodes, either with an existing relationship or by creating a new one.
+
+=== Media
+
+The *_Media_* toolbar section includes one tool: 
+
+image::/v3/01_04_34_ToolbarMedia.png[,720,120,role=text-left]
+
+* *_Link_*. If a url is attached to a node, click to open an in-app *_Browser_* window displaying the source image and its url. You can edit and update the url, and open the window in a new browser tab.
+
++
+NOTE: The *_Media_* section appears only when a single node with an attached url is selected. 
+
+ 
+=== Select
+
+In the *_Select_* toolbar section:
+
+image::/v3/01_04_35_ToolbarSelect.png[,720,160,role=text-left]
+
+* *_Information_*. Opens a floating information pane for any selection of nodes and edges.
+
++
+image::/v3/01_04_36_ToolbarInfoBoth.png[,520,380,role=text-left]
++
+
+** For the *entire selection*, the total number of items, and the number of nodes and edges is displayed.
+*** Selection *_List_*  lists each node and edge, and its category or relationship.   
+*** Selection *_Properties_* lists all properties in each category or relationship for the selected entities.
+** For *an individual node or edge*, its properties, neighbors, graph schema, and special styling options are displayed.
+*** Entity *_Properties_* lists the properties of the node or edge. You can add or delete properties and edit property values. 
+*** *For nodes only*, *_Neighbors_* displays a count of nodes connected to the selected node, and includes an *_Expand_* button to display the *_Advanced Expansion_* dialog. It lets you run a no-code query on the connected database to add more nodes connected through specified relationships.
+*** *For nodes only*, *_Graph_* displays a live graphic of the nodes and edges in the selected data, with rollovers showing the ID and properties of each node.  
+*** *For nodes only*, *_Style_* displays the current *_Color_*, *_Size_*, *_Opacity_*, and *_Icon_*. This lets you style the selected node independently of the styling applied in the legend, and then apply the special styling to the other nodes in the selection. Use the *_Copy to category_* button to apply the styling to all nodes of that category,and the *_Reset style_* button to reset the node style to that defined on the legend.     
+
+
+* *_Trace Neighbor_*. Displays a slider above the toolbar to highlight nodes connected through a path of the number of steps and direction you choose. Once highlighted, click *_Select Traced_* to select the nodes.
+
++
+image::/v3/01_04_38_ToolbarTraceNeighbor.png[,320,160,role=text-left]
++
+
+
+* *_Query Selection_*. Opens the *_Query_* bar to build a no-code query based on selected nodes. 
+
++
+image::/v3/01_04_39_ToolbarQuerySelection.png[,480,160,role=text-left]
++ 
+
+* *_Inverse_*. Selects all nodes not currently selected. The badge at the upper right of the icon shows the number of currently selected nodes.
+
+ * *_Select Visible Nodes_*. Selects all nodes currently visible in the canvas (those not hidden using *_Hide Selection_* or by de-selecting the *_Visible_* checkbox for a category or relationship in the *Project* panel or the *_Hide_* icon in the legend).
+ 
 
 == Right-click Context Menu
 
@@ -139,20 +424,18 @@ A customizable floating context menu of the tools available for your current sel
 
 The default right-click menu includes often-used options at the top level: *_Information_*, *_Expand_*, *_Find Path_*, and *_Delete_*. 
 
-*_Select_*, *_Actions_*, and *_Layout_* submenus organize related options:
+image::/v3/01_04_40_RCSelectActionsLayout.png[,720,520,role=text-center]
 
-image::/v3/01_04_10_RCSelectActionsLayout.png[,720,520,role=text-center]
+The *_Select_*, *_Actions_*, and *_Layout_* submenus organize related options:
 
+* *_Layout_* submenu: *_Line_*, *_Grid_*, *_Cube_*, *_Circle_*, *_Sphere_*, *_Spiral_*, *_Tree_*, and *_Ring_* layouts, and  options to *_Expand_*, *_Contract_*, and *_Rotate_* a layout operate on selected data, or all data if nothing is selected. Layouts are grayed out if unavailable for the data.
 
 * *_Select_* submenu: *_All Nodes_*, *_Add to Selection_*, *_Subtract from Selection_*, *_Invert_*, *_Deselect_*, *_Floating Nodes_*, *_Leaf Nodes_*, *_Neighbor Nodes_*,  *_Child Nodes_*, *_Parent Nodes_*, *_Neighbor Edges_*, and *_Connected Nodes_*.
 
 * *_Actions_* submenu: *_Add Node_*, *_Add Edge_*, *_Merge Nodes_*, *_Change Category_*, *_Collect Nodes_*, *_Explode Nodes_*, *_Tag_*, *_Hide_*, *_Show Hidden_*, *_Pin_*, *_Release_*, *_Highlight Nodes_*, and *_Clear Highlights_*.
 
- 
-* *_Layout_* submenu: *_Line_*, *_Grid_*, *_Cube_*, *_Circle_*, *_Sphere_*, *_Spiral_*, *_Tree_*, and *_Ring_* layouts, and  options to *_Expand_*, *_Contract_*, and *_Rotate_* a layout operate on selected data, or all data if nothing is selected. Layouts are grayed out if unavailable for the data.
-
 +
-NOTE: By default, *_Quick Information_*, *_Disable/Enable Force Layout_*, *_Clear All_*, *_Screenshot_*, *_Link_*, and *image_* tools appear only in the toolbar.
+NOTE: *_Quick Information_*, the *_Force Layout_* toggle, *_Clear_*, *_Screenshot_*, *_Link_*, *_Gizmo_*, and *Enlarge Avatar* tools appear only in the toolbar.
 
 The following table lists functions available only in the right-click menu. The other functions in the menu are also available in the toolbar or a panel. 
 
@@ -202,209 +485,62 @@ The following table lists functions available only in the right-click menu. The 
 | _Actions_ > *_Clear Highlights_*
 | Clears the highlight ring on selected nodes.  
 
-
 |===
 
 WARNING: *_Actions>Change Category_* and *_Actions>Merge_* cannot be undone with Ctrl+Z. Before using either option, save a data View, snapshot, or .graphxr file so that you can undo a mistaken change.
 
+== Navigation Icons
 
-== Contextual Toolbar
+One-click navigation icons are displayed along the lower right vertical margin of the canvas.
 
-The contextual toolbar at the bottom edge of the project space displays icons for one-click tools used to navigate, select, and lay out data. Some tools are available only when you select more than one node or edge, or only when you select a single node, or a single node that has an associated url and weblink property.  
+image::/v3/01_04_41_NavTools.png[,320,280,role=text-left]
 
-image::/v3/01_04_11_ContextToolbarLabeled.png[,720,160,role=text-left]
-
-NOTE: As you make the browser window narrower, tool icons are responsively arranged in two (or more) rows.
- 
-=== No nodes present
-
-Toolbar icons in a project with no data present are:
-
-image::/v3/01_04_12_ContextNoData.png[,720,120,role=text-left]
-
- * *_Undo_* and *_Re-Do_*. Reverts (or restores) the most recent data import action.
- * *_Add Node_*. Displays a dialog to define and add a single node.
- * *_Quick Info_*. Toggles between turning on and off *_Quick Info_* rollovers for nodes and edges.
- * *_Disable/Enable Force Layout._* Toggles between turning on and off a force directed physics layout.
- * *_3D/2D_* toggles between a 2- and 3- dimensional rendering of data on the canvas.
-
-=== One or more nodes present
-
-Once you load or create at least one node, more toolbar icons appear.
-
-image::/v3/01_04_13_ContextWithData.png[,720,120,role=text-left]
-
- * *_Select Visible Nodes_*. Selects all nodes currently visible in the canvas (those not hidden using *_Hide Selection_* or by de-selecting the *_Visible_* checkbox for a category or relationship in the *Project* panel).
- * *_Take Screenshot._* Takes a _.png_ screenshot of the canvas including the legend, but excluding an open panel, toolbar and GUI navigation controls.
- * *_Center To_*. Zooms in on the center of the graph data if no nodes are selected, or the center of a group of selected nodes, or a single selected node.
- * *_Fly Out_*. Zooms out to display all the graph data centered in the project space.
- * *_Collect Nodes._* Collects nodes connected to selected nodes by only one edge, and places them in special _collection nodes_. The information panel for a collection lists the included nodes, and enables you to remove or add back nodes.
- * *_Explode Collections._* Deletes selected collection nodes and restores the collected nodes to the canvas.
- * *_Quick Layout._* Displays a menu to lay out selected data in basic *_Line_*, *_Grid_*, *_Cube_*, *_Circle_*, *_Sphere_*, *_Spiral_*, or *_Spring_* layouts, to create a hierarchical *_Tree_* or *_Ring_* layout around selected nodes, and to *_Expand_* or *_Contract_* the layout of selected nodes.
- * *_Add Node_*. Displays a dialog to define and add a single node.
- * *_Add Edge_*. Displays a dialog to add edges between selected nodes, either with an existing relationship or by creating a new one.
- * *_Clear_*. Removes all data from the canvas.
- * *_Pin_* or *_Release_*. Toggles between pinning nodes to a location in the space, or releasing nodes from being pinned. The badge on the icon shows how many nodes are currently pinned.
-
-=== More than one node selected
-
-When you select any group of nodes, additional tool icons appear that can be used on selected data:
-
-image::/v3/01_04_14_ContextSelHidden.png[,720,120,role=text-left]
-
-* *_Information._* Opens an information window for the most recently selected single node or edge. It displays information about the node's Properties and Neighbors or a relationship's Properties.
-* NOTE: An Information window shows information for just one node or edge at a time.
-* *_Tag_*. Opens the *_Create Tag_* dialog to tag any set of selected nodes.
-* *_Delete._* Deletes selected nodes and edges.
-* *_Expand_*. Opens the *_Expand with relationships_* dialog to pull additional nodes from the database which are connected to the selected nodes. You can select any or all of the relationships that connect the nodes.
-* *_Trace Neighbor_*. Displays a slider above the toolbar to display nodes connected through a path with the number of steps you choose.
-* *_Inverse_*. Selects all nodes not currently selected. The badge at the upper right of the icon shows the number of currently selected nodes.
-* *_Un-Hide Selection._* Appears after you select and hide nodes. Click to restore all hidden nodes and edges to the canvas and de-select them.
-* *_Hide Selection_*. Hides selected nodes and edges temporarily.
-
-=== One node selected
-
-When you select a single node, two additional tool icons appear:
-
-image::/v3/01_04_15_ContextSingle.png[,720,120,role=text-left]
-
-* *_Image_* and *_WebLink_* These two icons appear if an image and/or url is attached to a node. Select a node and click *_Image_* to display a small image in the canvas close to its node, and click again to hide the image. Click *_WebLink_* to open a browser window to a linked image or webpage.
-* *_Information_*. Opens a floating information pane for a selected single node or edge, which includes:
-** *_Properties_* tab, which lists the properties of the node or edge. You can add properties and edit property values in this window. 
-** *_Neighbors_* tab, which displays a count of nodes connected to the selected node through one edge, and a live graphic of the nodes and edges.
+* *_Reset_* the view to the center point of the data (similar to *_Center To_*).
+* *_Rotate Left_* or *_Rotate Right_*.
+* Zoom *_In_* or *_Out_*, or open the slider controlling zoom percent.
+* *_Center To_*, to zoom in on the center of the graph if no nodes are selected, or the center of a group of selected nodes, or a single selected node.
+* *_Fly Out_*, to zoom out, automatically fit, and center the entire graph on the visible canvas. 
+* *_Minimap_*, to display a live thumbnail view of the entire graph. *_Click + drag_*  on the image to reposition the entire graph (usually faster than navigating on the canvas). You cannot rotate the thumbnail image. 
 +
-image::/v3/01_04_16_ContextProps.png[,520,320,role=text-left]
-
-
-== Panel menu
-
-The Panel menu on the left edge of the canvas provides access to panels, many of which include tabbed sub-panels organized by function. Click an icon to display its panel. 
-
-NOTE: Additional icons for *Kineviz* extensions (e.g. *_Grove_* or *_Text Editor_*) or Sandbox tutorials can also be displayed on the Panel menu. 
-
-=== Project panel
-
-*_Project_* opens sub-panels to manage the project's data views, review graph entities, set overall display preferences, manage the datastore, and access extensions:
-
-image::/v3/01_04_20_ProjectPanelView.png[,520,450,role=text-left]
-
-* *_View_*, to display data views saved to the server, to save, update, select, and annotate views, and to load a data view to the project space. 
-* *_Category_* and *_Relationship_*, to review defined graph entities, pull specific types of nodes or edges from a connected database and set display options for entities and their properties.
-* *_Settings_*, to set display options for nodes and edges, set the project *_UI Configuration_*, and show or hide *_Snapshot_* and *_History_* dialogs, dialog, and .
-* *_Data Store_*, to Import data in accepted formats, Export data views, CSV or Excel archives, a .png or SVG screenshot, or all current data views, and  save a template based on the current project that can be applied to other projects. It is also where you manage the project's connected database, if any.
-* *_Extensions_*, to access standard or custom extensions which may be available.
-* *_Grove Links_*, to manage access to Grove notebook sandboxes available to the project.
-
-
-=== Files panel
-
-*_Files_* opens a panel to manage *_Project Files_*, including those for *Kineviz* *_Agent_*, any imported files (CSV, JSON, Excel, .png, etc.), and the database (if any).
-
-image::/v3/01_04_20a_FilesPanelView.png[,520,280,role=text-left]
-
- 
-=== Query panel
-
-*_Query_* opens sub-panels to enter and save Cypher or GQL queries on a connected database, and to query SQL databases (MySQL, MSSQL, or PostgreSQL), CSV or JSON files, or use the Gremlin graph traversal language.
-
-image::/v3/01_04_21_QueryPanelQuery.png[,520,450,role=text-left]
-
-The *_SQL_* and *_CSV_* tabs include the GraphXR *_Mapping Editor_* to map data in a flat CSV file or SQL table to a graph model.
-
-image::/v3/01_04_22_QueryPanelCSV.png[,520,620,role=text-left]
-
-=== Transform panel
-
-*_Transform_* opens sub-panels for operations to transform graph data directly in GraphXR.
-
-image::/v3/01_04_23_TransformPanelShortcut.png[,520,450,role=text-left]
-
-Transform sub-panels include:
-
-* *_f(x)_*, to execute functions similar to formulas in Excel and SQL or functions in MapReduce frameworks. You can run formulas to add information from one column of data to another, or to modify data formats.
-* *_Extract_*, to define a new category (and its properties) and relationship from an existing category, and extract new nodes and edges based upon it.
-* *_Aggregate_*, to collect properties from a starting node's neighboring edges and nodes, apply a calculation, and write the result to the starting node as a property. This makes it possible to simplify a graph, yet retain key information about its original complexity.  
-* *_Merge_*, to combine two nodes with matching properties into a single node.
-* *_Link_*, to connect nodes with the same property values. This can be used to bring two different data sets together and also to draw explicit connections among nodes of the same type.
-* *_Shortcut_*, to connect two nodes that share a common neighbor with a new link.
-* *_Connector_*, to provide access to external applications for enhancing data.
-
-=== Table panel
-
-*_Table_* open live searchable tables of data by *_Category_* or *_Relationship_*. Selecting an item on a table highlights and centers it on the canvas. In an *_Enhanced Table_* you can rename categories and relationships on the fly, select, sort, edit, and reformat data, and then export data as a CSV or Excel archive.
-
-image::/v3/01_04_24_TablePanelCat.png[,520,450,role=text-left]
-
-=== Layout panel
- 
-*_Layout_* opens *_Force_*, *_Parametric_*, and *_Geometric_* sub-panels for applying detailed layouts to all or part of the data on the canvas.
-
-image::/v3/01_04_25_LayoutPanelGeom.png[,540,620,role=text-left]
-
-=== Filter panel
-
-*_Filter_* opens a panel to filter and select data by multiple _Node_ or _Edge_ property values. You can filter on numerical property values including date-time and latitude/longitude, as well as categorical(text string) property values.
-
-image::/v3/01_04_26_FilterPanel.png[,520,520,role=text-left]
-
-=== Agent panel
-
-*_Agent_* opens a panel to engage with and manage the *Kineviz Agent*, a built-in AI assistant for working with graph data in a *Kineviz* project. 
-
-image::/v3/01_04_26a_AgentPanelView.png[,520,450,role=text-left]
-
-
-=== Algorithm panel
-
-*_Algorithm_* opens GraphXR's *_Path Finding_*, *_Centrality_*, and *_Community Detection_* graph algorithm library. *_Centrality_* and *_Community Detection_* results are added to nodes as a property value.
-
-image::/v3/01_04_27_AlgoPanelCentrality.png[,520,450,role=text-left]
-
-=== Map panel
-
-*_Map_* opens a panel to drop nodes with latitude and longitude coordinates on a world map. Map controls and settings are provided to search map locations, set map boundaries and orientation, and choose a map server (default choices are MapBox, Open Street Maps, and Google Maps).  
-
-image::/v3/01_04_28_MapPanel.png[,520,450,role=text-left]
-
-== Projects Home, Information, and Logout
-
-The Kineviz logo at the bottom left of the browser window displays a menu for quick access to information and navigation among your *Kineviz* projects.
-
-image::/v3/01_04_04_KVLogoMenu.png[,320,280,role=text-left]
-
-* *_Home_*. Return to the *_Projects_* home page.
-* *_Recent Projects and Create Project_*. 
-*_Toggle_Theme*. Toggle the theme between light and dark mode.
-* *_Shortcut_*. Display a quick reference card of desktop shortcut keys. See also xref:nav-select/ref-shortcut-keys.adoc[Shortcut Keys Reference].
-* *_About_*. Review the *Kineviz* version and release information. 
-* *_Admin_*. Open the Administrator panel (if configured).
-* Current logged in user ID.
-* *_Logout_*. Log out of *Kineviz*.
-
+NOTE: The dockable *_Canvas picture-in-picture_* available on the *_Save Workspaces_* menu  is a larger thumbnail which simply shows the graph on the canvas. You cannot manipulate it directly.
 
 == Project Status Bar
 
-In an open project, the live *_Status Bar_* at the bottom of the window includes:
+The *status bar* at the bottom of the project browser window includes status information and icons to open relevant panels or the *_Query_* bar:
 
-* Name of the database currently connected to the project (e.g. KoreDB, Neo4j, etc.) 
-* Number of node and relationship tables in the connected database.
-* Icon to open the no-code *_Query Bar_* menu to query the connected database.
+image::/v3/01_04_42_ProjectStatusBar.png[,720,220,role=text-left]
+
+* *Flask* icon, if the project is a sandbox.
+* *Database* icon and type of database connected to the project (e.g. *KoreDB*, *AlloyDB*, etc.). Click to open the *_DataStore_* panel to review and manage the connected database. 
+* Number of category and relationship tables in the connected database. Click to open the *_Project > Category_* or *_Project > Relationship_* panel.
+* *Search* icon. Click to open the no-code *_Query Bar_* menu to query the connected database or search the current canvas.
 * Number of nodes and edges currently showing on the canvas.
-* Icon to open the *_Table_* panel to inspect properties of nodes and edges on the canvas.
-* Number of *_Agent_* chat threads currently running. 
-* Icon to open the *_Views_* panel.
+* *Table* icon. Click to open the *_Table_* panel and review properties of nodes and edges on the canvas.
+* *Agent* icon, with the number of *_Agent_* chat threads currently running. Click to open the *_Agent_* panel. 
+* *Views (total number of views)*. Click to open the *_Views_* panel.
 * A *_Saved_* or *_Unsaved_* status flag for data currently on the canvas. 
 
-+
-image::/v3/01_04_33_ProjectStatusBar.png[,720,180,role=text-left]
 
+== About Kineviz
 
-== GUI Navigation Controls
+The *_Help_* (question mark) icon on the left menu displays *Kineviz* version and release information, and provides links to the *Kineviz* *_Help Center_*, *_Terms of Service_*, and *_Experimental Features_* available in the release. 
 
-The GUI navigation interface at the bottom right of the canvas provides simulated 3D Virtual Reality (VR) navigation controls for use on the desktop.
+image::/v3/01_04_43_About.png[,320,320,role=text-left]
+ 
+NOTE: *_About_* on the user account menu display the same information.
 
-image::/v3/01_04_29_GUINavControls.png[,320,280,role=text-left]
+== User account menu
 
-* Click and hold the upper arrows to *_Move Right_*, *_Move Left_*, *_Move Up_*, or *_Move Down_*. Click the central circle to *_Reset_* the view to the center point of the data (similar to the *_Center To_* toolbar icon).
-* Click and hold the middle joystick-like controls to *_Rotate Left_* or *_Rotate Right_*.
-* Click and hold the lower arrow controls to zoom *_In_* or *_Out_*.
+The user account (person) icon displays a menu to show information, switch to another project, edit the project theme and language, open the administrator portal, or log out.
+
+image::/v3/01_04_44_UserMenu.png[,420,380,role=text-left]
+
+* *_Home_*. Return to the *_Projects_* home page.
+* *_Recent Projects_*. Switch to another existing project, or *_Create New Project_*. 
+*_Theme_*. Choose *_Light_* or *_Dark_* mode, or *_Match Theme_* to match the theme to the browser setting.  
+*_Language_*. Choose a different UI language (defaults are English, Chinese, or Spanish).
+* *_Shortcuts_*. Display a quick reference card of desktop shortcut keys. See  xref:nav-select/ref-shortcut-keys.adoc[Shortcut Keys Reference].
+* *_About_*. Current *Kineviz* version and release information. The *_Help_* (question mark) icon above the user account menu displays the same dialog. 
+* *_Admin_*. Open the Administrator panel (if available to your user account).
+* Current logged in user *account ID*.
+* *_Logout_*. Log out of *Kineviz*.

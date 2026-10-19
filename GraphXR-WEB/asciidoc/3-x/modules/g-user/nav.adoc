@@ -1,11 +1,12 @@
 * xref:intro-overview.adoc[*Kineviz User Guide*]
 ** xref:graphxr-start/propgraph-basics.adoc[*Property Graphs in Kineviz*]
+
 ** xref:graphxr-start/open-graphxr.adoc[*Kineviz Login*]
 ** xref:graphxr-start/projects-home.adoc[*Create and Manage Projects*]
 
 ** xref:graphxr-start/project-ui.adoc[*The Project Workspace*]
 
-** xref:graphxr-start/project-ui-config.adoc[*Configure a Project UI*]
+** xref:graphxr-start/project-ui-config.adoc[*Configure UI & Workspaces*]
 
 ** xref:data-import/data-import-intro.adoc[*Import Data*]
 *** xref:data-import/import-by-drag-and-drop.adoc[Drag and Drop]
@@ -49,7 +50,6 @@
 *** xref:display-options/scale-by-property-value.adoc[Set Node and Edge Sizes]
 *** xref:display-options/create-template.adoc[Create Project Templates]
 
-
 ** xref:layouts/working-with-layouts.adoc[*Work with Layouts*]
 *** xref:layouts/force-layout.adoc[Force Layout]
 *** xref:layouts/parametric-layouts.adoc[Parametric Layout]
@@ -59,6 +59,8 @@
 ** xref:./data-save-share-intro.adoc[*Save and Share Views*]
 *** xref:data-save.adoc[Save Graph Views]
 *** xref:data-share-views.adoc[Share Projects and Views]
+
+** xref:kineviz-dashboard.adoc[*Create Dashboards*]
 
 ** xref:data-export-intro.adoc[*Export Data*]
 

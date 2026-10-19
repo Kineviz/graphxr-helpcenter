@@ -11,145 +11,18 @@ Project *_Cards_* display project details and editing options. The *_Table_* ico
 
 image::/v3/01_03_02_ProjectsTable.png[,720,520,role=text-left]
 
-== Database Connection to Kineviz Projects
-
-A Kineviz project can be connected to an internal KoreDB database or one of several external databases when you create it. The options are:
-
-* An Internal *_KoreDB_* or *_KoreDB via proxy API_*, to create and connect a default internal KoreDB graph database queried using *Cypher*. You can import and/or model graph data in the project, save and query it internally, and export the entire KoreDB database for archival. 
-
-* An external graph database, to enable *Kineviz* property graph visualization and analytics without replicating or moving data.   
-
-NOTE: Connecting a project when you create it is optional, and you can *_Edit_* connection details for an existing project at any time. 
-
-To review a list of currently supported databases:
-
-. Click *_New Project_* at the upper right of the *_Project_* home page. 
-. In the *_New Project_* dialog, click *_Your Database_* to display the list.
-
-+ 
-image::/v3/01_03_03_CreateDatabaseType.png[,540,320,role=text-left]
-+
-+
-Current options are listed in *_Cypher_*, *_Gremlin_*, *_GQL/PGQL_*, and *_Other_* sections.
-
-
-[caption=]
-.External Graph Database Connection Supported in Kineviz
-[cols="2,5,8"]
-|===
-| *DB Type* | *Database* | *Connection Type* 
-
-| Cypher
-| *Amazon Neptune*
-| openCypher over Bolt
-
-| Cypher
-| *Apache AGE*
-| openCypher on PostgreSQL
-
-| Cypher
-| *Apache HugeGraph*
-| openCypher over REST
-
-| Cypher
-| *ArcadeDB*
-| openCypher over HTTP
-
-| Cypher
-| *FalkorDB*
-| openCypher over Redis
-
-| Cypher
-| *GalaxyBase*
-| GalaxyBase distributed graph database
-
-| Cypher
-| *Mapped graph*
-| Map SQL tables or Elasticsearch indexes as read-only graph queried with openCypher
-
-| Cypher
-| *Memgraph*
-| In-memory graph database, Bolt compatible
-
-| Cypher
-| *NebulaGraph*
-| Open source distributed graph database
-
-| Cypher
-| *Neo4j / OpenCypher*
-| Bolt connection to a Neo4j instance
-
-| Cypher
-| *PuppyGraph*
-| Graph engine over your data lake
-
-| Cypher
-| *RocketGraph*
-| XGT graph over REST
-
-| Cypher
-| *TigerGRaph*
-| openCypher over GSQL REST API
-
-| Cypher
-| *TuGraph*
-| Bolt-compatible graph database
-
-| Gremlin
-| *Azure Cosmos DB*
-| Gremlin over WebSocket
-
-| Gremlin
-| *Gremlin*
-| Any Apache TinkerPop server, over Gremlin
-
-| Gremlin
-| *JanusGraph*
-| Gremlin over WebSocket
-
-| GQL / PGQL
-| *Google AlloyDB Omni*
-| Google Alloy DB Omni property graphs (SQL/PGQ)
-
-| GQL / PGQL
-| *Google BigQuery Property Graph*
-| Property graphs in Google BigQuery
-
-| GQL / PGQL
-| *Google Spanner Property Graph*
-| Graph queries on Google Cloud Spanner
-
-| GQL / PGQL
-| *Oracle Graph*
-| Graph query on Oracle Database
-
-| GQL / PGQL
-| *PostgreSQL*
-| PostgreSQL property graphs
-
-| GQL / PGQL
-| *Ultipa Graph*
-| Ultipa HTAP graph server
-
-| Other
-| *Database Proxy*
-| Generalized proxy built on open-source middleware, to securely connect *Kineviz* to various backend databases.
-|===
-
-TIP: A rollover tooltip on the version number includes current connection requirements and troubleshooting tips. 
-
-image::/v3/01_03_04_CreateDatabaseTooltip.png[,320,380,role=text-left]
- 
-NOTE: *Kineviz* *_Explorer_*, a basic version of the *Kineviz* platform for initial visual exploration of big data, is provided through the *Google Cloud Platform (GCP) Marketplace*. Configuration and connection is exclusively initiated through two *GCP Marketplace* products: xref:explorer:spanner-intro.adoc[*Explorer for Spanner Graph*]  and  xref:explorer:bigquery-intro.adoc[*Explorer for BigQuery*]
 
 == Create a Project
 
-You can create and configure a *Kineviz* project at any time and optionally connect it to an external or internal database. You can:
+You can create and configure a *Kineviz* project at any time. You can:
 
 * create a new project manually
 * create a project by prompting the built-in Kineviz *_Agent_*  
 * start from a pre-configured sandbox project.
 
+When you create a project, you can optionally connect it to an internal KoreDB database or one of several external databases. For details, see xref:databases:db-connect/db-connect-intro.adoc[*Connect a Database to Kineviz*].
+
+ 
 === Create a New Project
 
 *To create a new project:*
@@ -166,7 +39,7 @@ image::/v3/01_03_05_ProjectsCreateButton.png[,720,180,role=text-left]
 +   
 * Click *Empty Graph* to automatically create an internal *_KoreDB_*. 
 * Click *Your database* to select an existing external database. The databases Kineviz supports are listed in the dropdown menu in *_Cypher_*, *_Gremlin_*, *_GQL/PGQL_*, or *_Other_* sections. To more easily locate the desired database, select the menu's *_Grid_* view and either enter a search in the search bar, or click to display only the list for a section. Then click to select the database you want.
-* Click *_Skip database_* below the *Your database* menu to create a project with no connected database. You can import and model data in formats such as CSV, SQL and JSON, and import graph data via GXRF files, Snapshot archives, and more. Simply drag and drop files directly, or use the *Kineviz* xref:data-import/import-via-mapping.adoc[*Mapping Editor*] for initial graph modeling.
+* Click *_Skip database_* below the *Your database* menu to create a project with no connected database. Without a database connection, you can import and model data in formats such as CSV, SQL and JSON, and import graph data via GXRF files, Snapshot archives, and more. Simply drag and drop files directly, or use the *Kineviz* xref:data-import/import-via-mapping.adoc[*Mapping Editor*] for initial graph modeling.
 +
 
 + 
@@ -254,9 +127,9 @@ image::/v3/01_03_11_ProjectPromptOpenAgent.png[,720,280,role=text-left]
 
 === Create a Project from a Sandbox
 
-A sandbox is a pre-configured project that you can duplicate. It can include a database connection, data views, styling templates, and any Kineviz extensions it uses. A project created from a sandbox is cloned and automatically opened. 
+A sandbox is a pre-configured project that can include a database connection, data views, styling templates, and any Kineviz extensions it uses. A project created from a sandbox is cloned and automatically opened. 
 
-NOTE: Kineviz provides in-app tutorials as *_Sandbox_* projects that show how to create and explore graph data, and communicate useful results. You can flag any of your existing projects as collaborative sandboxes for your specific use cases. 
+NOTE: You can flag any of your existing projects as collaborative sandboxes for your specific use cases. For example, Kineviz provides in-app tutorials as *_Sandbox_* projects showing how to create and explore graph data, and communicate useful results.  
  
 *To create a project from a sandbox:*
 
@@ -317,7 +190,7 @@ NOTE: Project configuration can also be changed within an open project using the
 
 A project *_Card_* is created for each project available to your account. 
 
-image::/v3/01_03_15_ProjectsCardDisplay.png[,420,540,role=text-left]
+image::/v3/01_03_15_ProjectsCardDisplay.png[,340,380,role=text-left]
 
 A project card includes:
 
@@ -426,6 +299,14 @@ image::/v3/01_03_20_ProjectsJumpBackIn.png[,720,540,role=text-left]
 +
 +
 NOTE: Project sorting and filters do not apply to the *_Jump back in_* section. 
++
+
++
+When you first open a project, its canvas is empty. To import graph data onto the canvas, you can load a view from the list of recent data views already saved in a project (if any), import an external file by drag and drop, or query the connected database via a no-code query. 
++ 
+
++
+image::/v3/01_03_20a_ProjectOpenViews.png[,720,540,role=text-left]
     
 
 === Edit a Project 
@@ -540,13 +421,13 @@ image::/v3/01_03_27_ShareEnable.png[,720,280,role=text-left]
 . Now select *_Share Project_*
 
 +
-image::/v3/01_03_28_ShareProject.png[,320,480,role=text-left]
+image::/v3/01_03_28_ShareProject.png[,240,320,role=text-left]
 +
 
 . Select a sharing user from the dropdown menu, and click *_Invite_*.
 
 +
-image::/v3/01_03_29_ShareInvite.png[,420,520,role=text-left]
+image::/v3/01_03_29_ShareInvite.png[,420,240,role=text-left]
  
 
 
@@ -586,7 +467,7 @@ image::/v3/01_03_31_TransferMenu.png[,240,180,role=text-left]
 . In the dialog, choose the user from the dropdown menu.
 
 +
-image::/v3/01_03_32_TransferProject.png[,380,240,role=text-left]
+image::/v3/01_03_32_TransferProject.png[,420,280,role=text-left]
 +
 
 . Optionally de-select the *_Keep me as a collaborator_* checkbox (which is selected by default). 

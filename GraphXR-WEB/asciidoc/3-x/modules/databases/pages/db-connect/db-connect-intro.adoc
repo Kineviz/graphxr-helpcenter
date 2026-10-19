@@ -1,0 +1,14 @@
+= Connect Kineviz to a Database
+
+You can connect a *Kineviz* project to an internal *KoreDB* graph database, or an external graph or relational database.  
+
+Database connection is optional. Without one, you can still create and explore property graphs in a *Kineviz* project. However, in a project with at least an internal KoreDB database, you can work with larger amounts of data, and your modeled and transformed graph  can be easily saved for ongoing exploration.  
+
+You establish a connection when you create a project. In the *_Create Project_* dialog, you must enter connection details and follow processes required by the database provider you choose. The following *_Database Type_* options are available:
+
+* *_None_*, to create a project with no connected database. 
+
+* *_KoreDB_* or *_KoreDb via proxy API_*, to create and connect a default internal KoreDB graph database.  
+
+* Connect to one of many external relational or graph databases, to enable full *Kineviz* property graph visualization and analytics with no need to replicate or move data  
+
