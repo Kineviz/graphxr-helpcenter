@@ -1,123 +1,239 @@
 = Run Graph Algorithms
 
-The *_Algorithm_* panel provides a library of algorithms widely used to analyze patterns of graph connection. Algorithms are organized into *_Path Finding_*, *_Centrality_* and *_Community Detection_* tabs.
+The *_Algorithm_* panel provides a library of algorithms widely used to analyze patterns of graph connection. 
 
-* *_Path Finding_* traces the path between a set of selected start and end nodes, and can apply an optional weight based on a relationship property.
-* *_Centrality_* and *_Community Detection_* algorithms evaluate each node in the graph and return a numerical measure of its connectedness or grouping.
+image::/v3/07_00_01_AlgorithmPanel.png[,720,380,role=text-left]
 
-NOTE: For an e-book introduction to graph algorithms and their uses, see 
+For a graph visible on the canvas the options are:
+
+* *_Path Finding_* traces the path between a set of selected start and end nodes,  optionally weighted based on a relationship property. Once traced, you can spotlight the path to tag or save it.
+
+* *_Centrality_*, *_Community_*, and *_SNA_* (Social Network Analysis) algorithms calculate a property and value for each node that measure various aspects of its connectedness or grouping within the graph.  
+
+* In addition to property values an algorithm adds to each node, rapid summaries of results are displayed for the graph as a whole.
+
+NOTE: For an e-book introduction to graph algorithms, how they are calculated, and their uses, see 
 https://neo4j.com/lp/book-graph-algorithms-ms/?utm_source=bing&utm_medium=ppc&utm_campaign=*NA%20-%20Search%20-%20Graph%20Algorithms&utm_adgroup=*NA%20-%20Search%20-%20Graph%20Algorithms%20-%20Graph%20Algorithm&utm_term=graph%20algorithms&msclkid=b90c0620812219ca24845b97d8af0b68%5BGraph[Graph Algorithms: Practical Examples in Apache Spark and Neo4j].
 
 == Path Finding
 
-*_Path Finding_* traces the shortest path between selected start and end nodes. You can weight the path using a numerical property of relationships in the path as a weighting factor. The nodes and edges on the path are traced and selected.
-
+*_Path Finding_* traces the shortest path between selected start and end nodes. 
 Once a path is traced, you can click *_Spotlight Path_* to display only its nodes and edges.
 
 *To find a path between connected nodes:*
 
 . Open the *_Algorithm_* panel and *_Path Finding_* tab.
-+
-image::/v3/07_00_01_AlgorithmPanel.png[,520,380,role=text-left]
 
-. Select one or more starting nodes in the graph, and click *_Add to Start_*. +
-Your selected nodes are listed in *_Start Nodes_*.
+. Select one or more starting nodes in the graph, and click *_Add to Start_*.  
+. Now select ending nodes in the graph, and click *_Add to End_*.
 
-+
-NOTE: An error message displays if you select too many start and end nodes such that there are more than ten pairs for tracing the shortest path.
++ 
+The selected nodes are listed in *_Start Nodes_* and *_End Nodes_*, respectively.
 +
 
-. Now select ending nodes in the graph, and click *_Add to End_*. 
-The selected nodes are listed in *_End Nodes_*.
-
 +
-NOTE: You can click *_Remove Start Node_* or *_Remove End Node_* to delete your current selection and choose other nodes.
+NOTE: With more than ten pairs of nodes selected, an error message advises you to choose fewer nodes. You can click *_Remove Start Node_* or *_Remove End Node_* to delete your current selection and choose other nodes. 
 +
 
-. In the *_Weight Property_* menu you can select a property of one of the relationships in the path to be used as a path weighting value, or leave the default *_Ignore Weight Property_* selected. If the relationships have no properties (which is often the case), *_Ignore Weight Property_* will be the only choice.
-. Click *_Trace Path_* to display and select the nodes and edges for the shortest path(s) between your start and end nodes.
+. Optionally, in the *_Weight Property_* menu, choose a property of one of the relationships as a path weighting value. The default is *_Ignore Weight Property_*. Often, the relationships have no properties, so that *_Ignore Weight Property_* is the only choice.
+. Click *_Trace Path_* to display and select the nodes and edges for the shortest path(s) between the start and end nodes.
 
 +
-image::/v3/07_01_01_AlgorithmPath.png[,720,420,role=text-left]
+image::/v3/07_01_01_AlgorithmPath.png[,520,380,role=text-left]
 +
 
-. Click *_Spotlight Path_* to display only the nodes and edges in the path. The button label changes to *_Un-spotlight Path_*.
+
+. Click *_Spotlight Path_* to display only the nodes and edges in the path. The button  changes to *_Un-spotlight Path_*.
 
 +
-image::/v3/07_01_02_AlgorithmSpotlight.png[,720,420,role=text-left]
-+
-
-. At this point, you can tag the path, and save the tag as a property so that you can easily find it again. You may also want to save and share a data *_View_*, export a *_GXRF_* file, or save and export a *_Snapshot_*.
-
-+
-image::/v3/07_01_03_PathTag.png[,420,240,role=text-left]
+image::/v3/07_01_02_AlgorithmPathSpotlight.png[,520,420,role=text-left]
 +
 
 . Click *_Un-spotlight Path_* to deselect the path and return the all the data to the graph. The start and end nodes persist in the *_Path Finding_* tab until you remove them, so you can click *_Trace Path_* again.
 
-NOTE: For a path with a single start and end node, select the two nodes, then right-click and select *_Find Path_*. This might be faster than using the *_Path Finding_* algorithm.  To isolate (i.e. spotlight) the resulting path, select *_Inverse_*, then *_Hide Selection_*. You can now tag the path and/or save the view.  
+NOTE: You can use the canvas right-click menu to find a path with a single start and end node. Select the two nodes, then right-click and select *_Find Path_*. To isolate (i.e. spotlight) the resulting path, you must select *_Inverse_*, then *_Hide Selection_*, after which you can tag the nodes in the path and/or save the view.  
 
-== Centrality or Community Detection
+== Centrality, Community Detection, and SNA Algorithms
 
-*Kineviz* includes a library of commonly used *_Centrality_* or *_Community Detection_* algorithms, which calculate measures of connectedness (both with respect to distance and strength of connection) in multi-dimensional data. There are many such algorithms, and each has its own characteristic behavior and strengths.
+*Kineviz* includes a library of commonly used algorithms which calculate measures of connectedness or clustering (both with respect to distance and strength of connection) in multi-dimensional data. There are many such algorithms, and each has its own characteristic behavior and uses.
 
-When you run a *_Centrality_* or *_Community Detection_* algorithm the computed result is added as a property and its value to each node in the graph. The property values can be displayed (for example, in a scatter plot or geometric layout), accessed for other processes within *Kineviz*, or exported to other graph analytics or statistics applications.
+image::/v3/07_01_03_AlgorithmsCommunity.png[,720,380,role=text-left]
 
-The following table lists the available algorithms and the property names *Kineviz* uses for the results.
+When you run an algorithm:
 
-[cols="2,2,2"]
+* The result for each node in the graph is added as a property and its value. The property values can be used to arrange nodes on the canvas (for example, in a scatter plot or geometric layout), accessed for other processes within *Kineviz*, or exported to other graph analytics or statistics applications.
+* For *_Centrality_* and *_Community_* algorithms, you can click *_Color nodes by result_* or *_Color by community_*, respectively, to apply a color scale to nodes according to the algorithm property value.   
+* A summary of results for the visible graph is displayed in the algorithm panel. 
+
+*To run an algorithm:*
+
+. In the *_Algorithm_* panel, click to open the *_Centrality_*, *_Community Detection_*, or *_SNA_* tab.
+. Click the button for the algorithm you want to run, e.g. *_Louvain_*.
+
++
+image::/v3/07_01_04_Louvain.png[,720,380,role=text-left]
++
+
++
+A message and summary displays when the calculation is finished. The property and calculated value is added to each node in the graph.
+. Optionally, click to add a color scale to the node property values.
+
++
+NOTE: You can also review the property values in a table or information window. 
+
+
+=== Algorithms and the Properties Added to Nodes
+
+The following table lists the available algorithms in *_Centrality_*, *_Community_* and *_SNA_* tabs, their use, and the property names *Kineviz* adds to each nodes. 
+
+[caption=]
+.Algorithm Properties
+[cols="1,2,4,2"]
 |===
-| Algorithm Type | Algorithm | Property Name
+| *Type* | *Algorithm* | *Use* | *Property Name*
 
-| Centrality
-| PageRank
-| pageRank
+| *Centrality*
+| *Degree*
+| Number of connections for each node
+| _degree_
 
-| Centrality
-| Betweenness
-| betweenness
 
-| Centrality
-| Closeness
-| closeness
+| *Centrality*
+| *PageRank*
+| Number of connections of each node to "influential" nodes
+| _pageRank_
 
-| Centrality
-| Eigenvector
-| eigenvector
 
-| Community Detection
-| Connected Component
-| componentId
+| *Centrality*
+| *Betweenness*
+| Cumulative shortest paths through each node
+| _betweenness_
 
-| Community Detection
-| Strong Connected Component
-| strongComponentId
+| *Centrality*
+| *Closeness*
+| Shortest distance from the node to all other nodes.
+| _closeness_
 
-| Community Detection
-| Louvain
-| louvainComponentId
+| *Community*
+| *Connected Component*
+| Groups where every node can reach every other through any edges.
+| _componentId_
 
-| Community Detection
-| Label Propagation
-| labelPropagationId
+| *Community*
+| *Strong Connected Component*
+| Groups where every node can reach every other through directed edges.
+| _strongComponentId_
+
+| *Community*
+| *Louvain*
+| Densely-connected clusters by modularity (aka communities)
+| _louvainComponentId_
+
+| *Community*
+| *Label Propagation*
+| Fast, rough clusters by grouping nodes based on their direct neighbors.
+| _labelPropagationId_
+
+| *SNA*
+| *Fragmentation Effects*
+| Calculates the drop in overall network connectedness (increase in fragmentation) when a specific node is deleted.
+| _fragmentationEffects_
+
+| *SNA*
+| *Frequency*
+| Measures how often interaction occurs between two specific nodes over a given period.
+| _frequency_ 
+
+| *SNA*
+| *Frequency Normalized*
+| Computes a relative ratio of interaction frequency, to compare of networks of different sizes.
+| _frequencyNormalized_ 
+
+| *SNA*
+| *Local Density*
+| Measures interconnection of a node immediate neighbors, to help identify tight-knit communities.
+| _localDensity_
+
+| *SNA*
+| *Closure*
+| Percentage of all open triplets (paths of length two) that are closed (triangles) vs. open (V-shaped).
+| _closure_
+ 
+| *SNA*
+| *Node Degrees*
+| Number of connected edges for each node
+| _nodeDegrees_ (same values as _degree_)
+
 |===
 
-*To run a Centrality or Community Detection algorithm:*
+=== Whole-Graph Summaries
 
-. In the *_Algorithm_* panel, click to open the *_Centrality_* or *_Community Detection_* tab.
-+
-image::/v3/07_01_04_Centrality.png[,720,380,role=text-left]
+Summaries for the visible graph as a whole are displayed at the bottom of the algorithm panel. 
 
-. Click the button for the algorithm you want to run.
-+
-A message displays when the calculation is finished. The property and calculated value is added to each node in the graph. To review the results, you can:
+* *_Centrality_* summaries list the top property values for that algorithm.
 
-* Open a table.
 +
-image::/v3/07_01_05_AlgorithmResultsTable.png[,520,420,role=text-left]
+image::/v3/07_01_05_CentralitySummary.png[,520,380,role=text-left]
 +
-OR
 
-* Inspect any node's information panel.
+* *_Community_* summaries list of the number of communities found, and the number of nodes in each.
+
 +
-image::/v3/07_01_06_CommunityDetectionInfo.png[,720,480,role=text-left]
+image::/v3/07_01_06_CommunitySummary.png[,520,380,role=text-left]
++
+
+* *_SNA_* summaries vary for the different available algorithms. Most also add or update one or more properties on individual nodes. 
+
++
+image::/v3/07_01_07_SNASummaryAnalyzeNetwork.png[,520,380,role=text-left]
+
+
+The following table lists the available *_SNA_* summaries and the properties used. 
+
+[caption=]
+.SNA (Social Network Analysis) Summaries
+[cols="2,6"]
+|===
+| *SNA Button*  | *Graph Summaries* 
+
+| *Analyze Network*
+a| * *Total Nodes* - Total number of nodes.
+* *Total Edges* - Total number of edges.
+* *Fragmentation* - proportion of pairs of nodes that cannot reach each other via any path.
+* *Density* - Average node _localDensity_.
+* *Closure* - Average node _closure_. 
+
+| *Fragmentation*
+a| * *Fragmentation* - proportion of pairs of nodes that cannot reach each other via any path
+* *Components* - number of isolated subgraphs, using _fragmentationEffects_
+* *Connected Pairs* - total number
+ 
+| *Fragmentation Effects*
+a| * *Fragmentation* - proportion of pairs of nodes that cannot reach each other via any path, using _fragmentationEffects_
+ 
+| *Frequency*
+a| * *Average Frequency* - Average node _frequency_.
+* *Max Frequency* - Maximum connection between nodes. 
+ 
+| *Frequency Normalized*
+a| * *Average Frequency* - Average node _frequencyNormalized_.
+ 
+| *Density*
+a| * *Density* - the ratio of actual connections to the total possible connections.
+ * *Actual edges* - Total number of edges
+ * *Total possible edges* - number of node pairs which could be linked. 
+ 
+| *Local Density*
+a| * *Local Density* - Average node _localDensity_.
+  
+| *Closure*
+a| * *Closure* - average _closure_
+* *Average Local Closure* - ?
+  
+| *Triadic Closure*
+a| * *Triadic Closure* - Percentage of all open triplets (paths of length two) that are closed (triangles) vs. open (V-shaped), using _closure_ 
+* *Closed Triads* - Number of closed triads (triangles)
+* *Open Triads* - Number of open triads (V-shapes).
+ 
+|===
+

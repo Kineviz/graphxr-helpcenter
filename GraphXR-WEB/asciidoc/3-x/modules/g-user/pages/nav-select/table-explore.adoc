@@ -1,180 +1,300 @@
-= Work with View Tables
+= Work with Tables
 
-The *_Table_* panel displays tables of nodes of a category (or edges of a relationship) which are currently visible on the canvas. Each table row represents a single node or edge, and its property values appear in the table columns. 
+The *_Table_* panel displays live searchable tables of the nodes and edges visible on the canvas for each *_Category_* or *_Relationship_*. 
 
-* *Basic tables* are available as soon as you open the *_Table_* panel. You can scroll through tables, re-arrange columns, fly to a node or edge in the graph, search and select data by property value, and export selected data. 
-+
-image::/v3/04_06_01_BasicTable.png[,720,480,role=text-left]
-+
+image::/v3/04_06_00_TablePanelCat.png[,720,380,role=text-left]
 
-* From a basic table you can display an *_Enhanced Table_* that includes all the visible data. The *_Enhanced Table_* is available from any basic table, and provides advanced search, selection, editing, and export capabilities.
+In a table you can:
 
-+
-image::/v3/04_06_02_EnhancedTable.png[,720,480,role=text-left]
+* Review the data for one category or relationship at a time.
+** Scroll to skim properties and property values.
+** Sort table rows by property values.
+** Search property values in the full table or a specific column. 
+** Reformat table *_Columns_* to display only properties of interest in the order you want.
 
-== Use Basic Tables
+* Edit the data on the canvas
+** Rename categories, relationships, and properties 
+** Edit or reformat property values
+** Delete properties
+** Delete nodes or edges currently selected in the table.
 
-In a basic table you can:
+* Select and mark table rows for further action. 
 
-* Skim data in the tables and review properties.
-* Click a table row to center the graph on that node or edge.
-* Search a table for nodes (or edges) with a specific property value.
-* Select the nodes or edges currently visible in the graph.
-* Export all or part of a table as a CSV or Excel file.
+* Export a CSV or Excel file from selected table rows or from a selection on the canvas. 
 
-=== Show and Review a Table  
+* Delete nodes or edges selected in a table from the canvas. 
 
-*To show a basic table:*
 
-. Open the *_Table_* panel, and choose either the *_Category_* or *_Relationship_* subpanel.
-. Click a category (or relationship) name to display the table of its nodes (or edges) currently visible in the graph. 
-+
-NOTE: With no data selected, tables include all the data. If you select data, a basic table includes only that selection. 
+== Display a Table 
 
-To review table contents, you can:
+Tables include all data currently visible on the canvas for a single category or relationship. Data that has been hidden using *_Hide Selection_* is not included in a table. 
+
+Each table row  represents a single node or edge. Property names appear in column heading, and property values in the table cells.
+
+A current selection on the canvas is highlighted in the table. 
  
-* Click *_Next_* or *_Previous_* page controls to review the included node (or edge) data.
+=== Show and review a Table
+
+*To show a Table:*
+
+. Select nodes and edges of interest, or deselect all data on the canvas.
+. Open the *_Table_* panel, and choose either *_Category_* or *_Relationship_*.
+. Click a category (or relationship) name to display a table of the currently visible and selected nodes (or edges) of that entity. 
+ 
+You can now:
+ 
+* Review the nodes (or edges) and their properties in the table rows. 
+** Click *_Next_* or *_Previous_* page controls.
+** Change the number of rows displayed per page.  
 +
-image::/v3/04_06_03_BasicTableNexPrev.png[,420,640,,role=text-left]
+image::/v3/04_06_01_TableViews.png[,520,480,,role=text-left]
 +
-* Use the scroll bars to review the properties listed in the table columns.
+** Use horizontal scroll bars to see all the properties in the table columns.   
+** Sort column property values in ascending or descending order.
+
 +
-image::/v3/04_06_04_BasicTableScrollProps.png[,540,380,role=text-left]
+image::/v3/04_06_02_TableColumnSort.png[,420,240,role=text-left]
+
+=== Search Property Values in a Table.
+
+You can search the entire table using the *_Full Search_* bar and/or search within a column by clicking the gray search icon. 
+
+Both searches operate on whatever is already displayed. You can start with one, and  narrow the search further with the other. 
+
+*To search a table's property values:*
+
+. Enter a full table search or column search:
+
++
+* For a *full table* search, enter a search term in the *_Full Search_* bar.
++
+
++
+image::/v3/04_06_03_TableFullSearch.png[,520,380,role=text-left]
++
+
++
+The search term is highlighted in yellow wherever it is found in the table rows. The term remains in the *_Full Search_* bar until you remove it.
++
+
+* For a *column* search, click a column's gray search icon, enter a search term, and click *_Filter Rows_*. 
+
++
+image::/v3/04_06_04_TableColumnSearchMenu.png[,520,240,role=text-left]
++
+
++
+A column search term is not highlighted in the table. Instead, when a column search filter is applied, a blue icon replaces the gray search icon. Click the icon to show or refine the current column search, or click *_Reset_* to clear it.
++ 
+
++
+image::/v3/04_06_05_TableColumnSearchApplied.png[,520,180,role=text-left]
++
+
+. The table displays only the rows matching the search. Optionally, click the *_Select_* checkbox in the column heading to keep the table rows selected after you clear search terms. 
+
++
+image::/v3/04_06_06_TableSearchSelectAll.png[,320,180,role=text-left]
++
+
+. To display the entire table again clear the *_Full Search_* bar and/or click the blue icon on column and click *_Reset_*.
+
+  
+=== Reformat Table Columns
+
+By default, table columns show all the properties for the category or relationship in alphabetical order by property name. 
+
+The *_Columns_* pop-up lets you to re-order or hide table columns at any time. This lets you:
+
+* Review properties of immediate interest without having to scroll
+* Format a table for export that includes only the properties you need. 
+
+*To reformat table columns:*
+
+. In an open table, click *_Columns_* for the list of available property names. 
+
++
+image::/v3/04_06_07_TableColumnsPopUp.png[,720,340,role=text-left]
 +
  
-TIP: By default, tables (like information windows) include all property names in alphabetical order. This may make it hard to review properties of immediate interest. In the *_Project_* panel and *_Category_* or *_Relationship_* tabs, you can re-order properties at any time, and also temporarily mark properties you don't need to see as  *_Hidden_*. 
-
-=== Center the graph on a table entry
-
-* Click a single table row to center the view on its node or edge in the graph (but not select it). 
 +
-image::/v3/04_06_05_BasicTableCenterOn.png[,720,380,role=text-left]
-
-=== Search and select from a table 
-
-The *_Select All_* button at the bottom of the panel lets you select the data in the graph that corresponds to the table entries. The button shows the number of rows in the table currently available in the table (whether narrowed by a search or not). As you enter a search term, this number is updated accordingly.  
-
-*To search and select from a table*:
-
-. Open a table, and enter a search term in the table's search bar.
-+ 
-The table includes only the nodes (or edges) with matching property values.
-+
-. Click *_Select All_* to select the current table entries.
-+
-image::/v3/04_06_06_BasicTableSearchSelect.png[,720,480,role=text-left]
-
-=== Export a CSV or Excel file from a table 
-
-You can export a flat CSV or Excel file with all or part of a current table to your local system.  
-
-*To export CSV or Excel from a basic table*:
-
-. Open a table. 
-. Optionally, use a search term in the table's search bar to narrow down the data to be exported.
-. Click either:
-+
-* *_Export CSV_* to download a flat CSV file.
-* *_Export Excel_* to  download an .xlsx file. 
-+
-image::/v3/04_06_07_BasicTableExcelExport.png[,420,640,role=text-left]
-+ 
-NOTE: Properties marked as *_Exclude_* in the *_Project_* panel and *_Category_* (or *_Relationship_*) tabs are not exported.
-
-== Use the Enhanced Table
-
-An Enhanced Table provides advanced editing and selection for the data on the project canvas. You can: 
-
-* Re-name a category, relationship, or property
-* Re-arrange columns, add or remove data and edit property values
-* Search and  mark data for selection
-* Export all or part of the data as an Excel or CSV file.
-* Delete any property column.
-
-WARNING: Re-naming or deleting elements in an Enhanced Table is immediately updated on the project canvas.    
-
-=== Open the Enhanced Table
-
-The *_Enhanced Table_* is available from any basic table. It displays all the data currently visible in the graph space, whether selected or not. 
-
-*To open the Enhanced Table:*
-
-. Optionally, select data of interest. 
-. Open the *_Table_* panel, and select an available Category or Relationship.
-
-+
-NOTE: If you've selected data, basic tables display only the categories or relationships in the selection. However, any enhanced table will include all the visible data.
-+
-. Click the *_Enhanced Table_* button on the bottom right of a table.
-+
-The enhanced table is initially tethered to the graph space. Optionally, click the airplane icon at the upper right corner to display it in a separate browser window.
-+
-image::/v3/04_07_01_EnTableTethered.png[,720,480,role=text-left]
-
-=== Reformat and search an Enhanced Table
-
-You can reformat and search an enhanced table to focus on data of interest as follows:  
-
-* *Show only the data currently selected in the graph.* Click the *_Show selection only_* checkbox at the top of the window.
-+
-image::/v3/04_07_02_EnTableShowSelect.png[,720,480,role=text-left]
-+
-* *Select properties to display.* Open the properties list dropdown menu to select additional properties, or click the *_x_* next to a property name to remove it. Properties are displayed in columns in the order they are selected. 
-+
-image::/v3/04_07_03_EnTableProps.png[,420,380,role=text-left]
-+
-* *Re-order column headings*. Click and drag a column heading to the right or left.
-* *Sort a property by its values*. In a column heading, click the arrow for a sort in ascending or descending order.   
-* *Search property values in the entire table*. Enter a search term in the *_Full Search_* text box.
-+
-image::/v3/04_07_04_EnTableSearchAll.png[,420,380,role=text-left]
+* Current property names are listed at the top, in the order they currently appear in the table column headings.
+* Properties not currently displayed are listed below in gray text.
 +
 
-* *Filter rows by a specific (column) property value*. Click the *_Filter Rows_* button enter a search term for property values in one or more columns. 
-+
-image::/v3/04_07_05_EnTableFilterRows.png[,420,380,role=text-left]
-+
-* *Mark table rows and select them in the graph*. Click one or more checkboxes in the first table column. The *_More Actions_* button now shows the number of currently selected rows. Click *_More Actions_* and *_Mark Selected in Graph_*. You can then go to the project space and work with the selection, for example to add a tag.
-+
-image::/v3/04_07_06_EnTableMarkSelect.png[,520,380,role=text-left]
+. Click the checkbox next to a property name to add (or remove it).
+. Click the _up_ or _down_ arrows next to a displayed property name to re-order the table's column headings.  
+. Click anywhere outside of the *_Columns_* pop-up to dismiss it.
 
-=== Export marked data from an enhanced table
+== Edit Data in a Table
 
-You can export marked data (the entire table, or only selected rows) as a CSV or Excel file. The *_More Actions_* button shows the number of currently selected rows. 
+In a table, you can edit most elements of your data, including:  
 
-*To export data from the enhanced table*:
+* Rename a category, relationship, and its properties. 
+* Edit or reformat property values
+* Delete properties from nodes and edges on the canvas
+* Delete nodes and edges from the canvas
+ 
+WARNING: Editing a table takes immediate effect on the data on the canvas and cannot be reverted. However, it affects only the data on the canvas, not in saved views or the internal database. Before editing, and especially before deleting selected data or deleting a property, save a *_View_* or take a *_Snapshot_*. Then if you've removed data by mistake, you can restore it. 
 
-* Click *_More Actions_* and select either:
-** *_Export Selected as CSV_* or
-** *_Export Selected as Excel_*
-+
-image::/v3/04_07_07_EnTableExport.png[,520,380,role=text-left]
-+
-NOTE: Properties marked as *_Exclude_* in the *_Project_* panel and *_Category_* (or *_Relationship_*) tabs will not be shown in the Enhanced Table, and cannot be exported.  
+=== Rename a Category or Relationship
 
-=== Edit the enhanced table
+Renaming a category or relationship in a table immediately changes the label for
+ 
+* Data visible on the canvas.
+* Any data hidden using *_Hide Selection_*. 
 
-You can edit most elements of your graph data in the enhanced table. These edits take immediate effect in the project. 
+*To rename a category or relationship:*
 
-WARNING: Editing an enhanced table takes immediate effect in the project and cannot be reverted. Before editing, and especially before deleting selected data or deleting a property, save a *_View_* or take a *_Snapshot_*. Then if you've removed data by mistake, you can revert the action. 
+. Open the *_Table_* panel, and on the category or relationship bubble, click the pencil icon. 
 
-You can:
++
+image::/v3/04_06_08_TableRenameCat.png[,320,180,role=text-left]
++
 
-* *Re-name any category or relationship*. Double-click a label (e.g. _Location_), enter a new name and hit return.
+. Enter the new name, and press _return_.
+
 +
-image::/v3/04_07_08_EnTableRenameCat.png[,320,720,role=text-left]
+The new name appears immediately in the *_Table_* panel, legend, and in the *_Project > Category_* or *_Project > Relationship_* tabs. 
+
 +
-* *Re-name any property*. Click the settings icon next to the property's column heading, and select *_Rename_*. Enter a new name and click *_Save_*. 
+image::/v3/04_06_09_TableRenameDone.png[,720,120,role=text-left]
+ 
+
+=== Rename a Property
+
+Renaming a property in a table immediately changes the  name *only for the data visible on the canvas*.
+
+NOTE: The property name is unchanged for data of that category or relationship currently hidden using *_Hide Selection_*.  
+
+*To re-name a property using a table:*
+
+. Open the *_Table_* panel, and click the category or relationship bubble to display its table. 
+. Locate the property name, click the settings icon in its column, and select *_Rename_*.
+. Enter the new name in the column heading, and press _return_.
 +
-image::/v3/04_07_09_EnTablePropRename.png[,520,320,role=text-left]
+image::/v3/04_06_10_TableRenameProp.png[,320,180,role=text-left]
+
+
+=== Edit Property Values in a Table
+
+Editing a property value on a table immediately changes it on the node or edge on the canvas.
+
+NOTE: You can also open an *_Information_* window for a single node or edge to add or delete (but not rename) its properties and edit their values.  
+
+*To edit a property value in a table:*
+
+. Open the *_Table_* panel, and click the category or relationship bubble to display its table. 
+. Optionally, search the table, or select a node or edge on the canvas.
+. In the table, click in the appropriate table row and property value cell.
 +
-* *Edit a property value*. Click in the table cell and edit the value.
-* *Add a row (node)*. Click *_Add Row_*  and enter property values. This immediately adds a new node to the graph. If you add a row by mistake, you can select the node in the graph and delete it.
+image::/v3/04_06_11_TableEditPropValue.png[,720,180,role=text-left]
 +
-image::/v3/04_07_10_EnTableAddRow.png[,520,240,role=text-left]
+. Enter a new value and press _return_.
+
+
+=== Delete a property using a Table
+
+Deleting a property in a table immediately deletes it from all the data on the canvas, but not from any hidden data, saved views, or the connected database.
+
+NOTE: To add or delete properties from specific nodes or edges, you can also select data on the canvas and open an *_Information_* window.  
+
+*To delete a property using a Table:*
+
+. Open the *_Table_* panel, and click the category or relationship bubble to display its table. 
+. In the table, locate the column for the property you want to delete.
+. Click the column settings icon, and select *_Delete_* from the menu.
+
 +
-* *Select and delete rows*. Click one or more checkboxes in the first table column, click *_More Actions_* and *_Delete Selected from Graph_*. This immediately deletes the nodes or edges from the graph.
+image::/v3/04_06_12_TableDelProperty.png[,320,220,role=text-left]
 +
-image::/v3/04_07_11_EnTableDelSel.png[,520,380,role=text-left]
+
 +
-* *Delete a property*. Click the settings icon next to the property's column heading, and select *_Delete_*. This immediately deletes the property and its values from all the data in the graph. The property name disappears from tables and information panels. 
+The property is immediately deleted from all nodes (or edges) of that category (or relationship) currently visible on the canvas.
+
+=== Delete Nodes or Edges using a Table
+
+You can delete nodes or edges by selecting them in a table and deleting them. This deletes the nodes or edges from the data _visible on the canvas_, but not from saved views or the connected database. 
+
+For a workflow where you need to clear out specific subsets of data temporarily, deleting data using tables can be easier than using the selection options available on the canvas. 
+
+*To select and delete nodes or edges in a table:*
+
+. Open the *_Table_* panel, and click the category or relationship bubble to display its table. 
+. If data you want to delete is selected on the canvas, you must select it on the table before you can delete it.
+.. Click *_Show selection only_*,
+.. Click the checkbox in the first column heading to select the items in the table. 
+.. Click *_Show selection only_* again to display the full table and select or de-select additional table rows.  
+. In the table, you can locate nodes or edges to delete through inspection or a search.
+. Click the checkbox in the first table column to select a table row, or click the checkbox in the column heading to select all the rows returned through a search.
+. Open the *_More Actions_* menu and choose *_Delete Selected from Graph_*.
+ 
++
+image::/v3/04_06_13_TableDelSelected.png[,720,380,role=text-left]
++
+
++
+The nodes (or edges) selected in the table are immediately deleted from the canvas. 
++
+
++
+TIP: If you might want to restore the canvas as it was before deleting the data, don't save the current view. Instead, choose *_Save As_* to save a new view.  
+ 
+
+== Select and Mark Data in Tables
+
+You will likely want to create a specific table of nodes or edges either for export, or to highlight a subset of the nodes (or edges) on the canvas for further exploration.
+
+In the *_Table_* panel you can combine search and selection options to:
+
+* Select data on the canvas and/or in a table, and refine the table selection. 
+* Mark the selected table on the canvas. This replaces the current selection on the canvas with the selection in the table.
+
+*To select data and mark the selection on the graph:*
+
+. Open the *_Table_* panel, and click the category or relationship bubble to display its table. 
+. If data you want to mark is selected on the canvas, you must select it on the table before you can mark it.
+.. Click *_Show selection only_*,
+.. Click the checkbox in the first column heading to select the items in the table. 
+.. Click *_Show selection only_* again to display the full table and select or de-select additional table rows.  
+. In the table, you can locate nodes or edges to delete through inspection or a search.
+. Click the checkbox in the first table column to select a table row, or click the checkbox in the column heading to select all the rows returned through a search.
+. Open the *_More Actions_* menu and choose *_Mark Selected in Graph_*.
+ 
++
+image::/v3/04_06_14_TableMarkSelected.png[,720,380,role=text-left]
++
+
++
+* The table now displays the marked rows
+* The badge on *_Show selection only_* badge shows the new number of items currently selected on the canvas.
+* On the canvas, you can continue working with the new selection (for example, using tag, annotate, layout options, and more).
+
+
+== Export a CSV or Excel file from a Table 
+
+You can export a flat CSV or Excel file with all or part of a current table to your local system. This exports the table of the nodes or edges currently _selected in the table_   with the _current column formatting_. 
+
+This can be useful, for example, when inspecting data for outliers or errors, since the exported file will include only the properties defined for the category or relationship that you need to review.
+
+NOTE: Hidden data, any properties not currently displayed in the table, and properties marked as *_Exclude_* in the *_Project_* panel and *_Category_* (or *_Relationship_*) tabs are not exported. 
+
+*To export a CSV or Excel archive:*
+
+. Open a table for a category or relationship. 
+. Select the table rows to export using any selection method, including:
+
++
+* Selection in the table or on the canvas.
+* Full table search and/or column filtering.
++
+
+. On the *_More Actions_* menu, choose either:
+
++
+* *_Export Selected as CSV_* to download a flat CSV file.
+* *_Export Selected as Excel_* to  download an .xlsx file. 
++
+
++
+image::/v3/04_06_15_TableCSVExcelExport.png[,520,380,role=text-left]
