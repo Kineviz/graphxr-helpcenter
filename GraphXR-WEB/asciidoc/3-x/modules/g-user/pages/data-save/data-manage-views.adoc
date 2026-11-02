@@ -1,0 +1,392 @@
+= Manage Saved Views 
+
+In the *_Project > Views_* panel, views are shown as cards with thumbnail images or as a list, organized in folders.
+
+image::/v3/02_10_01_ProjectViewPanelIntro.png[,720,240,role=text-left]
+
+Once a view is saved you can: 
+
+* xref:data-import/load-a-saved-view.adoc[*_Load a saved view_*] to the canvas by clicking on its card or list item. 
+* xref:./data-save.adoc[*_Save_*] any further changes to the view currently on the canvas, or save it as a new view. 
+
+* Find and review saved views
+** Display folders and views in a card or list format 
+** Sort and search views.
+** Review view information and add a *_Remark_*.
+
+* Edit view details
+** *_Rename_* a view.
+** Include the theme (light/dark mode and/or custom theme) in the saved view.
+ 
+* Organize views in *folders*
+** Create a named folder and move saved views to it.
+** Select views and move them to an existing folder.
+
+* xref:./data-share-views.adoc[*_Share_*] or xref:data-export-intro.adoc[*_Export_*] one or more views.
+
+* *_Delete_* one or more views. 
+
++
+NOTE: To avoid having to open a panel, many options in *_Project > Views_* are also available on the canvas *Views* menu. In addition, options to *_Duplicate_* the current view or create a *_New_* empty _Unsaved_ view are available only on the *Views* menu.
+
+
+== Find and Review Saved Views
+
+In the *_Project > Views_* panel, you can:
+
+* Display views in a card or list format 
+* Sort and search views.
+* Review view information and add a *_Remark_*.
+
+=== Display Folders and Views 
+
+In the *_Project > Views_* panel, a saved view is placed in the *_All Views_* list and *_Unfiled_* folder, unless you selected a different folder when saving. 
+
+You can:
+
+* Use the icons at the top left to choose the folder and view layout, either:  
+** A vertical side-by-side list of folders and views.
++
+image::/v3/02_10_02_ProjectViewPanel.png[,520,240,role=text-left]
++
+
++
+** A horizontal tabbed panel with folders along the top and views below.
++
+
++
+image::/v3/02_10_03_ProjectViewHorizontal.png[,520,240,role=text-left]
++
+
++
+NOTE: Folders you create are listed in alphabetical order by default. In the vertical sidebar display you can drag the *_All Views_* list and any folder up or down. In the horizontal tabbed display, you can click the 3 dots next to a folder and select *_Pin folder_*. This moves folder to the left edge of the horizontal display, keeping it visible in a narrow panel. 
++
+
++
+* Use view icons to display individual views as cards or as a list.
++
+image::/v3/02_10_04_ProjectCardList.png[,520,240,role=text-left]
+
+=== Search Views 
+
+You can search views in a selected folder by *_Name_*.  
+
+*To search for views:*
+
+. In the *_Project > Views_* panel, click a view folder (or *_All Views_*) to select it.
+. Enter all or part of a view *_Name_* in the view search bar. 
+
++
+image::/v3/02_10_05_ViewSearch.png[,420,280,role=text-left]
+  
+=== Sort Views 
+
+You can sort views in a selected folder by *_Name_*, *_Date Modified_*, or *_Date Created_*, in either ascending or descending order.  
+
+*To sort views:*
+
+. In the *_Project > Views_* panel click a view folder (or *_All Views_*) to select it.
+. Click the sort menu icon to select *_Date Modified_*, *_Date Created_*, or view *_Name_*
+. Click the sort (arrow) icon to sort the views in ascending or descending order.
++
+image::/v3/02_10_06_ViewSort.png[,520,240,role=text-left]
+
+=== Review View Information
+
+Each view includes an information summary that includes the name, node and edge count, date modified, date created, and any user remarks.
+
+*To display view information:*
+
+. In the *_Project > Views_* panel click a view folder (or *_All Views_*) to select it.
+. In the card (or list) display locate the view, and open its *_View actions_* menu (Click the 3 dots at the top (or far) right).
++
+image::/v3/02_10_07_ViewActionsMenu.png[,420,100,role=text-left]
++
+. Select *_About_*.
++
+image::/v3/02_10_08_ViewAbout.png[,420,100,role=text-left]
++
+. Optionally, enter a *_Remark_* in the text field at the bottom.
+. Click the *x* at the top right to save any remark and dismiss the window.
+
+== Edit view details
+
+You can rename a view, and change whether to include its applied theme when it is loaded to the canvas. Other view details are for reference only and cannot be edited.
+
+NOTE: *_Rename_* is also available in the canvas *View* menu.
+
+=== Rename a view
+
+*To rename a view:*
+
+. Open the *_Project > Views_* panel and locate the view.
+. Open its *_View actions_* menu (Click the 3 dots at the top (or far) right on the card or list) and select *_Rename_*.
+. In the dialog, enter the new name, and click *_OK_*.
+
+
+=== Include the View Theme 
+
+You can set a view to include its current theme when it is loaded to the canvas. This includes the light/dark mode and/or custom theme applied when the view was last saved, which can differ from the settings in a template (if any) applied to the overall project. 
+
+For example, for inclusion in a report, you may prefer a view in light mode if the project  default is set to dark mode.   
+
+*To include the view theme:*
+
+. Open the *_Project > Views_* panel and locate the view.
+. Open its *_View actions_* menu (Click the 3 dots at the top (or far) right on the card or list) and select *_Include theme_*.
+
+ 
+== Work with View Folders
+
+Existing folders appear in the *_Project > Views_* panel.
+
+image::/v3/02_10_09_ViewFolders.png[,540,320,role=text-left]
+
+A saved view is placed in the default *_All Views_* list and *_Unfiled_* folder, unless you created or selected a named folder when saving it.
+
+You can:
+
+* Create a new folder at any time.
+* Re-arrange the folder list
+* Move one or more views to a folder
+* Delete an empty folder
+
+=== Create a folder 
+
+*To create a new empty folder:*
+
+. Open the *_Project > Views_* panel, and select *_All Views_*, *_Unfiled_*, or the folder  where you want to put the new folder. 
+
++
+NOTE: Selecting *_All Views_* or *_Unfiled_* creates the folder at the top level.
++
+
+. Click the *_New folder_* icon.
+
+* In vertical sidebar layout,  the *_New folder_* icon is next to the search bar.
++
+image::/v3/02_10_10_NewFolderIconSidebar.png[,520,240,role=text-left]
++
+
++
+* In horizontal tabbed layout,  the *_New folder_* icon is at the right of the folder tabs.
++  
+
++
+image::/v3/02_10_11_NewFolderIconTabbed.png[,520,240,role=text-left]
++
+
+. Enter a folder name in the dialog and click *_OK_*.
+
++
+image::/v3/02_10_12_CreateKYCDialog.png[,520,180,role=text-left]
++
+
++
+The named folder is created and placed in the folder you selected. 
++
+
++
+image::/v3/02_10_13_KYCFolderDone.png[,520,240,role=text-left]
++
+
++
+NOTE: An error message appears if another folder with the same name already exists in the selected folder (or at the top level, if you selected _All Views_* or the *_Unfiled_* folder.  
+
+=== Re-arrange the folder list
+
+In the *_Project > Views_* panel, the folder list is in alphabetical order by default. For specific workflows, you may want arrange folders in a more convenient order. You can:
+
+* Drag (or pin) any folder to a new position on the vertical list (or horizontal tabs).
+* Create nested folders by moving a folder into another folder.
+
+NOTE: Changing the order on the vertical sidebar list does not affect the order of horizontal tabs. Also, a tabbed display shows folders but not their nested hierarchy.    
+
+*To re-order the folder list:*
+
+* Either:
+
+** In the sidebar view, *click + drag* a folder up or down on the list.
++
+image::/v3/02_10_14_ReorderFolderList.png[,520,240,role=text-left]
++
+
++
+** In the tabbed view, open a *_View action_* menu (click the 3 dots), and choose *_Pin folder_* to move the view tab as far left as possible (i.e. next to any already pinned views).
++
+
++
+image::/v3/02_10_15_PinFolderMenu.png[,520,240,role=text-left]
++
+
++
+Pinned folder tabs display a yellow star.
++
+
++
+image::/v3/02_10_16_PinFolderTabs.png[,520,240,role=text-left]
+
+=== Move a folder into another folder
+
+You can create nested view folders, and change the organization at any time.
+  
+*To move a folder into another folder:*
+
+. Open the *_Project > Views_* panel and vertical sidebar display, and locate the folder. 
+. Click its *_Folder actions_* menu (the 3 dots at the right), and select *_Move folder to..._* 
+
++
+image::/v3/02_10_17_FolderActionMove.png[,420,240,role=text-left]
++
+
+. From the dropdown menu, select the destination folder and click *_OK_*
+
++
+image::/v3/02_10_18_FolderMoveMenu.png[,420,240,role=text-left]
++
+
++
+NOTE: A folder inside other folders appears on the dropdown menu as _Folder1 / Folder2 / Folder3 , etc..._. 
++
+
++
+Nested folders are placed a collapsible list on the vertical subpanel. Click the arrow next to a folder to expand or collapse the list.  
++
+
++
+image::/v3/02_10_19_NestedFolders.png[,420,240,role=text-left]
+
+
+=== Move a view to a folder
+
+You can move a view to a different folder at any time. 
+
+*To move a view to a folder:*
+
+. Open the *_Project > Views_* panel, and locate the view. 
+. Click its *_View actions_* menu (the 3 dots on the card or list), and select *_Move to folder_*.
+
++
+image::/v3/02_10_20_MoveViewActions.png[,520,240,role=text-left]
++
+
+. In the dialog, choose an existing folder from the dropdown menu, and click *_OK_*.
+
++
+image::/v3/02_10_21_MoveViewMenu.png[,420,240,role=text-left]
++
+
++
+The view is moved to the new folder, and the view count is updated.
++
+
++
+NOTE: A view always remains on the *_All Views_* list. 
+
+=== Move a selection of views to a folder.
+
+You can select and move more than one view at a time to another existing folder.  
+
+*To select and move views to a folder:*
+
+. Open the *_Project > Views_* panel and if needed, create a new folder.
+. Display the views you want to move.
+. Click the view selection checkbox for each view to be moved. 
+
++
+image::/v3/02_10_22_ViewSelectCheckbox.png[,520,240,role=text-left]
++
+
++
+NOTE: The checkbox appears only after you have loaded and saved the view in the project.
++
+
+. With views selected, go to the bottom of the *_Project > Views_* panel, and click *_Move selected_*.
+
++
+image::/v3/02_10_23_MoveSelected.png[,420,240,role=text-left]
++
+
+. In the dialog, select the folder from the dropdown menu, and click *_OK_*.
+
++
+The selected views are added to the new folder.
++
+
++
+image::/v3/02_10_24_SelectedViewsMoved.png[,520,240,role=text-left]
+
+=== Delete an empty folder
+
+You can delete any empty folder that you created. 
+
+NOTE: The default *_Unfiled_* folder does not include a *_Folder actions_* menu and cannot be deleted.
+
+*To delete an empty folder*:
+
+. On the folder list in the *_Project > Views_* panel, locate a folder.
+. Click the *_Folder actions_* menu (the 3 dots at the right) and select *_Delete folder_*.
+
++
+image::/v3/02_10_25_DeleteFolderAction.png[,420,240,role=text-left]
++
+
+. In the *_Warning_* dialog, click *_OK_* or *_Cancel_*. 
+
++
+image::/v3/02_10_26_DeleteFolderWarning.png[,380,180,role=text-left]
++
+
++
+NOTE: The folder will be deleted only if it is empty.
+
+
+== Delete Views
+
+You can delete one view at a time, or a selection of views. 
+
+
+=== Delete a view
+
+*To delete a view:*
+
+. Open the *_Project > Views_* panel and display the view to delete.
+. Click its *_View actions_* menu (the 3 dots at the right), and select *_Delete view_*.
+
++
+image::/v3/02_10_27_ViewDeleteActions.png[,520,240,role=text-left]
++
+
+. In the warning dialog, click *_OK_*. 
+
++
+NOTE: *_Delete_* is also available in the canvas *View* menu. It deletes the view currently on the canvas. You must enter the view name in the warning dialog to confirm. When deleted, the view name changes to _Unsaved View_.   
+
+=== Delete selected views
+
+You can select and delete several views (or all project views)in one step.
+
+IMPORTANT: Before deleting a view, you may want to *_Export_* it as a _.graphxr_ file to your local system. In the *_Project > Views_* panel, you can export one view at a time. To do this, open a view's *_View action_* menu (click the 3 dots), and choose *_Export_*.     
+
+*To delete selected views:*
+
+. Open the *_Project > Views_* panel and display the views you want to delete.
+. Click the view selection checkbox for each view to be deleted.
+
++
+NOTE: The checkbox appears only after you have loaded and saved the view in the project.
++
+
++
+Once you select at least one view, a section appears at the bottom of the panel that shows the number of selected views, a *_Select all_* checkbox, and the *_Delete selected_* option.
++ 
+
+. With the views to delete selected, click *_Delete selected_*.
+
++
+image::/v3/02_10_28_DeleteSelected.png[,520,240,role=text-left]
++
+
+. In the verification dialog click *_OK_* or *_Cancel_*.
+
+ 

@@ -1,0 +1,182 @@
+= Share Projects and Views
+
+In the multi-user *Kineviz* platform, a project's saved views can be shared with other users. You can:
+
+* Share an entire project. 
+* Share individual project views through a *_Share_* link or iFrame.
+
+NOTE: Although it is usually best to *_Share_* a project or its views, you can  xref:./data-export-views[*_Export_*] an entire project to your local system  as a _.graphxrproject_ file, or one or more views as a _.graphxr_ file, CSV or Excel archive, or *_Snapshot_* archive (_.graphxrsnapshots_). Exporting is most useful for archiving views and projects for later use or reference. However, it is also useful for transferring downloaded files to a different *Kineviz* or *Kineviz Desktop* project by drag and drop, using *_Import_* in the *_Project > Data Store_* subpanel, or for an entire project, the *_Import Project_* button on the *_Projects_* home page.
+
+== Share a Project
+
+You can share any *Kineviz* project, and set sharing privileges as a *_Viewer_*, *_Editor_* or *_Creator_*. Once a project is shared, all its saved views are available to the invited users. 
+
+NOTE: Single-user *Kineviz Desktop* does not support project sharing. You can, however, share views one at a time via a view link.   
+
+=== Grant Shared Access to a Project
+
+You must first enable project sharing, then grant shared access to other users of your *Kineviz* account.
+
+*To share a project and its data views:*
+
+. Go to the *_Projects_* (Home) page, and locate the project you want to share.
+. Open the project settings menu, and choose *_Enable Share_*.
++
+image::/v3/02_08_01_ProjectEnableShare.png[,420,240,role=text-left]
++
+The menu changes to *_DisableShare_*, and additional *_Share Project_*, *_Open Views_*, and *_UIConfiguration_* menu items appear. 
+
++
+image::/v3/02_08_02_ShareProjectMenu.png[,540,380,role=text-left]
++
+
++
+NOTE: Once project sharing is enabled on the home page, in the open project the canvas *Project* menu includes *_Share Project_*.
++  
+
+. Optionally, you can choose *_UIConfiguration_* to review and edit the user interface presented in the project.
+
++
+image::/v3/02_08_03_ShareUIConfigMenu.png[,420,240,role=text-left]
++
+
+. Click visibility icons to set UI elements to: 
+
++
+* *_Public_* - Enabled on the project and for shared users.
+* *_Project_* - Enabled on the Project
+* *_Off_* - Disabled (i.e. not shown in the project UI)
++
+
++
+image::/v3/02_08_04_ShareUIConfig.png[,540,320,role=text-left]
++
+
++
+NOTE: In an open project, *_UIConfiguration_* is also available in the *_Project > Settings_* panel.
++
+ 
++
+image::/v3/02_08_05_UIConfigSettings.png[,540,320,role=text-left]
++
+
+. Click *_Back_* or the *Kineviz* logo at the upper left to return to the home page.
+
+. Now open the project Settings menu, and select *_Share Project_*.
+
++
+image::/v3/02_08_06_ShareProjectMenu.png[,540,280,role=text-left]
++
+
+. Select sharing privileges from the dropdown menu (*_Viewer_*, *_Editor_* or *_Creator_*).
+. Select a *Kineviz* user email from the dropdown menu, and click *_Invite_*.
+
++
+image::/v3/02_08_07_ShareInvite.png[,380,220,role=text-left]
+
+
+=== Access a Shared Project
+
+Once you are invited to share a *Kineviz* project, it appears on your *_Projects_* page in the *_Shared Projects_* area. You can also click *_Shared with me_* in the project sidebar menu. 
+
+image::/v3/02_08_08_SharedProjects.png[,720,340,role=text-left]
+
+* Click the shared project tile (or list) to open the project and load a view. 
+
+
+== Share a single View
+
+Once you save a view you can:
+
+* Share its url with either internal or external collaborators using the *View* menu or the *_Project > Views_* panel.
+ 
+* Embed a shared *Kineviz* view as an iframe on another web page, using the dropdown list of the project's saved views on the *_Projects_* (Home) page.
+
+=== Use a Share link
+
+From the view menu or *_Project > Views_* tab you can obtain a *_Share_* link for an individual view. You can send the link to anyone, even if they do not have a *Kineviz* login. Optionally, you can protect the view by requiring login or a password. 
+
+*To generate a Share link for a view:*
+
+. Enter the project, and locate the view you want to share. 
+. You can either:
+
++
+* Use the canvas *View* dropdown menu to select the view and load it to the canvas, then choose *_Share_*.
++
+
++
+image::/v3/02_08_09_ShareCanvasMenu.png[,420,280,role=text-left]
++
+
++
+* Open the *_Project > Views_* tab, locate the view in the card or list, click its *View actions_* menu (the 3 dots at the right), and choose *_Share view_*. 
++
+
++
+image::/v3/02_08_10_ShareProjectViewMenu.png[,420,280,role=text-left]
++
+
+. In the *_Share_* dialog, you can optionally set authentication, database access, and/or password protection.
+
++
+image::/v3/02_08_11_RequireAuthentication.png[,420,280,role=text-left]
++
+
++
+* Click the *_Require authentication_* checkbox to require the sharing user to log in to *Kineviz*.
+* Click the *_Allow database access_* checkbox to allow the sharing user to query the database from the shared view.
+* Enter a *Password* in the text box, and click *_Save_*.  
+
+. You can now click *_Copy Link_* and paste it into an email to the user.  
+
++
+To open the view, the login status and password (if any) will be required. Send the password in a separate email.
++
+
++
+image::/v3/02_08_12_LoginSharedViewPassword.png[,540,380,role=text-left]
++
+
++
+When authenticated, the project opens with the single view available.
++
+
++
+image::/v3/02_08_13_SharedViewOpened.png[,540,380,role=text-left]
+
+
+
+=== Embed a view as an iFrame
+
+You can obtain code for iFrame embedding from a project's list of shared views.
+
+NOTE: Single-user *Kineviz Desktop* does not support project sharing or generating iframe code.   
+
+
+*To embed a view as an iFrame:*
+
+. In the *_Project_* (Home) page, open the project's settings menu, and choose *_Open Views_*.
+ 
++
+image::/v3/02_08_14_ProjectOpenViews.png[,420,280,role=text-left]
++
+
+. Locate the view and click *_Generate iframe code_* at the right. 
+
++
+image::/v3/02_08_15_GenerateIframe.png[,720,340,role=text-left]
++
+
++
+A message indicates that the code has been copied to the clipboard. 
++
+
+. Paste the iframe embed code into the html for the web page of your choice. This code should be similar to the following example:
+
++
+
+----
+<iframe src="https://cloud.kineviz.com/share/6a9cdd8ba391a67f5002b0da/KGC2026_sec10k_Views/6a9cdd8ba391a67f5002b0db" frameborder="0" width="100%" height="100%">
+</iframe>
+----

@@ -38,7 +38,7 @@ _via xref:g-user:data-import/query-graphdb.adoc[*Database Query*] or xref:g-user
 | xref:g-user:data-crud/data-crud-intro.adoc[6. *Edit and Transform the Graph*] 
 
 | xref:g-user:layouts/working-with-layouts.adoc[7. *Create Layouts*] and xref:g-user:geospatial-maps.adoc[*Geospatial Maps*]
-| xref:g-user:data-share-views.adoc[8. *Share*], xref:g-user:data-save.adoc[*Save*] and xref:g-user:data-export-intro.adoc[*Export* ] _graph views and data_ 
+| xref:g-user:data-save/data-share-views.adoc[8. *Share*], xref:g-user:data-save/data-save.adoc[*Save*] and xref:g-user:data-export-intro.adoc[*Export* ] _graph views and data_ 
 
 |===
 

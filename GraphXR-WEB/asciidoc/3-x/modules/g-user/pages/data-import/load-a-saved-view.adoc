@@ -1,33 +1,36 @@
 = Load a Saved View
 
-Once a view has been saved, you can load it into the project at any time. It includes the nodes and edges, the 3D perspective and layout of the graph, and the hidden data as it was when the view was last saved.  
+Once a view has been saved, you can load it onto the project canvas at any time. It includes the nodes and edges, the 3D perspective and layout of the graph, and the hidden data as it was when the view was last saved.  
 
 NOTE: A data view is automatically available only in the project where it was created. However, a view exported as .graphxr file or Snapshot archive can be imported to another project, *replacing* its current view. Views saved as a CSV or Excel archive can also be imported to another project, but the data is *added* to the current view.
 
-WARNING: Before you load a saved view be sure to save your current view. You can save it back to the current view, save it as a new view, or export it.  
+WARNING: Before you load a saved view be sure to save your current view. You can save it to the current view name, save it as a new view, or export it. 
 
-*To load a saved view:*
+*To load a saved view to the canvas:*
 
-. Open the *_Project_* panel and *_View_* tab (or use the View menu on the project canvas to select the view name from a list of *_recent views_* or *_all views_*).
+. You can either:
 
 +
-image::/v3/02_10_01_LoadViewPanel.png[,720,520,role=text-left]
+* Use the canvas *View* menu to load a view from the dropdown list. This works best for  recently used views. Simply select the view name from the list of *_recent views_* or *_all views_*.
++
+ 
++
+image::/v3/02_11_01_LoadViewMenu.png[,540,520,role=text-left]
 + 
 
 +
-In the *_View_* tab, thumbnail preview tiles show the view contents. Click the tile icon at the upper left to toggle between tile and list views. 
-
-. When there are many saved views you can:
-+
-* Sort the tile or list view by view *_Name_*, *_Date Created_*, or *_Date Modified_* in ascending or descending order.
-* Click the magnifying glass icon to filter views by name.
-+
-image::/v3/02_10_02_LoadViewFiltered.png[,520,320,role=text-left]
+* Open the *_Project > Views_* panel and locate the view in a card or list display. 
 +
 
-. Once you locate the view, click the tile or list item to load it (or simply select the view name on the View menu). 
++
+image::/v3/02_11_02_LoadViewPanel.png[,720,520,role=text-left]
++ 
 
 +
-The view is loaded into the project canvas. 
+TIP: To locate a view quickly, you can search for it by *_Name_* using the view search bar, and/or sort by view *_Name_*, *_Date Created_*, or *_Date Modified_* in ascending or descending order.
 +
-image::/v3/02_10_03_LoadViewDone.png[,720,420,role=text-left]
+
+. Click the card or list item to load the view to the project canvas. 
+
++
+image::/v3/02_11_03_LoadViewDone.png[,720,420,role=text-left] 

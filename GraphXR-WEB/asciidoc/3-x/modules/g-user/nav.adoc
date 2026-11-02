@@ -56,9 +56,10 @@
 *** xref:layouts/geometric-layouts.adoc[Geometric Layouts]
 *** xref:geospatial-maps.adoc[World Map Layout]
 
-** xref:./data-save-share-intro.adoc[*Save and Share Views*]
-*** xref:data-save.adoc[Save Graph Views]
-*** xref:data-share-views.adoc[Share Projects and Views]
+** xref:data-save/data-save-share-intro.adoc[*Save and Share Views*]
+*** xref:data-save/data-save.adoc[Save Graph Views]
+*** xref:data-save/data-manage-views.adoc[Manage Saved Views]
+*** xref:data-save/data-share-views.adoc[Share Projects and Views]
 
 ** xref:kineviz-dashboard.adoc[*Create Dashboards*]
 

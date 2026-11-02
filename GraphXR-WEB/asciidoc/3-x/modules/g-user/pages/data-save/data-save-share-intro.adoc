@@ -1,0 +1,17 @@
+= Work with Saved Views
+
+At any time, you can:
+
+* xref:./data-save.adoc[*Save*] the graph on the project canvas as a view or snapshot. 
+
+You can then
+
+* xref:./data-manage-views.adoc[*Manage Saved Views*] in the *_Project > Views_* panel and canvas *View* menu.
+* xref:data-export-intro.adoc[*Export Views, or an entire Project*].
+* xref:./data-share-views.adoc[*Share Saved Views*] with other project users or external collaborators. 
+
++
+NOTE: Sharing a project or view is available only in multi-user *Kineviz* online, not in the single-user *Kineviz Desktop* application. 
+
+
+
