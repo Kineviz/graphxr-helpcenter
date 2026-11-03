@@ -10,37 +10,45 @@ For specific workflows or users, you may want to limit the available tools and f
 image::/v3/01_05_01_SettingsUIConfig.png[,520,320,role=text-left]
 +
 
-* Configure and save one or more project workspaces (including an user-defined default workspace) that can be selected within an open project.
+* Configure and save one or more project workspaces separately (including a user-defined default workspace) that can be selected within an open project.
 
 +
 image::/v3/01_05_02_ProjectSavedWorkspaces.png[,420,380,role=text-left]
 
 == UI Configuration
 
-The *_UI Config_* button in the *_Project > Settings_* panel and *_Appearance _* section opens a UI configuration dialog where you can show or hide UI panels, extensions, and right-click menu and toolbar options. 
+The *_UI Config_* button in the *_Project > Settings_* panel and *_UI Config _* section lets you show or hide UI panels, extensions, and right-click menu and toolbar options. 
 
 *To configure a project's user interface:*
 
 . Go to the *_Project > Settings_* panel.
-. Click *_Appearance_* and the *_UI Config_* button.
+. Click the *_UI Config_* section.
 
 +
-The project *_UI Configuration _* dialog displays all the UI elements you can enable globally, enable on the project, or disable. The icon next to each element indicates its current status.
+The settings panel now shows all the UI elements available for configuration. The icon next to each element indicates its current status, either:
+
+* *_Public_* - Enabled on all projects
+* *_Project_* - Enabled on the current project
+* *_Off_* - Disabled and hidden
 +
 
 +
-image::/v3/01_05_03_ProjectUIConfiguration.png[,720,480,role=text-left]
+NOTE: Enter a search term to quickly locate UI elements. 
 +
 
-. Click the checkbox or icon next to an element to enable (or disable) it in the project.
-. Scroll to the top of the dialog and click *_Save_* to apply the changes and exit to the project canvas.
+. Click the icon next to an element to configure the project UI. 
++
+image::/v3/01_05_03_ProjectUIConfiguration.png[,540,480,role=text-left]
++
 
++
+The changed configuration is applied immediately.
 
 == User-defined Workspaces 
 
 Different workflows or use cases may require heavy use of a limited set of Kineviz panels and tools. For example, when importing and remodeling data, switching between Query, Transform, Table, and DataStore panels can become tedious and confusing. 
 
-To solve this, you can configure workspaces in which multiple panels are open at once, and the toolset limited to those you actually need. Within a project's overall UI configuration, you can rearrange items on the panel menu, set the position of split, floating, and docked panels and tools, and save the panel layout as a named project workspace. 
+To solve this, you can configure workspaces in which multiple panels are open at once, and the toolset limited to those you actually need. Within a project's overall UI configuration, you can rearrange items on the panel menu, set the position of split, floating, and docked panels and tools, limit UI tools further, and save the layout as a named project workspace. 
 
 The *_Saved Workspaces_* menu lets you switch between workspaces, rename or delete a workspace, set the default workspace that appears when the project opens, and re-arrange any open workspace on the fly. Since workspace panels can overlay much of the browser window, a set of one-click *peek* controls is provided to dismiss panels temporarily, showing just the canvas and its visual graph. 
 
@@ -48,12 +56,18 @@ The *_Saved Workspaces_* menu lets you switch between workspaces, rename or dele
 
 To configure a workspace, you can:
 
+* Hide project UI elements in a workspace, to help the user focus on specific workspace tasks. 
+
++
+image::/v3/01_05_04_WorkspaceHideUIMenu.png[,540,380,role=text-left]
++
+
 * *Click + drag* to rearrange the order in which menu icons appear on the left, right, or bottom panel menus.
 
 * Set the floating or docked status for the open panels in the workspace:
 
 +
-image::/v3/01_05_04_WorkspacePanelPosition.png[,420,340,role=text-left]
+image::/v3/01_05_05_WorkspacePanelPosition.png[,420,340,role=text-left]
 +
 
 ** Float panels (and some tools) on the canvas, optionally selecting its initial relative size and initial position in the browser window. Right-click and choose *_Float_*, or click a panel's *float* icon. Then click the floating panel's menu and select *Size and Position_* to move the floating panel to the desired position in the browser window.
@@ -74,7 +88,7 @@ NOTE: An *_Open in Split_* setting is saved in a named workspace. However, openi
 
 You can apply and edit your collection of project workspaces at any time. 
 
-image::/v3/01_05_11_ProjectManageWorkspaces.png[,720,420,role=text-left]
+image::/v3/01_05_06_ProjectManageWorkspaces.png[,720,420,role=text-left]
 
 You can:  
  
@@ -118,7 +132,7 @@ NOTE: The default workspace does not load a view.
 *To set the default project workspace :*
 
 . In the *_Saved Workspaces_* menu, select the workspace to apply it.
-. Select *_Set as Default_*.
+. Select *_Set as Project Default_*.
 
  
 === View the Canvas from a Workspace 
@@ -133,7 +147,7 @@ In a workspace, the panels you need might cover most of the canvas, making it ha
 * In the workspaces bar at the top right of the browser window:
 
 +
-image::/v3/01_05_12_PeekToggles.png[,420,380,role=text-left]
+image::/v3/01_05_07_PeekToggles.png[,420,380,role=text-left]
 +
 
 ** Click a _peek_ toggle icon to dismiss or reopen panels docked to the left, right, center, or bottom of the browser window.
@@ -146,7 +160,7 @@ image::/v3/01_05_12_PeekToggles.png[,420,380,role=text-left]
 . Choose *_Canvas picture-in-picture_*.
 
 +
-image::/v3/01_05_13_CanvasPicture.png[,420,380,role=text-left]
+image::/v3/01_05_08_CanvasPicture.png[,420,380,role=text-left]
 +
 
 +
