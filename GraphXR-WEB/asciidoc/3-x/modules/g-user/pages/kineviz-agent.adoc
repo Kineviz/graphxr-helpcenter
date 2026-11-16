@@ -151,16 +151,17 @@ image::/v3/10_03_05_Agent_CopyCodeText.png[,420,280,role=text-left]
 
 The LLM menu at the bottom of the *_Agent_* panel shows the currently installed LLMs and highlights the one currently in use (e.g. _Gemini Flash 3 Preview_)
 
-Click the *_Chat Options_* icon next to the LLM menu to see current thinking level and debug options.
+The *_Thinking level_* menu next to the LLM menu shows how much reasoning the LLM does before it answers (e.g. _Low_ or _Medium_). The level you choose applies to the next message you send. Administrators can change the thinking level for any LLM. Other users can change it only for LLMs they added themselves; for other LLMs the menu is hidden and the LLM's configured level is used.
+
+Click the *_Chat Options_* icon next to the LLM menu to see debug options.
 
 *To change LLMs and chat options:*
 
 . Open the LLM menu and choose a different LLM from the menu.
-. Click the *_Chat Options_* icon and:
+. Open the *_Thinking level_* menu and choose a different level.
+. Click the *_Chat Options_* icon and click the *_Debug logging_* radio button to turn logging on (or off).
 +
-* Select a different option from the thinking level menu.
-* Click the *_Debug logging_* radio button to turn logging on (or off).
-+
+// TODO(docs): screenshot stale — thinking level moved out of Chat Options into its own menu beside the LLM menu (GXR-3965)
 image::/v3/10_03_06_Agent_LLMChatOptions.png[,420,280,role=text-left]
 
 
