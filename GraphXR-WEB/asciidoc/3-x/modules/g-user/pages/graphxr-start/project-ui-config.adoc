@@ -147,11 +147,12 @@ In a workspace, the panels you need might cover most of the canvas, making it ha
 * In the workspaces bar at the top right of the browser window:
 
 +
+// TODO(docs): screenshot stale — header button "Show canvas" is now labelled "Peek"
 image::/v3/01_05_07_PeekToggles.png[,420,380,role=text-left]
 +
 
 ** Click a _peek_ toggle icon to dismiss or reopen panels docked to the left, right, center, or bottom of the browser window.
-** Click *_Show canvas_* (*Shift + Z*) to dismiss (or reopen) all open panels. When all panels are dismissed, *_Show canvas_* changes to *_Show panels_* .  
+** Click *_Peek_* (*Shift + Z*) to dismiss (or reopen) all open panels. When all panels are dismissed, *_Peek_* changes to *_Show panels_* .
 
 
 *To add a Canvas picture-in-picture panel to a workspace:* 
