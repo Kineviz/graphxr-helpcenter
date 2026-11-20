@@ -171,10 +171,12 @@ You can select items on the menu to:
 
 * Apply a *_Line_*, *_Grid_*, *_Cube_*, *_Circle_*, *_Spiral_*, or *_Spring_* layout to any selection of nodes.
 * Apply a *_Ring_* or *_Tree_* hierarchical layout. You can select central nodes first, but it is not required. If you apply the layout to all the data, *Kineviz* will determine the nodes most likely to be central. For simpler graph patterns, selecting central nodes first may not make a difference.
++
+In the right-click menu, hover over *_Ring_* or *_Tree_* under *_Layout_* to choose a direction: *_Left_*, *_Right_*, *_Up_*, or *_Down_*. The direction applies to that layout only and does not change the orientation set in the *_Layout_* panel. Clicking *_Ring_* or *_Tree_* itself uses the orientation from the *_Layout_* panel (*_Right_* by default).
 * *_Expand_* or *_Contract_* the layout of any selection of nodes.
 * *_Rotate_* the selected layout by a preset 90 degrees.
 +
-NOTE: With *_Quick Layout_* you cannot order nodes by property value, distribute nodes, specify controlled *_Shift_* or *_Rotate_* actions, or enter specifications for a *_Ring_* or *_Tree_* layout. You can, however, reposition selected nodes using navigation controls (e.g *_left-click drag_* to shift or *_right-click drag_* to rotate.)
+NOTE: With *_Quick Layout_* you cannot order nodes by property value, distribute nodes, specify controlled *_Shift_* or *_Rotate_* actions, or enter specifications for a *_Ring_* or *_Tree_* layout other than its direction. You can, however, reposition selected nodes using navigation controls (e.g *_left-click drag_* to shift or *_right-click drag_* to rotate.)
 
 *To create a Quick Layout:*
 
