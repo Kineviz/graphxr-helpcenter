@@ -49,15 +49,13 @@ image::/v3/01_02_03_Login_ProjectsHome.png[,720,540,role=text-left]
 +
 NOTE: If you are an administrator of a multi-user account, you'll see an *_Admin_* item on the account menu that opens your administrator panel.
 
-== Manage Your User Settings
+== Manage Your Account Settings
 
-* Select *_Settings_* from the account menu at the bottom left of the *_Projects_* page. 
-
-The *_Settings_* dialog is divided into *_Profile_*, *_Sessions_*, *_API Keys_*, *_Secrets_*, and *_Billing_* sections. 
+To display and edit your account settings, choose *_Settings_* from the account menu at the bottom left of the *_Projects_* page. The *_Settings_* dialog includes *_Profile_*, *_Sessions_*, *_AI Tools_*, *_Secrets_*, *_Connectors_*,and *_Memory_* tabs. 
 
 * In *_Profile_*, update your user profile, change your password, or delete your account.
 +
-image::/v3/01_02_04_AccountSettings.png[,420,320,role=text-left]  
+image::/v3/01_02_04_AccountSettingsProfile.png[,420,320,role=text-left]  
 +  
 
 * In *_Sessions_*, review and if desired, log out of browser sessions.  
@@ -65,9 +63,9 @@ image::/v3/01_02_04_AccountSettings.png[,420,320,role=text-left]
 image::/v3/01_02_05_AccountSettingsSessions.png[,420,320,role=text-left]  
 +
 
-* In *_API Key_* review and edit API keys you need in order to authenticate API requests without a thread.  
+* In *_AI Tools_* review AI tools available to your account, connection details, and steps to establish connection.  
 +
-image::/v3/01_02_06_AccountSettingsAPIKey.png[,420,320,role=text-left]  
+image::/v3/01_02_06_AccountSettingsAITools.png[,420,320,role=text-left]  
 +
 
 * In *_Secrets_*, store named secrets (API keys, tokens, and passwords) encrypted at rest. Values are masked in lists and revealed only on request.  
@@ -75,28 +73,32 @@ image::/v3/01_02_06_AccountSettingsAPIKey.png[,420,320,role=text-left]
 image::/v3/01_02_07_AccountSettingsSecrets.png[,420,320,role=text-left]  
 +
 
-* In *_Billing_* you can:
+* In *_Connectors_* you can add your own API keys for AI connectors. 
 
-** Review and update your current *_Plan_*.
-** Review *_Usage_* status
-** Set a *_Privacy_* option. Using your cloud agent sessions to improve the Kineviz Agent is opted in by default, but you can opt out. 
-** Review your *_Cloud Agents_* sessions.  
++
+image::/v3/01_02_08_AccountSettingsConnectors.png[,420,320,role=text-left]  
++
 
-image::/v3/01_02_08_AccountSettingsBilling.png[,420,320,role=text-left]  
+* In *_Memory_* you can add short notes an AI agent carries into every new conversation.
 
++
+image::/v3/01_02_09_AccountSettingsMemory.png[,420,320,role=text-left]
++
+
++  
 NOTE: Click the *Kineviz* logo at the upper left of the browser to close the *_Settings_* dialog without making changes.
  
 ==  Select the UI Language 
   
 From the user account menu, choose *English*, *Chinese*, or *Spanish* to switch the language of the user interface text.
 
-image::/v3/01_02_09_AccountLanguageSpanish.png[,240,240,role=text-left]
+image::/v3/01_02_10_AccountLanguageSpanish.png[,240,240,role=text-left]
 
 ==  Toggle the Light/Dark Theme 
   
-From the account menu, select *_Switch to light mode_* or *_Switch to dark mode_* (or, in an open project, select *_Toggle Theme_*).
+From the user account menu, select *_Switch to light mode_* or *_Switch to dark mode_* (or, in an open project, select *_Toggle Theme_*).
 
-image::/v3/01_02_10_ThemeToggle.png[,320,240,role=text-left]
+image::/v3/01_02_11_ThemeToggle.png[,320,240,role=text-left]
 
 
 == Access Kineviz Documentation
@@ -107,7 +109,7 @@ Click links at the bottom of the browser window to open user guides and release 
 * The version number at the bottom of the browser window opens the release notes for the current *Kineviz* version.
 
 +
-image::/v3/01_02_11_VersionHelpCenterLink.png[,720,240,role=text-left]
+image::/v3/01_02_12_VersionHelpCenterLink.png[,720,240,role=text-left]
 
 == User Community 
 
@@ -122,5 +124,5 @@ Click links at the bottom of the browser window for:
 * In the *_Projects_* home page or in any open project, select *_Logout_* from the user account menu at the bottom left.
 
 +
-image::/v3/01_02_12_AccountLogout.png[,240,420,role=text-left]
+image::/v3/01_02_13_AccountLogout.png[,240,420,role=text-left]
  
