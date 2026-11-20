@@ -1,0 +1,211 @@
+= Annotate a View 
+
+The *_Annotate_* tool lets you draw directly on the canvas. You can add text comments and questions to a view, and highlight graph elements with colored arrows, circles, node callouts, and process diagrams. 
+
+image::/v3/02_12_00_AnnotateIntro.png[,720,580,role=text-left]
+
+Annotations are saved with the view and can be shared with a colleague as a live view or static _.png_ image.
+
+By default, *_Annotate_* opens as an expanded floating toolbar.
+
+image::/v3/02_12_01_AnnotateFloatingPanel.png[,420,480,role=text-left]
+
+NOTE: You can click the minus (-) icon at the top right to collapse the floating toolbar when it is not in use.
+
+image::/v3/02_12_02_AnnotatePanelCollapsed.png[,420,180,role=text-left]
+
+
+== Set Up an Annotation Workspace
+
+It can be more convenient to dock the *_Annotate_* toolbar to the left, right, or bottom edge of the canvas. When docked to the right or left edge, *_Annotate_* becomes a panel  you can easily display and dismiss. The docking position is retained until you change it, for example, by re-floating the panel.
+
+Optionally, you can save your preferred docked position in a named workspace that can include other specific panel positions. 
+
+*To position _Annotate_ in a workspace:*
+
+. In the *_Display_* toolbar section, click *_Annotate_*.
+. In the *_Annotate_* pane, click the dock icon at the top right, and choose a *_Dock To_* position (e.g *_Right Panel_*)
+
++
+image::/v3/02_12_03_AnnotateDockMenu.png[,720,680,role=text-left]
++
+
++
+When docked to the right or left, an *_Annotate_* icon is added to the right rail of the browser window.
++
+
++
+image::/v3/02_12_04_AnnotateDockedRight.png[,720,680,role=text-left]
++
+
+. Click the *_Workspace_* icon above the legend, and select *_Save Workspace As..._*.
+. Enter a workspace name, and click *_OK_*.
+
++
+Now, if you happen to re-float *_Annotate_*, selecting the named workspace re-docks it (along with any other workspace choices).
+
+
+== Add Annotations to a View
+
+The *_Annotate_* pane toggles between two modes, controlled by the pencil icon at the top:
+
+* In *navigating* mode, you can navigate and select graph elements on the canvas.
+* In *editing* mode, you can draw annotations on the canvas. 
+
+Annotation toolkit icons are displayed at the top of the pane, along with their keyboard shortcuts and usage tips.
+
+image::/v3/02_12_05_AnnotateToolkit.png[,420,280,role=text-left]
+
+Annotation tools include:
+
+* *_Select_* (*V*), to select one or more annotations, and set the *_Display scale_* for the selection. In the *_Add_* section that appears, you can click to add a default *_Mermaid_* flowchart or to *_Clear All_* annotations.  
+* *_Shape_* (*R*), to create and style rectangle, rounded, pill, ellipse, or diamond shapes that can include text.
+* *_Ellipse_* (*O*), to draw and style ellipses to encircle elements on the canvas.
+* *_Board_* (*B*), to draw and style a text box where you can place and group other annotations, for example to explain a process relating to the graph on the canvas.  
+* *_Arrow_* (*A*), to draw and style a *_Straight_*, *_Elbow_*, or *_Curved_* arrow. 
+* *_Text_* (*A*), to add and style text (with no surrounding shape outline). 
+* *_Node Callout_* (*C*), to select a node and attach a callout text box to it. 
+* *_Cluster Outline_* (*G*), to draw a circle around a part of the graph. 
++
+NOTE: The cluster outline cannot be moved once it is placed.
++
+* *_Title_*, to enter and style a title text box, which will be centered at the top of the canvas under the split view menu.
+* *_Undo_* and *_Redo_* icons, to undo or redo creation, editing, and styling actions. 
+
+TIP: In editing mode, keyboard shortcuts are available to select an annotation tool. 
+
+Styling options include:
+
+* Color of text, outlines and fills
+* Outline Style (Solid, Dashed, or Dotted)
+* Fill Opacity 
+* Text type (Sans serif, Serif, or Monospace) and text size.
+* Text alignment within a shape or board
+* *_Save this style_*, to save the current style in the *_Annotate_* pane. Select and annotation and click a saved style to apply it. A saved style persists until you delete it. 
+
+*To add an annotation:*  
+
+. In the *_Display_* toolbar section, click the *_Annotate_* tool.
+
++
+The *_Annotate_* pane opens in *editing* mode.
++
+
+. Click the pencil icon to enter *navigating* mode,and highlight the part of the graph you want to annotate. For example, pan and/or zoom, lay out the graph, and/or select nodes or edges using any selection method.
+. Now click the pencil icon to toggle to *editing* mode.
+. Click to select an annotation option.
+. Optionally, select styling options and save the style (otherwise, the current style settings are applied).
+. Click and drag to place the annotation on the canvas.
+
++
+image::/v3/02_12_06_AddShape.png[,720,580,role=text-left]
++
+ 
+. For a text, shape, board, node callout, or title annotation, enter text and then click outside the annotation when you are done. 
+
++
+image::/v3/02_12_07_AddText.png[,720,280,role=text-left]
++
+
+. Optionally, duplicate, arrange, or delete annotations as needed:
+
++
+* Click *_Duplicate_* to duplicate one or more selected annotations. 
+* For overlapping annotations, select one or more and click *_Bring to front_* or *_Send to back_*.
+* *_Arrange_* selected annotations using alignment and spacing options. 
++
+
++
+image::/v3/02_12_08_AnnotateDuplicateAlign.png[,720,680,role=text-left]
++
+
++
+NOTE: A *_Title_* is in a fixed position, centered under the canvas project/view menu. 
++
+ 
+* Click *_Delete annotation_* (or press _delete_ or _return_) to delete one or more selected annotations. 
+ 
+. Deselect all annotations to optionally:
+
++
+* Click the *_Display Scale_* controls to increase or decrease overall scaling, changing line thickness and all type sizes by a percentage.
+* Click *_Clear All_* to remove all annotations.  
++
+
++
+image::/v3/02_12_09_AnnotateDisplayScale.png[,720,480,role=text-left]
++
+
++
+NOTE: Click *_Undo_* or *_Redo_* icons to undo/redo changes in text, styling and positioning, and to undo/redo a deletion.
++
+
+. In the *View* dropdown menu, click *_Save_* or *_Save As_* to save annotations with the view. 
+ 
+== Style Annotations
+
+Styling is applied whenever you create an annotation. You can change the styling for one or more selected annotations at any time, for example to set a consistent color, type style or size, fill and line style, and/or overall display scale.
+
+*To style selected annotations:*
+
+. In the *_Annotation_* panel, click the *_Select_* (*V*) icon
+. On the canvas, click to select an annotation. 
+. Either *shift-click* to select additional annotations, or *shift-click* and drag a box over the other annotations.
+. In the *_Annotation_* panel, change styling options:
+
++
+* *Color*: Click a colored dot. The color is changed, and is used for any new annotations.
+* *Text Size*: Use the *_-_* or *_+_* controls to increase or decrease text size. 
+* *Type Style*: Select *_Sans serif_*, *_Serif_*, or *_Monospace_*.
+* *Text Alignment*: Click an alignment option to position text within a shape.
+* Click a saved style rectangle to apply it to all selected annotations. 
++
+
++
+image::/v3/02_12_10_AnnotateStyleEdit.png[,520,680,role=text-left]
++
+
++ 
+NOTE: To increase or decrease overall display scaling for all annotations, deselect  annotations and click the *_Display Scale_* controls.
+ 
+== Edit Annotations on the Canvas
+
+*To edit annotations on the canvas, you can:*
+
+* Move a selected annotation. Click and drag (except *_Title_* and *_Cluster_* annotations, which cannot be moved).   
+* Edit text: Double click a selected text, shape, node callout, or title annotation.
+* Re-size a selected shape or ellipse: Click and drag the white dot on the shape. 
+* *_Arrange_* selected annotations: In the *_Annotate_* pane, click one or more of the alignment options.
+
+== Show or Hide Annotations 
+
+It can be convenient to see or export the view on the canvas without its annotations. 
+
+*To toggle between showing and hiding all annotations:*
+
+* In the *_Annotate_* pane, click to deselect *_Show annotations_*.   
+
++ 
+image::/v3/02_12_11_AnnotateShowHide.png[,720,280,role=text-left]
+ 
+== Export an Annotated View
+
+Annotations are included in the saved view. The view on the canvas, whether saved or not, can also be exported as a _.png_ screenshot or _SVG_ file.
+
+NOTE: Any view can also be exported from the canvas *_Export_* menu as a _.graphxr_ file. 
+ 
+*To export an annotated view:*
+
+. In the *_Annotate_* pane and *_Export_* section, select or deselect the *_Include Legend_* checkbox.
+. Optionally, click *_Zoom to annotations_* in the *View* section to align annotations and the title on the canvas.
+
++
+image::/v3/02_12_12_AnnotateExportPNG.png[,320,180,role=text-left]
++
+
+. Click either:
+
++
+* *_PNG_*, to download a _.png_ screenshot to your system.
+* *_Copy_*, to copy the annotated _.png_ view to the clipboard.
+* *_SVG_*, to download an _SVG_ file to your system.

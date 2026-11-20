@@ -1,0 +1,123 @@
+= Select Using a Timeline  
+
+The *_Timeline_* panel arranges the visible nodes on the canvas by a *_Time_* property and an optional *_Row_* property. You can: 
+
+* Choose time and row properties from those available in the nodes on the canvas.
+* Choose timeline display options.
+* Select nodes on the timeline to select them on the canvas, and vice versa.
+* Filter nodes on the canvas by a time range.
+  
+== Display a Timeline
+
+A timeline can display nodes on the canvas with a date-time property of the form _YYYY-MM-DD HH:MM:SS_. 
+
+NOTE: You can use an xref:transform-data/tr-fx.adoc[*_fx Formula_*] to transform dates to the usable format.  
+
+A timeline also includes information about the number of nodes with and without a date-time property, the number selected, and number currently hidden by timeline filtering.
+
+*To display a timeline:*
+
+. Open the *_Timeline_* panel. 
+. Click to select a date-time property from the available options (or choose from the *_Time_* dropdown menu). For each available timestamp property, the number of nodes is listed.
+
++
+image::/v3/04_07_01_TimelineStartTime.png[,540,280,role=text-left]
++
+
+. In the *_Rows_* dropdown, optionally choose a property for separate timeline rows.
+
++
+image::/v3/04_07_02_TimelineStartRows.png[,540,280,role=text-left]
++
+
+. Choose the node display. Click either:
+
++
+* *_Dots_*, a single dot for all nodes with the same timestamp. 
+* *_Stacked_*, individual nodes stacked on the timeline.
+* *_Cluster_*, a single badge labeled and sized according to the number of nodes with the same timestamp.  
++
+
++
+image::/v3/04_07_03_NodeDisplay.png[,720,280,role=text-left]
+   
+== Set Timeline Range
+
+To focus on dates or time ranges of interest, you can:
+
+* Use the mouse scroll to expand or contract the timeline.
+* Click the preset previous 1 month, 3 month, or 1 year range buttons.
+
++
+image::/v3/04_07_04_TimelinePresets.png[,540,280,role=text-left]
++
+
+* Use the controls at the bottom of the timeline (or click the *_Overview_* button for similar controls at the top of the timeline) to set a time range (for example a day or a week). Once set, click and drag to move the interval along the timeline. 
++
+image::/v3/04_07_05_TimelineOverviewHandles.png[,540,280,role=text-left]
+
+== Select Nodes Using the Timeline 
+
+To use the timeline to select nodes on the canvas, you can:
+
+* Select nodes directly on the timeline. 
+* Filter nodes on the canvas by a time range and then select them.
+
++
+NOTE: Selecting nodes on the canvas using any selection method also selects them on the timeline. 
+
+=== Select Nodes on the Timeline
+
+*To select nodes on the timeline:*
+
+. Use the mouse scroll to zoom to the section of the timeline and the nodes of interest.
+. Click and drag to select the nodes.
++
+image::/v3/04_07_06_TimelineDragSelect.png[,540,280,role=text-left]
++
+
++
+The nodes are selected on the timeline and the canvas, and the number selected is noted below the timeline.
++
+image::/v3/04_07_07_TimelineSelected.png[,540,280,role=text-left]
+
+
+=== Filter by Timeline Range
+
+You can filter nodes on the canvas by a range set in the *_Overview_* controls.
+
+*To filter by timeline range:*
+
+. Click the *_Overview_* button at the top of the timeline, and use the handle controls to  set a time range (for example a day or a week). All nodes are still visible on the canvas.
+
++
+image::/v3/04_07_08_TimelineOverviewRange.png[,540,280,role=text-left]
++
+
+. Click the *_Filter Canvas to Range_* button.
+
++
+image::/v3/04_07_09_TimelineFilterButton.png[,340,120,role=text-left]
++
+
++
+Only nodes in the range are shown on the canvas. The number of nodes outside the range is noted below the timeline. 
++ 
+
++
+image::/v3/04_07_10_TimelineFiltered.png[,540,280,role=text-left]
++
+ 
+. Click and drag to move the *_Overview_* range along the timeline.
+
+. Optionally, select the nodes on the canvas using any selection method.  
+
+
+
+
+
+
+
+
+
+
