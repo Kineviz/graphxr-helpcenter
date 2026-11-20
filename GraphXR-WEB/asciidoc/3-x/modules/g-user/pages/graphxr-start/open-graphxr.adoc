@@ -119,8 +119,8 @@ Click links at the bottom of the browser window for:
 
 *To log out of Kineviz:*
 
-* In the *_Projects_* page or in any open project, select *_Logout_* from the user account menu at the bottom left.
+* In the *_Projects_* home page or in any open project, select *_Logout_* from the user account menu at the bottom left.
 
 +
-image::/v3/01_02_12_AccountLogout.png[,240,240,role=text-left]
+image::/v3/01_02_12_AccountLogout.png[,240,420,role=text-left]
  

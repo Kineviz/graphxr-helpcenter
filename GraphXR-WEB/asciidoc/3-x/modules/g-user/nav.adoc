@@ -39,6 +39,7 @@
 *** xref:nav-select/select.adoc[Select Nodes and Edges]
 *** xref:nav-select/filter.adoc[Filter Nodes and Edges]
 *** xref:nav-select/select-paths.adoc[Select Paths and Connections]
+*** xref:nav-select/timeline.adoc[Select Using the Timeline]
 
 ** xref:nav-select/hide-show.adoc[*Hide Graph Data*]
 
@@ -56,6 +57,8 @@
 *** xref:layouts/geometric-layouts.adoc[Geometric Layouts]
 *** xref:geospatial-maps.adoc[World Map Layout]
 
+** xref:data-save/annotate-view.adoc[*Annotate Views*]
+
 ** xref:data-save/data-save-share-intro.adoc[*Save and Share Views*]
 *** xref:data-save/data-save.adoc[Save Graph Views]
 *** xref:data-save/data-manage-views.adoc[Manage Saved Views]
@@ -70,7 +73,7 @@
 ** xref:kineviz-agent.adoc[*Kineviz AI Agent*]
 
 ** xref:graphxr-extensions/intro-extensions.adoc[*Kineviz Extensions*]
-*** xref:graphxr-extensions/grove.adoc[*Grove*]
+*** xref:graphxr-extensions/notebook.adoc[*Kineviz Notebook*]
 *** xref:graphxr-extensions/file-manager.adoc[*Files*]
 *** xref:graphxr-extensions/text-editor.adoc[*Text Editor*]
 
