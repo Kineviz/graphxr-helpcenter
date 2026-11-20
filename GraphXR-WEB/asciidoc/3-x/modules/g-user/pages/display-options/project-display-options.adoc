@@ -86,30 +86,34 @@ NOTE: *_Undo / Redo_*  toolbar icons revert (or restore) your most recent operat
 
 === Fine-tune display of nodes and edges
 
-*_Advanced Settings_* includes options for fine-tuning display of nodes and edges on the project canvas, including:
+The *_Nodes_*, *_Captions_*, *_Edges_*, and *_Canvas_* groups in the *_Settings_* sidebar fine-tune display on the project canvas. Each group is split into labelled sections, so the controls that work together sit together:
 
-* Checkboxes:
-** Set automatic display of an avatar image on nodes, and set automatic caption rendering
-** Set edge styling options
+* *_Nodes_*
+** *_Size & Icon_*: *_Node Size Scale_*, *_Icon Mode_*, and *_Auto Avatar_*
+** *_Markers_*: *_Hide Icon on Avatar_* and *_Hide Pin Icon_*
+* *_Captions_*
+** *_Visibility & Text_*: *_Auto Caption_*, *_Truncate Caption_*, and *_Alternate Caption Rendering_*
+** *_Size & Position_*: *_Caption Size Scale_* and *_Node Caption Position_*
+* *_Edges_*
+** *_Shape_*: *_Edge Shape_* (straight, curved, or elbow) and *_Curve Parallel Edges_*
+** *_Line_*: *_Edge Width Scale_*, *_Dash Line_*, and *_Blend Edges_*
+** *_Arrowheads_*: *_Hide Arrow_*, then *_Arrowhead shape_*, *_Arrowhead position_*, and *_Size_*. These are dimmed while *_Hide Arrow_* is checked.
+** *_Edge Captions_*: *_Show Relationship Name_*, *_Box Behind Edge Captions_*, and *_Edge Caption Line Width_*
+* *_Canvas_*
+** *_Hover & Selection_*: *_Quick Info_* and *_Dim Unselected Nodes_*. Checking *_Dim Unselected Nodes_* shows its *_Dim Amount (%)_* slider directly below it.
+** *_Scene_*: *_Show Snapshot_* and, in 3D, *_Fog Density_*
+** *_Empty Canvas_*: *_Show the Empty Canvas Overlay_* and *_Show recent views on the empty canvas_*
 
-+
+TIP: Type in the *_Search settings_* box to find a setting by name. Sections with no match are hidden.
+
+// TODO(docs): screenshot stale — settings are now grouped into labelled sections (GXR-5379)
 image::/v3/03_01_07a_FineTuneCheckboxes.png[,420,320,role=text-left]
-+
 
-* Scaling sliders:
-** Scale project-wide node size, edge width, and caption size
-** Set 3D fog density
-
-+
+// TODO(docs): screenshot stale — settings are now grouped into labelled sections (GXR-5379)
 image::/v3/03_01_07b_FineTuneSliders.png[,420,420,role=text-left]
-+
 
-* Dropdown menus:
-** Set caption positioning for nodes
-** Set an icon display mode
-+
+// TODO(docs): screenshot stale — settings are now grouped into labelled sections (GXR-5379)
 image::/v3/03_01_07c_FineTuneNodePosIcon.png[,420,240,role=text-left]
- 
 
 NOTE: Nodes and edges are also styled in the *Legend* by clicking the brush icon next to a list item to display the *_Styling Setting_*  dialog. Use this to set node color, icon, and properties used for the avatar, captions, and node size or edge width scaling.
 
