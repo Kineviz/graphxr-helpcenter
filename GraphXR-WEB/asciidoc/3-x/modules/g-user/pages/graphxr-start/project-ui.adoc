@@ -30,6 +30,8 @@ NOTE: For specific workflows that focus or limit user access to tools and featur
 NOTE: Additional panel menu icons are displayed when extensions such as the *_Kineviz Notebook_* and any preconfigured sandboxes are activated.
 +
  
+* *_Canvas Tools_* on the left edge of the canvas, to switch how a click or drag on the canvas behaves: *_Pointer_*, *_Hand_*, *_Zoom to box_*, *_Marquee select_*, *_Lasso select_*, *_Shortest path_*, *_Add node_*, and *_Add edge_*. You can move the tools anywhere on the canvas or hide all but the active one.
+
 * *_Toolbar_* near the bottom of the window, for the available tools to  *_Select_*, *_Edit_*, *_Arrange_*, and *_Display_* the graph, display *_Media_*, undo or redo *_History_* actions, or *_Remove_* data.
 
 * Configurable *_Right-click menu_* of tools and operations usable on your current data selection. Right-click anywhere on the canvas to perform many graph operations without going to the toolbar or opening a panel.
@@ -270,6 +272,19 @@ image::/v3/01_04_22_AlgoPanelSNA.png[,520,450,role=text-left]
 
 image::/v3/01_04_23_MapPanel.png[,520,450,role=text-left]
 
+
+== Canvas Tools
+
+The *_Canvas Tools_* on the left edge of the canvas set what a click or drag on the canvas does. *_Pointer_* is the normal mode. Each other tool stays on until you press *Esc* or pick another tool. Each tool also has a one-letter key: *V* (Pointer), *H* (Hand), *Z* (Zoom to box), *M* (Marquee select), *L* (Lasso select), *P* (Shortest path), *N* (Add node), and *E* (Add edge).
+
+// TODO(docs): screenshot needed — canvas tool rail with its grip (top) and hide chevron (bottom)
+
+To keep the tools out of your way:
+
+* *Move them.* Drag the dotted grip at the top of the tools to put them anywhere on the canvas. With the grip focused, the arrow keys move them in small steps (hold *Shift* for larger steps). Double-click the grip, or press *Home*, to put them back on the left edge.
+* *Hide them.* Click the chevron at the bottom (*_Hide tools_*) to show only the active tool, so you can still see which mode you are in. Click the chevron again (*_Show all tools_*) to bring every tool back. The one-letter keys still work while the tools are hidden.
+
+Kineviz remembers where you put the tools, and whether they are hidden, in your browser. The setting is not saved with the project, so other users keep their own layout. The tools always stay inside the canvas when you resize the window or open docked panels.
 
 == Toolbar
 
