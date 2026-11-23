@@ -78,11 +78,12 @@ image::/v3/01_03_07_CreateBigQueryWizard.png[,520,480,role=text-left]
 +
 
 .. In *_Apply Template_*, either leave the default *_None_*, or select a template from the menu. Templates specify colors, icons and other UI configuration settings for easy re-use.
-.. Enter a descriptive *_Project Name_* in the text box. A name is automatically suggested; you will likely want to change it.
+.. Name the project. A name is suggested automatically and shown, dimmed, as the page heading at the top. Click the heading, type a descriptive name, and press *Enter* (or click away). Press *Esc* to cancel the change. The name on the project card updates as you type, and you can also edit it there with the pencil icon. If you don't enter a name, the suggested one is used.
 .. Enter an optional project *_Description_*. You can add or edit this later if desired.
 .. Enter or select optional *_Tags_* that indicate the general topic or audience for the project.
 .. In *_Slug_*, enter an optional short name to be used in the project's share link instead of its id. Use a name unique to the server of 3–64 characters with lowercase letters, numbers and hyphens only. 
 +
+// TODO(docs): screenshot stale — the page heading now shows the suggested project name and is clicked to rename (GXR-5401)
 image::/v3/01_03_08_ProjectNameDesc.png[,720,480,role=text-left]
 +
 
