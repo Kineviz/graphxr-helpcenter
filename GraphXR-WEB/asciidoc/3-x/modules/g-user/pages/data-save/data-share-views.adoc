@@ -145,6 +145,18 @@ When authenticated, the project opens with the single view available.
 +
 image::/v3/02_08_13_SharedViewOpened.png[,540,380,role=text-left]
 
+=== What a Share link visitor can do
+
+A shared view is read-only for anyone who opens it through a *_Share_* link or an embedded iFrame:
+
+* Visitors can explore the graph: *_Hide_*, *_Undo_*, pin nodes, run a layout, and expand nodes.
+* Visitors cannot change the graph. *_Add node_*, *_Add edge_*, *_Delete_*, *_Clear_*, *_Change category_* and *_Merge_* are not shown.
+* Visitors cannot save. The view menu has no *_Save_*, *_Save as_*, *_Rename_* or *_Delete_*, and the *_Snapshots_* panel lists existing snapshots without a create button.
+* Leaving the page never asks the visitor to save changes.
+
+To let someone edit the view or the project, share the project with them as an *_Editor_* instead.
+// TODO(docs): screenshot needed - a shared view as a visitor sees it, with the reduced toolbar
+
 
 
 === Embed a view as an iFrame
